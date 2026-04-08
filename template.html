@@ -1,0 +1,785 @@
+<!-- template.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arXiv 量化金融领域论文汇总</title>
+    <style>
+        /* ========== 全局变量（支持暗色模式）========== */
+        :root {
+            --bg-primary: #f8f9fa;
+            --bg-card: #ffffff;
+            --text-primary: #2c3e50;
+            --text-secondary: #6c757d;
+            --border-color: #e9ecef;
+            --primary-color: #007bff;
+            --primary-hover: #0056b3;
+            --success-color: #28a745;
+            --success-hover: #218838;
+            --warning-color: #ffc107;
+            --danger-color: #dc3545;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+            --transition: all 0.2s ease-in-out;
+            --radius: 0.5em;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-primary: #1a1a2e;
+                --bg-card: #16213e;
+                --text-primary: #e6e6e6;
+                --text-secondary: #a0a0a0;
+                --border-color: #2a2a4a;
+                --primary-color: #4dabf7;
+                --primary-hover: #74c0fc;
+                --success-color: #51cf66;
+                --success-hover: #69db7c;
+                --warning-color: #ffd43b;
+                --danger-color: #ff6b6b;
+                --shadow-sm: 0 1px 2px rgba(0,0,0,0.3);
+                --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.4);
+                --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.5);
+            }
+        }
+
+        /* ========== 基础重置 ========== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 1.2em;
+            transition: var(--transition);
+        }
+
+        .container {
+            max-width: 90em;
+            margin: 0 auto;
+        }
+
+        /* ========== 头部样式 ========== */
+        header {
+            text-align: center;
+            padding: 1.8em 1.2em;
+            margin-bottom: 1.5em;
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            border-bottom: 0.2em solid var(--primary-color);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.7em;
+            background: linear-gradient(135deg, var(--primary-color), #6c5ce7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .intro {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            max-width: 50em;
+            margin: 0 auto;
+        }
+
+        .intro p { margin: 0.25em 0; }
+        .intro a { color: var(--primary-color); text-decoration: none; }
+        .intro a:hover { text-decoration: underline; }
+
+        /* ========== 导航栏 ========== */
+        .nav {
+            background: var(--bg-card);
+            padding: 0.7em 1.2em;
+            border-radius: var(--radius);
+            margin: 1.2em 0 1.5em;
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5em 1em;
+        }
+
+        .nav strong {
+            color: var(--text-primary);
+            font-weight: 600;
+            margin-right: 0.3em;
+        }
+
+        .nav a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.25em 0.6em;
+            border-radius: 0.25em;
+            transition: var(--transition);
+            font-size: 0.9rem;
+        }
+
+        .nav a:hover {
+            background: rgba(0,123,255,0.1);
+            color: var(--primary-hover);
+            transform: translateY(-0.1em);
+        }
+
+        /* ========== 日期区块卡片 ========== */
+        .date-section {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            margin: 1.2em 0;
+            overflow: hidden;
+            transition: var(--transition);
+            border: 0.06em solid var(--border-color);
+        }
+
+        .date-section:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-0.12em);
+        }
+
+        .date-header {
+            padding: 1em 1.5em;
+            background: linear-gradient(135deg, var(--primary-color), #0056b3);
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+            transition: var(--transition);
+        }
+
+        .date-header:hover {
+            background: linear-gradient(135deg, var(--primary-hover), #004494);
+        }
+
+        .date-header .arrow {
+            font-size: 1em;
+            transition: transform 0.3s ease;
+            font-weight: bold;
+            margin-left: 0.6em;
+        }
+
+        .date-content {
+            padding: 1.2em 1.5em;
+        }
+
+        /* ========== 表格样式（自适应）========== */
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 0.6em 0;
+            border-radius: 0.4em;
+            border: 0.06em solid var(--border-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+            table-layout: fixed; /* ✅ 改用 fixed 布局，精确控制列宽 */
+        }
+
+        th {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            color: var(--text-primary);
+            font-weight: 600;
+            padding: 0.8em 1em;
+            text-align: left;
+            border-bottom: 0.12em solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            white-space: nowrap;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            th {
+                background: linear-gradient(135deg, #2a2a4a, #1e1e3a);
+            }
+        }
+
+        td {
+            padding: 0.8em 1em;
+            border-bottom: 0.06em solid var(--border-color);
+            vertical-align: top;
+        }
+
+        tr:hover {
+            background: rgba(0,123,255,0.04);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            tr:hover {
+                background: rgba(77,171,247,0.08);
+            }
+        }
+
+        /* ========== 🔧 列宽分配（修改版：总结列40% + Title自动换行）========== */
+        
+        /* 标题列 - 22%，允许自动换行 */
+        td:first-child {
+            width: 22%;
+            min-width: 10em;
+            font-weight: 500;
+        }
+
+        td:first-child strong {
+            display: block;              /* ✅ 改为 block 支持换行 */
+            white-space: normal;         /* ✅ 允许正常换行 */
+            word-break: break-word;      /* ✅ 长单词断行 */
+            overflow-wrap: break-word;   /* ✅ 兼容写法 */
+            line-height: 1.4;
+        }
+
+        /* 作者列 - 9% */
+        td:nth-child(2) {
+            width: 9%;
+            min-width: 4.5em;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            white-space: nowrap;
+        }
+
+        /* 资源列 - 9% */
+        td:nth-child(3) {
+            width: 9%;
+            min-width: 5em;
+            font-size: 0.75rem;
+            line-height: 1.3;
+        }
+
+        /* 相关性列 - 8% */
+        td:nth-child(4) {
+            width: 8%;
+            min-width: 4em;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        /* Zotero 列 - 12% */
+        /* td:nth-child(5) {
+            width: 12%;
+            min-width: 4.5em;
+            text-align: center;
+            white-space: nowrap;
+        } */
+
+        /* ✅ LLM 总结列 - 40%（加宽） */
+        td:nth-child(5) {
+            width: 40%;
+            min-width: 12em;
+            font-size: 0.85rem;
+        }
+
+        /* ✅ 总结列内部优化 */
+        td:nth-child(5) .summary-details small {
+            background: rgba(0,123,255,0.05);
+            padding: 0.5em;
+            border-radius: 0.25em;
+            line-height: 1.6;
+            text-align: justify;
+            display: block;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            td:nth-child(6) .summary-details small {
+                background: rgba(77,171,247,0.1);
+            }
+        }
+
+        /* ========== 资源标签（紧凑版）========== */
+        .resource-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.2em;
+
+            padding: 0.35em 0.7em;   /* 🔥 放大 */
+            margin: 0.15em 0.25em 0.15em 0;
+            border-radius: 0.25em;
+            font-size: 0.85em;
+            
+            text-decoration: none;
+            transition: var(--transition);
+            white-space: nowrap;
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .resource-tag.alphaxiv {
+            background-color: #f5f3ff;
+            color: #4b0082;
+        }
+
+        .resource-tag.pdf {
+            background: rgba(0,123,255,0.1);
+            color: var(--primary-color);
+        }
+        .resource-tag.pdf:hover {
+            background: rgba(0,123,255,0.2);
+        }
+
+        .resource-tag.code {
+            background: rgba(40,167,69,0.1);
+            color: var(--success-color);
+        }
+        .resource-tag.code:hover {
+            background: rgba(40,167,69,0.2);
+        }
+
+        /* ========== 备注折叠（紧凑版）========== */
+        .resource-comment details {
+            display: inline-block;
+            margin: 0.1em 0;
+            max-width: 100%;
+        }
+
+        .resource-comment summary {
+            cursor: pointer;
+            padding: 0.2em 0.4em;
+            background: rgba(108,117,125,0.1);
+            color: var(--text-secondary);
+            border-radius: 0.2em;
+            font-size: 0.75em;
+            list-style: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.2em;
+            transition: var(--transition);
+            white-space: nowrap;
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .resource-comment summary:hover {
+            background: rgba(108,117,125,0.2);
+        }
+
+        .resource-comment summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .resource-comment summary::before {
+            content: "▶";
+            font-size: 0.6em;
+            transition: transform 0.2s;
+            display: inline-block;
+        }
+
+        .resource-comment details[open] summary::before {
+            transform: rotate(90deg);
+        }
+
+        .resource-comment small {
+            display: block;
+            margin-top: 0.3em;
+            padding: 0.4em 0.5em;
+            background: rgba(0,123,255,0.05);
+            border-radius: 0.2em;
+            color: var(--text-secondary);
+            font-size: 0.75em;
+            line-height: 1.3;
+            max-width: 100%;
+            word-break: break-word;
+            overflow-wrap: break-word;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .resource-comment small {
+                background: rgba(77,171,247,0.1);
+            }
+        }
+
+        /* ========== 链接通用样式 ========== */
+        td a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25em;
+        }
+
+        td a:hover {
+            color: var(--primary-hover);
+            text-decoration: underline;
+        }
+
+        td a[target="_blank"]::after {
+            content: "↗";
+            font-size: 0.65em;
+            opacity: 0.7;
+            margin-left: 0.1em;
+        }
+
+        /* ========== Zotero 按钮 ========== */
+        .zotero-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.3em;
+            padding: 0.4em 0.9em;
+            background: linear-gradient(135deg, var(--success-color), #20c997);
+            color: white !important;
+            text-decoration: none !important;
+            border-radius: 0.4em;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 0.12em 0.25em rgba(40,167,69,0.3);
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .zotero-btn:hover {
+            background: linear-gradient(135deg, var(--success-hover), #1ea882);
+            transform: translateY(-0.12em);
+            box-shadow: 0 0.25em 0.5em rgba(40,167,69,0.4);
+        }
+
+        .zotero-btn:active {
+            transform: translateY(0);
+        }
+
+        /* ========== 星星评分 ========== */
+        .stars {
+            color: var(--warning-color);
+            font-size: 1rem;
+            letter-spacing: 0.06em;
+            text-shadow: 0 0.06em 0.12em rgba(0,0,0,0.1);
+            white-space: nowrap;
+        }
+
+        /* ========== LLM 总结折叠 ========== */
+        .summary-details {
+            font-size: 0.85rem;
+        }
+
+        .summary-details summary {
+            cursor: pointer;
+            color: var(--primary-color);
+            font-weight: 500;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 0.25em;
+        }
+
+        .summary-details summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .summary-details summary::before {
+            content: "📋";
+            font-size: 0.9rem;
+        }
+
+        .summary-details small {
+            display: block;
+            margin-top: 0.4em;
+            padding: 0.6em;
+            background: rgba(0,123,255,0.05);
+            border-radius: 0.25em;
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            line-height: 1.5;
+            max-width: 100%;
+            white-space: pre-wrap;   
+            word-break: break-word;
+        }
+
+        .summary-details small .error {
+            color: var(--danger-color);
+            font-weight: 500;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .summary-details small {
+                background: rgba(77,171,247,0.1);
+            }
+        }
+
+        /* ========== 页脚 ========== */
+        footer {
+            text-align: center;
+            padding: 1.5em;
+            margin-top: 1.8em;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            border-top: 0.06em solid var(--border-color);
+        }
+
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* ========== 🔧 响应式适配（同步修改列宽）========== */
+        @media (max-width: 1024px) {
+            body { padding: 1em; }
+            .date-header { padding: 0.9em 1.1em; font-size: 1rem; }
+            .date-content { padding: 1em 1.1em; }
+            th, td { padding: 0.7em 0.9em; font-size: 0.85rem; }
+            
+            /* ✅ 响应式列宽 - 总结列保持40%+ */
+            td:first-child { width: 20%; min-width: 8em; }
+            td:nth-child(2) { width: 10%; min-width: 3.5em; }
+            td:nth-child(3) { width: 10%; min-width: 4em; }
+            td:nth-child(4), td:nth-child(5) { width: 8%; min-width: 3em; }
+            td:nth-child(6) { width: 44%; min-width: 10em; }
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.5rem; }
+            .nav { flex-direction: column; align-items: flex-start; gap: 0.5em; }
+            .nav a { padding: 0.4em 0.8em; width: 100%; text-align: center; }
+            table { font-size: 0.8rem; min-width: 38em; }
+            th, td { padding: 0.6em 0.75em; }
+            
+            /* ✅ 小屏幕列宽 */
+            td:first-child { width: 18%; min-width: 6em; }
+            td:nth-child(2) { width: 10%; min-width: 3em; font-size: 0.8rem; }
+            td:nth-child(3) { width: 10%; min-width: 4em; }
+            td:nth-child(4), td:nth-child(5) { width: 10%; min-width: 2.8em; }
+            td:nth-child(6) { width: 42%; min-width: 8em; }
+            
+            .zotero-btn { padding: 0.3em 0.7em; font-size: 0.8rem; }
+            .stars { font-size: 0.9rem; }
+            .resource-tag { padding: 0.15em 0.35em; font-size: 0.7em; margin: 0.1em 0.15em 0.1em 0; }
+            .resource-comment summary, .resource-comment small {
+                font-size: 0.75em !important;
+                padding: 0.25em 0.4em !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header { padding: 1.2em 1em; }
+            .intro { font-size: 0.85rem; }
+            .date-header { padding: 0.75em 1em; font-size: 0.95rem; }
+            .date-content { padding: 0.75em 1em; }
+            table { font-size: 0.75rem; min-width: 34em; }
+            th, td { padding: 0.5em 0.6em; }
+            
+            /* ✅ 超小屏幕列宽 */
+            td:first-child { width: 16%; min-width: 5em; }
+            td:nth-child(2) { width: 11%; min-width: 2.8em; }
+            td:nth-child(3) { width: 11%; min-width: 3.5em; }
+            td:nth-child(4), td:nth-child(5) { width: 11%; min-width: 2.5em; }
+            td:nth-child(6) { width: 40%; min-width: 7em; }
+            
+            .zotero-btn { padding: 0.25em 0.6em; font-size: 0.75rem; }
+            .stars { font-size: 0.85rem; }
+            .resource-tag { padding: 0.12em 0.3em; font-size: 0.68em; gap: 0.15em; }
+            .resource-comment summary::before { font-size: 0.55em; }
+            
+            .table-wrapper::after {
+                content: "← 横向滑动查看更多 →";
+                display: block;
+                text-align: center;
+                padding: 0.5em;
+                color: var(--text-secondary);
+                font-size: 0.75rem;
+                background: rgba(0,123,255,0.05);
+                border-radius: 0 0 0.4em 0.4em;
+            }
+        }
+
+        /* ========== 动画效果 ========== */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(0.6em); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .date-section {
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        .date-section:nth-child(2) { animation-delay: 0.05s; }
+        .date-section:nth-child(3) { animation-delay: 0.1s; }
+        .date-section:nth-child(4) { animation-delay: 0.15s; }
+        .date-section:nth-child(5) { animation-delay: 0.2s; }
+
+        /* 平滑滚动 */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📈 arXiv 量化金融领域论文汇总</h1>
+            <div class="intro">
+                <p>📊 共 <strong>{total_papers}</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
+                <p>🔗 点击日期可展开/折叠｜📚 Zotero 按钮需安装 <a href="https://www.zotero.org/download/connectors" target="_blank">Connector 插件</a></p>
+            </div>
+        </header>
+
+        <!-- 日期导航 -->
+        <nav class="nav">
+            <strong>📅 日期导航：</strong>
+            {nav_links}
+        </nav>
+
+        <!-- 论文内容区块 -->
+        <main>
+            {date_sections}
+        </main>
+
+        <footer>
+            <p>
+                数据源：<a href="https://arxiv.org/list/q-fin/recent" target="_blank">arXiv q-fin</a> 
+                | 生成时间：<span id="update-time"></span>
+                | <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">⬆ 返回顶部</a>
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // ========== 折叠/展开功能 ==========
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.date-header').forEach(header => {
+                header.addEventListener('click', function(e) {
+                    if (e.target.tagName === 'A') return;
+                    
+                    const content = this.nextElementSibling;
+                    const arrow = this.querySelector('.arrow');
+                    
+                    if (!content || !arrow) return;
+                    
+                    const isHidden = content.style.display === 'none' || !content.style.display;
+                    
+                    if (isHidden) {
+                        content.style.display = 'block';
+                        void content.offsetWidth;
+                        content.style.opacity = '0';
+                        content.style.transform = 'translateY(-0.5em)';
+                        content.style.transition = 'opacity 0.2s ease, transform 0.2s ease';
+                        
+                        requestAnimationFrame(() => {
+                            content.style.opacity = '1';
+                            content.style.transform = 'translateY(0)';
+                        });
+                        
+                        arrow.textContent = '▼';
+                        arrow.style.transform = 'rotate(0deg)';
+                    } else {
+                        content.style.transition = 'opacity 0.15s ease, transform 0.15s ease';
+                        content.style.opacity = '0';
+                        content.style.transform = 'translateY(-0.5em)';
+                        
+                        setTimeout(() => {
+                            content.style.display = 'none';
+                            content.style.transition = 'none';
+                            content.style.opacity = '1';
+                            content.style.transform = 'translateY(0)';
+                        }, 150);
+                        
+                        arrow.textContent = '▶';
+                        arrow.style.transform = 'rotate(-90deg)';
+                    }
+                });
+                
+                const arrow = header.querySelector('.arrow');
+                if (arrow) {
+                    arrow.style.cursor = 'pointer';
+                    arrow.style.transition = 'transform 0.2s ease, color 0.2s ease';
+                    arrow.addEventListener('mouseenter', function() {
+                        this.style.color = 'rgba(255,255,255,0.9)';
+                    });
+                    arrow.addEventListener('mouseleave', function() {
+                        this.style.color = '';
+                    });
+                }
+            });
+            
+            // ========== 自动展开最新日期 ==========
+            const latestId = '{latest_anchor_id}';
+            if (latestId) {
+                const latestSection = document.getElementById(latestId);
+                if (latestSection) {
+                    const content = latestSection.querySelector('.date-content');
+                    const arrow = latestSection.querySelector('.arrow');
+                    if (content && arrow) {
+                        content.style.display = 'block';
+                        arrow.textContent = '▼';
+                        arrow.style.transform = 'rotate(0deg)';
+                    }
+                }
+            }
+            
+            // ========== 设置更新时间 ==========
+            const updateTime = document.getElementById('update-time');
+            if (updateTime) {
+                updateTime.textContent = new Date().toLocaleString('zh-CN', {
+                    year: 'numeric', month: '2-digit', day: '2-digit',
+                    hour: '2-digit', minute: '2-digit', second: '2-digit'
+                });
+            }
+            
+            // ========== 导航链接平滑滚动 ==========
+            document.querySelectorAll('.nav a[href^="#"]').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const target = document.getElementById(targetId);
+                    
+                    if (target) {
+                        const content = target.querySelector('.date-content');
+                        const arrow = target.querySelector('.arrow');
+                        if (content && arrow && content.style.display === 'none') {
+                            content.style.display = 'block';
+                            arrow.textContent = '▼';
+                            arrow.style.transform = 'rotate(0deg)';
+                        }
+                        
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        target.style.boxShadow = '0 0 0 0.2em rgba(0,123,255,0.4)';
+                        setTimeout(() => {
+                            target.style.boxShadow = '';
+                        }, 2000);
+                    }
+                });
+            });
+            
+            // ========== Zotero 按钮点击反馈 ==========
+            document.querySelectorAll('.zotero-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    this.style.transform = 'scale(0.98)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 100);
+                });
+            });
+            
+            // ========== 资源标签悬停反馈 ==========
+            document.querySelectorAll('.resource-tag').forEach(tag => {
+                tag.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-0.1em)';
+                });
+                tag.addEventListener('mouseleave', function() {
+                    this.style.transform = '';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

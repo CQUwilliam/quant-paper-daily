@@ -1,0 +1,982 @@
+<!-- template.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arXiv 量化金融领域论文汇总</title>
+    <style>
+        /* ========== 全局变量（支持暗色模式）========== */
+        :root {
+            --bg-primary: #f8f9fa;
+            --bg-card: #ffffff;
+            --text-primary: #2c3e50;
+            --text-secondary: #6c757d;
+            --border-color: #e9ecef;
+            --primary-color: #007bff;
+            --primary-hover: #0056b3;
+            --success-color: #28a745;
+            --success-hover: #218838;
+            --warning-color: #ffc107;
+            --danger-color: #dc3545;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+            --transition: all 0.2s ease-in-out;
+            --radius: 0.5em;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-primary: #1a1a2e;
+                --bg-card: #16213e;
+                --text-primary: #e6e6e6;
+                --text-secondary: #a0a0a0;
+                --border-color: #2a2a4a;
+                --primary-color: #4dabf7;
+                --primary-hover: #74c0fc;
+                --success-color: #51cf66;
+                --success-hover: #69db7c;
+                --warning-color: #ffd43b;
+                --danger-color: #ff6b6b;
+                --shadow-sm: 0 1px 2px rgba(0,0,0,0.3);
+                --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.4);
+                --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.5);
+            }
+        }
+
+        /* ========== 基础重置 ========== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 1.2em;
+            transition: var(--transition);
+        }
+
+        .container {
+            max-width: 90em;
+            margin: 0 auto;
+        }
+
+        /* ========== 头部样式 ========== */
+        header {
+            text-align: center;
+            padding: 1.8em 1.2em;
+            margin-bottom: 1.5em;
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            border-bottom: 0.2em solid var(--primary-color);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.7em;
+            background: linear-gradient(135deg, var(--primary-color), #6c5ce7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .intro {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            max-width: 50em;
+            margin: 0 auto;
+        }
+
+        .intro p { margin: 0.25em 0; }
+        .intro a { color: var(--primary-color); text-decoration: none; }
+        .intro a:hover { text-decoration: underline; }
+
+        /* ========== 导航栏 ========== */
+        .nav {
+            background: var(--bg-card);
+            padding: 0.7em 1.2em;
+            border-radius: var(--radius);
+            margin: 1.2em 0 1.5em;
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5em 1em;
+        }
+
+        .nav strong {
+            color: var(--text-primary);
+            font-weight: 600;
+            margin-right: 0.3em;
+        }
+
+        .nav a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.25em 0.6em;
+            border-radius: 0.25em;
+            transition: var(--transition);
+            font-size: 0.9rem;
+        }
+
+        .nav a:hover {
+            background: rgba(0,123,255,0.1);
+            color: var(--primary-hover);
+            transform: translateY(-0.1em);
+        }
+
+        /* ========== 日期区块卡片 ========== */
+        .date-section {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            margin: 1.2em 0;
+            overflow: hidden;
+            transition: var(--transition);
+            border: 0.06em solid var(--border-color);
+        }
+
+        .date-section:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-0.12em);
+        }
+
+        .date-header {
+            padding: 1em 1.5em;
+            background: linear-gradient(135deg, var(--primary-color), #0056b3);
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+            transition: var(--transition);
+        }
+
+        .date-header:hover {
+            background: linear-gradient(135deg, var(--primary-hover), #004494);
+        }
+
+        .date-header .arrow {
+            font-size: 1em;
+            transition: transform 0.3s ease;
+            font-weight: bold;
+            margin-left: 0.6em;
+        }
+
+        .date-content {
+            padding: 1.2em 1.5em;
+        }
+
+        /* ========== 表格样式（自适应）========== */
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 0.6em 0;
+            border-radius: 0.4em;
+            border: 0.06em solid var(--border-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+            table-layout: fixed; /* ✅ 改用 fixed 布局，精确控制列宽 */
+        }
+
+        th {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            color: var(--text-primary);
+            font-weight: 600;
+            padding: 0.8em 1em;
+            text-align: left;
+            border-bottom: 0.12em solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            white-space: nowrap;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            th {
+                background: linear-gradient(135deg, #2a2a4a, #1e1e3a);
+            }
+        }
+
+        td {
+            padding: 0.8em 1em;
+            border-bottom: 0.06em solid var(--border-color);
+            vertical-align: top;
+        }
+
+        tr:hover {
+            background: rgba(0,123,255,0.04);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            tr:hover {
+                background: rgba(77,171,247,0.08);
+            }
+        }
+
+        /* ========== 🔧 列宽分配（修改版：总结列40% + Title自动换行）========== */
+        
+        /* 标题列 - 22%，允许自动换行 */
+        td:first-child {
+            width: 22%;
+            min-width: 10em;
+            font-weight: 500;
+        }
+
+        td:first-child strong {
+            display: block;              /* ✅ 改为 block 支持换行 */
+            white-space: normal;         /* ✅ 允许正常换行 */
+            word-break: break-word;      /* ✅ 长单词断行 */
+            overflow-wrap: break-word;   /* ✅ 兼容写法 */
+            line-height: 1.4;
+        }
+
+        /* 作者列 - 9% */
+        td:nth-child(2) {
+            width: 9%;
+            min-width: 4.5em;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            white-space: nowrap;
+        }
+
+        /* 资源列 - 9% */
+        td:nth-child(3) {
+            width: 9%;
+            min-width: 5em;
+            font-size: 0.75rem;
+            line-height: 1.3;
+        }
+
+        /* 相关性列 - 8% */
+        td:nth-child(4) {
+            width: 8%;
+            min-width: 4em;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        /* Zotero 列 - 12% */
+        /* td:nth-child(5) {
+            width: 12%;
+            min-width: 4.5em;
+            text-align: center;
+            white-space: nowrap;
+        } */
+
+        /* ✅ LLM 总结列 - 40%（加宽） */
+        td:nth-child(5) {
+            width: 40%;
+            min-width: 12em;
+            font-size: 0.85rem;
+        }
+
+        /* ✅ 总结列内部优化 */
+        td:nth-child(5) .summary-details small {
+            background: rgba(0,123,255,0.05);
+            padding: 0.5em;
+            border-radius: 0.25em;
+            line-height: 1.6;
+            text-align: justify;
+            display: block;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            td:nth-child(6) .summary-details small {
+                background: rgba(77,171,247,0.1);
+            }
+        }
+
+        /* ========== 资源标签（紧凑版）========== */
+        .resource-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.2em;
+
+            padding: 0.35em 0.7em;   /* 🔥 放大 */
+            margin: 0.15em 0.25em 0.15em 0;
+            border-radius: 0.25em;
+            font-size: 0.85em;
+            
+            text-decoration: none;
+            transition: var(--transition);
+            white-space: nowrap;
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .resource-tag.alphaxiv {
+            background-color: #f5f3ff;
+            color: #4b0082;
+        }
+
+        .resource-tag.pdf {
+            background: rgba(0,123,255,0.1);
+            color: var(--primary-color);
+        }
+        .resource-tag.pdf:hover {
+            background: rgba(0,123,255,0.2);
+        }
+
+        .resource-tag.code {
+            background: rgba(40,167,69,0.1);
+            color: var(--success-color);
+        }
+        .resource-tag.code:hover {
+            background: rgba(40,167,69,0.2);
+        }
+
+        /* ========== 备注折叠（紧凑版）========== */
+        .resource-comment details {
+            display: inline-block;
+            margin: 0.1em 0;
+            max-width: 100%;
+        }
+
+        .resource-comment summary {
+            cursor: pointer;
+            padding: 0.2em 0.4em;
+            background: rgba(108,117,125,0.1);
+            color: var(--text-secondary);
+            border-radius: 0.2em;
+            font-size: 0.75em;
+            list-style: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.2em;
+            transition: var(--transition);
+            white-space: nowrap;
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .resource-comment summary:hover {
+            background: rgba(108,117,125,0.2);
+        }
+
+        .resource-comment summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .resource-comment summary::before {
+            content: "▶";
+            font-size: 0.6em;
+            transition: transform 0.2s;
+            display: inline-block;
+        }
+
+        .resource-comment details[open] summary::before {
+            transform: rotate(90deg);
+        }
+
+        .resource-comment small {
+            display: block;
+            margin-top: 0.3em;
+            padding: 0.4em 0.5em;
+            background: rgba(0,123,255,0.05);
+            border-radius: 0.2em;
+            color: var(--text-secondary);
+            font-size: 0.75em;
+            line-height: 1.3;
+            max-width: 100%;
+            word-break: break-word;
+            overflow-wrap: break-word;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .resource-comment small {
+                background: rgba(77,171,247,0.1);
+            }
+        }
+
+        /* ========== 链接通用样式 ========== */
+        td a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25em;
+        }
+
+        td a:hover {
+            color: var(--primary-hover);
+            text-decoration: underline;
+        }
+
+        td a[target="_blank"]::after {
+            content: "↗";
+            font-size: 0.65em;
+            opacity: 0.7;
+            margin-left: 0.1em;
+        }
+
+        /* ========== Zotero 按钮 ========== */
+        .zotero-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.3em;
+            padding: 0.4em 0.9em;
+            background: linear-gradient(135deg, var(--success-color), #20c997);
+            color: white !important;
+            text-decoration: none !important;
+            border-radius: 0.4em;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 0.12em 0.25em rgba(40,167,69,0.3);
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .zotero-btn:hover {
+            background: linear-gradient(135deg, var(--success-hover), #1ea882);
+            transform: translateY(-0.12em);
+            box-shadow: 0 0.25em 0.5em rgba(40,167,69,0.4);
+        }
+
+        .zotero-btn:active {
+            transform: translateY(0);
+        }
+
+        /* ========== 星星评分 ========== */
+        .stars {
+            color: var(--warning-color);
+            font-size: 1rem;
+            letter-spacing: 0.06em;
+            text-shadow: 0 0.06em 0.12em rgba(0,0,0,0.1);
+            white-space: nowrap;
+        }
+
+        /* ========== LLM 总结折叠 ========== */
+        .summary-details {
+            font-size: 0.85rem;
+        }
+
+        .summary-details summary {
+            cursor: pointer;
+            color: var(--primary-color);
+            font-weight: 500;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 0.25em;
+        }
+
+        .summary-details summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .summary-details summary::before {
+            content: "📋";
+            font-size: 0.9rem;
+        }
+
+        .summary-details small {
+            display: block;
+            margin-top: 0.4em;
+            padding: 0.6em;
+            background: rgba(0,123,255,0.05);
+            border-radius: 0.25em;
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            line-height: 1.5;
+            max-width: 100%;
+            white-space: pre-wrap;   
+            word-break: break-word;
+        }
+
+        .summary-details small .error {
+            color: var(--danger-color);
+            font-weight: 500;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .summary-details small {
+                background: rgba(77,171,247,0.1);
+            }
+        }
+
+        /* ========== 页脚 ========== */
+        footer {
+            text-align: center;
+            padding: 1.5em;
+            margin-top: 1.8em;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            border-top: 0.06em solid var(--border-color);
+        }
+
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* ========== 🔧 响应式适配（同步修改列宽）========== */
+        @media (max-width: 1024px) {
+            body { padding: 1em; }
+            .date-header { padding: 0.9em 1.1em; font-size: 1rem; }
+            .date-content { padding: 1em 1.1em; }
+            th, td { padding: 0.7em 0.9em; font-size: 0.85rem; }
+            
+            /* ✅ 响应式列宽 - 总结列保持40%+ */
+            td:first-child { width: 20%; min-width: 8em; }
+            td:nth-child(2) { width: 10%; min-width: 3.5em; }
+            td:nth-child(3) { width: 10%; min-width: 4em; }
+            td:nth-child(4), td:nth-child(5) { width: 8%; min-width: 3em; }
+            td:nth-child(6) { width: 44%; min-width: 10em; }
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.5rem; }
+            .nav { flex-direction: column; align-items: flex-start; gap: 0.5em; }
+            .nav a { padding: 0.4em 0.8em; width: 100%; text-align: center; }
+            table { font-size: 0.8rem; min-width: 38em; }
+            th, td { padding: 0.6em 0.75em; }
+            
+            /* ✅ 小屏幕列宽 */
+            td:first-child { width: 18%; min-width: 6em; }
+            td:nth-child(2) { width: 10%; min-width: 3em; font-size: 0.8rem; }
+            td:nth-child(3) { width: 10%; min-width: 4em; }
+            td:nth-child(4), td:nth-child(5) { width: 10%; min-width: 2.8em; }
+            td:nth-child(6) { width: 42%; min-width: 8em; }
+            
+            .zotero-btn { padding: 0.3em 0.7em; font-size: 0.8rem; }
+            .stars { font-size: 0.9rem; }
+            .resource-tag { padding: 0.15em 0.35em; font-size: 0.7em; margin: 0.1em 0.15em 0.1em 0; }
+            .resource-comment summary, .resource-comment small {
+                font-size: 0.75em !important;
+                padding: 0.25em 0.4em !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header { padding: 1.2em 1em; }
+            .intro { font-size: 0.85rem; }
+            .date-header { padding: 0.75em 1em; font-size: 0.95rem; }
+            .date-content { padding: 0.75em 1em; }
+            table { font-size: 0.75rem; min-width: 34em; }
+            th, td { padding: 0.5em 0.6em; }
+            
+            /* ✅ 超小屏幕列宽 */
+            td:first-child { width: 16%; min-width: 5em; }
+            td:nth-child(2) { width: 11%; min-width: 2.8em; }
+            td:nth-child(3) { width: 11%; min-width: 3.5em; }
+            td:nth-child(4), td:nth-child(5) { width: 11%; min-width: 2.5em; }
+            td:nth-child(6) { width: 40%; min-width: 7em; }
+            
+            .zotero-btn { padding: 0.25em 0.6em; font-size: 0.75rem; }
+            .stars { font-size: 0.85rem; }
+            .resource-tag { padding: 0.12em 0.3em; font-size: 0.68em; gap: 0.15em; }
+            .resource-comment summary::before { font-size: 0.55em; }
+            
+            .table-wrapper::after {
+                content: "← 横向滑动查看更多 →";
+                display: block;
+                text-align: center;
+                padding: 0.5em;
+                color: var(--text-secondary);
+                font-size: 0.75rem;
+                background: rgba(0,123,255,0.05);
+                border-radius: 0 0 0.4em 0.4em;
+            }
+        }
+
+        /* ========== 动画效果 ========== */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(0.6em); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .date-section {
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        .date-section:nth-child(2) { animation-delay: 0.05s; }
+        .date-section:nth-child(3) { animation-delay: 0.1s; }
+        .date-section:nth-child(4) { animation-delay: 0.15s; }
+        .date-section:nth-child(5) { animation-delay: 0.2s; }
+
+        /* 平滑滚动 */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📈 arXiv 量化金融领域论文汇总</h1>
+            <div class="intro">
+                <p>📊 共 <strong>7</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
+                <p>🔗 点击日期可展开/折叠｜📚 Zotero 按钮需安装 <a href="https://www.zotero.org/download/connectors" target="_blank">Connector 插件</a></p>
+            </div>
+        </header>
+
+        <!-- 日期导航 -->
+        <nav class="nav">
+            <strong>📅 日期导航：</strong>
+            <a href="#date-20260408">2026-04-08（7篇）</a>
+        </nav>
+
+        <!-- 论文内容区块 -->
+        <main>
+            <div class="date-section" id="date-20260408">
+    <div class="date-header">
+        <span>2026-04-08（7篇论文）</span>
+        <span class="arrow">▼</span>
+    </div>
+    <div class="date-content" style="display: block;">
+        <table>
+        <!-- 添加 colgroup 明确指定每列宽度 -->
+        <colgroup>
+            <col style="width: 25%">  <!-- Title -->
+            <col style="width: 15%">   <!-- Authors -->
+            <col style="width: 10%">   <!-- Resources -->
+            <col style="width: 10%">   <!-- Relevance -->
+            <col style="width: 40%">  <!-- Summary -->
+        </colgroup>
+        <thead>
+            <tr>
+                <th>标题</th>
+                <th>作者</th>
+                <th>资源</th>
+                <th>相关性</th>
+                <th>总结</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】    - 财务报表审计在保护投资者、贷款人和其他利益相关者的可靠性方面起着核心作用，而现有的审计方法在实际应用中往往无法提供充分的结论基础。    - 鉴于审计资源的有限性，需要一种统计控制的框架来指导延续审计过程，以确保在行为与决策中的准确性，从而增强审计的可靠性和有效性。  2. 【前人的工作如何解决该问题，存在哪些空白】    - 前人的研究强调了...">Sequential Audit Sampling with Statistical Guarantees</span></td>
+        <td class="author-cell">Masahiro Kato</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.06116" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.06116" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】
+   - 财务报表审计在保护投资者、贷款人和其他利益相关者的可靠性方面起着核心作用，而现有的审计方法在实际应用中往往无法提供充分的结论基础。
+   - 鉴于审计资源的有限性，需要一种统计控制的框架来指导延续审计过程，以确保在行为与决策中的准确性，从而增强审计的可靠性和有效性。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】
+   - 前人的研究强调了审计过程的迭代性和顺序性，但没有提供关于有限总体的停止边界或事前错误保证的具体模型。
+   - 尽管国际标准承认在样本结果不充分时可以扩展审计程序，但这一过程的统计设计并未得到充分探讨和细化。
+
+3. 【提出了什么创新的方法】
+   - 该研究将审计采样形式化为有限总体的顺序假设检验问题，并指定了关于可容忍偏差率的零假设和备择假设。
+   - 提供了事前控制决策错误概率的具体方法，以及通过蒙特卡洛模拟校准边界的实用实施方案。
+   - 该框架允许将审计方法推广到单边、两阶段和截断设计等多种形式，使其具有更广泛的应用和适应性。
+
+4. 【文章缺点】
+   - 该研究主要集中于特定的审计情境，对其他可能的审计情境（例如货币单位采样）缺乏全面讨论。
+   - 尽管方法具有推广性，但在实际实施中可能受到审计环境变化与复杂性的影响，需要进行进一步实证研究验证其普适性。
+
+5. 【类似工作】
+   - Ashton和Ashton（1988）的研究探讨了审计证据中的顺序效应和信念修正。
+   - Knechel和Messier（1990）研究了审计师如何在收集证据的基础上作出是否停止的决策模型。
+
+6. 【相关性评分】
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】    - 该论文旨在建立一个严格的生成框架，以合成前瞻性的、 càdlàg 随机轨迹，能够自然而然地融入预期的结构性变化、状态转变和波动模式的演变。    - 目前在签名基础上的过滤技术虽然能够递归估计期望路径动态，但将这些抽象的无限维矩量转化为具体的合成实现仍然是一个巨大的挑战。  2. 【前人的工作如何解决该问题，存在哪些空白】    - 前人的工作...">Generative Path-Law Jump-Diffusion: Sequential MMD-Gradient Flows and Generalisation Bounds in Marcus-Signature RKHS</span></td>
+        <td class="author-cell">Daniel Bloch</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.05008" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.05008" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】
+   - 该论文旨在建立一个严格的生成框架，以合成前瞻性的、 càdlàg 随机轨迹，能够自然而然地融入预期的结构性变化、状态转变和波动模式的演变。
+   - 目前在签名基础上的过滤技术虽然能够递归估计期望路径动态，但将这些抽象的无限维矩量转化为具体的合成实现仍然是一个巨大的挑战。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】
+   - 前人的工作主要集中在利用签名进行路径动态的递归估计，但在处理具有离散不连续性的受限 Skorokhod 流形时，缺乏有效的方法来进行合成。
+   - 尽管已有研究探讨了高频非平稳随机过程的生成建模，但传统架构（如 TimeGAN 和 VAEs）在保持路径几何完整性方面存在困难，无法捕捉高阶依赖关系。
+
+3. 【提出了什么创新的方法】
+   - 提出了“预期神经跳跃扩散（ANJD）”流，这是一种生成机制，能够有效反转时间扩展的 Marcus 感觉签名。
+   - 引入了“预期方差归一化签名几何（AVNSG）”，作为动态谱白化的精度操作符，以确保在波动的状态转变和离散的随机冲击期间的收敛性。
+   - 通过将生成任务视为在 Skorokhod 空间内的序列预期传输问题，提出了一种新的路径合成方法。
+
+4. 【文章缺点】
+   - 论文中的理论分析可能较为复杂，可能导致实际应用中的理解和实现难度增加。
+   - 生成模型的计算效率虽然得到提高，但在处理极端市场条件下的表现仍需进一步验证。
+
+5. 【类似工作】
+   - TimeGAN: 一种用于时间序列生成的生成对抗网络。
+   - Variational Autoencoders (VAEs): 一种用于生成模型的变分自编码器，常用于处理复杂数据分布。
+
+6. 【相关性评分】
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. **论文的motivation是什么**      - 研究旨在解决金融市场中期权定价的准确性问题，超越传统Black-Scholes模型的局限性。      - Black-Scholes模型假设波动率恒定且无突发价格变化，这在实际市场中是不现实的，特别是在金融危机期间价格的剧烈波动显示了这一模型的不足。    2. **前人的工作如何解决该问题，存在哪些空白**      - 前人的工作...">Beyond Black-Scholes: A Computational Framework for Option Pricing Using Heston, GARCH, and Jump Diffusion Models</span></td>
+        <td class="author-cell">Karmanpartap Singh Sidhu</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.06068" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.06068" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. **论文的motivation是什么**  
+   - 研究旨在解决金融市场中期权定价的准确性问题，超越传统Black-Scholes模型的局限性。  
+   - Black-Scholes模型假设波动率恒定且无突发价格变化，这在实际市场中是不现实的，特别是在金融危机期间价格的剧烈波动显示了这一模型的不足。  
+
+2. **前人的工作如何解决该问题，存在哪些空白**  
+   - 前人的工作，如Heston模型和GARCH模型，已被提出以解决波动率变化的问题，但其假设和应用仍有限，例如Heston模型主要集中在随机波动性，而GARCH模型在复杂市场情况下表现不足。  
+   - 尽管已有的模型能够在一定程度上改进定价，但仍缺乏对突发市场事件（如价格跳跃）的综合考虑，这使得现有方法在处理特殊情况下的期权定价时存在空白。  
+
+3. **提出了什么创新的方法**  
+   - 研究中采用Monte Carlo模拟结合Heston模型、GARCH模型和Merton跳跃扩散模型，以改进期权定价的准确性。  
+   - 通过将Merton跳跃扩散模型与Monte Carlo方法结合，研究预测了资产价格的突发波动，提供了更灵活的定价框架。  
+   - 引入机器学习优化器为Heston模型寻找参数，从而提高其适应性和准确性。  
+
+4. **文章缺点**  
+   - 尽管Heston模型在动态波动性方面表现良好，但由于历史数据不足，其在长期到期的期权定价时可能存在偏差。  
+   - Merton跳跃扩散模型在对不同市场条件的适应能力方面可能泛化不足，尤其在复杂且多变的市场环境中可能表现不佳。  
+
+5. **类似工作**  
+   - &quot;A new approach to option pricing using neural networks&quot; - 本文探讨了神经网络在复杂期权定价中的应用，提供了一种创新的方法。  
+   - &quot;Improving option pricing with stochastic volatility models&quot; - 该研究考察了多种随机波动性模型在期权定价上的有效性，与</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】    - 本文旨在解决经典尾依赖系数（TDC）无法恰当地捕捉非交换特征的限制，因为其主要集中在基础copula的对角线上。    - 论文中提出的一种路径基础的最大尾依赖系数框架旨在提供一种更具灵活性和适用性的度量，以捕捉所有可能路径中最明显的依赖特征，从而增强尾依赖分析的理论基础。  2. 【前人的工作如何解决该问题，存在哪些空白】    - Furm...">Tail copula representation of path-based maximal tail dependence</span></td>
+        <td class="author-cell">Takaaki Koike</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.05985" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.05985" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】
+   - 本文旨在解决经典尾依赖系数（TDC）无法恰当地捕捉非交换特征的限制，因为其主要集中在基础copula的对角线上。
+   - 论文中提出的一种路径基础的最大尾依赖系数框架旨在提供一种更具灵活性和适用性的度量，以捕捉所有可能路径中最明显的依赖特征，从而增强尾依赖分析的理论基础。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】
+   - Furman等（2015）提出了一种路径基础分析方法来捕捉偏离对角线的二元尾依赖，但在许多非交换的copula中，该方法的理论基础仍然有限，特别是在存在和可解析性方面。
+   - 尽管存在一些研究提出了计算尾依赖的不同指标，如尾copula和尾依赖函数，但文献中鲜少提供关于路径基础的最大TDC的封闭形式表达，导致该领域的理论发展受限。
+
+3. 【提出了什么创新的方法】
+   - 本文证明了在基础copula存在非退化尾copula时，最大依赖路径及其路径基础的最大TDC的存在性，并且提供了明确的数学表述。
+   - 提供了关于最大TDC的一维优化问题的第一阶渐近性质，该性质涉及尾copula，显著提高了路径基础尾分析的计算可行性。
+   - 通过特定的案例（如双变量tt-copula和生存Marshal–Olkin copula）描述了最大依赖路径的渐近行为，展示了理论结果的实用性。
+
+4. 【文章缺点】
+   - 尽管论文在理论上有所创新，但对于某些具体类型的copula（例如非交换copula）仍存在分析上的复杂性及其推导的困难，影响了结论的广泛适用性。
+   - 文章未能对路径基础的最大尾依赖系数与传统TDC的联系进行更为深入的讨论与比较，可能导致读者对其实际应用场景的理解不够全面。
+
+5. 【类似工作】
+   - Furman, E.,</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】    - 虽然全球吸烟率有所下降，但香烟依然是导致重大公共健康问题的重要因素，特别是在欧洲，每年有约850,000人因吸烟而死亡。    - 鉴于香烟税收是减少烟草消费的关键政策工具，评估税收政策对吸烟行为的实际影响变得尤为重要，特别是在新型烟草产品不断涌现的背景下。  2. 【前人的工作如何解决该问题，存在哪些空白】    - 以往的研究大多集中在美国...">Effect of Cigarette Price and Tax Increases on Smoking in Europe: A Difference-in-Differences Study with Double Machine Learning</span></td>
+        <td class="author-cell">Andreas Stoller</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.05841" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.05841" target="_blank" rel="noopener">🧠 AlphaXiv</a><br><details class="resource-comment"><summary>📝 备注</summary><small>working paper</small></details></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】
+   - 虽然全球吸烟率有所下降，但香烟依然是导致重大公共健康问题的重要因素，特别是在欧洲，每年有约850,000人因吸烟而死亡。
+   - 鉴于香烟税收是减少烟草消费的关键政策工具，评估税收政策对吸烟行为的实际影响变得尤为重要，特别是在新型烟草产品不断涌现的背景下。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】
+   - 以往的研究大多集中在美国且主要关注早期的吸烟行为，没有充分考虑到电子烟等新型产品的兴起对传统香烟的替代效应。
+   - 当前文献普遍采用传统的双重差分（DiD）模型来估计香烟价格和税收的影响，这些方法往往依赖于强强的函数形式假设，可能导致结果的偏倚，尤其是在不同价格或税率水平下。
+
+3. 【提出了什么创新的方法】
+   - 采用双重机器学习（DML）估计器，以更灵活地控制混杂因素，相比常规的参数方法具有更大的优势。
+   - 引入了利用DML的双重差分（DiDDML）估计器，特别适用于频繁横向数据（repeated cross-sections）的情况。
+   - 通过使用二元指标而非将价格和税收视为连续变量来比较治疗组与对照组，从而准确捕捉不同价格和税率对吸烟行为的影响。
+
+4. 【文章缺点】
+   - 本研究未能在统计上显著显示香烟价格上涨的影响，可能是价格变化中的内生性导致的向上偏倚。
+   - 文章中关于治疗定义（二元与连续）的敏感性分析虽然有探讨，但未能提供更深入的实证验证。
+
+5. 【类似工作】
+   - 呆尔和阿尔的（2020）研究，主要集中在美国关于香烟税收对吸烟率影响的实证分析。
+   - 另外一项由基尔和杜克（2021）进行的研究，探讨了电子烟对传统香</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1.【论文的motivation是什么】    - 该论文旨在重新审视公司债券价格的决定因素，尤其是当前文献中关于公司债券定价因素的主张是否有效。    - 该研究关注已有文献（如BBW）的核心发现，并探讨不同风险因素对公司债券市场的确实定价能力，以推动该领域的进一步研究。  2.【前人的工作如何解决该问题，存在哪些空白】    - 前人在研究公司债券定价时，提出了多种风险因素（如下行风险、信用风...">Priced risk in corporate bonds</span></td>
+        <td class="author-cell">Alexander Dickerson</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.05699" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.05699" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1.【论文的motivation是什么】
+   - 该论文旨在重新审视公司债券价格的决定因素，尤其是当前文献中关于公司债券定价因素的主张是否有效。
+   - 该研究关注已有文献（如BBW）的核心发现，并探讨不同风险因素对公司债券市场的确实定价能力，以推动该领域的进一步研究。
+
+2.【前人的工作如何解决该问题，存在哪些空白】
+   - 前人在研究公司债券定价时，提出了多种风险因素（如下行风险、信用风险和流动性风险），并认为这些因素为公司债券定价提供了额外的解释能力。
+   - 然而，现有研究在风险因素的构造上存在缺陷，具体来说，BBW所提的因素存在前后滞后错误，且未能有效证明这些因素在公司债券市场中的重要性。
+
+3.【提出了什么创新的方法】
+   - 本文采用了广泛使用的评估指标和全面的统计工具，系统地分析了不同债务数据库，以验证新的公司债券定价因素的有效性。
+   - 通过应用鲁棒的时间序列和横截面回归技术，重新评估了现有风险因素的定价能力，并强调了模型误设和不确定性在资产定价中的重要性。
+   - 论文中的实证分析方法强化了对债券市场因子模型的理解，例如通过广义最小二乘法（GLS）分析价格能力的优越性。
+
+4.【文章缺点】
+   - 文章虽然指出了模型的误设和不确定性，但未能提供明确的理论基础来解释其发现，导致理论与实证研究之间存在断层。
+   - 论文的主要结论可能依赖于其所处理数据的限度和特定时间范围，可能未完全代表整个市场的情况。
+
+5.【类似工作】
+   - Bai, Bali, and Wen (2019) 的工作，探讨了多个风险因子对公司债券定价的影响。
+   - Fama and French (1993) 的三因子模型，作为评估股票市场新因素的基准，与本论文中对公司债券因素的分析形成对比。
+
+6.【相关</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span>Generative Path-Law Jump-Diffusion: Sequential MMD-Gradient Flows and Generalisation Bounds in Marcus-Signature RKHS</span></td>
+        <td class="author-cell">Daniel Bloch</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.05008" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.05008" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>大模型总结失败<br><small style="color:#dc3545">⚠️ API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;免费API限制模型输入token小于4096，如有更多需求，请访问 https://api.chatanywhere.tech/#/shop 购买付费API。The number of prompt tokens for free accounts is limited to 4096. If you have additional requirements, please visit https://api.chatanywhere.tech/#/shop to purchase a premium key.(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：836739524】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}</small></small></details></td>
+    </tr>
+        </tbody></table>
+    </div>
+</div>
+        </main>
+
+        <footer>
+            <p>
+                数据源：<a href="https://arxiv.org/list/q-fin/recent" target="_blank">arXiv q-fin</a> 
+                | 生成时间：<span id="update-time"></span>
+                | <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">⬆ 返回顶部</a>
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // ========== 折叠/展开功能 ==========
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.date-header').forEach(header => {
+                header.addEventListener('click', function(e) {
+                    if (e.target.tagName === 'A') return;
+                    
+                    const content = this.nextElementSibling;
+                    const arrow = this.querySelector('.arrow');
+                    
+                    if (!content || !arrow) return;
+                    
+                    const isHidden = content.style.display === 'none' || !content.style.display;
+                    
+                    if (isHidden) {
+                        content.style.display = 'block';
+                        void content.offsetWidth;
+                        content.style.opacity = '0';
+                        content.style.transform = 'translateY(-0.5em)';
+                        content.style.transition = 'opacity 0.2s ease, transform 0.2s ease';
+                        
+                        requestAnimationFrame(() => {
+                            content.style.opacity = '1';
+                            content.style.transform = 'translateY(0)';
+                        });
+                        
+                        arrow.textContent = '▼';
+                        arrow.style.transform = 'rotate(0deg)';
+                    } else {
+                        content.style.transition = 'opacity 0.15s ease, transform 0.15s ease';
+                        content.style.opacity = '0';
+                        content.style.transform = 'translateY(-0.5em)';
+                        
+                        setTimeout(() => {
+                            content.style.display = 'none';
+                            content.style.transition = 'none';
+                            content.style.opacity = '1';
+                            content.style.transform = 'translateY(0)';
+                        }, 150);
+                        
+                        arrow.textContent = '▶';
+                        arrow.style.transform = 'rotate(-90deg)';
+                    }
+                });
+                
+                const arrow = header.querySelector('.arrow');
+                if (arrow) {
+                    arrow.style.cursor = 'pointer';
+                    arrow.style.transition = 'transform 0.2s ease, color 0.2s ease';
+                    arrow.addEventListener('mouseenter', function() {
+                        this.style.color = 'rgba(255,255,255,0.9)';
+                    });
+                    arrow.addEventListener('mouseleave', function() {
+                        this.style.color = '';
+                    });
+                }
+            });
+            
+            // ========== 自动展开最新日期 ==========
+            const latestId = 'date-20260408';
+            if (latestId) {
+                const latestSection = document.getElementById(latestId);
+                if (latestSection) {
+                    const content = latestSection.querySelector('.date-content');
+                    const arrow = latestSection.querySelector('.arrow');
+                    if (content && arrow) {
+                        content.style.display = 'block';
+                        arrow.textContent = '▼';
+                        arrow.style.transform = 'rotate(0deg)';
+                    }
+                }
+            }
+            
+            // ========== 设置更新时间 ==========
+            const updateTime = document.getElementById('update-time');
+            if (updateTime) {
+                updateTime.textContent = new Date().toLocaleString('zh-CN', {
+                    year: 'numeric', month: '2-digit', day: '2-digit',
+                    hour: '2-digit', minute: '2-digit', second: '2-digit'
+                });
+            }
+            
+            // ========== 导航链接平滑滚动 ==========
+            document.querySelectorAll('.nav a[href^="#"]').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const target = document.getElementById(targetId);
+                    
+                    if (target) {
+                        const content = target.querySelector('.date-content');
+                        const arrow = target.querySelector('.arrow');
+                        if (content && arrow && content.style.display === 'none') {
+                            content.style.display = 'block';
+                            arrow.textContent = '▼';
+                            arrow.style.transform = 'rotate(0deg)';
+                        }
+                        
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        target.style.boxShadow = '0 0 0 0.2em rgba(0,123,255,0.4)';
+                        setTimeout(() => {
+                            target.style.boxShadow = '';
+                        }, 2000);
+                    }
+                });
+            });
+            
+            // ========== Zotero 按钮点击反馈 ==========
+            document.querySelectorAll('.zotero-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    this.style.transform = 'scale(0.98)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 100);
+                });
+            });
+            
+            // ========== 资源标签悬停反馈 ==========
+            document.querySelectorAll('.resource-tag').forEach(tag => {
+                tag.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-0.1em)';
+                });
+                tag.addEventListener('mouseleave', function() {
+                    this.style.transform = '';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
