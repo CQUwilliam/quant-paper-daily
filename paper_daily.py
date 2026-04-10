@@ -336,60 +336,63 @@ def get_recent_dates(limit: int = 3) -> List[str]:
     return dates
 
 
-def escape_md_text(text: str) -> str:
-    """转义 Markdown 文本中的常见特殊字符。"""
+def escape_html_text(text: str) -> str:
+    """转义 HTML 特殊字符。"""
     if not text:
         return ""
     return (
         str(text)
-        .replace("\\", "\\\\")
-        .replace("[", "\\[")
-        .replace("]", "\\]")
-        .replace("|", "\\|")
-        .replace("\n", " ")
+        .replace("&", "&amp;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+        .replace('"', "&quot;")
+        .replace("'", "&#39;")
     )
 
 
-def build_md_code_links(code: str) -> str:
-    """生成 Markdown 代码链接。"""
+def build_html_code_links(code: str) -> str:
+    """生成 HTML 代码链接。"""
     if not code:
         return "-"
     code_list = [url.strip() for url in code.split(",") if url.strip()]
     if not code_list:
         return "-"
-    return " | ".join([f"[code{i+1}]({url})" for i, url in enumerate(code_list)])
+    return " | ".join(
+        [f'<a href="{escape_html_text(url)}">code{i+1}</a>' for i, url in enumerate(code_list)]
+    )
 
 
-def build_md_summary_block(paper: Dict, paper_id: str, score_html: str, pdf_html: str, code_html: str) -> str:
-    """生成适合 GitHub README 展示的全宽总结块。"""
-    title = escape_md_text(paper.get("title", "未知标题"))
-    first_author = escape_md_text(get_first_author(paper.get("authors", "未知作者")))
+def build_html_summary_row(paper: Dict, score_html: str, pdf_html: str, code_html: str) -> str:
+    """生成表格中的全宽总结行。"""
     comment = paper.get("comment", "").strip()
     llm_summary = paper.get("llm_summary", "无").strip() or "无"
     llm_error = paper.get("llm_error", "").strip()
 
     meta_lines = [
-        f"**作者**：{first_author}",
-        f"**相关性**：{score_html}",
-        f"**PDF**：{pdf_html}",
-        f"**代码**：{code_html}",
+        f"<strong>相关性</strong>：{score_html}",
+        f"<strong>PDF</strong>：{pdf_html}",
+        f"<strong>代码</strong>：{code_html}",
     ]
     if comment:
-        meta_lines.append(f"**备注**：{escape_md_text(comment)}")
+        meta_lines.append(f"<strong>备注</strong>：{escape_html_text(comment)}")
     if llm_error:
-        meta_lines.append(f"**错误**：{escape_md_text(llm_error)}")
+        meta_lines.append(f"<strong>错误</strong>：{escape_html_text(llm_error)}")
 
     return (
-        f"<a id='{paper_id}'></a>\n"
-        f"<details>\n"
-        f"<summary><strong>{title}</strong></summary>\n\n"
-        + "  \n".join(meta_lines)
-        + f"\n\n{llm_summary}\n\n</details>"
+        "<tr>"
+        "<td colspan=\"5\">"
+        "<details>"
+        "<summary><strong>总结</strong></summary>\n\n"
+        + "<br>".join(meta_lines)
+        + f"<br><br>{llm_summary.replace(chr(10), '<br>')}"
+        + "\n\n</details>"
+        "</td>"
+        "</tr>"
     )
 
 
 def json_to_markdown(json_path: str, md_path: str) -> None:
-    """生成适合 GitHub README 展示的 Markdown，避免长总结挤在表格列中。"""
+    """生成适合 GitHub README 展示的 HTML 表格，长总结显示在每篇论文下方。"""
     try:
         with open(json_path, "r", encoding="utf-8") as f:
             date_papers = json.load(f)
@@ -428,9 +431,11 @@ def json_to_markdown(json_path: str, md_path: str) -> None:
         nav_links.append(f"- [{date_display}](#{anchor_id})")
     md_nav = "## 日期导航\n" + "\n".join(nav_links) + "\n\n"
     
-    # 表格表头：README 中只保留摘要索引，详细总结单独占整行宽度展示
-    md_table_header = """| Title | Author | PDF | Code | Relevance |
-|----------|----|---|---|---|"""
+    table_header = """<table>
+<thead>
+<tr><th>Title</th><th>Author</th><th>PDF</th><th>Code</th><th>Relevance</th></tr>
+</thead>
+<tbody>"""
     
     # 按日期生成内容（当天展开，其他日期折叠）
     date_sections = []
@@ -444,44 +449,32 @@ def json_to_markdown(json_path: str, md_path: str) -> None:
         # 按评分降序排序
         sorted_papers = sorted(papers, key=lambda x: x.get("llm_score", 0), reverse=True)
         
-        # 生成表格行与全宽总结块
+        # 生成 HTML 表格行
         table_rows = []
-        summary_blocks = []
-        for idx, paper in enumerate(sorted_papers, 1):
-            # 1. 文章标题（链接到下方全宽总结块）
-            paper_id = f"{anchor_id}-paper-{idx}"
-            title = escape_md_text(paper.get("title", "未知标题"))
-            title_link = f"[{title}](#{paper_id})"
-
-            # 2. 第一作者
-            first_author = escape_md_text(get_first_author(paper.get("authors", "未知作者")))
-
-            # 3. PDF链接（可点击）
+        for paper in sorted_papers:
+            title = escape_html_text(paper.get("title", "未知标题"))
+            first_author = escape_html_text(get_first_author(paper.get("authors", "未知作者")))
             pdf_link = paper.get("pdf_link", "")
-            pdf_html = f"[PDF]({pdf_link})" if pdf_link else "-"
-
-            # 4. Code链接
-            code_html = build_md_code_links(paper.get("code", ""))
-
-            # 5. 相关性评分（1-5个星星）
+            pdf_html = f'<a href="{escape_html_text(pdf_link)}">PDF</a>' if pdf_link else "-"
+            code_html = build_html_code_links(paper.get("code", ""))
             score = paper.get("llm_score", 0)
             if 1 <= score <= 5:
                 score_html = "★" * score + "☆" * (5 - score)
             else:
                 score_html = "-"
 
-            # 拼接表格行与详情块
-            row = f"| {title_link} | {first_author} | {pdf_html} | {code_html} | {score_html} |"
-            table_rows.append(row)
-            summary_blocks.append(build_md_summary_block(paper, paper_id, score_html, pdf_html, code_html))
+            table_rows.append(
+                "<tr>"
+                f"<td>{title}</td>"
+                f"<td>{first_author}</td>"
+                f"<td>{pdf_html}</td>"
+                f"<td>{code_html}</td>"
+                f"<td>{score_html}</td>"
+                "</tr>"
+            )
+            table_rows.append(build_html_summary_row(paper, score_html, pdf_html, code_html))
 
-        section_body = (
-            f"{md_table_header}\n"
-            + "\n".join(table_rows)
-            + "\n\n### 详细总结\n\n"
-            + "\n\n".join(summary_blocks)
-            + "\n"
-        )
+        section_body = table_header + "\n" + "\n".join(table_rows) + "\n</tbody>\n</table>\n"
         
         # 组装日期区块（当天展开，其他折叠），并添加锚点
         if date == latest_valid_date:
