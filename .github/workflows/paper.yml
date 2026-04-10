@@ -2,6 +2,9 @@
 
 name: Run Arxiv Quant Finance Papers Daily
 
+permissions:
+  contents: write
+
 # Controls when the workflow will run
 on:
   # Allows you to run this workflow manually from the Actions tab
@@ -29,10 +32,10 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         
       - name: Set up Python Env
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@v5
         with:
           python-version: 3.11     
 
@@ -55,7 +58,7 @@ jobs:
       - name: Push new quant-paper-daily files
         uses: github-actions-x/commit@v2.9
         with:
-          github-token: ${{ secrets.GIT_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "Github Action Automatic Update Quant Finance Papers"
           files: README.md arxiv_q_fin_papers_final.json index.html
           rebase: 'true'
