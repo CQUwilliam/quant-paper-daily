@@ -628,7 +628,7 @@
         <header>
             <h1>📈 arXiv 量化金融领域论文汇总</h1>
             <div class="intro">
-                <p>📊 共 <strong>14</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
+                <p>📊 共 <strong>13</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
                 <p>🔗 点击日期可展开/折叠｜📚 Zotero 按钮需安装 <a href="https://www.zotero.org/download/connectors" target="_blank">Connector 插件</a></p>
             </div>
         </header>
@@ -636,17 +636,187 @@
         <!-- 日期导航 -->
         <nav class="nav">
             <strong>📅 日期导航：</strong>
-            <a href="#date-20260410">2026-04-10（7篇）</a> | <a href="#date-20260408">2026-04-08（7篇）</a>
+            <a href="#date-20260413">2026-04-13（6篇）</a> | <a href="#date-20260410">2026-04-10（7篇）</a>
         </nav>
 
         <!-- 论文内容区块 -->
         <main>
-            <div class="date-section" id="date-20260410">
+            <div class="date-section" id="date-20260413">
     <div class="date-header">
-        <span>2026-04-10（7篇论文）</span>
+        <span>2026-04-13（6篇论文）</span>
         <span class="arrow">▼</span>
     </div>
     <div class="date-content" style="display: block;">
+        <table>
+        <!-- 添加 colgroup 明确指定每列宽度 -->
+        <colgroup>
+            <col style="width: 25%">  <!-- Title -->
+            <col style="width: 15%">   <!-- Authors -->
+            <col style="width: 10%">   <!-- Resources -->
+            <col style="width: 10%">   <!-- Relevance -->
+            <col style="width: 40%">  <!-- Summary -->
+        </colgroup>
+        <thead>
+            <tr>
+                <th>标题</th>
+                <th>作者</th>
+                <th>资源</th>
+                <th>相关性</th>
+                <th>总结</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   - 现代金融系统产生大量的交易和事件级数据，这些数据包含丰富的经济信号，开发能有效解码这些信号的模型是必要的。   - 传统的模型在处理多源银行用户历史时面临严重的挑战，特别是由于数据的复杂性和隐私限制，难以建立有效的建模方法。  2. 【前人的工作如何解决该问题，存在哪些空白】   - 前人的工作通常解决特定片段的问题，例如单一的表格模型或基于序列...">PRAGMA: Revolut Foundation Model</span></td>
+        <td class="author-cell">Maxim Ostroukhov</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.08649" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.08649" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：5/5">★★★★★</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+- 现代金融系统产生大量的交易和事件级数据，这些数据包含丰富的经济信号，开发能有效解码这些信号的模型是必要的。  
+- 传统的模型在处理多源银行用户历史时面临严重的挑战，特别是由于数据的复杂性和隐私限制，难以建立有效的建模方法。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+- 前人的工作通常解决特定片段的问题，例如单一的表格模型或基于序列的推荐系统，但缺乏对多种事件记录的综合考虑。  
+- 现有的金融基础模型主要专注于文本或通用时间序列的标记化，未能有效处理金融数据的多样性和复杂性。
+
+3. 【提出了什么创新的方法】  
+- 提出了PRAGMA模型，采用基于Transformer的架构，并针对离散、可变长度的金融记录进行了自监督训练，以捕捉多源银行事件序列的特征。  
+- 该模型能够从原始事件序列中直接提取嵌入，以支持信贷评分、欺诈检测和客户终身价值预测等多种下游任务。
+
+4. 【文章缺点】  
+- PRAGMA模型的实际应用可依赖于大量的高质量数据，这可能限制了其在一些小型金融机构的使用。  
+- 模型的复杂性可能导致计算资源的高消耗，这对资源有限的企业而言，实施成本较高。
+
+5. 【类似工作】  
+- TabTransformer和FT-Transformer这些表格Transformer模型针对固定模式的行进行建模。  
+- SASRec和BERT4Rec等序列推荐模型专注于物品式交互历史的分析。
+
+6. 【相关性评分】  
+分数：5分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本研究的动机在于：第一，尽管企业普遍部署生成性AI工具，但生产力提升的效果却存在不均，这表明AI工具的使用方式与其是否可用同样重要；第二，现有研究显示，如何帮助员工更有效地将AI融入工作流程成为关键问题，从而促使企业更加关注人机协作的结构性干预措施。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的工作主要通过识别和描述AI工具的使用效...">Scaffolding Human-AI Collaboration: A Field Experiment on Behavioral Protocols and Cognitive Reframing</span></td>
+        <td class="author-cell">Alex Farach</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.08678" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.08678" target="_blank" rel="noopener">🧠 AlphaXiv</a><br><details class="resource-comment"><summary>📝 备注</summary><small>Working paper. including appendices</small></details></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本研究的动机在于：第一，尽管企业普遍部署生成性AI工具，但生产力提升的效果却存在不均，这表明AI工具的使用方式与其是否可用同样重要；第二，现有研究显示，如何帮助员工更有效地将AI融入工作流程成为关键问题，从而促使企业更加关注人机协作的结构性干预措施。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作主要通过识别和描述AI工具的使用效率和影响，提出了一些解决方案，例如强调适当的任务-AI匹配和心理安全的重要性。然而，现有研究主要集中在技术可用性和个人使用习惯上，缺乏对如何结构化人机协作过程进行深入研究的系统性探讨，尤其是缺乏对行为和认知干预的比较分析。
+
+3. 【提出了什么创新的方法】  
+本研究提出了两种创新的方法：一是行为支架干预，通过结构化的协议要求参与者进行联合AI使用；二是认知支架干预，通过伙伴关系培训重塑用户对AI的思维模型，将AI视作合作伙伴。这些方法旨在改善人机协作的成果，并为理解AI工具在工作中的有效应用提供新的视角。
+
+4. 【文章缺点】  
+本研究存在以下缺点：一是实验设计的局限性，例如AM/PM时段的混淆以及参与者的差异性流失问题，可能影响结果的普适性；二是对文档长度敏感的LLM评分标准可能导致评估偏差，未能充分反映参与者的真实表现。
+
+5. 【类似工作】  
+类似的工作包括：一项研究探讨了生成性AI对新手员工的优势，强调了适当的任务-AI匹配；另一项研究则关注了心理安全在新技术采纳中的作用，表明心理安全感可以促进团队学习并提高技术使用效果。
+
+6. 【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】    - 本文的动机在于解决养老金投资者在面对突发健康恶化时的最佳退休资金转换（年金化）决策问题。退休过程中面临生命风险的个体在选择何时将财富转变为终身年金时，需综合考虑健康状况对其理财选项的影响，这对个体的经济保障至关重要。    - 另一方面，健康恶化带来的不确定性会直接影响年金的吸引力，故研究这一决策过程能帮助个体在确保生活质量的同时，优化其理财行...">Optimal Annuitization Time under a Mortality Shock</span></td>
+        <td class="author-cell">Matteo Buttarazzi</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.09342" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.09342" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】
+   - 本文的动机在于解决养老金投资者在面对突发健康恶化时的最佳退休资金转换（年金化）决策问题。退休过程中面临生命风险的个体在选择何时将财富转变为终身年金时，需综合考虑健康状况对其理财选项的影响，这对个体的经济保障至关重要。
+   - 另一方面，健康恶化带来的不确定性会直接影响年金的吸引力，故研究这一决策过程能帮助个体在确保生活质量的同时，优化其理财行为，提高经济决策的合理性和灵活性。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】
+   - 前人工作如Yaari（1965）和后续研究对年金化的基本理论进行了广泛探讨，已显示个体在选择年金化时需要考虑主观与客观死亡率的差异，但对于突发健康事件的建模仍较少。
+   - 许多研究未能深入探讨在健康冲击下，个体的年金化决策如何受到不同生命状态的交互影响，而这些交互关系可能导致最佳转换时间与标准模型显著不同。
+
+3. 【提出了什么创新的方法】
+   - 本文提出了一种新颖的最优停止模型，利用明确定义的财富函数和最优年金化时间边界，来描述在突发健康恶化情况下的最优决策过程。
+   - 在模型中，作者将年金的相对吸引力、投资回报及遗产动机综合纳入考量，构建了一种包容性更强的框架，使得决策者可以基于不同健康状态评估年金价值和预期现金流。
+
+4. 【文章缺点】
+   - 文章虽然提供了理论模型及其解析解，但缺乏真实世界案例的支持，这使得模型的普适性和应用价值受到限制。
+   - 此外，模型中对市场风险及其与健康风险的交互作用的假设可能过于简化，损害了结果的现实纳入性。
+
+5. 【类似工作】
+   - Hainaut和Deelstra</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】 本论文的动机在于探讨如何通过经济复杂性的方法量化国家在新兴技术领域的主权和地缘经济实力。第一，国家在全球科技竞争中需要掌握特定技术，以提升其地缘经济地位，因此理解和量化这类技术主权至关重要。第二，尽管科技主权在当今社会愈发重要，但现有研究多为定性，缺乏系统性的量化分析，这限制了国家间和技术领域间的战略比较。  2. 【前人的工作如何解决该问题，存在哪些空...">The Geoeconomics of Venture Capital An Economic Complexity Approach to Emerging Technological Sovereignty</span></td>
+        <td class="author-cell">Benjamin Leroy</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.09187" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.09187" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】
+本论文的动机在于探讨如何通过经济复杂性的方法量化国家在新兴技术领域的主权和地缘经济实力。第一，国家在全球科技竞争中需要掌握特定技术，以提升其地缘经济地位，因此理解和量化这类技术主权至关重要。第二，尽管科技主权在当今社会愈发重要，但现有研究多为定性，缺乏系统性的量化分析，这限制了国家间和技术领域间的战略比较。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】
+前人工作的解决方式主要通过定性分析技术主权与地缘经济力量之间的关系，提供了一些理论框架。然而，现存研究普遍缺乏实证数据支持，导致其分析结果的应用性受到限制。此外，虽然一些研究开始关注风险投资和技术创新的关系，但尚未深入探讨和量化国家能力在新兴技术领域的相对优势，这形成了明显的研究空白。
+
+3. 【提出了什么创新的方法】
+本论文提出了一种新的量化框架，主要包括：使用经济复杂性理论构建国家与技术领域的专业化矩阵，以确定国家相对于其技术主权的地位；引入“地缘经济复杂性指数”（GCI）和“新兴技术地缘经济复杂性指数”（ETGCI）等指标来量化国家和技术领域的相对优势；利用基于相关性的模拟方法，识别每个国家最简单的“单一主权增强技术”。
+
+4. 【文章缺点】
+文章的缺点之一是仅关注特定的17个国家，这可能导致研究结果的普适性不足，难以推广到更广泛的国家与区域。其次，由于依赖于Crunchbase数据，可能存在数据偏差或遗漏，不同数据源可能会影响到结果的可信度和准确性。
+
+5. 【类似工作】
+类似的工作包括“新兴技术主权与相对地缘经济力量”的研究，以及“基于经济复杂性的国家能力评估”相关文献。这些研究虽然关注的角度有所不同，但都涉及国家在科技竞争中的能力与地位评估。
+
+6. 【相关性</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】 本研究的动机在于探讨比特币作为一种数字资产是否真正能够对抗中央银行的政策影响。首先，尽管比特币被视为一种“数字黄金”或避险资产，但许多文献并未深入分析中央银行传播的货币政策叙述对比特币价格的影响。其次，考虑到市场情绪和投资者期望如何通过中央银行的信号影响比特币价格，我们希望通过量化的方式揭示比特币与货币政策之间的复杂关系。  2. 【前人的工作如何解决该...">Is Bitcoin A Hedge Against Central Banking? Evidence from AI-Driven Monetary Policy Expectations</span></td>
+        <td class="author-cell">Maxime L. D. Nicolas</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.08825" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.08825" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】
+本研究的动机在于探讨比特币作为一种数字资产是否真正能够对抗中央银行的政策影响。首先，尽管比特币被视为一种“数字黄金”或避险资产，但许多文献并未深入分析中央银行传播的货币政策叙述对比特币价格的影响。其次，考虑到市场情绪和投资者期望如何通过中央银行的信号影响比特币价格，我们希望通过量化的方式揭示比特币与货币政策之间的复杂关系。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】
+前人的研究如Polyzos和Youssef（2025）强调了加密货币作为美国经济政策对冲工具的潜力，并说明了数字资产在系统性危机中的避险特性。然而，这些研究往往忽视了市场对中央银行沟通的微妙反应，缺乏对货币政策叙述影响的定量分析。此外，许多研究将比特币视作一种高度投机的风险资产，未能深入讨论其价格波动与政策预期之间的关系。
+
+3. 【提出了什么创新的方法】
+本文提出了一种基于大型语言模型（LLM）的货币政策预期指数，以更准确地分类和解析超过118,000条市场信息，捕捉市场情绪。其中，结合LSTM网络和SHAP方法的框架，揭示了比特币对于货币政策叙述的非线性、宏观经济动态依赖的反应。此外，研究展示了MPE指数能够在短期和中期内对比特币回报产生格兰杰因果关系，这为比特币价格预测提供了新的视角。
+
+4. 【文章缺点】
+首先，研究依赖于社交媒体平台的数据，可能会受到数据噪音和信息失真的影响，导致结论的有效性受到质疑。其次，尽管研究揭示了比特币对货币政策叙述的敏感性，但未能全面考虑其他外部变量（如地缘政治因素或市场流动性）对比特币价格的影响。
+
+5. 【类似工作】
+一项相关工作是Rodriguez</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】    - 本文的动机在于探讨市场数据质量下降、市场条件变化以及预测性能不稳定等因素对日常ETF风险监测造成的影响，从而提高尾部风险监测的可靠性。    - 由于传统的风险监测往往只关注次日VaR的预测，而忽视了预测的可信度和服务的可靠性，本文旨在填补这一空白，提供更全面的风险监测服务。  2. 【前人的工作如何解决该问题，存在哪些空白】    - 前人的...">Reliability-Aware ETF Tail-Risk Monitoring</span></td>
+        <td class="author-cell">Tenghan Zhong</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.08765" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.08765" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】
+   - 本文的动机在于探讨市场数据质量下降、市场条件变化以及预测性能不稳定等因素对日常ETF风险监测造成的影响，从而提高尾部风险监测的可靠性。
+   - 由于传统的风险监测往往只关注次日VaR的预测，而忽视了预测的可信度和服务的可靠性，本文旨在填补这一空白，提供更全面的风险监测服务。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】
+   - 前人的研究主要集中在使用条件分位数、VaR等方法进行市场风险的预测，然而，这些方法在实际部署中可能因操作原因失效，未能有效解决输入数据 degraded 的问题。
+   - 先前的工作虽然引入了深度学习和基础模型来进行尾部风险预测，但未考虑在不同市场条件下对风险监测服务的失效和不可靠性进行管理，导致在实际应用中依然存在空白。
+
+3. 【提出了什么创新的方法】
+   - 本文提出了一种可靠性意识的风险监测框架，该框架结合了服务时间质量检查、下尾预测、不确定性评分和保守风险调整，使得尾部风险监测更加稳健。
+   - 通过多个ETF的实证研究，展示了在服务时间输入受到干扰的情况下，该框架仍能改善关键时期的可靠性，同时保持全面的可评估覆盖率。
+
+4. 【文章缺点】
+   - 本文虽然提供了创新的方法框架，但仍然需要更多的实证验证，以进一步确认其在不同市场条件下的普适性和适用性。
+   - 由于研究的重点集中在ETF尾部风险监测，可能忽视了其他类型资产的风险监测需求，限制了其结果的广泛应用。
+
+5. 【类似工作】
+   - 波克与维尔曼（Bok &amp; Villmann, 2020）提出了一种基于机器学习的方法，用于涵盖市场风险的动态评估，未详细解决风险监测的可靠性问题。
+   - 瑞士国家银行的研究（Swiss National Bank, 2021）探讨了如何结合宏观经济信号进行风险预</small></details></td>
+    </tr>
+        </tbody></table>
+    </div>
+</div>
+<div class="date-section" id="date-20260410">
+    <div class="date-header">
+        <span>2026-04-10（7篇论文）</span>
+        <span class="arrow">▶</span>
+    </div>
+    <div class="date-content" style="display: none;">
         <table>
         <!-- 添加 colgroup 明确指定每列宽度 -->
         <colgroup>
@@ -838,204 +1008,6 @@
         </tbody></table>
     </div>
 </div>
-<div class="date-section" id="date-20260408">
-    <div class="date-header">
-        <span>2026-04-08（7篇论文）</span>
-        <span class="arrow">▶</span>
-    </div>
-    <div class="date-content" style="display: none;">
-        <table>
-        <!-- 添加 colgroup 明确指定每列宽度 -->
-        <colgroup>
-            <col style="width: 25%">  <!-- Title -->
-            <col style="width: 15%">   <!-- Authors -->
-            <col style="width: 10%">   <!-- Resources -->
-            <col style="width: 10%">   <!-- Relevance -->
-            <col style="width: 40%">  <!-- Summary -->
-        </colgroup>
-        <thead>
-            <tr>
-                <th>标题</th>
-                <th>作者</th>
-                <th>资源</th>
-                <th>相关性</th>
-                <th>总结</th>
-            </tr>
-        </thead>
-        <tbody>
-        <tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】    - 财务报表审计在保护投资者、贷款人和其他利益相关者的可靠性方面起着核心作用，而现有的审计方法在实际应用中往往无法提供充分的结论基础。    - 鉴于审计资源的有限性，需要一种统计控制的框架来指导延续审计过程，以确保在行为与决策中的准确性，从而增强审计的可靠性和有效性。  2. 【前人的工作如何解决该问题，存在哪些空白】    - 前人的研究强调了...">Sequential Audit Sampling with Statistical Guarantees</span></td>
-        <td class="author-cell">Masahiro Kato</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.06116" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.06116" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】
-   - 财务报表审计在保护投资者、贷款人和其他利益相关者的可靠性方面起着核心作用，而现有的审计方法在实际应用中往往无法提供充分的结论基础。
-   - 鉴于审计资源的有限性，需要一种统计控制的框架来指导延续审计过程，以确保在行为与决策中的准确性，从而增强审计的可靠性和有效性。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】
-   - 前人的研究强调了审计过程的迭代性和顺序性，但没有提供关于有限总体的停止边界或事前错误保证的具体模型。
-   - 尽管国际标准承认在样本结果不充分时可以扩展审计程序，但这一过程的统计设计并未得到充分探讨和细化。
-
-3. 【提出了什么创新的方法】
-   - 该研究将审计采样形式化为有限总体的顺序假设检验问题，并指定了关于可容忍偏差率的零假设和备择假设。
-   - 提供了事前控制决策错误概率的具体方法，以及通过蒙特卡洛模拟校准边界的实用实施方案。
-   - 该框架允许将审计方法推广到单边、两阶段和截断设计等多种形式，使其具有更广泛的应用和适应性。
-
-4. 【文章缺点】
-   - 该研究主要集中于特定的审计情境，对其他可能的审计情境（例如货币单位采样）缺乏全面讨论。
-   - 尽管方法具有推广性，但在实际实施中可能受到审计环境变化与复杂性的影响，需要进行进一步实证研究验证其普适性。
-
-5. 【类似工作】
-   - Ashton和Ashton（1988）的研究探讨了审计证据中的顺序效应和信念修正。
-   - Knechel和Messier（1990）研究了审计师如何在收集证据的基础上作出是否停止的决策模型。
-
-6. 【相关性评分】
-分数：4分</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】    - 该论文旨在建立一个严格的生成框架，以合成前瞻性的、 càdlàg 随机轨迹，能够自然而然地融入预期的结构性变化、状态转变和波动模式的演变。    - 目前在签名基础上的过滤技术虽然能够递归估计期望路径动态，但将这些抽象的无限维矩量转化为具体的合成实现仍然是一个巨大的挑战。  2. 【前人的工作如何解决该问题，存在哪些空白】    - 前人的工作...">Generative Path-Law Jump-Diffusion: Sequential MMD-Gradient Flows and Generalisation Bounds in Marcus-Signature RKHS</span></td>
-        <td class="author-cell">Daniel Bloch</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.05008" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.05008" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】
-   - 该论文旨在建立一个严格的生成框架，以合成前瞻性的、 càdlàg 随机轨迹，能够自然而然地融入预期的结构性变化、状态转变和波动模式的演变。
-   - 目前在签名基础上的过滤技术虽然能够递归估计期望路径动态，但将这些抽象的无限维矩量转化为具体的合成实现仍然是一个巨大的挑战。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】
-   - 前人的工作主要集中在利用签名进行路径动态的递归估计，但在处理具有离散不连续性的受限 Skorokhod 流形时，缺乏有效的方法来进行合成。
-   - 尽管已有研究探讨了高频非平稳随机过程的生成建模，但传统架构（如 TimeGAN 和 VAEs）在保持路径几何完整性方面存在困难，无法捕捉高阶依赖关系。
-
-3. 【提出了什么创新的方法】
-   - 提出了“预期神经跳跃扩散（ANJD）”流，这是一种生成机制，能够有效反转时间扩展的 Marcus 感觉签名。
-   - 引入了“预期方差归一化签名几何（AVNSG）”，作为动态谱白化的精度操作符，以确保在波动的状态转变和离散的随机冲击期间的收敛性。
-   - 通过将生成任务视为在 Skorokhod 空间内的序列预期传输问题，提出了一种新的路径合成方法。
-
-4. 【文章缺点】
-   - 论文中的理论分析可能较为复杂，可能导致实际应用中的理解和实现难度增加。
-   - 生成模型的计算效率虽然得到提高，但在处理极端市场条件下的表现仍需进一步验证。
-
-5. 【类似工作】
-   - TimeGAN: 一种用于时间序列生成的生成对抗网络。
-   - Variational Autoencoders (VAEs): 一种用于生成模型的变分自编码器，常用于处理复杂数据分布。
-
-6. 【相关性评分】
-分数：4分</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. **论文的motivation是什么**      - 研究旨在解决金融市场中期权定价的准确性问题，超越传统Black-Scholes模型的局限性。      - Black-Scholes模型假设波动率恒定且无突发价格变化，这在实际市场中是不现实的，特别是在金融危机期间价格的剧烈波动显示了这一模型的不足。    2. **前人的工作如何解决该问题，存在哪些空白**      - 前人的工作...">Beyond Black-Scholes: A Computational Framework for Option Pricing Using Heston, GARCH, and Jump Diffusion Models</span></td>
-        <td class="author-cell">Karmanpartap Singh Sidhu</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.06068" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.06068" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. **论文的motivation是什么**  
-   - 研究旨在解决金融市场中期权定价的准确性问题，超越传统Black-Scholes模型的局限性。  
-   - Black-Scholes模型假设波动率恒定且无突发价格变化，这在实际市场中是不现实的，特别是在金融危机期间价格的剧烈波动显示了这一模型的不足。  
-
-2. **前人的工作如何解决该问题，存在哪些空白**  
-   - 前人的工作，如Heston模型和GARCH模型，已被提出以解决波动率变化的问题，但其假设和应用仍有限，例如Heston模型主要集中在随机波动性，而GARCH模型在复杂市场情况下表现不足。  
-   - 尽管已有的模型能够在一定程度上改进定价，但仍缺乏对突发市场事件（如价格跳跃）的综合考虑，这使得现有方法在处理特殊情况下的期权定价时存在空白。  
-
-3. **提出了什么创新的方法**  
-   - 研究中采用Monte Carlo模拟结合Heston模型、GARCH模型和Merton跳跃扩散模型，以改进期权定价的准确性。  
-   - 通过将Merton跳跃扩散模型与Monte Carlo方法结合，研究预测了资产价格的突发波动，提供了更灵活的定价框架。  
-   - 引入机器学习优化器为Heston模型寻找参数，从而提高其适应性和准确性。  
-
-4. **文章缺点**  
-   - 尽管Heston模型在动态波动性方面表现良好，但由于历史数据不足，其在长期到期的期权定价时可能存在偏差。  
-   - Merton跳跃扩散模型在对不同市场条件的适应能力方面可能泛化不足，尤其在复杂且多变的市场环境中可能表现不佳。  
-
-5. **类似工作**  
-   - &quot;A new approach to option pricing using neural networks&quot; - 本文探讨了神经网络在复杂期权定价中的应用，提供了一种创新的方法。  
-   - &quot;Improving option pricing with stochastic volatility models&quot; - 该研究考察了多种随机波动性模型在期权定价上的有效性，与</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】    - 本文旨在解决经典尾依赖系数（TDC）无法恰当地捕捉非交换特征的限制，因为其主要集中在基础copula的对角线上。    - 论文中提出的一种路径基础的最大尾依赖系数框架旨在提供一种更具灵活性和适用性的度量，以捕捉所有可能路径中最明显的依赖特征，从而增强尾依赖分析的理论基础。  2. 【前人的工作如何解决该问题，存在哪些空白】    - Furm...">Tail copula representation of path-based maximal tail dependence</span></td>
-        <td class="author-cell">Takaaki Koike</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.05985" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.05985" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】
-   - 本文旨在解决经典尾依赖系数（TDC）无法恰当地捕捉非交换特征的限制，因为其主要集中在基础copula的对角线上。
-   - 论文中提出的一种路径基础的最大尾依赖系数框架旨在提供一种更具灵活性和适用性的度量，以捕捉所有可能路径中最明显的依赖特征，从而增强尾依赖分析的理论基础。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】
-   - Furman等（2015）提出了一种路径基础分析方法来捕捉偏离对角线的二元尾依赖，但在许多非交换的copula中，该方法的理论基础仍然有限，特别是在存在和可解析性方面。
-   - 尽管存在一些研究提出了计算尾依赖的不同指标，如尾copula和尾依赖函数，但文献中鲜少提供关于路径基础的最大TDC的封闭形式表达，导致该领域的理论发展受限。
-
-3. 【提出了什么创新的方法】
-   - 本文证明了在基础copula存在非退化尾copula时，最大依赖路径及其路径基础的最大TDC的存在性，并且提供了明确的数学表述。
-   - 提供了关于最大TDC的一维优化问题的第一阶渐近性质，该性质涉及尾copula，显著提高了路径基础尾分析的计算可行性。
-   - 通过特定的案例（如双变量tt-copula和生存Marshal–Olkin copula）描述了最大依赖路径的渐近行为，展示了理论结果的实用性。
-
-4. 【文章缺点】
-   - 尽管论文在理论上有所创新，但对于某些具体类型的copula（例如非交换copula）仍存在分析上的复杂性及其推导的困难，影响了结论的广泛适用性。
-   - 文章未能对路径基础的最大尾依赖系数与传统TDC的联系进行更为深入的讨论与比较，可能导致读者对其实际应用场景的理解不够全面。
-
-5. 【类似工作】
-   - Furman, E.,</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】    - 虽然全球吸烟率有所下降，但香烟依然是导致重大公共健康问题的重要因素，特别是在欧洲，每年有约850,000人因吸烟而死亡。    - 鉴于香烟税收是减少烟草消费的关键政策工具，评估税收政策对吸烟行为的实际影响变得尤为重要，特别是在新型烟草产品不断涌现的背景下。  2. 【前人的工作如何解决该问题，存在哪些空白】    - 以往的研究大多集中在美国...">Effect of Cigarette Price and Tax Increases on Smoking in Europe: A Difference-in-Differences Study with Double Machine Learning</span></td>
-        <td class="author-cell">Andreas Stoller</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.05841" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.05841" target="_blank" rel="noopener">🧠 AlphaXiv</a><br><details class="resource-comment"><summary>📝 备注</summary><small>working paper</small></details></td>
-        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】
-   - 虽然全球吸烟率有所下降，但香烟依然是导致重大公共健康问题的重要因素，特别是在欧洲，每年有约850,000人因吸烟而死亡。
-   - 鉴于香烟税收是减少烟草消费的关键政策工具，评估税收政策对吸烟行为的实际影响变得尤为重要，特别是在新型烟草产品不断涌现的背景下。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】
-   - 以往的研究大多集中在美国且主要关注早期的吸烟行为，没有充分考虑到电子烟等新型产品的兴起对传统香烟的替代效应。
-   - 当前文献普遍采用传统的双重差分（DiD）模型来估计香烟价格和税收的影响，这些方法往往依赖于强强的函数形式假设，可能导致结果的偏倚，尤其是在不同价格或税率水平下。
-
-3. 【提出了什么创新的方法】
-   - 采用双重机器学习（DML）估计器，以更灵活地控制混杂因素，相比常规的参数方法具有更大的优势。
-   - 引入了利用DML的双重差分（DiDDML）估计器，特别适用于频繁横向数据（repeated cross-sections）的情况。
-   - 通过使用二元指标而非将价格和税收视为连续变量来比较治疗组与对照组，从而准确捕捉不同价格和税率对吸烟行为的影响。
-
-4. 【文章缺点】
-   - 本研究未能在统计上显著显示香烟价格上涨的影响，可能是价格变化中的内生性导致的向上偏倚。
-   - 文章中关于治疗定义（二元与连续）的敏感性分析虽然有探讨，但未能提供更深入的实证验证。
-
-5. 【类似工作】
-   - 呆尔和阿尔的（2020）研究，主要集中在美国关于香烟税收对吸烟率影响的实证分析。
-   - 另外一项由基尔和杜克（2021）进行的研究，探讨了电子烟对传统香</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1.【论文的motivation是什么】    - 该论文旨在重新审视公司债券价格的决定因素，尤其是当前文献中关于公司债券定价因素的主张是否有效。    - 该研究关注已有文献（如BBW）的核心发现，并探讨不同风险因素对公司债券市场的确实定价能力，以推动该领域的进一步研究。  2.【前人的工作如何解决该问题，存在哪些空白】    - 前人在研究公司债券定价时，提出了多种风险因素（如下行风险、信用风...">Priced risk in corporate bonds</span></td>
-        <td class="author-cell">Alexander Dickerson</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.05699" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.05699" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1.【论文的motivation是什么】
-   - 该论文旨在重新审视公司债券价格的决定因素，尤其是当前文献中关于公司债券定价因素的主张是否有效。
-   - 该研究关注已有文献（如BBW）的核心发现，并探讨不同风险因素对公司债券市场的确实定价能力，以推动该领域的进一步研究。
-
-2.【前人的工作如何解决该问题，存在哪些空白】
-   - 前人在研究公司债券定价时，提出了多种风险因素（如下行风险、信用风险和流动性风险），并认为这些因素为公司债券定价提供了额外的解释能力。
-   - 然而，现有研究在风险因素的构造上存在缺陷，具体来说，BBW所提的因素存在前后滞后错误，且未能有效证明这些因素在公司债券市场中的重要性。
-
-3.【提出了什么创新的方法】
-   - 本文采用了广泛使用的评估指标和全面的统计工具，系统地分析了不同债务数据库，以验证新的公司债券定价因素的有效性。
-   - 通过应用鲁棒的时间序列和横截面回归技术，重新评估了现有风险因素的定价能力，并强调了模型误设和不确定性在资产定价中的重要性。
-   - 论文中的实证分析方法强化了对债券市场因子模型的理解，例如通过广义最小二乘法（GLS）分析价格能力的优越性。
-
-4.【文章缺点】
-   - 文章虽然指出了模型的误设和不确定性，但未能提供明确的理论基础来解释其发现，导致理论与实证研究之间存在断层。
-   - 论文的主要结论可能依赖于其所处理数据的限度和特定时间范围，可能未完全代表整个市场的情况。
-
-5.【类似工作】
-   - Bai, Bali, and Wen (2019) 的工作，探讨了多个风险因子对公司债券定价的影响。
-   - Fama and French (1993) 的三因子模型，作为评估股票市场新因素的基准，与本论文中对公司债券因素的分析形成对比。
-
-6.【相关</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span>Generative Path-Law Jump-Diffusion: Sequential MMD-Gradient Flows and Generalisation Bounds in Marcus-Signature RKHS</span></td>
-        <td class="author-cell">Daniel Bloch</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.05008" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.05008" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>大模型总结失败<br><small style="color:#dc3545">⚠️ API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;免费API限制模型输入token小于4096，如有更多需求，请访问 https://api.chatanywhere.tech/#/shop 购买付费API。The number of prompt tokens for free accounts is limited to 4096. If you have additional requirements, please visit https://api.chatanywhere.tech/#/shop to purchase a premium key.(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：836739524】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}</small></small></details></td>
-    </tr>
-        </tbody></table>
-    </div>
-</div>
         </main>
 
         <footer>
@@ -1106,7 +1078,7 @@
             });
             
             // ========== 自动展开最新日期 ==========
-            const latestId = 'date-20260410';
+            const latestId = 'date-20260413';
             if (latestId) {
                 const latestSection = document.getElementById(latestId);
                 if (latestSection) {
