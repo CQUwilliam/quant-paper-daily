@@ -628,7 +628,7 @@
         <header>
             <h1>📈 arXiv 量化金融领域论文汇总</h1>
             <div class="intro">
-                <p>📊 共 <strong>23</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
+                <p>📊 共 <strong>25</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
                 <p>🔗 点击日期可展开/折叠｜📚 Zotero 按钮需安装 <a href="https://www.zotero.org/download/connectors" target="_blank">Connector 插件</a></p>
             </div>
         </header>
@@ -636,17 +636,197 @@
         <!-- 日期导航 -->
         <nav class="nav">
             <strong>📅 日期导航：</strong>
-            <a href="#date-20260417">2026-04-17（7篇）</a> | <a href="#date-20260416">2026-04-16（11篇）</a> | <a href="#date-20260415">2026-04-15（5篇）</a>
+            <a href="#date-20260420">2026-04-20（7篇）</a> | <a href="#date-20260417">2026-04-17（7篇）</a> | <a href="#date-20260416">2026-04-16（11篇）</a>
         </nav>
 
         <!-- 论文内容区块 -->
         <main>
-            <div class="date-section" id="date-20260417">
+            <div class="date-section" id="date-20260420">
     <div class="date-header">
-        <span>2026-04-17（7篇论文）</span>
+        <span>2026-04-20（7篇论文）</span>
         <span class="arrow">▼</span>
     </div>
     <div class="date-content" style="display: block;">
+        <table>
+        <!-- 添加 colgroup 明确指定每列宽度 -->
+        <colgroup>
+            <col style="width: 25%">  <!-- Title -->
+            <col style="width: 15%">   <!-- Authors -->
+            <col style="width: 10%">   <!-- Resources -->
+            <col style="width: 10%">   <!-- Relevance -->
+            <col style="width: 40%">  <!-- Summary -->
+        </colgroup>
+        <thead>
+            <tr>
+                <th>标题</th>
+                <th>作者</th>
+                <th>资源</th>
+                <th>相关性</th>
+                <th>总结</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 本文的动机在于：第一，人工智能算法在价格设置中的广泛应用可能会导致市场竞争的潜在威胁，尤其是在合谋行为方面；第二，当前文献中虽有关于算法合谋行为的研究，但因素如学习时间的差异和算法结构的复杂性仍未得到充分探讨。  2. 前人的工作在解决算法合谋问题方面的贡献包括：第一，之前的研究使用Q-learning算法展示了算法能够自主学习合谋行为的可能性；第二，但前人研究的模型主要基于较慢的学习时间尺...">Convergence to collusion in algorithmic pricing</span></td>
+        <td class="author-cell">Kevin Michael Frick</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.15825" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.15825" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：5/5">★★★★★</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 本文的动机在于：第一，人工智能算法在价格设置中的广泛应用可能会导致市场竞争的潜在威胁，尤其是在合谋行为方面；第二，当前文献中虽有关于算法合谋行为的研究，但因素如学习时间的差异和算法结构的复杂性仍未得到充分探讨。
+
+2. 前人的工作在解决算法合谋问题方面的贡献包括：第一，之前的研究使用Q-learning算法展示了算法能够自主学习合谋行为的可能性；第二，但前人研究的模型主要基于较慢的学习时间尺度，这意味着它们的理论结果与实际观察存在显著差异，未能有效解释算法的合谋速度。
+
+3. 本文提出了创新的方法，包括：第一，引入现代深度强化学习模型来模拟在重复寡头竞争环境中的价格设定；第二，提出基于奖励-惩罚机制的合作行为模型，以加速算法的合谋过程。
+
+4. 本文的缺点包括：第一，所提出模型依赖于特定的假设条件，这可能限制了其通用性；第二，虽然模型表现出合谋行为，但其在实际市场中的适用性和可操作性尚需进一步验证。
+
+5. 类似的工作包括：第一，calvano_artificial_2020的研究探索了Q-learning算法与合谋行为之间的关系；第二，assad_algorithmic_2023对德国零售市场中算法定价的实证研究，为我们理解算法合谋提供了实质性证据。
+
+6. 相关性评分：分数：5分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文的动机在于探讨累积股指回报的分布特征，尤其是在S&amp;P500的历史数据中，观察到收益与损失之间存在对称性破裂。尽管收益分布显示出正均值和负偏态，但实现方差（波动性平方）却与累计天数之间具有显著的线性依赖性，这引发了对市场波动性的更深入理解和分析的需求。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的研究主要集中在波动性模型的构建上...">Broken Symmetry, Conservation Law, and Scaling in Accumulated Stock Returns -- a Modified Jones-Faddy Skew t-Distribution Perspective</span></td>
+        <td class="author-cell">Arshia Ghasemi</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.15519" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.15519" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：5/5">★★★★★</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+该论文的动机在于探讨累积股指回报的分布特征，尤其是在S&amp;P500的历史数据中，观察到收益与损失之间存在对称性破裂。尽管收益分布显示出正均值和负偏态，但实现方差（波动性平方）却与累计天数之间具有显著的线性依赖性，这引发了对市场波动性的更深入理解和分析的需求。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究主要集中在波动性模型的构建上，如Heston模型和Cox-Ingersoll-Ross模型，这些模型试图通过随机微分方程来描述市场的波动性。然而，这些模型假设收益和损失的分布是对称的，未能充分考虑到收益分布的偏态特征。此外，之前的研究在处理不同时间长度的回报时，缺乏对其影响的系统性分析。
+
+3. 【提出了什么创新的方法】  
+本论文提出了一种改进的Jones-Faddy偏斜t分布，从而更准确地描述具有不对称性的累积回报分布。该方法不仅深刻揭示了累积天数与实现方差之间的线性关系，还为分析和建模复杂的市场波动性提供了一种新的理论框架。
+
+4. 【文章缺点】  
+首先，尽管论文提供了一种新的分布描述，但可能仍不足以覆盖所有市场条件下的波动性现象，特别是在极端市场事件发生时。其次，模型的复杂性可能在某种程度上影响其实用性，导致模型的应用范围受限。
+
+5. 【类似工作】  
+与本研究类似的工作包括Heston模型（波动性模型）和Cox-Ingersoll-Ross模型（均值回归波动性模型），这两者在描述金融时间序列中的波动性方面取得了显著进展，但基本假设仍然存在对称性限制。
+
+6. 【相关性评分】  
+分数：5分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于将风险敏感投资管理、Kuroda-Nagai测度变化方法和自由能-熵对偶性结合在一个可处理的框架中。首先，随着动态投资组合选择的需求增加，风险敏感控制成为了金融应用中广泛关注的课题；其次，风险敏感投资问题在基准设置中由于包含Itô积分而变得复杂而难以求解，因此需要新颖的方法来简化这一问题的解决。  2. 【前人的工作如何解决该问题，存...">Risk-Sensitive Investment Management via Free Energy-Entropy Duality</span></td>
+        <td class="author-cell">Sebastien Lleo</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.15463" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.15463" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：5/5">★★★★★</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本论文的动机在于将风险敏感投资管理、Kuroda-Nagai测度变化方法和自由能-熵对偶性结合在一个可处理的框架中。首先，随着动态投资组合选择的需求增加，风险敏感控制成为了金融应用中广泛关注的课题；其次，风险敏感投资问题在基准设置中由于包含Itô积分而变得复杂而难以求解，因此需要新颖的方法来简化这一问题的解决。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究主要围绕Kuroda和Nagai提出的测度变化方法，成功将风险敏感投资标准转变为标准的线性指数-二次高斯控制问题，这为分析提供了直接的数学工具。然而，这些方法在考虑不同的投资偏好及风险敏感性方面仍存在限制，特别是在控制的最佳解与潜在的动态效用之间的关系上尚未深入探讨。
+
+3. 【提出了什么创新的方法】  
+本论文提出了一种通过自由能-熵对偶性来重构风险敏感投资管理的创新方法。该方法不仅将问题转化为具有明确线性-二次高斯随机微分游戏的形式，还为风险敏感性的解释提供了更清晰的视角。此外，该研究显示其框架适合通过强化学习算法进行实现，从而为实际操作提供了可行性。
+
+4. 【文章缺点】  
+该论文虽然提供了一个新的框架，但可能在复杂市场环境下的实用性未被充分验证。此外，虽然提出了模型的直观解释，但对模型的边界条件和适用范围的讨论相对薄弱，可能影响其准确的外推。
+
+5. 【类似工作】  
+类似于本研究的工作包括“利用自由能-熵对偶性解决风险敏感基准投资管理问题”，以及对不同风险敏感模型的比较研究。这些研究与本文在方法论上有重叠，但往往缺乏与实际数据结果的结合。
+
+6. 【相关性评分】  
+分数：5分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1.【论文的motivation是什么】   本论文的动机是利用卫星数据来填补国际贸易流量测量的空白，尤其是在官方统计数据延迟和不可靠时，提供及时的港口级海洋贸易测量。其次，面对俄罗斯等国家因经济制裁而中止官方贸易数据报告时，开发基于遥测的替代方法，以支持研究者和决策者获取重要的经济活动信息。  2.【前人的工作如何解决该问题，存在哪些空白】   已有研究利用卫星数据如夜间灯光等作为经济活动的代理...">Watching Trade from Space: Nowcasting and Spatial Extrapolation of Port-Level Maritime Trade Using Satellite Imagery</span></td>
+        <td class="author-cell">Yonggeun Jung</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.15444" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.15444" target="_blank" rel="noopener">🧠 AlphaXiv</a><br><a class="resource-tag code" href="https://github.com/yonggeun-jung/watching_trade_public" target="_blank" rel="noopener">🔗 Code1</a><br><details class="resource-comment"><summary>📝 备注</summary><small>Replication package is available atthis https URL</small></details></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1.【论文的motivation是什么】  
+本论文的动机是利用卫星数据来填补国际贸易流量测量的空白，尤其是在官方统计数据延迟和不可靠时，提供及时的港口级海洋贸易测量。其次，面对俄罗斯等国家因经济制裁而中止官方贸易数据报告时，开发基于遥测的替代方法，以支持研究者和决策者获取重要的经济活动信息。
+
+2.【前人的工作如何解决该问题，存在哪些空白】  
+已有研究利用卫星数据如夜间灯光等作为经济活动的代理，取得了一定成果，但国际贸易流量的测量仍然相对落后，尤其是在港口层面。与此同时，基于自动识别系统（AIS）的方法在信号可用时是有效的，但在信号被故意禁用的情况下（如经济制裁和军事冲突）则存在较大限制，这使得现有方法无法全面应对所有场景所需。
+
+3.【提出了什么创新的方法】  
+本文提出了一种新的框架，通过结合合成孔径雷达（SAR）图像、夜间灯光数据和港口特征来对港口级海洋贸易进行测量。这种方法利用公共遥测数据，避免了对主动信号的依赖，从而克服了AIS系统面临的局限性，并应用了XGBoost模型进行数据建模。
+
+4.【文章缺点】  
+尽管该文的方法具有创新性，但其绝对水平的外推能力受到训练域限制的影响，难以用于超出数据集范围的估算。其次，模型的有效性主要在美国港口得到验证，对于其他国家港口的适用性仍需进一步的实证研究支持。
+
+5.【类似工作】  
+1）Yang等（2025）的研究展示了如何结合多源地理空间数据来准确测量地方经济活动，这是本研究的重要参考。  
+2）Arslanalp等（2025）提出的基于AIS的方法提供了一些重要的见解，但在信号缺失时的局限性与本论文的情境形成对比。
+
+6.【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于研究面临不对称信息的保险合同比较设计，特别是在风险类型无法观察的情况下。第一，该研究旨在解决保险公司在设计合同时如何应对投保人对风险态度和风险类型的私有信息的不确定性。第二，保险市场存在显著的信息摩擦，传统的保险定价和合同设计方法难以有效激励投保人真实披露其风险特征，因此需要提出新的合同设计方法来应对这一挑战。  2. 【前人的工作如...">Optimal Insurance Menu Design under the Expected-Value Premium Principle</span></td>
+        <td class="author-cell">Xia Han</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.15881" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.15881" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本论文的动机在于研究面临不对称信息的保险合同比较设计，特别是在风险类型无法观察的情况下。第一，该研究旨在解决保险公司在设计合同时如何应对投保人对风险态度和风险类型的私有信息的不确定性。第二，保险市场存在显著的信息摩擦，传统的保险定价和合同设计方法难以有效激励投保人真实披露其风险特征，因此需要提出新的合同设计方法来应对这一挑战。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究主要集中在不同的市场结构下（如竞争市场和垄断市场）探讨不对称信息对保险合同设计的影响，形成了一系列模型和理论基础。尽管如此，现有文献大多假设风险类型或风险偏好是已知的，未能全面考虑投保人信息不全和风险偏好的不确定性。且很多研究仅能设计出单一合同，无法有效激励客户披露私人信息，因此在实际应用中的效果有限。
+
+3. 【提出了什么创新的方法】  
+本论文提出了一种通过构建合同菜单来实现最优保险合约设计的创新方法，确保在信息不对称条件下的真诚揭露。首先，论文在风险类型不可观察的情况下，允许风险厌恶参数依赖于风险类型，从而更好地理解投保人的风险偏好。其次，研究中引入了非线性定价机制，通过减少风险负担来激励自我选择，进而解决信息不对称问题。
+
+4. 【文章缺点】  
+尽管本论文提出了一种创新的合同设计方法，但也存在一定缺陷。首先，研究基于特定假设（例如，风险厌恶程度和损失分布），这种假设的限制可能影响结果的普遍性。其次，对于如何在现实保险市场中有效实施这些最优合同的实际操作性，文中讨论较少，可能会导致理论与实践之间的脱节。
+
+5. 【类似工作】  
+类似的研究工作包括，Guan和Li (2022) 在模糊性假设下探讨的最优合同设计</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】    - 论文关注在会计契约中，管理者与借贷者在识别和调整会计错误（如假警报错误和过度乐观错误）时的激励机制和能力差异。这一问题十分重要，因为错误未能得到纠正将导致控制权的低效配置，进而引发高成本的再谈判。    - 通过构建不完全契约模型，作者旨在揭示契约会计调整的平衡成本与效率增益之间的复杂关系，为理解会计调整如何影响融资决策和公司治理提供理论基础。...">A Theory of Covenant Accounting Adjustment</span></td>
+        <td class="author-cell">Pingyang Gao</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.15661" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.15661" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】
+   - 论文关注在会计契约中，管理者与借贷者在识别和调整会计错误（如假警报错误和过度乐观错误）时的激励机制和能力差异。这一问题十分重要，因为错误未能得到纠正将导致控制权的低效配置，进而引发高成本的再谈判。
+   - 通过构建不完全契约模型，作者旨在揭示契约会计调整的平衡成本与效率增益之间的复杂关系，为理解会计调整如何影响融资决策和公司治理提供理论基础。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】
+   - 前人的研究多集中于契约的实证描述，显示出会计契约调整在不同公司和合同间的异质性，但缺乏关于这些调整如何生成和运作的理论模型。
+   - 尽管一些文献探讨了会计原则对融资效率的影响，但对管理者与借贷者如何在实际中协调寻找和交易这些调整的动态过程几乎没有深入分析，为理解会计契约的有效性留下了空白。
+
+3. 【提出了什么创新的方法】
+   - 本研究提出一种新颖的模型，分析管理者与借贷者在契约谈判中如何通过共同努力来识别和纠正会计错误，从而优化控制权的配置。
+   - 模型强调管理者成本地努力识别错误并提出调整的重要性，并提供了对这些调整的具体后果和均衡性质的理论预测。
+
+4. 【文章缺点】
+   - 本文假设贷方在谈判中没有事先的议价权，可能限制了模型的普适性，因为实际中贷方的权力分配可能更为复杂，可以影响契约调整的结果。
+   - 模型未考虑市场环境变化对契约调整策略的影响，可能降低了理论结果的现实适用性。
+
+5. 【类似工作】
+   - Dyreng et al. (2017) 在会计标准异质性和契约条款实施方面进行了实证分析，为理解会计调整提供了数据支持。
+   - 现有文献如Peters et al. (201</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文的主要动机在于识别和区分金融机器学习中的真正可预测性与假可预测性。首先，许多现有的机器学习模型在金融数据上取得了表面上的显著预测能力，但这些能力往往因数据处理及模型验证方法的变化而无法重复得以实现。其次，金融领域在面对时间序列数据的非平稳性和因果关系时，常常会遇到标准机器学习验证方法的失败，这促使研究者寻找更为严格的评估程序，以确保结果的有效性...">Spurious Predictability in Financial Machine Learning</span></td>
+        <td class="author-cell">Sotirios D. Nikolopoulos</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.15531" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.15531" target="_blank" rel="noopener">🧠 AlphaXiv</a><br><details class="resource-comment"><summary>📝 备注</summary><small>. The QuantAudit R package and full replication scripts will be made publicly available upon journal publication</small></details></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+该论文的主要动机在于识别和区分金融机器学习中的真正可预测性与假可预测性。首先，许多现有的机器学习模型在金融数据上取得了表面上的显著预测能力，但这些能力往往因数据处理及模型验证方法的变化而无法重复得以实现。其次，金融领域在面对时间序列数据的非平稳性和因果关系时，常常会遇到标准机器学习验证方法的失败，这促使研究者寻找更为严格的评估程序，以确保结果的有效性。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作主要集中在理解和分析机器学习模型在金融中的应用，例如对异常现象的研究和对数据挖掘的关注。然而，存在的空白在于，许多研究并没有深入探讨如何有效地测试模型在潜在的零可预测性环境中的表现，导致结果的不可靠。其次，尽管已有研究指出了模型评估过程中的信息泄露问题，但缺乏系统化的实证验证和方法框架来对抗这一挑战。
+
+3. 【提出了什么创新的方法】  
+本文提出了一种新的假设检验方法，通过构建严格的参考类别（如严格的鞅差序列和特定的安慰剂实验），来检验模型工作流程的真实可预测性。同时，研究通过模拟实验验证了模型在相关搜索下的极值缩放特点，以及在真正的结构存在下的检测能力。最后，文章量化了选择引发的性能膨胀，以帮助理解优化内样本证据与实际未来表现之间的差距。
+
+4. 【文章缺点】  
+本文的方法在实施上可能面临挑战，特别是在构建合适的参考类和对照组方面，可能会引入额外的偏差。其次，尽管采取了严谨的模拟和实证分析，但模型在特定市场条件下的普适性仍需进一步验证。
+
+5. 【类似工作】  
+类似的工作包括Harvey等人（2016）对因子繁殖现象的研究，强调了数据挖掘在金融研究中的影响，以及Hou等人（</small></details></td>
+    </tr>
+        </tbody></table>
+    </div>
+</div>
+<div class="date-section" id="date-20260417">
+    <div class="date-header">
+        <span>2026-04-17（7篇论文）</span>
+        <span class="arrow">▶</span>
+    </div>
+    <div class="date-content" style="display: none;">
         <table>
         <!-- 添加 colgroup 明确指定每列宽度 -->
         <colgroup>
@@ -1094,143 +1274,6 @@
         </tbody></table>
     </div>
 </div>
-<div class="date-section" id="date-20260415">
-    <div class="date-header">
-        <span>2026-04-15（5篇论文）</span>
-        <span class="arrow">▶</span>
-    </div>
-    <div class="date-content" style="display: none;">
-        <table>
-        <!-- 添加 colgroup 明确指定每列宽度 -->
-        <colgroup>
-            <col style="width: 25%">  <!-- Title -->
-            <col style="width: 15%">   <!-- Authors -->
-            <col style="width: 10%">   <!-- Resources -->
-            <col style="width: 10%">   <!-- Relevance -->
-            <col style="width: 40%">  <!-- Summary -->
-        </colgroup>
-        <thead>
-            <tr>
-                <th>标题</th>
-                <th>作者</th>
-                <th>资源</th>
-                <th>相关性</th>
-                <th>总结</th>
-            </tr>
-        </thead>
-        <tbody>
-        <tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于，通过更好地理解和解释金融资产之间的共同运动，提升因子模型在金融市场中的应用效果。具体来说，首先，传统因子模型依赖于统计方法来建立资产与潜在因子的关系，而该论文希望通过资产之间的互动机制来推动因子的自然产生。其次，该研究旨在考虑市场中的非理性交易者对资产价格波动的影响，从而更全面地理解市场动态。  2. 【前人的工作如何解决该问题，存...">Emergence of Statistical Financial Factors by a Diffusion Process</span></td>
-        <td class="author-cell">Jose Negrete Jr</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.12197" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.12197" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：5/5">★★★★★</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
-本论文的动机在于，通过更好地理解和解释金融资产之间的共同运动，提升因子模型在金融市场中的应用效果。具体来说，首先，传统因子模型依赖于统计方法来建立资产与潜在因子的关系，而该论文希望通过资产之间的互动机制来推动因子的自然产生。其次，该研究旨在考虑市场中的非理性交易者对资产价格波动的影响，从而更全面地理解市场动态。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】  
-前人的工作主要集中在基于统计的方法上，例如使用主成分分析（PCA）来推断因子，但这些方法往往没有解释因子的结构来源。此外，虽然有研究利用随机矩阵理论来确定潜在因子的数量，但并未深入探讨因子形成的机制及其与资产间互动的关系，这形成了当前研究的空白。
-
-3. 【提出了什么创新的方法】  
-本论文提出了一种基于网络的框架，通过耦合迭代映射的方式来模拟资产收益的演变过程，从而自然地形成金融因子。此外，研究引入了拉普拉斯矩阵的正交变换，以构建资产收益间的耦合矩阵，揭示了资产之间的互动如何影响因子的形成。
-
-4. 【文章缺点】  
-首先，所提出的模型可能在实际应用中面临计算复杂性的问题，特别是在处理大量金融资产时。其次，研究主要集中在理论框架的构建，缺少对实证数据的广泛检验，这可能影响方法的普适性和有效性。
-
-5. 【类似工作】  
-类似的工作包括使用耦合模型的方法来分析金融时间序列的动态特征，以及应用复杂网络理论来研究金融市场的结构性特征，这些研究为理解金融系统中的因子形成提供了有益的视角。
-
-6. 【相关性评分】  
-分数：5分</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文的动机在于解决日益严峻的人口老龄化对现有的社会保障支付制度所带来的挑战，以实现可持续的财政平衡和经济增长。此外，论文希望通过引入一般均衡理论，为各国在面对人口转变时设计出最优的按现收现付制度，以应对瞬息万变的人口与经济环境。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的工作主要集中在基础的人口统计学架构下设计社会保障系统，但多...">The Design of Optimally Balanced Pay-as-you-go Social Security Systems</span></td>
-        <td class="author-cell">Leandro Lyra Braga Dognini</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.12125" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.12125" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：3/5">★★★☆☆</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
-该论文的动机在于解决日益严峻的人口老龄化对现有的社会保障支付制度所带来的挑战，以实现可持续的财政平衡和经济增长。此外，论文希望通过引入一般均衡理论，为各国在面对人口转变时设计出最优的按现收现付制度，以应对瞬息万变的人口与经济环境。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】  
-前人的工作主要集中在基础的人口统计学架构下设计社会保障系统，但多集中于单一或简化的模型，未能充分考虑不同国家之间的异质性与复杂的人口动态。此外，尽管有研究探讨了财政均衡，现有的设计大多缺乏与一般均衡理论的结合，因而不能有效应对快速变化的人口和经济现状。
-
-3. 【提出了什么创新的方法】  
-本论文提出了一种基于反向计算算法的最优平衡按现收现付社会保障系统设计方法，该算法能够处理面对不同的储蓄倾向和关闭型重叠代际经济的非稳态情况。此外，论文还结合了多个国家的人口与生产力动态，展示了算法在实际应用中的可行性。
-
-4. 【文章缺点】  
-一方面，论文的算法依赖于假设和数据质量，可能在不同国家和地区的适用性受到限制。另一方面，尽管其模型考虑了异质性因素，但仍可能无法完全捕捉到社会保障体系所面临的所有外部经济冲击。
-
-5. 【类似工作】  
-类似的工作包括“一般均衡理论在社会保障设计中的应用”，该研究关注如何通过经济模型分析不同社会保障制度的影响；另外一个相关研究是“薪酬基金的可持续性分析”，探讨了人口老龄化对社会保障基金的影响及其政策应对。
-
-6. 【相关性评分】  
-分数：3分</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】 本论文的动机主要在于挑战传统电池储能系统（BESS）在多市场电力交易中对价格预测准确性的依赖。首先，研究提出了一个重要的假设，即预测准确性与交易表现之间的关系存在不足，尤其是在实际市场中，预测的等级相关性可能是更重要的指标。其次，在多市场背景下，考虑到多个市场的参与和复杂性，提升电池储能系统的经济优化决策对于其商业可行性至关重要。  2. 【前人的工作如...">When Forecast Accuracy Fails: Rank Correlation and Decision Quality in Multi-Market Battery Storage Optimization</span></td>
-        <td class="author-cell">Alessandro Falezza</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.12082" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.12082" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】
-本论文的动机主要在于挑战传统电池储能系统（BESS）在多市场电力交易中对价格预测准确性的依赖。首先，研究提出了一个重要的假设，即预测准确性与交易表现之间的关系存在不足，尤其是在实际市场中，预测的等级相关性可能是更重要的指标。其次，在多市场背景下，考虑到多个市场的参与和复杂性，提升电池储能系统的经济优化决策对于其商业可行性至关重要。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】
-前人的工作在多市场优化方面做出了重要贡献，例如，Schaurecker等人通过动态规划形式化了近乎最优的日内交易策略；Seifert等人的随机多市场出价框架为协调参与提供了理论支持。然而，现有文献中对于预测准确性与经济价值之间的脱节的研究仍显不足，特别是缺乏对连续日内市场的结构性差异的深入探讨。
-
-3. 【提出了什么创新的方法】
-本论文提出了一种基于等级相关性（Kendall τ）来评价预测的判断标准，而非传统的均值绝对误差（MAE）。此外，研究还探讨了在储备市场约束下，容量配置如何成为总收入的主要驱动因素，而非单纯的预测准确性，反映了调度问题的序数结构。这种方法为电池储能系统的运营者提供了新的预测评估视角。
-
-4. 【文章缺点】
-论文的一个缺点是在实证分析中仅关注了德国和瑞士的市场数据，可能不足以代表其他国家和地区的市场特征；另一个缺点是对预测能力的阈值以及其在不同市场环境下的稳定性缺乏更全面的实证验证。
-
-5. 【类似工作】
-1) Uniejewski等人（2025）探讨了在日内市场中均值绝对误差（MAE）与电池储能系统利润之间的弱相关性，强调了预测性能的局限性。2) Vanderschueren等人（2022）强调了决策策略在成本敏</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文旨在解决传统方法在石油价格预测中面临的重大挑战。首先，石油价格的变化具有重尾和非对称的特性，但许多传统的计量经济学模型仅关注条件均值，从而忽略了尾部风险和分布不对称性的重要性。其次，由于历史上的危机事件（如2014-2016年油价崩盘和2020年负油价事件），显示出现有模型在预测极端事件时性能不足，因而本研究希望提供一种更有效的方法来处理这些复...">Forecasting Oil Prices Across the Distribution: A Quantile VAR Approach</span></td>
-        <td class="author-cell">Hilde C. Bjornland</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.12927" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.12927" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
-该论文旨在解决传统方法在石油价格预测中面临的重大挑战。首先，石油价格的变化具有重尾和非对称的特性，但许多传统的计量经济学模型仅关注条件均值，从而忽略了尾部风险和分布不对称性的重要性。其次，由于历史上的危机事件（如2014-2016年油价崩盘和2020年负油价事件），显示出现有模型在预测极端事件时性能不足，因而本研究希望提供一种更有效的方法来处理这些复杂的风险和不确定性。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】  
-前人工作主要集中于标准的贝叶斯向量自回归（VAR）模型，虽然在点预测上有效，但对尾部风险和分布不对称性提供的洞察有限。此外，类似的模型组合方法在提升平均预测性能上有所贡献，但无法深入理解石油价格变化的预测关系在分布上的差异，尤其在大的价格波动时期表现较差。
-
-3. 【提出了什么创新的方法】  
-本研究提出了一种量化贝叶斯向量自回归（QBVAR）模型，能够在不同的分位数上预测油价，捕捉预测效果在条件分布上的变化。此外，该模型强调了预测关系及其对尾部风险的量化表现，使得在历史危机期间的预测改善可达到10-25%。
-
-4. 【文章缺点】  
-首先，尽管QBVAR在左尾预测上表现出色，但在右尾风险预测上仍然存在困难，其他随机波动模型表现更佳。其次，模型的复杂性可能导致实施上的挑战，需要成熟的计量经济学知识来正确解读及应用。
-
-5. 【类似工作】  
-相似的工作包括Chavleishvili和Manganelli（2024）所开发的频率统计量变量自回归（QVAR），以及Arias等（2023）讨论的具随机波动的VAR模型，这些都涵盖了条件分布的变化，但仍然在尾部风险的处理上存在局限。
-
-6. 【相关性评分】  
-分数：</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】    本文研究McKean-Vlasov控制问题的动机主要在于两个方面：首先，这类控制问题在现代经济学和金融学中具有广泛应用，如系统性风险建模和均值-方差投资组合选择，具备实际价值；其次，现有的方法（如扩展随机最大原理和扩展动态规划）在解决这类控制问题时常常面临技术复杂性和对控制输入的限制，这促使研究者寻求更简洁有效的解决方案。  2. 【前人的工作如何...">A Decomposition Method for LQ Conditional McKean-Vlasov Control Problems with Random Coefficients</span></td>
-        <td class="author-cell">Onésime Hounkpe</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.12114" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.12114" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】
-   本文研究McKean-Vlasov控制问题的动机主要在于两个方面：首先，这类控制问题在现代经济学和金融学中具有广泛应用，如系统性风险建模和均值-方差投资组合选择，具备实际价值；其次，现有的方法（如扩展随机最大原理和扩展动态规划）在解决这类控制问题时常常面临技术复杂性和对控制输入的限制，这促使研究者寻求更简洁有效的解决方案。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】
-   前人主要通过扩展随机最大原理和扩展动态规划将McKean-Vlasov控制问题转化为涉及新状态的控制问题，以此进行求解。然而，这些方法在处理由两个Wiener过程驱动的动态模型时存在一定的局限性，如对适应性控制输入的严格要求。这样一来，导致了研究在灵活性和普适性方面的不足。
-
-3. 【提出了什么创新的方法】
-   本文提出了一种分解方法，将原始的McKean-Vlasov控制问题转化为两个解耦的随机最优控制问题，这使得求解过程更加简单。此外，研究还建立了这些辅助问题的良好性和可解性与原问题之间的等价关系，从而保证了提出方法的有效性。最后，通过变分方法，作者将McKean-Vlasov控制问题的最优解与两个线性前向-后向随机微分方程联系起来。
-
-4. 【文章缺点】
-   文章的一个缺点是，尽管提出的分解方法具有一定的创新性和有效性，但对特定类型的McKean-Vlasov控制问题的适用性仍需进一步验证。此外，解决辅助问题的经典方法在处理非常复杂的系统时可能会遇到新的挑战，这限制了方法的普适性。
-
-5. 【类似工作】
-   类似的研究工作包括：1）对McKean-Vlasov控制问题的扩展动态规划方法，该方法将原问题转化为密度或分布问题；2）扩展随机最大原理，应用于涉及McKean-V</small></details></td>
-    </tr>
-        </tbody></table>
-    </div>
-</div>
         </main>
 
         <footer>
@@ -1301,7 +1344,7 @@
             });
             
             // ========== 自动展开最新日期 ==========
-            const latestId = 'date-20260417';
+            const latestId = 'date-20260420';
             if (latestId) {
                 const latestSection = document.getElementById(latestId);
                 if (latestSection) {
