@@ -628,7 +628,7 @@
         <header>
             <h1>📈 arXiv 量化金融领域论文汇总</h1>
             <div class="intro">
-                <p>📊 共 <strong>41</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
+                <p>📊 共 <strong>49</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
                 <p>🔗 点击日期可展开/折叠｜📚 Zotero 按钮需安装 <a href="https://www.zotero.org/download/connectors" target="_blank">Connector 插件</a></p>
             </div>
         </header>
@@ -636,17 +636,226 @@
         <!-- 日期导航 -->
         <nav class="nav">
             <strong>📅 日期导航：</strong>
-            <a href="#date-20260422">2026-04-22（14篇）</a> | <a href="#date-20260421">2026-04-21（20篇）</a> | <a href="#date-20260420">2026-04-20（7篇）</a>
+            <a href="#date-20260423">2026-04-23（8篇）</a> | <a href="#date-20260422">2026-04-22（14篇）</a> | <a href="#date-20260421">2026-04-21（20篇）</a> | <a href="#date-20260420">2026-04-20（7篇）</a>
         </nav>
 
         <!-- 论文内容区块 -->
         <main>
-            <div class="date-section" id="date-20260422">
+            <div class="date-section" id="date-20260423">
     <div class="date-header">
-        <span>2026-04-22（14篇论文）</span>
+        <span>2026-04-23（8篇论文）</span>
         <span class="arrow">▼</span>
     </div>
     <div class="date-content" style="display: block;">
+        <table>
+        <!-- 添加 colgroup 明确指定每列宽度 -->
+        <colgroup>
+            <col style="width: 25%">  <!-- Title -->
+            <col style="width: 15%">   <!-- Authors -->
+            <col style="width: 10%">   <!-- Resources -->
+            <col style="width: 10%">   <!-- Relevance -->
+            <col style="width: 40%">  <!-- Summary -->
+        </colgroup>
+        <thead>
+            <tr>
+                <th>标题</th>
+                <th>作者</th>
+                <th>资源</th>
+                <th>相关性</th>
+                <th>总结</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   首先，力求解决公司债券市场中OTC经纪交易的复杂性，尤其是在竞争激烈的环境中如何有效管理库存和提高交易成功率。其次，基于RFQ机制的市场结构，研究如何平衡竞争性报价与盈余空间，从而为做市商设定有效的目标和评估指标。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人工作，如Fermanian等（2021）的研究，通过建立欧洲企业债券RFQ的...">Bond Market Making with a Hit-Ratio Target</span></td>
+        <td class="author-cell">Alexander Barzykin</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.20406" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.20406" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+首先，力求解决公司债券市场中OTC经纪交易的复杂性，尤其是在竞争激烈的环境中如何有效管理库存和提高交易成功率。其次，基于RFQ机制的市场结构，研究如何平衡竞争性报价与盈余空间，从而为做市商设定有效的目标和评估指标。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人工作，如Fermanian等（2021）的研究，通过建立欧洲企业债券RFQ的经验模型，为市场报价和客户预留分布提供了基础，但仍未提供具体的库存管理和成功交易率之间的动态关系模型。同时，Hendershott和Madhavan（2020）分析了搜索与拍卖之间的权衡，但对于如何将这些理论应用于制定特定的做市策略仍缺乏深入探索。
+
+3. 【提出了什么创新的方法】  
+本文提出了一种基于随机最优控制的模型，通过经典的Hamilton-Jacobi-Bellman（HJB）方程实现对做市的优化控制，精确推导出库存曲率的Riccati方程与报价分解方法，并应用于多债券及多客户层次模型。这些创新使得交易策略在动态市场情况下得以更有效地实施。
+
+4. 【文章缺点】  
+第一，尽管模型考虑了多种实际市场因素，但在复杂市场环境下的实证验证仍不够充分，可能导致模型的应用受到局限。第二，所提出的方法在实现过程中可能需要大量的计算资源，对于实际操作中的快速反应能力可能造成影响。
+
+5. 【类似工作】  
+类似的研究包括Bessembinder等（2020）对固定收益市场微观结构的综述，强调OTC市场的摩擦与交易成本；又如Kargar等（2021）对企业债券的序列搜索进行了深入探讨，进一步揭示了做市商的行为模式。
+
+6. 【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   第一，该论文尝试解释美国公司申请数量的增加与雇主公司形成数量减少之间的矛盾现象。通过探讨公司的边界如何重新绘制和例行工作如何影响劳动力市场，提供了新的视角。   第二，探讨了例行认知工作的本质和结构，强调虽然这些工作可以外包，但许多任务仍然需要地理上的接近性，从而影响本地经济和小型企业的增长。  2. 【前人的工作如何解决该问题，存在哪些空白】   ...">Routine Work, Firm Boundaries, and the Rise of Local Supplier Entry</span></td>
+        <td class="author-cell">Duha T. Altindag</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.19987" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.19987" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+第一，该论文尝试解释美国公司申请数量的增加与雇主公司形成数量减少之间的矛盾现象。通过探讨公司的边界如何重新绘制和例行工作如何影响劳动力市场，提供了新的视角。  
+第二，探讨了例行认知工作的本质和结构，强调虽然这些工作可以外包，但许多任务仍然需要地理上的接近性，从而影响本地经济和小型企业的增长。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究强调了自动化和外包对劳动市场的影响，表明例行工作更容易被机器替代或在距离更远的情况下进行管理。然而，这些研究更多集中在劳动力减少和工人收入下降的问题上。  
+另一方面，现有文献较少关注例行工作对本地供应商需求的影响及其在雇主形成中的作用，未能探讨在经济结构变化中小型企业的兴起与区域特征的关系。
+
+3. 【提出了什么创新的方法】  
+文章提出通过“接口压缩”这一概念来解释工作的外包和供应商的本地化，即用更薄的买方与供应商接口代替内部监管，创造出对地方小型供应商的需求。  
+此外，研究利用722个通勤区的数据，以基础例行就业份额为主要度量，分析本地申请数量与经济活动之间的联系。
+
+4. 【文章缺点】  
+第一，数据主要集中在2005至2019年期间，可能无法全面反映后续经济变化对小型企业和工作模式的持续影响。  
+第二，尽管提出的理论框架具有创新性，但缺乏对不同地区和行业之间差异的深入分析，可能使结论过于笼统。
+
+5. 【类似工作】  
+一项相关工作探讨了自动化对地方劳动市场的影响，分析了例行生产工作如何在技术变革中削弱就业。另一项研究则关注了外包和国际分工对小型企业发展的影响，展示了不同经济环境下的企业形成动态。
+
+6. 【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本研究旨在评估全球股市的系统性风险和违约级联效应，强调互联资产如何在金融市场中放大冲击，从而威胁金融稳定。通过扩展Gai-Kapadia框架，利用价格共动性和暴露网络，研究者希望更全面地量化股市的系统性风险，填补传统风险度量方法（如VaR和CVaR）在捕捉网络传播效应方面的不足。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的工作多集...">Systemic Risk and Default Cascades in Global Equity Markets: A Network and Tail-Risk Approach Based on the Gai Kapadia Framework</span></td>
+        <td class="author-cell">Ana Isabel Castillo Pereda</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.19796" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.19796" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本研究旨在评估全球股市的系统性风险和违约级联效应，强调互联资产如何在金融市场中放大冲击，从而威胁金融稳定。通过扩展Gai-Kapadia框架，利用价格共动性和暴露网络，研究者希望更全面地量化股市的系统性风险，填补传统风险度量方法（如VaR和CVaR）在捕捉网络传播效应方面的不足。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作多集中于基于互联银行的传染机制，虽然Gai-Kapadia框架提供了系统性风险建模的坚实基础，但在股市中的应用相对不足，显示出文献上的空白。此外，传统风险度量方法虽然提供了重要见解，但未能有效考虑资产之间的相互依赖关系，亟需引入图论方法以克服这一局限。
+
+3. 【提出了什么创新的方法】  
+本研究通过将网络拓扑与尾风险度量相结合，提供了一种更全面的系统脆弱性理解，展示了高度连接的资产如何作为潜在的传播放大器。该研究还构建了基于价格共动性的金融网络，并应用蒙特卡洛模拟来分析级联动态，这些方法在股市研究中尚属首次。
+
+4. 【文章缺点】  
+研究局限于30个资产的样本，可能未能充分反映更广泛市场的复杂性及其动态。此外，虽然已应用阈值过滤和蒙特卡洛模拟，但模型仍可能面临实际数据中未捕捉到的复杂资产间关系的挑战。
+
+5. 【类似工作】  
+与本研究相似的工作包括Acemoglu等（2015）对网络结构对系统稳定性影响的研究和Battiston等（2012）关于金融网络中的脆弱性分析。这些研究同样关注资产间的互联性如何影响系统风险和市场稳定。
+
+6. 【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   （1）传统的宏观经济增长模型无法有效解释经济历史中出现的结构性崩溃现象，因此需要一个新的框架来更真实地反映现实经济情况。   （2）随着对体制和政策架构理解的深入，模型需要更好地呈现体制互补性和非线性宏观经济惩罚，尤其是在结构改革期间所出现的“J曲线”效应。  2. 【前人的工作如何解决该问题，存在哪些空白】   （1）以新古典宏观经济学为主流的模型...">Stochastic Networked Governance: Bridging Econophysics and Institutional Dynamics in a Positive-Sum Agent-Based Model</span></td>
+        <td class="author-cell">Alok Yadav</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.19968" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.19968" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+（1）传统的宏观经济增长模型无法有效解释经济历史中出现的结构性崩溃现象，因此需要一个新的框架来更真实地反映现实经济情况。  
+（2）随着对体制和政策架构理解的深入，模型需要更好地呈现体制互补性和非线性宏观经济惩罚，尤其是在结构改革期间所出现的“J曲线”效应。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+（1）以新古典宏观经济学为主流的模型通常在分析上假定经济体是平滑的、连续的，从而忽略了大规模的制度变迁和经济崩溃的现象。  
+（2）虽然引入了内生增长理论的框架，强调了人力资本和政策的重要性，但这些模型仍未能够涵盖制度演变的复杂性和路径依赖性带来的影响。
+
+3. 【提出了什么创新的方法】  
+（1）提出了一种名为随机网络治理（SNG）的离散时间代理基础模型，通过构建一个动态的、相互作用的经济网络来进行建模。  
+（2）通过利用代理基础计算经济学(ACE)和复杂适应系统的工具，将经济体视作一个异质节点的网络，重点关注制度的组合表现。  
+
+4. 【文章缺点】  
+（1）模型的复杂性或许导致对实际经济现象的解释能力受限，尤其是在实证数据和理论框架之间的匹配问题。  
+（2）尽管模型尝试捕捉非线性宏观经济过程，但仍可能存在对某些外生冲击的敏感性不足，以及缺乏长期预测能力。
+
+5. 【类似工作】  
+（1）引入代理基础模型的早期工作，例如经济领域中的人工社会模型，这些模型为从微观层面构建宏观现象提供了基础。  
+（2）利用统计力学原理进行财富集中和收入分布研究的经济物理学研究，这些研究揭示了经济现象中的相变和动态机制。
+
+6. 【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 本文的动机主要体现在两个方面：首先，尽管区块链技术被广泛认为能够降低交易成本，但网络拥堵对执行成本的影响却鲜有文献关注；其次，本文旨在通过研究以太坊交易的高峰削减，帮助企业在低拥堵时段系统性地调度交易，从而减少燃气费暴露，提升企业成本效益。  2. 前人的相关工作表明，交易成本经济学为理解数字交易提供了理论基础，但没有深入探讨区块链环境下执行成本的波动性；此外，尽管有研究指出电子市场可以减少...">On-chain Peak Shaving</span></td>
+        <td class="author-cell">Irene Aldridge</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.19956" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.19956" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 本文的动机主要体现在两个方面：首先，尽管区块链技术被广泛认为能够降低交易成本，但网络拥堵对执行成本的影响却鲜有文献关注；其次，本文旨在通过研究以太坊交易的高峰削减，帮助企业在低拥堵时段系统性地调度交易，从而减少燃气费暴露，提升企业成本效益。
+
+2. 前人的相关工作表明，交易成本经济学为理解数字交易提供了理论基础，但没有深入探讨区块链环境下执行成本的波动性；此外，尽管有研究指出电子市场可以减少协调成本，然而在公共区块链环境中，对治理结构与执行成本的适应性缺乏系统的分析，留下了理论和实践上的空白。
+
+3. 本文创新性地提出了一种“高峰削减”策略，系统性地将以太坊交易调度到低拥堵时段，进而降低交易的燃气费；同时，研究采用了来自多个行业的实证数据，揭示了高峰时段的交易费用和交易模式的关系，为理解和优化区块链交易提供了新视角。
+
+4. 然而，本文也存在一定的缺点：首先，研究聚焦于以太坊交易，可能未能涵盖其他区块链网络的特性；其次，虽然数据样本量较大，但其时间范围和行业代表性可能限制了结果的普适性。
+
+5. 与本文类似的工作包括：一项研究分析了不同区块链平台的交易成本波动模式，强调了网络拥堵对成本的影响；另一项工作探讨了区块链环境下的交易治理结构如何影响执行效率，为金融市场中的区块链应用提供了参考。
+
+6. 分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   首先，本研究旨在探讨在发展中国家（如印度尼西亚）中，代际教育流动性的长久性是否与高收入国家的情况相似。其次，研究强调了目前在多代际研究中存在的知识空白，特别是在低收入国家的多代际过程及其影响因素的理解上。  2. 【前人的工作如何解决该问题，存在哪些空白】   已有的研究主要基于高收入国家的数据显示，传统的代际流动性量度往往低估了社会经济优势的持续性...">Educational Mobility Across Multiple Generations in Indonesia</span></td>
+        <td class="author-cell">Sarah Cattan</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.19969" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.19969" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：2/5">★★☆☆☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+首先，本研究旨在探讨在发展中国家（如印度尼西亚）中，代际教育流动性的长久性是否与高收入国家的情况相似。其次，研究强调了目前在多代际研究中存在的知识空白，特别是在低收入国家的多代际过程及其影响因素的理解上。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+已有的研究主要基于高收入国家的数据显示，传统的代际流动性量度往往低估了社会经济优势的持续性。但关于发展中国家的多代际研究仍然较少，缺乏对相关机制的深入探讨。例如，虽然印度和拉丁美洲的研究为低收入国家提供了初步的实证证据，但并未深入分析结构性因素如金融约束和婚姻习俗如何影响多代际传递。
+
+3. 【提出了什么创新的方法】  
+本研究开发了一个理论框架，重点关注影响发展中国家的多代际动态的两个关键因素：金融和信用约束，以及与婚姻排序相关的文化规范。此外，研究利用1997-98年亚洲金融危机的区域差异和婚俗的变迁来验证这些因素的相关性。
+
+4. 【文章缺点】  
+首先，研究的数据主要来源于印度尼西亚，可能无法全面代表所有发展中国家的情况。其次，对于涉及的区域差异和婚俗变化的分析可能需要更多的细节和深入的实证验证。
+
+5. 【类似工作】  
+类似的研究包括Kundu和Sen（2023）对印度三代教育流动性的研究，及Celhay和Gallegos（2025）对六个拉丁美洲国家的多代际流动性比较研究。这些研究为理解低收入国家的多代际流动性提供了初步视角。
+
+6. 【相关性评分】  
+分数：2分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】 本研究的动机在于为多场所市场建模提供更坚实的基础，特别是尝试独立复现Wah和Wellman在2016年提出的延迟套利模型。通过成功的复现工作，本研究希望为未来针对现代美国股票市场中的特定碎片化方面的扩展提供严格的基线。此外，美国证券交易委员会（SEC）指出现有市场仿真框架在指导其政策制定方面的不足，因此本研究旨在填补这一空白。  2. 【前人的工作如何解...">Testing replication for an agent-based model of market fragmentation and latency arbitrage</span></td>
+        <td class="author-cell">Ethan Ratliff-Crain</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.20067" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.20067" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】
+本研究的动机在于为多场所市场建模提供更坚实的基础，特别是尝试独立复现Wah和Wellman在2016年提出的延迟套利模型。通过成功的复现工作，本研究希望为未来针对现代美国股票市场中的特定碎片化方面的扩展提供严格的基线。此外，美国证券交易委员会（SEC）指出现有市场仿真框架在指导其政策制定方面的不足，因此本研究旨在填补这一空白。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】
+前人的工作包括Wah和Wellman的代理基础模型（ABM），该模型首次考虑了多交易所和通信延迟，这些是现代美国股票市场的关键特征。然而，尽管该模型在市场流动性和交易者价值配置方面提供了重要见解，但其复制过程中缺乏文档化的实现细节和数量统计报告，造成了无法全面验证模型结果的空白。此外， Preis等人和Tivnan等人在相关工作中提出的关系等价性往往未能充分提供证据，进一步反映出该领域的知识积累仍显不足。
+
+3. 【提出了什么创新的方法】
+本研究通过增加仿真运行次数，创建了引导信赖区间以支持严格的数量一致性测试，从而补偿了缺乏分布信息（如方差）的问题。此外，针对原模型中的“贪婪策略”扩展进行了替代性解释，发现市场碎片化在所有实验中总体降低了执行时间，并在大多数实验中提高了交易者福利。最后，提出了一种OVD（概述、设计概念、细节）协议，以促进未来的复制、批评和扩展。
+
+4. 【文章缺点】
+本研究未能实现模型设置在延迟非零情况下的数量一致性，这表明模型在某些特定条件下并不稳定。其次，尽管为复制提供了新的指导协议，但仍存在对复杂场景下的结果对齐挑战，可能导致实际上得不到完全一致的结果。
+
+5. 【类似工作】
+相似工作包括Tivnan等人对零智能模型的整合，该工作</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   这篇论文的动机在于探讨人工智能（AI）代理在数字生态系统中替代人类的角色带来的行为转移现象，特别是AI代理是否能反映其人类所有者的行为特征。首先，随着AI代理在多种应用中的普及，理解它们如何继承并反映人类的个体差异变得日益重要，以评估对在线互动结构的影响。其次，探讨隐私影响，因为AI代理在进行社会交互时可能会携带个人特征和背景信息，从而引发对个人隐私...">Behavioral Transfer in AI Agents: Evidence and Privacy Implications</span></td>
+        <td class="author-cell">Shilei Luo</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.19925" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.19925" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+这篇论文的动机在于探讨人工智能（AI）代理在数字生态系统中替代人类的角色带来的行为转移现象，特别是AI代理是否能反映其人类所有者的行为特征。首先，随着AI代理在多种应用中的普及，理解它们如何继承并反映人类的个体差异变得日益重要，以评估对在线互动结构的影响。其次，探讨隐私影响，因为AI代理在进行社会交互时可能会携带个人特征和背景信息，从而引发对个人隐私的担忧。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究主要集中在AI代理的技术实现和基础架构的开发上，例如OpenClaw框架的构建，但对行为转移及其隐私影响的实证研究相对匮乏。此外，现有文献在阐述AI代理与人类行为之间关系时多是理论性的，缺乏基于实际应用的系统性研究，从而未能有效揭示AI代理可能带来的更广泛社会影响。
+
+3. 【提出了什么创新的方法】  
+本文提出了一种大规模实证研究的方法，通过分析名为Moltbook的社交平台上AI代理的行为模式，结合人类所有者的个体特征，探讨了行为转移现象。其创新之处在于利用真实世界的社交互动数据，构建了超过10,000个匹配的人类-代理对，从而提供深入的实证证据来支持关于行为转移的假设。
+
+4. 【文章缺点】  
+文章可能在数据的代表性方面存在局限，因为所研究的社交平台Moltbook及其用户群体可能无法全面反映所有AI代理的行为模式。此外，研究未能深入探讨如何具体量化AI代理所继承的行为特征，导致其结果的应用性和普适性可能受限。
+
+5. 【类似工作】  
+类似的工作包括在社交媒体平台上分析个体行为对信息传播效果的影响，及其在机器学习算法中的应用，以及行为经济学领域对人类行为示范效应</small></details></td>
+    </tr>
+        </tbody></table>
+    </div>
+</div>
+<div class="date-section" id="date-20260422">
+    <div class="date-header">
+        <span>2026-04-22（14篇论文）</span>
+        <span class="arrow">▶</span>
+    </div>
+    <div class="date-content" style="display: none;">
         <table>
         <!-- 添加 colgroup 明确指定每列宽度 -->
         <colgroup>
@@ -1717,7 +1926,7 @@
             });
             
             // ========== 自动展开最新日期 ==========
-            const latestId = 'date-20260422';
+            const latestId = 'date-20260423';
             if (latestId) {
                 const latestSection = document.getElementById(latestId);
                 if (latestSection) {
