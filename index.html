@@ -628,7 +628,7 @@
         <header>
             <h1>📈 arXiv 量化金融领域论文汇总</h1>
             <div class="intro">
-                <p>📊 共 <strong>31</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
+                <p>📊 共 <strong>37</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
                 <p>🔗 点击日期可展开/折叠｜📚 Zotero 按钮需安装 <a href="https://www.zotero.org/download/connectors" target="_blank">Connector 插件</a></p>
             </div>
         </header>
@@ -636,17 +636,442 @@
         <!-- 日期导航 -->
         <nav class="nav">
             <strong>📅 日期导航：</strong>
-            <a href="#date-20260504">2026-05-04（10篇）</a> | <a href="#date-20260501">2026-05-01（10篇）</a> | <a href="#date-20260430">2026-04-30（11篇）</a>
+            <a href="#date-20260505">2026-05-05（17篇）</a> | <a href="#date-20260504">2026-05-04（10篇）</a> | <a href="#date-20260501">2026-05-01（10篇）</a>
         </nav>
 
         <!-- 论文内容区块 -->
         <main>
-            <div class="date-section" id="date-20260504">
+            <div class="date-section" id="date-20260505">
     <div class="date-header">
-        <span>2026-05-04（10篇论文）</span>
+        <span>2026-05-05（17篇论文）</span>
         <span class="arrow">▼</span>
     </div>
     <div class="date-content" style="display: block;">
+        <table>
+        <!-- 添加 colgroup 明确指定每列宽度 -->
+        <colgroup>
+            <col style="width: 25%">  <!-- Title -->
+            <col style="width: 15%">   <!-- Authors -->
+            <col style="width: 10%">   <!-- Resources -->
+            <col style="width: 10%">   <!-- Relevance -->
+            <col style="width: 40%">  <!-- Summary -->
+        </colgroup>
+        <thead>
+            <tr>
+                <th>标题</th>
+                <th>作者</th>
+                <th>资源</th>
+                <th>相关性</th>
+                <th>总结</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于解决在波动性不确定性和短期卖空约束市场中进行投资组合优化的问题，以提高投资组合的风险调整收益。其次，传统的均值-方差模型在处理实际市场中的波动性和风险时存在局限性，因此需要引入新的模型来更好地反映市场的不确定性。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的工作主要集中在均值-方差模型及其扩展，如引入偏度等因素来改善...">Pareto frontier of portfolio investment under volatility uncertainty and short-sale constraints market</span></td>
+        <td class="author-cell">Jing He</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.02666" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.02666" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：5/5">★★★★★</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本论文的动机在于解决在波动性不确定性和短期卖空约束市场中进行投资组合优化的问题，以提高投资组合的风险调整收益。其次，传统的均值-方差模型在处理实际市场中的波动性和风险时存在局限性，因此需要引入新的模型来更好地反映市场的不确定性。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作主要集中在均值-方差模型及其扩展，如引入偏度等因素来改善投资组合选择。然而，这些模型通常假设收益服从正态分布，未能充分考虑市场中的波动性不确定性。其次，尽管已有研究尝试使用不确定性理论来解决投资组合优化问题，但在实际应用中仍缺乏有效的模型来处理波动性不确定性与短期卖空约束的结合。
+
+3. 【提出了什么创新的方法】  
+本论文提出了一种简化的子线性期望均值-不确定性方差（SLE-MUV）模型，通过引入风险因子来对最大风险和最小风险进行耦合建模。此外，理论上证明了SLE-MUV模型的Pareto前沿是连续的凸曲线，并且其最优解可以用多项式解析表达式表示。
+
+4. 【文章缺点】  
+首先，尽管SLE-MUV模型在理论上具有优势，但在实际应用中可能面临数据获取和模型参数估计的挑战。其次，文章的实证分析虽然展示了模型的有效性，但样本选择可能影响结果的普适性，尤其是在不同市场条件下的表现。
+
+5. 【类似工作】  
+类似的工作包括Liu等（2003）提出的均值-方差-偏度模型，该模型引入了偏度以捕捉收益分布的不对称性。另一个相关研究是Li等（2026）采用Wasserstein基础的分布鲁棒优化来应对金融市场的不确定性。
+
+6. 【相关性评分】  
+分数：5分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文的动机在于，传统的资产选择方法通常依赖于标量收益或低维高频摘要，忽视了可能影响风险调整配置的日内风险动态。其次，现有的投资组合选择在高维资产环境中对估计误差极为敏感，因此需要一种有效的资产选择程序，以提高投资组合的实际表现。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的研究主要集中在均值-方差框架下的投资组合构建，强调了参数不...">Large-Scale Asset Selection via Metric Dependence with Enriched High Frequency Information</span></td>
+        <td class="author-cell">Yangzhou Chen</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.02326" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.02326" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：5/5">★★★★★</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+该论文的动机在于，传统的资产选择方法通常依赖于标量收益或低维高频摘要，忽视了可能影响风险调整配置的日内风险动态。其次，现有的投资组合选择在高维资产环境中对估计误差极为敏感，因此需要一种有效的资产选择程序，以提高投资组合的实际表现。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究主要集中在均值-方差框架下的投资组合构建，强调了参数不确定性对投资组合优化的影响。然而，这些研究往往未能充分考虑日内风险动态的作用，导致在实际应用中表现不佳。此外，尽管已有一些稳定化策略（如贝叶斯方法和收缩估计）被提出，但在处理大规模资产时，这些方法仍然面临高维度带来的挑战。
+
+3. 【提出了什么创新的方法】  
+本文提出了一种新的资产选择程序——度量依赖筛选（MDS），该方法将高频信息作为对象值数据纳入考虑。MDS通过结合日收益和日内风险状态曲线来表示每个资产的观察值，并使用Fréchet变异依赖分数对资产进行排名，从而实现有效的资产筛选。此外，MDS还发展了目标切片估计器，确保了在高维度下的集中性和选择的可靠性。
+
+4. 【文章缺点】  
+首先，MDS方法的复杂性可能使其在实际应用中难以实现，尤其是在需要快速决策的交易环境中。其次，尽管模拟结果显示MDS在不同设置下表现良好，但其在不同市场条件下的稳健性仍需进一步验证。
+
+5. 【类似工作】  
+类似的工作包括Kan和Zhou（2007）对参数不确定性的考虑，以及DeMiguel等（2009）对简单分配规则的实证研究。这些研究均探讨了在高维资产环境中，如何有效地进行资产选择和投资组合构建。
+
+6. 【相关性评分】  
+分数：5分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于揭示1980年至2019年间负收益公司比例的上升现象，探讨其背后的经济机制。首先，随着负收益公司的增加，企业的销售和收益分布也在扩散，这引发了对企业支出结构变化的关注。其次，研究者希望通过建立模型来解释企业在面对负收益时如何进行供需转移投资，从而更好地理解这一现象对整体经济的影响。  2. 【前人的工作如何解决该问题，存在哪些空白】 ...">The Rise of Negative Earnings and Demand Shifting Investment</span></td>
+        <td class="author-cell">Jacob Toner Gosselin</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.02680" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.02680" target="_blank" rel="noopener">🧠 AlphaXiv</a><br><details class="resource-comment"><summary>📝 备注</summary><small>14 Figures, 2 Appendix Tables, 8 Appendix Figures</small></details></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本论文的动机在于揭示1980年至2019年间负收益公司比例的上升现象，探讨其背后的经济机制。首先，随着负收益公司的增加，企业的销售和收益分布也在扩散，这引发了对企业支出结构变化的关注。其次，研究者希望通过建立模型来解释企业在面对负收益时如何进行供需转移投资，从而更好地理解这一现象对整体经济的影响。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究主要集中在企业财务表现与经济周期之间的关系，探讨了负收益对企业生存的影响。然而，现有文献对负收益上升的系统性分析较少，尤其是在企业支出重组和供需转移投资的背景下。此外，虽然有研究关注企业的投资决策，但缺乏对不同类型企业在负收益情况下的动态行为分析。
+
+3. 【提出了什么创新的方法】  
+论文提出了一种包含异质性企业的模型，强调了需求的规模弹性在供需转移投资中的作用。通过这一模型，研究者能够定量匹配负收益的上升，并定性匹配负收益的持续性增加、销售和收益分布的扩散以及企业支出重组的现象。此外，模型还揭示了负收益上升对GDP的非平凡影响。
+
+4. 【文章缺点】  
+首先，模型的假设可能过于简化，未能充分考虑其他可能影响企业行为的因素，如市场竞争和政策变化。其次，虽然数据样本覆盖了较长时间段，但可能存在选择偏差，影响结果的普适性和可靠性。
+
+5. 【类似工作】  
+类似的研究包括对企业财务表现与经济波动关系的探讨，例如Fama和French的三因子模型，以及对企业投资决策的动态分析，如Baker和Wurgler的市场时机理论。这些研究为理解企业在不同经济环境下的行为提供了理论基础。
+
+6. 【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      本文的动机在于解决在Bachelier模型中，资产价格和波动率不相关时，如何构建有效的期权定价闭式近似公式。其次，当前的期权定价理论主要基于Black-Scholes模型，而在某些市场条件下，Bachelier模型更为适用，因此需要针对该模型进行深入研究。  2. 【前人的工作如何解决该问题，存在哪些空白】      前人的研究主要通过构建扩展...">Analytic approximation for Bachelier option prices and applications</span></td>
+        <td class="author-cell">Elisa Alòs</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.02040" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.02040" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+   本文的动机在于解决在Bachelier模型中，资产价格和波动率不相关时，如何构建有效的期权定价闭式近似公式。其次，当前的期权定价理论主要基于Black-Scholes模型，而在某些市场条件下，Bachelier模型更为适用，因此需要针对该模型进行深入研究。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+   前人的研究主要通过构建扩展式来近似期权价格，尤其是利用Black-Scholes/Bachelier价格作为基础。然而，这些方法通常缺乏解析性，且在有效性区域上存在限制。此外，虽然已有研究考虑了波动率的非马尔可夫性，但在无相关性情况下的解析扩展仍然不足。
+
+3. 【提出了什么创新的方法】  
+   本文提出了一种新的解析扩展方法，通过适当的分解公式将期权价格表示为ATM价格加上与moneyness相关的修正项。利用泰勒展开，进一步将修正项表示为未来均值波动率的负幂次项，从而实现了对Bachelier期权价格的有效近似。
+
+4. 【文章缺点】  
+   尽管提出的解析方法在无相关性情况下有效，但其在其他市场条件下的适用性尚未得到验证。其次，虽然方法提供了更好的近似，但在极端市场条件下的表现仍需进一步研究。
+
+5. 【类似工作】  
+   类似的工作包括Lewis和Pirjol（2022）对期权价格的非解析近似研究，以及Fouque等（2000）对波动率交换的概率方法分析。这些研究为本文的方法提供了理论基础，但在解析性方面存在不足。
+
+6. 【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      该论文的动机在于解决传统预测模型在投资组合优化中的不足，特别是预测准确性与决策质量之间的矛盾。首先，尽管现代机器学习模型在金融预测中表现出色，但仅依赖预测准确性并不能保证更好的投资组合决策。其次，现有的Smart Predict-then-Optimize (SPO)框架可能导致预测信号膨胀和投资组合频繁调整，从而影响策略的可实施性。  2. ...">Decision-Induced Ranking Explains Prediction Inflation and Excessive Turnover in SPO-Based Portfolio Optimization</span></td>
+        <td class="author-cell">Yi Wang</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.01176" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.01176" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+   该论文的动机在于解决传统预测模型在投资组合优化中的不足，特别是预测准确性与决策质量之间的矛盾。首先，尽管现代机器学习模型在金融预测中表现出色，但仅依赖预测准确性并不能保证更好的投资组合决策。其次，现有的Smart Predict-then-Optimize (SPO)框架可能导致预测信号膨胀和投资组合频繁调整，从而影响策略的可实施性。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+   前人的研究主要集中在决策导向学习（DFL）及其在投资组合优化中的机制，Lee等人发现DFL可能导致资产配置高度集中，而Mandi等人则从学习排序的角度解释了DFL的有效性。然而，这些研究并未深入探讨如何通过具体的稳定机制来缓解SPO模型带来的预测膨胀和过度调整的问题。
+
+3. 【提出了什么创新的方法】  
+   本文提出了一种基于KKT条件的解释，认为投资组合决策可以视为在风险和交易成本调整的边际得分上进行排名。此外，研究还评估了几种实用的稳定机制，包括剪裁、最小-最大重缩放和部分投资组合调整，以提高SPO模型的可实施性。
+
+4. 【文章缺点】  
+   文章可能过于依赖理论推导，缺乏对实际市场环境中复杂因素的充分考虑。其次，虽然提出了稳定机制，但未能提供足够的实证数据来验证这些机制在不同市场条件下的有效性。
+
+5. 【类似工作】  
+   1) Lee et al. (2025) 对决策导向学习在投资组合优化中的机制进行了详细研究。  
+   2) Mandi et al. (2022) 从学习排序的角度探讨了决策导向学习的有效性。
+
+6. 【相关性评分】  
+   分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      该论文的动机在于探讨去中心化预测市场Polymarket的市场微观结构及其高频定价效率，这一领域尚未得到充分研究。通过系统的实证分析，作者希望揭示在NBA比赛市场中算法套利的存在及其特征，以填补当前文献中的空白。  2. 【前人的工作如何解决该问题，存在哪些空白】      前人的研究主要集中在Polymarket在政治预测方面的有效性，例如N...">Arbitrage Analysis in Polymarket NBA Markets</span></td>
+        <td class="author-cell">Guang Cheng</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.00864" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.00864" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+   该论文的动机在于探讨去中心化预测市场Polymarket的市场微观结构及其高频定价效率，这一领域尚未得到充分研究。通过系统的实证分析，作者希望揭示在NBA比赛市场中算法套利的存在及其特征，以填补当前文献中的空白。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+   前人的研究主要集中在Polymarket在政治预测方面的有效性，例如Ng等（2025）的工作。然而，关于市场微观结构和交易行为的研究相对较少，尤其是缺乏对高频数据的深入分析。此外，Saguillo等（2025）虽然对Polymarket套利进行了实证分析，但主要依赖于已执行的交易数据，而未能利用高分辨率的订单簿快照。
+
+3. 【提出了什么创新的方法】  
+   本文提出了一种新的方法，通过高分辨率的订单簿快照实时检测套利机会。这种方法使得研究者能够量化单市场和组合市场的套利机会，并评估其持续时间和可执行性，从而提供了对市场效率更为精确的表征。
+
+4. 【文章缺点】  
+   文章的一个缺点是，尽管揭示了套利机会的存在，但由于流动性限制，实际可执行的套利规模非常小，可能影响到套利策略的实用性。另一个缺点是，研究主要集中在NBA市场，可能无法推广到其他类型的市场或事件。
+
+5. 【类似工作】  
+   1) Saguillo等（2025）对Polymarket套利的实证分析，关注已执行交易数据。  
+   2) Ng等（2025）对Polymarket在政治预测中的有效性进行的研究，探讨了市场的预测能力。
+
+6. 【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】    - 本文旨在深入理解金融市场中周期性泡沫的形成及其快速崩溃的机制，这对于经济学和金融工程至关重要。    - 现有文献虽然探讨了泡沫的统计特性，但在统一框架内捕捉投资者群体行为与恐慌性抛售的微观层面互动仍然面临挑战。  2. 【前人的工作如何解决该问题，存在哪些空白】    - 先前的研究，如随机泡沫模型，虽然能够描述泡沫的生长与崩溃，但存在理论上...">Dynamics of Periodic Bubbles and Crashes: Modeling Market Overheating and Panic Selling via Cubic Momentum</span></td>
+        <td class="author-cell">Naohiro Yoshida</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.00854" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.00854" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】
+   - 本文旨在深入理解金融市场中周期性泡沫的形成及其快速崩溃的机制，这对于经济学和金融工程至关重要。
+   - 现有文献虽然探讨了泡沫的统计特性，但在统一框架内捕捉投资者群体行为与恐慌性抛售的微观层面互动仍然面临挑战。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】
+   - 先前的研究，如随机泡沫模型，虽然能够描述泡沫的生长与崩溃，但存在理论上的局限性，无法处理泡沫完全崩溃后的再生问题。
+   - 尽管一些非线性时间序列模型已开始关注泡沫动态，但仍缺乏将实际市场交易行为的微观动态整合到简单内生机制中的模型。
+
+3. 【提出了什么创新的方法】
+   - 本文提出了一种基于立方函数的市场动量模型，通过该模型来描述交易方向的平衡，从而驱动泡沫阶段的趋势跟随行为和超出临界阈值时的市场崩溃。
+   - 模型还引入了交易频率与累积动量直接相关的自激励机制，模拟市场的“疯狂”状态。
+
+4. 【文章缺点】
+   - 模型的简化可能忽略了某些复杂的市场行为和外部冲击对泡沫形成及崩溃的影响。
+   - 由于模型基于离散时间的假设，可能无法完全捕捉到连续时间框架下的市场动态。
+
+5. 【类似工作】
+   - 相关文献如Langevin方程在描述投资者集体行为驱动的市场波动和崩溃方面提供了有益的视角。
+   - 另一项研究提出的随机非线性自回归(SNAR)模型，尽管在框架上有所不同，但同样关注泡沫的周期性局部爆炸和随后的崩溃。
+
+6. 【相关性评分】
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      该论文的动机在于提升蒙特卡洛模拟的计算效率，解决其在实际应用中计算时间过长的问题。通过引入Perron-Frobenius定理，作者希望显著加快蒙特卡洛方法的计算速度，使其在金融等领域的应用更加高效。  2. 【前人的工作如何解决该问题，存在哪些空白】      前人的研究主要集中在通过先进硬件和机器学习辅助估计来加速蒙特卡洛计算，例如Rose...">Fast Monte-Carlo</span></td>
+        <td class="author-cell">Irene Aldridge</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.02085" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.02085" target="_blank" rel="noopener">🧠 AlphaXiv</a><br><details class="resource-comment"><summary>📝 备注</summary><small>originally published in the proceedings of the Winter Simulation Conference 2025</small></details></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+   该论文的动机在于提升蒙特卡洛模拟的计算效率，解决其在实际应用中计算时间过长的问题。通过引入Perron-Frobenius定理，作者希望显著加快蒙特卡洛方法的计算速度，使其在金融等领域的应用更加高效。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+   前人的研究主要集中在通过先进硬件和机器学习辅助估计来加速蒙特卡洛计算，例如Rosenthal（2000）和Lam与Zhang（2023）的工作。然而，这些方法仍然存在计算复杂度高的问题，且未能充分利用中间模拟步骤，从而未能实现更大的效率提升。
+
+3. 【提出了什么创新的方法】  
+   本文提出了一种新的算法，通过扩展经典的马尔可夫链蒙特卡洛（MCMC）方法，将中间模拟步骤纳入马尔可夫链中，从而实现了计算的O(N)复杂度。此外，利用Perron-Frobenius定理找到马尔可夫链的稳态分布，使得整个过程的计算时间降低到O(1)。
+
+4. 【文章缺点】  
+   该论文可能缺乏对新方法在不同金融场景下的广泛验证，限制了其应用的普适性。此外，尽管提出了加速计算的方法，但未详细探讨在大规模数据集上的性能表现。
+
+5. 【类似工作】  
+   1) 相关文献中，Anderson等（2018）讨论了不同蒙特卡洛实现的计算复杂性，为本研究提供了理论基础。  
+   2) Lam与Zhang（2023）提出的机器学习辅助估计方法，虽然与本研究的目标相似，但未能充分利用中间步骤的计算优势。
+
+6. 【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1.【论文的motivation是什么】   - 本文的动机在于探索可视化图（Visibility Graphs）在金融市场中的应用潜力，尤其是在量化交易策略的制定上。   - 研究者希望通过分析可视化图的特性，揭示其在市场趋势识别和预测中的有效性，从而为投资者提供新的盈利机会。    2.【前人的工作如何解决该问题，存在哪些空白】   - 前人的研究主要集中在传统的时间序列分析和技术指标上，虽然...">Visibility graphs can make money in financial markets</span></td>
+        <td class="author-cell">Rafał Rak</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.01300" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.01300" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1.【论文的motivation是什么】  
+- 本文的动机在于探索可视化图（Visibility Graphs）在金融市场中的应用潜力，尤其是在量化交易策略的制定上。  
+- 研究者希望通过分析可视化图的特性，揭示其在市场趋势识别和预测中的有效性，从而为投资者提供新的盈利机会。  
+
+2.【前人的工作如何解决该问题，存在哪些空白】  
+- 前人的研究主要集中在传统的时间序列分析和技术指标上，虽然这些方法在一定程度上有效，但往往忽视了市场数据的复杂性和非线性特征。  
+- 现有文献中对可视化图的应用研究较少，缺乏系统性的方法论探讨，未能充分挖掘其在金融市场中的潜在价值。  
+
+3.【提出了什么创新的方法】  
+- 本文提出了一种基于可视化图的新型量化交易策略，通过构建市场数据的可视化图来识别潜在的交易信号。  
+- 研究者还引入了图论中的相关性指标，以量化市场状态的变化，从而优化交易决策。  
+
+4.【文章缺点】  
+- 文章可能缺乏实证数据支持，未能充分验证所提出方法在实际交易中的有效性和稳定性。  
+- 研究中对可视化图的构建参数选择可能存在主观性，影响结果的普适性和可靠性。  
+
+5.【类似工作】  
+- 一项相关研究探讨了基于网络分析的市场行为模型，分析了市场参与者之间的相互作用。  
+- 另一项工作则利用复杂网络理论研究了金融市场的波动性，提出了基于网络特征的风险管理策略。  
+
+6.【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      1) 传统上，地理限制在很大程度上决定了高增长职业机会的获取，限制了向上流动的路径。      2) 随着远程工作的兴起，研究其对职业流动性的影响变得尤为重要，以了解如何打破地理限制并改善职业发展机会。  2. 【前人的工作如何解决该问题，存在哪些空白】      1) 前人的研究主要集中在地理位置对职业流动性的影响，强调了城市和组织的集中性。...">Remote work expands pathways to upward career mobility</span></td>
+        <td class="author-cell">Yunhan Zheng</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.01268" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.01268" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：3/5">★★★☆☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+   1) 传统上，地理限制在很大程度上决定了高增长职业机会的获取，限制了向上流动的路径。  
+   2) 随着远程工作的兴起，研究其对职业流动性的影响变得尤为重要，以了解如何打破地理限制并改善职业发展机会。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+   1) 前人的研究主要集中在地理位置对职业流动性的影响，强调了城市和组织的集中性。  
+   2) 然而，关于远程工作如何改变这一格局的实证研究仍然不足，缺乏对远程工作对职业流动性具体影响的深入分析。
+
+3. 【提出了什么创新的方法】  
+   1) 本文利用了2020年至2024年间4800万次美国工作转变的数据，结合雇主的远程工作资格指标，进行实证分析。  
+   2) 通过比较进入远程工作岗位与全职现场岗位的工人，评估了不同工作转变对职业结果的影响。
+
+4. 【文章缺点】  
+   1) 研究可能未考虑所有可能影响职业流动性的外部因素，例如行业差异或个人背景。  
+   2) 数据仅限于美国，可能无法推广到其他国家或地区的远程工作影响。
+
+5. 【类似工作】  
+   1) 研究远程工作对员工满意度和生产力的影响的相关文献。  
+   2) 探讨地理位置对职业选择和流动性的影响的研究。
+
+6. 【相关性评分】  
+   分数：3分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文的动机在于探讨人工智能（AI）能够学习执行的职业任务，以便更好地理解AI在不同职业中的适用性。首先，现有的AI能力与职业任务的重叠指数并未准确反映AI系统可以学习执行的任务，导致对某些职业的误分类。其次，随着强化学习（RL）成为前沿的主导范式，研究者希望通过RL的任务完成结构，提供一种更直接的职业分类任务架构。  2. 【前人的工作如何解决该问...">What Jobs Can AI Learn? Measuring Exposure by Reinforcement Learning</span></td>
+        <td class="author-cell">Philip Moreira Tomei</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.02598" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.02598" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+该论文的动机在于探讨人工智能（AI）能够学习执行的职业任务，以便更好地理解AI在不同职业中的适用性。首先，现有的AI能力与职业任务的重叠指数并未准确反映AI系统可以学习执行的任务，导致对某些职业的误分类。其次，随着强化学习（RL）成为前沿的主导范式，研究者希望通过RL的任务完成结构，提供一种更直接的职业分类任务架构。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作主要集中在评估AI的能力与职业任务之间的重叠，但这些工作往往忽略了任务的可学习性，导致对某些职业的误判。此外，现有的AI暴露度测量方法未能考虑到任务的物理可行性，无法有效区分数字环境与需要物理交互的任务，从而造成了对职业分类的片面理解。
+
+3. 【提出了什么创新的方法】  
+论文提出了一种新的RL可行性指数，通过对17,951个ONET任务进行评分，聚合到职业层面，提供了一种新的评估框架。该框架不仅考虑了任务的数字可行性，还将任务分解为八个维度进行评分，确保评估的全面性和准确性。此外，使用大型语言模型（LLM）进行任务标注，结合强化学习专家的指导，增强了评估的科学性。
+
+4. 【文章缺点】  
+首先，论文的评估方法可能对某些需要高度人际交往或创造力的职业任务评估不足，可能导致这些职业的可学习性被低估。其次，RL可行性指数的构建依赖于数字环境的假设，未能充分考虑物理环境对某些职业任务的重要性，可能影响结果的普适性。
+
+5. 【类似工作】  
+类似的工作包括对AI在特定职业中的应用进行评估的研究，如对数据处理和信息处理角色的分析，以及对AI在物理劳动领域的局限性的探讨。此外，还有一些研究关注AI在不同职业中的潜在影响，尤其是在数字化转型背景下</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      该论文的动机在于当前的后交易清算系统过于依赖现金或现金类担保，导致大量短期流动性以贸易信用的形式被排除在正式结算基础设施之外。其次，现有的清算模式依赖中央对手方（CCPs），虽然可以降低对手信用风险，但却引发了新的系统性风险，尤其是CCPs的“太大而不能倒”特性和其边际实践的顺周期性。  2. 【前人的工作如何解决该问题，存在哪些空白】    ...">Deepening the Secondary Market: Integrating Trade Credit into Market Clearing with the Cycles Protocol</span></td>
+        <td class="author-cell">Tomaž Fleischman</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.02436" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.02436" target="_blank" rel="noopener">🧠 AlphaXiv</a><br><a class="resource-tag code" href="https://wfeclear2026.wfe-events.com/" target="_blank" rel="noopener">🔗 Code1</a><br><details class="resource-comment"><summary>📝 备注</summary><small>presented at WFEClear 2026: The WFEs Clearing and Derivatives Conferencethis https URL</small></details></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+   该论文的动机在于当前的后交易清算系统过于依赖现金或现金类担保，导致大量短期流动性以贸易信用的形式被排除在正式结算基础设施之外。其次，现有的清算模式依赖中央对手方（CCPs），虽然可以降低对手信用风险，但却引发了新的系统性风险，尤其是CCPs的“太大而不能倒”特性和其边际实践的顺周期性。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+   前人的研究主要集中在CCPs的风险管理和流动性问题上，探讨了其在降低对手风险方面的有效性。然而，这些研究未能充分考虑如何将贸易信用整合进现有的清算系统，从而未能解决流动性被排除的问题。此外，现有文献对如何在保持隐私的情况下实现新型清算机制的探讨也相对较少。
+
+3. 【提出了什么创新的方法】  
+   本文提出了一种基于双重记账和图论的理论框架，能够将经济体形式化为一个互锁的资产负债表网络。其次，提出了一种基于循环发现的方法，与CCP系统进行比较，展示了其在清算中的优势。最后，利用分布式账本技术实现隐私保护的清算协议（Cycles Protocol），并通过全球多边抵消模型来优化流动性需求。
+
+4. 【文章缺点】  
+   该论文可能在实际应用中面临技术实现的复杂性，尤其是在隐私保护和分布式账本技术的集成方面。此外，理论框架的实际有效性和可操作性尚需通过更多的实证研究来验证。
+
+5. 【类似工作】  
+   类似的工作包括对CCP系统的批判性分析，如Wendt（2015）和Maruyama等（2019）的研究，探讨了CCPs的系统性风险和边际实践的影响。此外，Ivashina（2018）对贸易信用和流动性在金融市场中的作用进行了研究，提供了相关的理论基础。
+
+6. 【相关性评分】  
+分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文的动机在于揭示去中心化预测市场中信息泄露和知情交易的现象，特别是在Polymarket等平台上，存在大量的可疑交易记录。通过分析这些交易，研究者希望能够更好地理解知情交易的机制及其对市场价格发现的影响。此外，随着去中心化市场的兴起，建立有效的检测框架以识别和量化知情交易的行为变得尤为重要。  2. 【前人的工作如何解决该问题，存在哪些空白】  ...">Per-Market Information Leakage and Order-Flow Skill: Two Methodological Lenses on Informed Trading in Decentralized Prediction Markets</span></td>
+        <td class="author-cell">Maksym Nechepurenko</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.02287" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.02287" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+该论文的动机在于揭示去中心化预测市场中信息泄露和知情交易的现象，特别是在Polymarket等平台上，存在大量的可疑交易记录。通过分析这些交易，研究者希望能够更好地理解知情交易的机制及其对市场价格发现的影响。此外，随着去中心化市场的兴起，建立有效的检测框架以识别和量化知情交易的行为变得尤为重要。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究主要集中在使用不同的方法来识别知情交易的迹象，例如Mitts和Ofir（2026）通过构建复合统计筛选器来评估钱包-市场对的表现，Gomez-Cram等（2026）则利用事件级别的随机化测试来分类账户的交易技能。然而，这些方法仍存在空白：首先，现有的研究大多是回顾性的，缺乏实时信号的提供；其次，虽然有些方法能够识别技能与运气的区别，但它们并未涵盖所有可能的知情交易者，特别是一-shot的知情者。
+
+3. 【提出了什么创新的方法】  
+论文提出了几种创新的方法来分析去中心化预测市场中的知情交易。首先，Mitts和Ofir（2026）开发了一个复合知情交易筛选器，结合了多种特征来评估异常表现。其次，Gomez-Cram等（2026）引入了事件级别的随机化技能分类器，能够有效区分交易者的技能水平。此外，Nechepurenko（2026）提出的信息泄露评分（ILS）框架，为量化市场信息前置提供了新的视角。
+
+4. 【文章缺点】  
+尽管论文提出了多种方法，但仍存在一些缺点。首先，所有方法均为回顾性分析，无法实时监测市场中的知情交易行为。其次，部分方法在样本选择上存在局限性，可能无法全面捕捉所有类型的知情交易者，尤其是那些仅在特定事件中进行交易的账户。
+
+5. 【类似工作】  
+类似的工作包括</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于评估在Polymarket等去中心化预测市场中，信息泄露对内幕交易的影响，尤其是在特定的截止日期下。通过对2026年美伊冲突集群的案例进行实证评估，研究旨在揭示信息泄露评分（ILSdl{}^{\text{dl}}）在量化内幕交易中的有效性和适用性。此外，研究还希望填补现有文献中对截止日期相关信息泄露的量化分析的空白。  2. 【前人的...">Empirical Evaluation of Deadline-Resolved Information Leakage on Documented Polymarket Insider Cases</span></td>
+        <td class="author-cell">Maksym Nechepurenko</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.02286" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.02286" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本论文的动机在于评估在Polymarket等去中心化预测市场中，信息泄露对内幕交易的影响，尤其是在特定的截止日期下。通过对2026年美伊冲突集群的案例进行实证评估，研究旨在揭示信息泄露评分（ILSdl{}^{\text{dl}}）在量化内幕交易中的有效性和适用性。此外，研究还希望填补现有文献中对截止日期相关信息泄露的量化分析的空白。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作（如Mitts和Ofir，2026年；Saguillo等，2025年）通过案例研究揭示了在去中心化预测市场中内幕交易的存在，并记录了异常利润。然而，这些研究并未提供一个系统的量化框架来评估信息泄露的程度，特别是在截止日期的上下文中。尽管Nechepurenko（2026年）提出了信息泄露评分（ILS）及其截止日期扩展，但缺乏对该方法在实际案例中的实证应用。
+
+3. 【提出了什么创新的方法】  
+本论文提出了一种新的信息泄露评分（ILSdl{}^{\text{dl}}）的实证评估方法，专门针对截止日期的预测市场合约。研究通过四个部分的分析，包括类别的指数风险率估计、单案例的ILSdl{}^{\text{dl}}计算、跨市场钱包分析以及方法论的改进，展示了该方法的有效性。此外，研究还强调了在数据收集和分析过程中所需的严格条件，以确保结果的可靠性。
+
+4. 【文章缺点】  
+首先，研究的样本量较小，仅针对一个符合所有要求的案例进行全面分析，这可能限制了结果的普遍适用性。其次，研究中提到的基础设施限制可能会对未来的扩展和更大规模的实证研究造成障碍，影响方法的推广性。
+
+5. 【类似工作】  
+类似的工作包括Mitts和Ofir（2026年）对去中心化预测市场内幕交易的研究，以及Nechepurenko（</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于解决传统投资组合优化模型的局限性，尤其是线性假设和对多模态信息整合不足的问题。其次，随着金融市场中非结构化数据（如金融文本情绪）的快速增长，如何有效利用这些信息以提升投资组合的动态决策能力成为了一个亟待解决的挑战。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的研究主要通过引入深度强化学习（DRL）方法来改善动态投资组...">SBCA: Cross-Modal BERT-driven Actor-Critic for Multi-Asset Portfolio Optimization</span></td>
+        <td class="author-cell">Jinfeng Pan</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.01384" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.01384" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本论文的动机在于解决传统投资组合优化模型的局限性，尤其是线性假设和对多模态信息整合不足的问题。其次，随着金融市场中非结构化数据（如金融文本情绪）的快速增长，如何有效利用这些信息以提升投资组合的动态决策能力成为了一个亟待解决的挑战。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究主要通过引入深度强化学习（DRL）方法来改善动态投资组合管理，尝试解决连续动作空间的问题，并在一定程度上考虑了交易成本和下行风险。然而，现有的方法在多模态融合方面仍显得肤浅，未能有效捕捉价格序列与文本情绪之间的适应性互动关系。此外，许多研究忽视了实际交易中的约束条件，限制了其在真实市场中的应用。
+
+3. 【提出了什么创新的方法】  
+本论文提出了一种跨模态BERT驱动的Actor-Critic框架（SBCA），通过跨模态门控融合机制实现价格时间序列特征与BERT提取的文本语义特征的自适应整合。同时，该框架在奖励函数中嵌入了下行风险和组合周转约束，以更好地符合实际交易环境。此外，建立了完整的实证验证体系，包括消融研究和成本敏感性分析，以确保模型的可靠性和可重复性。
+
+4. 【文章缺点】  
+尽管该论文提出了创新的方法，但仍存在一些不足之处。首先，模型的复杂性可能导致计算资源的高消耗，限制了其在大规模数据集上的应用。其次，虽然进行了消融研究，但对模型在不同市场条件下的适应性分析仍显不足，可能影响模型的普适性。
+
+5. 【类似工作】  
+类似的研究工作包括基于深度强化学习的动态投资组合优化方法，如DDPG和PPO等，这些方法在处理连续投资组合权重问题上表现出色。此外，还有一些研究尝试将文本情绪分析与传统投资组合优化相结合，但多模态融合的深度和效果仍不及本论文提出的方法。</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      该论文的动机在于扩展传统的鞅理论，以更灵活的方式建模时间，从而更好地捕捉金融系统中的信息流动特征。传统的线性时间假设限制了信息的演变路径，而使用小范畴来建模时间可以允许多条信息流并存、合并或分支，提供了更丰富的结构视角。      其次，论文旨在通过引入同调方法，揭示鞅条件的内在结构特征，进而为经典套利概念提供同调上的细化。这种方法不仅丰富了鞅...">Martingale Cohomology, Holonomy, and Homological Arbitrage</span></td>
+        <td class="author-cell">Takanori Adachi</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.01370" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.01370" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+   该论文的动机在于扩展传统的鞅理论，以更灵活的方式建模时间，从而更好地捕捉金融系统中的信息流动特征。传统的线性时间假设限制了信息的演变路径，而使用小范畴来建模时间可以允许多条信息流并存、合并或分支，提供了更丰富的结构视角。  
+   其次，论文旨在通过引入同调方法，揭示鞅条件的内在结构特征，进而为经典套利概念提供同调上的细化。这种方法不仅丰富了鞅理论的数学框架，也为金融市场中的套利现象提供了新的理解。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+   前人的工作主要集中在传统的鞅理论和线性时间模型上，成功地建立了鞅与无套利条件之间的联系。然而，这些研究往往忽视了时间模型的灵活性，未能充分考虑多路径信息流动的情况。  
+   此外，尽管已有一些研究尝试将同调方法应用于金融理论，但缺乏对鞅条件的同调解释和在非线性时间框架下的应用，这为本研究提供了重要的研究空白。
+
+3. 【提出了什么创新的方法】  
+   本文提出了一种基于小范畴的鞅理论的新框架，通过构造与过滤相关的单纯复形，展示了鞅自然作为0-余圈的出现。  
+   论文还引入了一种归一化过程（β-规），以解决由于测度不保持而导致的复杂性，从而构建出一个良定义的余圈复形。  
+   最后，定义了同调套利作为一种非平凡的同调类，代表在组合下保持一致但无法通过任何价格过程生成的收益系统。
+
+4. 【文章缺点】  
+   文章的一个缺点是其理论框架的复杂性，可能使得实际应用和理解变得困难，尤其是在金融实践中。  
+   另一个缺点是，尽管引入了新的归一</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      本文的动机在于，随着绿色和数字转型成为欧盟政策的核心，欧洲中小企业（SMEs）在推动可持续发展方面扮演着重要角色。然而，这些企业在技术资源和政策指导方面的有限获取，使得它们难以与日益严格的环境、社会和治理（ESG）标准对齐。      其次，现有的ESG评估方法往往是自上而下的，缺乏针对中小企业实际情况的定制化，且缺乏基于结构化调查数据的实时推...">AI Agents for Sustainable SMEs: A Green ESG Assessment Framework</span></td>
+        <td class="author-cell">Viet Trinh</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.00841" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.00841" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+   本文的动机在于，随着绿色和数字转型成为欧盟政策的核心，欧洲中小企业（SMEs）在推动可持续发展方面扮演着重要角色。然而，这些企业在技术资源和政策指导方面的有限获取，使得它们难以与日益严格的环境、社会和治理（ESG）标准对齐。  
+   其次，现有的ESG评估方法往往是自上而下的，缺乏针对中小企业实际情况的定制化，且缺乏基于结构化调查数据的实时推荐能力，这使得中小企业在实施ESG标准时面临挑战。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+   前人的研究探讨了中小企业在环境参与方面的障碍和动机，识别了影响其生态创新的因素。例如，Rizos等人指出内部能力的限制和缺乏绿色融资是中小企业采用循环商业模式的主要障碍。  
+   然而，尽管已有研究表明数字技术（如人工智能和区块链）可以提升ESG报告的质量，现有的解决方案仍然未能充分考虑中小企业的具体需求，且缺乏实时的、基于数据的推荐能力。
+
+3. 【提出了什么创新的方法】  
+   本文提出了一种新颖的AI驱动框架，通过使用Flash Eurobarometer FL549调查数据，评估欧洲中小企业的ESG表现。该框架包括一个可扩展的AI代理系统，能够自动化ESG分类，并利用大型语言模型生成上下文推荐。  
+   此外，研究采用了两阶段的方法论，第一阶段提取和聚合与ESG相关的指标，第二阶段利用这些指标进行深入分析和推荐。
+
+4. 【文章缺点】  
+   文章可能在数据处理和模型构建的复杂性上存在一定的局限性，可能导致实施过程中的技术挑战。  
+   另外，尽管框架具有创新性，但其在实际应用中的效果和适应性仍需进一步验证，特别是在不同国家和行业背景下的适用性。
+
+5. 【类似工作】  
+   相关研究</small></details></td>
+    </tr>
+        </tbody></table>
+    </div>
+</div>
+<div class="date-section" id="date-20260504">
+    <div class="date-header">
+        <span>2026-05-04（10篇论文）</span>
+        <span class="arrow">▶</span>
+    </div>
+    <div class="date-content" style="display: none;">
         <table>
         <!-- 添加 colgroup 明确指定每列宽度 -->
         <colgroup>
@@ -1146,262 +1571,6 @@
         </tbody></table>
     </div>
 </div>
-<div class="date-section" id="date-20260430">
-    <div class="date-header">
-        <span>2026-04-30（11篇论文）</span>
-        <span class="arrow">▶</span>
-    </div>
-    <div class="date-content" style="display: none;">
-        <table>
-        <!-- 添加 colgroup 明确指定每列宽度 -->
-        <colgroup>
-            <col style="width: 25%">  <!-- Title -->
-            <col style="width: 15%">   <!-- Authors -->
-            <col style="width: 10%">   <!-- Resources -->
-            <col style="width: 10%">   <!-- Relevance -->
-            <col style="width: 40%">  <!-- Summary -->
-        </colgroup>
-        <thead>
-            <tr>
-                <th>标题</th>
-                <th>作者</th>
-                <th>资源</th>
-                <th>相关性</th>
-                <th>总结</th>
-            </tr>
-        </thead>
-        <tbody>
-        <tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1.【论文的motivation是什么】该论文的动机在于：首先，当前的核心识别问题（CIP）在大型一侧匹配市场中计算复杂度高，尤其是在应用于诸如纽约市学校选择等实际案例时，现有算法的O(n log n)复杂度使得处理大规模数据的能力有限。其次，传统的TTC算法虽然有效，但在实际应用中，交易成本和延迟限制了其使用频率，因此需要一种更快的方法来实现稳定匹配。  2.【前人的工作如何解决该问题，存在哪些...">Fast Core Identification</span></td>
-        <td class="author-cell">Irene Aldridge</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.25954" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.25954" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：5/5">★★★★★</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1.【论文的motivation是什么】该论文的动机在于：首先，当前的核心识别问题（CIP）在大型一侧匹配市场中计算复杂度高，尤其是在应用于诸如纽约市学校选择等实际案例时，现有算法的O(n log n)复杂度使得处理大规模数据的能力有限。其次，传统的TTC算法虽然有效，但在实际应用中，交易成本和延迟限制了其使用频率，因此需要一种更快的方法来实现稳定匹配。
-
-2.【前人的工作如何解决该问题，存在哪些空白】前人的研究主要集中在优化匹配机制上，如近似机制的开发等，然而这些工作往往以牺牲分配最优性为代价，无法提供准确的TTC结果。与此同时，对于特定的TTC分配，存在已知多项式时间算法，然而大多数研究未能充分利用马尔可夫链和特征向量分析进行计算速度提升。
-
-3.【提出了什么创新的方法】本研究提出了一种新的特征向量基础的方法，通过构建偏好派生的马尔可夫转移矩阵来识别核心成员。该方法的创新点在于：1）将核心识别的复杂度降低至O(n)；2）维持TTC算法的所有性质，包括帕累托效率、个体理性和策略无关性；3）针对偏好噪声具备鲁棒性，适用于大规模市场。
-
-4.【文章缺点】文章的缺点在于：1）算法在处理非常大规模的偏好型数据时，可能仍然面临计算资源的瓶颈；2）虽然提供了核心识别的优化方法，但仍需要验证该方法在复杂市场环境下的实际表现和适用性。
-
-5.【类似工作】类似工作包括：1）Zhou (1990) 的研究显示没有任何精确机制能够在效率、真实和对称性之间完全兼顾；2）Leshno 和 Lo (2020b) 将TTC与马尔可夫链联系起来的工作，为后续相关研究奠定了基础。
-
-6.【相关性评分】分数：5分</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   首先，论文旨在探讨顶尖发明家流入对当地发明人专利生产力的因果影响，这一问题在经济学中，如贸易、增长和地理等领域具有重要意义。其次，论文希望通过Marshall与Bartik的理论结合，揭示地方知识创造的过程，尤其是知识溢出和社会经济特征的关系，从而为理解知识在空间经济中的非排他性特性提供实证支持。  2. 【前人的工作如何解决该问题，存在哪些空白】 ...">Marshall meets Bartik: Revisiting the mysteries of the trade</span></td>
-        <td class="author-cell">Yasusada Murata</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.26457" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.26457" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
-首先，论文旨在探讨顶尖发明家流入对当地发明人专利生产力的因果影响，这一问题在经济学中，如贸易、增长和地理等领域具有重要意义。其次，论文希望通过Marshall与Bartik的理论结合，揭示地方知识创造的过程，尤其是知识溢出和社会经济特征的关系，从而为理解知识在空间经济中的非排他性特性提供实证支持。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】  
-前人的研究在知识创造和溢出效应方面已有所涉及，特别是在组织边界和合作者关系的知识传递上。然而，这些研究往往对个人之间的创意生成过程缺乏深入分析，尤其是关于顶尖发明家流入的具体影响。与此同时，大多数研究未能充分考虑地方税收差异对创新活动空间分布的扭曲效应。
-
-3. 【提出了什么创新的方法】  
-首先，论文采用Bartik工具对顶尖发明家流入进行预测，从而提供了因果推断的基础。其次，通过对内部发明人和外部发明人的分类，细化了对知识溢出效应的理解，明确了其对生产力的不同影响。这种细致的分类方法有助于揭示知识在地方经济中的复杂传播机制。
-
-4. 【文章缺点】  
-一方面，研究可能对区域特征的控制不足，未能充分考虑其他可能影响创新活动的经济和社会因素。另一方面，因果关系的识别仍然依赖于模型假设，存在模型设定不当所引入的偏误风险。
-
-5. 【类似工作】  
-第一个相关工作可以参考关于知识溢出和产业集聚效应的研究，尤其是基于区域层面的分析。第二个相关工作则是关于税收政策对创新活动影响的实证研究，着眼于如何通过政策工具影响地方发明家行为。
-
-6. 【相关性评分】  
-分数：4分</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于解决现有局部波动率模型在捕捉波动率的路径依赖特征方面的不足。同时，通过引入Local Occupied Volatility (LOV)模型，该研究旨在自动校准至欧洲香草期权并灵活地符合市场的特征，提供更准确的定价工具。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的工作主要集中在不同类型的路径依赖波动率模型上，这些模...">Pricing with Passion: The Local Occupied Volatility (LOV) Model</span></td>
-        <td class="author-cell">Valentin Tissot-Daguette</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.26151" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.26151" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
-本论文的动机在于解决现有局部波动率模型在捕捉波动率的路径依赖特征方面的不足。同时，通过引入Local Occupied Volatility (LOV)模型，该研究旨在自动校准至欧洲香草期权并灵活地符合市场的特征，提供更准确的定价工具。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】  
-前人的工作主要集中在不同类型的路径依赖波动率模型上，这些模型具有捕捉波动率样式特征的灵活性。然而，现有模型往往在市场完全性方面受到限制，因此无法充分利用美国风格期权的定价特性，尤其是在没有红利支付的情况下。
-
-3. 【提出了什么创新的方法】  
-本研究提出了Local Occupied Volatility (LOV)模型，通过调节占用敏感函数来捕捉路径依赖冲击对波动率的影响。此外，该模型能够确保对欧洲香草期权的自动校准，并具有匹配多种金融工具的灵活性。
-
-4. 【文章缺点】  
-论文中可能存在的缺点包括：一是LOV模型的计算复杂性可能影响其实用性，因为其需要进行有效的数值积分；二是对模型有效性的验证主要集中在非红利支付的股票上，缺乏对多种市场环境的广泛测试。
-
-5. 【类似工作】  
-类似的工作包括对占用波动率模型的研究以及局部波动率模型的进一步发展，这些研究同样关注波动率的路径依赖特性，并探索相应的数值方法和应用。
-
-6. 【相关性评分】  
-分数：4分</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 论文的motivation是什么：    - 本文旨在量化分析传统金融对以太坊（ETH）网络Proof-of-Stake（PoS）机制的影响，探讨机构投资者和消费者行为如何影响网络的去中心化程度。     - 研究的核心在于揭示外部宏观经济因素如何通过压低协议的内部质押收益，影响日常网络用户的决策及其在质押过程中的角色。  2. 前人的工作如何解决该问题，存在哪些空白：    - 前人研究主...">The Financialization of Proof-of-Stake: Asymptotic Centralization under Exogenous Risk Premiums</span></td>
-        <td class="author-cell">Mikhail Perepelitsa</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.26076" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.26076" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 论文的motivation是什么：
-   - 本文旨在量化分析传统金融对以太坊（ETH）网络Proof-of-Stake（PoS）机制的影响，探讨机构投资者和消费者行为如何影响网络的去中心化程度。 
-   - 研究的核心在于揭示外部宏观经济因素如何通过压低协议的内部质押收益，影响日常网络用户的决策及其在质押过程中的角色。
-
-2. 前人的工作如何解决该问题，存在哪些空白：
-   - 前人研究主要集中在以太坊PoS机制下的经济模型构建，但往往忽视了外部金融环境如何具体影响质押收益及网络稳定性的问题。 
-   - 现有文献对机构投资者对质押池的集中影响探讨不够，未深入分析这种集中如何导致网络内部经济的失衡和消费者的退出。
-
-3. 提出了什么创新的方法：
-   - 本文构建了一个异质宏观经济模型，模拟包含投资者和消费者两类理性行为者的经济系统，从而更准确地反映PoS网络的动态。 
-   - 通过导出分析网络均衡的三次多项式，提供了对质押收益压制机制的理论分析，揭示了宏观经济因果关系的结构。
-
-4. 文章缺点：
-   - 论文对某些参数的假设可能过于理想化，未充分考虑现实市场中存在的复杂性，如政策风险等外部冲击。 
-   - 对某些边界情形的处理可能导致结果的适用性受到限制，缺乏更多实证例证来验证理论模型的准确性。
-
-5. 类似工作：
-   - 研究不同市场结构下资产价格动态的文献，如《市场微观结构与资产定价》。
-   - 针对区块链技术与经济学结合的相关文献，例如关于加密资产波动的研究。
-
-6. 相关性评分：
-分数：4分</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】    本文的动机主要有两个方面。首先，投资者情绪在金融市场中扮演着重要的角色，市场信息（如新闻和社交媒体）影响投资者情绪，从而影响投资决策。本文希望探讨在科技公司中，新闻和社交媒体对投资者情绪的不同影响及其信息的溢出效应。其次，当前的研究较少关注这两种信息来源之间的比较，尤其是在疫情后的市场环境中，分析其对情绪传播的影响，将为理解投资者行为提供新的视角。...">Do News and Social Media Tell the Same Story? Constructing and Comparing Sentiment Spillover Networks</span></td>
-        <td class="author-cell">Fan Wu</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.26811" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.26811" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】
-   本文的动机主要有两个方面。首先，投资者情绪在金融市场中扮演着重要的角色，市场信息（如新闻和社交媒体）影响投资者情绪，从而影响投资决策。本文希望探讨在科技公司中，新闻和社交媒体对投资者情绪的不同影响及其信息的溢出效应。其次，当前的研究较少关注这两种信息来源之间的比较，尤其是在疫情后的市场环境中，分析其对情绪传播的影响，将为理解投资者行为提供新的视角。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】
-   前人的研究在情绪分析和市场波动之间建立了联系，诸如Baker和Wurgler的市场基本面方法和基于调查的情绪指数为投资者情绪的量化提供了基础。然而，这些方法存在捕捉宏观经济因素的局限性，且调查数据的分析频率较低。其次，虽然已有研究通过社交媒体分析情绪，但尚缺乏对新闻与社交媒体情绪信息之间溢出效应的系统性比较，尤其是在特定行业（如科技）内的应用。
-
-3. 【提出了什么创新的方法】
-   本文提出使用基于网络的传递熵方法来测量和比较新闻和社交媒体情绪在科技公司之间的信息传递。这种方法允许量化不同公司之间的情绪溢出效应，并识别出在信息网络中扮演重要角色的公司。此外，文章还探索了信息流动强度的变化，尤其是在COVID-19之后，增强了对情绪传播机制的理解。
-
-4. 【文章缺点】
-   首先，文章中所选择的样本仅限于科技公司，可能无法代表其他行业的情绪传播特征，限制了结论的普适性。其次，尽管使用了传递熵作为衡量工具，但该方法可能对数据质量和样本量敏感，如数据的时效性和准确性，可能影响结果的可靠性。
-
-5. 【类似工作】
-   一项相关研究分析了社交媒体对金融市场波动的影响，通过情绪分析</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】    该论文的motivations主要有两个方面。首先，随着大型语言模型（LLM）在金融领域应用的增长，研究者希望解决在因子发现过程中的灵活性带来的潜在风险，确保发现的结果具有可重复性和可审计性。其次，论文提出通过在一个固定的数据分析框架内进行顺序假设搜索，使得LLM在货币市场中的应用更为有效，同时能够控制无序的探索过程，提升因子发现的质量。  2. ...">From Hypotheses to Factors: Constrained LLM Agents in Cryptocurrency Markets</span></td>
-        <td class="author-cell">Yikuan Huang</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.26747" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.26747" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】
-   该论文的motivations主要有两个方面。首先，随着大型语言模型（LLM）在金融领域应用的增长，研究者希望解决在因子发现过程中的灵活性带来的潜在风险，确保发现的结果具有可重复性和可审计性。其次，论文提出通过在一个固定的数据分析框架内进行顺序假设搜索，使得LLM在货币市场中的应用更为有效，同时能够控制无序的探索过程，提升因子发现的质量。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】
-   前人的研究已经建立了关于加密资产定价的基础模型，比如刘和Tsyvinski的三因子模型。然而，这些模型未能应对因子发现过程中可能存在的随意变化问题，导致的结果可能并不是真实有效的发现。其次，尽管已有研究尝试利用机器学习技术寻找预测信号，但它们大多依赖于人类设计的特征，缺乏系统性自动化的因子发现方法，这在一定程度上造成了研究的限制和信息损失。
-
-3. 【提出了什么创新的方法】
-   该论文提出了一种创新的因子发现框架，主要包括三个方面：第一，利用受限的因子特定语言（DSL）来限制候选行动，使得结果可审计；第二，设定一个确定性的评估引擎进行信号计算和失败记录，以确保每次实验的严格性和透明度；第三，通过将推理与评估分离，赋予LLM在固定协议下的目标导向和自适应搜索能力。
-
-4. 【文章缺点】
-   本文的缺点之一是，尽管设定了严格的评估规则，但在实际应用中仍可能遭遇模型过拟合的问题，使得所得因子在其他市场环境中表现不佳。其次，所提出的框架过于依赖于历史数据，可能无法充分应对市场的快速变化，导致模型在未来预测上的鲁棒性不足。
-
-5. 【类似工作】
-   第一项类似工作是Fieberg等（2025）提出的“CTREND”趋势因子模型，该模型显示了在加密市场中</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】    本文的动机在于解决跨境金融传染的检测与归因问题，特别是在金融危机期间，这一现象对政策制定和投资决策的重要性日益增加。首先，现有研究已证实金融冲击在不同市场之间的传播在压力时期明显增强，理解这一机制对于制定有效的政策干预至关重要。其次，尽管检测市场间的传播已经取得一定成果，但对相应结构机制的识别仍然存在显著的空白，导致理论理解与实践应用之间的脱节。 ...">What Drives Contagion? Identifying and Attributing Cross-Border Transmission Mechanisms</span></td>
-        <td class="author-cell">Avishek Bhandari</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.26546" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.26546" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】
-   本文的动机在于解决跨境金融传染的检测与归因问题，特别是在金融危机期间，这一现象对政策制定和投资决策的重要性日益增加。首先，现有研究已证实金融冲击在不同市场之间的传播在压力时期明显增强，理解这一机制对于制定有效的政策干预至关重要。其次，尽管检测市场间的传播已经取得一定成果，但对相应结构机制的识别仍然存在显著的空白，导致理论理解与实践应用之间的脱节。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】
-   前人的研究主要聚焦于跨市场的共动性和传染的检测，例如Forbes和Rigobon（2002）针对市场相关性进行了重要修正，使得后续的研究能够更加准确地识别传染现象。然而，多数工作仍未能有效地解决归因问题，即在确认传播发生后，无法明确识别出导致这一现象的具体机制。此外，现有文献往往将传染现象视为一个统一的现象，缺乏对传染渠道的细致划分，这限制了对不同情况下的具体应对策略的设计。
-
-3. 【提出了什么创新的方法】
-   本文提出了一种基于两阶段框架的新方法，结合了小波-分位数传递熵检测与多方法结构性渠道归因。通过这种方法，第一阶段利用小波变换分解信息流，第二阶段则采用多种工具（如工具变量两阶段最小二乘法、LASSO选择等）对检测到的方向性传播进行归因分析，从而为每个传播链接提供关于渠道的后验信息。这一方法使得研究者能准确识别多种传染渠道，并为复杂的金融体系提供了更清晰的理解。
-
-4. 【文章缺点】
-   尽管本文的框架在理论和方法上都表现出一定的创新性，但其也存在一些缺点。首先，文章的分析高度依赖于所选的数据范围和时期，对于其他市场或时间段的适用性可能有限。其次，文中对不同机制的识别可能受到外</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本文的动机在于传统的移动平均收敛发散（MACD）交易规则存在信号滞后和对虚假信号的敏感性等限制。这些缺陷可能导致交易者在实际趋势反转时做出延迟的买入或卖出决策，从而影响交易的效果。此外，常规的MACD指标未能考虑交易量和日内价格信息，导致该指标在市场参与度不足或方向性强度缺乏时更容易产生误导性信号。  2. 【前人的工作如何解决该问题，存在哪些空白】...">A Volume-Price-Adjusted MACD Trading Strategy with Sensitivity Calibration for U.S. Equity Indices</span></td>
-        <td class="author-cell">Luyun Lin</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.26063" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.26063" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
-本文的动机在于传统的移动平均收敛发散（MACD）交易规则存在信号滞后和对虚假信号的敏感性等限制。这些缺陷可能导致交易者在实际趋势反转时做出延迟的买入或卖出决策，从而影响交易的效果。此外，常规的MACD指标未能考虑交易量和日内价格信息，导致该指标在市场参与度不足或方向性强度缺乏时更容易产生误导性信号。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】  
-部分研究通过优化MACD参数或引入额外的技术指标来应对上述问题，然而这些方法仍面临一些限制。例如，参数优化对校准窗口的选择高度敏感，易产生过拟合风险；而指示符的增补虽然能提升信号质量，但却往往造成分析结构的碎片化，缺乏统一框架。因此，现有研究在将交易量和价格结构信息整合到MACD指标中仍显不足。
-
-3. 【提出了什么创新的方法】  
-本文提出了一种体积价格调整的MACD（VP-MACD）框架，该框架通过将成交量、波动性和日内价格结构信息直接融入指标构建来增强MACD的有效性。此外，文章引入了一种敏感性参数λ，以放宽交叉条件，实现更早的交易信号，并提高对市场趋势变化的响应速度。这种方法不仅丰富了指标的信息基础，同时保持了其基本结构的完整性。
-
-4. 【文章缺点】  
-首先，尽管VP-MACD框架改善了信号质量，但其效果在不同市场条件下的稳定性仍需进一步检验。其次，本文采用的历史数据仅限于2018年至2022年，可能限制了模型的普适性和推广应用，未来可能需要在更广泛的时间范围内验证其有效性。
-
-5. 【类似工作】  
-类似工作包括Kang (2021)和Agudelo Aguirre et al. (2020)，他们研究了特定市场中MACD参数的优化，虽然这些工作尝试解决MACD的限制，但都</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文的动机在于，2021年至2022年的能源危机以及与欧洲大陆更紧密的市场整合，使得挪威电力价格形成机制发生了根本变化，这减少了基于历史数据的预测模型的可靠性。因此，针对这一变化背景，更新电力价格预测模型成为了一个亟待解决的重要问题。此外，挪威市场的五个竞标区存在结构差异，但缺乏统一的基准来评估特征在价格预测中的贡献，这进一步突显了研究的必要性。 ...">Electricity price forecasting across Norway&#39;s five bidding zones in the post-crisis era</span></td>
-        <td class="author-cell">My Thi Diem Phan</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.26634" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.26634" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
-该论文的动机在于，2021年至2022年的能源危机以及与欧洲大陆更紧密的市场整合，使得挪威电力价格形成机制发生了根本变化，这减少了基于历史数据的预测模型的可靠性。因此，针对这一变化背景，更新电力价格预测模型成为了一个亟待解决的重要问题。此外，挪威市场的五个竞标区存在结构差异，但缺乏统一的基准来评估特征在价格预测中的贡献，这进一步突显了研究的必要性。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】  
-前人的研究在电力价格预测领域取得了一些进展，尤其是建立了不同模型的重要性以及特征设计的必要性。然而，现有的文献往往基于危机前的数据或针对挪威以外的市场进行评估，导致对挪威市场在后危机背景下的电力价格预测缺乏严格的实证验证。此外，早期研究主要集中在Nord Pool系统价格、周度设置或结构性变化前的跨境影响，未能全面揭示后危机时代所有五个竞标区的价格预测挑战。
-
-3. 【提出了什么创新的方法】  
-本文提出了一种综合评估电力价格预测的框架，使用了跨越2019至2025年的多模态小时数据集，并评估了包括LightGBM、ARX在内的八种预测模型家庭。此外，论文实现了强有力的滚动起始回测、逐组特征消融和条件体制分析，这些方法能够深入剖析模型性能及特征效用，从而为电力价格预测提供更精准的见解。
-
-4. 【文章缺点】  
-尽管文章提出了创新的方法和评估框架，但仍存在一定的缺点。首先，数据集仅限于特定的时间范围，可能无法完全捕捉未来市场的动态变化。其次，尽管采用了多种模型，但对某些复杂市场特征（如行为经济学因素影响）的考虑仍显不足，可能影响模型在特定条件下的表现。
-
-5. 【类似工作】  
-类似的工作包括</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本文的动机主要是探讨消费者在委托决策时，AI代理如何影响市场的交易过程。首先，随着越来越多的消费者将购买决策委托给AI代理，如何有效利用委托信息以推测买方的支付意愿（WTP）成为重要课题。其次，该研究关注到在购买过程中，消费者描述自身偏好的方式会导致偏好信息的泄露，这样的漏斗效应可能使卖方在未获得明确的买方信息的情况下，透过对话推断其支付意愿。  2...">When Agents Shop for You: Role Coherence in AI-Mediated Markets</span></td>
-        <td class="author-cell">Soogand Alavi</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.26220" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.26220" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
-本文的动机主要是探讨消费者在委托决策时，AI代理如何影响市场的交易过程。首先，随着越来越多的消费者将购买决策委托给AI代理，如何有效利用委托信息以推测买方的支付意愿（WTP）成为重要课题。其次，该研究关注到在购买过程中，消费者描述自身偏好的方式会导致偏好信息的泄露，这样的漏斗效应可能使卖方在未获得明确的买方信息的情况下，透过对话推断其支付意愿。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】  
-前人的研究主要集中于多代理AI配置及其在市场中的表现，如Gopal等（2025）和Bansal等（2025）等指出代理间的合作与市场表现。但是，这些研究并未深入探讨消费者如何通过特定的语言描述影响卖方对其支付意愿的推测，缺乏对消费者委托过程中的信息传递具体机制的系统分析。其次，尽管已有关于AI代理行为偏差的研究，如Cherep等（2025）的文献，但仍缺少对如何平衡个性化与偏好隐私的实证研究。
-
-3. 【提出了什么创新的方法】  
-本文提出了一种架构干预方法，旨在平衡个性化推荐与偏好隐私的关系。这包括通过设计AI代理的交流方式，使之既能高效提取用户偏好，又不至于泄露过多敏感信息。此外，实验设定上通过对比语言模式代理与数值预算条件，验证了角色一致性对支付意愿推测的影响，这一方法为未来的研究提供了新颖的框架。
-
-4. 【文章缺点】  
-首先，虽然实验展示了角色一致性在信息推测中的作用，但缺乏对更大样本情况下的广泛验证，可能影响结果的普适性。其次，文章对于AI代理在实际应用中可能面临的道德和隐私问题的讨论较为简单，尚需更多深入的法律和伦理分析。
-
-5. 【类似工作】  
-类似工作的研究包括Zhu等（2025）对代理间协</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1.【论文的motivation是什么】 该论文的动机主要来自于两个方面：首先，在数字广告战略预算分配中，组织常常面临有限的预算和各种操作性约束，而缺乏有效的方法来评估历史上所做的分配决策的合理性，尤其是在预算变更高额且难以逆转的情况下。其次，软约束与市场动态影响着每次决策的结果，因此，需要一种机制来准确评估过去决策的优化程度，以确定未能获得的潜在价值。  2.【前人的工作如何解决该问题，存在哪些...">Auditing Marketing Budget Allocation with Hindsight Regret</span></td>
-        <td class="author-cell">Nilavra Pathak</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2604.25977" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2604.25977" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1.【论文的motivation是什么】
-该论文的动机主要来自于两个方面：首先，在数字广告战略预算分配中，组织常常面临有限的预算和各种操作性约束，而缺乏有效的方法来评估历史上所做的分配决策的合理性，尤其是在预算变更高额且难以逆转的情况下。其次，软约束与市场动态影响着每次决策的结果，因此，需要一种机制来准确评估过去决策的优化程度，以确定未能获得的潜在价值。
-
-2.【前人的工作如何解决该问题，存在哪些空白】
-前人的工作主要集中在通过随机化实验和时间序列分析来评估预算分配的有效性，但这些方法在实际操作中有其局限性，如滞后与非稳定性的敏感性，以及实施成本过高。在现有文献中，很少有研究注重于后期审计的角度，缺乏基于历史数据进行回顾性评估的方法，尤其是针对多个资产的预算分配决策，这为本研究提供了空白和创新空间。
-
-3.【提出了什么创新的方法】
-本研究提出了一种基于回顾悔恨（hindsight regret）的审计框架，该框架能够从历史日志中估计特定制度的支出-响应函数，通过约束优化计算可行的回顾性分配，从而评估在特定预算和稳定性保护下的机会成本。此外，该方法结合了蒙特卡罗评估以产生悔恨分布、期望提升和改善概率摘要，为后期决策审计提供了直观的可解释性。
-
-4.【文章缺点】
-尽管该方法提供了有价值的见解，但它依赖于特定的制度假设，可能对不同市场环境的适用性有一定限制。其次，蒙特卡罗评估过程可能导致高计算成本，尤其是在处理大规模数据时，这可能影响其在实际应用中的普遍适用性。
-
-5.【类似工作】
-类似的工作包括针对广告支出优化的动态策略评估方法（Zhao et al., 2019），以及基于优化算法的预算分配建模研究（Nguyen et al., 2023），这两</small></details></td>
-    </tr>
-        </tbody></table>
-    </div>
-</div>
         </main>
 
         <footer>
@@ -1472,7 +1641,7 @@
             });
             
             // ========== 自动展开最新日期 ==========
-            const latestId = 'date-20260504';
+            const latestId = 'date-20260505';
             if (latestId) {
                 const latestSection = document.getElementById(latestId);
                 if (latestSection) {
