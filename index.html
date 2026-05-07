@@ -628,7 +628,7 @@
         <header>
             <h1>📈 arXiv 量化金融领域论文汇总</h1>
             <div class="intro">
-                <p>📊 共 <strong>37</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
+                <p>📊 共 <strong>43</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
                 <p>🔗 点击日期可展开/折叠｜📚 Zotero 按钮需安装 <a href="https://www.zotero.org/download/connectors" target="_blank">Connector 插件</a></p>
             </div>
         </header>
@@ -636,17 +636,187 @@
         <!-- 日期导航 -->
         <nav class="nav">
             <strong>📅 日期导航：</strong>
-            <a href="#date-20260506">2026-05-06（10篇）</a> | <a href="#date-20260505">2026-05-05（17篇）</a> | <a href="#date-20260504">2026-05-04（10篇）</a>
+            <a href="#date-20260507">2026-05-07（6篇）</a> | <a href="#date-20260506">2026-05-06（10篇）</a> | <a href="#date-20260505">2026-05-05（17篇）</a> | <a href="#date-20260504">2026-05-04（10篇）</a>
         </nav>
 
         <!-- 论文内容区块 -->
         <main>
-            <div class="date-section" id="date-20260506">
+            <div class="date-section" id="date-20260507">
     <div class="date-header">
-        <span>2026-05-06（10篇论文）</span>
+        <span>2026-05-07（6篇论文）</span>
         <span class="arrow">▼</span>
     </div>
     <div class="date-content" style="display: block;">
+        <table>
+        <!-- 添加 colgroup 明确指定每列宽度 -->
+        <colgroup>
+            <col style="width: 25%">  <!-- Title -->
+            <col style="width: 15%">   <!-- Authors -->
+            <col style="width: 10%">   <!-- Resources -->
+            <col style="width: 10%">   <!-- Relevance -->
+            <col style="width: 40%">  <!-- Summary -->
+        </colgroup>
+        <thead>
+            <tr>
+                <th>标题</th>
+                <th>作者</th>
+                <th>资源</th>
+                <th>相关性</th>
+                <th>总结</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】 本论文探讨了在市场价格中提取caplet波动率的稳定性问题，尤其是在常用的插值方法和节点设置不当时可能导致的极端波动或负波动率现象。该研究的动机在于改善利率衍生品市场中的caplet剥离过程，以提高定价和风险管理的准确性。  2. 【前人的工作如何解决该问题，存在哪些空白】 前人的研究通过引入引导法（bootstrapping）和线性插值方法来逐步提取c...">What Can Go Wrong During Caplet Stripping ?</span></td>
+        <td class="author-cell">Fabien Le Floc&#39;h</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.05140" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.05140" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】
+本论文探讨了在市场价格中提取caplet波动率的稳定性问题，尤其是在常用的插值方法和节点设置不当时可能导致的极端波动或负波动率现象。该研究的动机在于改善利率衍生品市场中的caplet剥离过程，以提高定价和风险管理的准确性。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】
+前人的研究通过引入引导法（bootstrapping）和线性插值方法来逐步提取caplet波动率，尽管这些方法在某种程度上解决了提取问题，但它们仍存在插值不连续和视觉不美观等缺陷。此外，现有方法在处理坏数据时缺乏有效的质量检测机制，这加剧了波动率的不稳定性。
+
+3. 【提出了什么创新的方法】
+本论文提出了几种创新的方法来改善caplet剥离的稳定性，包括使用连续的平坦-线性插值和C1平滑核来保持引导等价性；采用全球求解器的中点节点设置；以及通过指数重新参数化或Hyman非负C1样条强制波动率的正值。此外，引入简单的数据质量检查也被认为是一个重要的补充。
+
+4. 【文章缺点】
+首先，尽管提出了新的插值方法，文章在实际实施中的复杂性可能增加，可能需要较高的计算成本。其次，尽管得到的波动率曲线在稳定性和正值上表现良好，但在一些边界情况下仍可能存在 extrapolation 的问题，尚需进一步验证。
+
+5. 【类似工作】
+类似的工作包括White和Iwashita（2014）提出的bootstrapping方法，该方法对caplet波动率提取进行了系统性研究。此外，Piterbarg（2020）关于线性衰减在剥离中的重要性亦为相关研究提供了理论支持。
+
+6. 【相关性评分】
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】     1) 自动化虽能提高生产力并减少付费人力劳动，但同时导致收入和所有权的重新分配，从而影响经济中的消费需求。     2) 传统生产技术分析未能充分考虑企业在选择自动化过程中的消费需求衍生物，因此本研究探讨这种关联，以便更好地理解自动化的社会经济影响。  2. 【前人的工作如何解决该问题，存在哪些空白】     1) Acemoglu和Restre...">The Demand Externality of Automation</span></td>
+        <td class="author-cell">Erhan Bayraktar</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.05127" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.05127" target="_blank" rel="noopener">🧠 AlphaXiv</a><br><details class="resource-comment"><summary>📝 备注</summary><small>Keywords: Artificial intelligence; automation; demand externalities; heterogeneous agents; Krusell--Smith; incomplete markets; taxation; ownership; consumption-equivalent welfare. JEL classifications: C63; D31; E21; E24; E27; E60; H21; J23; J24; O33</small></details></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】 
+   1) 自动化虽能提高生产力并减少付费人力劳动，但同时导致收入和所有权的重新分配，从而影响经济中的消费需求。 
+   2) 传统生产技术分析未能充分考虑企业在选择自动化过程中的消费需求衍生物，因此本研究探讨这种关联，以便更好地理解自动化的社会经济影响。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】 
+   1) Acemoglu和Restrepo的研究指出，自动化替代任务的过程可能导致劳动力需求的下降，但缺乏对这些变动对家庭消费需求影响的深入分析。 
+   2) Falk和Tsoukalas强调了在裁员陷阱中，企业即便意识到劳动力需求下降的危害仍会选择自动化，这一理论未能充分考虑不完全市场、资本所有权和财政政策的影响。
+
+3. 【提出了什么创新的方法】 
+   1) 本文将家庭消费需求与自动化之间的导数作为研究的核心对象，强调劳动收入的分布对整体需求的重要性。 
+   2) 采用了Hamilton–Jacobi–Bellman (HJB)方程和Kolmogorov前向方程（KFE）来分析经济的动态均衡，考虑了不均匀代理和资产市场的影响。 
+
+4. 【文章缺点】 
+   1) 文章集中于静态均衡模型，可能无法充分捕捉动态经济中更复杂的相互作用。 
+   2) 对于政策建议的深入讨论仍显不足，未能明确如何具体实施税收和补贴等政策以优化自动化决策对经济的影响。
+
+5. 【类似工作】 
+   1) Acemoglu与Restrepo的多篇论文聚焦于自动化与劳动市场之间的关系，特别是劳动力替代的任务模型。 
+   2) Falk与Tsoukalas的论文讨论了自动化对经济的需求外部性，但未涉及资本所有权和综合财政政策的动态影响。
+
+6. 【相关性评分】 
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于探讨去中心化金融（DeFi）中无许可现货-永久合约基差交易作为抵押管理问题的关键性和复杂性。在当前的加密市场中，基差交易策略面临着流动性获取和执行摩擦的挑战，研究如何在这些约束下合理配置资本显得尤为重要。此外，论文旨在证明无许可基差交易策略在确保资金安全性和执行有效性方面的可行性。  2. 【前人的工作如何解决该问题，存在哪些空白】 ...">Dynamic Collateral Control for Permissionless Spot Perpetual Basis Trading</span></td>
+        <td class="author-cell">Anatoly Krestenko</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.05089" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.05089" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本论文的动机在于探讨去中心化金融（DeFi）中无许可现货-永久合约基差交易作为抵押管理问题的关键性和复杂性。在当前的加密市场中，基差交易策略面临着流动性获取和执行摩擦的挑战，研究如何在这些约束下合理配置资本显得尤为重要。此外，论文旨在证明无许可基差交易策略在确保资金安全性和执行有效性方面的可行性。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作主要集中在集中式交易平台的基差交易及其风险管理上，尚未充分考虑去中心化交易环境中流动性和执行效率的影响。此外，现有研究对无许可交易在资产定价和风险控制方面的具体策略缺乏深入的探讨，尤其是如何在动态市场条件下优化抵押管理的问题。
+
+3. 【提出了什么创新的方法】  
+本论文提出了一种新颖的抵押管理框架，该框架通过明确定义的动态干预策略，结合智能合约的自动化执行，提升了无许可基差交易的实施效率。此外，研究还探讨了在去中心化交易平台上，如何在有限流动性下有效分配资本以最大化投资回报。
+
+4. 【文章缺点】  
+论文在深度模型的构建方面可能尚有不足，未能详细考虑所有可能的市场波动情形对策略实施的影响。此外，关于策略的实证验证部分可能缺乏足够的历史数据支持，从而影响其结论的广泛适用性。
+
+5. 【类似工作】  
+类似的工作包括“Decentralized Hedge Management in Liquidity Constrained Environments”，该研究探讨了流动性受限情况下的对冲管理策略，以及“Algorithmic Trading Strategies in DeFi: An Empirical Approach”，该研究分析了算法交易在去中心化金融中的应用与挑战。
+
+6. 【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文的动机首先在于解决非平稳随机系统动态建模的挑战，尤其是在金融时间序列中。其次，现有的概率模型如马尔可夫链在适应不断变化的环境时表现不佳。因此，提出了一种结合传统结构和现代神经网络灵活性的中间方案，以更好地捕捉市场动态。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的工作通过使用马尔可夫链模型来捕捉市场动态，提供了清晰的结构化洞察...">Learning Time-Inhomogeneous Markov Dynamics in Financial Time Series via Neural Parameterization</span></td>
+        <td class="author-cell">Jan Rovirosa</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.04690" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.04690" target="_blank" rel="noopener">🧠 AlphaXiv</a><br><details class="resource-comment"><summary>📝 备注</summary><small>and 1 table. Presented at The 2026 ASA Midwest Regional Conference in Statistics and Data Science and the 2026 Undergraduate Symposium at the University of Wisconsin - Madison</small></details></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+该论文的动机首先在于解决非平稳随机系统动态建模的挑战，尤其是在金融时间序列中。其次，现有的概率模型如马尔可夫链在适应不断变化的环境时表现不佳。因此，提出了一种结合传统结构和现代神经网络灵活性的中间方案，以更好地捕捉市场动态。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作通过使用马尔可夫链模型来捕捉市场动态，提供了清晰的结构化洞察，但这些模型在处理复杂、重尾的金融数据时效率低下。其次，虽然现代神经网络模型具备处理复杂依赖关系的优势，但它们往往掩盖了逻辑，缺乏可解释性，这使得现有方法在实际应用中存在局限性。
+
+3. 【提出了什么创新的方法】  
+论文提出了一种基于神经参数化的时间非齐次马尔可夫链模型，该模型通过神经网络学习当前特征和状态到下一个状态的概率分布。这种方法将转移估计转化为条件密度估计问题，提供了一个灵活且数学上一致的框架。
+
+4. 【文章缺点】  
+一方面，依赖于神经网络的复杂性，可能导致模型的训练难度较大，并引入过拟合的风险。另一方面，模型在处理极端市场条件下的稳定性和鲁棒性可能尚未得到充分验证。
+
+5. 【类似工作】  
+类似的工作包括使用神经网络进行时间序列预测的研究，如长短期记忆网络(LSTM)应用于金融市场预测，以及利用其他深度学习模型探索金融市场动态的研究。这些工作同样旨在解决金融时间序列的复杂性，但可能未能结合足够的解释性。
+
+6. 【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   (1) 研究发现ESG（环境、社会和治理）评分在市场压力状态下能够有效降低股票崩盘事件的发生率，因此探索ESG作为一种状态依赖的风险保障机制的必要性显而易见。   (2) 当前的可持续金融领域存在着对ESG的认知偏差，尤其是将其视为推动普通收益的手段，而忽视其在极端市场波动中的保护性能，这使得对ESG的研究亟需深入和系统化。  2. 【前人的工作如何...">ESG as Priced Crash Insurance: State-Dependent Tail Risk and Deconfounding Evidence</span></td>
+        <td class="author-cell">Jiayu Yi</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.04479" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.04479" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+(1) 研究发现ESG（环境、社会和治理）评分在市场压力状态下能够有效降低股票崩盘事件的发生率，因此探索ESG作为一种状态依赖的风险保障机制的必要性显而易见。  
+(2) 当前的可持续金融领域存在着对ESG的认知偏差，尤其是将其视为推动普通收益的手段，而忽视其在极端市场波动中的保护性能，这使得对ESG的研究亟需深入和系统化。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+(1) 以往的研究在定量分析ESG对回报的影响时，通常依赖于线性框架，未能有效考虑市场状态变化和非线性风险，这造成了对ESG潜在价值的低估。  
+(2) 现有文献缺乏对极端市场环境下ESG性能的系统评估，尤其是如何通过合适的方法来解决选择偏误和高维混淆因素的问题，导致对ESG作为风险管理工具的分析不够深入。
+
+3. 【提出了什么创新的方法】  
+(1) 本文提出采用双重机器学习（Double Machine Learning）作为结构去混淆层，有效处理高维企业特征与选择偏误，增强结果的因果严谨性。  
+(2) 应用基于回撤的截断规则建立市场压力指标，将市场状态分为不同的经济状态，从而更好地分析ESG在各状态下的影响。
+
+4. 【文章缺点】  
+(1) 尽管使用了复杂的机器学习方法，仍然可能存在某些潜在混淆因素未被完全捕捉，从而影响结果的准确性。  
+(2) 研究中针对的市场样本和时间段有限，可能会影响结果的外部有效性，无法完全适用于不同的市场环境。
+
+5. 【类似工作】  
+(1) 之前的文献涉及ESG作为投资策略的表现，但大多数缺乏对其在市场极端状况下风险管理能力的深入探讨。  
+(2) 某些研究已经尝试将机器学习</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文的动机在于探索去中心化的物理人工智能（DePAI）如何通过DAO（去中心化自主组织）架构促进人机协作，提升物理-数字系统的运营和治理效率。首先，随着技术的发展，传统的治理模式难以应对复杂系统的管理需求，而DePAI提供了一种民主化机制，将人类和自主机器有效结合。其次，研究还强调透明规则和激励机制对保持人类自主性的重要性，旨在创造一种可持续且高效...">DAO-enabled decentralized physical AI: A new paradigm for human-machine collaboration</span></td>
+        <td class="author-cell">Mark C. Ballandies</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.04522" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.04522" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+该论文的动机在于探索去中心化的物理人工智能（DePAI）如何通过DAO（去中心化自主组织）架构促进人机协作，提升物理-数字系统的运营和治理效率。首先，随着技术的发展，传统的治理模式难以应对复杂系统的管理需求，而DePAI提供了一种民主化机制，将人类和自主机器有效结合。其次，研究还强调透明规则和激励机制对保持人类自主性的重要性，旨在创造一种可持续且高效的合作模式。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作主要集中在区块链和DAO的应用，例如MakerDAO和Helium，通过去中心化治理和激励机制提高协作效率。然而，尽管已有的DAO实践展示了其潜力，但尚缺乏系统性的方法来深化人机协作的整合，特别是在物理基础设施和自主机器的上下文中。同时，关于如何处理这类系统中固有的风险（如中心化、安全性和法律责任）仍缺乏深入研究。
+
+3. 【提出了什么创新的方法】  
+论文提出了一种创新的DAO支持的去中心化物理人工智能架构（DePAI），强调了DAO设计与数字民主研究的协同作用，提供了一个系统化的方法来结合人类监督和机器执行。首先，文中论述了如何通过DAO设计促进人机互动的自组织。其次，提出了一种价值敏感设计的治理模型，确保在技术发展过程中人类自主性不受侵害。最后，该模型包含对潜在风险的全面分析，提供了应对措施。
+
+4. 【文章缺点】  
+虽然论文提出了创新的理论框架，但实际应用案例较少，缺乏对DePAI在现实环境中的测试和验证。此外，文章对所提风险的分析尽管详尽，但缺少实际案例支持，难以全面评估其在不同场景下的适用性和有效性。
+
+5. 【类似工作】  
+类似工作包括MakerDAO的治理模型研究，侧重于去中心化金融（DeFi）中的自治和激励机制；以及Helium网络的案例分析</small></details></td>
+    </tr>
+        </tbody></table>
+    </div>
+</div>
+<div class="date-section" id="date-20260506">
+    <div class="date-header">
+        <span>2026-05-06（10篇论文）</span>
+        <span class="arrow">▶</span>
+    </div>
+    <div class="date-content" style="display: none;">
         <table>
         <!-- 添加 colgroup 明确指定每列宽度 -->
         <colgroup>
@@ -1623,7 +1793,7 @@
             });
             
             // ========== 自动展开最新日期 ==========
-            const latestId = 'date-20260506';
+            const latestId = 'date-20260507';
             if (latestId) {
                 const latestSection = document.getElementById(latestId);
                 if (latestSection) {
