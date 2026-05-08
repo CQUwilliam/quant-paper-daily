@@ -628,7 +628,7 @@
         <header>
             <h1>📈 arXiv 量化金融领域论文汇总</h1>
             <div class="intro">
-                <p>📊 共 <strong>43</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
+                <p>📊 共 <strong>53</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
                 <p>🔗 点击日期可展开/折叠｜📚 Zotero 按钮需安装 <a href="https://www.zotero.org/download/connectors" target="_blank">Connector 插件</a></p>
             </div>
         </header>
@@ -636,17 +636,282 @@
         <!-- 日期导航 -->
         <nav class="nav">
             <strong>📅 日期导航：</strong>
-            <a href="#date-20260507">2026-05-07（6篇）</a> | <a href="#date-20260506">2026-05-06（10篇）</a> | <a href="#date-20260505">2026-05-05（17篇）</a> | <a href="#date-20260504">2026-05-04（10篇）</a>
+            <a href="#date-20260508">2026-05-08（10篇）</a> | <a href="#date-20260507">2026-05-07（6篇）</a> | <a href="#date-20260506">2026-05-06（10篇）</a> | <a href="#date-20260505">2026-05-05（17篇）</a> | <a href="#date-20260504">2026-05-04（10篇）</a>
         </nav>
 
         <!-- 论文内容区块 -->
         <main>
-            <div class="date-section" id="date-20260507">
+            <div class="date-section" id="date-20260508">
     <div class="date-header">
-        <span>2026-05-07（6篇论文）</span>
+        <span>2026-05-08（10篇论文）</span>
         <span class="arrow">▼</span>
     </div>
     <div class="date-content" style="display: block;">
+        <table>
+        <!-- 添加 colgroup 明确指定每列宽度 -->
+        <colgroup>
+            <col style="width: 25%">  <!-- Title -->
+            <col style="width: 15%">   <!-- Authors -->
+            <col style="width: 10%">   <!-- Resources -->
+            <col style="width: 10%">   <!-- Relevance -->
+            <col style="width: 40%">  <!-- Summary -->
+        </colgroup>
+        <thead>
+            <tr>
+                <th>标题</th>
+                <th>作者</th>
+                <th>资源</th>
+                <th>相关性</th>
+                <th>总结</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本文的动机主要体现在两个方面：第一，针对永续合约的流动性提供，现有数据表明资金费率作为随机状态变量在市场风险中扮演了重要角色，而这一因素在传统的市场做市模型中并未得到充分考虑。第二，传统的市场做市模型（如Avellaneda–Stoikov框架）在应对库存和风险之间的折中时，并未考虑资金状态如何影响报价策略，因此需要一种新模型来应对这种联合风险。  ...">Funding-Aware Optimal Market Making for Perpetual DEXs</span></td>
+        <td class="author-cell">Nam Anh Le</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.06405" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.06405" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：5/5">★★★★★</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本文的动机主要体现在两个方面：第一，针对永续合约的流动性提供，现有数据表明资金费率作为随机状态变量在市场风险中扮演了重要角色，而这一因素在传统的市场做市模型中并未得到充分考虑。第二，传统的市场做市模型（如Avellaneda–Stoikov框架）在应对库存和风险之间的折中时，并未考虑资金状态如何影响报价策略，因此需要一种新模型来应对这种联合风险。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作如Avellaneda–Stoikov模型主要集中于应对库存风险和价差捕捉之间的权衡，但未能涵盖资金因素对做市策略的影响。另一项研究发现资金进入财富动态有助于优化清算，但具体到流动性提供的场景，尚未探索资金状态与库存的互动作用，相关空白亟需填补。
+
+3. 【提出了什么创新的方法】  
+本文提出的创新方法包括：1）提出了一个资金敏感的市场做市问题，动态地将资金条款纳入现金流中；2）利用单调有限差分Hamilton-Jacobi-Bellman方案来解决库存-资金控制问题，进而推导出具体的买卖报价偏移；3）在实际应用中，通过对Ethereum、Bitcoin和Solana永续合约的数据进行标定，建立与现有模型的对比分析。
+
+4. 【文章缺点】  
+文章的缺点主要有两个：一是所提出的模型依赖于特定的市场数据，可能在市场条件变化时表现不佳；二是虽然实现了资金和库存的联动，但在复杂市场环境下模型的鲁棒性尚待进一步验证。
+
+5. 【类似工作】  
+类似的研究工作包括：1）在流动性管理中的对冲研究，主要关注如何处理资金流动风险；2）对市场微观结构的研究，探讨了知情交易者对报价策略的影响，这一工作与本文的动态报价策略息息相关。
+
+6. 【相关性评分】  
+分数：5分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1.【论文的motivation是什么】   本论文的动机主要在于提高SABR模型下隐含波动率的近似精度，尤其是针对Hagan公式在非平值区域的系统性偏差。此外，考虑到现代金融市场对模型稳定性及高维校准工作流的需求，本文希望能够在保留解析性结构的基础上，通过结合机器学习方法来改善定价 inaccuracies与静态套利问题。  2.【前人的工作如何解决该问题，存在哪些空白】   前人的工作多集中在...">A Geometry-Aware Residual Correction of Hagan&#39;s SABR Implied Volatility Formula</span></td>
+        <td class="author-cell">Adil Reghai</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.06604" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.06604" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1.【论文的motivation是什么】  
+本论文的动机主要在于提高SABR模型下隐含波动率的近似精度，尤其是针对Hagan公式在非平值区域的系统性偏差。此外，考虑到现代金融市场对模型稳定性及高维校准工作流的需求，本文希望能够在保留解析性结构的基础上，通过结合机器学习方法来改善定价 inaccuracies与静态套利问题。
+
+2.【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作多集中在提升SABR模型的近似精度，如Hagan公式已成为行业标准，对如平值区域的波动率近似表现良好。然而，这些方法存在的空白在于，Hagan公式在非平值区域（如OTM和ITM）表现出的系统性偏差未得到很好的解决。此外，虽然有机器学习方法被提出来作为SABR定价的潜在替代方案，但其灵活性与可解释性之间的权衡仍然没有找到有效的折中方案。
+
+3.【提出了什么创新的方法】  
+本文提出了一种混合方法，通过结合解析结构与机器学习，以几何特征增强神经网络的输入表示，以改善对SABR隐含波动率的近似。这种创新使得模型在保留良好解释性的同时，也能有效校正Hagan公式已知的不足之处。
+
+4.【文章缺点】  
+尽管本文提出了一种新的混合方法，但可能对模型参数的选择和几何特征的具体提取过程依然存在不确定性，这可能影响模型的普适性和稳定性。其次，仍需评估该方法在实时定价和大规模校准中的具体表现，以验证其有效性和实用性。
+
+5.【类似工作】  
+类似的工作包括对SABR模型的深度学习近似，如一些研究利用深度前馈网络来逼近SABR隐含波动率或反转校准映射，以及提出套利意识架构以强加形状约束的研究。这些工作证明了机器学习在金融定价领域的潜力。
+
+6.【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于提高现有的股票预测系统的决策质量评估能力，旨在填补通过传统聚合指标（如平均绝对百分比误差、方向准确性等）无法明确判断个体决策质量的空白。其次，该研究希望通过多维度行为评估框架，改善现有合成评估方法，帮助投资者更好地理解和优化股票预测模型的表现。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的工作主要集中在评估静态输出（...">Multi-Dimensional Behavioral Evaluation of Agentic Stock Prediction Systems Using LLM Judges with Closed-Loop Reinforcement Learning Feedback</span></td>
+        <td class="author-cell">Mohammad Al Ridhawi</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.05739" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.05739" target="_blank" rel="noopener">🧠 AlphaXiv</a><br><details class="resource-comment"><summary>📝 备注</summary><small>. Short Communication submitted to Knowledge-Based Systems (Elsevier)</small></details></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本论文的动机在于提高现有的股票预测系统的决策质量评估能力，旨在填补通过传统聚合指标（如平均绝对百分比误差、方向准确性等）无法明确判断个体决策质量的空白。其次，该研究希望通过多维度行为评估框架，改善现有合成评估方法，帮助投资者更好地理解和优化股票预测模型的表现。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作主要集中在评估静态输出（如单一响应或总结），难以应用于需要评估连续决策的动态预测系统。现有的方法往往忽视了决策之间的相互依赖性，因此很难判断哪些具体决策驱动了最终的结果。此外，现有的评估指标无法捕捉到预测模型在不同市场条件下的决策质量，这一空白使得性能改进受到限制。
+
+3. 【提出了什么创新的方法】  
+论文提出了一种新的多维度行为评估框架，通过对每个决策点的行为轨迹进行结构化记录，运用六个领域特定维度来细分行为质量。其次，引入了一种基于扰动的验证方法，允许直接测量维度得分对有针对性退化的响应。最后，提出了一个信用分配机制，将每一维度的缺陷得分转化为罚款项，用于强化学习算法中的奖励调整。
+
+4. 【文章缺点】  
+本文的缺点之一是只通过离线回测得出的结果，未能充分考虑在线部署时的效果和实际市场波动带来的影响。其次，虽然引入了多维度评估机制，但在实际应用中，实施复杂的评估可能会增加系统的运算成本和维护难度。
+
+5. 【类似工作】  
+相似工作包括对股票市场微观结构的研究，探讨如何通过行为金融学理论优化交易策略。另一项相关研究是基于机器学习的资产定价模型，旨在提高定价准确性并评估模型输出的稳健性。
+
+6. 【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】    （1）该论文旨在通过引入动态距离矩阵模型，探讨在随机耦合下，粒子在球面上演化时的几何信息及其结构变化，从而更好地理解在有序和无序状态下的动态特性。    （2）传统的静态距离矩阵理论只能在单一时刻分析样本，而本研究则将动态因子纳入考虑，以捕捉粒子系统时间演变过程中的重要信息。  2. 【前人的工作如何解决该问题，存在哪些空白】    （1）前人的研...">Frustrated Dynamics of Distance Matrices</span></td>
+        <td class="author-cell">Igor Halperin</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.05376" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.05376" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】
+   （1）该论文旨在通过引入动态距离矩阵模型，探讨在随机耦合下，粒子在球面上演化时的几何信息及其结构变化，从而更好地理解在有序和无序状态下的动态特性。
+   （2）传统的静态距离矩阵理论只能在单一时刻分析样本，而本研究则将动态因子纳入考虑，以捕捉粒子系统时间演变过程中的重要信息。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】
+   （1）前人的研究，如BBS理论，解决了如何从静态距离矩阵的谱中恢复流形的维度和结构的问题，但仅限于单一时刻的分析，未考虑粒子动态对谱的影响。
+   （2）已有研究未能提供动态情况下的谱分析，导致对粒子系统演变的理解不够全面。特别是缺乏对环状结构形成及其对谱的影响的深入分析。
+
+3. 【提出了什么创新的方法】
+   （1）论文提出的Frustrated Distance Matrix (FDM)模型，通过考虑粒子在时间演化过程中的位置变化，揭示了谱质量在结构变化中的重新分布。
+   （2）通过自平均技术和对比独立同分布重采样，检验了动态过程中谱特征的保持机制，提供了一种新的分析方法来研究类似的逆问题设置。
+
+4. 【文章缺点】
+   （1）模型的复杂性可能导致解析的难度增加，对某些特定情境的适用性仍需在未来研究中进一步验证。
+   （2）研究中部分假设可能过于理想化，未考虑实际系统中可能出现的更多复杂性和非线性效应。
+
+5. 【类似工作】
+   （1）与之前的距离矩阵谱分析相关的研究，例如BBS的静态模型，提供了对流形结构的基本理解。
+   （2）在风险管理和金融相关领域，类似于财务相关矩阵的动态特征分析，可能对本研究的模型及结果具有启示性。
+
+6. 【相关性评分】分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文的动机在于首先探讨迁移对当地社区的显著影响，特别是在瑞士弗里堡州，过去15年人口因迁移增长了30%。这种快速的人口变化在住房、教育和社会服务方面给地方政府带来了压力，理解迁移的因果影响对基于证据的政策制定至关重要。其次，随着国际和内部迁移的增加，研究如何适应这些人口变化，以及它们对社区结构的长期影响，成为处理这一问题的重要任务。  2. 【前人...">Migration-Driven Demographic Changes: effects on local communities in the canton of Fribourg</span></td>
+        <td class="author-cell">Emma Bacci</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.05898" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.05898" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：2/5">★★☆☆☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+该论文的动机在于首先探讨迁移对当地社区的显著影响，特别是在瑞士弗里堡州，过去15年人口因迁移增长了30%。这种快速的人口变化在住房、教育和社会服务方面给地方政府带来了压力，理解迁移的因果影响对基于证据的政策制定至关重要。其次，随着国际和内部迁移的增加，研究如何适应这些人口变化，以及它们对社区结构的长期影响，成为处理这一问题的重要任务。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+以往的研究主要关注迁移对经济的影响或公共财政的效应，但在具体的社区层面上，对迁移所带来的社会和人口变化的深入定量分析相对较少。同时，尽管一些研究探讨了迁移对地方支出的影响，但缺乏对不同类型迁移（国际与内部）如何具体影响当地人口结构、教育和住房结果的综合性分析。
+
+3. 【提出了什么创新的方法】  
+本研究采用了一种现代的跨期差分估计器，该方法适应错位时间和累积、非二元处理的情况，使得分析更具精度。通过对2010年至2021年间112个市镇的面板数据进行研究，本论文量化了迁移对人口年龄结构、家庭组成及学生人数等关键社区级成果的影响，超越了以往对人口移动的描述性研究。
+
+4. 【文章缺点】  
+研究可能未能充分讨论不同类型迁移对不同社会群体的影响差异，特别是在文化融合或社会整合方面的动态。此外，虽然研究表明迁移的长期效果，但对其潜在负面影响的评估可能较为片面，未能全面考虑迁移带来的社会张力。
+
+5. 【类似工作】  
+类似的研究包括对德国、芬兰和意大利的研究，探讨迁移如何影响地方支出及社会服务需求。此外，关于迁移与公共财政之间关系的工作，例如西欧国家的经验比较，也为本研究提供了相关的背景和上下文。
+
+6. 【相关性评分】  
+分数：2分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      (1) 在金融和投资组合管理中，快速且可靠的风险测量计算方法至关重要，尤其是在缺乏解析解或风险测量优化为核心目标时（如投资组合分配）。      (2) 传统的风险测量方法常常无法捕捉精细的风险特征，尤其是对于具有重尾分布的资产，而引入λ分位数能够更好地识别和管理这些风险。  2. 【前人的工作如何解决该问题，存在哪些空白】      (1) ...">Numerical methods for lambda quantiles: robust evaluation and portfolio optimisation</span></td>
+        <td class="author-cell">Ilaria Peri</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.06220" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.06220" target="_blank" rel="noopener">🧠 AlphaXiv</a><br><details class="resource-comment"><summary>📝 备注</summary><small>Accepted for publication in SIAM Journal on Financial Mathematics</small></details></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+   (1) 在金融和投资组合管理中，快速且可靠的风险测量计算方法至关重要，尤其是在缺乏解析解或风险测量优化为核心目标时（如投资组合分配）。  
+   (2) 传统的风险测量方法常常无法捕捉精细的风险特征，尤其是对于具有重尾分布的资产，而引入λ分位数能够更好地识别和管理这些风险。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+   (1) 现有文献主要集中在λ分位数的理论特性上，包括其单调性和拟凸性，为理论研究奠定了基础，但缺乏高效的数值解决方案来实现其实用性。  
+   (2) 尽管有对λ分位数的性质和应用的研究，但实际应用中仍未深入探讨其在投资组合优化中的具体实现和效率问题。
+
+3. 【提出了什么创新的方法】  
+   (1) 论文提出了一种结合牛顿法和二分法的鲁棒算法（Λ-Newton-Bis），保证全局收敛性，同时处理潜在的非连续性，并在标准规律假设下实现局部二次收敛。  
+   (2) 另外，针对多个根的情况，提出了一种区间分析方法，以增强算法的稳定性和适应性。  
+   (3) 开发了两种替代解法，将以上算法集成到投资组合优化框架中，进一步验证了其计算效率。
+
+4. 【文章缺点】  
+   (1) 尽管提出了新的算法，但论文可能未充分探讨该方法在实际金融市场中的适用性和局限性，尤其是在极端市场条件下的表现。  
+   (2) 研究文献对算法的比较分析不足，未能与现有最先进的方法进行详细对比，可能影响文章的说服力。
+
+5. 【类似工作】  
+   (1) 近期研究探讨了λ分位数在金融和保险中的应用，关注风险贡献和风险共享问题。  
+   (2) 相关文献也对λ分位数的</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   （1）本研究旨在填补现有文献中的空白，专注于大型语言模型（LLMs）在股票价格预测中的应用，特别是在对冲基金的背景下，以便加强学术研究与行业实践的联系。   （2）随着LLMs技术的迅速发展，金融界对其在股票价格预测领域的潜力充满期待，这促使研究者探讨如何有效将LLMs集成到实际交易系统中，以应对复杂的市场环境。  2. 【前人的工作如何解决该问题，...">A Review of Large Language Models for Stock Price Forecasting from a Hedge-Fund Perspective</span></td>
+        <td class="author-cell">Olivia Zhang</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.05211" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.05211" target="_blank" rel="noopener">🧠 AlphaXiv</a><br><details class="resource-comment"><summary>📝 备注</summary><small>Accepted at the IEEE Conference on Artificial Intelligence, Spain, May 8--10, 2026</small></details></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+（1）本研究旨在填补现有文献中的空白，专注于大型语言模型（LLMs）在股票价格预测中的应用，特别是在对冲基金的背景下，以便加强学术研究与行业实践的联系。  
+（2）随着LLMs技术的迅速发展，金融界对其在股票价格预测领域的潜力充满期待，这促使研究者探讨如何有效将LLMs集成到实际交易系统中，以应对复杂的市场环境。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+（1）虽然有众多研究文献探讨了LLMs在金融领域的应用，但大多数文献关注于一般性的理论分析，缺乏针对股票价格预测的专门聚焦与系统性评估。  
+（2）现有的文献多以学术研究为导向，忽视了对冲基金经理在实际应用中的具体需求与挑战，导致理论和实践之间存在明显的脱节。
+
+3. 【提出了什么创新的方法】  
+（1）本研究提出了一个专门针对LLMs在股票价格预测中的综合性评估框架，旨在提供对冲基金视角下的实用性分析。  
+（2）通过对情感分析、财务报告的事实分析、价格序列的符号化处理等多个领域的系统性回顾，本文形成了从实践出发的研究指导和框架。  
+（3）针对市场摩擦问题，文章提炼了LLMs在交易系统中的可行性指南，并提出了应对数据泄露和流动性问题的策略。
+
+4. 【文章缺点】  
+（1）尽管文章强调了LLMs在实际应用中的重要性，但对特定实例的分析尚显不足，缺乏详细的实证研究支持。  
+（2）对于如何量化LLMs在不同市场条件下的表现和适用性，文章并未给出清晰的指标或标准，可能限制了其指导价值。
+
+5. 【类似工作】  
+（1）Liu et al. (2022)探讨了深度学习方法在金融领域的应用，尽管侧重点不同，但提供了对机器学习技术</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本研究旨在解决传统的多人口寿命预测模型在面对新的高寿命聚集国家时的适应性问题，特别是长寿风险的系统性误定价。随着人类平均寿命的普遍增加，保险行业在资本充足性和风险管理上的需求也愈加迫切，亟需一种新的方法论来准确量化长寿风险。  另一个动机是，以往依赖均值回归的传统模型过于简单，无法捕捉到一些国家（如瑞典和西德）死亡率残差的持久单位根特征，导致了对整体...">Neural-Actuarial Longevity Forecasting: Anchoring LSTMs for Explainable Risk Management</span></td>
+        <td class="author-cell">Davide Rindori</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.06438" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.06438" target="_blank" rel="noopener">🧠 AlphaXiv</a><br><a class="resource-tag code" href="https://github.com/davide-rindori/Actuarial-DS-Portfolio/tree/main/04_Multi_Population_Longevity_XAI" target="_blank" rel="noopener">🔗 Code1</a><br><details class="resource-comment"><summary>📝 备注</summary><small>. Code available atthis https URL</small></details></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本研究旨在解决传统的多人口寿命预测模型在面对新的高寿命聚集国家时的适应性问题，特别是长寿风险的系统性误定价。随着人类平均寿命的普遍增加，保险行业在资本充足性和风险管理上的需求也愈加迫切，亟需一种新的方法论来准确量化长寿风险。
+
+另一个动机是，以往依赖均值回归的传统模型过于简单，无法捕捉到一些国家（如瑞典和西德）死亡率残差的持久单位根特征，导致了对整体寿命趋势的严重低估，从而影响到偿付能力资本要求。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作主要集中在 Lee-Carter 模型及其扩展（如 Li-Lee 模型），虽然这些方法为行业基准提供了一定支持，但它们依然依赖于共同死亡趋势的假设，并未能有效捕捉高增长长寿群体所面临的结构性转变。
+
+此外，尽管机器学习在精算领域的应用有所进展，但深度学习模型在风险管理中的通用性和可解释性不足，亟需改进以回应对深度学习“黑箱”特性以及长周期预测的不确定性管理的关注。
+
+3. 【提出了什么创新的方法】  
+本研究提出了一种混合精算框架 Hybrid-Lift，该框架结合了LSTM网络的灵活性与精算治理的要求。首先，采用LSTM预测死亡率的第一次差分，以确保对长期稳定性和生物一致性的改善。其次，整合 SHAP 方法开发的可解释性特征，帮助理解跨国影响的动态关系。
+
+此外，设计了均值偏差校正（MBC）机制，进一步确保模型在预测中能够保持稳定性和一致性，从而为长寿风险的评估提供了新的方法论支持。
+
+4. 【文章缺点】  
+本文的主要缺点之一是虽然提出了混合模型，但对于LSTM的“黑箱”特性仍然有限的解释力，仍可能让一些保守的精算师对</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于揭示全球粮食供应链的结构性脆弱性，特别是自然气、矿物肥料和主食作物之间复杂的相互依赖关系。随着地缘政治紧张加剧和全球贸易网络的碎片化，研究粮食供应链所面临的潜在冲击及其影响变得尤为重要。   另外，论文旨在通过综合不同领域的贸易关系，评估在贸易隔离情况下各国粮食供应的损失程度，以提高粮食供应链的韧性，从而确保全球粮食安全。  2. 【...">Cascading disruptions in natural gas, fertilizers, and crops drive structural food supply vulnerabilities globally</span></td>
+        <td class="author-cell">Pavel Kiparisov</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.06411" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.06411" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本论文的动机在于揭示全球粮食供应链的结构性脆弱性，特别是自然气、矿物肥料和主食作物之间复杂的相互依赖关系。随着地缘政治紧张加剧和全球贸易网络的碎片化，研究粮食供应链所面临的潜在冲击及其影响变得尤为重要。  
+另外，论文旨在通过综合不同领域的贸易关系，评估在贸易隔离情况下各国粮食供应的损失程度，以提高粮食供应链的韧性，从而确保全球粮食安全。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究主要集中在单一因素对粮食供应的影响，例如自然气或肥料的供应中断，但缺乏针对这些因素之间相互作用的系统性分析。已有研究未能全面评估各关键领域之间的相互依赖关系及其对全球粮食安全的综合影响。  
+此外，大多数研究未考虑到地缘政治因素对供应链的影响，尤其是在供应冲突或贸易战情况下的复杂动态，这导致对全球粮食安全风险评估的不足。
+
+3. 【提出了什么创新的方法】  
+本论文提出了一种级联影响模型，通过整合天然气、肥料及主要作物的双边贸易数据，提供了更全面的系统性视角，以评估粮食供应链的结构性脆弱性。  
+研究覆盖208个国家及20个地缘政治集团，有助于识别脆弱性不平衡的地区，从而揭示供应链的结构瓶颈，并提出增强韧性的切入点。  
+此外，通过模拟贸易隔离的情景分析，论文展示了各地区在面对冲击时的不同反应和损失程度。
+
+4. 【文章缺点】  
+本论文在模型简化和局限性方面存在一定缺陷，未充分考虑其他可能影响粮食供应链的外部因素，例如气候变化或突发疫情等。  
+此外，由于数据可得性的限制，某些地区的贸易和生产能力数据可能不够全面，这可能导致结果的局部偏差。
+
+5. 【类似工作】</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1.【论文的motivation是什么】 该论文的动机主要包括：首先，现有的求解部分积分微分方程（PIDEs）的方法在高维情况下受到“维度灾难”的制约，传统数值方法在维度增加时变得难以处理，因此需要寻找更高效的替代方案。其次，现有的基于物理信息神经网络（PINNs）的方法在处理非局部项时面临计算成本高昂的问题，而这一问题在金融和经济建模中尤为重要，因此提出一种新方法来应对这些挑战具有重要的现实意义...">INEUS: Iterative Neural Solver for High-Dimensional PIDEs</span></td>
+        <td class="author-cell">Jean-Loup Dupret</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.06281" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.06281" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1.【论文的motivation是什么】
+该论文的动机主要包括：首先，现有的求解部分积分微分方程（PIDEs）的方法在高维情况下受到“维度灾难”的制约，传统数值方法在维度增加时变得难以处理，因此需要寻找更高效的替代方案。其次，现有的基于物理信息神经网络（PINNs）的方法在处理非局部项时面临计算成本高昂的问题，而这一问题在金融和经济建模中尤为重要，因此提出一种新方法来应对这些挑战具有重要的现实意义。
+
+2.【前人的工作如何解决该问题，存在哪些空白】
+前人的工作主要集中在利用物理信息神经网络（PINNs）和Feynman-Kac表示等技术解决高维PDE的问题，这些方法虽然能够有效处理许多问题，但在高维情境下其有效性受到限制。此外，尽管PINNs能够提供全空间时间域的全局近似，但在处理非局部项时却遭遇到了精确度和计算效率的挑战。因此，现有的文献对PIDEs问题的深度学习解决方案仍显得不足。
+
+3.【提出了什么创新的方法】
+本文提出的创新方法INEUS，即迭代神经求解器，采用了无网格的方式来求解PIDEs，利用单跳采样替代传统的非局部跳跃计算，从而将PIDE的求解过程转化为一系列递归回归问题。该方法支持线性PIDEs的收敛性证明，能够高效处理非局部项，并在多种高维线性和非线性例子中展现出准确且可扩展的解决方案。
+
+4.【文章缺点】
+文章的第一个缺点是，虽然INEUS在处理线性PIDEs上表现良好，但对非线性PIDEs的适用性和效率仍未得到充分的验证。其次，文章中缺乏对INEUS与现有其他深度学习方法在性能和效率上的系统对比分析，这可能使得读者难以全面理解其优势所在。
+
+5.【类似工作】
+类似的工作包括：1）基于物理信息神经网络（PINNs）的深度学习</small></details></td>
+    </tr>
+        </tbody></table>
+    </div>
+</div>
+<div class="date-section" id="date-20260507">
+    <div class="date-header">
+        <span>2026-05-07（6篇论文）</span>
+        <span class="arrow">▶</span>
+    </div>
+    <div class="date-content" style="display: none;">
         <table>
         <!-- 添加 colgroup 明确指定每列宽度 -->
         <colgroup>
@@ -1793,7 +2058,7 @@
             });
             
             // ========== 自动展开最新日期 ==========
-            const latestId = 'date-20260507';
+            const latestId = 'date-20260508';
             if (latestId) {
                 const latestSection = document.getElementById(latestId);
                 if (latestSection) {
