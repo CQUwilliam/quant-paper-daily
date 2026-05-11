@@ -628,7 +628,7 @@
         <header>
             <h1>📈 arXiv 量化金融领域论文汇总</h1>
             <div class="intro">
-                <p>📊 共 <strong>26</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
+                <p>📊 共 <strong>20</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
                 <p>🔗 点击日期可展开/折叠｜📚 Zotero 按钮需安装 <a href="https://www.zotero.org/download/connectors" target="_blank">Connector 插件</a></p>
             </div>
         </header>
@@ -636,17 +636,138 @@
         <!-- 日期导航 -->
         <nav class="nav">
             <strong>📅 日期导航：</strong>
-            <a href="#date-20260508">2026-05-08（10篇）</a> | <a href="#date-20260507">2026-05-07（6篇）</a> | <a href="#date-20260506">2026-05-06（10篇）</a>
+            <a href="#date-20260511">2026-05-11（4篇）</a> | <a href="#date-20260508">2026-05-08（10篇）</a> | <a href="#date-20260507">2026-05-07（6篇）</a>
         </nav>
 
         <!-- 论文内容区块 -->
         <main>
-            <div class="date-section" id="date-20260508">
+            <div class="date-section" id="date-20260511">
     <div class="date-header">
-        <span>2026-05-08（10篇论文）</span>
+        <span>2026-05-11（4篇论文）</span>
         <span class="arrow">▼</span>
     </div>
     <div class="date-content" style="display: block;">
+        <table>
+        <!-- 添加 colgroup 明确指定每列宽度 -->
+        <colgroup>
+            <col style="width: 25%">  <!-- Title -->
+            <col style="width: 15%">   <!-- Authors -->
+            <col style="width: 10%">   <!-- Resources -->
+            <col style="width: 10%">   <!-- Relevance -->
+            <col style="width: 40%">  <!-- Summary -->
+        </colgroup>
+        <thead>
+            <tr>
+                <th>标题</th>
+                <th>作者</th>
+                <th>资源</th>
+                <th>相关性</th>
+                <th>总结</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】 该论文的一个主要动机是通过建模随机博弈理论，研究网格级电池储能系统（BESS）在日内调度中的竞争行为，以便优化能源套利收入。另一个动机则是考虑市场中BESS运营商的战略互动，分析他们在电力市场中如何基于电价信号做出充放电决策，以实现电网的稳定性与供需平衡。  2. 【前人的工作如何解决该问题，存在哪些空白】 前人的研究在电力市场中关注了BESS对价格的影...">Modeling Stochastic Multi-Agent Interaction in Intraday Battery Energy Storage Dispatch with Market Power</span></td>
+        <td class="author-cell">Ruimeng Hu</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.01178" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.01178" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：5/5">★★★★★</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】
+该论文的一个主要动机是通过建模随机博弈理论，研究网格级电池储能系统（BESS）在日内调度中的竞争行为，以便优化能源套利收入。另一个动机则是考虑市场中BESS运营商的战略互动，分析他们在电力市场中如何基于电价信号做出充放电决策，以实现电网的稳定性与供需平衡。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】
+前人的研究在电力市场中关注了BESS对价格的影响及其调度策略，但多集中于单一BESS或简单的定性讨论，缺乏对多运营商竞争环境的系统性分析。此外，现有文献对BESS在非线性及非均匀市场环境中的合作与博弈行为探讨较少，导致了对多主体交互作用的理解不足。
+
+3. 【提出了什么创新的方法】
+本研究提出了一种随机博弈理论模型，通过构建有限参与者线性-二次微分博弈来分析BESS的竞争行为及市场动态。此外，作者利用Riccati方程获得了均衡反馈控制和均衡价格的半显式表示，为理解电力市场中BESS的部署提供了定量测试平台。
+
+4. 【文章缺点】
+尽管该研究提供了新的理论框架，但在实践应用中，模型的复杂性可能使得实际操作的可行性下降。其次，研究未能充分考虑外部市场变化对BESS调度策略的长期影响，可能导致结论的局限性。
+
+5. 【类似工作】
+类似的工作包括对电力市场中竞争性BESS调度的理论分析，以及研究多代理系统中能源管理的博弈模型。这些研究提供了相关框架，但较少对BESS进行系统性、多维度的动态研究。
+
+6. 【相关性评分】
+分数：5分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】    - 随着金融市场结构的变化，动态相关矩阵的估计变得愈加重要，而现有方法在适应快速变化和提供足够正则化方面存在不足。    - 当代金融实践中，时变相关性对于资产组合的风险管理和投资决策至关重要，因此必须开发能够快速响应市场变化的模型。  2. 【前人的工作如何解决该问题，存在哪些空白】    - 现有的非贝叶斯方法，如滚动窗口和指数加权估计，虽然简...">Modeling Dynamic Correlation Matrices with Shrinkage Priors</span></td>
+        <td class="author-cell">Daniel Andrew Coulson</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.06818" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.06818" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】
+   - 随着金融市场结构的变化，动态相关矩阵的估计变得愈加重要，而现有方法在适应快速变化和提供足够正则化方面存在不足。
+   - 当代金融实践中，时变相关性对于资产组合的风险管理和投资决策至关重要，因此必须开发能够快速响应市场变化的模型。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】
+   - 现有的非贝叶斯方法，如滚动窗口和指数加权估计，虽然简单易用，但在面临迅速变化的相关性时适应能力有限。
+   - 贝叶斯方法虽提供了统一的概率框架，但现有模型在处理复杂的多元金融时间序列时，通常通过结构假设实现计算可行性，这种方法可能过于限制。
+
+3. 【提出了什么创新的方法】
+   - 本文提出了一种基于低秩因子表示的贝叶斯方法，通过动态收缩先验来适应时变相关结构，从而提高了模型的灵活性和有效性。
+   - 该方法引入了一种信息论概念的总相关性度量，提供了一个量化横截面依赖性的标量度量，用于更好地总结估计的相关矩阵。
+
+4. 【文章缺点】
+   - 尽管提出了新的贝叶斯框架，但在实际应用中可能会面临计算复杂性的问题，尤其是在高维情况。
+   - 文章的模拟研究虽然展示了模型的有效性，但在真实数据中的表现仍需进一步验证，以确保其广泛适用性。
+
+5. 【类似工作】
+   - 现有的矩阵演化模型和多元GARCH动态相关模型为时变相关性提供了基础，但缺乏更灵活的适应机制。
+   - 近期的贝叶斯动态相关矩阵建模方法探讨了基于Wishart先验的动态建模策略，但也面临类似的结构限制。
+
+6. 【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. **论文的motivation是什么**      首先，论文旨在解决美式期权定价中的早期行使特性，该特性使得期权必须在到期前的任意时刻进行行使，因此定价模型需要同时确定未知的、随时间变化的行使边界。其次，采用Heston模型来模拟波动性变化的市场行为，但由于缺乏封闭形式的解法，如何高效求解美式期权的定价问题成为了一个重要的挑战。  2. **前人的工作如何解决该问题，存在哪些空白**   ...">American Options Pricing under Heston Model via Curriculum Learning in Coupled PINNs</span></td>
+        <td class="author-cell">Rohan</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.06688" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.06688" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. **论文的motivation是什么**  
+   首先，论文旨在解决美式期权定价中的早期行使特性，该特性使得期权必须在到期前的任意时刻进行行使，因此定价模型需要同时确定未知的、随时间变化的行使边界。其次，采用Heston模型来模拟波动性变化的市场行为，但由于缺乏封闭形式的解法，如何高效求解美式期权的定价问题成为了一个重要的挑战。
+
+2. **前人的工作如何解决该问题，存在哪些空白**  
+   前人的研究主要通过引入多种随机波动模型（如Hull-White模型和Heston模型）来克服传统Black-Scholes模型的局限性，尝试为美式期权定价提供更合适的框架。然而，尽管有多种模型出现，使用Heston模型进行美式期权定价依然面临无闭式解的困境，导致研究者们不得不依赖计算密集的数值方法，这限制了其实际应用。
+
+3. **提出了什么创新的方法**  
+   本文提出了一种新颖的方法，利用耦合的物理信息神经网络（PINNs）来解决随机Heston偏微分方程，以同时预测期权价格和自由边界。通过引入课程学习和自适应重采样的策略来稳定模型训练，并提高了模型的效果和效率，为美式期权定价提供了一种快速的推断和准确的估计方式。
+
+4. **文章缺点**  
+   文章的一个缺点是所提方案的计算复杂度仍然可能较高，尤其在处理大规模数据时，可能影响模型的可扩展性和应用范围。其次，尽管使用了课程学习和自适应重采样，但在一般市场条件下的表现可能仍存在不确定性，需要进一步的实证验证。
+
+5. **类似工作**  
+   第一项类似工作是在美式期权定价中使用数值方法进行模拟的研究；第二项类似工作是基于深度学习框架（如PINNs）解决其他类型偏微分方程的研究，这些工作为本文所提方法提供了基础和</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      1) 本文的动机在于现有的纳什均衡理论通常依赖于参与者的效用函数，这在实际应用中往往难以获取。研究者们注意到，许多战略情境下，参与者能够提供的是以偏好为基础的序数排名，而不是精确的效用数值。      2) 采用标准的纳什均衡方法需要对效用进行准确测量，这既复杂又耗时。因此，如何在缺乏数值效用的情况下利用纳什均衡理论分析策略互动，是本文探讨的核...">Nash without Numbers: A Social Choice Approach to Mixed Equilibria in Context-Ordinal Games</span></td>
+        <td class="author-cell">Ian Gemp</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.07996" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.07996" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+   1) 本文的动机在于现有的纳什均衡理论通常依赖于参与者的效用函数，这在实际应用中往往难以获取。研究者们注意到，许多战略情境下，参与者能够提供的是以偏好为基础的序数排名，而不是精确的效用数值。  
+   2) 采用标准的纳什均衡方法需要对效用进行准确测量，这既复杂又耗时。因此，如何在缺乏数值效用的情况下利用纳什均衡理论分析策略互动，是本文探讨的核心问题。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+   1) 前人在游戏理论中主要依托于概率论来处理混合策略下的均衡问题，有的甚至转向可能性理论或者引入中立的第三方来恢复均衡，但这种方法未能在传统概率框架下完全恢复纳什均衡的结构。  
+   2) 尽管已有研究对偏好聚合的处理进行了探讨，但针对在混合策略背景下如何有效聚合序数结果的框架仍显不足，这为本文的研究提供了发展的空间。
+
+3. 【提出了什么创新的方法】  
+   1) 本文提出了一种新的混合纳什均衡的概念——上下文序数纳什均衡，这一概念是在假设参与者能够提供行动的序数排名的基础上提出的。  
+   2) 通过结合社会选择理论中的偏好聚合方法，文章提出了一种新的对最佳反应的定义，进而给出了在温和条件下该均衡的存在性证明。  
+   3) 文章还引入了正则化、近似和遗憾等新概念，并针对简单情境进行了复杂性研究以及学习规则的开发，以计算该均衡。
+
+4. 【文章缺点】  
+   1) 尽管提出的新框架在理论上是合理的，但对其实际计算和实现的可行性尚需进一步实证验证。  
+   2) 本文主要集中在简单场景中的分析，未来可能需要拓展至更多实际复杂情况下</small></details></td>
+    </tr>
+        </tbody></table>
+    </div>
+</div>
+<div class="date-section" id="date-20260508">
+    <div class="date-header">
+        <span>2026-05-08（10篇论文）</span>
+        <span class="arrow">▶</span>
+    </div>
+    <div class="date-content" style="display: none;">
         <table>
         <!-- 添加 colgroup 明确指定每列宽度 -->
         <colgroup>
@@ -1076,248 +1197,6 @@
         </tbody></table>
     </div>
 </div>
-<div class="date-section" id="date-20260506">
-    <div class="date-header">
-        <span>2026-05-06（10篇论文）</span>
-        <span class="arrow">▶</span>
-    </div>
-    <div class="date-content" style="display: none;">
-        <table>
-        <!-- 添加 colgroup 明确指定每列宽度 -->
-        <colgroup>
-            <col style="width: 25%">  <!-- Title -->
-            <col style="width: 15%">   <!-- Authors -->
-            <col style="width: 10%">   <!-- Resources -->
-            <col style="width: 10%">   <!-- Relevance -->
-            <col style="width: 40%">  <!-- Summary -->
-        </colgroup>
-        <thead>
-            <tr>
-                <th>标题</th>
-                <th>作者</th>
-                <th>资源</th>
-                <th>相关性</th>
-                <th>总结</th>
-            </tr>
-        </thead>
-        <tbody>
-        <tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于，随着欧盟设定了向低碳经济转型的明确目标，市场参与者对这些时间节点的信任程度将直接影响投资和消费决策。其次，市场价格不仅反映未来状态的预期，还反映这些状态实现的时间，因此从市场数据中提取转型时间的信息显得尤为重要。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的研究主要集中在绿色债券的定价和绿色溢价的构建上，但缺乏对市...">Market-implied time to transition to a low-carbon economy: a stochastic modelling and inference framework</span></td>
-        <td class="author-cell">Lorenzo Mercuri</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.03082" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.03082" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
-本论文的动机在于，随着欧盟设定了向低碳经济转型的明确目标，市场参与者对这些时间节点的信任程度将直接影响投资和消费决策。其次，市场价格不仅反映未来状态的预期，还反映这些状态实现的时间，因此从市场数据中提取转型时间的信息显得尤为重要。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】  
-前人的研究主要集中在绿色债券的定价和绿色溢价的构建上，但缺乏对市场隐含转型时间的系统性分析。现有文献往往未能有效捕捉市场对转型时间的预期，导致在政策制定和投资决策中存在信息不对称的情况。
-
-3. 【提出了什么创新的方法】  
-本论文提出了一种新的市场隐含对象——转型时间（TtT），通过绿色溢价期限结构的差异提取而来。同时，论文开发了两层推断框架，分别为监管期限约束模型和切换扩展模型，以捕捉不同经济主体对转型时间的异质性认知。
-
-4. 【文章缺点】  
-文章在模型的复杂性上可能导致实际应用中的困难，尤其是在数据稀缺的情况下。此外，模型的假设条件可能限制其在不同市场环境中的适用性。
-
-5. 【类似工作】  
-类似的工作包括对绿色债券市场的定价研究，以及基于期权价格提取前瞻性信息的VIX模型。这些研究为理解市场对未来转型的预期提供了理论基础。
-
-6. 【相关性评分】  
-分数：4分</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      1) 随着创业公司数量的增加，如何有效预测其融资阶段（尤其是A轮融资）变得尤为重要。      2) 现有的融资预测模型往往依赖于传统的财务指标，而忽视了新兴的社交媒体信号（如Product Hunt的发布信号），因此需要新的方法来整合这些信息。  2. 【前人的工作如何解决该问题，存在哪些空白】      1) 之前的研究主要集中在基于财务数...">PHBench: A Benchmark for Predicting Startup Series A Funding from Product Hunt Launch Signals</span></td>
-        <td class="author-cell">Yagiz Ihlamur</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.02974" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.02974" target="_blank" rel="noopener">🧠 AlphaXiv</a><br><a class="resource-tag code" href="https://phbench.com" target="_blank" rel="noopener">🔗 Code1</a><br><details class="resource-comment"><summary>📝 备注</summary><small>appendices. Website, leaderboard, and dataset:this https URL</small></details></td>
-        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：3/5">★★★☆☆</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
-   1) 随着创业公司数量的增加，如何有效预测其融资阶段（尤其是A轮融资）变得尤为重要。  
-   2) 现有的融资预测模型往往依赖于传统的财务指标，而忽视了新兴的社交媒体信号（如Product Hunt的发布信号），因此需要新的方法来整合这些信息。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】  
-   1) 之前的研究主要集中在基于财务数据和市场趋势的预测模型，但缺乏对社交媒体信号的深入分析。  
-   2) 现有的模型往往未能考虑到创业公司在早期阶段的非传统指标，导致预测准确性不足。
-
-3. 【提出了什么创新的方法】  
-   1) 本文提出了一种新的基准模型PHBench，专注于利用Product Hunt的发布信号来预测创业公司的A轮融资。  
-   2) 结合机器学习技术，分析社交媒体数据与融资结果之间的关系，提高预测的准确性。
-
-4. 【文章缺点】  
-   1) 由于缺乏足够的历史数据，模型的泛化能力可能受到限制。  
-   2) 仅依赖Product Hunt的信号可能忽略了其他重要的市场因素，导致预测结果的片面性。
-
-5. 【类似工作】  
-   1) 相关研究包括基于社交媒体分析的创业公司融资预测模型。  
-   2) 还有一些研究探讨了利用机器学习技术进行创业公司估值的方法。
-
-6. 【相关性评分】  
-分数：3分</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      该论文的动机在于，现有的多代理LLM系统在生产环境中的失败率高达41%到87%，而这些失败大多数是由于协调缺陷造成的，而非基础模型能力不足。其次，尽管已有文献广泛认可协调的重要性，但缺乏对具体协调选择与失败模式之间关系的原则性阐述。  2. 【前人的工作如何解决该问题，存在哪些空白】      前人的工作通过实证研究对多代理LLM系统的失败模式...">Coordination as an Architectural Layer for LLM-Based Multi-Agent Systems</span></td>
-        <td class="author-cell">Maksym Nechepurenko</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.03310" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.03310" target="_blank" rel="noopener">🧠 AlphaXiv</a><br><details class="resource-comment"><summary>📝 备注</summary><small>. Code, traces, and production agents publicly released; see Appendix B for repository pinning</small></details></td>
-        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：2/5">★★☆☆☆</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
-   该论文的动机在于，现有的多代理LLM系统在生产环境中的失败率高达41%到87%，而这些失败大多数是由于协调缺陷造成的，而非基础模型能力不足。其次，尽管已有文献广泛认可协调的重要性，但缺乏对具体协调选择与失败模式之间关系的原则性阐述。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】  
-   前人的工作通过实证研究对多代理LLM系统的失败模式进行了分类，识别出14种细粒度的失败模式，强调了协调在失败中的主导作用。然而，这些研究并未将具体的架构配置与可测量的失败特征联系起来，缺乏对协调选择对系统行为影响的预测能力。
-
-3. 【提出了什么创新的方法】  
-   本文提出将协调视为一个可配置的架构层，与代理逻辑和信息访问分离，从而使得架构推理超越单纯的工程效率。通过信息控制的实验设计，固定LLM、工具栈和输出限制，分析不同协调配置的表现，并使用经典的Murphy分解法将校准误差与判别能力分离。
-
-4. 【文章缺点】  
-   文章可能过于依赖于实验设计的固定条件，限制了其结果的广泛适用性。此外，尽管提出了新的架构层次，但在实际应用中如何有效实施和评估这些架构配置仍然是一个挑战。
-
-5. 【类似工作】  
-   1) Cemri et al. (2025) 的大规模实证研究，分析了多代理LLM的失败模式。  
-   2) Daunis et al. (2025) 提出的领域特定语言，将代理工作流视为数据而非代码，旨在提高开发效率。
-
-6. 【相关性评分】  
-分数：2分</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文的动机在于探讨风险投资（VC）投资组合的表现是否源于投资者的技能，还是仅仅是由于随机因素导致的结果。由于风险投资的回报分布高度偏斜，少数成功投资占据了大部分收益，这使得区分投资者的真实技能与偶然的好运变得极为困难。作者希望通过与随机基准的比较，揭示VC投资组合的真实表现。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的研究主要集...">Do Venture Capitalists Beat Random Allocation?</span></td>
-        <td class="author-cell">Max Sina Knicker</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.03980" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.03980" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
-该论文的动机在于探讨风险投资（VC）投资组合的表现是否源于投资者的技能，还是仅仅是由于随机因素导致的结果。由于风险投资的回报分布高度偏斜，少数成功投资占据了大部分收益，这使得区分投资者的真实技能与偶然的好运变得极为困难。作者希望通过与随机基准的比较，揭示VC投资组合的真实表现。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】  
-前人的研究主要集中在通过持久性或平均超额收益来评估投资者的技能，但这些指标在极端回报驱动的环境中难以解读。尽管一些研究（如Kaplan和Schoar）表明存在表现的持久性，暗示可能存在投资技能，但更多的研究（如Korteweg和Sørensen）则强调了在高噪声环境中分离技能与随机因素的困难。因此，现有文献在如何有效区分技能与运气方面仍存在空白。
-
-3. 【提出了什么创新的方法】  
-论文提出了一种受限随机基准的方法，通过保留关键的投资组合特征（如时间、地理、行业构成和投资组合规模）来随机选择个别公司，从而对比实际VC投资组合与随机配置的表现。此外，作者引入了一种基于排名的基准分布，以评估在交叉截面中每个位置的超额表现，提供了更细致的分析。
-
-4. 【文章缺点】  
-首先，论文的分析可能过于依赖于随机基准，未能充分考虑其他可能影响投资组合表现的因素。其次，尽管提供了对表现的深入分析，但在解释零结果的敏感性时，可能未能充分探讨其对整体结论的影响。
-
-5. 【类似工作】  
-类似的工作包括Fama和French对共同基金表现的研究，强调了大多数回报变异可以归因于噪声，而真正的技能稀少。此外，Korteweg和Sørensen的研究也探讨了在私募股权和风险投资中，如何分离技能与噪</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文的动机在于批判IS-LM-BP框架中标量财政聚合的局限性，强调财政政策的复杂性，尤其是当财政政策由多种异质工具组成时，简单的标量聚合可能无法准确反映其对经济的影响。其次，论文旨在通过数学推导和计算模拟，揭示在财政政策设计中，使用标量聚合可能导致的聚合偏差，从而推动对财政政策效果的更深入理解。  2. 【前人的工作如何解决该问题，存在哪些空白】 ...">Fiscal Aggregation and the Limits of IS--LM--BP: Derivations, Aggregation Bias and Reproducible Adversarial Simulations</span></td>
-        <td class="author-cell">Ricardo Alonzo Fernandez Salguero</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.03881" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.03881" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
-该论文的动机在于批判IS-LM-BP框架中标量财政聚合的局限性，强调财政政策的复杂性，尤其是当财政政策由多种异质工具组成时，简单的标量聚合可能无法准确反映其对经济的影响。其次，论文旨在通过数学推导和计算模拟，揭示在财政政策设计中，使用标量聚合可能导致的聚合偏差，从而推动对财政政策效果的更深入理解。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】  
-前人的研究主要集中在IS-LM-BP模型的基本结构和其对经济政策的影响，然而，他们往往假设财政政策是一个简单的标量，忽视了不同财政工具之间的异质性及其对经济结果的不同影响。这种简化导致了对财政政策效果的误解和不准确的政策建议。现有文献未能充分探讨财政政策工具的多样性及其对经济模型的影响，存在明显的研究空白。
-
-3. 【提出了什么创新的方法】  
-论文提出了一种最小财政组合扩展的IS-LM-BP模型，能够区分当前支出、投资项目和对异质家庭的转移支付，进而引入公共资本积累、项目实施效率和外部融资风险等因素。此外，论文还通过一系列计算一致性和对抗性模拟，验证了模型的有效性，展示了标量聚合在异质边际效应下的局限性。
-
-4. 【文章缺点】  
-首先，尽管论文提供了理论上的创新，但其模型的复杂性可能导致实际应用中的困难，尤其是在政策设计和实施方面。其次，论文的计算模拟虽然通过多种测试验证了模型的一致性，但缺乏对实际经济数据的实证分析，可能限制了其结果的广泛适用性。
-
-5. 【类似工作】  
-类似的工作包括Hicks（1937）关于IS-LM模型的基础性研究，以及Fleming（1962）和Mundell（1963）对开放经济扩展的贡献。这些研究为理解财政政策的基本机制提供了框架，但未</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于评估美国《劳动力创新与机会法案》（WIOA）在应对技术自动化对工人影响方面的有效性。首先，随着人工智能和自动化技术的快速发展，了解现有劳动力市场政策如何帮助工人适应这些变化显得尤为重要。其次，尽管公共政策普遍倡导工人再培训，但现有证据显示其效果并不理想，因此需要深入探讨WIOA的实际成果和局限性。  2. 【前人的工作如何解决该问题，...">Did US Worker Retraining Reduce Participant Automation Exposure?</span></td>
-        <td class="author-cell">Julian Jacobs</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.03767" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.03767" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
-本论文的动机在于评估美国《劳动力创新与机会法案》（WIOA）在应对技术自动化对工人影响方面的有效性。首先，随着人工智能和自动化技术的快速发展，了解现有劳动力市场政策如何帮助工人适应这些变化显得尤为重要。其次，尽管公共政策普遍倡导工人再培训，但现有证据显示其效果并不理想，因此需要深入探讨WIOA的实际成果和局限性。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】  
-前人的研究主要集中在评估政府资助的主动劳动力市场项目（ALMP）的效果，然而，相关文献往往存在随机对照试验结果不佳和观察数据难以解读的问题，导致对ALMP的有效性缺乏清晰的认识。此外，尽管有学者指出美国在富裕国家中ALMP和再培训的效果较差，但对具体项目（如WIOA）的深入分析仍然稀缺，缺乏对参与者实际结果的系统性研究。
-
-3. 【提出了什么创新的方法】  
-本论文引入了“再培训指数”（Retrainability Index），作为评估WIOA项目成功与否的新型综合指标，通过分析参与者的工资恢复情况和常规任务强度（RTI）的变化来衡量项目效果。此外，论文还区分了WIOA的轻触式求职援助与重触式正式再培训，以探讨不同干预措施对工人抵御自动化影响的有效性。
-
-4. 【文章缺点】  
-首先，论文的分析主要基于参与者的工资恢复和RTI变化，可能未能全面反映工人适应自动化的其他重要因素。其次，虽然研究涉及了大量数据，但对不同地区和行业的具体案例分析不足，可能导致结论的普适性受到限制。
-
-5. 【类似工作】  
-一项类似的研究是Card等（2018）对政府资助的ALMP效果的系统评估，探讨了不同项目对工人就业和收入的影响。另一项相关工作是Barnow和Smith（2015）对美国</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文的动机在于揭示金融市场中时间序列的路径粗糙性，这对于理解市场波动性至关重要。通过引入水平可视图（HVG）和前向可视地平线（L+​(t)），作者希望提供一种新的方法来估计路径的粗糙性，从而为金融经济学和统计物理学中的复杂系统提供更可靠的分析工具。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的工作主要集中在使用标准估计方法（如去趋...">First-passage horizons in horizontal visibility graphs: a rank-invariant estimator of path roughness for rough volatility models</span></td>
-        <td class="author-cell">Michał Sikorski</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2512.02352" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2512.02352" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
-该论文的动机在于揭示金融市场中时间序列的路径粗糙性，这对于理解市场波动性至关重要。通过引入水平可视图（HVG）和前向可视地平线（L+​(t)），作者希望提供一种新的方法来估计路径的粗糙性，从而为金融经济学和统计物理学中的复杂系统提供更可靠的分析工具。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】  
-前人的工作主要集中在使用标准估计方法（如去趋势波动分析、Whittle方法等）来估计波动过程的赫斯特指数，这些方法通常需要强平稳性假设或对噪声结构的特定假设。然而，这些方法在处理具有长记忆效应和路径粗糙性的时间序列时存在混淆。尽管已有研究使用HVG作为时间序列的几何诊断工具，但前人并未将前向可视地平线L+​(t)作为路径粗糙性的估计量进行深入研究。
-
-3. 【提出了什么创新的方法】  
-本文提出了一种基于前向可视地平线L+​(t)的新方法，该方法通过结合离散网格持久性理论和分数布朗运动的特性，提供了一种无参数的路径粗糙性估计。此外，作者还通过Monte-Carlo实验验证了该方法的有效性，展示了其在不同市场条件下的适用性。
-
-4. 【文章缺点】  
-首先，尽管提出的方法在理论上具有创新性，但在实际应用中可能受到样本量和数据质量的限制。其次，文章中对路径粗糙性的估计可能未能充分考虑市场的非线性特征，这可能影响估计结果的准确性。
-
-5. 【类似工作】  
-类似的工作包括Lacasa等（2008）关于HVG的研究，探讨了其在时间序列分析中的应用；以及Fukasawa等（2022）对长记忆效应与路径粗糙性之间关系的研究，这些工作为本文提供了理论基础和背景。
-
-6. 【相关</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      该论文的动机在于探讨双变量近不稳定Hawkes过程的极限行为，尤其是在金融微观结构中的应用。首先，现有的研究主要集中在单变量Hawkes过程的极限理论，而双变量Hawkes过程在实际金融市场中具有重要意义，能够更好地描述相关资产的共同订单流和竞价结构。其次，论文旨在填补现有文献中对于具有不同粗糙度的双变量Hawkes过程的理论空白，提供一个严格...">Scaling Limits of Bivariate Nearly-Unstable Hawkes Processes and Applications to Rough Volatility</span></td>
-        <td class="author-cell">Sohaib El Karmi</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.03703" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.03703" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
-   该论文的动机在于探讨双变量近不稳定Hawkes过程的极限行为，尤其是在金融微观结构中的应用。首先，现有的研究主要集中在单变量Hawkes过程的极限理论，而双变量Hawkes过程在实际金融市场中具有重要意义，能够更好地描述相关资产的共同订单流和竞价结构。其次，论文旨在填补现有文献中对于具有不同粗糙度的双变量Hawkes过程的理论空白，提供一个严格的功能极限定理，以解释高频订单流中观察到的聚类模式。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】  
-   前人的工作主要集中在单变量Hawkes过程的极限理论上，例如Jaisson和Rosenbaum的研究为近不稳定Hawkes过程提供了强有力的理论基础。然而，现有研究在双变量Hawkes过程的异质性方面仍然存在不足，尤其是当两个自激内核具有不同的重尾指数时，缺乏相应的极限理论支持。此外，虽然有研究探讨了更一般的内核形式，但对于双变量近不稳定Hawkes过程的交叉激励机制及其极限行为的理解仍然不够深入。
-
-3. 【提出了什么创新的方法】  
-   本文提出了一种新的方法，通过对双变量近不稳定Hawkes过程进行适当的重标定，建立了一个功能极限定理，揭示了不同重尾指数的内核如何共同影响极限相关结构。具体而言，论文引入了新的卷积内核来同时编码两个指数，从而捕捉到交叉激励的复杂性。此外，论文还探讨了在近临界状态下，如何通过不同的时间尺度对两个成分进行重标定，以便在极限中保持交叉激励的影响。
-
-4. 【文章缺点】  
-   文章的一个缺点是，尽管提供了理论上的突破，但在实际应用中，如何有效地估计和校准模型参数仍然是一个挑战，特别是在高频数据的背景下。另一个缺点是，论文</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于探讨在AI泛滥的市场中，经过验证的人类存在将成为一种稀缺且具备地位的劳动属性。随着生成性和代理性AI系统降低了许多标准化认知、创造和协调任务的成本，传统中层知识工作的稀缺溢价受到削弱，因此需要重新审视人类来源验证的价值。其次，作者认为这种变化可能导致价值捕获的非对称性结构，即在AI基础设施拥有者控制的高产量合成生产与因验证人类存在而被...">Human-Provenance Verification should be Treated as Labor Infrastructure in AI-Saturated Markets</span></td>
-        <td class="author-cell">Erin McGurk</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.03210" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.03210" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
-本论文的动机在于探讨在AI泛滥的市场中，经过验证的人类存在将成为一种稀缺且具备地位的劳动属性。随着生成性和代理性AI系统降低了许多标准化认知、创造和协调任务的成本，传统中层知识工作的稀缺溢价受到削弱，因此需要重新审视人类来源验证的价值。其次，作者认为这种变化可能导致价值捕获的非对称性结构，即在AI基础设施拥有者控制的高产量合成生产与因验证人类存在而被重视的稀缺高地位人力劳动之间形成明显的两极分化。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】  
-前人的研究主要集中在AI对劳动市场的影响，探讨了AI如何通过提供低成本的替代品来改变劳动价值的结构。然而，现有文献往往未能深入分析经过验证的人类存在在这一新市场中的重要性及其作为劳动基础设施的角色。此外，虽然有研究提到人类来源的溢价，但缺乏对其在AI主导市场中如何演变的系统性探讨。
-
-3. 【提出了什么创新的方法】  
-本论文提出了一种新的视角，将人类来源验证视为劳动基础设施，而非奢侈的真实性标签。作者引入了“表现性人性”这一概念，强调劳动的价值在于其可见和可验证的人类特征。此外，论文还将表现性人性细分为三种类型：关系存在劳动、美学来源劳动和问责劳动，提供了更为细致的分析框架。
-
-4. 【文章缺点】  
-首先，论文的理论框架可能缺乏实证数据支持，导致其结论的普适性受到质疑。其次，尽管提出了新的概念和分类，但对这些概念在实际市场中的应用和影响缺乏深入的案例分析，可能使得理论与实践之间存在脱节。
-
-5. 【类似工作】  
-类似的工作包括对AI对劳动市场影响的研究，例如“AI与劳动市场的未来”以及“人类劳动的价值在AI时代的</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      本文的动机在于通过信息理论的视角来研究单期投资组合选择问题，特别是在恒定相对风险厌恶（CRRA）效用下的投资组合优化。首先，投资者在不确定的市场环境中希望最大化其效用，而传统的投资组合选择方法往往忽视了信息理论在此问题中的潜在应用。其次，本文旨在填补信息理论与投资组合选择之间的空白，探索如何将Rényi散度等信息度量引入到投资组合优化中，以提高...">Single-Period Portfolio Selection via Information Projection</span></td>
-        <td class="author-cell">Bo-Yu Yang</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.03184" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.03184" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
-   本文的动机在于通过信息理论的视角来研究单期投资组合选择问题，特别是在恒定相对风险厌恶（CRRA）效用下的投资组合优化。首先，投资者在不确定的市场环境中希望最大化其效用，而传统的投资组合选择方法往往忽视了信息理论在此问题中的潜在应用。其次，本文旨在填补信息理论与投资组合选择之间的空白，探索如何将Rényi散度等信息度量引入到投资组合优化中，以提高优化过程的效率和准确性。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】  
-   前人的研究主要集中在通过香农熵和KL散度等信息理论工具来解决投资组合选择问题，例如Kelly的工作将最优增长与香农熵相联系。然而，这些研究通常局限于特定的情境，如马赛克赌注等，未能充分考虑多个资产同时正收益的情况。此类研究的局限性在于，它们未能将信息理论的框架有效扩展到更一般的投资组合选择问题中，特别是在CRRA效用的背景下。
-
-3. 【提出了什么创新的方法】  
-   本文提出了一种创新的方法，将CRRA投资组合选择问题转化为Rényi信息投影问题。具体而言，作者利用Rényi散度的变分表示，构建了一个类似Blahut-Arimoto的交替优化算法，该算法具有封闭形式的辅助更新和KL类型的投资组合步骤。此外，作者还证明了在低风险厌恶的情况下，该方法所需的迭代次数显著少于传统的CRRA效用优化方法和Cover的方法。
-
-4. 【文章缺点】  
-   本文的一个缺点是其方法在高风险厌恶情况下的表现尚未得到充分验证，可能导致在实际应用中效果不佳。另一个缺点是，尽管提出了理论上的创新，但在实际市场环境中的应用和适应性仍需进一步的实证研究来支持。
-
-5. 【类似工作】  
-   类似的工作包括Bleuler、Lapidoth和Pfister的研究，他们将信息理论与风险</small></details></td>
-    </tr>
-        </tbody></table>
-    </div>
-</div>
         </main>
 
         <footer>
@@ -1388,7 +1267,7 @@
             });
             
             // ========== 自动展开最新日期 ==========
-            const latestId = 'date-20260508';
+            const latestId = 'date-20260511';
             if (latestId) {
                 const latestSection = document.getElementById(latestId);
                 if (latestSection) {
