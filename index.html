@@ -628,7 +628,7 @@
         <header>
             <h1>📈 arXiv 量化金融领域论文汇总</h1>
             <div class="intro">
-                <p>📊 共 <strong>46</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
+                <p>📊 共 <strong>55</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
                 <p>🔗 点击日期可展开/折叠｜📚 Zotero 按钮需安装 <a href="https://www.zotero.org/download/connectors" target="_blank">Connector 插件</a></p>
             </div>
         </header>
@@ -636,17 +636,243 @@
         <!-- 日期导航 -->
         <nav class="nav">
             <strong>📅 日期导航：</strong>
-            <a href="#date-20260521">2026-05-21（9篇）</a> | <a href="#date-20260520">2026-05-20（7篇）</a> | <a href="#date-20260519">2026-05-19（23篇）</a> | <a href="#date-20260518">2026-05-18（7篇）</a>
+            <a href="#date-20260522">2026-05-22（9篇）</a> | <a href="#date-20260521">2026-05-21（9篇）</a> | <a href="#date-20260520">2026-05-20（7篇）</a> | <a href="#date-20260519">2026-05-19（23篇）</a> | <a href="#date-20260518">2026-05-18（7篇）</a>
         </nav>
 
         <!-- 论文内容区块 -->
         <main>
-            <div class="date-section" id="date-20260521">
+            <div class="date-section" id="date-20260522">
     <div class="date-header">
-        <span>2026-05-21（9篇论文）</span>
+        <span>2026-05-22（9篇论文）</span>
         <span class="arrow">▼</span>
     </div>
     <div class="date-content" style="display: block;">
+        <table>
+        <!-- 添加 colgroup 明确指定每列宽度 -->
+        <colgroup>
+            <col style="width: 25%">  <!-- Title -->
+            <col style="width: 15%">   <!-- Authors -->
+            <col style="width: 10%">   <!-- Resources -->
+            <col style="width: 10%">   <!-- Relevance -->
+            <col style="width: 40%">  <!-- Summary -->
+        </colgroup>
+        <thead>
+            <tr>
+                <th>标题</th>
+                <th>作者</th>
+                <th>资源</th>
+                <th>相关性</th>
+                <th>总结</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文的动机主要体现在两个方面：首先，尽管深度学习在自然语言处理和计算机视觉领域取得了显著进展，但在经济和金融预测中的优势仍不明确，尤其是在多变量预测方法相较于单变量预测方法的有效性方面。其次，随着基础模型的出现，如何利用这些模型在金融领域中提取跨系列信息以提升预测准确性，成为了一个重要的研究问题。  2. 【前人的工作如何解决该问题，存在哪些空白】...">Multivariate Financial Forecasting using the Chronos Time Series Foundation Models</span></td>
+        <td class="author-cell">Sanjiv R Das</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.21504" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.21504" target="_blank" rel="noopener">🧠 AlphaXiv</a><br><details class="resource-comment"><summary>📝 备注</summary><small>3 figures</small></details></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：5/5">★★★★★</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+该论文的动机主要体现在两个方面：首先，尽管深度学习在自然语言处理和计算机视觉领域取得了显著进展，但在经济和金融预测中的优势仍不明确，尤其是在多变量预测方法相较于单变量预测方法的有效性方面。其次，随着基础模型的出现，如何利用这些模型在金融领域中提取跨系列信息以提升预测准确性，成为了一个重要的研究问题。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作主要集中在比较传统计量经济学基准与现代机器学习模型的预测能力，发现许多现代模型在长时间跨度的数据上表现不如简单基准。这表明了多变量预测方法在实际应用中的可靠性仍需进一步验证。此外，现有的研究往往局限于单一系列的历史数据，缺乏对多系列共同建模的深入探讨。
+
+3. 【提出了什么创新的方法】  
+本研究提出了一种基于Chronos-2的多变量时间序列预测方法，创新之处在于：首先，系统地比较了多变量预测与单变量预测在股票和利率上的表现；其次，采用了组注意力机制，支持跨系列的信息共享和学习；最后，通过合并相关系列进行联合建模，探讨了这种方法对预测准确性的提升。
+
+4. 【文章缺点】  
+该论文的缺点包括：首先，混合不同市场的时间序列可能会降低预测准确性，表明添加噪声上下文会影响模型性能；其次，尽管展示了基础模型的潜力，但对模型的具体参数选择和调优过程的讨论较为有限，可能影响结果的可重复性。
+
+5. 【类似工作】  
+类似的工作包括：一项研究探讨了深度学习模型在利率预测中的应用，发现其在特定条件下能超越传统方法；另一项研究则关注于多变量时间序列模型在金融市场中的应用，强调了跨系列信息的利用。
+
+6. 【相关性评分】  
+分数：5分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      该论文的动机在于解决金融时间序列数据生成中的挑战，尤其是其非平稳性对传统统计模型的限制。其次，随着数据隐私问题的增加，生成合成数据的需求日益增长，以增强模型的泛化能力。  2. 【前人的工作如何解决该问题，存在哪些空白】      前人的工作主要集中在基于模型和数据驱动的方法上，传统统计模型如ARIMA和金融数学模型如Black-Scholes...">A Generative Adversarial Graph Neural Network for Synthetic Time Series Data</span></td>
+        <td class="author-cell">Marco Gregnanin</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.22215" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.22215" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：5/5">★★★★★</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+   该论文的动机在于解决金融时间序列数据生成中的挑战，尤其是其非平稳性对传统统计模型的限制。其次，随着数据隐私问题的增加，生成合成数据的需求日益增长，以增强模型的泛化能力。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+   前人的工作主要集中在基于模型和数据驱动的方法上，传统统计模型如ARIMA和金融数学模型如Black-Scholes在合成数据生成方面取得了一定成果，但通常假设数据是平稳的，这限制了其在非平稳金融时间序列中的有效性。此外，现有的GAN模型主要关注捕捉时间序列数据的自回归成分，未能充分考虑非平稳性和波动性变化的影响。
+
+3. 【提出了什么创新的方法】  
+   本文提出了Sig-Graph GAN模型，该模型结合了时间序列的签名、长短期记忆网络（LSTM）以及图神经网络（GNN），以捕捉时间序列数据中的几何模式和自回归特性。通过使用可视化图算法，模型能够有效地从时间序列中提取图形表示，进而生成更为精准的合成数据。
+
+4. 【文章缺点】  
+   文章可能在模型的复杂性和计算成本方面存在不足，尤其是在处理大规模金融数据时。此外，尽管模型在多个股票交易所的表现优于基线方法，但缺乏对不同市场条件下模型稳定性的深入分析。
+
+5. 【类似工作】  
+   相关的工作包括使用GAN生成合成金融数据的研究，以及基于图神经网络的时间序列分析方法。这些研究虽然在各自领域取得了一定进展，但未能有效结合自回归和几何结构的优势。
+
+6. 【相关性评分】  
+   分数：5分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      - 本文旨在解决在金融数学中风险量化的核心问题，特别是在不确定性模型下如何有效评估风险。      - 通过引入动态一致性和分布不确定性，本文希望提供一种新的风险评估框架，以克服传统单一参考概率测度的局限性。  2. 【前人的工作如何解决该问题，存在哪些空白】      - 前人的研究主要集中在一致性和凸性风险度量的开发上，提出了通过惩罚最坏情...">An optimal transport foundation for a class of dynamically consistent risk measures</span></td>
+        <td class="author-cell">Sven Fuhrmann</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.21759" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.21759" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+   - 本文旨在解决在金融数学中风险量化的核心问题，特别是在不确定性模型下如何有效评估风险。  
+   - 通过引入动态一致性和分布不确定性，本文希望提供一种新的风险评估框架，以克服传统单一参考概率测度的局限性。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+   - 前人的研究主要集中在一致性和凸性风险度量的开发上，提出了通过惩罚最坏情况期望来评估风险的方法。  
+   - 然而，现有工作在动态一致性和时间同质性方面的深入探讨不足，尤其是在连续时间框架下的具体实现和特征化方面仍存在空白。
+
+3. 【提出了什么创新的方法】  
+   - 本文提出了一种通过最优传输理论来构建动态一致性风险度量的新方法，利用凸单调半群的框架来描述风险生成器。  
+   - 通过对平滑测试函数的风险生成器进行明确的表征，本文为动态风险度量提供了新的数学基础。
+
+4. 【文章缺点】  
+   - 本文的理论推导较为复杂，可能对非专业读者理解造成障碍。  
+   - 在实际应用中，所提出的方法可能需要大量的计算资源，限制了其在实际金融市场中的应用。
+
+5. 【类似工作】  
+   - 相关研究包括对动态风险度量的进一步发展和应用，如在不同市场条件下的风险管理模型。  
+   - 另外，关于最优传输和风险评估的结合研究也在逐渐增多，尤其是在资产定价和组合优化领域。
+
+6. 【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      该论文的动机在于探讨人工智能平台的使用情况对不同职业的影响，尤其是在ChatGPT等技术迅速发展的背景下，了解这些技术如何影响就业市场变得尤为重要。其次，论文旨在揭示现有文献中对职业暴露的测量方法存在的偏差，强调需要更准确的指标来评估AI对劳动力市场的真实影响。  2. 【前人的工作如何解决该问题，存在哪些空白】      前人的研究主要通过分...">Who Uses AI? Platforms, Workforce, and AI Exposure</span></td>
+        <td class="author-cell">Michelle Yin</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.21743" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.21743" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：3/5">★★★☆☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+   该论文的动机在于探讨人工智能平台的使用情况对不同职业的影响，尤其是在ChatGPT等技术迅速发展的背景下，了解这些技术如何影响就业市场变得尤为重要。其次，论文旨在揭示现有文献中对职业暴露的测量方法存在的偏差，强调需要更准确的指标来评估AI对劳动力市场的真实影响。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+   前人的研究主要通过分析人工智能平台的对话记录来测量职业暴露，提供了一定的见解。然而，这些研究往往忽视了平台用户基础与劳动力之间的关系，导致测量结果存在偏差。此外，现有文献未能充分考虑不同用户渠道（如消费者与企业）在就业影响上的差异，造成了对AI影响的片面理解。
+
+3. 【提出了什么创新的方法】  
+   本文提出了一种新的方法，通过固定样本、控制变量和估计器，仅变更平台输入来分析就业系数的变化，从而更准确地测量AI对就业的影响。此外，论文还引入了对劳动力统计局数据的重加权方法，以减少估计的偏差，并推导出就业弹性的概率限制和部分识别界限。
+
+4. 【文章缺点】  
+   文章可能过于依赖于特定的数据集和模型假设，限制了其结果的普适性。此外，尽管提出了新的测量方法，但在实际应用中可能面临数据获取和处理的挑战，影响结果的可行性。
+
+5. 【类似工作】  
+   1) &quot;AI and the Future of Work: Evidence from the Labor Market&quot; - 该研究探讨了AI技术对劳动力市场的影响，提供了相关的实证分析。  
+   2) &quot;Measuring Occupational Exposure to AI: A New Approach&quot; - 该论文提出了一种新的方法来测量职业对AI的暴露，强调了数据和模型选择的重要性。
+
+6. 【相关性评分】  
+分数：3分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于研究短期期权链中的风险中性密度提取，特别是在到期日临近时，期权溢价下降和买卖差价相对价格较大，使得中间报价信息不充分。其次，过时或不同步的报价可能导致潜在的静态套利，使得标准程序变得不可行或不稳定。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的研究主要集中在短期期权的定价和风险管理上，例如Andersen等（2017...">From Arbitrage Removal to Density Extraction: A Model-Free Framework for Short-Dated Options</span></td>
+        <td class="author-cell">Aaron Wizman</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.22792" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.22792" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本论文的动机在于研究短期期权链中的风险中性密度提取，特别是在到期日临近时，期权溢价下降和买卖差价相对价格较大，使得中间报价信息不充分。其次，过时或不同步的报价可能导致潜在的静态套利，使得标准程序变得不可行或不稳定。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究主要集中在短期期权的定价和风险管理上，例如Andersen等（2017）和Bandi等（2023）提出了针对短期期权的半非参数程序和局部定价扩展，显示出短期期权在波动性和跳跃风险中的独特信息。然而，这些方法往往依赖于特定的模型假设，缺乏对市场约束的全面考虑，尤其是在处理买卖报价时的稳定性问题。
+
+3. 【提出了什么创新的方法】  
+本文提出了一种无模型的框架，通过将买卖报价视为市场约束，开发了两步流程：首先，使用“套利移除迭代可执行策略”（ARIES）过滤可执行的静态套利；其次，采用“平滑熵密度提取”（SEDEx）在买卖约束下恢复密度。这种方法能够快速计算并在各种市场条件下返回稳健的密度。
+
+4. 【文章缺点】  
+尽管本文的方法在计算速度和稳健性上表现良好，但仍然存在一些缺点：首先，所提出的模型可能在极端市场条件下表现不佳，特别是在流动性不足的情况下；其次，方法的有效性依赖于市场数据的质量，若数据存在较大噪声，可能影响密度提取的准确性。
+
+5. 【类似工作】  
+类似的工作包括Todorov和Zhang（2024）利用0DTE和1DTE S&amp;P 500期权的风险中性方差比率来非参数估计日内波动模式，以及Bandi等（2023）针对0DTE期权的局部定价扩展研究。这些研究在短期期</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      该论文的动机在于解决学术界与工业界在机器学习合作中的知识产权（IP）保护与学术出版之间的矛盾。首先，学术界需要发布研究成果以推动职业发展，而工业界则需保护基于专有数据训练的模型，以维护其竞争优势。其次，缺乏一个共享的合同框架使得双方在合作中面临不必要的法律争议和激励不一致的问题，导致许多合作无法顺利开展。  2. 【前人的工作如何解决该问题，存...">Position: The Pre/Post-Training Boundary Should Govern IP in Industry-Academia ML Collaborations</span></td>
+        <td class="author-cell">Dirk Bergemann</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.22632" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.22632" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+   该论文的动机在于解决学术界与工业界在机器学习合作中的知识产权（IP）保护与学术出版之间的矛盾。首先，学术界需要发布研究成果以推动职业发展，而工业界则需保护基于专有数据训练的模型，以维护其竞争优势。其次，缺乏一个共享的合同框架使得双方在合作中面临不必要的法律争议和激励不一致的问题，导致许多合作无法顺利开展。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+   前人的工作主要集中在识别学术研究与企业需求之间的激励不一致问题，强调了双方在合作中面临的挑战。然而，现有的研究未能提出一个有效的、可广泛采用的合同框架来解决这一问题。此外，虽然一些研究探讨了法律和技术之间的关系，但缺乏将科学家纳入合同谈判过程的具体建议，导致技术结构在合同中被忽视。
+
+3. 【提出了什么创新的方法】  
+   本文提出了一种名为PBOS（Protect-the-Business / Open-Source-the-Science）的合同模板，旨在为学术界与工业界的合作提供一个明确的界限。该模板将预训练的艺术品（如架构、训练代码、基准和未训练权重）视为开放科学，而将基于专有数据训练的权重视为商业知识产权。此外，PBOS的设计确保了技术上合理、法律上清晰，并且可审计。
+
+4. 【文章缺点】  
+   文章的一个缺点是，尽管提出了PBOS合同模板，但未能提供具体的实施案例或实证研究来验证其有效性。另一个缺点是，PBOS的适用性可能受到不同领域和行业的限制，可能无法普遍适用于所有类型的学术与工业合作。
+
+5. 【类似工作】  
+   类似的工作包括“Academic-Industry Collaboration in AI: Challenges and Opportunities”，该研究探讨了学术界与工业界合作中的激励问题。另一个相关工作是“Legal Frameworks for Data Sharing in Machine Learning”，该研究分析了数据</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于探索动态规划之间的关系，尤其是在经济学和金融学中的应用。第一，随着动态模型的不断演变，研究者们面临着每种新形式都需进行独立分析以建立最优性属性的挑战。第二，借助动力系统理论中的共轭方法，可以更高效地识别和传递不同动态规划形式之间的最优性特征，从而简化分析过程。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的研究主要集中...">Isomorphic Dynamic Programs</span></td>
+        <td class="author-cell">John Stachurski</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.22076" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.22076" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本论文的动机在于探索动态规划之间的关系，尤其是在经济学和金融学中的应用。第一，随着动态模型的不断演变，研究者们面临着每种新形式都需进行独立分析以建立最优性属性的挑战。第二，借助动力系统理论中的共轭方法，可以更高效地识别和传递不同动态规划形式之间的最优性特征，从而简化分析过程。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究主要集中在动态规划的标准模型及其变体上，虽然有一些工作探讨了不同动态系统之间的关系，但大多缺乏系统性的方法来连接这些变体的最优性属性。此外，现有文献中对共轭性在动态规划中的应用相对较少，未能充分利用这一工具来简化复杂模型的分析。
+
+3. 【提出了什么创新的方法】  
+本论文提出了一种新的方法，通过应用动力系统理论中的共轭性概念，来识别和传递动态规划之间的最优性特征。具体而言，作者展示了在有序同构下，如何将最优性属性从一个动态规划形式传递到另一个形式。此外，论文还探讨了同构变换如何提高价值函数近似的数值精度，尤其是在多部门实际商业周期模型中。
+
+4. 【文章缺点】  
+首先，尽管论文提出了新的方法，但其理论框架可能在实际应用中面临复杂性，尤其是在处理高维模型时。其次，论文对某些特定偏好（如Kreps–Porteus偏好）之间的同构性进行了探讨，但对其他类型偏好的适用性分析较为有限，可能导致结果的普适性受到质疑。
+
+5. 【类似工作】  
+类似的研究包括Kennedy和Stockman（2008）关于经济模型中混沌动态系统的特征化，以及Flynn和Sastry（2022）对经济均衡模型中共轭性的建立。这些工作都涉及动态系统理论在经济学中的应用，但未能系统地将其与动态规划的最优性属性结合</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】    本文的动机在于深入研究深度对冲在实际市场中的表现，特别是针对S&amp;P 500指数期权的对冲策略。首先，作者希望超越简单的性能比较，探讨学习到的对冲策略的实际作用、失败的原因以及其可审计性。其次，研究旨在揭示在不同市场状态下，深度对冲策略的脆弱性及其对风险管理的影响。  2. 【前人的工作如何解决该问题，存在哪些空白】    前人的工作主要集中在基于B...">What Does Deep Hedging Actually Learn? Delta Corrections, Regime Fragility, and Symbolic Distillation</span></td>
+        <td class="author-cell">Kirill Zernikov(New Economic School)</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.21696" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.21696" target="_blank" rel="noopener">🧠 AlphaXiv</a><br><a class="resource-tag code" href="https://github.com/Kirill-ZG/Interpretable-Empirical-Deep-Hedging" target="_blank" rel="noopener">🔗 Code1</a><br><details class="resource-comment"><summary>📝 备注</summary><small>. Code and replication package:this https URL</small></details></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】
+   本文的动机在于深入研究深度对冲在实际市场中的表现，特别是针对S&amp;P 500指数期权的对冲策略。首先，作者希望超越简单的性能比较，探讨学习到的对冲策略的实际作用、失败的原因以及其可审计性。其次，研究旨在揭示在不同市场状态下，深度对冲策略的脆弱性及其对风险管理的影响。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】
+   前人的工作主要集中在基于Black-Scholes模型的对冲策略上，尽管这些模型在理论上透明，但在实际市场中存在许多局限性，如波动率微笑、随机波动等。尽管有一些研究尝试通过更复杂的模型来修正Black-Scholes的缺陷，但仍缺乏对实际市场数据的深入分析和对深度学习方法的应用。此外，现有文献对深度对冲策略的可解释性和在不同市场状态下的表现缺乏系统性研究。
+
+3. 【提出了什么创新的方法】
+   本文提出了一种基于深度学习的对冲策略，利用局部下行短缺奖励进行训练，学习到的对冲策略在实际交易中表现出系统性的delta修正。此外，作者通过符号回归将神经网络策略提炼为可交易的紧凑公式，使得这些策略在保持收益和风险管理优势的同时，具备了可审计性。
+
+4. 【文章缺点】
+   首先，尽管提出的深度对冲策略在大多数情况下表现良好，但在特定市场状态下（如2022年）却暴露出显著的损失，显示出策略的脆弱性。其次，虽然符号回归提供了可解释的交易规则，但这些规则在面对复杂市场环境时仍可能无法有效应对，限制了其实际应用的广泛性。
+
+5. 【类似工作】
+   类似的工作包括Buehler等人（2019）提出的将对冲视为序列优化问题的研究，以及Kolm和Ritter（2019）将动态对冲与强化学习相结合的研究。这</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于探讨以太坊区块构建者在最大可提取价值（MEV）拍卖中面临的承诺问题。首先，区块构建者在观察到提交的交易包后，缺乏强制遵守拍卖结果的机制，这可能导致不诚实行为，影响拍卖的公平性和有效性。其次，随着搜索者对构建者可能违约行为的预期，拍卖的竞争性和搜索者的出价策略也受到影响，从而影响整体市场的效率。  2. 【前人的工作如何解决该问题，存在...">Imperfect Commitment in Maximal Extractable Value Auctions</span></td>
+        <td class="author-cell">Aleksei Adadurov</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.22667" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.22667" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本论文的动机在于探讨以太坊区块构建者在最大可提取价值（MEV）拍卖中面临的承诺问题。首先，区块构建者在观察到提交的交易包后，缺乏强制遵守拍卖结果的机制，这可能导致不诚实行为，影响拍卖的公平性和有效性。其次，随着搜索者对构建者可能违约行为的预期，拍卖的竞争性和搜索者的出价策略也受到影响，从而影响整体市场的效率。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究主要集中在拍卖理论和腐败拍卖者的文献中，探讨了拍卖者如何利用信息优势进行操控。然而，这些研究往往未能充分考虑构建者在观察到出价信息后可能的违约行为及其对拍卖结果的影响。其次，虽然已有文献讨论了信息披露的最优策略，但缺乏对构建者在不同MEV类型下的承诺程度及其对拍卖收入的具体影响的实证分析。
+
+3. 【提出了什么创新的方法】  
+本论文提出了一种新的模型，考虑了构建者在拍卖中的违约概率ε及其对搜索者出价策略的影响。通过对libmev数据集的实证分析，估计了不同MEV类型下的构建者违约行为，并分析了拍卖收入与构建者可能捕获的盈余之间的关系。此外，论文还探讨了构建者的承诺程度如何影响拍卖的均衡出价和搜索者的盈余。
+
+4. 【文章缺点】  
+首先，论文在模型构建上可能过于简化，未能充分考虑市场中其他可能影响拍卖结果的因素，如外部市场冲击或其他参与者的行为。其次，实证分析部分可能受到数据集的局限性影响，未能全面反映所有MEV类型的市场动态。
+
+5. 【类似工作】  
+类似的工作包括对腐败拍卖者的研究，如[8]和[17]，探讨了拍卖者如何利用信息优势进行</small></details></td>
+    </tr>
+        </tbody></table>
+    </div>
+</div>
+<div class="date-section" id="date-20260521">
+    <div class="date-header">
+        <span>2026-05-21（9篇论文）</span>
+        <span class="arrow">▶</span>
+    </div>
+    <div class="date-content" style="display: none;">
         <table>
         <!-- 添加 colgroup 明确指定每列宽度 -->
         <colgroup>
@@ -1854,7 +2080,7 @@
             });
             
             // ========== 自动展开最新日期 ==========
-            const latestId = 'date-20260521';
+            const latestId = 'date-20260522';
             if (latestId) {
                 const latestSection = document.getElementById(latestId);
                 if (latestSection) {
