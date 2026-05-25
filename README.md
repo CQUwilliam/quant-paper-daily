@@ -1,16 +1,63 @@
-# arXiv 量化金融领域论文汇总（共55篇）
+# arXiv 量化金融领域论文汇总（共54篇）
 
 > 说明：仅显示最近五天数据，当天论文默认展开，其他日期点击标题可展开/折叠
 > 相关性评分：基于LLM对量化金融领域的相关性评定（1-5分，★越多相关性越高）
 
 ## 日期导航
+- [2026-05-25（6篇论文）](#date-20260525)
 - [2026-05-22（9篇论文）](#date-20260522)
 - [2026-05-21（9篇论文）](#date-20260521)
 - [2026-05-20（7篇论文）](#date-20260520)
 - [2026-05-19（23篇论文）](#date-20260519)
-- [2026-05-18（7篇论文）](#date-20260518)
 
-## <a id='date-20260522'></a>2026-05-22（9篇论文）
+## <a id='date-20260525'></a>2026-05-25（6篇论文）
+
+<table>
+<thead>
+<tr><th>Title</th><th>Author</th><th>PDF</th><th>Code</th><th>Relevance</th></tr>
+</thead>
+<tbody>
+<tr><td>Value-focused modelling to generate alternatives -- Coupling multi-criteria decision analysis and optimisation models to support strategic decisions</td><td>Emily Bergup</td><td><a href="https://arxiv.org/pdf/2605.23616">PDF</a></td><td>-</td><td>★★☆☆☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★☆☆☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.23616">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本研究的动机在于解决复杂规划决策中面临的挑战，包括（1）在大决策空间中如何有效地识别和评估相关的决策替代方案，以及（2）如何在多方利益相关者的冲突目标间找到平衡，以便更好地支持能源系统转型等领域的决策过程。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>以往的工作主要通过建模生成替代方案（MGA）和多标准决策分析（MCDA）来应对复杂的决策要求，然而（1）MGA方法常常忽略了利益相关者的实际需求，仅依赖技术可行性，而（2）MCDA又通常基于一个限制的预定义替代集，这样可能无法充分代表可行解空间，因此存在较大的信息缺口。<br><br>3. 【提出了什么创新的方法】  <br>本研究提出了一种名为价值导向建模生成替代方案（VF-MGA）的创新方法，其核心在于（1）通过利益相关者目标的引入，增强MGA算法的多样性；（2）将生成的替代方案在MCDA框架下进行评估，从而形成以利益相关者为导向的决策支持；并且（3）它能够提供更多关于利益相关者偏好的信息及其可接受的系统选项范围。<br><br>4. 【文章缺点】  <br>本研究可能的缺点包括（1）在实施中可能面临较高的数据收集和利益相关者访谈的复杂性，容易造成时间和人力资源的消耗；（2）VF-MGA方法的通用性可能受到特定案例的约束，难以直接应用于其他领域或复杂性较低的决策场景。<br><br>5. 【类似工作】  <br>相关的类似工作包括（1）基于MCDA的决策支持系统，旨在帮助解决特定领域的多目标优化问题；以及（2）传统的优化模型和MGA技术在能源系统中的应用研究，主要探讨其在复杂决策问题中的有效性。<br><br>6. 【相关性评分】  <br>分数：2分
+
+</details></td></tr>
+<tr><td>MadEvolve: Evolutionary Optimization of Trading Systems with Large Language Models</td><td>Yurii Kvasiuk</td><td><a href="https://arxiv.org/pdf/2605.23007">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.23007">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>第一，该论文的动机在于充分利用大语言模型（LLM）的能力来优化交易算法，以应对金融市场中复杂而嘈杂的优化问题。金融市场数据的非平稳性和复杂性使得传统的优化方法难以有效应用，因此需要一种新的方法来适应这些挑战。  <br>第二，论文研究的背景是在人工智能技术迅速发展的环境下，尤其是自我纠错和工具使用能力显著增强的LLM，探索其在量化金融领域中的实际应用，如算法交易和信号生成的优化。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>首先，前人的研究，如DeepMind的AlphaEvolve，成功地在明确的数学和计算问题上应用自我增强循环，表明LLM在算法发现中的潜力。然而，这些工作主要集中在具有确定性评估的任务上，并没有充分探讨如何在处于噪声和不确定性的金融市场中应用这些方法。  <br>其次，许多现有研究在优化交易策略时没有重视回测过拟合问题，这在金融领域尤为重要。有效的评估函数在金融市场的动态环境中难以建立，目前缺乏将LLM与进化算法相结合的创新方法来解决这一问题。<br><br>3. 【提出了什么创新的方法】  <br>该论文引入了一种名为MadEvolve的框架，它利用LLM进行算法优化，适用于量化金融领域。通过对多个交易系统组件的逐步演化，该方法能够优化特征集、交易策略组件和特征管道与执行策略的联合演化。  <br>此外，MadEvolve还对比了其他智能搜索方法，如Claude Code，并进行了详细的p-hacking概率评估，以确保所提出的方案的有效性与可靠性。<br><br>4. 【文章缺点】  <br>首先，虽然MadEvolve在交易策略的优化上显示出显著的改进，但文章未能提供该方法在不同行业或资产类别中的普适性验证，可能存在某些市场条件下的适应性不足。  <br>其次，文章对p-hacking问题的探讨虽然重要，但可能未能充分涵盖所有潜在的统计陷阱与评估
+
+</details></td></tr>
+<tr><td>Is TabPFN the Silver Bullet for Insurance Pricing?</td><td>Bruno Deprez</td><td><a href="https://arxiv.org/pdf/2605.22892">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.22892">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>(1) 当前的非寿险定价主要依赖于广义线性模型（GLMs），而这些传统模型虽具备透明性，但在处理复杂数据时存在局限性。因此，引入新的建模方法以提升定价精度尤为重要。  <br>(2) 在数据稀缺的情境下，寻找一种更加灵活且不需要特定数据集拟合的模型，如表格基础模型（TFMs），有助于改善传统方法的不足，从而推动保险定价方法的创新。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>(1) 前人的研究主要集中在GLM和机器学习方法（如梯度提升机）上，尽管已有一些尝试使用深度学习，但这些方法普遍需要针对特定数据集的预处理和超参数调优，这使得其灵活性受到限制。  <br>(2) 近年来，虽然出现了一些新兴的方法（如结合精算知识的神经网络），但在实际应用中，它们仍未能有效解决数据稀缺与计算复杂度之间的矛盾。<br><br>3. 【提出了什么创新的方法】  <br>(1) 本文提出的TabPFN是一种新型的表格基础模型，通过在大量合成数据集上进行预训练，使得其在处理新数据时能够实现上下文学习，且无需进行模型特定的拟合或超参数调优。  <br>(2) TabPFN在对比实验中评估了其在机动车保险定价中的表现，为传统方法提供了有价值的实证基础。  <br><br>4. 【文章缺点】  <br>(1) TabPFN在实验中并未始终优于GLM和XGBoost等传统基准模型，其效能不够稳定，尤其在大规模上下文训练集下表现不佳。  <br>(2) 与传统模型相比，TabPFN的推断时间显著更长，这在实际应用中可能成为一个限制因素，使得其应用的可行性受到质疑。<br><br>5. 【类似工作】  <br>(1) Prior-data Fitted Networks (PFN) 提出了在多个数据集上进行预训练的思路，这为TabPFN提供了基础。
+
+</details></td></tr>
+<tr><td>Dynamic Evolution of Corporate Emissions Determinants</td><td>George Kapetanios</td><td><a href="https://arxiv.org/pdf/2605.22994">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.22994">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】<br>本论文的动机在于探讨企业层面的排放决定因素如何随着环境监管、经济状况和组织约束的变化而动态演变。首先，理解这些适应过程对环境政策与创新、工业政策之间的关系至关重要，因为企业的反应不仅仅是合规成本，而是伴随投资策略和创新决策的整合。其次，随着监管制度和宏观经济条件的变化，企业的特点和特定情境对其排放的影响关系是随时间演变的，关注这种动态关系有助于揭示何时监管能够真正促使技术变革，而非短期调整。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】<br>前人的研究主要依赖静态模型，通常假设长时间段内效应不变，或仅聚焦于离散的政策冲击，这些研究忽视了企业适应的动态特性。此外，虽然有研究探讨环境政策对创新的刺激作用，但关于企业如何在不同阶段和市场环境下调整其反应的研究仍然不足，以至于缺乏对环境政策与企业排放之间动态关系的深刻理解。<br><br>3. 【提出了什么创新的方法】<br>论文提出了一种时变均值组估计方法，允许平均关系随着时间逐步变化，而同时考虑到企业之间的持续异质性。这一方法使得能够更准确地捕捉到影响排放增长的关联因素在不同时期的不同作用。此外，研究还强调了企业应对环境监管的时间依赖性及其内生适应能力，从而为创新政策提供了新的视角。<br><br>4. 【文章缺点】<br>尽管本研究提供了重要的见解，但仍存在一些局限性。首先，使用的面板数据虽然覆盖了长时间范围，但可能存在数据滞后性的问题，影响结果的时效性。其次，该研究主要集中于美国工业设施的案例，可能在不同国家或地区的适用性需进一步验证，限制了其广泛推广的能力。<br><br>5. 【类似工作】<br>(1)关于环境政策如何影响企业创新的文献，尤其关注政策刺激的路径和效果。  <br>(2)利用时变模型分析企业适
+
+</details></td></tr>
+<tr><td>Strategic Coercion Within Alliances: The Greenland Sovereignty Game as an AI Stress Test</td><td>Rommin Adl</td><td><a href="https://arxiv.org/pdf/2605.22841">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.22841">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：. Multi-agent LLM simulation recovering structural utility parameters across 8 frontier models in the Greenland sovereignty crisis. v3: typo pass, fixes phantom action names (REQUEST_MULTILATERAL, INDEPENDENT) and a Blunden date mismatch. v2 added Section V safety findings (legitimacy-laundered escalation, signal decoupling) and Appendix H<br><br>1. 【论文的motivation是什么】  <br>该论文的动机主要体现在两个方面。首先，研究了在地缘政治背景下，强大的联盟成员如何对弱小成员施加压力，这一现象在格林兰主权危机中得到了体现。其次，该研究深入探讨了盟友之间在战略控制和领土问题上的集体行动问题，以及内外部规范的执行能力如何影响联盟的完整性。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要关注了国际关系中的集体行动问题与内外部 coercion 的动态关系。然而，关于盟友内部规范执行和强权成员施加影响之间的相互作用研究相对较少，尤其是具体案例分析的不足。此外，尽管有部分文献探讨了战略控制的重要性，但缺乏通过多代理大语言模型（LLM）进行系统模拟的实证研究，从而使得对复杂情境下的行为模式缺乏深入理解。<br><br>3. 【提出了什么创新的方法】  <br>该论文提出了三种创新的博弈模型，包括不对称胁迫博弈、NATO 执行保证博弈，以及具有社会偏好的三角扩展博弈。这些模型通过多代理 LLM 模拟，在不同国家角色（如美国、丹麦、格林兰等）下进行对抗性游戏，使得策略选择和行为机制得以量化和分析，从而揭示不同模型在格林兰主权游戏中的行为差异。<br><br>4. 【文章缺点】  <br>首先，该研究虽然提供了多元化的模拟分析，但模拟结果可能受到样本设计和模型参数设定的局限，导致某些行为模式的现实适配性不足。其次，虽然论文涵盖了大量交互数据，但缺乏对长期历史背景和情境变化的深入讨论，可能使得得出的结论在某些情境下的适用性受到影响。<br><br>5. 【类似工作】  <br>类似工作的有《Collective Action in International Relations: The Case of NATO》和《Asymmetric Power Dynamics in International Alliances》。前者分析了集体行动在国际关系中的重要性，后者探讨了不对称权力动态对联盟关系的
+
+</details></td></tr>
+<tr><td>Leveraging Large Language Models for Sentiment Analysis: Multi-Modal Analysis of Decentraland&#39;s MANA Token</td><td>Xintong Wu</td><td><a href="https://arxiv.org/pdf/2605.20192">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.20192">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】<br>   本文的动机主要体现在两个方面：首先，随着区块链技术的发展和虚拟经济的兴起，Decentraland作为一个去中心化的虚拟现实平台，利用MANA代币进行虚拟资产交易，促使我们对其投资者情绪及其对价格动态的影响进行研究；其次，社区情绪在金融预测中的重要性日益凸显，通过将Discord社区的情绪与多模态金融数据结合，能够提高对加密货币价格预测的准确性。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】<br>   前人的研究主要集中在利用情绪分析技术提升市场预测的准确性，尤其是在社交媒体数据的应用方面。然而，在特定于Decentraland这样的虚拟经济环境中，现有研究相对不足，尤其是在多模态特征整合分析的领域尚未得到充分探讨，使得该领域留下研究空白；此外，大多数现有的情绪分析方法单一，未能有效结合价格数据和社交媒体情绪对价格影响的动态关系。<br><br>3. 【提出了什么创新的方法】<br>   本文创新地提出了一种基于BERT的大型语言模型进行情绪分析的方法，并结合LSTM架构进行时间序列预测；此外，本文还构建了一个多模态数据集，整合了历史价格、社区情绪、交易量和市场资本化等特征，以增强对MANA代币收益预测的效果；最后，通过实证研究，验证了多模态模型在预测准确性上的显著提升。<br><br>4. 【文章缺点】<br>   尽管本文在多模态分析方面作出了重要贡献，但依然存在一些不足之处：首先，研究仅聚焦于Decentraland这一特定案例，所得到的结论可能在其他虚拟经济中不具普适性；其次，情绪分析的准确性在很大程度上依赖于所选用的模型和数据，可能受到数据质量或情绪表达多样性的影响，导致预测结果的不确定性。<br><br>5. 【类似工作】<br>   1) 先前的研究如“Sentiment Analysis in Financial Markets with Social Media”探讨了社交媒体情
+
+</details></td></tr>
+</tbody>
+</table>
+
+<details>
+<summary><a id='date-20260522'></a>2026-05-22（9篇论文）</summary>
 
 <table>
 <thead>
@@ -73,6 +120,8 @@
 </details></td></tr>
 </tbody>
 </table>
+
+</details>
 
 <details>
 <summary><a id='date-20260521'></a>2026-05-21（9篇论文）</summary>
@@ -340,61 +389,6 @@
 <tr><td colspan="5"><details><summary><strong>总结</strong></summary>
 
 <strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.16532">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于探讨消费者在不确定环境下的重复选择行为，尤其是如何在不同的上下文中进行知识转移。首先，消费者在面对新情境时，如何利用以往的经验来改善决策过程是一个重要问题，这影响到他们的选择效率和满意度。其次，现有的模型往往假设学习过程在每个新情境中都是独立的，而实际情况中，消费者的先前经验可能会对后续决策产生显著影响，因此需要更好地理解这种跨情境的知识转移。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在贝叶斯学习和动态编程模型上，这些模型有效地捕捉了消费者在单一情境中的学习过程。然而，关于跨情境学习的研究相对较少，尤其是在如何量化和建模这种知识转移方面存在空白。此外，现有的模型通常未能考虑消费者在不同上下文中可能采取的非理性决策行为，这限制了对实际消费者行为的全面理解。<br><br>3. 【提出了什么创新的方法】  <br>本文提出了一种边界理性元动态编程政策（BRMDP），该方法通过有限的超后验抽样来近似完全整合的贝叶斯元学习。这种方法允许在不同情境中进行知识转移，同时考虑到消费者的非理性决策。此外，研究通过实验设计验证了低抽样次数的BRMDP模型（尤其是BRMDP(1)）在拟合参与者行为方面的优越性，相较于无转移和完全整合的贝叶斯转移模型。<br><br>4. 【文章缺点】  <br>首先，尽管提出了BRMDP模型，但其在实际应用中的可扩展性和复杂性仍需进一步验证，尤其是在更大规模的数据集上。其次，实验设计虽然提供了有力的证据，但样本的代表性和实验环境的控制可能限制了结果的外推性，未来需要在更真实的市场环境中进行验证。<br><br>5. 【类似工作】  <br>类似的工作包括对消费者行为的贝叶斯学习模型的研究，这些模型
-
-</details></td></tr>
-</tbody>
-</table>
-
-</details>
-
-<details>
-<summary><a id='date-20260518'></a>2026-05-18（7篇论文）</summary>
-
-<table>
-<thead>
-<tr><th>Title</th><th>Author</th><th>PDF</th><th>Code</th><th>Relevance</th></tr>
-</thead>
-<tbody>
-<tr><td>Clearing in Liability Networks via Sheaves on Directed Hypergraphs</td><td>Robert Ghrist</td><td><a href="https://arxiv.org/pdf/2605.15778">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.15778">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】<br>   该论文的动机在于通过将责任清算问题重新表述为层次理论中的问题，来提高对金融责任网络的理解和分析能力。首先，传统的清算模型在处理复杂的支付流动时存在局限性，尤其是在多方责任和资源分配的情况下。其次，利用超图的结构能够更清晰地分离资源分配与收款的关注点，从而为清算配置提供更精确的数学框架。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】<br>   前人的工作，如Eisenberg-Noe模型，建立了金融清算的数学基础，并通过固定点理论分析支付流动。然而，这些模型在处理局部约束与全局清算之间的关系时仍显得不够明确。其次，尽管已有研究扩展到格责任网络，但对如何在层次理论中系统性地处理这些问题仍缺乏深入探讨。<br><br>3. 【提出了什么创新的方法】<br>   本文提出了一种新的责任层次模型，通过在有向超图上构建责任层次，使得清算配置与全局截面精确对应。其次，论文引入了清算不变性定理，表明在满足特定条件的情况下，不同支付数据类别之间的清算问题可以进行统一比较。最后，利用Tarski定理和Banach定理，论文提供了清算截面的存在性、唯一性及迭代计算的方法。<br><br>4. 【文章缺点】<br>   文章的一个缺点是对超图的复杂性可能导致实际应用中的计算难度增加，尤其是在大规模网络的情况下。另一个缺点是尽管提出了新的理论框架，但缺乏对实际金融系统中数据的充分验证和案例分析，可能影响理论的实用性。<br><br>5. 【类似工作】<br>   类似的工作包括Eisenberg-Noe模型，该模型为金融清算提供了基础框架；另一个相关的研究是关于格责任网络的扩展，探讨了在不同数学结构下的清算问题。<br><br>6. 【相关性评分】<br>   分数：4分
-
-</details></td></tr>
-<tr><td>The Privacy Subsidy: Kyle&#39;s $λ$ under Noise-Perturbed Order-Flow Observation</td><td>Yuki Nakamura</td><td><a href="https://arxiv.org/pdf/2605.15746">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.15746">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于探讨隐私保护的加密货币交易所如何影响市场定价机制，尤其是在市场制造者（MM）观察到受到噪声干扰的订单流时的情况。其次，随着隐私保护交易设计的普及，理解这些设计对流动性提供者的影响及其在市场中的作用变得愈发重要。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要集中在经典微观结构理论和流动性提供者的成本分析上，例如Milionis等人提出的损失与再平衡（LVR）模型，提供了关于流动性提供者在面对更有信息的套利者时所承受的成本的闭式解。然而，这些研究并未考虑市场制造者在观察到噪声干扰的信号时的均衡情况，导致在隐私保护交易设计下的市场行为缺乏理论支持。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了一种新的线性Kyle均衡模型，考虑了市场制造者在观察到受到高斯隐私噪声干扰的订单流时的情况。此外，论文还引入了隐私补贴的概念，量化了隐私保护协议对交易者的福利转移，并提供了闭式解的比较静态分析。<br><br>4. 【文章缺点】  <br>首先，论文的模型假设可能过于理想化，未能充分考虑实际市场中可能存在的复杂性和多样性。其次，虽然提出了隐私补贴的概念，但对其在不同市场环境下的适用性和影响尚缺乏实证分析。<br><br>5. 【类似工作】  <br>类似的工作包括Milionis等人提出的损失与再平衡（LVR）模型，该模型分析了流动性提供者在面对信息不对称时的成本。此外，Routledge等人对AMM中有信息和无信息交易者之间的静态均衡进行了分析，探讨了流动性提供的最优策略。<br><br>6. 【相关性评分】  <br>分数：4分
-
-</details></td></tr>
-<tr><td>Fair outputs, Biased Internals: Causal Potency and Asymmetry of Latent Bias in LLMs for High-Stakes Decisions</td><td>Jagdish Tripathy</td><td><a href="https://arxiv.org/pdf/2605.15217">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.15217">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于探讨在高风险决策中，尽管指令调优的语言模型在输出上表现出公平性，但其内部表示仍然保留偏见。这种潜在的偏见可能会影响模型的决策过程，尤其是在金融领域的抵押贷款审批中。其次，研究者希望揭示这种潜在偏见是否在不同的人口群体中具有对称性，以便更好地理解和管理AI模型在高风险决策中的应用。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在模型输出的行为公平性上，表明指令调优模型在输出层面上能够实现公平。然而，这些研究往往忽视了模型内部表示的潜在偏见及其对决策的影响。此外，虽然已有研究探讨了模型的偏见问题，但对这些偏见在不同人口群体中的表现及其非对称性仍缺乏深入的实证分析。<br><br>3. 【提出了什么创新的方法】  <br>本研究提出了一种新的审计方法，通过构建配对的合成数据集，测试模型在抵押贷款审批中的表现，并分析其内部表示。研究还引入了激活引导和跨层干预的新方法，以评估潜在偏见对决策的影响。这些方法使得研究者能够揭示模型在不同层次上对人口信号的放大效应及其决策相关性。<br><br>4. 【文章缺点】  <br>首先，研究的范围主要集中在抵押贷款审批这一特定领域，可能限制了其结果在其他金融决策场景中的适用性。其次，尽管提出了新的审计方法，但在实际应用中，如何有效地实施双层测试框架以确保AI治理的有效性仍然是一个挑战。<br><br>5. 【类似工作】  <br>类似的工作包括对金融领域中算法偏见的研究，尤其是在信贷审批和保险定价中的应用。此外，还有研究探讨了机器学习模型的透明性与可解释性，强调了理解模型内部机制的重要性。<br><br>6. 【相关性评分】  <br>分数：4分
-
-</details></td></tr>
-<tr><td>Market Makers and Risk Aversion: A Hamiltonian Approach to the Excess Volatility Puzzle</td><td>Will Hicks</td><td><a href="https://arxiv.org/pdf/2605.15767">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.15767">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于探讨金融市场中价格变化的不可预测性，尤其是超额波动现象。作者认为，市场价格和市场制造商的库存可以视为具有非线性耦合的非谐振子，市场制造商的风险偏好是决定系统混沌程度的关键参数。通过这种模型，论文试图揭示在没有外部冲击和随机噪声的情况下，如何产生不可预测的价格变化。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在通过外部信息和随机过程来解释金融市场的不可预测性，例如随机游走模型和限价订单簿模型。然而，这些模型往往依赖于外部事件来解释价格波动，忽视了内部市场力量的作用。此外，虽然一些研究（如WMS和Bouchaud）探讨了市场微观结构对价格波动的影响，但仍未充分考虑市场制造商的风险偏好如何影响价格动态。<br><br>3. 【提出了什么创新的方法】  <br>论文提出了一种新的哈密顿方法，通过将市场价格和市场制造商的库存视为非谐振子，探讨内部市场力量对价格变化的影响。作者还引入了风险偏好这一关键参数，表明市场制造商的风险厌恶程度与市场的混沌行为之间存在直接关系。这种方法为理解金融市场的动态提供了新的视角。<br><br>4. 【文章缺点】  <br>首先，论文可能过于依赖理论模型，缺乏实证数据的支持，可能影响其结果的普适性。其次，虽然引入了风险偏好这一因素，但对其具体的量化分析和实际应用的探讨较为有限，可能导致模型在实际市场中的适用性受到限制。<br><br>5. 【类似工作】  <br>类似的工作包括Bouchaud的市场微观结构研究，该研究探讨了市场参与者行为对价格波动的影响；另一个相关研究是WMS系列论文，它们分析了市场大幅波动与外部事件之间的关系，提供了对超额波动现象的不同视角。<br><br>6. 【相关性评分】  <br>分数：4
-
-</details></td></tr>
-<tr><td>When Redistribution Becomes a State Variable: Monetary-Fiscal Stabilization with Type-Specific Sticky Wages</td><td>Kenji Miyazaki</td><td><a href="https://arxiv.org/pdf/2605.15614">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.15614">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于探讨在工资合同为类型特定的情况下，如何将再分配视为一个状态变量。首先，传统的经济模型通常将再分配视为即时的影响因素，但在类型特定的工资合同下，这种看法显得不够全面。其次，论文强调了历史遗留的工资差距对经济政策的影响，指出仅仅通过稳定通货膨胀或中和当前利润差距并不足以恢复代表性代理的配置。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要集中在异质性代理的经济模型中，通常将再分配视为当期的影响因素，并通过当前的利润、转移支付或劳动收入来进行政策干预。然而，这些模型在处理类型特定的工资合同时存在局限性，未能考虑到工资差距作为一个状态变量的影响。此外，尽管一些定量模型捕捉了丰富的分配动态，但通常缺乏对状态空间机制的分析，这导致对历史分配扭曲的应对措施未能得到充分探讨。<br><br>3. 【提出了什么创新的方法】  <br>论文提出了一种可处理的两代理新凯恩斯（TANK）模型，该模型引入了类型特定的粘性工资和历史依赖的转移支付机制。通过这种模型，作者能够分析工资差距如何作为一个状态变量影响整体需求，并且提出了需要历史依赖的转移支付来实现全面的经济稳定。此外，模型还强调了工资刚性如何显著增强转移冲击对产出的影响。<br><br>4. 【文章缺点】  <br>首先，尽管模型在理论上提供了新的视角，但其复杂性可能使得实际应用和政策制定变得困难。其次，模型的假设条件，如工资的类型特定性和历史依赖性，可能在现实经济中难以完全实现，从而影响模型的普适性和实用性。<br><br>5. 【类似工作】  <br>类似的工作包括McKay和Wolf（2023）对异质性代理环境中货币政策与不平等关系的综述，以及Bilbiie（2008, 2020,
-
-</details></td></tr>
-<tr><td>Estimating Social Norm Complementarities</td><td>Eliana La Ferrara</td><td><a href="https://arxiv.org/pdf/2605.15405">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.15405">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于探讨社会规范对个体行为的影响，尤其是不同规范之间的互补性和替代性。第一，现有文献通常将社会规范孤立地进行分析，未能考虑不同规范之间的相互作用，这可能导致对政策效果的误判。第二，理解社会规范的互依性对于制定有效的社会干预和法律改革至关重要，尤其是在涉及性别和儿童权益的敏感问题上。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在单一规范的分析上，例如合作、信任和性别相关的有害实践等，虽然提供了重要的见解，但往往忽视了规范之间的相互影响。其次，尽管有少数研究开始探讨规范的混合效果，但仍缺乏系统的理论框架来理解不同规范之间的互补性和替代性，这为本研究提供了切入点。<br><br>3. 【提出了什么创新的方法】  <br>本研究提出了一种新的模型，能够同时考虑技术性和社会性互补性，分析不同社会规范之间的相互作用。通过对塞拉利昂和尼日利亚的重复横断面数据进行估计，研究了女性生殖切割、重婚和儿童婚姻等规范的互补性和替代性。此外，模型还能够进行政策反事实分析，评估法律改革和社会干预的潜在影响。<br><br>4. 【文章缺点】  <br>首先，模型的复杂性可能导致实际应用中的数据需求较高，尤其是在数据稀缺的地区。其次，尽管研究提供了对不同社会规范的深入分析，但在解释文化差异时可能存在局限性，未能充分考虑所有可能的社会和历史背景因素。<br><br>5. 【类似工作】  <br>类似的工作包括Aminjonov和Bargain（2026）对祖传实践与女性赋权之间关系的研究，以及Brock和Durlauf（2001）对社会规范互依性的理论探讨。这些研究为理解社会规范的复杂性提供了基础，但仍需进一步探索其相互作用的动态特征。<br><br>6. 【相关性评分
-
-</details></td></tr>
-<tr><td>TradeMech: A Method to Multilaterally Net Trades Without Altering Counterparty Exposure</td><td>Daniel Aronoff</td><td><a href="https://arxiv.org/pdf/2605.15210">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.15210">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于解决金融市场中存在的结算复杂性和对手方风险问题。当前的多边净额结算方法往往在净额结算的程度与对手方风险的保留之间存在权衡，导致市场参与者面临较高的风险和复杂的交易结构。通过提出TradeMech机制，旨在实现最大化的多边净额结算，同时保持对手方风险的原有位置，从而简化交易流程并降低风险。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要集中在中央清算和交易压缩等方法上，中央清算通过引入中央对手方来重新分配风险，而交易压缩则通过减少双边合约数量来简化交易。然而，这些方法往往会改变原有的对手方关系，可能导致新的风险暴露或损失原有的风险暴露。因此，现有方法在实现多边净额结算的同时，未能有效保留对手方风险的原有结构。<br><br>3. 【提出了什么创新的方法】  <br>论文提出了TradeMech机制，该机制通过将初始双边合约转化为链和循环的形式，实现多边净额结算。它的创新之处在于：1) 实现了最大化的多边净额结算，而不改变对手方风险的位置；2) 在一方未能预先承诺所需对象时，能够将受影响的交易恢复为双边合约，并重新进行净额结算；3) 通过多方合约的方式，保留了每个参与者的合同利润。<br><br>4. 【文章缺点】  <br>该论文的缺点之一是其方法可能在实际应用中面临复杂的网络结构问题，尤其是在参与者数量较多时，链和循环的构建可能变得复杂。其次，TradeMech机制的实施可能需要较高的计算资源和时间，限制了其在高频交易等快速变化市场中的应用。<br><br>5. 【类似工作】  <br>类似的工作包括：1) 中央清算机制，它通过中央对手方来重新分配风险，简化交易结构；2)
 
 </details></td></tr>
 </tbody>
