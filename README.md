@@ -1,16 +1,81 @@
-# arXiv 量化金融领域论文汇总（共63篇）
+# arXiv 量化金融领域论文汇总（共65篇）
 
 > 说明：仅显示最近五天数据，当天论文默认展开，其他日期点击标题可展开/折叠
 > 相关性评分：基于LLM对量化金融领域的相关性评定（1-5分，★越多相关性越高）
 
 ## 日期导航
+- [2026-05-27（9篇论文）](#date-20260527)
 - [2026-05-26（32篇论文）](#date-20260526)
 - [2026-05-25（6篇论文）](#date-20260525)
 - [2026-05-22（9篇论文）](#date-20260522)
 - [2026-05-21（9篇论文）](#date-20260521)
-- [2026-05-20（7篇论文）](#date-20260520)
 
-## <a id='date-20260526'></a>2026-05-26（32篇论文）
+## <a id='date-20260527'></a>2026-05-27（9篇论文）
+
+<table>
+<thead>
+<tr><th>Title</th><th>Author</th><th>PDF</th><th>Code</th><th>Relevance</th></tr>
+</thead>
+<tbody>
+<tr><td>Deep Least Squares Monte Carlo methods for the valuation of variable annuities with guarantees</td><td>Nicolas Langrené</td><td><a href="https://arxiv.org/pdf/2605.27182">PDF</a></td><td>-</td><td>★★★★★</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★★<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.27182">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于，随着人口老龄化加速，退休人员面临的养老风险（即活过储蓄的风险）日益严重，而可变年金产品（如带有保证的可变年金）可有效帮助管理这一风险。此外，现有的定价方法在多状态变量情况下计算开销巨大，因此亟需更高效的模拟方法来解决可变年金的定价问题。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在使用确定性网格法和蒙特卡罗方法（如LSMC）解决可变年金的定价问题，但往往面临计算资源不足的挑战。同时，LSMC方法在没有简化假设的情况下通常无法直接应用于可变年金的定价，限制了其实际使用。这些工作未能有效解决在动态控制环境下多状态变量的复杂性问题。<br><br>3. 【提出了什么创新的方法】  <br>论文提出了一种改进的LSMC算法，能够在保证动态策略最优的前提下，实现一般可变年金产品的定价。此外，采用多项式回归和神经网络回归相结合的方法，针对不同利率假设分别进行了数值参考，展示了深度LSMC方法在高维特征下的稳定性和鲁棒性。<br><br>4. 【文章缺点】  <br>论文中经典的多项式LSMC虽能提供高准确度的定价，但在特征工程上仍需手动干预，限制了其自动化程度。另一个缺点是，尽管神经网络LSMC可以减少手动特征工程的需求，但其训练时间普遍较长，增加了计算成本。<br><br>5. 【类似工作】  <br>类似的研究工作包括对VA附加险的定价作为随机控制问题的探讨，以及使用改进的蒙特卡罗方法来应对金融产品定价过程中的复杂性。这些工作为更高效的年金定价方法提供了理论基础。<br><br>6. 【相关性评分】  <br>分数：5分
+
+</details></td></tr>
+<tr><td>End-to-End PDE-Based Quantum Algorithms for Multi-Asset Option Pricing under Local and Stochastic Volatility</td><td>Nikita Guseynov</td><td><a href="https://arxiv.org/pdf/2605.26610">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.26610">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】<br>   本论文的动机在于利用量子计算的优势来解决多资产期权定价中的复杂性问题，尤其是在高维抛物型偏微分方程(PDE)的情境下。另一个动机是现有的经典计算方法，如路径模拟和有限差分法在处理复杂期权合约时的局限性，特别是在多维和期限特征明显的情况下。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】<br>   现有的研究主要集中在利用经典方法进行期权定价，尤其是路径模拟和偏微分方程求解。然而，这些方法在高维情况下表现不佳，计算复杂度较高。此外，虽然已有些量子算法用于PDE求解，但针对多资产期权的具体应用仍显不足，缺乏系统的量子定价框架。<br><br>3. 【提出了什么创新的方法】<br>   本文提出了一种端到端的量子PDE框架，专门用于局部波动率和随机波动率模型下的多资产期权定价。该框架能有效地将经典合约和模型数据作为输入，输出相应的期权价格估计。利用有限差分方法将定价PDE离散化，并通过量子方法求解，可实现更高效的计算。<br><br>4. 【文章缺点】<br>   本文仍存在对量子计算资源的依赖问题，量子计算的可用性和结果的稳定性在实际应用中可能会受到一些限制。此外，尽管提出的量子框架展示了效率的提升，但对更复杂金融产品的扩展性和灵活性尚需进一步验证。<br><br>5. 【类似工作】<br>   类似的研究包括基于量子计算的金融模型求解，如量子蒙特卡罗算法，以及使用量子机器学习进行金融时间序列分析的工作。这些研究也探索量子计算在金融中的应用，但未能聚焦于多资产期权定价的量子PDE框架。<br><br>6. 【相关性评分】 <br>分数：4分
+
+</details></td></tr>
+<tr><td>SolarChain: Bridging Physical Law, Verifiable Trust, and Sustainable Markets for Urban Energy Resilience</td><td>Shilin Ou</td><td><a href="https://arxiv.org/pdf/2605.23162">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.23162">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于解决城市能源脱碳过程中的两大核心问题：首先，城市面临着能源数据容易被操控的问题，这使得信任机制在分布式太阳能系统中的运作变得复杂；其次，现有的经济激励机制往往奖励投机行为而不是实际基础设施的建设，抑制了可再生能源的推广和应用。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人工作在利用区块链和物联网技术进行城市能源管理方面提供了基础，但依然存在可信度差距的问题，难以验证从链外传来的物联网数据的真实性。另外，虽然有些研究提出了基于数据驱动的机器学习模型进行异常检测，但这些模型往往会受到智能合约计算能力限制，且过度依赖外部系统也可能引发集中信任问题。<br><br>3. 【提出了什么创新的方法】  <br>论文提出了一种名为SolarChain的平台，通过将区块链与物理法则结合，实现了对太阳能生成数据的信任验证。此外，使用实时气象数据和GPS坐标，SolarChain能够计算出每个太阳能板的理论最大功率输出，从而自动拒绝超出该上限的交易请求。该平台通过映射数字资产与物理能量耗散，增强了城市能源管理的可持续性。<br><br>4. 【文章缺点】  <br>该研究的一个缺点是，尽管建立了物理验证机制，但在数据采集和处理过程中的潜在技术复杂度可能影响系统的普及和应用，尤其是在传感器覆盖有限的地区。此外，由于依赖于实时气象数据，系统的稳定性可能会受到外部环境变化的影响。<br><br>5. 【类似工作】  <br>与本研究类似的工作包括使用物理信息神经网络（PINNs）将热力学法则嵌入数据处理的前沿研究，以及传统的基于状态估计的坏数据检测方法，这些方法都试图提升能源网络的可靠性和安全性。<br><br>6. 【相关性评分】  <br>分数：4分
+
+</details></td></tr>
+<tr><td>AI evaluation may bias perceptions: The importance of context in interpreting academic writing</td><td>Shang Wu</td><td><a href="https://arxiv.org/pdf/2605.26662">PDF</a></td><td>-</td><td>★★★☆☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★☆☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.26662">PDF</a><br><strong>代码</strong>：-<br><br>1.【论文的motivation是什么】  <br>   该论文的动机在于揭示当前AI在科学写作中的使用评估方法可能存在的偏差，尤其是当这些评估忽视了不同国家和学科之间的情境差异时。这种偏差可能会导致对AI使用程度的误判，从而影响科学研究的公信力和公平性。  <br>   此外，论文还强调了采用上下文意识的方法进行评估的重要性，以确保对AI使用的准确和公平的衡量。<br><br>2.【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的研究主要集中于AI生成文本的质量评估，虽然有部分工作尝试探讨跨学科和国家的评估偏差，但缺乏对上下文影响的深入分析，因此未能全面反映各种领域和地区的实际情况。  <br>   目前的评估一般采用单一的统一标准，容易导致在不同文化和学术背景下的信息失真，亟待引入更具针对性的评估框架。<br><br>3.【提出了什么创新的方法】  <br>   本文提出了一种基于国家和学科特定的基准分析方法，以减少评估过程中的扭曲现象，并提供更可靠的比较基准。  <br>   通过使用Dimensions的大规模期刊发表数据，构建AI相似度基准，使得评估能更好地反映不同背景下的AI使用情况。<br><br>4.【文章缺点】  <br>   文章可能过于依赖于某一数据集，导致结果的普适性受到限制，尤其是在评估时依赖于特定的期刊和领域。  <br>   此外，虽然提出新的基准方法，但实现过程中可能需要大量的上下文数据，给数据收集带来了挑战。<br><br>5.【类似工作】  <br>   相关研究如“AI在科学文本生成中的应用评估”探讨了AI生成文本的有效性，但并未深入分析文化和学科背景的影响。  <br>   另一个类似的研究“跨领域的AI语言模型影响力”关注了各种领域中AI的表现，但没有具体解决上下文造成的评估偏差问题。<br><br>6.【相关性评分】  <br>分数：3分
+
+</details></td></tr>
+<tr><td>Foundations of a Time-Consistent Counterfactual Actuarial Runtime for Autonomous AI Agents</td><td>Hao-Hsuan Chen</td><td><a href="https://arxiv.org/pdf/2605.26508">PDF</a></td><td><a href="https://arxiv.org/abs/2605.25632">code1</a></td><td>★★☆☆☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★☆☆☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.26508">PDF</a><br><strong>代码</strong>：<a href="https://arxiv.org/abs/2605.25632">code1</a><br><strong>备注</strong>：. Foundational paper of a multi-paper program on actuarial runtime for autonomous AI agents; previously posted on SSRN (id 6761960). Empirical companion:arXiv:2605.25632. Proof companions included as ancillary files<br><br>1. 本文的motivation在于：首先，现有的风险管理框架对于自主AI代理的安全性和可预测性不足，尤其是在动态环境中缺乏针对实际行动的成本评估；其次，传统的后期审计评分已经不能满足对AI系统的实时风险监控需求，因此需要一种新的预行动交易层，能够更好地捕捉风险并指导决策。<br><br>2. 前人的工作在解决该问题上主要集中在静态风险分配和传统的风险度量指标如CVaR上，尽管这些工具有效，但在快速变化的环境中仍然存在局限性，缺乏针对行动的动态风险评估；此外，前人的研究往往忽视了行动与其潜在后果之间的复杂联系，未能形成全面的风险管理解决方案。<br><br>3. 本文提出了一种创新的方法，即动态、行动条件下的运行时风险管理框架，通过引入一个具体的交易层，为每一个动作计算相应的时间一致性反事实风险费用，旨在确保AI系统在执行动作时能够实时评估和控制风险。<br><br>4. 文章的缺点包括：首先，尽管提出了一种新的风险管理框架，但理论模型的复杂性可能导致实际应用中的验证和实现困难；其次，文章没有充分探讨实际环境中可能遇到的各种技术与法律挑战，可能影响框架的推广应用。<br><br>5. 类似的工作包括：一项研究关注于风险管理领域中动态经济决策的建模，探讨不同策略对风险暴露的影响；另一项研究则尝试将基于行为经济学的分析方法应用于AI系统，以改进对AI行为的预测和风险评估。<br><br>6. 相关性评分：分数：2分
+
+</details></td></tr>
+<tr><td>Modeling Agentic Technical Debt and Stochastic Tax: A Standalone Framework for Measurement, Simulation, and Dashboarding</td><td>Muhammad Zia Hydari</td><td><a href="https://arxiv.org/pdf/2605.27320">PDF</a></td><td>-</td><td>★★☆☆☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★☆☆☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.27320">PDF</a><br><strong>代码</strong>：-<br><br>1. **论文的motivation是什么**  <br>本论文的动机主要在于明确界定Agentic Technical Debt和Stochastic Tax这两个概念，以便支持对agentic AI系统的测量、模拟和可视化管理。通过建立清晰的模型，帮助管理者理解在使用agentic AI时所面临的运营负担和设计治理责任之间的关系，进而更有效地进行决策和优化。<br><br>2. **前人的工作如何解决该问题，存在哪些空白**  <br>前人的工作虽然对技术债务和运营成本进行了研究，却往往未能区分两者在agentic AI系统中的不同角色。这种模糊的界定使得管理者在实践中难以有效识别和应对各类费用。现有文献缺乏针对这两个概念的系统性和可操作性模型，导致实务应用中难以量化和优化agentic AI的表现。<br><br>3. **提出了什么创新的方法**  <br>论文提出了一种新颖的框架，能够清晰区分Agentic Technical Debt和Stochastic Tax，并为这两个概念提供了具体的测量和模拟方法。通过完整的结构模型，论文定义了所有相关变量和参数，并提供了实用的度量工具。这一框架使得管理者可以通过操作数据来估算各类成本。<br><br>4. **文章缺点**  <br>文章主要局限于理论模型的构建和数据的估算，缺乏对实际应用案例的广泛验证，可能影响其普适性。此外，框架尽管提供了清晰的定义，但如何在复杂的组织环境中实际应用和操作仍需进一步探讨。<br><br>5. **类似工作**  <br>类似的研究包括“Technical Debt in Software Engineering”探讨了软件工程中的技术债务管理，以及“Operational Costs of Machine Learning Systems”审视机器学习系统的运营成本。这些工作虽侧重于不同领域，但针对技术债务和运营负担的管理问题有一定的交集。<br><br>6. **相关性评分**  <br>分数：2分
+
+</details></td></tr>
+<tr><td>Quantifying Social Inflation in Liability Insurance with Advanced Statistical Methods</td><td>Tsz Chai Fung</td><td><a href="https://arxiv.org/pdf/2605.27265">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.27265">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于量化社会通货膨胀（social inflation）现象，这一现象对责任保险的赔付能力产生了显著影响，特别是在美国市场。首先，面对不断上升的诉讼费用和更倾向原告的判决结果，保险业内对社会通货膨胀的影响愈发关注，以便更好地评估风险和保险定价策略。其次，传统的经济通货膨胀不足以解释保险索赔成本的急剧上升，这突显了明确界定和量化社会通货膨胀的重要性。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在社会通货膨胀的定义探讨和归因分析方面，但仍存在一些空白。首先，尽管诸多研究提供了社会通货膨胀的不同定义，但缺乏一致的量化指标，导致实证分析受限。其次，已有研究未全面考虑影响社会通货膨胀的多种因素，例如法律环境变化及其对赔偿金额的影响，因此对社会通货膨胀的解释仍然不够全面。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了一种新颖的方法，通过系统分析来自VerdictSearch的司法判决和和解数据，建立社交通货膨胀指数。首先，引用和整合大量的案件数据，以基于因素模型构建量化指标，这是以往研究所欠缺的。其次，采用先进的统计方法进行数据分析，增强了对社会通货膨胀现象的实证支持，提供了更新的视角。<br><br>4. 【文章缺点】  <br>文章的缺点在于，数据主要集中在美国市场，可能导致对其他国家或地区社会通货膨胀现状的低估或忽视。其次，尽管使用了大量的数据，但由于社会通货膨胀本身的复杂性，可能无法全面捕捉到所有影响因素，从而影响模型的预测准确性。<br><br>5. 【类似工作】  <br>类似的工作包括Alicia等人（2021）关于美国医疗责任
+
+</details></td></tr>
+<tr><td>A Unified Theory of Ownership Concentration, Overlap, and Dependence</td><td>Miquel Noguer i Alonso</td><td><a href="https://arxiv.org/pdf/2605.26740">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.26740">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】<br>   该论文的动机在于揭示所有权集中度的复杂性，认为所有权集中度并不是一个简单的标量，而是存在着跨投资者、跨股票和投资者与股票之间依赖性三层结构。这一理论对理解市场中的投资者行为和资产价格波动至关重要。此外，尽管大量研究关注所有权集中度如何影响市场稳定性，但往往忽视其双重性质，因此本研究意在填补这一空缺。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】<br>   前人的研究如Markowitz的现代投资组合理论强调了多样化的重要性，而Herfindahl-Hirschman指数被广泛应用于经济集中程度的度量。然而，这些研究往往只关注单一侧的所有权分布，未能考虑投资者和股票之间的相互影响与依赖关系，导致对市场脆弱性的理解不全面。已有研究如Greenwood和Thesmar指出集中所有权和共同所有权冲击是不同的脆弱性渠道，但缺乏统一的理论框架来综合这些视角。<br><br>3. 【提出了什么创新的方法】<br>   论文提出了一个统一的三层测量架构，即投资者集中度、股票集中度和基准调整依赖度，形成了一个综合的所有权理论。此外，通过使用归一化投资者-股票矩阵，作者展示了如何通过新颖的聚合、比较静态和传输结果进一步推动对所有权集中度的理解。这种框架不仅提供了新的指标，还揭示了所有权结构对市场动态的深远影响。<br><br>4. 【文章缺点】<br>   论文可能在实证验证方面存在不足，尽管理论提出了新颖的框架，但缺乏对实际市场数据的充分测试，以验证理论预测的有效性。此外，论文的数学模型复杂，普通投资者或非数学背景的读者难以理解，可能限制了研究的广泛应用。<br><br>5. 【类似工作】<br>   一项相关研究是Greenwood et al. (2015)对重叠投资组合的研究，强调共同资产持有如何通过间接网络联系放大市场压力。另一项相关工作是
+
+</details></td></tr>
+<tr><td>Multiperiod Groundwater Markets</td><td>Igor Cialenco</td><td><a href="https://arxiv.org/pdf/2605.26363">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.26363">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机源于加利福尼亚地下水市场的不断发展，尤其是根据SGMA法案要求建立地方地下水可持续性机构(GSA)，以实施更严格的泵水管理和减少泵水量。此背景下，研究动态地下水市场并建立有效的分配机制，具有重要的实际意义。第二，随着地下水资源的时间变化性，管理多期分配的方式，例如地下水银行的引入，能帮助利益相关者在不同时间段之间合理转移水权，从而提高经济效率。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要集中在地下水资源的再充水过程建模和分配机制理解上，采用了传统的渗流过程模型。但这些模型通常过于复杂，限制了在不确定性下的决策能力，且未有效考虑所有参与者的非合作行为和动态交互的影响。其次，现有文献缺乏对多期地下水市场运营机制的深入分析，尤其是在随机性与时间因素结合时的动态优化。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了一种基于随机模型的动态地下水市场框架，允许利益相关者在多期内进行水权的消费、交易和银行存储。这种方法通过引入帕累托优化机制，确保市场在供需平衡的情况下形成唯一的市场清算价格，从而驱动决策。此外，通过应用有限状态马尔可夫链对再充水过程进行建模，本文简化了复杂的水文模型，提高了模型的可操作性。<br><br>4. 【文章缺点】  <br>首先，尽管模型对随机性和动态交互进行了建模，但在实际应用中，模型的假设条件可能限制其普遍适用性。特别是对于不同地理和气候条件下的地下水市场，模型的灵活性和适应性不足。其次，文章未能充分考虑其他外部因素（如政策变化和市场干预）对市场行为的影响，这可能导致对市场动态的预测不够准确。<br><br>5. 【类似工作】  <br>相关研究包括对跨国水资源管理的动态模型分析
+
+</details></td></tr>
+</tbody>
+</table>
+
+<details>
+<summary><a id='date-20260526'></a>2026-05-26（32篇论文）</summary>
 
 <table>
 <thead>
@@ -212,6 +277,8 @@
 </tbody>
 </table>
 
+</details>
+
 <details>
 <summary><a id='date-20260525'></a>2026-05-25（6篇论文）</summary>
 
@@ -388,61 +455,6 @@
 <tr><td colspan="5"><details><summary><strong>总结</strong></summary>
 
 <strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.21129">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：earlier draft of published paper<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于理解新产生的仇恨内容如何在网络上系统性传播，以应对未来潜在的威胁。随着反犹太主义和其他仇恨言论的增加，尤其是在特定事件（如以色列-巴勒斯坦战争）后，迫切需要制定有效的政策来防止仇恨内容的传播。其次，现有的政策缺乏量化模型支持，无法为决策提供可靠依据，因此需要建立一个具体的量化模型来指导政策制定。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在病毒传播模型和网络结构的动态变化上，探讨了不同类型的网络和链接如何影响信息的传播。然而，这些研究通常未能具体针对仇恨内容的传播机制，缺乏对仇恨社区特征和传播动态的深入分析。此外，现有模型往往未能考虑仇恨内容在不同社区之间的相互作用及其对传播的影响，这为本研究提供了重要的切入点。<br><br>3. 【提出了什么创新的方法】  <br>本文提出了一种双物种的聚合-碎裂模型，结合了易感-感染-恢复（SIR）动态，能够模拟仇恨内容的传播过程。该模型考虑了仇恨社区的动态链接形成和破裂，揭示了系统性传播的再入阈值相位特征。此外，作者还推导了有效介质理论（EMT）和超越有效介质理论（BEMT）的近似均场理论，为理解传播边界提供了新的视角。<br><br>4. 【文章缺点】  <br>首先，尽管模型能够捕捉到仇恨内容传播的某些特征，但缺乏与真实数据的定量比较，可能导致模型的适用性受到限制。其次，文章未能深入探讨人类行为的复杂性和多样性，这可能影响模型的准确性和普适性。<br><br>5. 【类似工作】  <br>类似的工作包括对病毒传播的经典研究，如SIR模型的扩展，以及对多层网络中信息传播的研究。这
-
-</details></td></tr>
-</tbody>
-</table>
-
-</details>
-
-<details>
-<summary><a id='date-20260520'></a>2026-05-20（7篇论文）</summary>
-
-<table>
-<thead>
-<tr><th>Title</th><th>Author</th><th>PDF</th><th>Code</th><th>Relevance</th></tr>
-</thead>
-<tbody>
-<tr><td>Indirect Estimators of Intergenerational Mobility</td><td>Andrea Del Pizzo</td><td><a href="https://arxiv.org/pdf/2605.19154">PDF</a></td><td>-</td><td>★★★☆☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★☆☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.19154">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：In preparation for the Handbook of the Economics of Intergenerational Mobility<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于探讨在直接收入数据缺失或不完整的情况下，如何有效地评估代际流动性。通过间接估计方法，研究者能够更深入地理解代际流动过程，这些过程可能在直接估计中并不明显。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在直接估计代际流动性上，利用观察到的父母特征（如教育和职业）进行收入的推测。然而，这些方法往往忽略了多条传递路径的异质性，导致对代际流动性的理解不够全面。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了一种统一的框架，将代际流动性视为通过多条路径传递的结果，并引入了不同的间接估计方法，如工具变量法、基于姓氏的估计和多代联系等。这些方法能够捕捉到不同的传递过程，为理解长期不平等的机制提供了补充证据。<br><br>4. 【文章缺点】  <br>文章在方法论上可能过于简化，未能充分考虑所有可能的影响因素。此外，间接估计方法的选择可能导致结果的偏差，特别是在权重分配上可能过于集中于某些路径。<br><br>5. 【类似工作】  <br>类似的工作包括对代际流动性进行直接估计的研究，如Chetty等（2020）关于种族和经济流动性的研究，以及利用多代家庭数据进行分析的研究，如Bingley等（2019）的工作。<br><br>6. 【相关性评分】  <br>分数：3分
-
-</details></td></tr>
-<tr><td>A Three-Variable Benchmark for Post-GFC Covered Interest Parity Deviations</td><td>Useong Shin</td><td><a href="https://arxiv.org/pdf/2605.20137">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.20137">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于填补当前文献中缺乏标准日频公共数据基准的空白，以便更好地评估后全球金融危机（GFC）期间的政府债券覆盖利差（CIP）偏差。其次，尽管CIP偏差是日常可观察的，但现有的实证CIP文献缺乏可与资产定价标准因子模型相比较的基准，这使得新资金、流动性、监管或中介资本变量的评估缺乏透明的共同基准。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在CIP的经典理论和交易成本上，探讨了在实际外汇市场中是否存在覆盖利差套利利润，并指出了交易成本对套利利润的影响。然而，现有文献在日频数据的应用上仍然不足，缺乏针对政府债券CIP偏差的标准日频基准。尽管有研究表明CIP偏差是由中介约束和全球美元融资条件所影响，但缺乏一个简洁的、可重复的公共基准来评估这些偏差的持久性。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了一种基于三个滞后公共状态变量（即芝加哥联邦国家金融状况指数（NFCI）、名义广义美元指数以及10年期与2年期国债收益率差）构建的日频基准。这些变量能够有效地总结金融状况、全球美元周期和美国收益率曲线的状态，从而为后GFC政府债券CIP偏差提供了一个强有力的日常基准。<br><br>4. 【文章缺点】  <br>首先，文章的范围相对狭窄，仅关注三个月及以上的政府债券CIP偏差，可能忽视了短期市场的动态。其次，尽管提出了新的基准，但并未将这些变量解释为CIP偏差的新结构性决定因素，可能限制了其理论上的创新性。<br><br>5. 【类似工作】  <br>类似的工作包括Baba et al. (2008)和Baba and P
-
-</details></td></tr>
-<tr><td>External Demand, Domestic Monetary Conditions, and Remittance Dynamics in Nepal</td><td>Sahaj Raj Malla</td><td><a href="https://arxiv.org/pdf/2605.19401">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.19401">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本研究的动机在于探讨尼泊尔个人汇款的宏观经济决定因素及其动态行为，尤其关注主要目的国的外部需求和国内货币政策对汇款的影响。由于尼泊尔的经济高度依赖汇款，了解其背后的驱动因素对于政策制定具有重要意义。其次，现有研究对汇款流动的理解不足，尤其是在多变量时间序列框架下，缺乏对外部需求和国内货币条件联动关系的深入分析。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在微观层面的动机（如利他主义与自利）以及宏观经济相关因素（如收入差异、汇率和政治不稳定性），但往往忽视了全球外部需求条件与国内货币政策环境之间的共同动态。此外，现有文献对尼泊尔汇款流动的研究较少，尤其是缺乏系统性地整合外部需求和货币条件的复合指标进行分析。<br><br>3. 【提出了什么创新的方法】  <br>本研究提出了一种创新的方法，通过主成分分析（PCA）构建复合指标，分别用于衡量多国外部需求和国内货币条件。研究采用了小样本经济计量模型，包括自回归分布滞后（ARDL）边界检验、Engle-Granger协整检验和动态最小二乘法（DOLS），并结合机器学习进行多模型预测。这种方法有效地解决了多重共线性问题，并为小样本环境下的经济分析提供了新的思路。<br><br>4. 【文章缺点】  <br>首先，尽管研究方法创新，但由于样本数据的限制，可能影响结果的普适性和外推性。其次，研究主要集中在尼泊尔的汇款动态，可能未能充分考虑其他国家或地区的影响，导致对全球汇款趋势的理解不够全面。<br><br>5. 【类似工作】  <br>类似的研究包括对其他发展中国家的汇款动态分析，例如对菲律宾汇款的研究，强调外部经济条件对汇款流动的影响；以及对印度汇款的
-
-</details></td></tr>
-<tr><td>Do Better Volatility Forecasts Lead to Better Portfolios? Evidence from Graph Neural Networks</td><td>Rylan Wade</td><td><a href="https://arxiv.org/pdf/2605.19278">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.19278">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于探讨波动率预测在投资组合构建、风险管理和头寸规模中的重要性，尤其是如何通过图神经网络（GNNs）来改善波动率预测的准确性。其次，研究旨在验证更好的波动率预测是否能够转化为更优的投资组合表现，从而揭示预测准确性与投资价值之间的关系。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在传统的波动率预测模型，如异质自回归模型（HAR）和长短期记忆网络（LSTM），这些模型虽然在捕捉单一股票的波动性历史上表现良好，但未能有效建模波动性在市场中的传播。现有文献缺乏对波动性在相关股票和经济联系公司之间传播的深入分析，尤其是如何利用图结构来捕捉这些复杂关系的研究较为稀缺。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了一种基于图神经网络的波动率预测方法，通过将股票视为节点、将关系视为边，利用图结构来传播波动信号。此外，研究比较了三种不同的图构建策略（动态收益相关性、GICS行业成员资格和格兰杰因果关系），以评估其对波动率预测和投资组合表现的影响。<br><br>4. 【文章缺点】  <br>首先，论文的实证结果表明，不同模型在预测准确性、排名质量和投资组合表现上存在差异，但未能明确指出哪种模型在实际应用中最具优势。其次，图结构的有效性依赖于边的设定，若图构建不当，可能会引入噪声或传播过时信息，从而影响预测结果的可靠性。<br><br>5. 【类似工作】  <br>类似的工作包括使用机器学习方法进行波动率预测的研究，如利用支持向量机（SVM）和随机森林等算法进行波动率建模的研究。此外，还有研究探讨了图神经网络在其他金融领域的应用，如信用风险评估和市场微观结构分析。<br><br>6. 【相关性评分】
-
-</details></td></tr>
-<tr><td>Designing On-Chain Options: Amortizing Perpetual Options</td><td>Maxim Bichuch</td><td><a href="https://arxiv.org/pdf/2605.19146">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.19146">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于填补去中心化金融（DeFi）市场中缺乏有效期权设计的空白，尤其是在现有的去中心化交易所中，期权交易的使用率极低，且大多数期权仍在中心化交易所进行交易。其次，现有的期权设计往往依赖高频预言机和复杂的清算机制，这在区块链环境中容易引发操控风险和效率问题，因此需要一种新的设计来适应区块链的特性。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要集中在尝试将传统期权合约设计应用于数字资产市场，虽然有一些变体如亚洲期权被引入，但大多数设计仍然依赖于中心化交易所的机制，未能充分考虑去中心化环境的特性。此外，现有的协议大多未能有效解决在区块链中执行期权合约时可能出现的操控风险和经济可持续性问题。<br><br>3. 【提出了什么创新的方法】  <br>论文提出了一种新颖的摊销永久期权设计，旨在适应区块链环境的操作和对抗性约束。通过这一设计，作者引入了一个去中心化市场框架，该框架具有最小的一致性要求，能够作为DeFi的基础风险原语。此外，论文还展示了该合约如何支持内生抵押和明确定价的去挂钩保险等应用。<br><br>4. 【文章缺点】  <br>首先，尽管提出了新的期权设计，但缺乏实证数据来验证其在实际市场中的有效性和可行性。其次，论文中对潜在的市场接受度和用户体验的讨论较为薄弱，未能充分考虑用户在使用新设计时可能面临的学习曲线和适应性问题。<br><br>5. 【类似工作】  <br>类似的工作包括对去中心化期权市场的设计研究，如Lyra和Hegic等项目，它们也尝试在DeFi环境中实现期权交易，但仍然面临与传统期权设计相似的挑战。另一个相关的工作是对自动化做
-
-</details></td></tr>
-<tr><td>Mining Financial Data using Mixtures of Mirrored Weibull Distributions</td><td>Zijun Jia</td><td><a href="https://arxiv.org/pdf/2605.20142">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.20142">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   1) 风险管理在现代金融市场中至关重要，尤其是在波动性较大的市场环境下，保护资产和投资的需求愈发迫切。  <br>   2) 现有的VaR估计方法通常依赖于正态分布假设，而实际金融数据往往表现出非正态特征，因此需要一种更灵活的模型来准确捕捉资产收益的分布特征。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   1) 许多研究已经提出了混合模型（如高斯混合模型）作为传统VaR估计方法的有效替代，能够更好地捕捉收益分布的非正态特征。  <br>   2) 然而，现有的混合模型（如高斯混合模型）在处理非正态聚类时可能需要多个高斯成分，导致模型复杂性和计算时间的增加，这在一定程度上限制了其应用。<br><br>3. 【提出了什么创新的方法】  <br>   1) 本文提出了一种混合镜像韦布尔（MMW）分布模型，旨在更灵活地建模金融收益并估计风险指标。  <br>   2) MMW模型具有简单的密度表达和快速的参数估计优势，能够有效处理金融数据中的非正态特征。<br><br>4. 【文章缺点】  <br>   1) 尽管MMW模型在VaR估计中表现出色，但其在其他风险管理指标（如CVaR）上的应用效果尚未得到充分验证。  <br>   2) 文章中对MMW模型的理论推导和实证分析可能缺乏足够的广泛性，限制了其在不同市场环境下的适用性。<br><br>5. 【类似工作】  <br>   1) 高斯混合模型（GMM）在VaR估计中的应用，已被多项研究证明其有效性。  <br>   2) 使用非正态成分分布（如偏态分布）进行VaR估计的研究，展示了更高的准确性，但通常伴随更高的计算成本。<br><br>6. 【相关性
-
-</details></td></tr>
-<tr><td>The Privacy Subsidy in Glosten-Milgrom: Bid-Ask Spread and Welfare under Flip-Noise Direction Observation</td><td>Yuki Nakamura</td><td><a href="https://arxiv.org/pdf/2605.19742">PDF</a></td><td><a href="https://arxiv.org/abs/2605.15746">code1</a></td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.19742">PDF</a><br><strong>代码</strong>：<a href="https://arxiv.org/abs/2605.15746">code1</a><br><strong>备注</strong>：. Companion toarXiv:2605.15746<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于探讨在隐私保护机制下，市场制造者如何在观察到的交易方向受到噪声影响的情况下，仍然能够有效地设置买卖价差。具体来说，研究者希望揭示隐私补贴如何影响市场的流动性和交易者的福利。其次，随着隐私保护交易机制的日益普及，理解这些机制对市场结构和交易成本的影响变得尤为重要。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在Glosten-Milgrom模型中，探讨了信息不对称如何导致买卖价差的形成，但大多数研究假设市场制造者能够准确观察交易方向。尽管有一些研究开始考虑噪声对市场的影响，但尚未系统性地分析在隐私保护机制下，噪声如何改变市场制造者的定价策略及其对交易者福利的影响。<br><br>3. 【提出了什么创新的方法】  <br>该论文提出了一种新的信息理论模型，使用二元翻转信道来模拟市场制造者观察到的交易方向的噪声影响。通过闭式解的形式，作者推导出在这种噪声条件下的买卖价差和福利分解，明确了隐私补贴的存在及其对交易者的影响。此外，研究还扩展了隐私补贴的概念，从连续高斯模型推广到离散的二状态市场微观结构。<br><br>4. 【文章缺点】  <br>该论文的一个缺点是，尽管提出了新的模型和理论，但在实际市场应用中的可行性和有效性尚未得到充分验证。另一个缺点是，模型假设市场制造者是风险中性的，这可能在某些实际情况下不成立，从而影响结果的普适性。<br><br>5. 【类似工作】  <br>类似的工作包括Touzo, Marsili和Zagier对Glosten-Milgrom模型的信息热力学分析，探讨了在完全观察情况下信息交易者的收益。此外，还有研究关注于隐私保护机制对市场微观结构的影响，尤其是在多方计算和零知识证明等新兴交易机制下的应用。<br><br>6. 【相关性
 
 </details></td></tr>
 </tbody>
