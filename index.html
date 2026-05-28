@@ -628,7 +628,7 @@
         <header>
             <h1>📈 arXiv 量化金融领域论文汇总</h1>
             <div class="intro">
-                <p>📊 共 <strong>47</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
+                <p>📊 共 <strong>54</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
                 <p>🔗 点击日期可展开/折叠｜📚 Zotero 按钮需安装 <a href="https://www.zotero.org/download/connectors" target="_blank">Connector 插件</a></p>
             </div>
         </header>
@@ -636,17 +636,232 @@
         <!-- 日期导航 -->
         <nav class="nav">
             <strong>📅 日期导航：</strong>
-            <a href="#date-20260527">2026-05-27（9篇）</a> | <a href="#date-20260526">2026-05-26（32篇）</a> | <a href="#date-20260525">2026-05-25（6篇）</a>
+            <a href="#date-20260528">2026-05-28（7篇）</a> | <a href="#date-20260527">2026-05-27（9篇）</a> | <a href="#date-20260526">2026-05-26（32篇）</a> | <a href="#date-20260525">2026-05-25（6篇）</a>
         </nav>
 
         <!-- 论文内容区块 -->
         <main>
-            <div class="date-section" id="date-20260527">
+            <div class="date-section" id="date-20260528">
     <div class="date-header">
-        <span>2026-05-27（9篇论文）</span>
+        <span>2026-05-28（7篇论文）</span>
         <span class="arrow">▼</span>
     </div>
     <div class="date-content" style="display: block;">
+        <table>
+        <!-- 添加 colgroup 明确指定每列宽度 -->
+        <colgroup>
+            <col style="width: 25%">  <!-- Title -->
+            <col style="width: 15%">   <!-- Authors -->
+            <col style="width: 10%">   <!-- Resources -->
+            <col style="width: 10%">   <!-- Relevance -->
+            <col style="width: 40%">  <!-- Summary -->
+        </colgroup>
+        <thead>
+            <tr>
+                <th>标题</th>
+                <th>作者</th>
+                <th>资源</th>
+                <th>相关性</th>
+                <th>总结</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】    1. 本论文的首要动机是探讨美国综合债券指数的统计特性和短期可预测性，以期提升资产定价及投资组合管理的有效性。    2. 研究者希望通过深度学习方法，解决传统金融时间序列预测在处理非平稳性、波动性聚集等统计特性时所面临的挑战。  2. 【前人的工作如何解决该问题，存在哪些空白】    1. 前人的研究集中于使用线性模型和传统的经济计量方法来分析金...">Deep Learning Forecasting of the U.S. Aggregate Bond Index</span></td>
+        <td class="author-cell">Ajay Kumar Verma</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.27977" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.27977" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：5/5">★★★★★</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】
+   1. 本论文的首要动机是探讨美国综合债券指数的统计特性和短期可预测性，以期提升资产定价及投资组合管理的有效性。
+   2. 研究者希望通过深度学习方法，解决传统金融时间序列预测在处理非平稳性、波动性聚集等统计特性时所面临的挑战。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】
+   1. 前人的研究集中于使用线性模型和传统的经济计量方法来分析金融时间序列，但未能充分考虑深度学习技术在这一领域的潜力。
+   2. 虽然已有部分研究使用神经网络方法进行金融预测，但在如何有效处理指数价格的统计特性（如非平稳性和特定的时间序列特征）尚未得到深入探讨。
+
+3. 【提出了什么创新的方法】
+   1. 本文引入了分数差分的方法来构建“稳定但最大持久性”的时间序列表示，有效地保留了长期记忆结构。
+   2. 采用多层感知器（MLP）和卷积神经网络（CNN）相结合的方法来进行短期预测，促进了不同模型架构的比较。
+
+4. 【文章缺点】
+   1. 论文主要集中于短期预测，可能忽略了长期投资决策中的其他影响因素。
+   2. CNN-GAF模型在出样本预测中表现不佳，显示该方法在本研究的应用中存在一定的局限性。
+
+5. 【类似工作】
+   1. López de Prado的相关研究强调了数据表示选择对预测性能的影响，为本研究提供了理论基础。
+   2. Gu等人的研究探讨了机器学习方法在金融中的应用，与本研究的深度学习方法方向一致。
+
+6. 【相关性评分】
+   分数：5分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   (1) 该论文旨在探讨内幕交易者如何在法律风险持续的情况下，通过隐秘交易来获取利润，尤其是在有竞争性市场参与者的环境中。   (2) 在当前金融市场中，内幕交易的法律风险日益重要，理解这种风险与交易行为之间的动态关系，对于制定有效的监管政策尤为关键。  2. 【前人的工作如何解决该问题，存在哪些空白】   (1) 以往的研究大多集中在内幕交易者在信息...">Insider and stealth trading with dynamic legal risk</span></td>
+        <td class="author-cell">Bixing Qiao</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.27684" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.27684" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+(1) 该论文旨在探讨内幕交易者如何在法律风险持续的情况下，通过隐秘交易来获取利润，尤其是在有竞争性市场参与者的环境中。  
+(2) 在当前金融市场中，内幕交易的法律风险日益重要，理解这种风险与交易行为之间的动态关系，对于制定有效的监管政策尤为关键。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+(1) 以往的研究大多集中在内幕交易者在信息不对称环境下的行为，但较少将法律风险动态考虑在内，忽视了法律风险对交易策略的影响。  
+(2) 先前的文献通常假设法律执行是固定的或静态的，没有深入探讨法律风险随交易行为而发展的动态特性。
+
+3. 【提出了什么创新的方法】  
+(1) 本文提出了一种基于Kyle-Back模型的动态法律风险框架，考虑了内幕交易者在交易过程中面临的法律风险变化。  
+(2) 采用了新的影响中性量度变化，并通过均衡分析揭示了法律风险如何显著影响内幕交易者的交易策略。  
+(3) 研究表明，法律制裁的构成对于防止激进的内幕交易至关重要，揭示了刑事与民事罚款在抑制内幕交易行为中的不同作用。
+
+4. 【文章缺点】  
+(1) 论文只在理论层面探讨法律风险对内幕交易策略的影响，缺乏实证验证以支持其结论。  
+(2) 研究可能未能充分考虑不同市场条件下法律风险的异质性对内幕交易行为的影响。
+
+5. 【类似工作】  
+(1) Back和Peterson（1998）对内幕交易行为进行的扩展研究，未考虑动态法律风险。  
+(2) Collin-Dufresne及Fos（2016）关于市场流动性对内幕交易的影响，但同样缺乏法律风险的动态视角。
+
+6. 【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】     - 本文的动机在于探讨大型语言模型（LLM）在生成伦理指导时，如何可能导致现实差距的产生，即LLM被允许描述的世界与用户必须行动的世界之间的鸿沟。     - 此外，本文关注这一现实差距的伦理性问题，特别是在高风险建议情境中，它可能会将知识风险转回无知的用户，导致潜在的伤害。  2. 【前人的工作如何解决该问题，存在哪些空白】     - 前人的...">The Ethics of LLM Sandbox and Persona Dynamics</span></td>
+        <td class="author-cell">Tim Gebbie</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.28647" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.28647" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：2/5">★★☆☆☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】 
+   - 本文的动机在于探讨大型语言模型（LLM）在生成伦理指导时，如何可能导致现实差距的产生，即LLM被允许描述的世界与用户必须行动的世界之间的鸿沟。 
+   - 此外，本文关注这一现实差距的伦理性问题，特别是在高风险建议情境中，它可能会将知识风险转回无知的用户，导致潜在的伤害。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】 
+   - 前人的工作主要集中在LLM的安全性和公正性上，提出了保护用户免受直接伤害的必要性，但是对如何平衡真实感知和伦理束缚之间的关系探讨不足。 
+   - 此外，现有研究往往缺乏对正式安全系统如何在实践中变为可玩弄和表演性质的深刻分析，未能揭示其在高风险情境中的潜在影响。
+
+3. 【提出了什么创新的方法】 
+   - 本文提出了在任务层面上进行自上而下的因果要求规范，而不是在响应或沙盒层面进行自下而上的道德修正，强调了任务设计与伦理的重要联系。 
+   - 作者进一步区分了拒绝伤害和拒绝现实的概念，提出“伦理AI”如果用制度上的安慰取代与现实的接触，则实质上是非伦理的。
+
+4. 【文章缺点】 
+   - 本文的理论模型可能在实际应用中缺乏可操作性，且未提供明确的实施策略来执行其提出的因果要求规范。 
+   - 另外，文章对高风险情境的定义可能过于宽泛，需进一步细化以便更好地理解其影响范围。
+
+5. 【类似工作】 
+   - 相关研究如关于伦理AI的文献分析，探讨了引导性话语如何影响用户行为并可能导致不当使用。 
+   - 另外，关于金融合规与道德风险的研究也有助于理解类似系统如何在大规模应用中潜在造成的影响。
+
+6. 【相关性评分】 
+分数：2分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 论文的motivation是什么：    - 本论文旨在总结资产定价中概率测度的历史发展，强调概率测度在资产定价中的重要性不仅限于物理概率的估计，而是通过构造、变换或选择概率测度来使市场价格能够被表达为折现的期望。    - 论文关注的是通过多种方法，如边际效用加权、熵惩罚以及信息条件来进行概率测度的选择，以更好地反映市场价格，并希望能够为当前的资产定价理论提供系统的历史背景。  2. 前人...">Historical Developments in Probability Measures for Asset Pricing: From State Prices to Modern Pricing Kernels</span></td>
+        <td class="author-cell">Zhang Chen</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.27658" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.27658" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 论文的motivation是什么：
+   - 本论文旨在总结资产定价中概率测度的历史发展，强调概率测度在资产定价中的重要性不仅限于物理概率的估计，而是通过构造、变换或选择概率测度来使市场价格能够被表达为折现的期望。
+   - 论文关注的是通过多种方法，如边际效用加权、熵惩罚以及信息条件来进行概率测度的选择，以更好地反映市场价格，并希望能够为当前的资产定价理论提供系统的历史背景。
+
+2. 前人的工作如何解决该问题，存在哪些空白：
+   - 前人的研究，如Bachelier的投机模型和Arrow-Debreu的状态相关索赔，为资产定价提供了早期的概率模型和理论依据，但往往在处理市场不完整性和风险偏好方面有所不足。
+   - 此外，尽管已有的文献涵盖了风险中性定价和马尔可夫定价理论，但在如何将现代数据驱动方法与这些经典理论相结合以增强预测能力方面仍然存在空白。
+
+3. 提出了什么创新的方法：
+   - 论文提出了将文本、注意力和情感等在信息丰富环境中作为条件变量来估计或预测定价核的思路，这是对传统资产定价模型的扩展。
+   - 同时，将现代机器学习技术与传统的概率测度变换相结合，构成了对资产定价的新框架。
+
+4. 文章缺点：
+   - 本文的历史回顾性强，可能对当前更为快速发展的实证研究涉及不够，缺乏实证数据的支持和量化分析。
+   - 另一方面，尽管提出了多种新的概率测度变换方法，但缺乏对这些新方法在实证应用中的有效性进行深入的探讨。
+
+5. 类似工作：
+   - 一项相关研究是“Stochastic Discount Factors: Theory and Implications”，该文探讨了随机折现因子在资产定价中的应用及其对模型的影响。
+   - 另一项工作是“Risk-Neutral Pricing and Its Limitations”，讨论了风险中性定价理论的局限性以及其他</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      - 本文旨在解决当前大语言模型（LLM）在资本市场交易中的评估方法存在的不足，通过探索更准确的基准定量交易代理评估方法，克服市场知识重复利用带来的评价偏差。      - 其次，论文关注到累计收益作为股票选择能力的评估指标存在的不确定性，强调需要更深入的收益来源分析，以便更好地理解模型的真实表现和能力。  2. 【前人的工作如何解决该问题，存在...">From Knowing to Doing: A Memory-Controlled Benchmark for LLM Trading Agents on Stock Markets</span></td>
+        <td class="author-cell">Taojie Zhu</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.28359" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.28359" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+   - 本文旨在解决当前大语言模型（LLM）在资本市场交易中的评估方法存在的不足，通过探索更准确的基准定量交易代理评估方法，克服市场知识重复利用带来的评价偏差。  
+   - 其次，论文关注到累计收益作为股票选择能力的评估指标存在的不确定性，强调需要更深入的收益来源分析，以便更好地理解模型的真实表现和能力。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+   - 前人工作，例如DeepFund和OracleProto，尝试解决长期回测与模型知识截止日期重叠的问题，并提出了限制评估日期的方法，然而这些方法并未彻底解决模型在交易中的记忆利用问题。  
+   - 尽管已有研究将收益分解为市场、风格和特定股票的残差，但在实际应用中，依然缺少对如何在动态交易环境中实施这种分解的系统性探讨，导致现有方法对收益构成的理解不够深入。
+
+3. 【提出了什么创新的方法】  
+   - 本文提出了一种记忆控制基准评估方法，通过避免在评估过程中使用外部记忆，确保交易决策更多依赖于实时市场数据，而非历史记忆。  
+   - 文章扩展了收益分解的概念，尝试在顺序交易中实时分析不同来源的收益，以提供更细致的绩效评估。
+
+4. 【文章缺点】  
+   - 本文可能在动态市场环境中的实用性尚待验证，受限于真实市场的复杂性，可能面临数据偏差或不完全性的问题。  
+   - 文章的实验设计可能仍然不能完全消除模型记忆的潜在干扰，特别是在金融市场波动剧烈时，如何保持评估结果的可靠性是一个挑战。
+
+5. 【类似工作】  
+   - 相关研究如Mehta et al. (2024) 针对算法交易中信息利用的分析，提供了传统模型与LLM的对比，着眼于核心策略的表现评估。  
+   - 另一个相似工作是Zhang et al. (202</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   (1) 传统保险定价方法基于风险原则，虽然能够确保精算公平性和保险公司偿付能力，但未能考虑投保人对价格的敏感性，导致定价决策可能存在不足。   (2) 本文希望通过将保险定价建模为一个决策问题，利用离政策评估和随机控制工具，优化定价策略，从而实现更加精细化和符合市场需求的定价。  2. 【前人的工作如何解决该问题，存在哪些空白】   (1) 现有研究...">Insurance Pricing Optimization via Off-Policy Evaluation</span></td>
+        <td class="author-cell">Sascha Günther</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.28327" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.28327" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+(1) 传统保险定价方法基于风险原则，虽然能够确保精算公平性和保险公司偿付能力，但未能考虑投保人对价格的敏感性，导致定价决策可能存在不足。  
+(2) 本文希望通过将保险定价建模为一个决策问题，利用离政策评估和随机控制工具，优化定价策略，从而实现更加精细化和符合市场需求的定价。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+(1) 现有研究在保险定价中引入了需求反应模型，但主要依赖于传统的风险基模型，如广义线性模型（GLM）和广义加法模型（GAM），这些方法在动态定价和数据驱动的决策中应用有限。  
+(2) 虽然有些学者提出了动态定价策略的框架，但大多数研究并没有深入挖掘历史数据对于优化定价的潜力，未能有效利用强化学习和反事实推理等现代技术。
+
+3. 【提出了什么创新的方法】  
+(1) 提出了核化逆倾向评分估计器（kernelized inverse propensity score estimator），通过利用动作空间的局部结构，减小了比传统逆倾向评分估计器的方差。  
+(2) 基于上述价值估计，开发了两种优化定价规则的实用方法：数据共享Lasso形式和基于神经网络的灵活策略参数化，这两种方法都能有效提升定价的准确性和有效性。
+
+4. 【文章缺点】  
+(1) 论文的应用实验仅限于一个合成的旅行保险环境，可能与真实世界中的销售和定价情况存在差距，限制了结果的广泛适用性。  
+(2) 虽然提出的模型在理论上有效，但其复杂性可能导致实际操作中的实现难度，尤其对于缺乏足够数据或技术支持的保险公司。
+
+5. 【类似工作】  
+(1) Krasheninnikova等人（2019）利用强化学习技术最大化客户生命周期价值，展现了在保险定价中引入客户行为的重要</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      论文的动机在于：      （1）现有的投资组合管理基准未能充分评估大语言模型（LLMs）在复杂金融决策中的能力，特别是在跨资产相关性和真实动态市场条件下的表现。      （2）缺乏全面的评估标准来衡量投资组合管理的完整决策过程，导致理论与实际应用之间的脱节。  2. 【前人的工作如何解决该问题，存在哪些空白】      前人的工作尝试通过开...">PortBench: A Correlation-Aware, Full-Pipeline Benchmark for LLM-Driven Portfolio Management</span></td>
+        <td class="author-cell">Yuxuan Zhao</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.27887" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.27887" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+   论文的动机在于：  
+   （1）现有的投资组合管理基准未能充分评估大语言模型（LLMs）在复杂金融决策中的能力，特别是在跨资产相关性和真实动态市场条件下的表现。  
+   （2）缺乏全面的评估标准来衡量投资组合管理的完整决策过程，导致理论与实际应用之间的脱节。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+   前人的工作尝试通过开发多种金融基准来评估LLMs在金融任务中的表现，但存在以下空白：  
+   （1）现有基准往往局限于单一资产类别，忽视了跨资产之间的相关性，这使得难以有效区分风险集中与多样化的投资组合。  
+   （2）现有的评估工作通常只关注单一步骤的预测或局部多步骤的评估，缺乏对完整决策流程的分析，包括市场解读、信号生成、权重优化、执行和风险监控的连贯性。
+
+3. 【提出了什么创新的方法】  
+   本文提出了名为PortBench的创新基准，其方法包括：  
+   （1）构建两层评估体系，其中包括静态的基于相关性的问题集和动态的多阶段决策流程模拟。  
+   （2）引入双层相关性评分和CEPS两个专用指标，分别评估投资组合的跨类别对冲能力和决策错误的传播影响。  
+   （3）综合考虑三种历史压力情景和风险特征，以评估投资策略的稳健性和与投资者的适配度。
+
+4. 【文章缺点】  
+   文章的缺点包括：  
+   （1）尽管评估范围广泛，但实证结果显示90%的LLM模型与标准的等权投资组合相比，未能显著 outperform， 实际应用效果令人担忧。  
+   （2）在压力情境下，即便满足所有程序性约束，模型仍可能遭遇严重的回撤，显示出策略在极端市场条件下的脆弱性。
+
+5. 【类似工作</small></details></td>
+    </tr>
+        </tbody></table>
+    </div>
+</div>
+<div class="date-section" id="date-20260527">
+    <div class="date-header">
+        <span>2026-05-27（9篇论文）</span>
+        <span class="arrow">▶</span>
+    </div>
+    <div class="date-content" style="display: none;">
         <table>
         <!-- 添加 colgroup 明确指定每列宽度 -->
         <colgroup>
@@ -1843,7 +2058,7 @@ StakeBench 采用可观察的市场行为作为监督标准，定位参与方、
             });
             
             // ========== 自动展开最新日期 ==========
-            const latestId = 'date-20260527';
+            const latestId = 'date-20260528';
             if (latestId) {
                 const latestSection = document.getElementById(latestId);
                 if (latestSection) {
