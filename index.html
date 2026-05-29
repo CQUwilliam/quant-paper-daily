@@ -628,7 +628,7 @@
         <header>
             <h1>📈 arXiv 量化金融领域论文汇总</h1>
             <div class="intro">
-                <p>📊 共 <strong>54</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
+                <p>📊 共 <strong>67</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
                 <p>🔗 点击日期可展开/折叠｜📚 Zotero 按钮需安装 <a href="https://www.zotero.org/download/connectors" target="_blank">Connector 插件</a></p>
             </div>
         </header>
@@ -636,17 +636,327 @@
         <!-- 日期导航 -->
         <nav class="nav">
             <strong>📅 日期导航：</strong>
-            <a href="#date-20260528">2026-05-28（7篇）</a> | <a href="#date-20260527">2026-05-27（9篇）</a> | <a href="#date-20260526">2026-05-26（32篇）</a> | <a href="#date-20260525">2026-05-25（6篇）</a>
+            <a href="#date-20260529">2026-05-29（13篇）</a> | <a href="#date-20260528">2026-05-28（7篇）</a> | <a href="#date-20260527">2026-05-27（9篇）</a> | <a href="#date-20260526">2026-05-26（32篇）</a> | <a href="#date-20260525">2026-05-25（6篇）</a>
         </nav>
 
         <!-- 论文内容区块 -->
         <main>
-            <div class="date-section" id="date-20260528">
+            <div class="date-section" id="date-20260529">
     <div class="date-header">
-        <span>2026-05-28（7篇论文）</span>
+        <span>2026-05-29（13篇论文）</span>
         <span class="arrow">▼</span>
     </div>
     <div class="date-content" style="display: block;">
+        <table>
+        <!-- 添加 colgroup 明确指定每列宽度 -->
+        <colgroup>
+            <col style="width: 25%">  <!-- Title -->
+            <col style="width: 15%">   <!-- Authors -->
+            <col style="width: 10%">   <!-- Resources -->
+            <col style="width: 10%">   <!-- Relevance -->
+            <col style="width: 40%">  <!-- Summary -->
+        </colgroup>
+        <thead>
+            <tr>
+                <th>标题</th>
+                <th>作者</th>
+                <th>资源</th>
+                <th>相关性</th>
+                <th>总结</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      该论文的动机主要在于揭示并解决体育比赛中的假赌行为对运动诚信的威胁，强调保护公众信任和体育产业的商业可持续性的重要性。随着全球体育博彩市场的扩展，假赌行为的诱因和机会随之增加，这就需要开发数据驱动的监测工具以确保比赛的公平性。  2. 【前人的工作如何解决该问题，存在哪些空白】      先前的研究多数集中在赛前博彩市场行为上，而对赛中博彩市场...">Betting Against Integrity: Identifying Match-Fixing Through In-Play Market Dynamics</span></td>
+        <td class="author-cell">David Winkelmann</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.30209" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.30209" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+   该论文的动机主要在于揭示并解决体育比赛中的假赌行为对运动诚信的威胁，强调保护公众信任和体育产业的商业可持续性的重要性。随着全球体育博彩市场的扩展，假赌行为的诱因和机会随之增加，这就需要开发数据驱动的监测工具以确保比赛的公平性。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+   先前的研究多数集中在赛前博彩市场行为上，而对赛中博彩市场的研究相对较少，因此在此领域缺乏针对假赌行为的检测框架。尽管已有一些研究探讨了市场效率和市场偏差，但它们并没有聚焦于具体的假赌检测问题，导致在有效识别可疑博彩行为方面存在明显的空白。
+
+3. 【提出了什么创新的方法】  
+   本文提出了一个基于状态空间模型的框架来描述标准的博彩市场动态，并预测与比赛特征相关的预期投注量。通过分析从这些预期中偏离的行为，实施离群值检测技术，从而识别潜在可疑时期，这一方法具有创新性地将统计建模应用于博彩数据分析。
+
+4. 【文章缺点】  
+   文章的一个缺点是，它依赖于来自意大利Serie B联赛的数据，这可能限制了模型在其他联赛及场景下的普适性。另一个缺点是，在实验过程中可能存在样本偏差问题，由于数据质量和获取的限制，难以确保模型结果的可靠性。
+
+5. 【类似工作】  
+   1. Referenced works on pre-game betting, such as studies exploring market inefficiencies and biases in betting behavior; these are relevant but do not address fraud detection specifically.  
+   2. Research focused on algorithmic trading strategies and sports market dynamics that analyze betting trends but lack a clear application in identifying match-fixing incidents.
+
+6. 【相关性评分】  
+   分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1.【论文的motivation是什么】   本研究的动力主要源于两个方面：首先，传统的Bismut–Elworthy–Li (BEL)公式和提升程序在处理具有路径依赖动态的随机Volterra过程时失效，因此需要寻找新的方法来描述这些过程的方向导数；其次，本研究希望深入了解积分按部就班（IBP）公式在此类过程中的应用，特别是其平滑效果对初始曲线方向导数的影响。  2.【前人的工作如何解决该问题，...">Functional integration by parts formulae for stochastic Volterra processes</span></td>
+        <td class="author-cell">Alexandre Pannier</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.30068" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.30068" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1.【论文的motivation是什么】  
+本研究的动力主要源于两个方面：首先，传统的Bismut–Elworthy–Li (BEL)公式和提升程序在处理具有路径依赖动态的随机Volterra过程时失效，因此需要寻找新的方法来描述这些过程的方向导数；其次，本研究希望深入了解积分按部就班（IBP）公式在此类过程中的应用，特别是其平滑效果对初始曲线方向导数的影响。
+
+2.【前人的工作如何解决该问题，存在哪些空白】  
+前人基于BEL公式的研究为探讨随机过程的导数特性提供了基础，但在非马尔可夫过程的背景下，尤其是随机Volterra方程领域，相关研究仍显不足。此外，现有的方法未能充分应对路径依赖过程中的复杂性，造成了理论与实际应用之间的差距。
+
+3.【提出了什么创新的方法】  
+论文提出了一种新型的分数IBP公式，利用Riemann–Liouville分数导数来介于标准链规则和纯BEL公式之间，适用于随机Volterra方程中的方向导数。此外，该研究还揭示了平滑性与粗糙度之间的权衡关系，为进一步的理论和应用提供了新的思路。
+
+4.【文章缺点】  
+首先，虽然本研究在分数IBP公式的提出上取得了进展，但对于更广泛的随机过程类型，理论推广的可能性尚待探索。其次，文章中对于一些算法实现细节的讨论相对缺乏，可能会影响到实际应用的可操作性。
+
+5.【类似工作】  
+类似的研究工作包括：1) 在随机微分方程中应用Malliavin计算，探讨导数特性；2) 研究非马尔可夫过程中的敏感性分析，发展新的公式和方法。
+
+6.【相关性评分】分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1.【论文的动机是什么】本文旨在探讨古巴自1961年实施的全民健康保健和普及识字运动对公共健康和人力资本发展的长期影响。这个研究的重要性在于了解公共健康投资如何改善人口健康和教育水平，从而为政策决策提供依据。此外，古巴在经济挑战下实现显著健康成就，为研究其制度的因果影响提供了独特的视角。  2.【前人的工作如何解决该问题，存在哪些空白】尽管已有研究指出古巴在健康领域的成功，但缺乏定量分析来评估其全...">Long-Term Health and Human Capital Effects of Universal Health Care and Mass Literacy: Evidence from Cuba</span></td>
+        <td class="author-cell">Giovanni Mellace</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.29785" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.29785" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：3/5">★★★☆☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1.【论文的动机是什么】本文旨在探讨古巴自1961年实施的全民健康保健和普及识字运动对公共健康和人力资本发展的长期影响。这个研究的重要性在于了解公共健康投资如何改善人口健康和教育水平，从而为政策决策提供依据。此外，古巴在经济挑战下实现显著健康成就，为研究其制度的因果影响提供了独特的视角。
+
+2.【前人的工作如何解决该问题，存在哪些空白】尽管已有研究指出古巴在健康领域的成功，但缺乏定量分析来评估其全国性健康服务对公共健康及人力资本长期影响的实证研究。此外，以往的研究多集中在短期效果或特定时期的分析，未能全面考察健康和教育改革在较长历史维度上的深远影响。
+
+3.【提出了什么创新的方法】本文采用合成控制法，构建一个与古巴干预前趋势相似的合成古巴模型，以用于因果推断。这种方法通过比较古巴的实际结果与合成控制的结果，来定量评估全民健康和识字改革的影响。此外，作者还使用了多种敏感性分析方法保证结果的稳健性。
+
+4.【文章缺点】本文的局限之一是依赖于历史数据的准确性，可能受制于数据缺口和测量误差。另一个缺点是，尽管方法论上创新，但缺乏对其他国家或地区的比较分析，可能限制了结果的外部有效性。
+
+5.【类似工作】类似的研究包括关于其他国家的全民医疗改革及其对社会经济发展影响的比较分析，尤其是在拉美地区的案例。此外，研究其他国家在经济困境中如何进行长期健康投资的文章也与此研究相关。
+
+6.【相关性评分】分数：3分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   - 论文的主要动机在于揭示当前人工智能（AI）技术虽然在社会中普遍存在，但其所预期的颠覆性影响尚未全面实现。   - 本文认为，组织在利用AI时仍然停留在加速旧有工作流的阶段，而非重新构建与AI相适应的新工作流程，这限制了AI的潜在价值。    2. 【前人的工作如何解决该问题，存在哪些空白】   - 先前的研究多集中在AI模型的能力提升及工具开发上...">From Augmentation to Reconstruction: Guiding the AI Disruption to the Good Place</span></td>
+        <td class="author-cell">David M. Rothschild</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.29207" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.29207" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：2/5">★★☆☆☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+- 论文的主要动机在于揭示当前人工智能（AI）技术虽然在社会中普遍存在，但其所预期的颠覆性影响尚未全面实现。  
+- 本文认为，组织在利用AI时仍然停留在加速旧有工作流的阶段，而非重新构建与AI相适应的新工作流程，这限制了AI的潜在价值。  
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+- 先前的研究多集中在AI模型的能力提升及工具开发上，但较少关注如何在组织层面上有效改造和重建工作流程。  
+- 尽管有一些研究探讨了AI在特定领域中的应用，但对整体系统变革的讨论不足，缺乏系统性框架以指导这一转型。  
+
+3. 【提出了什么创新的方法】  
+- 提出了一个三阶段的框架——增强（Augmentation）、自动化（Automation）和重建（Reconstruction），强调重建阶段的重要性。  
+- 强调通过建立信任和责任机制、实现数据和接口的可互操作性来支持AI的系统级转型。  
+- 提出新经济激励机制的必要性，以促进重建而非局部优化，推动生产率的提升。  
+
+4. 【文章缺点】  
+- 论文可能在实践应用示例方面不足，未能深入探讨如何具体实施所提到的重建流程。  
+- 对于所需的信任和责任基础设施的实现路径讨论较为浅显，缺乏详细案例支持。  
+
+5. 【类似工作】  
+- 《人工智能与工作流程的未来》：研究AI如何在不同组织中变革工作流程及其对经济结构的影响。  
+- 《机器学习及自动化的市场影响》：探讨机器学习和自动化对各行业的影响，强调了系统性转型的重要性。  
+
+6. 【相关性评分】  
+分数：2分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机是引入一种新概念“Agentic Technical Debt”，以应对在运作复杂的Agentic AI系统时所面临的治理挑战。这些系统的设计及实施往往快于它们的验证和标准化，导致潜在的治理责任积累。其次，定义“Stochastic Tax”这一概念，有助于深入理解如何控制和管理这些系统的随机行为，确保其表现能够在可接受的范围内。  2....">Governing Technical Debt in Agentic AI Systems</span></td>
+        <td class="author-cell">Muhammad Zia Hydari</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.29129" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.29129" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：2/5">★★☆☆☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本论文的动机是引入一种新概念“Agentic Technical Debt”，以应对在运作复杂的Agentic AI系统时所面临的治理挑战。这些系统的设计及实施往往快于它们的验证和标准化，导致潜在的治理责任积累。其次，定义“Stochastic Tax”这一概念，有助于深入理解如何控制和管理这些系统的随机行为，确保其表现能够在可接受的范围内。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作主要集中于传统软件和机器学习中的技术债务，强调了结构性和系统性债务的影响。然而，这些研究未能充分考虑Agentic AI系统的特点，特别是在多步骤工作流中的决策和工具调用机制如何影响技术债务的积累。尽管已有文献讨论了“技术债务”的广泛概念，但针对Agentic AI独特的行为及其治理负担的专门研究仍显不足。
+
+3. 【提出了什么创新的方法】  
+本研究提出的创新方法包括定义Agentic Technical Debt和Stochastic Tax两个新概念，从而明确在Agentic AI系统中存在的特定治理挑战。此外，论文提出利用轻量级仪表盘和治理控制来提高管理可见性，帮助管理者更好地识别和处理这些技术债务与治理负担。
+
+4. 【文章缺点】  
+该文章的一个缺点是未提供具体的案例研究或实证数据来支持所提出概念的实际应用效果。这可能会限制理论的普适性和具有实践指导意义的程度。另一个缺点是，虽然提出了新的治理框架，但缺乏针对不同规模或复杂性的Agentic AI系统的细化模型，可能会影响其适用性。
+
+5. 【类似工作】  
+类似的工作包括Cunningham（1992）关于技术债务的经典研究，这为讨论长期成本提供了基础。此外，Sculley等（2015）关于机器学习技术债务的研究，提供了系统性债务的视角，但未涵盖Agentic AI特有的治理问题。
+
+6. 【相关性评分】  
+分数：2分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1.【论文的motivation是什么】   本论文的动机在于，首先，传统的均值-方差优化方法在实际应用中常常面临期望收益敏感性高和容易产生集中投资组合的问题，从而影响投资组合的分散性和经济意义。其次，投资者希望通过引入额外约束，改善投资组合的风险管理与收益平衡，促进更为稳健的资产配置。  2.【前人的工作如何解决该问题，存在哪些空白】   前人的工作主要通过均值-方差优化（如马克维茨理论）及其扩...">From Classical Optimization to Bayesian Integration: A Comprehensive Analysis of Systematic Portfolio Management</span></td>
+        <td class="author-cell">Ajay Kumar Verma</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.29413" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.29413" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1.【论文的motivation是什么】  
+本论文的动机在于，首先，传统的均值-方差优化方法在实际应用中常常面临期望收益敏感性高和容易产生集中投资组合的问题，从而影响投资组合的分散性和经济意义。其次，投资者希望通过引入额外约束，改善投资组合的风险管理与收益平衡，促进更为稳健的资产配置。
+
+2.【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作主要通过均值-方差优化（如马克维茨理论）及其扩展模型（如Fama-French五因子模型）来解决资产配置问题，但这些方法在实际应用中往往导致投资组合不尽理想的集中效应，并错失广泛的风险因子考量。虽然Monte Carlo方法提供了某种程度的风险管理，但仍在面临高维约束时表现不佳，这为基于不确定性和投资者视角的优化方法留下了巨大空白。
+
+3.【提出了什么创新的方法】  
+论文提出了一种综合框架，结合了多种现代投资组合优化方法，包括传统均值-方差优化、受约束优化、Fama-French五因子模型、Monte Carlo仿真和Black-Litterman模型，旨在通过综合运用这些模型，来提高收益与风险的平衡。尤其是，Black-Litterman模型被强调为能更好地平衡预期收益与投资者观点，从而达到更稳定的投资组合。
+
+4.【文章缺点】  
+文章的缺点在于，首先，不同方法的比较可能受到选取股票样本和时间段的局限性影响，缺乏更广泛市场的普适性验证。其次，尽管整合了多种方法，但仍然可能在复杂市场环境下面临实用性挑战，特别是如何有效处理动态变化的市场信号。
+
+5.【类似工作】  
+类似的工作包括一项基于深度学习的方法在动态市场中优化投资组合，和另一项运用机器学习算法来预测并调整资产配置。这些方法虽与论文中所提的传统理论不同，但同样旨在提升资产配置的表现和稳健性。
+
+6.【</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文旨在填补对巴西信用市场中不同货币信贷定价机制理解的空白。首先，通过引入三货币HJM框架，探讨在不同的风险基准下如何评估企业信用风险，为投资者提供更清晰的信贷定价模型。其次，该研究关注在同一固定收益市场中，企业如何在相同的发行实体下，以名义利率和通货膨胀利率为基础的不同债务工具进行融资，从而需要分析这些不同信用利差曲线之间的无套利限制。  2. ...">Three-Currency HJM for Brazilian Credit Markets</span></td>
+        <td class="author-cell">Raphael Coelho</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.29376" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.29376" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本论文旨在填补对巴西信用市场中不同货币信贷定价机制理解的空白。首先，通过引入三货币HJM框架，探讨在不同的风险基准下如何评估企业信用风险，为投资者提供更清晰的信贷定价模型。其次，该研究关注在同一固定收益市场中，企业如何在相同的发行实体下，以名义利率和通货膨胀利率为基础的不同债务工具进行融资，从而需要分析这些不同信用利差曲线之间的无套利限制。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究（如Jarrow和Yildirim (2003)）已将名义经济和实际经济视为接通的两个经济体，通过合成通货膨胀率作为交换率来探讨它们之间的联系，但并未深入分析如何将企业信用作为第三个经济体来纳入考量。此外，虽然HJM理论框架在多个曲线的定价动态上有较深入的研究，但在多种指数化曲线下观测信用利差的情境下，尚缺乏足够的文献来阐明无套利条件如何影响这些曲线之间的相互作用。
+
+3. 【提出了什么创新的方法】  
+本文构建了一种基于三种货币的HJM框架，将企业信用视为独立的经济体，并引入了合成的信用交换率，以此为基础关系建立了可测试的身份方程。此外，论文通过实证方法验证了在分割市场中观察到的两个公司债券段不同信用经济体定价的差异，提出通过观察两条信用曲线的交互关系来评估共同信用经济体的假设。
+
+4. 【文章缺点】  
+尽管本文提供了创新的理论框架，但具体实证结果的验证仍存在一定局限性，可能依赖于样本的代表性以及市场的特定情况。此外，提出的模型虽然在理论上具备吸引力，但其复杂性使得实际应用时可能面临计算上的挑战和实施难度。
+
+5. 【类似工作】  
+类似的工作</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本文的动机在于探讨在不同市场基础设施间，尤其是在比特币市场的衍生品和现货交易之间存在的套利限制。首先，随着比特币ETF的推出，投资者有了新的合规渠道进行比特币投资，但市场的分割性造成了不同金融工具之间存在显著的收益差异。其次，理解这些收益差异（即carry）对于提升市场效率和投资策略设计具有重要意义。  2. 【前人的工作如何解决该问题，存在哪些空白...">Implied ETF Carry Rates and the Limits of Arbitrage in Segmented Bitcoin Markets</span></td>
+        <td class="author-cell">Mindy L. Mallory</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.29309" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.29309" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本文的动机在于探讨在不同市场基础设施间，尤其是在比特币市场的衍生品和现货交易之间存在的套利限制。首先，随着比特币ETF的推出，投资者有了新的合规渠道进行比特币投资，但市场的分割性造成了不同金融工具之间存在显著的收益差异。其次，理解这些收益差异（即carry）对于提升市场效率和投资策略设计具有重要意义。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作主要聚焦于通过期权价格的无套利关系研究传统股市中的融资摩擦，但在比特币市场中的相似现象仍然较少被探讨。同时，现有研究虽已指出加密货币市场的套利机会受到融资条件的制约，但缺乏对特定衍生品（如比特币ETF期权）的系统性分析，导致对套利限制及其原因的理解不够深入。
+
+3. 【提出了什么创新的方法】  
+本文提出了一种创新性的方法，通过利用上市的比特币ETF期权估算出其隐含的前向价格并与CME比特币期货的carry进行比较，进而揭示市场中存在的套利限制。此外，利用BlackRock日常持有数据，将ETF的隐含前向价格与比特币单位进行匹配，为精准计算carry差异提供了新的视角。
+
+4. 【文章缺点】  
+文章的一个缺点是其样本数据量相对较小，仅为386个日期的观测，这可能影响结果的普适性和鲁棒性。另一个缺点是文章主要集中于特定市场条件下的carry差异，未能全面考虑其他可能影响套利机会的因素，如市场情绪和其他宏观经济变量。
+
+5. 【类似工作】  
+与本文类似的工作包含Ofek et al.（2004）和Cremers与Weinbaum（2010）的研究，讨论了股市中期权价格的无套利条件，以及Schmeling et al.（2023）与Siriwardane et al.（2022）对加密货币市场融资摩擦的研究。这些工作为</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文的动机在于探讨美国货币政策的区域性异质性以及特定地区的劳动市场如何受到抵押贷款锁定效应的影响。首先，随着抵押贷款利率的显著上升，许多房主面临较高的迁移成本，这对高技能劳动者的流动性产生了制约。其次，论文强调了不同地区因其独特的劳动市场背景而在吸引高技能劳动力方面的不同表现。  2. 【前人的工作如何解决该问题，存在哪些空白】   尽管已有研究探...">Mobile Foreigners: Mortgage Lock-In and H-1B Demand</span></td>
+        <td class="author-cell">Duha T. Altindag</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.28904" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.28904" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+该论文的动机在于探讨美国货币政策的区域性异质性以及特定地区的劳动市场如何受到抵押贷款锁定效应的影响。首先，随着抵押贷款利率的显著上升，许多房主面临较高的迁移成本，这对高技能劳动者的流动性产生了制约。其次，论文强调了不同地区因其独特的劳动市场背景而在吸引高技能劳动力方面的不同表现。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+尽管已有研究探讨了抵押贷款锁定对家庭迁移的影响，但大部分文献集中在房主迁移所放弃的成本上，并未深入分析抵押贷款锁定如何影响地区劳动市场的结构调整。其次，现有文献多未考虑不同地区的寄源地组合对迁移成本的影响，以及这一成本在高技能劳动力流动中的深层作用。
+
+3. 【提出了什么创新的方法】  
+论文提出了“入境抵押贷款支付差距”（M​P​Wi​n）的新测量指标，以量化移民迁移中面临的抵押贷款支付成本。这一指标通过历史供给流的加权公式构建，使得各目的地的迁移成本能够反映其来源地的资金状态。此外，论文首次提出以抵押贷款锁定作为高技能劳动力市场调整的关键因素，建立了经济政策与劳动力流动之间的新联系。
+
+4. 【文章缺点】  
+论文可能存在数据可获得性的问题，尤其是对于如何准确测量来源地与目的地之间的贷款状况。此外，虽然引入了M​P​Wi​n这一创新指标，但文章中对其应用局限性及进一步验证的讨论较少，可能影响结果的普适性和可信度。
+
+5. 【类似工作】  
+类似工作的例子包括有学者研究的“家庭迁移与抵押贷款市场的相互影响”以及分析“经济政策变动对高技能劳动力流动性的影响”。这两项研究虽然触及到相关主题，但未能结合抵押贷款锁定效应这一特定因素。
+
+6. 【相关性</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. **论文的motivation是什么**:     - 在现实金融市场中，组合优化普遍面临着数据非平稳性、噪声、以及高交易成本的挑战，传统的预测-优化方法经常因为预测错误的积累而导致差的投资表现。     - 现有的组合优化技术在应对市场环境变化时常常失效，因此急需开发新的方法来有效地优化投资组合，同时兼顾金融目标。  2. **前人的工作如何解决该问题，存在哪些空白**:     - 先前...">Financially Guided Deep Portfolio Optimization</span></td>
+        <td class="author-cell">Rahul Fernandes</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.28853" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.28853" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. **论文的motivation是什么**: 
+   - 在现实金融市场中，组合优化普遍面临着数据非平稳性、噪声、以及高交易成本的挑战，传统的预测-优化方法经常因为预测错误的积累而导致差的投资表现。 
+   - 现有的组合优化技术在应对市场环境变化时常常失效，因此急需开发新的方法来有效地优化投资组合，同时兼顾金融目标。
+
+2. **前人的工作如何解决该问题，存在哪些空白**: 
+   - 先前的工作如平均方差优化（MVO）和分层风险平价（HRP）虽然在组合构建中提供了一些框架，却往往假设数据的平稳性，并未能有效应对非线性、时变动态。 
+   - 预测-优化流程容易受到预测误差的影响，许多基于模块化的机器学习方法没有在训练过程中明确纳入分配目标，从而导致性能不足。
+
+3. **提出了什么创新的方法**: 
+   - 本文提出了一种端到端的组合优化框架，直接优化关键金融指标的可微替代品，例如Sharpe比率和Omega比率，使得神经网络能够通过反向传播学习投资组合权重。 
+   - 采用了扩展窗口的前向验证程序，更好地模拟现实世界的再平衡过程，并引入最大最小化的超参数优化策略，提高了模型的稳健性。
+
+4. **文章缺点**: 
+   - 尽管该框架在实验中表现良好，但其复杂性可能导致在实施时需要较高的计算资源和时间，这在实际应用中可能成为限制因素。 
+   - 本文中使用的特定金融指标和模型可能局限于某些市场环境，并未完全验证其在其他市场条件下的普适性。
+
+5. **类似工作**: 
+   - DELAFO框架和其他神经网络端到端方法在组合优化中得到了应用，显示出改进回测指标的潜力。 
+   - 层次聚类和嵌套聚类优化（NCO）等方法也旨在寻找稳健的、分散的组合配置，但仍</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1.【论文的motivation是什么】   该论文的动机在于探讨加密资产市场中，单纯使用如总锁仓价值（TVL）等传统指标无法全面评估代币化真实世界资产（RWAs）的风险。由于机构和市场参与者对RWAs的关注日渐增加，建立一个全面且透明的风险评估框架显得尤为重要。其次，目标在于通过数据驱动的方法展示市场参与者如何基于流动性、集中度和市场质量等多个维度来比较和评估代币化资产的投资性。  2.【前人的...">Beyond TVL: An Explainable Risk Scoring Framework for Tokenized Real-World Assets</span></td>
+        <td class="author-cell">Rischan Mafrur</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.29689" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.29689" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1.【论文的motivation是什么】  
+该论文的动机在于探讨加密资产市场中，单纯使用如总锁仓价值（TVL）等传统指标无法全面评估代币化真实世界资产（RWAs）的风险。由于机构和市场参与者对RWAs的关注日渐增加，建立一个全面且透明的风险评估框架显得尤为重要。其次，目标在于通过数据驱动的方法展示市场参与者如何基于流动性、集中度和市场质量等多个维度来比较和评估代币化资产的投资性。
+
+2.【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作讨论了代币化对金融市场结构的影响，例如国际货币基金组织（IMF）指出代币化可能降低资产生命周期中的摩擦，并强调法律设计和市场效率的持续性对实现这些好处的关键性。尽管如此，目前的研究主要集中在代币化的宏观层面，而对具体资产的风险评估，尤其是在流动性与集中度方面的实证研究仍显不足。  
+
+3.【提出了什么创新的方法】  
+论文提出了一种可解释的风险评分框架，该框架从流动性风险、集中度风险和市场质量风险三个维度对RWAs进行评估。这些风险维度由可观察的指标构成，如转手率、持有者分布及活跃地址活动等，构建出一个综合的风险评分系统。该方法不仅提高了代币化资产风险评估的透明度，也为市场参与者提供了一个比较代币化资产的新基础。
+
+4.【文章缺点】  
+本研究可能存在对风险评分框架的具体参数选择缺乏充分的实证支持的问题，分数权重的确定过程可能影响评分的客观性。此外，论文中的样本规模较小，仅基于10种代币化RWAs进行分析，可能限制了结论的普适性。
+
+5.【类似工作】  
+1）IMF的相关报告研究了代币化对证券及资金管理的影响，并且涉及了市场摩擦的降低与法律设计的关系。  
+2）BIS关于代币化货币市场基金的研究，探讨了代币化资产流</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本文的动机在于解决传统变化点估计方法在处理具有非线性序列依赖的数据时的不足。这些传统方法往往假设观察值独立或存在线性依赖结构，而现实中的许多时间序列数据却表现出非线性和不对称的依赖特征，因此迫切需要一种更灵活的建模框架。其次，变化点的检测对于金融、气候学、可靠性研究等多个领域都至关重要，能够反映潜在的数据生成机制的重大变化，因此开发出有效的变化点估计...">Change-point estimation for Weibull time series with copula-based Markov models</span></td>
+        <td class="author-cell">Li-Hsien Sun</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.29541" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.29541" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本文的动机在于解决传统变化点估计方法在处理具有非线性序列依赖的数据时的不足。这些传统方法往往假设观察值独立或存在线性依赖结构，而现实中的许多时间序列数据却表现出非线性和不对称的依赖特征，因此迫切需要一种更灵活的建模框架。其次，变化点的检测对于金融、气候学、可靠性研究等多个领域都至关重要，能够反映潜在的数据生成机制的重大变化，因此开发出有效的变化点估计方法具有重要的实际意义。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作主要集中在利用最大似然估计(MLE)方法和线性模型进行变化点分析，然而，这些方法往往无法有效捕捉到实际数据中存在的非线性和不对称的依赖结构。此外，虽然已有的研究开始引入copula模型来建模非线性关系，但大部分现有的copula方法仅限于在线监测或特定的分布假设，无法适应更加广泛的非负时间序列数据和复杂的依赖结构，从而留下了模型灵活性上的空白。
+
+3. 【提出了什么创新的方法】  
+本文提出了一种基于copula的马尔可夫链模型，该模型通过引入Weibull边际分布来处理非负时间序列的离线变化点估计。这种方法具有很大的灵活性，能够通过Clayton和Joe copula有效捕捉到不对称的下尾和上尾依赖特征。此外，模型的参数估计采用了最大似然估计方法，并结合了牛顿-拉夫森算法来提高估计的效率，更好地满足实际应用的需求。
+
+4. 【文章缺点】  
+虽然提出的模型在估计变化点方面表现良好，但仍然可能受到数据量和样本覆盖范围的限制，尤其在小样本情况下，可能会影响估计结果的稳定性。此外，本文的数值研究虽然详细，但未能考虑其他可能的非线性形式或不同的copula结构，可能会影响结果</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】    该论文的动机在于探索大语言模型（LLM）在金融高风险决策环境中的行为对齐和表征动态。首先，它希望了解在复杂的金融决策过程中，LLM是否能展现出可测量的对齐或失败的特征，这些特征如何影响模型的交易决策。其次，研究者着眼于通过对全生命周期的观察-计划-风险-行动-反思过程的深入分析，揭示模型在执行交易时的真实表现，而不仅仅依赖于传统的回报曲线。  2....">Representation Signatures and Risk-Feedback Alignment in LLM Trading Agents</span></td>
+        <td class="author-cell">Weicheng Xue</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2605.28850" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2605.28850" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】
+   该论文的动机在于探索大语言模型（LLM）在金融高风险决策环境中的行为对齐和表征动态。首先，它希望了解在复杂的金融决策过程中，LLM是否能展现出可测量的对齐或失败的特征，这些特征如何影响模型的交易决策。其次，研究者着眼于通过对全生命周期的观察-计划-风险-行动-反思过程的深入分析，揭示模型在执行交易时的真实表现，而不仅仅依赖于传统的回报曲线。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】
+   先前的研究往往侧重于单一的回测结果或理想化的交易策略评估，未能深入分析LLM在决策过程中是否利用了未来信息或是否遵循了风险约束。因此，它们无法有效揭示模型在高风险环境中的表现。其次，现有的评估方法往往忽视了模型在执行过程中可能存在的统计不确定性，使得对其决策过程的理解相对有限。
+
+3. 【提出了什么创新的方法】
+   本文通过创建一个可审计的交易代理测试平台TradeArena，开展对LLM代理进行系统性的实验研究。研究者提出，通过对LLM的决策表示和意图进行全面的评估，可以实现对失败特征的量化分析。与此同时，论文还探讨了结构化风险反馈对模型意图的影响，揭示了模型在接受不同类型审计报告时的反应动态。
+
+4. 【文章缺点】
+   首先，尽管研究展示了多种方法的有效性，但依然缺乏对所有模型在不同行为动态下的全面比较，可能会限制结论的普适性。其次，文章虽然深入探讨了风险反馈的效果，但在衡量不同类型市场干扰对决策提出的挑战方面，仍需进一步研究。
+
+5. 【类似工作】
+   第一项相关工作可能是基于金融时间序列的因子模型研究，探讨模型对市场信号的灵敏度与表现的关系。第二项工作可能是关于算法交易中的风险管理，研究如何通过强化学习来优化</small></details></td>
+    </tr>
+        </tbody></table>
+    </div>
+</div>
+<div class="date-section" id="date-20260528">
+    <div class="date-header">
+        <span>2026-05-28（7篇论文）</span>
+        <span class="arrow">▶</span>
+    </div>
+    <div class="date-content" style="display: none;">
         <table>
         <!-- 添加 colgroup 明确指定每列宽度 -->
         <colgroup>
@@ -2058,7 +2368,7 @@ StakeBench 采用可观察的市场行为作为监督标准，定位参与方、
             });
             
             // ========== 自动展开最新日期 ==========
-            const latestId = 'date-20260528';
+            const latestId = 'date-20260529';
             if (latestId) {
                 const latestSection = document.getElementById(latestId);
                 if (latestSection) {
