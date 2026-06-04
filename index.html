@@ -628,7 +628,7 @@
         <header>
             <h1>📈 arXiv 量化金融领域论文汇总</h1>
             <div class="intro">
-                <p>📊 共 <strong>31</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
+                <p>📊 共 <strong>42</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
                 <p>🔗 点击日期可展开/折叠｜📚 Zotero 按钮需安装 <a href="https://www.zotero.org/download/connectors" target="_blank">Connector 插件</a></p>
             </div>
         </header>
@@ -636,17 +636,296 @@
         <!-- 日期导航 -->
         <nav class="nav">
             <strong>📅 日期导航：</strong>
-            <a href="#date-20260602">2026-06-02（21篇）</a> | <a href="#date-20260601">2026-06-01（10篇）</a>
+            <a href="#date-20260604">2026-06-04（11篇）</a> | <a href="#date-20260602">2026-06-02（21篇）</a> | <a href="#date-20260601">2026-06-01（10篇）</a>
         </nav>
 
         <!-- 论文内容区块 -->
         <main>
-            <div class="date-section" id="date-20260602">
+            <div class="date-section" id="date-20260604">
     <div class="date-header">
-        <span>2026-06-02（21篇论文）</span>
+        <span>2026-06-04（11篇论文）</span>
         <span class="arrow">▼</span>
     </div>
     <div class="date-content" style="display: block;">
+        <table>
+        <!-- 添加 colgroup 明确指定每列宽度 -->
+        <colgroup>
+            <col style="width: 25%">  <!-- Title -->
+            <col style="width: 15%">   <!-- Authors -->
+            <col style="width: 10%">   <!-- Resources -->
+            <col style="width: 10%">   <!-- Relevance -->
+            <col style="width: 40%">  <!-- Summary -->
+        </colgroup>
+        <thead>
+            <tr>
+                <th>标题</th>
+                <th>作者</th>
+                <th>资源</th>
+                <th>相关性</th>
+                <th>总结</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      1) 生成现实的金融时间序列面临挑战，尤其是在训练数据有限的情况下，容易导致过拟合。      2) 现有方法在特征匹配生成模型时，使用的特征映射（如路径签名）在捕捉时间序列的相关属性时存在局限性，因此需要寻找更有效的特征匹配方法。  2. 【前人的工作如何解决该问题，存在哪些空白】      1) 之前的研究通过固定特征映射进行特征匹配，尝试...">Generating Financial Time Series by Matching Random Convolutional Features</span></td>
+        <td class="author-cell">Konrad J. Mueller</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.05138" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.05138" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：5/5">★★★★★</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+   1) 生成现实的金融时间序列面临挑战，尤其是在训练数据有限的情况下，容易导致过拟合。  
+   2) 现有方法在特征匹配生成模型时，使用的特征映射（如路径签名）在捕捉时间序列的相关属性时存在局限性，因此需要寻找更有效的特征匹配方法。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+   1) 之前的研究通过固定特征映射进行特征匹配，尝试训练生成模型以减少真实与生成时间序列之间的特征差异，但这些方法在小样本情况下的表现并不理想。  
+   2) 尽管随机卷积特征映射（如Rocket和Hydra）在分类任务中表现优异，但由于其不可微分性，无法直接用于生成模型的监督训练，导致这一领域存在空白。
+
+3. 【提出了什么创新的方法】  
+   1) 本文提出了一种新的可微分随机卷积特征映射SOCK（SOft Competing Kernels），可以有效地用于训练生成时间序列模型。  
+   2) 通过匹配随机卷积特征，本文的方法在多个小样本金融数据集上表现优于传统的路径签名和扩散基线。
+
+4. 【文章缺点】  
+   1) 尽管SOCK在生成模型中表现良好，但其复杂性可能导致计算资源的高消耗，限制了其在大规模数据集上的应用。  
+   2) 文章主要集中在小样本数据集的实验，尚未充分验证其在大样本或不同金融市场条件下的有效性。
+
+5. 【类似工作】  
+   1) Dempster等人提出的Rocket和Hydra特征映射在时间序列分类任务中表现出色，虽然它们无法用于生成模型的训练。  
+   2) Ni等人的研究通过固定特征映射进行时间序列生成，尽管在理论上有其优势，但在实际应用中存在局限性。
+
+6. 【相关性评分】  
+分数：5分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于有效管理金融风险的重要性，尤其是对风险度量指标如VaR和ES的需求。随着大数据时代的到来，现有方法由于参数限制而易受模型错误指定的影响，因此需要更为复杂和灵活的模型来捕捉资产的交叉依赖性和长期动态。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的研究主要集中在使用参数化或半参数化模型进行VaR和ES的联合预测，Fiss...">ReSGA: A Large Tail Risk Model for Learning Value-at-Risk and Expected Shortfall</span></td>
+        <td class="author-cell">Yichi Zhang</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.04576" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.04576" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：5/5">★★★★★</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本论文的动机在于有效管理金融风险的重要性，尤其是对风险度量指标如VaR和ES的需求。随着大数据时代的到来，现有方法由于参数限制而易受模型错误指定的影响，因此需要更为复杂和灵活的模型来捕捉资产的交叉依赖性和长期动态。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究主要集中在使用参数化或半参数化模型进行VaR和ES的联合预测，Fissler和Ziegel（2016）提出的FZ损失函数为解决ES的不可引导性提供了突破。然而，大多数现有工作仍然局限于较少参数的模型，未能充分利用大数据的潜力，导致在复杂数据环境下的预测能力不足。
+
+3. 【提出了什么创新的方法】  
+本研究提出了一种新的大尾风险模型——检索增强自分组自编码器（ReSGA），该模型设计了数百万个参数，以更好地利用资产特征的丰富交叉依赖性和长期时间动态。此外，文章还通过系统的缩放分析表明，VaR和ES联合预测的改进主要源于数据复杂性而非模型复杂性。
+
+4. 【文章缺点】  
+尽管ReSGA在预测性能上优于现有方法，但其复杂性可能导致模型的可解释性降低。此外，模型的高参数化可能在实际应用中面临过拟合的风险，尤其是在样本量有限的情况下。
+
+5. 【类似工作】  
+类似的工作包括Patton, Ziegel和Chen（2019）利用FZ损失函数进行半参数设置的VaR-ES联合预测，以及Taylor（2019）通过不对称拉普拉斯似然与FZ损失的联系进行联合估计的研究。
+
+6. 【相关性评分】  
+分数：5分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      该论文的动机在于填补预测市场微观结构研究中的数据空白，尤其是缺乏系统的实证证据来支持关于价格形成、流动性演变和信息交易的理论假设。其次，作者希望通过提供一个完整的、基于区块链的交易档案，来验证和挑战现有市场微观结构模型的假设，特别是在交易方向推断的准确性方面。  2. 【前人的工作如何解决该问题，存在哪些空白】      前人的工作主要集中在预...">Polymarket-v1 Database</span></td>
+        <td class="author-cell">Boka Qin</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.04217" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.04217" target="_blank" rel="noopener">🧠 AlphaXiv</a><br><a class="resource-tag code" href="https://huggingface.co/datasets/TimeSeventeen/Polymarket-v1" target="_blank" rel="noopener">🔗 Code1</a><br><details class="resource-comment"><summary>📝 备注</summary><small>. Dataset available atthis https URL</small></details></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：5/5">★★★★★</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+   该论文的动机在于填补预测市场微观结构研究中的数据空白，尤其是缺乏系统的实证证据来支持关于价格形成、流动性演变和信息交易的理论假设。其次，作者希望通过提供一个完整的、基于区块链的交易档案，来验证和挑战现有市场微观结构模型的假设，特别是在交易方向推断的准确性方面。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+   前人的工作主要集中在预测市场的准确性和信息聚合特性上，但往往依赖于启发式推断交易方向，缺乏对完整平台生命周期的系统性研究。此外，现有的分析通常只关注短期窗口或单一事件，未能探索完整的交易生命周期和微观结构特性，这导致了对市场行为的理解存在局限。
+
+3. 【提出了什么创新的方法】  
+   本文提出了Polymarket-v1数据库，提供了一个完整的、基于区块链的交易档案，包含1.2亿笔交易和1.3百万个市场，且每笔交易都带有真实的买卖方向。此外，作者通过验证标准的交易分类算法，揭示了其在实际应用中的系统性失效，提出了基于真实数据的微观结构质量预测模型。
+
+4. 【文章缺点】  
+   文章可能过于依赖于区块链数据的准确性，而未充分考虑其他可能影响交易行为的外部因素。此外，尽管提供了大量数据，文章的分析可能仍然受到样本选择偏差的影响，尤其是在高传播市场中。
+
+5. 【类似工作】  
+   1) Dubach (2026) 的研究聚焦于短期预测市场的交易行为，使用启发式方法推断交易方向。  
+   2) Yang 和 Tsang (2026) 的工作分析了单一事件的市场反应，但未能提供完整生命周期的实证数据。
+
+6. 【相关性评分】  
+分数：5分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于揭示生命保险盈余的分解不仅受到生物风险的影响，还受到金融风险的影响。通过对盈余进行合理的分解，可以帮助保险公司更好地理解和管理其风险。此外，现有的生命表更新周期为一年，如何在这一周期内进行有效的插值以进行盈余分解，成为了一个亟待解决的问题。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的研究主要集中在生命保险盈余的分解...">How the interpolation of life tables affects the decomposition of life insurance surplus</span></td>
+        <td class="author-cell">Mintodê Nicodème Atchadé</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.04715" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.04715" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本论文的动机在于揭示生命保险盈余的分解不仅受到生物风险的影响，还受到金融风险的影响。通过对盈余进行合理的分解，可以帮助保险公司更好地理解和管理其风险。此外，现有的生命表更新周期为一年，如何在这一周期内进行有效的插值以进行盈余分解，成为了一个亟待解决的问题。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究主要集中在生命保险盈余的分解方法上，例如使用传统的Shapley值进行分解。然而，现有的研究往往忽视了生命表更新频率对盈余分解结果的影响，导致在实际应用中可能出现偏差。此外，虽然已有一些插值方法被提出，但缺乏对不同插值方法在盈余分解中影响的系统性分析。
+
+3. 【提出了什么创新的方法】  
+本论文提出了一种基于IASU分解的创新方法，结合了不同的插值技术（如线性插值、和谐插值及常数近似）来分析生命保险盈余的分解效果。通过实证分析，论文展示了不同插值方法对盈余分解结果的显著影响，强调了监管机构在插值方法选择上的重要性。
+
+4. 【文章缺点】  
+首先，论文的实证分析主要基于德国的生命表和政府债券价格，可能限制了其结果的普适性。其次，虽然提出了多种插值方法，但对每种方法的理论基础和适用场景的深入探讨相对不足，可能影响其在其他市场的应用。
+
+5. 【类似工作】  
+类似的工作包括Helbig和Milbrodt（1999）对生命保险盈余分解的研究，以及Carter和Lee（1992）提出的和谐插值方法。这些研究为本论文提供了理论基础，但未能深入探讨插值方法对盈余分解的具体影响。
+
+6. 【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于探讨如何通过丰富的模型来优化投资组合，以超越传统的短视价格接受者模型。首先，作者希望通过引入信息、动态预测和市场影响等因素，提升投资组合优化的有效性。其次，论文旨在提供一个统一的决策理论框架，以便更好地理解和量化不同类型的预期投资组合优化方法之间的关系。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的工作主要集中在不同...">Anticipatory Portfolio Optimization</span></td>
+        <td class="author-cell">Miquel Noguer i Alonso</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.04258" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.04258" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本论文的动机在于探讨如何通过丰富的模型来优化投资组合，以超越传统的短视价格接受者模型。首先，作者希望通过引入信息、动态预测和市场影响等因素，提升投资组合优化的有效性。其次，论文旨在提供一个统一的决策理论框架，以便更好地理解和量化不同类型的预期投资组合优化方法之间的关系。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作主要集中在不同的预期投资组合优化方法上，例如Pikovsky和Karatzas（1996）提出的基于未来功能的适应性投资组合。然而，这些研究并未整合不同的预期概念，导致缺乏一个统一的理论框架来理解这些方法的异同。其次，现有文献往往忽视了市场影响在投资组合优化中的作用，未能充分探讨如何将市场反馈纳入决策过程。
+
+3. 【提出了什么创新的方法】  
+本论文提出了一种统一的决策理论定义，涵盖了信息、动态预测和市场影响三种预期投资组合优化方法。通过量化“控制差距”，论文能够评估不同优化策略的有效性。此外，作者还引入了一个精确的有限时间预测公式，以量化动态预期的价值。
+
+4. 【文章缺点】  
+首先，尽管论文提出了统一的框架，但在实际应用中，如何有效地实施这些理论仍然缺乏具体的指导。其次，论文对市场影响的建模可能过于理想化，未能充分考虑市场的复杂性和不确定性。
+
+5. 【类似工作】  
+类似的工作包括Pikovsky和Karatzas（1996）关于适应性投资组合的研究，以及多期模型预测控制的相关文献，这些研究都涉及到如何在动态环境中优化投资组合。
+
+6. 【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      该论文的动机在于解决未清算衍生品的抵押品优化问题，该问题涉及法律约束、操作离散性和经济重要性。金融机构必须在满足保证金要求的同时，遵循信用支持附录（CSA）等多种复杂规则，以确保抵押品的合规性和有效性。  2. 【前人的工作如何解决该问题，存在哪些空白】      前人的工作主要通过整数规划和混合整数规划（MILP）模型来处理抵押品分配问题，例...">A Certified Higher Order Quantum Framework for CSA and Margin-Aware Collateral Optimization</span></td>
+        <td class="author-cell">Tao Jin</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.04235" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.04235" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+   该论文的动机在于解决未清算衍生品的抵押品优化问题，该问题涉及法律约束、操作离散性和经济重要性。金融机构必须在满足保证金要求的同时，遵循信用支持附录（CSA）等多种复杂规则，以确保抵押品的合规性和有效性。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+   前人的工作主要通过整数规划和混合整数规划（MILP）模型来处理抵押品分配问题，例如Giron等人的研究将抵押品问题转化为适合NISQ和量子启发实验的QUBO。然而，这些工作在从QUBO演示到实际抵押品结构的应用之间存在明显的空白，缺乏对更高阶哈密顿量的系统性研究。
+
+3. 【提出了什么创新的方法】  
+   本文提出了一种认证的高阶量子候选生成框架（CR-HO-QAOA），该框架通过构建局部高阶哈密顿量和使用约束保持的量子动力学来提高候选解的可行性和多样性。此外，论文还探讨了如何将抵押品超图映射到Pauli-ZZ哈密顿量，并在明确的资源网格下进行评估。
+
+4. 【文章缺点】  
+   文章的一个缺点是对量子算法的具体实现细节描述不够充分，可能导致实际应用中的不确定性。另一个缺点是虽然提出了创新的方法，但缺乏对与经典方法相比的性能评估，可能影响其实际应用的说服力。
+
+5. 【类似工作】  
+   类似的工作包括Giron等人的研究，该研究将抵押品优化问题转化为QUBO，并探索了量子启发的计算方法。另一个相关工作是Pyligent V1，展示了混合LLM和HO-QAOA在CSA抵押品管理中的应用。
+
+6. 【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文的动机在于传统的线性回归方法在预测金融收益时表现不佳，尤其是在样本外的预测能力上常常无法超越历史平均水平。其次，现有的线性模型未能充分利用潜在的非线性动态特征，导致对收益的预测存在显著的局限性。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的工作，如Elliott等人提出的完全子集回归（CSR）方法，通过在多个线性模型中平均预测...">A new decomposition approach to modeling financial returns: Conditioning sign on magnitude</span></td>
+        <td class="author-cell">Arsène Brou</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.04153" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.04153" target="_blank" rel="noopener">🧠 AlphaXiv</a><br><details class="resource-comment"><summary>📝 备注</summary><small>Author accepted manuscript. Accepted for publication in the Journal of Banking and Finance</small></details></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+该论文的动机在于传统的线性回归方法在预测金融收益时表现不佳，尤其是在样本外的预测能力上常常无法超越历史平均水平。其次，现有的线性模型未能充分利用潜在的非线性动态特征，导致对收益的预测存在显著的局限性。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作，如Elliott等人提出的完全子集回归（CSR）方法，通过在多个线性模型中平均预测来减轻模型选择风险，已显示出优于传统OLS的性能。然而，这些方法仍然局限于线性框架，未能有效捕捉收益的非线性动态。Anatolyev和Gospodinov提出的分解方法虽然引入了非线性结构，但在模型的构建和应用上仍存在一定的局限性。
+
+3. 【提出了什么创新的方法】  
+本文提出了一种新的分解策略，称为条件符号与幅度（CSM）方法。该方法与AG的思路相似，将收益分解为符号和幅度两个部分，但通过新的方式来指定这两个组件，从而更好地捕捉收益的非线性动态特征。
+
+4. 【文章缺点】  
+首先，虽然CSM方法在理论上提供了对非线性动态的更好捕捉，但其实际应用可能面临数据稀疏性的问题，影响模型的稳定性。其次，CSM方法的复杂性可能导致计算成本较高，限制了其在实际金融市场中的广泛应用。
+
+5. 【类似工作】  
+类似的工作包括Anatolyev和Gospodinov的分解方法，该方法通过符号和幅度的结合来建模收益动态；以及Elliott等人的CSR方法，通过多个线性模型的平均来应对模型不确定性。
+
+6. 【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      本文的动机在于探讨大型语言模型（LLMs）在风险决策任务中的表现，尤其是它们在输出看似谨慎的决策时，是否真正与人类的决策机制相一致。通过使用圣彼得堡游戏作为实验基础，研究者希望揭示LLMs在风险决策中的表面相似性与机制一致性之间的差异。      其次，随着LLMs在高风险决策场景中的应用日益增多，了解它们的决策机制是否与人类一致变得尤为重要，...">Probing Outcome-Level Resemblance and Mechanism-Level Alignment in LLM Risk Decisions: Evidence from the St. Petersburg Game</span></td>
+        <td class="author-cell">Chensong Huang</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.04978" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.04978" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+   本文的动机在于探讨大型语言模型（LLMs）在风险决策任务中的表现，尤其是它们在输出看似谨慎的决策时，是否真正与人类的决策机制相一致。通过使用圣彼得堡游戏作为实验基础，研究者希望揭示LLMs在风险决策中的表面相似性与机制一致性之间的差异。  
+   其次，随着LLMs在高风险决策场景中的应用日益增多，了解它们的决策机制是否与人类一致变得尤为重要，以避免在实际应用中出现不可预知的行为。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+   先前的研究表明，LLMs在风险决策任务中能够表现出与人类相似的行为模式，然而这些研究往往未能深入探讨LLMs的决策机制是否真正与人类一致。  
+   此外，尽管已有研究使用经典悖论（如圣彼得堡悖论）来分析人类的风险决策，但对LLMs在这些悖论下的表现及其机制的系统性比较仍然缺乏。
+
+3. 【提出了什么创新的方法】  
+   本文通过设计一系列结构化的提示，系统评估28个LLMs在圣彼得堡游戏及其变体中的表现，从而揭示它们在风险决策中的机制一致性。  
+   研究还引入了人类视角的提示，要求模型以人类决策者的方式进行推理，从而比较基础模型与经过指令调优的模型之间的差异。
+
+4. 【文章缺点】  
+   本文的一个缺点是，尽管探讨了多种模型的表现，但可能未能涵盖所有主流的LLMs，导致结果的普适性受到限制。  
+   另一个缺点是，虽然使用了多种变体来测试模型的反应，但可能未能充分考虑所有可能影响决策机制的外部因素。
+
+5. 【类似工作】  
+   相关的工作包括对LLMs在金融决策支持中的应用研究（如保险风险分析和金融决</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      本文的动机在于探讨自动化市场制造商（AMM）中流动性提供者（LP）对交易函数的投票权问题。首先，流动性提供者在市场中承担价格风险，因此让他们参与设计交易函数的决策过程是合理的。其次，当前的AMM协议未能提供这种参与机制，作者认为这不仅是一个工程上的疏忽，而是一个结构性限制，值得深入研究。  2. 【前人的工作如何解决该问题，存在哪些空白】   ...">Fairness and Strategy-Proofness in Automated Market Makers</span></td>
+        <td class="author-cell">Frank M. V. Feys</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.04959" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.04959" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+   本文的动机在于探讨自动化市场制造商（AMM）中流动性提供者（LP）对交易函数的投票权问题。首先，流动性提供者在市场中承担价格风险，因此让他们参与设计交易函数的决策过程是合理的。其次，当前的AMM协议未能提供这种参与机制，作者认为这不仅是一个工程上的疏忽，而是一个结构性限制，值得深入研究。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+   前人的研究主要集中在AMM的交易函数设计及其对市场流动性的影响，但并未考虑流动性提供者的偏好对交易函数选择的影响。现有文献通常假设交易函数是固定的，缺乏对流动性提供者参与决策过程的讨论。此外，虽然有研究探讨了公平性和策略无关性，但在多资产情况下，这些研究未能提供一个同时满足这两者的聚合规则。
+
+3. 【提出了什么创新的方法】  
+   本文提出了一个新的视角，分析了在多资产情况下，公平性与策略无关性之间的冲突。作者证明，在n≥3的情况下，任何同时满足公平性和策略无关性的聚合规则都只能是单一提供者的独裁者。此外，文中引入了加权Aitchison重心的概念，作为流动性提供者偏好的唯一公平聚合形式。
+
+4. 【文章缺点】  
+   本文的一个缺点是其主要结果仅适用于n≥3的多资产情况，限制了其对实际应用的广泛性。另一个缺点是，尽管探讨了流动性提供者的参与问题，但未能提供具体的解决方案或替代机制来克服当前协议的结构性限制。
+
+5. 【类似工作】  
+   类似的工作包括Schlegel等人（2023）对CFMM文献的综述，探讨了交易函数的性质及其对市场流动性的影响；以及Frongillo等人（2024）对公平性与策略无关性的研究，虽然未能解决多资产情况下的聚合规则问题，但</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于揭示在零工市场中，工人的效用并不是直接可观察的，而是通过交易的接受或拒绝来反映的。这种结构不仅是一个测量障碍，更是一个理论上有意义的约束，指向了Preisach滞后模型作为潜在工人偏好的自然表示。其次，传统的工作搜索模型在处理零工交易时存在局限性，无法准确捕捉工人群体对工资变化的响应，尤其是在工人具有不同外部选择的情况下。  2. 【...">Worker Utility as Hysteresis: A Preisach Model of Transaction Acceptance in Gig Labour Markets</span></td>
+        <td class="author-cell">Piotr Frydrych</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.04916" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.04916" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本论文的动机在于揭示在零工市场中，工人的效用并不是直接可观察的，而是通过交易的接受或拒绝来反映的。这种结构不仅是一个测量障碍，更是一个理论上有意义的约束，指向了Preisach滞后模型作为潜在工人偏好的自然表示。其次，传统的工作搜索模型在处理零工交易时存在局限性，无法准确捕捉工人群体对工资变化的响应，尤其是在工人具有不同外部选择的情况下。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究主要集中在工人效用的隐含特征和选择模型上，例如Roy的选择模型和McFadden的随机效用模型。这些模型虽然为理解工人选择提供了基础，但它们假设了静态偏好和独立交易的抽样，这在动态的零工市场中并不成立。此外，现有文献未能充分考虑工人群体的异质性及其对交易接受的影响，导致对价格敏感度的估计存在系统性扭曲。
+
+3. 【提出了什么创新的方法】  
+本研究提出了一种基于Preisach滞后模型的创新方法，通过双输出神经网络估计工人的接受效用和拒绝效用，进而利用XGBoost分类器进行交易接受的分类。这一方法不仅考虑了工人群体的异质性，还通过价格到阈值的编码增强了模型的预测能力，最终在实际数据中取得了较高的分类效果。
+
+4. 【文章缺点】  
+首先，模型的复杂性可能导致其在实际应用中的可解释性不足，尤其是在决策制定过程中。其次，尽管模型在数据集上表现良好，但其泛化能力仍需进一步验证，特别是在不同类型的零工市场中。
+
+5. 【类似工作】  
+类似的研究包括Crawford和Meng（2011）关于出租车司机的收入目标设定的研究，以及Dube等（2020）关于最低工资对就业影响的研究。这些研究同样关注工人效用的动态特征和参考点的变化，但未</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本研究的动机在于，传统的配对交易策略在高波动性的加密货币市场中表现出刚性和严重的偏差风险，因此亟需一种更灵活的执行策略。其次，随着加密货币市场的快速发展，现有的统计套利方法未能有效应对市场的高变异性和频繁的状态变化，导致传统方法的适用性受到限制。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的工作主要集中在传统股票市场的配对交易策略上...">Dynamic Multi-Pair Trading Strategy in Cryptocurrency Markets with Deep Reinforcement Learning</span></td>
+        <td class="author-cell">Damian Lebiedź</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.04574" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.04574" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本研究的动机在于，传统的配对交易策略在高波动性的加密货币市场中表现出刚性和严重的偏差风险，因此亟需一种更灵活的执行策略。其次，随着加密货币市场的快速发展，现有的统计套利方法未能有效应对市场的高变异性和频繁的状态变化，导致传统方法的适用性受到限制。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作主要集中在传统股票市场的配对交易策略上，利用统计套利方法成功捕捉价格异常。然而，这些方法在加密货币市场中面临着高波动性和市场结构变化带来的挑战，导致其有效性大打折扣。其次，尽管已有研究尝试将深度强化学习应用于金融领域，但在加密货币市场的具体应用仍然较少，缺乏针对性的方法和框架。
+
+3. 【提出了什么创新的方法】  
+本研究提出了一种动态多配对交易策略，结合了深度强化学习作为执行覆盖层。具体来说，研究开发了一个分层的“过滤-排序”配对选择方法和一个专有的“固定风险、适应均值”执行模型，以提高策略的灵活性和适应性。此外，采用了近端策略优化（PPO）代理与长短期记忆（LSTM）层相结合，以确保在严格的风险管理边界内做出执行决策。
+
+4. 【文章缺点】  
+首先，尽管研究结果在10%的显著性水平上表现出风险调整后的超额收益，但未能达到更严格的5%显著性水平，显示出加密资产的极端特异性方差可能影响结果的稳健性。其次，文章未能充分探讨不同强化学习配置（如奖励函数和观察空间设计）对策略性能的具体影响，这可能限制了方法的普适性和可推广性。
+
+5. 【类似工作】  
+类似的工作包括利用深度学习技术进行金融市场预测的研究，如基于深度学习的算法交易策略，以及在高频交易中应用强化学习的研究。这些研究虽然在不同</small></details></td>
+    </tr>
+        </tbody></table>
+    </div>
+</div>
+<div class="date-section" id="date-20260602">
+    <div class="date-header">
+        <span>2026-06-02（21篇论文）</span>
+        <span class="arrow">▶</span>
+    </div>
+    <div class="date-content" style="display: none;">
         <table>
         <!-- 添加 colgroup 明确指定每列宽度 -->
         <colgroup>
@@ -1461,7 +1740,7 @@
             });
             
             // ========== 自动展开最新日期 ==========
-            const latestId = 'date-20260602';
+            const latestId = 'date-20260604';
             if (latestId) {
                 const latestSection = document.getElementById(latestId);
                 if (latestSection) {
