@@ -1,16 +1,153 @@
-# arXiv 量化金融领域论文汇总（共63篇）
+# arXiv 量化金融领域论文汇总（共74篇）
 
 > 说明：仅显示最近五天数据，当天论文默认展开，其他日期点击标题可展开/折叠
 > 相关性评分：基于LLM对量化金融领域的相关性评定（1-5分，★越多相关性越高）
 
 ## 日期导航
+- [2026-06-09（21篇论文）](#date-20260609)
 - [2026-06-08（12篇论文）](#date-20260608)
 - [2026-06-05（9篇论文）](#date-20260605)
 - [2026-06-04（11篇论文）](#date-20260604)
 - [2026-06-02（21篇论文）](#date-20260602)
-- [2026-06-01（10篇论文）](#date-20260601)
 
-## <a id='date-20260608'></a>2026-06-08（12篇论文）
+## <a id='date-20260609'></a>2026-06-09（21篇论文）
+
+<table>
+<thead>
+<tr><th>Title</th><th>Author</th><th>PDF</th><th>Code</th><th>Relevance</th></tr>
+</thead>
+<tbody>
+<tr><td>Volatility Forecasting and Return Prediction under Market Regimes: Evidence from High-Frequency Chinese Equity Data</td><td>Xinyue Fang</td><td><a href="https://arxiv.org/pdf/2606.09478">PDF</a></td><td>-</td><td>★★★★★</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★★<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.09478">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】<br>   本文的动机在于探讨如何在市场状态下进行波动率预测和收益预测的联合整合，以提高股市的统计预测性能和经济策略结果。具体来说，研究旨在解决金融市场中波动率的持久性和可预测性问题，以及如何将这些信息转化为经济上有意义的交易表现。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】<br>   前人的研究主要集中在波动率预测和收益预测的两个独立领域，虽然已开发出多种基于高频数据的波动率模型和机器学习方法，但对如何将市场状态依赖的波动率信息系统性地融入机器学习的收益预测框架的关注仍然不足。此外，即使在统计可预测性被识别的情况下，其经济价值也高度依赖于实施选择，这在现有文献中尚未得到充分探讨。<br><br>3. 【提出了什么创新的方法】<br>   本文提出了一种两阶段的框架，第一阶段使用市场状态增强的HARQ规格和马尔可夫切换GJR-GARCH过滤器建模实现波动率，以捕捉长期记忆动态和市场结构；第二阶段则将波动率预测、市场状态指示器和收益相关预测变量结合到XGBoost收益预测模型中，采用严格的前向滚动样本外程序进行估计。<br><br>4. 【文章缺点】<br>   文章的一个缺点是尽管提出了创新的方法，但在实际交易策略的实现中，仍然可能受到交易成本的显著影响，导致预测的经济价值被削弱。另一个缺点是收益预测的有效性在不同市场状态下表现不均，尤其是在低波动率状态下集中，可能限制了其广泛适用性。<br><br>5. 【类似工作】<br>   类似的工作包括利用高频数据进行波动率建模的研究（如Corsi等人的工作），以及将机器学习方法应用于金融市场收益预测的研究（如Chen和Guestrin的研究）。这些研究为本文提供了理论基础和方法论支持。<br><br>6. 【相关性评分】<br>   分数：5分
+
+</details></td></tr>
+<tr><td>Markets Are Not Random, They Are Hard to Predict</td><td>Miquel Noguer i Alonso</td><td><a href="https://arxiv.org/pdf/2606.08209">PDF</a></td><td>-</td><td>★★★★★</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★★<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.08209">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于澄清金融市场的性质，强调金融回报并非真正的随机，而是由于隐藏的因果关系和信息不对称导致的难以预测。作者希望通过这一论点纠正金融学界普遍存在的对市场随机性的误解。其次，论文试图揭示市场的复杂性，指出市场的预测难度源于多种因素，包括战略反馈、模型不稳定性和信息的局限性。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究通常将金融市场视为随机过程，采用随机游走模型等方法来解释市场行为。然而，这些模型未能充分考虑市场中的因果关系和信息结构，导致对市场行为的片面理解。其次，尽管有一些研究探讨了市场的非随机性，但缺乏对市场预测难度的系统性分析，未能深入探讨隐藏因果关系和信息不对称如何影响市场预测。<br><br>3. 【提出了什么创新的方法】  <br>论文提出了一种新的视角，强调金融市场是因果经济系统，而非简单的随机过程。作者使用了Doob分解法，将风险补偿的可预测漂移与马尔可夫创新分离开来，从而更清晰地理解市场的预测难度。此外，论文还引入了容量和生存层面的分析，解释了为何正信号不一定具备可扩展性，从而丰富了对市场行为的理解。<br><br>4. 【文章缺点】  <br>该论文较为理论化，可能缺乏实证数据的支持，使得一些观点难以被广泛接受。其次，虽然论文探讨了市场的复杂性，但对于如何在实际交易中应用这些理论的指导性较弱，可能导致实际操作中的困难。<br><br>5. 【类似工作】  <br>类似的工作包括对市场非随机性的探讨，如“市场微观结构”研究，分析市场参与者行为对价格形成的影响；另一个相关工作是“信息效率”理论，探讨市场如何在信息不对称的情况下运作。<br><br>6. 【相关性评分】  <br>分数：5分
+
+</details></td></tr>
+<tr><td>Evaluating AI Investment Strategies</td><td>Irene Aldridge</td><td><a href="https://arxiv.org/pdf/2606.08791">PDF</a></td><td>-</td><td>★★★★★</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★★<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.08791">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于解决如何审计黑箱算法决策者的问题，尤其是在算法无法被直接访问的情况下。随着AI在金融领域的广泛应用，如何对这些算法进行有效的监管和审计变得尤为重要。其次，现有的审计流程存在痛苦和不精确的问题，迫切需要一种可行的解决方案来评估算法的表现。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人工作如Aldridge (2026) 提出了单期线性优化中预期悔恨与成本向量和决策之间的协方差之间的关系，但未能将其推广到多期动态编程的背景下。尽管Carlin等人（2026）和Jia等人（2026）对算法和零售交易者的表现进行了研究，但缺乏一种系统的方法来从外部评估算法的累积悔恨。<br><br>3. 【提出了什么创新的方法】  <br>本文提出了一种新的方法，通过观察输入和输出序列来测量动态算法策略的累积悔恨，具体是将悔恨与每期输入输出的协方差进行精确分解。这种方法不仅为算法审计提供了可行的解决方案，还将监管监督重新框架为统计测试问题。<br><br>4. 【文章缺点】  <br>首先，尽管提出的方法在理论上具有创新性，但在实际应用中可能面临数据获取和处理的挑战。其次，文章主要集中于算法的外部审计，可能未能充分考虑内部优化器的复杂性和潜在的模型风险。<br><br>5. 【类似工作】  <br>类似的工作包括Aldridge (2026) 的单期悔恨分析，以及Carlin等人（2026）对算法推荐的实证研究，这些研究为理解算法决策提供了基础，但缺乏对多期动态环境的深入探讨。<br><br>6. 【相关性评分】  <br>分数：5分
+
+</details></td></tr>
+<tr><td>TT-DAC-PS: Twin-Target Deterministic Actor-Critic with Policy Smoothing for Optimal Trade Execution</td><td>Ilia Zaznov</td><td><a href="https://arxiv.org/pdf/2606.08379">PDF</a></td><td>-</td><td>★★★★★</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★★<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.08379">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于解决大型股票卖出程序的最优执行问题，旨在以最低的成本和风险将交易意图转化为实际交易。具体而言，作者关注于如何在不显著影响市场价格的情况下完成大额交易，同时控制执行结果的不确定性，从而降低实施短缺（IS）。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要通过经典的执行理论和算法（如TWAP和VWAP）来解决最优交易问题，这些方法提供了可解释性和稳健性。然而，这些经典方法在面对非线性影响、时间变化流动性和市场结构变化等结构性错误时表现出脆弱性，未能有效应对真实市场的非平稳性。<br><br>3. 【提出了什么创新的方法】  <br>论文提出了一种新的TT-DAC-PS算法，该算法结合了双重目标的确定性演员-评论家架构、悲观最小备份、目标策略平滑噪声和延迟演员更新等创新方法。这些方法旨在提高交易执行的效率，并通过混合自适应探索设计来增强算法的稳定性。<br><br>4. 【文章缺点】  <br>该研究可能在实际应用中面临复杂市场环境的挑战，模型的假设可能不完全符合真实市场的动态。此外，尽管论文展示了算法的优越性，但在不同市场条件下的普适性和鲁棒性尚需进一步验证。<br><br>5. 【类似工作】  <br>类似的工作包括Almgren-Chriss框架，该框架为最优交易轨迹提供了理论基础；以及基于强化学习的适应性调度算法，这些算法强调探索设计和稳定性。<br><br>6. 【相关性评分】  <br>分数：5分
+
+</details></td></tr>
+<tr><td>A Structural Matrix Autoregressive Model for the Joint Dynamics of Volume, Volatility, and Returns</td><td>Andrea Bucci</td><td><a href="https://arxiv.org/pdf/2606.08141">PDF</a></td><td>-</td><td>★★★★★</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★★<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.08141">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   该论文的动机在于理解金融市场中波动性、交易量和资产收益之间的动态关系，尤其是在极端事件导致市场剧烈波动的背景下。通过分析这些变量的共同动态，研究者希望为市场参与者、机构和政策制定者提供更深入的见解，以便更好地进行资产管理和风险对冲。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的研究主要集中在资产价格与其波动性之间的动态关系，而对交易量的分析相对较少，尽管交易量是市场情绪的重要指标。此外，现有的方法在同时建模价格动态和交易量时面临方法论挑战，特别是在区分信息冲击与流动性约束的动态方面，这些空白为本研究提供了切入点。<br><br>3. 【提出了什么创新的方法】  <br>   本文提出了一种结构化矩阵自回归（SMAR）模型，该模型能够在大维度设置中同时捕捉金融变量之间的动态溢出效应和资产之间的横截面依赖性。此外，该模型在参数化上相较于传统的向量自回归模型更加简约，并通过符合混合分布假设和有效市场理论的限制进行结构识别。<br><br>4. 【文章缺点】  <br>   该研究可能在处理大量资产时面临识别参数的挑战，因为所需的约束条件数量随着资产数量的增加而呈平方增长。此外，模型的复杂性可能导致在实际应用中难以解释和实施。<br><br>5. 【类似工作】  <br>   1) He和Velu（2014）开发的多资产混合分布假设模型，探讨了股票收益和交易量的共同性。  <br>   2) Chordia等（2000）对个别股票的流动性-波动性关系进行了可靠评估，虽然关注点不同，但与本文的主题相关。<br><br>6. 【相关性评分】  <br>   分数：5分
+
+</details></td></tr>
+<tr><td>Option prices from operational-time reaction-boundary lattices</td><td>Chris Angstmann</td><td><a href="https://arxiv.org/pdf/2606.09564">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.09564">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：Working paper:, 2 Figures, a short outlined calculation in an appendix<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于探讨操作时间（operational time）与日历时间（calendar time）之间的关系，以及如何将其映射到事件时间（event time）以解决期权定价问题。通过重新审视期权定价的基础，作者希望提供一种新的视角来理解市场价格的形成机制。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要集中在使用几何布朗运动和伊藤引理来推导Black-Scholes-Merton（BSM）方程，虽然这种方法在金融文献中广泛应用，但缺乏对离散时间模型的深入探讨。此外，现有文献对操作时间的理解相对薄弱，未能充分利用离散马尔可夫模型的潜力来推导期权定价方程。<br><br>3. 【提出了什么创新的方法】  <br>本文提出了一种基于操作时间的马尔可夫格子模型，利用最近邻的对数价格格子构建状态和时间依赖的转移概率，从而推导出期权定价方程。通过这种方法，作者能够在不依赖于伊藤微积分的情况下，直接从离散模型出发推导出连续的定价方程。<br><br>4. 【文章缺点】  <br>首先，论文可能对操作时间的定义和应用缺乏足够的直观解释，可能导致读者理解上的困难。其次，尽管提出了新的模型，但其在实际市场中的适用性和有效性仍需进一步验证和实证研究。<br><br>5. 【类似工作】  <br>类似的工作包括Cox等人提出的二叉树模型，该模型通过离散时间构建了BSM方程的极限情况；以及Dupire提出的局部波动率模型，该模型通过前向密度方程与欧洲期权价格表面之间的关系进行了深入探讨。<br><br>6. 【相关性评分】  <br>分数：4分
+
+</details></td></tr>
+<tr><td>Continuous Cash-Overlay Filters for a Static Growth--Defensive Risk Sleeve: Slow-Tail Compensation, V-Shape Crash Brakes, Walk-Forward Validation, and Max-Cash Combination</td><td>Zheli Xiong</td><td><a href="https://arxiv.org/pdf/2606.09025">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.09025">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：dynamic asset allocation; cash overlay; crash protection; VIX; interest rates; credit stress; walk-forward validation; drawdown control<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于探讨在静态增长-防御性风险投资组合中，现金覆盖分配的有效性，尤其是在市场波动时如何优化现金与风险资产的配置。其次，研究旨在通过建立慢尾和V形崩溃过滤器，提供一种更为灵活的风险管理工具，以应对不同市场环境下的风险。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在动态资产配置模型和市场时机选择上，尝试通过动态调整风险资产和现金的比例来优化投资回报。然而，这些模型往往依赖于复杂的市场预测，缺乏对静态投资组合的深入分析和实证验证。其次，现有文献对现金覆盖策略的具体实施和效果评估不足，尤其是在不同市场条件下的表现。<br><br>3. 【提出了什么创新的方法】  <br>本文提出了一种模块化的现金覆盖分配方法，结合了慢尾过滤器和V形崩溃过滤器，以应对不同类型的市场风险。此外，研究还引入了保守的最大现金规则，以确保在极端市场情况下的资金安全，这种组合策略在实证验证中显示出良好的效果。<br><br>4. 【文章缺点】  <br>首先，论文的研究范围相对狭窄，仅关注于静态增长-防御性风险投资组合，未考虑其他可能的资产配置策略。其次，尽管提出了新的过滤器方法，但缺乏对其长期有效性的深入分析，可能限制了其在不同市场周期中的适用性。<br><br>5. 【类似工作】  <br>类似的工作包括对动态资产配置模型的研究，如Markowitz的均值-方差优化模型，以及对现金覆盖策略的探讨，如Fama和French提出的因子模型。这些研究为理解资产配置提供了理论基础，但与本文的静态现金覆盖策略有所不同。<br><br>6. 【相关性评分】  <br>分数：4分
+
+</details></td></tr>
+<tr><td>The Winner&#39;s Bliss in Common-Value Auctions under Horizontal Differentiation</td><td>Jiawei Chen</td><td><a href="https://arxiv.org/pdf/2606.08419">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.08419">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】<br>   - 本文旨在探讨在横向差异化偏好的情况下，常值拍卖中赢家的心理状态，提出“赢家的幸福”这一概念，挑战传统的赢家诅咒理论。<br>   - 通过分析横向差异化偏好对拍卖结果的影响，揭示了信息披露与卖方收益之间的关系，为理解拍卖机制提供了新的视角。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】<br>   - 先前的研究主要集中在赢家诅咒的现象上，强调获胜者因对手信号较弱而降低自身估值，未考虑偏好差异对拍卖结果的影响。<br>   - 尽管有研究提出了“赢家的祝福”现象，但这些研究依赖于特定的环境条件，如卖方优化或市场厚度不确定性，缺乏对横向偏好异质性的深入探讨。<br><br>3. 【提出了什么创新的方法】<br>   - 本文提出了一种简单的双竞标者模型，允许对横向差异化偏好的均衡特征进行表征，揭示了赢家的幸福现象。<br>   - 通过分析不同偏好对拍卖收益的影响，指出收益在偏好一致时下降而在偏好差异时上升，提供了新的理论框架。<br><br>4. 【文章缺点】<br>   - 研究主要集中在双竞标者的特定模型中，可能限制了结果的普适性，未考虑更复杂的竞标者环境。<br>   - 对于信息披露的具体机制和影响，缺乏实证数据支持，可能影响理论的实际应用。<br><br>5. 【类似工作】<br>   - Bergemann et al. (2020) 的研究探讨了在特定机制下的赢家祝福现象，提供了与本文相关的理论基础。<br>   - Lauermann和Speit (2023) 的工作分析了竞争者数量不确定性对拍卖结果的影响，与本文的研究主题相辅相成。<br><br>6. 【相关性评分】<br>分数：4分
+
+</details></td></tr>
+<tr><td>Benchmarking Deep Time Series Models for Equity Portfolios</td><td>Aoxin Zhang</td><td><a href="https://arxiv.org/pdf/2606.09420">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.09420">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：includes appendices<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于建立一个有效的基准，以评估不同的深度时间序列模型在股票投资组合中的预测能力，尤其是在考虑了投资者偏好、成本和组合约束的情况下。其次，论文旨在揭示在实际应用中，模型的选择与组合决策之间的复杂关系，以便为投资者提供更具实用性的模型评估工具。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究通常集中在模型的预测准确性上，而忽视了在实际投资中模型的可用性和适应性，特别是在考虑组合约束和投资者偏好的情况下。其次，现有的文献往往未能系统地将多标准决策分析与投资组合优化相结合，因此缺乏对模型在不同市场状态和成本下表现的全面评估。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了一种结合了常窗口分位组合、随机多标准可接受性分析(SMAA)和约束二次规划的综合评估框架。该框架通过引入部署调整可接受性指数，能够更好地处理投资者偏好不确定性和实施摩擦。此外，论文还通过实证分析展示了不同模型在多种条件下的表现差异，为模型选择提供了新的视角。<br><br>4. 【文章缺点】  <br>首先，尽管论文提供了全面的模型评估框架，但在实际应用中，模型的复杂性可能导致实施上的困难，尤其是在数据处理和计算资源方面。其次，论文的实证结果显示，所有推广模型的净夏普比率在20个基点下均为负值，这表明在实际交易中可能存在较大的风险和不确定性。<br><br>5. 【类似工作】  <br>类似的工作包括“Deep Learning for Time Series Forecasting: A Review”一文，该文探讨了深度学习在时间序列预测中的应用及其局限性。另一个相关研究是“Portfolio Optimization with Deep Learning: A Review”，该文重点分析了深度学习在投资组合优化中的潜力和挑战。<br><br>6. 【相关性评分】  <br>分数：4分
+
+</details></td></tr>
+<tr><td>Planning resilient hydrogen supply chains under disruption risk</td><td>Silvian M. Radke</td><td><a href="https://arxiv.org/pdf/2606.09190">PDF</a></td><td>-</td><td>★★★☆☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★☆☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.09190">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于，随着对能源安全的关注日益增加，现有的基础设施规划和建模往往忽视了供应中断带来的风险。通过研究氢气供应链的韧性，作者希望提升对未来绿色燃料供应链的规划能力，以应对潜在的供应风险。其次，论文强调了风险意识在基础设施规划中的重要性，指出传统的“天真”规划可能导致显著的福利损失，从而促使对更有效的规划方法的探索。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要集中在能源供应链的优化和风险管理，但大多数研究未能充分考虑供应中断的风险对基础设施规划的影响。虽然已有一些研究探讨了风险管理策略，但缺乏针对氢气供应链的具体应用和实证分析，导致在应对供应中断时的规划方法仍显不足。<br><br>3. 【提出了什么创新的方法】  <br>论文提出了一种随机优化模型，用于评估欧盟氢气进口的基础设施规划，强调了在规划中考虑供应风险的重要性。作者还提出了两种互补的韧性策略：通过多样化进口走廊和战略性过度投资来增强供应链的韧性。这种方法不仅提高了运输能力，还促进了氢气运输终端的投资。<br><br>4. 【文章缺点】  <br>首先，论文可能在模型的复杂性上存在一定的局限性，可能导致实际应用时的可操作性不足。其次，尽管提出了有效的韧性策略，但对这些策略在不同市场环境下的适用性和灵活性缺乏深入探讨，可能影响其普遍性。<br><br>5. 【类似工作】  <br>类似的工作包括对其他可再生能源供应链的风险管理研究，如生物燃料供应链的韧性分析，以及针对传统能源系统的风险评估研究。这些研究为理解如何在能源供应链中引入风险管理提供了基础，但在氢气供应链的具体应用上仍显不足。<br><br>6. 【相关性评分】  <br>分数：3分
+
+</details></td></tr>
+<tr><td>Unintended Consequences of Recommender System Interventions: Evidence from a Field Experiment</td><td>Shilei Luo</td><td><a href="https://arxiv.org/pdf/2606.08265">PDF</a></td><td>-</td><td>★★★☆☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★☆☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.08265">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于揭示现代社交媒体平台的推荐系统干预对用户行为的长期影响。首先，尽管推荐系统在短期内通过个性化内容提升用户参与度，但其对用户行为和推荐算法的长期适应性影响尚未得到充分理解。其次，现有研究主要集中在短期效果上，忽视了干预措施如何通过反馈循环影响推荐系统的整体动态。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究已表明推荐系统在塑造用户行为方面的重要性，并探讨了个性化对消费多样性的影响。然而，尽管已有文献分析了推荐系统的短期效果，但对干预措施的长期后果及其对算法适应性的影响仍缺乏深入探讨。此外，现有研究往往未能考虑干预对推荐系统数据输入的影响，这导致对系统级动态的理解不够全面。<br><br>3. 【提出了什么创新的方法】  <br>该论文通过大规模随机场实验的方法，研究了推荐系统干预的反馈循环。具体而言，研究设计允许比较干预组和对照组用户在干预期间及干预结束后的行为变化。此外，论文还探讨了干预如何改变推荐系统的数据输入，从而影响后续的推荐和用户参与度。<br><br>4. 【文章缺点】  <br>首先，尽管研究设计严谨，但实验的外部有效性可能受到限制，因为实验是在特定平台上进行的，结果可能不适用于所有社交媒体平台。其次，论文可能未能充分考虑其他潜在因素（如用户个体差异）对干预效果的影响，这可能影响结果的普遍性。<br><br>5. 【类似工作】  <br>一项相关的工作是探讨推荐系统如何通过个性化提高用户参与度的研究，强调了个性化在短期内的有效性。另一项工作则关注推荐系统的算法设计对用户行为的影响，分析了不同算法在用户参与度上的差异。<br><br>6. 【相关性评分】  <br>分数：3分
+
+</details></td></tr>
+<tr><td>The Token Not Taken: Sampling, State, and the Variability of AI Agent Outputs</td><td>Muhammad Zia Hydari</td><td><a href="https://arxiv.org/pdf/2606.08998">PDF</a></td><td>-</td><td>★★☆☆☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★☆☆☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.08998">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   该论文的动机在于探讨AI代理系统在不同运行中输出结果的可变性，尤其是在相同输入条件下的不同表现。这种可变性引发了管理者的担忧，他们希望理解这种不确定性对决策和执行的影响。其次，论文旨在澄清AI代理系统的随机性来源，帮助研究者和开发者更好地控制和预测系统行为。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的研究主要集中在AI模型的输出随机性，尤其是token采样对结果的影响。然而，现有文献往往忽视了外部环境变化对模型行为的影响，未能全面考虑内外部因素对可变性的贡献。此外，虽然已有研究探讨了如何通过固定随机数生成器的种子来控制某些内在变异，但对外部变异的系统性分析仍显不足。<br><br>3. 【提出了什么创新的方法】  <br>   本文通过将可变性分为内在和外在两类，提出了一种新的分析框架，帮助理解AI代理系统的随机性。其次，论文强调了在控制条件下重现token采样的重要性，并探讨了如何在多变环境中管理这些不确定性。最后，提出了对代理系统行为进行更细致观察和分析的方法，以提高其可预测性。<br><br>4. 【文章缺点】  <br>   论文可能过于关注理论框架的构建，而缺乏实证研究来验证所提出的观点。此外，尽管讨论了内外部变异的影响，但对如何在实际应用中有效管理这些变异的具体策略仍然不够详细。<br><br>5. 【类似工作】  <br>   1) 一项研究探讨了深度学习模型在不同训练条件下的输出变异性，分析了模型架构和训练数据对结果的影响。  <br>   2) 另一项工作关注于自然语言处理中的生成模型，研究了不同采样策略对生成文本质量和多样性的影响。<br><br>6. 【相关性评分】  <br>分数：2分
+
+</details></td></tr>
+<tr><td>The Dispossessed: Large-Scale Land Acquisitions, Elite Capture, and Dissent in Africa</td><td>Jonathan Dries</td><td><a href="https://arxiv.org/pdf/2606.09642">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.09642">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于探讨大规模土地收购（LSLAs）对非洲地方社会稳定的影响，尤其是如何导致公民不满和抗议活动的增加。首先，随着土地转让给投资者的现象日益普遍，社会对强迫迁移和冲突的担忧也随之加剧，研究这一现象的影响具有重要的社会和政策意义。其次，论文旨在填补当前关于LSLAs的实证研究空白，特别是在中期影响和相关机制方面的缺乏。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在LSLAs的经济动因和初步影响上，强调了全球粮食危机和资本流动对土地收购的推动作用。然而，这些研究往往缺乏对LSLAs对地方稳定和社会动荡的长期影响的实证分析。其次，尽管有关于土地治理和权利的理论探讨，但对如何在实际操作中影响社区反应的实证证据仍然有限。<br><br>3. 【提出了什么创新的方法】  <br>论文采用了分层差异中的差异估计方法，通过对1391个地理编码项目的成功与失败案例进行比较，系统评估了LSLAs对地方不满的因果影响。其次，论文整合了媒体、调查和选举数据，以支持对土地权利话语变化和传统权威侵蚀的论证，提供了多维度的实证支持。<br><br>4. 【文章缺点】  <br>首先，尽管论文提供了丰富的数据分析，但可能在某些地区的案例选择上存在偏差，影响结果的普适性。其次，论文对影响抗议活动的其他潜在因素的控制可能不够全面，导致结果的解释受到限制。<br><br>5. 【类似工作】  <br>类似的研究包括对全球土地收购的经济和社会影响的分析，如Deininger等人的研究，探讨了土地市场的动态和小农户的权利问题。此外，Deschutter的工作也关注了土地收购对地方社区的影响，强调了权力不对称和社会不平等的议题。<br><br>6
+
+</details></td></tr>
+<tr><td>Parameter Sensitivity Analysis of Hierarchical Spatial Economy: Trade Strategy around Brexit</td><td>Kiyohiro Ikeda</td><td><a href="https://arxiv.org/pdf/2606.09472">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.09472">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于分析层次空间经济模型中经济参数的敏感性，以便更好地理解国际贸易竞争对人口分布的影响。尤其是在英国脱欧背景下，研究如何通过降低国内运输成本来优化贸易策略，具有重要的现实意义。其次，论文旨在填补现有经济地理模型在处理复杂层次系统时的不足，提供一种系统化的方法来分析跨国流动性。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在国家和地区间的关税和运输成本对人口分布的影响，但大多数研究未能有效处理大规模层次空间系统的复杂性。虽然已有研究探讨了两级层次系统，但缺乏对更高层次（如国家联盟）影响的深入分析。此外，现有文献对经济参数敏感性的系统性分析较为匮乏，未能提供有效的量化工具。<br><br>3. 【提出了什么创新的方法】  <br>本研究提出了一种层次简化分析方法，将原始区域级治理方程简化为国家级和联盟级方程，从而降低了计算复杂性。通过构建人口梯度矩阵，量化每个国家对经济参数（如运输成本）的敏感性，提供了一种新的视角来分析国际贸易竞争。该方法不仅适用于英国、法国和德国的贸易策略分析，也为其他国家的经济研究提供了参考。<br><br>4. 【文章缺点】  <br>首先，尽管提出了层次简化的方法，但在实际应用中可能仍然面临数据处理和模型验证的挑战，尤其是在大规模数据集的情况下。其次，论文的分析主要集中在特定国家（如英国、法国和德国），可能缺乏对其他国家或地区的普遍适用性，限制了其推广性。<br><br>5. 【类似工作】  <br>类似的工作包括Krugman和Elizondo（1996）对关税和运输成本影响的研究，以及Behrens等（2006, 2007）对国家运输成本的分析。这些研究为理解经济地理中的人口分布提供了基础，但在层次空间系统的复杂性方面仍有
+
+</details></td></tr>
+<tr><td>Axiomatic Market Making</td><td>Frank M. V. Feys</td><td><a href="https://arxiv.org/pdf/2606.09454">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.09454">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于通过公理化的方法来明确市场做市商的报价规则，以解决现有模型中存在的多样性和不确定性问题。首先，现有的市场做市理论往往依赖于特定的效用函数或信息结构，这导致了不同模型之间的报价规则缺乏统一性和可比性。其次，作者希望通过建立一套自然的公理体系，直接从基本经济和数学要求出发，推导出报价规则的功能形式，从而提供一个更为稳健和一致的理论框架。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要通过优化理论来推导市场做市商的报价规则，虽然这些模型在特定条件下能够提供有效的解决方案，但它们的局限性在于依赖于特定的假设和参数设置，缺乏普适性。此外，现有文献往往将市场做市视为一系列独立的模型，而不是一个统一的结构理论，导致对报价规则的理解片面且不够深入。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了一种公理化的方法，通过八个自然公理和六个环境假设，强制性地确定了市场做市商的报价规则。具体而言，作者构建了一个独特的三参数家族，其中中间报价与库存呈线性关系，而价差则分解为库存和逆向选择两个部分。此外，论文还提出了一个元定理，识别出在公理体系下所有可接受结构原语中不变的四个特征。<br><br>4. 【文章缺点】  <br>尽管本论文提出了创新的公理化方法，但仍存在一些缺点。首先，公理化过程可能忽略了某些市场的复杂性和动态变化，导致理论在实际应用中的局限性。其次，虽然论文提供了一个统一的框架，但在实际市场中，做市商的行为可能受到多种外部因素的影响，这些因素在模型中未得到充分考虑。<br><br>5. 【类似工作】  <br>类似的工作包括Ho和Stoll（1981）对市场做市的优化理论的
+
+</details></td></tr>
+<tr><td>Proof of Stake economy under centralized exchanges--a mean field model</td><td>Wenpin Tang</td><td><a href="https://arxiv.org/pdf/2606.09003">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.09003">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   该论文的动机在于探讨集中交易所与去中心化的权益证明（PoS）区块链生态系统之间的相互作用，尤其是在集中交易所日益主导加密市场的背景下。首先，随着集中交易所的影响力增强，研究其对质押行为、代币分配和去中心化的影响变得尤为重要。其次，论文旨在通过建立均场模型，分析集中交易活动如何通过市场激励促进质押参与和质押分布的去中心化。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的研究主要集中在去中心化金融（DeFi）和自动化市场制造商（AMM）的机制上，探讨了去中心化交易所与传统金融中介的替代关系。然而，关于集中交易所如何影响PoS区块链的质押行为及其市场微观结构的研究仍然较为匮乏。此外，现有文献对集中交易活动与区块链去中心化之间的互动关系缺乏深入的定量分析。<br><br>3. 【提出了什么创新的方法】  <br>   本文提出了一种连续时间均场模型，分析矿工在PoS协议中作为验证者和集中市场中的交易者的双重角色。通过该模型，作者建立了均场系统的局部良定性，并推导出均衡交易策略的半显式特征。此外，论文还探讨了交易成本和代币供应机制对均衡质押比例和集中度的影响。<br><br>4. 【文章缺点】  <br>   文章的一个缺点是模型假设可能过于简化，未能充分考虑现实市场中的复杂性和不确定性，例如市场参与者的行为异质性。另一个缺点是，尽管提供了数值结果，但缺乏实证数据支持模型的有效性和适用性，可能影响结果的普遍性。<br><br>5. 【类似工作】  <br>   类似的工作包括对AMM和集中交易所之间的流动性提供机制的研究，以及对DeFi协议中混合机制的探讨。这些研究为理解集中与去中心化交易所之间的动态关系提供
+
+</details></td></tr>
+<tr><td>A Taxonomy of Real-World Asset Tokenization for Blockchain-Based Financial Infrastructure</td><td>Giorgio Vella</td><td><a href="https://arxiv.org/pdf/2606.08534">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.08534">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于，现实资产（RWA）代币化作为区块链技术的一个重要应用，能够将链外的金融和非金融资产通过区块链工具进行表示。然而，目前已部署的RWA系统在法律声明、保管安排、代币机制、验证流程和链上集成等方面的描述往往各自分散，导致难以进行有效比较。其次，现有研究缺乏一个系统性的分类法来共同捕捉RWA代币化的技术、法律和市场设计维度，从而限制了对不同RWA协议、资产类别和实施模型的比较分析。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要集中在技术标准、结算机制、会计模型等方面，强调了市场摩擦、制度采纳和法律可执行性等经济和政策导向的分析。然而，这些研究往往是孤立的，缺乏对技术设计选择与法律声明、治理结构和市场结果之间相互作用的综合考量。此外，现有文献中尚未形成一个系统性的分类法来整合这些不同的维度，从而导致对RWA系统的比较和评估缺乏统一的分析框架。<br><br>3. 【提出了什么创新的方法】  <br>本文提出了一种系统性的RWA代币化分类法，将23个属性组织成五个组件：治理、资产结构、代币属性、分布式账本技术和经济。这一分类法为比较RWA系统提供了结构化的基础，能够识别设计模式和局限性，并支持未来在区块链金融基础设施领域的研究。此外，论文还应用该分类法对市场资本化前20的RWA系统进行了比较，揭示了当前RWA代币化的混合架构实现方式。<br><br>4. 【文章缺点】  <br>首先，尽管论文提出了分类法，但在实际应用中可能面临数据获取的挑战，尤其是在不同RWA系统的法律和合规性方面。其次，分类法的构建虽然覆盖了多个维度，但可能未能充分考虑到新兴技术和市场动态对RWA代币化的影响，导致分类法的适用性
+
+</details></td></tr>
+<tr><td>Macro Economists in the Machine: A Multi-Agent LLM Framework for Commodity-Related ETF Portfolio Construction</td><td>Yiqing Wang</td><td><a href="https://arxiv.org/pdf/2606.08283">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.08283">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   该论文的动机在于利用机器学习和大语言模型（LLMs）来优化商品相关的ETF投资组合构建，以应对传统投资策略在面对复杂市场环境时的局限性。首先，商品市场存在显著的非平稳性和结构性变化，传统的因子模型难以有效捕捉这些动态，因此需要新的方法来提升投资组合的风险调整收益。其次，随着高频数据的可用性增加，投资者对量化策略的需求日益增长，迫切希望通过更先进的技术手段来提高决策的准确性和效率。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的研究主要集中在商品期货的因子投资策略上，通过识别和利用跨期和时间序列的驱动因素来构建投资组合。然而，这些研究往往依赖于线性和稳定的假设，未能充分考虑商品市场的非线性特征和复杂的外部影响。此外，虽然已有研究尝试将机器学习应用于商品回报预测，但在处理非结构化信息和多代理决策框架方面仍存在不足，未能有效整合不同来源的信息。<br><br>3. 【提出了什么创新的方法】  <br>   本文提出了一种多代理大语言模型框架，旨在通过多个LLM代理的互动来优化商品ETF投资组合的构建。这种方法不仅能够处理非结构化的文本信息，如中央银行的通讯和地缘政治新闻，还能提取情感信号并将其转化为结构化的决策输出。此外，利用多代理设计可以结合不同代理的专业知识，提高决策的准确性和灵活性。<br><br>4. 【文章缺点】  <br>   文章的一个缺点是，尽管提出了多代理框架，但在实际应用中可能面临计算复杂性和资源消耗的问题，尤其是在处理大量数据时。另一个缺点是，模型的有效性和稳定性可能受到市场环境变化的影响，如何确保模型在不同市场条件下的鲁棒性仍需进一步验证。<br><br>5. 【类似工作】  <br>   类似的工作包括利用机器学习技术进行商品回报预测的研究，如Gu et al
+
+</details></td></tr>
+<tr><td>The Changing Global Division of Labor in Software: Emergence and Diffusion of New Programming Skills across IT Hubs</td><td>Johannes Wachs</td><td><a href="https://arxiv.org/pdf/2606.09463">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.09463">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于探讨软件开发行业的变化及其全球劳动分工的演变，特别是在新兴编程技能的出现和传播方面。首先，随着软件行业的快速发展，了解新技能的出现和传播对于城市经济和劳动力市场的影响至关重要。其次，尽管软件行业具有数字化特性，但其空间分布规律与传统行业相似，这提示我们需要深入研究这些规律，以便更好地理解城市在软件开发领域的多样化和技能演变。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在软件行业的历史演变和经济复杂性上，探讨了软件开发的商业化过程和技术相关性等方面。然而，现有文献对新技能的出现及其在全球范围内的扩散机制缺乏系统性的分析，尤其是在不同城市之间的技能传播和相关性的研究相对较少。此外，尽管有研究关注了软件行业的地理分布，但对新兴技能如何在特定城市中首先出现并向其他城市扩散的具体机制仍未得到充分探讨。<br><br>3. 【提出了什么创新的方法】  <br>本研究提出了一种基于大规模在线数据集的分析方法，通过对软件开发问题和解决方案的社区生成数据进行分析，构建了详细的软件技能分类体系。具体而言，研究利用了地理定位技术，将技能与全球城市关联，揭示了城市在软件开发领域的技能基础及其经济价值。此外，研究还应用了进化经济地理学的关键概念框架，探讨了技能相关性和地理机会窗口对新技能出现和扩散的影响。<br><br>4. 【文章缺点】  <br>本研究的一个缺点是，尽管提供了丰富的数据支持，但对技能出现和扩散的因果关系分析仍显不足，可能导致对结果的解释存在局限性。另一个缺点是，研究主要集中在软件行业，缺乏对其他行业的比较分析，可能影响对全球劳动分工变化的全面理解。<br><br>5. 【类似工作】  <br>类似的工作包括Alabdulkareem等（2018）对经济复杂性与人力资本
+
+</details></td></tr>
+<tr><td>Addressing Market Regime Changes and Heavy-Tailed Returns in Portfolio Optimization via Bayesian VAR and Elliptical Black-Litterman</td><td>Daniil Mikriukov(1 and 2)</td><td><a href="https://arxiv.org/pdf/2606.09104">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.09104">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：. Extends our prior work [Mikriukov et al., ICIC 2025] on Black-Litterman under Elliptical Distributions (BLED). Manuscript under review<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于解决传统投资组合优化方法在市场环境变化和重尾收益方面的不足。首先，现有的深度强化学习（DRL）框架未能有效考虑金融收益的重尾特性，这导致在市场波动时低估了尾部风险，从而可能造成重大损失。其次，传统方法在处理历史数据时未能考虑时间的重要性，尤其是在市场状态变化时，导致模型的表现不稳定。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要通过引入贝叶斯-利特曼模型（Black-Litterman）来解决均值-方差模型的估计误差问题，结合市场均衡收益和投资者观点。然而，这些方法在处理市场状态变化时仍存在局限，尤其是在计算市场先验和离散矩阵时，未能有效利用最新观察数据。尽管有研究将利特曼模型扩展到椭圆分布以更真实地建模重尾收益，但仍未解决在不同市场状态下的动态调整问题。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了一种新的BAVAR-BLED算法，结合了贝叶斯-平均向量自回归（BAVAR）方法和椭圆分布下的利特曼模型（BLED）。该算法通过多尺度时间特征的自回归表示，能够根据市场状态自适应地调整投资组合配置。此外，BAVAR-BLED算法利用变换网络进行观点构建，并通过卷积神经网络（CNN）估计风险厌恶，增强了动态配置决策的灵活性。<br><br>4. 【文章缺点】  <br>尽管BAVAR-BLED算法在多个方面表现优越，但仍存在一些不足之处。首先，算法的复杂性可能导致计算成本较高，尤其是在处理大规模数据时。其次，模型对参数选择和超参数调优的敏感性可能影响其在不同市场条件下的稳定性和可靠性。<br><br>5. 【类似工作】  <br>类似的工作包括Xiao和Valdez对利特曼模型的扩展，利用椭圆分布更真实地建模重尾收益。此外，
+
+</details></td></tr>
+<tr><td>Benchmarking Quantum Algorithmic Resilience for CVaR Portfolio Optimization: The Expressibility-Coherence Trade-off</td><td>Prashik N. Somkuwar</td><td><a href="https://arxiv.org/pdf/2606.07727">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.07727">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：. Master&#39;s thesis research conducted at the School of Quantum Technology, Defence Institute of Advanced Technology (DIAT), Pune<br><br>1. 【论文的motivation是什么】  <br>本研究的动机在于解决传统金融组合优化方法在面对复杂市场风险时的局限性，尤其是在极端市场情况下的表现不足。随着市场动态的变化，传统的均值-方差模型无法有效捕捉尾部风险，因此需要引入条件价值-at-risk（CVaR）等先进的风险度量工具来提高资本保护能力。其次，量子计算的潜在优势为解决这些复杂的组合优化问题提供了新的可能性，但在当前的硬件架构下，如何有效实现这些算法仍然是一个亟待解决的挑战。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要集中在量子近似优化算法（QAOA）和变分量子特征求解器（VQE）等量子算法的理论研究，展示了它们在解决组合优化问题中的潜力。然而，这些算法在实际应用中受到硬件限制的影响，特别是在噪声中间规模量子（NISQ）设备上实现时，存在着严重的物理实现问题。此外，现有研究并未充分探讨如何在当前硬件条件下有效整合均值-方差和CVaR的优化框架，导致在实际应用中仍然存在显著的空白。<br><br>3. 【提出了什么创新的方法】  <br>本研究提出了一种新颖的经典-量子混合代理矩阵，旨在绕过CVaR辅助量子比特瓶颈，从而实现对多达16种资产的有效映射。此外，研究对硬件有效变分量子神经网络（HE-VQNN）和温启动量子近似优化算法（WS-QAOA）进行了硬件基准分析，揭示了它们在算法表达能力和硬件一致性之间的权衡。这种方法为量子组合优化提供了新的视角，尤其是在处理复杂的金融风险时。<br><br>4. 【文章缺点】  <br>首先，尽管提出的方法在理论上具有创新性，但在实际应用中可能面临硬件限制的挑战，尤其是在量子比特的连接性和路由效率方面。其次，研究中对算法的实用性和可
+
+</details></td></tr>
+</tbody>
+</table>
+
+<details>
+<summary><a id='date-20260608'></a>2026-06-08（12篇论文）</summary>
 
 <table>
 <thead>
@@ -91,6 +228,8 @@
 </details></td></tr>
 </tbody>
 </table>
+
+</details>
 
 <details>
 <summary><a id='date-20260605'></a>2026-06-05（9篇论文）</summary>
@@ -370,79 +509,6 @@
 <tr><td colspan="5"><details><summary><strong>总结</strong></summary>
 
 <strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.01122">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】<br>   本文的动机在于解决神经HJB-PIDE求解器在控制依赖的Lévy跳跃下的诊断问题，尤其是如何有效识别和修复潜在的计算错误。首先，现有的诊断方法往往无法全面捕捉控制依赖的跳跃项，导致在实际应用中可能出现未被发现的错误。其次，随着神经网络在金融建模中的广泛应用，确保其输出的可靠性和准确性变得至关重要，因此需要一种新的诊断协议来验证这些模型的性能。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】<br>   前人的研究主要集中在使用传统的网格方法解决HJB-PIDE方程，并对模型的基本性能进行评估，如Merton比率的恢复。然而，这些方法通常无法处理控制依赖的跳跃项，导致重要的计算错误被忽视。其次，尽管已有一些研究探讨了神经PDE求解器的失败模式，但缺乏针对具体组件的系统性诊断协议，未能有效识别和纠正模型中的潜在缺陷。<br><br>3. 【提出了什么创新的方法】<br>   本文提出了一种五步诊断协议，旨在对神经HJB-PIDE求解器进行全面的性能评估。该协议通过将每个神经求解与至少一个独立的参考解进行比较，分解哈密顿量为漂移、扩散、补偿和非局部积分组件，并在(t,x)网格上比较价值函数及其低阶导数。此外，该协议能够有效识别出神经方法中的常量提议规模错误，从而提高模型的可靠性。<br><br>4. 【文章缺点】<br>   首先，本文的诊断协议虽然有效，但在实际应用中可能需要较高的计算成本，尤其是在处理高维和非均匀设置时。其次，尽管提出的协议能够识别特定的计算错误，但对于其他类型的模型错误或更复杂的金融环境，其适用性和有效性仍需进一步验证。<br><br>5. 【类似工作】<br>   一项类似的工作是Krishnapriyan等人（2021）关于物理信息
-
-</details></td></tr>
-</tbody>
-</table>
-
-</details>
-
-<details>
-<summary><a id='date-20260601'></a>2026-06-01（10篇论文）</summary>
-
-<table>
-<thead>
-<tr><th>Title</th><th>Author</th><th>PDF</th><th>Code</th><th>Relevance</th></tr>
-</thead>
-<tbody>
-<tr><td>Valuation of GLWB-LTC Annuities with Lévy Equity Dynamics, Stochastic Interest Rates and Health-State Transitions</td><td>Andrea Molent</td><td><a href="https://arxiv.org/pdf/2605.30567">PDF</a></td><td>-</td><td>★★★★★</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★★<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.30567">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于设计一种能够同时应对寿命风险、投资风险和长期护理需求的退休产品，以解决传统年金在面对晚年护理费用时的不足。其次，当前独立的长期护理保险存在需求和供给的摩擦，因此将退休收入和长期护理保护相结合的产品显得尤为重要。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究如Hsieh et al. (2018)和Apicella et al. (2025)提出了结合GLWB和LTC的年金产品，并通过蒙特卡洛模拟等方法进行估值。然而，这些研究未能充分考虑在Lévy过程驱动下的金融环境和Hull-White模型下的随机利率对估值的影响，这一空白限制了对长期保险保障的全面理解。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了一种新的估值框架，结合了Lévy股权动态、随机利率和健康状态转移的影响，采用了重组的Hull-White三叉树与隐式-显式有限差分法相结合的数值方法。此外，文章还引入了七状态健康模型，全面考虑了跳跃风险、随机贴现和残疾风险。<br><br>4. 【文章缺点】  <br>本论文的一个缺点是其数值方法的复杂性，可能导致在实际应用中计算成本较高。另一个缺点是虽然考虑了多种风险因素，但在健康状态转移的建模上仍可能存在简化，未能涵盖所有可能的健康变化。<br><br>5. 【类似工作】  <br>类似的工作包括Goudenège et al. (2025)对嵌入保证的可变年金在Lévy股权市场下的估值研究，以及Chen et al. (2026)对长期护理相关的保证提取产品的研究，这些研究也关注了复杂的金融环境对保险产品的影响。<br><br>6. 【相关性评分】  <br>分数：5分
-
-</details></td></tr>
-<tr><td>Option Pricing under Stochastic Volatility and Jumps:A PIDE Framework with Empirical Evidence</td><td>Abigail Anokyewaa Mensah</td><td><a href="https://arxiv.org/pdf/2605.30562">PDF</a></td><td>-</td><td>★★★★★</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★★<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.30562">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于探讨在随机波动性和跳跃动态下的期权定价问题，特别是如何更准确地解释隐含波动率曲面的结构。其次，研究旨在识别不同波动环境下市场如何定价尾部风险，以提高期权定价的准确性。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在随机波动性模型和跳跃扩散模型的构建上，虽然这些模型能够在一定程度上解决隐含波动率的不足，但仍然存在对跳跃风险和波动性持久性相对贡献的理解不足。其次，现有模型往往侧重于模型比较，而缺乏对隐含波动率结构的经济分解分析。<br><br>3. 【提出了什么创新的方法】  <br>该论文提出了一种基于部分积分微分方程（PIDE）的期权定价框架，能够同时考虑随机波动性和跳跃动态。通过对S&P 500指数期权合约的实证分析，该框架展示了如何利用有限差分离散化和基于快速傅里叶变换（FFT）的方法来处理非局部跳跃算子。<br><br>4. 【文章缺点】  <br>该论文的一个缺点是其模型的复杂性可能导致计算效率低下，尤其是在处理大规模数据时。另一个缺点是虽然模型在短期和深度虚值区域表现出一定的改善，但在其他区域的适用性和准确性仍需进一步验证。<br><br>5. 【类似工作】  <br>类似的工作包括Bakshi等（1997）对随机波动性和跳跃成分的联合模型比较，以及Bates（1996）对货币期权的类似研究，这些研究均强调了跳跃风险在期权定价中的重要性。<br><br>6. 【相关性评分】  <br>分数：5分
-
-</details></td></tr>
-<tr><td>Distributional Portfolio Optimization (DPO): A Unified Framework for Distributions over Weights, Returns, and Parameters</td><td>Miquel Noguer i Alonso</td><td><a href="https://arxiv.org/pdf/2605.30464">PDF</a></td><td>-</td><td>★★★★★</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★★<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.30464">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】<br>   该论文的动机在于解决传统投资组合优化方法中对预期收益、协方差和配置的确定性假设，强调在实际应用中这些参数是随机的。其次，论文旨在通过引入分布的概念，提供一个统一的框架，使得投资组合的权重、收益和参数都可以被建模为概率测度，从而更好地反映市场的不确定性。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】<br>   前人的研究主要集中在独立的子文献中，例如贝叶斯投资组合理论和分布鲁棒优化等，这些研究虽然各自提出了不同的方法来处理投资组合优化中的不确定性，但缺乏一个统一的框架来整合这些方法。其次，现有文献大多未能有效沟通，导致在优化概率测度方面的潜在联系和共性未被充分挖掘。<br><br>3. 【提出了什么创新的方法】<br>   本文提出了分布投资组合优化（DPO）这一统一框架，能够将权重、收益和参数都视为概率测度，并通过联合耦合和边际三重结构来组织这些要素。此外，论文还识别了不同方法之间的对偶性和支配关系，并提供了有限样本保证和后验集中结果，使得该框架能够进行严格的渐近分析。<br><br>4. 【文章缺点】<br>   文章的一个缺点是其主要贡献是合成和结构性的，可能缺乏具体的实证验证和应用案例来展示框架的有效性。另一个缺点是，尽管提供了理论上的框架，但在实际操作中可能面临计算复杂性的问题，限制了其在大规模投资组合中的应用。<br><br>5. 【类似工作】<br>   一项类似的工作是贝叶斯投资组合理论，它通过后验分布来处理参数的不确定性。另一项相关工作是分布鲁棒优化，它关注在不确定性下的优化问题，尽管两者在方法论上有所不同，但都涉及到概率测度的优化。<br><br>6. 【相关性评分】<br>分数：5分
-
-</details></td></tr>
-<tr><td>Enhancing Regime Shift Detection Using Unstructured Data: A Study on the Treasury Market</td><td>Mingxuan Yi</td><td><a href="https://arxiv.org/pdf/2605.30363">PDF</a></td><td><a href="https://github.com/mingxuan-yi/regime_shift">code1</a></td><td>★★★★★</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★★<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.30363">PDF</a><br><strong>代码</strong>：<a href="https://github.com/mingxuan-yi/regime_shift">code1</a><br><strong>备注</strong>：. Code available at:this https URL<br><br>1. 【论文的motivation是什么】  <br>   该论文的动机在于准确检测金融市场中的制度转变，这对理解资产价格和宏观变量的动态关系至关重要。具体来说，制度转变会打破单一制度的校准，而传统的检测方法仅依赖于数据面，忽视了可能提前数周发出信号的非结构化文本信息。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的工作主要集中在多变量时间序列的制度转变检测上，如Bai-Perron结构断裂测试和Markov切换VAR模型等。这些方法虽然在理论上成熟，但普遍存在依赖数据信号的结构性限制，未能有效利用文本信息，导致在复杂市场环境中检测准确性不足。<br><br>3. 【提出了什么创新的方法】  <br>   本文提出了一种文本增强的检测管道，通过结合大语言模型（LLM）和似然比向量自回归（VAR）测试，交叉验证数据和文本信号。同时，该方法允许任何数据驱动的检测器，增强了灵活性和适用性。<br><br>4. 【文章缺点】  <br>   文章可能在实际应用中面临文本数据质量和相关性的问题，尤其是在不同市场环境下，文本信号的有效性可能会有所变化。此外，尽管方法灵活，但对模型参数的选择和调整仍需谨慎，以避免过拟合。<br><br>5. 【类似工作】  <br>   1) Sadeghi等（2024）提出的制度感知因果发现方法，尝试结合数据和结构性信息进行制度转变检测。  <br>   2) Truong等（2020）的综述文章，系统总结了现有的多变量时间序列制度转变检测方法。<br><br>6. 【相关性评分】  <br>分数：5分
-
-</details></td></tr>
-<tr><td>Inspectable Neural Markov Models for Non-Stationary Time Series</td><td>Jan Rovirosa</td><td><a href="https://arxiv.org/pdf/2605.30943">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.30943">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：. Presented at The 2026 ASA Midwest Regional Conference in Statistics and Data Science<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于，尽管深度生成模型在预测能力上表现出色，但其“黑箱”特性使得在高风险领域的分析变得困难。其次，传统的马尔可夫转移矩阵虽然提供了透明的结构框架，但在高维或稀疏数据情况下难以估计，因此需要一种新的方法来结合这两者的优点。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要集中在使用传统的马尔可夫模型进行时间序列分析，但在处理高维数据时常常面临转移矩阵稀疏和不可靠的问题。此外，虽然有些研究尝试结合深度学习与马尔可夫模型，但缺乏对模型内部逻辑的透明性和可解释性，这在实际应用中是一个重要的空白。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了一种混合框架，将深度学习与经典马尔可夫结构相结合，通过神经网络参数化转移矩阵，从而保持结构透明性并增强表示能力。此外，论文还引入了基于实现波动率的状态变量，以提高马尔可夫结构的一致性。<br><br>4. 【文章缺点】  <br>首先，尽管提出的模型在理论上具有优势，但其在实际应用中的可行性和效率尚未得到充分验证。其次，模型的复杂性可能导致在实际数据中训练和推理的计算成本较高，限制了其广泛应用。<br><br>5. 【类似工作】  <br>类似的工作包括使用深度学习方法进行时间序列预测的研究，以及结合马尔可夫模型和深度学习的其他尝试，如某些生成对抗网络（GAN）在时间序列分析中的应用。<br><br>6. 【相关性评分】  <br>分数：4分
-
-</details></td></tr>
-<tr><td>Global Science Sustains U.S. Innovation</td><td>Christopher R. Esposito</td><td><a href="https://arxiv.org/pdf/2605.30435">PDF</a></td><td>-</td><td>★★★☆☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★☆☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.30435">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   （1）了解科学知识的国际供应链对美国创新的重要性，以便识别其脆弱性和潜在的风险。  <br>   （2）通过分析科学研究与专利之间的引用路径，揭示全球科学如何支持美国的技术进步和经济发展。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   （1）前人的研究主要集中在物理产品的供应链上，对于科学知识的国际流动和其对创新的影响缺乏深入探讨。  <br>   （2）现有文献对科学知识的流动障碍及其对创新生产力的影响研究不足，尤其是在特定技术领域如半导体、量子科学和人工智能等方面。<br><br>3. 【提出了什么创新的方法】  <br>   （1）通过追踪多代引用路径，建立了科学研究与专利之间的联系，从而揭示了知识供应链的结构。  <br>   （2）模拟科学知识流动的障碍，评估其对美国创新能力的影响，提供了量化分析的框架。<br><br>4. 【文章缺点】  <br>   （1）缺乏对不同国家之间知识流动差异的深入分析，可能导致对全球供应链复杂性的理解不足。  <br>   （2）模拟的假设条件可能过于简化，未能充分考虑实际情况中的多样性和复杂性。<br><br>5. 【类似工作】  <br>   （1）关于全球供应链的研究，尤其是物理商品的供应链分析。  <br>   （2）对科学合作网络的研究，探讨国际合作如何影响科学研究的产出。<br><br>6. 【相关性评分】  <br>分数：3分
-
-</details></td></tr>
-<tr><td>Residual Supply and the Price of Risk Absorption</td><td>Ziyao Wang</td><td><a href="https://arxiv.org/pdf/2605.30672">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.30672">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】<br>   该论文的动机在于探讨在开放式基金赎回时，市场中如何处理残余供应的问题，以及投资者在承接这些残余供应时所需的回报。具体来说，论文关注的是当自然买家无法立即介入时，有限资本的投资者如何承担库存风险并要求相应的回报。其次，论文希望通过建立一个连续时间的市场清算模型，揭示残余供应的价格如何受到库存风险、交易成本、资金摩擦和可用资产负债表稀缺性的影响。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】<br>   前人的研究主要集中在传统资产定价模型中，通过边际价值的协方差来解释预期回报。然而，这些研究往往忽视了在投资者需求变化时，谁来持有残余供应以及他们所需的回报。其次，虽然已有一些关于市场清算的理论探讨，但缺乏对开放式基金赎回时具体机制的深入分析，特别是在库存风险和资金约束对价格影响的实证研究。<br><br>3. 【提出了什么创新的方法】<br>   本文提出了一种新的市场清算模型，强调了在开放式基金赎回过程中，如何通过观察到的残余供应成分来测量价格的变化。模型通过将美国共同基金流动性与预定持股进行映射，揭示了强制性卖出压力如何预测实际的基金卖出行为及其对价格的影响。此外，论文还引入了对市场吸收能力的量化分析，强调在市场吸收能力紧张时，价格回报的显著性。<br><br>4. 【文章缺点】<br>   首先，模型的实证验证主要依赖于历史数据，可能受到数据质量和样本选择偏差的影响。其次，尽管模型考虑了多种市场因素，但在实际应用中，可能未能充分捕捉到所有影响价格的外部变量，如宏观经济因素和市场情绪等。<br><br>5. 【类似工作】<br>   一项相关工作是"Market-Clearing Model of Risk Absorption"，该研究探讨了风险吸收的市场清算模型及其在资产定
-
-</details></td></tr>
-<tr><td>Quality-Adjusted Hit-Ratio Targeting in Corporate Bond Market Making</td><td>Bouna Niang</td><td><a href="https://arxiv.org/pdf/2605.30643">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.30643">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于，传统的原始命中率（hit ratio）作为电子公司债券市场做市的服务指标，可能在客户流动性具有异质性的不利选择内容时产生经济误导。为了提高市场做市的有效性，研究者提出了一种基于质量调整的命中率目标，旨在更准确地反映客户流动的真实风险。其次，论文强调了在信用市场中，做市商不应均等地追求所有流动性，而是应根据流动的质量进行差异化处理，以优化服务和经济效益。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究（如Barzykin和Ciceri）提出了一种在OTC债券市场做市中包含运行命中率目标的HJB框架，并通过对目标惩罚的对偶化保持了可处理性。然而，现有的研究仍然未能充分考虑客户流动的异质性，特别是在处理不利选择时，原始命中率的使用可能导致做市商在不必要的情况下补贴低质量流动。此处的空白在于缺乏对流动性质量的系统性分析和调整。<br><br>3. 【提出了什么创新的方法】  <br>论文提出了一种质量调整的命中率（quality-adjusted hit ratio），通过对客户流动的残余毒性进行定义，来更好地反映流动的真实风险。此外，研究者还引入了一个基于二次值函数近似的报价分解方法，将风险无关的价差、库存偏斜、信用阿尔法偏斜、残余毒性费用和质量命中率补贴等因素纳入考虑。这种方法使得做市商能够在满足服务目标的前提下，优化其经济效益。<br><br>4. 【文章缺点】  <br>文章的一个缺点是，尽管引入了质量调整的命中率，但在实际应用中，如何准确测量和评估客户流动的残余毒性仍然是一个挑战。其次，尽管论文通过合成多债券模拟展示了理论结果，但缺乏对真实市场数据
-
-</details></td></tr>
-<tr><td>Kalimati Vegetable Price Index Forecasting with a Momentum Corrected Online Stacking Ensemble</td><td>Sahaj Raj Malla</td><td><a href="https://arxiv.org/pdf/2605.30720">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.30720">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   该论文的动机在于，农业商品价格在新兴经济体中波动性极大，给政策制定者和供应链参与者带来了显著挑战。通过提出Kalimati Vegetable Price Index (KVPI)，研究旨在提供一个稳定的宏观信号，以减少单一作物建模中的噪声，从而提高价格预测的准确性。其次，准确的价格预测对于增强市场透明度、支持基于证据的政策决策和改善供应链韧性至关重要。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的研究主要依赖于线性计量经济模型，如ARIMA和SARIMA，虽然在稳定条件下表现良好，但在新兴市场的波动性和复杂性面前显得力不从心。此外，虽然机器学习和深度学习方法逐渐被引入，但许多研究仍然集中于单一商品的预测，未能有效整合多种商品的动态关系和外部影响因素，导致模型的普适性和实用性受到限制。<br><br>3. 【提出了什么创新的方法】  <br>   本文提出了一种新的逆波动加权复合指数KVPI，并开发了一套丰富的因果有效特征集，包括节日效应、滚动统计和日历变量。此外，研究引入了动量修正在线堆叠集成方法，该方法在多种预测模型中表现出色，尤其是在处理高噪声数据时展现了显著的鲁棒性。<br><br>4. 【文章缺点】  <br>   文章的一个缺点是，尽管提出了多种模型，但在复杂的非线性交互和波动聚类方面的建模能力仍然有限，可能影响模型的泛化能力。另一个缺点是，研究主要集中在尼泊尔市场，可能缺乏对其他新兴市场的广泛适用性。<br><br>5. 【类似工作】  <br>   类似的工作包括利用机器学习技术进行农业商品价格预测的研究，例如基于随机森林和极端梯度提升的模型，这些模型在处理高维异质特征时表现良好。另一个相关研究是利用深度
-
-</details></td></tr>
-<tr><td>When market boundaries weaken: Network reconfiguration and regime-dependent cross-asset spillovers</td><td>Ruixue Jing</td><td><a href="https://arxiv.org/pdf/2605.30442">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2605.30442">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】<br>   - 随着加密货币作为投资资产的逐渐普及，其与传统金融市场的相互作用变得愈加重要，这对跨资产多样化和系统性风险管理具有重要意义。<br>   - 研究表明，金融市场的关联性在不同市场状态下并不恒定，尤其在系统性压力期间，投资者和风险管理者所期望的多样化收益会受到压缩，因此理解跨资产整合的动态变化显得尤为重要。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】<br>   - 以往的研究主要通过时间变化依赖性和波动模型来研究跨市场整合，使用多元GARCH和动态条件相关框架来估计市场间的相关性和波动溢出效应。<br>   - 然而，这些研究未能充分解释为何在平静和动荡状态下，跨资产的耦合会有所不同，以及在市场条件恶化时，传递和吸收压力的市场身份为何会发生变化。<br><br>3. 【提出了什么创新的方法】<br>   - 本文结合了滚动相关网络、基于共识的社区检测、市场特定和系统范围的动荡指数，以及基于VAR的连通性分析，以研究市场压力、网络拓扑和冲击传递的共同演变。<br>   - 通过分析不同市场状态下的网络结构变化，揭示了跨资产整合的阶段性特征，强调了网络拓扑作为一种状态依赖的放大通道的作用。<br><br>4. 【文章缺点】<br>   - 文章可能在数据的时间范围上存在局限性，主要集中在2017年至2024年之间，可能无法全面反映更长期的市场动态。<br>   - 对于不同市场之间的具体传递机制的深入探讨仍显不足，尤其是在极端市场条件下的非线性依赖性。<br><br>5. 【类似工作】<br>   - 一项类似的研究是使用多元时间序列系统来分析动态连通性，特别是在VAR框架下进行的Granger因果关系测试。<br>   - 另一项相关工作则关注于金融市场的动态相关性和波动性，探讨了在
 
 </details></td></tr>
 </tbody>
