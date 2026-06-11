@@ -628,7 +628,7 @@
         <header>
             <h1>📈 arXiv 量化金融领域论文汇总</h1>
             <div class="intro">
-                <p>📊 共 <strong>42</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
+                <p>📊 共 <strong>50</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
                 <p>🔗 点击日期可展开/折叠｜📚 Zotero 按钮需安装 <a href="https://www.zotero.org/download/connectors" target="_blank">Connector 插件</a></p>
             </div>
         </header>
@@ -636,17 +636,228 @@
         <!-- 日期导航 -->
         <nav class="nav">
             <strong>📅 日期导航：</strong>
-            <a href="#date-20260610">2026-06-10（9篇）</a> | <a href="#date-20260609">2026-06-09（21篇）</a> | <a href="#date-20260608">2026-06-08（12篇）</a>
+            <a href="#date-20260611">2026-06-11（8篇）</a> | <a href="#date-20260610">2026-06-10（9篇）</a> | <a href="#date-20260609">2026-06-09（21篇）</a> | <a href="#date-20260608">2026-06-08（12篇）</a>
         </nav>
 
         <!-- 论文内容区块 -->
         <main>
-            <div class="date-section" id="date-20260610">
+            <div class="date-section" id="date-20260611">
     <div class="date-header">
-        <span>2026-06-10（9篇论文）</span>
+        <span>2026-06-11（8篇论文）</span>
         <span class="arrow">▼</span>
     </div>
     <div class="date-content" style="display: block;">
+        <table>
+        <!-- 添加 colgroup 明确指定每列宽度 -->
+        <colgroup>
+            <col style="width: 25%">  <!-- Title -->
+            <col style="width: 15%">   <!-- Authors -->
+            <col style="width: 10%">   <!-- Resources -->
+            <col style="width: 10%">   <!-- Relevance -->
+            <col style="width: 40%">  <!-- Summary -->
+        </colgroup>
+        <thead>
+            <tr>
+                <th>标题</th>
+                <th>作者</th>
+                <th>资源</th>
+                <th>相关性</th>
+                <th>总结</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      该论文的动机在于解决在复杂市场情境下量化最坏和最好表现的挑战，尤其是在处理路径依赖的金融工具（如奇异期权和结构化产品）时。其次，现有的模拟方法虽然适合概率估计，但无法提供对所有可接受情境的全面保证，无法明确识别极端结果。  2. 【前人的工作如何解决该问题，存在哪些空白】      前人的工作主要集中在使用模拟方法（如蒙特卡洛方法）来估计期望值...">Scenario Constraints with Memory: A Finite-State Approach to Quantitative Financial Analysis</span></td>
+        <td class="author-cell">Vitaly Nürnberg</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.11223" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.11223" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：5/5">★★★★★</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+   该论文的动机在于解决在复杂市场情境下量化最坏和最好表现的挑战，尤其是在处理路径依赖的金融工具（如奇异期权和结构化产品）时。其次，现有的模拟方法虽然适合概率估计，但无法提供对所有可接受情境的全面保证，无法明确识别极端结果。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+   前人的工作主要集中在使用模拟方法（如蒙特卡洛方法）来估计期望值和概率风险度量，然而这些方法只探索了可接受情境空间的抽样子集，因此对极端结果的保证有限。另一个空白是，尽管有些研究尝试将市场假设以定性和顺序的方式表达，但将这些假设与定量收益模型结合以支持精确的最好和最坏情况分析仍然存在困难。
+
+3. 【提出了什么创新的方法】  
+   本文提出了一种有限状态框架，通过引入加权有限自动机（WFFA）来补充模拟基础的金融分析。该方法允许收益贡献依赖于观察到的市场值，并通过明确的情境假设描述可接受的路径，而不是为市场路径分配概率。这种非概率视角适用于压力测试、情境设计和最坏情况分析等场景。
+
+4. 【文章缺点】  
+   文章的一个缺点是，尽管引入了有限状态框架，但在实际应用中如何有效整合与现有模拟方法的结合仍需进一步探讨。另一个缺点是，框架的复杂性可能导致在实际操作中难以实现，尤其是在处理大规模市场数据时。
+
+5. 【类似工作】  
+   类似的工作包括使用自动机理论进行金融建模的研究，以及基于情境约束的事件历史自动机的研究。这些工作为理解和分析金融市场中的复杂事件提供了理论基础。
+
+6. 【相关性评分】  
+   分数：5分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文的动机在于，船舶融资是一个数据密集且文档繁重的领域，面临着日益复杂的环境监管和ESG报告要求，这使得贷款承保和申请流程变得更加复杂。其次，随着人工智能（AI）特别是大型语言模型（LLMs）的进步，提供了处理和分析船舶融资中异构和非结构化信息的新机会。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的工作主要集中在人工智能在金融领域...">Artificial Intelligence in Ship Finance: Applications, Opportunities, and a Case Study in AI-Augmented Loan Origination</span></td>
+        <td class="author-cell">Lasse Dierich</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.11238" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.11238" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+该论文的动机在于，船舶融资是一个数据密集且文档繁重的领域，面临着日益复杂的环境监管和ESG报告要求，这使得贷款承保和申请流程变得更加复杂。其次，随着人工智能（AI）特别是大型语言模型（LLMs）的进步，提供了处理和分析船舶融资中异构和非结构化信息的新机会。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作主要集中在人工智能在金融领域的应用，例如客户聊天机器人和流程自动化，已经在一定程度上提高了效率。然而，现有研究往往缺乏对船舶融资特定需求的深入探讨，尤其是在如何有效整合多种信息源和自动化文档生成方面存在空白。
+
+3. 【提出了什么创新的方法】  
+本论文提出了一种名为ShipFinance.ai的模块化智能架构，旨在支持船舶融资的贷款申请工作流程。该系统结合了基于LLM的信息提取模块、金融分析组件、外部海事数据服务和控制文档生成模块，并配备了聊天机器人界面，以支持标准化融资申请的准备。
+
+4. 【文章缺点】  
+首先，论文对AI模型在实际生产环境中应用的挑战讨论较为简略，缺乏深入的案例分析。其次，尽管提出了创新的方法，但对其在不同市场环境下的适用性和可扩展性缺乏充分的验证。
+
+5. 【类似工作】  
+类似的工作包括对AI在金融领域的应用研究，如“AI在金融服务中的应用”以及“基于机器学习的信贷风险评估模型”。这些研究探讨了AI技术在金融行业的广泛应用，但未专门针对船舶融资领域。
+
+6. 【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文的动机在于通过复合似然方法降低时间序列参数估计的计算成本，特别是在处理具有长程依赖特性的分数高斯过程时，传统的最大似然估计方法计算复杂度高，难以实现。其次，论文旨在探索如何通过选择合适的观察子集来在计算成本和估计准确性之间取得良好的平衡，以提高估计效率。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的研究主要集中在分数布朗运动和...">Composite likelihood inference of fractional Gaussian processes with sequentially optimal subset selection</span></td>
+        <td class="author-cell">Mathis Fourreau</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.11962" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.11962" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+该论文的动机在于通过复合似然方法降低时间序列参数估计的计算成本，特别是在处理具有长程依赖特性的分数高斯过程时，传统的最大似然估计方法计算复杂度高，难以实现。其次，论文旨在探索如何通过选择合适的观察子集来在计算成本和估计准确性之间取得良好的平衡，以提高估计效率。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究主要集中在分数布朗运动和分数高斯噪声的标准估计方法上，如矩估计和Whittle估计等，这些方法虽然在计算上较为简单，但在准确性上存在不足。现有文献对如何有效选择观察子集以优化估计性能的研究仍处于早期阶段，缺乏系统的理论框架和实用的选择策略。
+
+3. 【提出了什么创新的方法】  
+本文提出了一种复合似然方法来估计分数高斯过程的赫斯特指数，并通过理论推导得出Godambe信息的表达式，以指导子集选择设计。此外，采用了逐步选择策略，在每一步中选择一个子集以最大化条件Godambe信息，从而实现计算成本和估计准确性的平衡。
+
+4. 【文章缺点】  
+首先，尽管提出的逐步选择策略在理论上具有优势，但在实际应用中可能面临计算复杂性的问题，尤其是在处理大规模数据时。其次，论文中对不同子集大小的选择对估计性能的影响分析可能不够全面，未能充分探讨在不同情境下的适用性。
+
+5. 【类似工作】  
+类似的工作包括基于矩的估计方法，该方法虽然计算简单，但在准确性上有所欠缺；另一个相关工作是Whittle估计，它通过频域近似似然来处理时间序列，但同样在处理长程依赖时存在局限性。
+
+6. 【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1.【论文的motivation是什么】   （1）当前欧洲能源系统模型在评估能源资源时，往往忽视了原材料储备的限制，可能导致不切实际的能源政策建议。   （2）随着可再生能源的快速发展，理解和整合原材料的可用性对于实现可持续能源转型至关重要。  2.【前人的工作如何解决该问题，存在哪些空白】   （1）前人的研究主要集中在能源模型的构建和优化上，但对原材料储备的考虑较少，导致模型结果的可靠性受到...">Materealistic? How European energy system models exceed raw material reserves</span></td>
+        <td class="author-cell">Jan Mutke</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.12201" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.12201" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：3/5">★★★☆☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1.【论文的motivation是什么】  
+（1）当前欧洲能源系统模型在评估能源资源时，往往忽视了原材料储备的限制，可能导致不切实际的能源政策建议。  
+（2）随着可再生能源的快速发展，理解和整合原材料的可用性对于实现可持续能源转型至关重要。
+
+2.【前人的工作如何解决该问题，存在哪些空白】  
+（1）前人的研究主要集中在能源模型的构建和优化上，但对原材料储备的考虑较少，导致模型结果的可靠性受到质疑。  
+（2）虽然有一些研究开始关注原材料的供应链问题，但缺乏系统性分析，未能全面评估其对能源系统模型的影响。
+
+3.【提出了什么创新的方法】  
+（1）提出了一种新的综合模型，将原材料储备纳入能源系统模型中，以更准确地评估能源政策的可行性。  
+（2）通过实证分析验证了该模型在不同情境下的适用性，展示了原材料限制对能源转型的影响。
+
+4.【文章缺点】  
+（1）模型的复杂性可能导致计算成本较高，限制了其在实际应用中的推广。  
+（2）缺乏对不同地区和国家的具体案例分析，可能影响模型的普适性和实用性。
+
+5.【类似工作】  
+（1）某研究探讨了可再生能源与原材料供应链的关系，但未深入分析其对能源系统模型的影响。  
+（2）另一项研究关注了能源政策的可持续性，但未将原材料储备作为关键因素进行系统分析。
+
+6.【相关性评分】  
+分数：3分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于解决时间不一致控制问题中的决策制定挑战，尤其是在金融应用中，当前被认为最优的策略可能在未来被否定。其次，传统的动态规划方法在面对时间不一致性时难以有效应用，因此需要发展新的算法来学习确定性的均衡策略。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的工作主要通过引入博弈论的方法，将时间不一致问题转化为当前自我与未来自我之...">Deterministic Policy Gradient for Learning Equilibrium in Time-Inconsistent Control Problems</span></td>
+        <td class="author-cell">Xin Guo</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.11798" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.11798" target="_blank" rel="noopener">🧠 AlphaXiv</a><br><details class="resource-comment"><summary>📝 备注</summary><small>Keywords: Time-inconsistent control, two-stage reformulation, model-free continuous-time reinforcement learning, deterministic policy gradient, fixed point iteration</small></details></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本论文的动机在于解决时间不一致控制问题中的决策制定挑战，尤其是在金融应用中，当前被认为最优的策略可能在未来被否定。其次，传统的动态规划方法在面对时间不一致性时难以有效应用，因此需要发展新的算法来学习确定性的均衡策略。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作主要通过引入博弈论的方法，将时间不一致问题转化为当前自我与未来自我之间的子博弈完美纳什均衡。然而，这些方法在数值实现上存在挑战，尤其是需要解决的扩展Hamilton-Jacobi-Bellman方程往往是无限维的非线性偏微分方程，且通常需要完全了解模型系数。现有研究在处理未知环境的情况下，缺乏有效的模型自由强化学习算法。
+
+3. 【提出了什么创新的方法】  
+本论文提出了一种基于连续时间模型自由强化学习的算法，通过扩展的Hamilton-Jacobi-Bellman系统将时间不一致问题转化为等效的两阶段问题。第一阶段利用确定性策略梯度方法学习辅助时间一致控制问题的最优策略，第二阶段则通过内固定点迭代和鞅特征来学习辅助函数。此外，论文还提供了一些温和的模型假设并证明了内固定点迭代的收敛性。
+
+4. 【文章缺点】  
+首先，尽管提出的算法在理论上具有创新性，但在实际应用中可能面临计算复杂性高的问题，尤其是在高维状态空间下。其次，算法的收敛性依赖于特定的模型假设，这可能限制了其在更广泛场景下的适用性。
+
+5. 【类似工作】  
+类似的工作包括Björk et al. (2017)的研究，该研究探讨了时间不一致性下的博弈论方法，并提出了扩展的HJB方程。此外，Strotz (1995)的早期工作也为时间不一致性问题提供了理论基础，通过将决策过程视为个人内部的博弈来解决相关问题。
+
+6. 【</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于探讨为何在面对相似的资金冲击时，不同国家的信贷结果会出现显著差异。具体而言，研究指出金融中介的信贷能力在资金冲击传导中的重要性，强调了这一因素对金融稳定性的影响。其次，论文旨在通过动态结构模型深入分析美国和巴西的金融中介在不同危机时期的信贷能力及其动态变化，以揭示影响信贷收缩的根本原因。  2. 【前人的工作如何解决该问题，存在哪些空...">Credit Capacity and the Propagation of Funding Shocks: Evidence from U.S. and Brazilian Financial Intermediaries</span></td>
+        <td class="author-cell">Ayush Jha</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.11566" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.11566" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本论文的动机在于探讨为何在面对相似的资金冲击时，不同国家的信贷结果会出现显著差异。具体而言，研究指出金融中介的信贷能力在资金冲击传导中的重要性，强调了这一因素对金融稳定性的影响。其次，论文旨在通过动态结构模型深入分析美国和巴西的金融中介在不同危机时期的信贷能力及其动态变化，以揭示影响信贷收缩的根本原因。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究主要集中在资金冲击的规模、金融机构的资本化程度以及政策干预的积极性等方面，试图解释不同金融体系的韧性差异。然而，这些研究未能充分考虑金融中介在将批发资金转化为信贷供给中的作用，导致对金融稳定性影响因素的理解不够全面。此外，现有文献缺乏对信贷能力动态变化的系统性分析，未能揭示其在危机传播中的关键作用。
+
+3. 【提出了什么创新的方法】  
+本论文提出了一种动态结构模型，将信贷能力视为一个内生状态变量，探讨其如何影响资金冲击对信贷供给的传导。该模型结合了标准的信贷约束与递归框架，允许信贷能力根据资本化、危机条件和政策干预等因素随时间演变。此外，论文通过对美国和巴西的银行、信用合作社及合作金融机构的季度监管数据进行结构性恢复和动态面板估计，提供了对信贷能力的深入理解。
+
+4. 【文章缺点】  
+本论文的一个缺点是其模型的复杂性可能导致在实际应用中的可操作性受到限制，尤其是在不同国家的金融体系中。另一个缺点是，尽管研究涵盖了美国和巴西，但对其他国家或地区的适用性和普遍性尚未得到充分验证，可能限制了研究结果的广泛应用。
+
+5. 【类似工作】  
+类似的研究包括对金融中介在危机期间的作用进行分析的文献，如对欧洲银行业在金融危机中的</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于探讨在不确定的金融市场中，投资者如何在面对模型模糊性时进行有效的资产配置。首先，许多投资者在实际操作中对资产的漂移（drift）并不完全了解，这种不确定性使得传统的均值-方差优化方法面临挑战。其次，考虑到投资者的模糊厌恶特征，本文旨在通过引入新的标准来优化投资策略，以更好地反映投资者的风险偏好和市场条件。  2. 【前人的工作如何解决...">Mean-Variance Optimization in Ambiguous Financial Markets with Learning</span></td>
+        <td class="author-cell">Nicole Bäuerle</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.11318" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.11318" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本论文的动机在于探讨在不确定的金融市场中，投资者如何在面对模型模糊性时进行有效的资产配置。首先，许多投资者在实际操作中对资产的漂移（drift）并不完全了解，这种不确定性使得传统的均值-方差优化方法面临挑战。其次，考虑到投资者的模糊厌恶特征，本文旨在通过引入新的标准来优化投资策略，以更好地反映投资者的风险偏好和市场条件。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究主要集中在均值-方差优化的经典框架中，许多文献（如Korn (1997)和Bajeux-Besnainou &amp; Portait (1998)）探讨了在已知模型参数情况下的投资策略。然而，现有研究往往忽略了投资者对模型模糊性的敏感性，尤其是在资产漂移不确定的情况下。尽管有一些文献考虑了贝叶斯方法，但对模糊厌恶投资者的动态投资策略研究仍显不足。
+
+3. 【提出了什么创新的方法】  
+本文提出了一种新的动态投资策略优化方法，该方法结合了模糊厌恶投资者的特征，并在均值-方差标准中引入了对模型模糊性的权重分配。此外，作者利用数值结果分析了模型参数对最优投资策略的影响，展示了模糊厌恶投资者在风险资产上的投资倾向较低。这种方法为模糊厌恶投资者提供了更为合理的资产配置框架。
+
+4. 【文章缺点】  
+尽管本文提出了新的投资策略优化方法，但仍存在一些缺点。首先，模型的复杂性可能导致在实际应用中难以实现，尤其是在参数估计和计算上。其次，本文的数值结果虽然提供了一定的洞见，但缺乏对不同市场条件下的广泛验证，可能影响其普适性。
+
+5. 【类似工作】  
+类似的工作包括Zhou和Li (2000)的研究，他们探讨了在</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      该论文的动机在于，尽管Gatheral双均值回归模型（GDMR）在波动率动态建模中具有灵活性，但其在早期行使衍生品定价方面的研究仍然相对较少。其次，现有的定价方法在多因子随机波动率模型下面临计算复杂度高的问题，因此需要一种新的方法来有效解决这一挑战。  2. 【前人的工作如何解决该问题，存在哪些空白】      前人的工作主要集中在使用回归基础...">A Hybrid LSMC-PDE Method for Bermudan Option Pricing under the Gatheral Double Mean-Reverting Model</span></td>
+        <td class="author-cell">Mara Kalicanin Dimitrov</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.11237" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.11237" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+   该论文的动机在于，尽管Gatheral双均值回归模型（GDMR）在波动率动态建模中具有灵活性，但其在早期行使衍生品定价方面的研究仍然相对较少。其次，现有的定价方法在多因子随机波动率模型下面临计算复杂度高的问题，因此需要一种新的方法来有效解决这一挑战。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+   前人的工作主要集中在使用回归基础的蒙特卡洛方法和混合蒙特卡洛-偏微分方程（PDE）方法来定价美式期权，这些方法在一定程度上解决了早期行使期权的定价问题。然而，现有方法在处理多因子随机波动率模型时，往往难以有效捕捉资产和波动率变量之间的复杂依赖关系，导致定价精度不足。
+
+3. 【提出了什么创新的方法】  
+   本文提出了一种混合最小二乘蒙特卡洛-偏微分方程（LSMC-PDE）的方法，专门针对GDMR模型进行实现。该方法通过模拟波动率路径，将定价问题简化为一维资产价格问题，并采用傅里叶方法进行求解，同时利用最小二乘回归来近似波动率变量的依赖关系。
+
+4. 【文章缺点】  
+   文章的一个缺点是，尽管提出的方法在数值实验中表现良好，但仍需进一步验证其在更复杂市场条件下的适用性和稳定性。另一个缺点是，模型的实现依赖于较高的计算资源，可能限制了其在实际交易中的应用。
+
+5. 【类似工作】  
+   1) Farahany, Jackson, 和 Jaimungal提出的混合LSMC-PDE方法，专门用于随机波动率下的Bermudan期权定价。  
+   2) Loeper和Pironneau的混合蒙特卡洛-PDE方法，展示了在随机波动率模型下的潜力。
+
+6. 【相关性评分】  
+分数：</small></details></td>
+    </tr>
+        </tbody></table>
+    </div>
+</div>
+<div class="date-section" id="date-20260610">
+    <div class="date-header">
+        <span>2026-06-10（9篇论文）</span>
+        <span class="arrow">▶</span>
+    </div>
+    <div class="date-content" style="display: none;">
         <table>
         <!-- 添加 colgroup 明确指定每列宽度 -->
         <colgroup>
@@ -1702,7 +1913,7 @@
             });
             
             // ========== 自动展开最新日期 ==========
-            const latestId = 'date-20260610';
+            const latestId = 'date-20260611';
             if (latestId) {
                 const latestSection = document.getElementById(latestId);
                 if (latestSection) {
