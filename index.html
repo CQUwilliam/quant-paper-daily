@@ -628,7 +628,7 @@
         <header>
             <h1>📈 arXiv 量化金融领域论文汇总</h1>
             <div class="intro">
-                <p>📊 共 <strong>40</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
+                <p>📊 共 <strong>48</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
                 <p>🔗 点击日期可展开/折叠｜📚 Zotero 按钮需安装 <a href="https://www.zotero.org/download/connectors" target="_blank">Connector 插件</a></p>
             </div>
         </header>
@@ -636,17 +636,229 @@
         <!-- 日期导航 -->
         <nav class="nav">
             <strong>📅 日期导航：</strong>
-            <a href="#date-20260617">2026-06-17（11篇）</a> | <a href="#date-20260616">2026-06-16（19篇）</a> | <a href="#date-20260615">2026-06-15（10篇）</a>
+            <a href="#date-20260618">2026-06-18（8篇）</a> | <a href="#date-20260617">2026-06-17（11篇）</a> | <a href="#date-20260616">2026-06-16（19篇）</a> | <a href="#date-20260615">2026-06-15（10篇）</a>
         </nav>
 
         <!-- 论文内容区块 -->
         <main>
-            <div class="date-section" id="date-20260617">
+            <div class="date-section" id="date-20260618">
     <div class="date-header">
-        <span>2026-06-17（11篇论文）</span>
+        <span>2026-06-18（8篇论文）</span>
         <span class="arrow">▼</span>
     </div>
     <div class="date-content" style="display: block;">
+        <table>
+        <!-- 添加 colgroup 明确指定每列宽度 -->
+        <colgroup>
+            <col style="width: 25%">  <!-- Title -->
+            <col style="width: 15%">   <!-- Authors -->
+            <col style="width: 10%">   <!-- Resources -->
+            <col style="width: 10%">   <!-- Relevance -->
+            <col style="width: 40%">  <!-- Summary -->
+        </colgroup>
+        <thead>
+            <tr>
+                <th>标题</th>
+                <th>作者</th>
+                <th>资源</th>
+                <th>相关性</th>
+                <th>总结</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      该论文的动机在于解释历史S&amp;P500多日收益分布中观察到的现象，即随着累积天数的增加，收益分布的幂律尾部逐渐趋向于一个有限值。其次，论文旨在揭示在实际数据中，收益的对称性被打破，表现为正均值和负偏度的现象。  2. 【前人的工作如何解决该问题，存在哪些空白】      前人的工作主要通过引入学生t分布来分析股市收益，认为其在理论上能够描述收益的...">Fitting Accumulated Stock Returns with Tempered Skew t-Distribution</span></td>
+        <td class="author-cell">Siqi Shao</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.19318" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.19318" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+   该论文的动机在于解释历史S&amp;P500多日收益分布中观察到的现象，即随着累积天数的增加，收益分布的幂律尾部逐渐趋向于一个有限值。其次，论文旨在揭示在实际数据中，收益的对称性被打破，表现为正均值和负偏度的现象。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+   前人的工作主要通过引入学生t分布来分析股市收益，认为其在理论上能够描述收益的对称性。然而，实际数据却显示出收益的偏度和尾部特征与理论模型存在显著差异，尤其是负偏度和损失尾部更重的问题。此外，现有模型未能有效解释从纯幂律依赖到尾部温和化的过渡现象。
+
+3. 【提出了什么创新的方法】  
+   本文提出了一种新的随机波动性模型，生成“上限逆伽马”作为其平稳分布，进而推导出“温和学生t分布”。此外，论文引入了Jones-Faddy-like对称性破坏机制，形成“温和偏斜t分布”，以更好地拟合累积多日收益的分布特征。
+
+4. 【文章缺点】  
+   文章中可能存在的缺点包括：首先，模型的复杂性可能导致在实际应用中的可解释性不足，限制了其推广性。其次，尽管模型在拟合历史数据上表现良好，但对未来市场行为的预测能力尚未得到充分验证。
+
+5. 【类似工作】  
+   类似的工作包括：一项研究探讨了基于随机波动性的学生t分布在金融市场中的应用，另一项工作则提出了改进的偏斜t分布模型，以更好地捕捉市场收益的非对称特征。
+
+6. 【相关性评分】  
+   分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文的动机在于提升银行在信用风险管理中的压力测试能力，尤其是在贷款组合的预测和压力测试方面。首先，现有的压力测试方法往往缺乏对贷款生产过程的整合，导致无法全面评估贷款组合的风险。其次，传统方法未能有效嵌入风险指标之间的相关性结构，从而限制了对复杂市场条件下信用风险的动态评估能力。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的工作主...">An extendable, integrated, and dynamic approach to forecasting and stress-testing credit risk</span></td>
+        <td class="author-cell">Marcel Muller</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.19052" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.19052" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+该论文的动机在于提升银行在信用风险管理中的压力测试能力，尤其是在贷款组合的预测和压力测试方面。首先，现有的压力测试方法往往缺乏对贷款生产过程的整合，导致无法全面评估贷款组合的风险。其次，传统方法未能有效嵌入风险指标之间的相关性结构，从而限制了对复杂市场条件下信用风险的动态评估能力。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作主要集中在建立多阶段框架和风险参数的敏感性分析上，例如通过系统性情景来影响借款人的还款行为。然而，这些方法往往未能考虑贷款生产与信用风险之间的互动关系，导致对实际情况的适应性不足。此外，现有研究通常缺乏对动态建模的深入探讨，无法灵活应对输入变量的变化。
+
+3. 【提出了什么创新的方法】  
+本文提出了一种集成的、可扩展的动态方法来进行贷款组合的压力测试，主要创新包括：首先，通过模拟真实的贷款参数和分布假设，生成不确定的现金流历史；其次，采用多状态概率框架来评估不同压力情景下的信用风险指标；最后，允许贷款参数根据输入变量动态建模，从而提高预测的灵活性和准确性。
+
+4. 【文章缺点】  
+尽管该方法具有创新性，但仍存在一些缺点。首先，模拟方法的复杂性可能导致计算成本较高，尤其是在处理大规模贷款组合时。其次，尽管模型可以适应真实数据，但缺乏对模型假设的充分验证，可能影响结果的可靠性。
+
+5. 【类似工作】  
+类似的工作包括：1) 一种基于转移的收据生成方法，即EIDFAST方法，该方法关注于收据生成的效率和准确性；2) 其他研究在压力测试中采用的多阶段框架，虽然未能完全整合贷款生产过程，但为信用风险评估提供了基础。
+
+6. 【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于揭示欧洲电力市场中价格形成的复杂性，尤其是在强非线性和高维交互的背景下，传统的线性模型无法有效捕捉这些特征。其次，尽管深度神经网络在电力价格预测中表现出色，但其黑箱特性限制了对价格动态背后驱动因素的理解，这对于市场参与者和监管机构来说至关重要。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的研究主要集中在使用深度学习技...">Analysing drivers and interdependencies in European electricity markets using XAI</span></td>
+        <td class="author-cell">Antoine Pesenti</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.19118" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.19118" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本论文的动机在于揭示欧洲电力市场中价格形成的复杂性，尤其是在强非线性和高维交互的背景下，传统的线性模型无法有效捕捉这些特征。其次，尽管深度神经网络在电力价格预测中表现出色，但其黑箱特性限制了对价格动态背后驱动因素的理解，这对于市场参与者和监管机构来说至关重要。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究主要集中在使用深度学习技术进行电力价格预测，取得了一定的成功。然而，这些研究往往忽视了解释性，导致无法深入理解价格形成的机制。另一个空白是，尽管有些研究尝试结合可解释人工智能（XAI）方法，但尚未充分利用SHAP等解释性工具来分析复杂的电力市场动态。
+
+3. 【提出了什么创新的方法】  
+本论文提出了一种结合深度神经网络与SHAP基础的可解释性方法，旨在揭示电力价格动态的关键驱动因素。此外，研究构建了一个合成的欧盟范围电力市场作为反事实场景，以探讨在完全整合的系统中价格的行为。这种方法为理解市场之间的相互依赖性提供了新的视角。
+
+4. 【文章缺点】  
+首先，尽管采用了可解释性方法，但深度学习模型的复杂性仍可能导致解释结果的模糊性，影响实际应用。其次，构建的合成市场模型可能无法完全反映现实市场的复杂性和动态变化，限制了研究结论的普适性。
+
+5. 【类似工作】  
+类似的工作包括使用机器学习技术分析电力市场的研究，如基于随机森林的价格预测模型，以及结合可解释性AI的其他领域的研究，这些研究同样面临解释性不足的问题。
+
+6. 【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文的动机在于探讨在现代经济中，如何有效地协调资源配置，尤其是在集中式和去中心化的计算规划之间进行比较。首先，现代经济的复杂性要求对资源配置的协调方式进行深入分析，而不仅仅是简单的集中与分散的对比。其次，论文旨在通过建立一个可重复的合成基准，来评估不同资源分配机制的有效性，以便在相同的经济环境下进行公平的比较。  2. 【前人的工作如何解决该问题，...">Testing Centralized and Polycentric Computational Planning</span></td>
+        <td class="author-cell">Ricardo Alonzo Fernández Salguero</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.19214" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.19214" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：3/5">★★★☆☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+该论文的动机在于探讨在现代经济中，如何有效地协调资源配置，尤其是在集中式和去中心化的计算规划之间进行比较。首先，现代经济的复杂性要求对资源配置的协调方式进行深入分析，而不仅仅是简单的集中与分散的对比。其次，论文旨在通过建立一个可重复的合成基准，来评估不同资源分配机制的有效性，以便在相同的经济环境下进行公平的比较。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作主要集中在集中计划与市场机制的理论比较上，例如米塞斯和朗格的经典辩论。然而，这些研究往往忽视了现代经济中多层次机构的复杂性，未能充分考虑信息的分散性和动态变化对资源配置的影响。此外，现有的比较往往基于理想化的理论模型，而缺乏实证基础和可操作的测试框架。
+
+3. 【提出了什么创新的方法】  
+论文提出了一种新的合成经济基准，结合了稀疏的Leontief输入输出网络、噪声需求观察、异质性企业和内生价格调整等多种因素，创建了一个复杂的模拟经济环境。此外，论文还设计了一个多组件的福利评估系统，通过对比集中规划与去中心化市场的表现，提供了新的实证数据和分析框架。
+
+4. 【文章缺点】  
+首先，尽管论文提供了一个新的基准，但其模拟环境的复杂性可能导致结果的可解释性降低，难以直接应用于现实经济中。其次，论文的实验设计可能未能充分考虑外部经济冲击对资源配置的影响，限制了其结果的普适性。
+
+5. 【类似工作】  
+类似的工作包括Hayek对市场过程的算法化理解，强调信息的分散性和机构的重要性；以及Bowles等人对经济计算和制度比较的研究，探讨了去中心化调整的优势与局限性。
+
+6. 【相关性评分】  
+分数：3分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本研究的动机在于探讨体育赛事结果对驾驶行为的影响，尤其是在情绪驱动下的风险驾驶行为。首先，体育赛事常常伴随强烈的情感反应，尤其是在比赛结果与预期相悖时，这种情绪可能会影响观众的后续行为。其次，了解这种情绪溢出效应对于公共安全具有重要意义，因为情绪驱动的驾驶行为可能会导致交通事故的增加。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的研...">Emotional driving: Reference-dependent emotions and risky driving behavior after sporting events</span></td>
+        <td class="author-cell">Travis Richardson</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.18805" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.18805" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：3/5">★★★☆☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本研究的动机在于探讨体育赛事结果对驾驶行为的影响，尤其是在情绪驱动下的风险驾驶行为。首先，体育赛事常常伴随强烈的情感反应，尤其是在比赛结果与预期相悖时，这种情绪可能会影响观众的后续行为。其次，了解这种情绪溢出效应对于公共安全具有重要意义，因为情绪驱动的驾驶行为可能会导致交通事故的增加。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究已经探讨了情绪如何影响多种行为，如股市回报、投票率和消费支出等，但在体育赛事后的驾驶行为方面仍然缺乏系统的实证研究。其次，虽然已有研究表明情绪可以影响决策，但具体到驾驶行为的情绪溢出效应尚未得到充分验证，尤其是在高压和高期待的体育赛事之后。
+
+3. 【提出了什么创新的方法】  
+本研究采用了细粒度的时空数据分析方法，通过分析2015至2019年间佛罗里达州五个体育场馆周围的平均车辆速度，揭示了不同类型比赛结果对驾驶行为的影响。研究特别关注了NFL比赛中因主队失利而引发的情绪反应，并量化了这种情绪对驾驶速度的具体影响。
+
+4. 【文章缺点】  
+首先，研究仅限于佛罗里达州的NFL和NBA比赛，可能无法代表其他地区或其他体育赛事的情况，因此结果的普遍性受到限制。其次，尽管研究揭示了情绪对驾驶行为的影响，但未能深入探讨其他潜在的影响因素，如天气、交通状况等，这可能会对结果产生干扰。
+
+5. 【类似工作】  
+类似的研究包括Edmans等（2007）关于股市回报的情绪影响研究，以及Cai和Li（2026）对消费者支出的情绪溢出效应的探讨。这些研究虽然关注的领域不同，但均涉及情绪如何影响经济行为的主题。
+
+6. 【相关性评分】  
+分数：3分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本研究的动机在于重新评估中介在出口中的角色，特别是揭示许多被归类为中介的公司实际上是生产商拥有的出口部门或垂直整合的公司。通过分析西班牙的公司层面数据，研究旨在挑战现有文献中对中介在出口中占比的高估，提供更准确的出口中介定义和分类。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的研究主要集中在中介在出口中的重要性，认为中介占据了大量的...">Reassessing the role of intermediaries in exports</span></td>
+        <td class="author-cell">Aitor Garmendia-Lazcano</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.18719" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.18719" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：3/5">★★★☆☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本研究的动机在于重新评估中介在出口中的角色，特别是揭示许多被归类为中介的公司实际上是生产商拥有的出口部门或垂直整合的公司。通过分析西班牙的公司层面数据，研究旨在挑战现有文献中对中介在出口中占比的高估，提供更准确的出口中介定义和分类。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究主要集中在中介在出口中的重要性，认为中介占据了大量的出口份额。然而，这些研究往往没有深入探讨中介的性质及其与生产商的关系，导致对中介角色的理解存在偏差。现有文献对中介的定义较为宽泛，未能有效区分真正的中介与生产商的出口部门或垂直整合公司。
+
+3. 【提出了什么创新的方法】  
+本研究通过使用西班牙的微观数据，采用了更精细的公司层面分析方法，能够准确识别和分类出口中介。研究还提出了对中介的重新定义，强调了生产商拥有的出口部门和垂直整合公司的重要性，从而揭示了中介在出口中的实际占比大幅下降。
+
+4. 【文章缺点】  
+首先，研究主要基于西班牙的数据，可能存在地域性限制，结果不一定适用于其他国家或地区。其次，尽管研究提供了对中介角色的重新评估，但对中介在国际贸易中的具体功能和影响仍缺乏深入的实证分析。
+
+5. 【类似工作】  
+类似的研究包括Bernard et al. (2010)对出口中介的定义和分类的探讨，以及Crozet et al. (2013)对不同类型出口商的分析。这些研究为理解中介在国际贸易中的作用提供了基础，但未能深入探讨中介的多样性和复杂性。
+
+6. 【相关性评分】  
+分数：3分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文的动机在于揭示数字平台如何通过版权和合同的双重法律工具，控制用户生成内容的权利，导致用户在参与数字生活时不得不放弃有效的版权控制。其次，论文旨在探讨这种不对称的法律框架是如何在历史和技术条件下形成的，并提出可能的改进方案，以保护用户的版权权益。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的研究主要集中在版权法如何保护软件开发者...">Digital Speech Acts Retain Control of Copyright with People, Not Platforms</span></td>
+        <td class="author-cell">James Golike</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.19263" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.19263" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：2/5">★★☆☆☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+该论文的动机在于揭示数字平台如何通过版权和合同的双重法律工具，控制用户生成内容的权利，导致用户在参与数字生活时不得不放弃有效的版权控制。其次，论文旨在探讨这种不对称的法律框架是如何在历史和技术条件下形成的，并提出可能的改进方案，以保护用户的版权权益。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究主要集中在版权法如何保护软件开发者的利益，以及数字平台如何利用这些法律工具来构建自己的治理机制。然而，现有研究往往忽视了用户在这一过程中所面临的权利剥夺问题，未能深入探讨如何在保护平台利益的同时，保障用户的版权权益。
+
+3. 【提出了什么创新的方法】  
+论文提出了一种新的视角，强调数字言语行为的概念，主张应当将版权控制的权利保留在用户手中，而不是平台。此外，作者建议通过重新审视和修订现有的法律框架，以实现更公平的版权分配，保护用户的创作权益。
+
+4. 【文章缺点】  
+首先，论文可能缺乏对不同国家和地区法律差异的深入讨论，导致其建议在全球范围内的适用性受到限制。其次，虽然提出了新的理论框架，但缺乏实证研究来验证这些理论在实际应用中的有效性。
+
+5. 【类似工作】  
+一项相关工作是关于数字平台如何利用用户数据进行盈利的研究，探讨了用户隐私与平台利益之间的冲突。另一项工作则关注于用户生成内容的法律保护，分析了不同国家在版权法方面的差异及其对用户权益的影响。
+
+6. 【相关性评分】  
+分数：2分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于探讨不同类型企业在出口市场中的表现及其背后的原因。首先，企业在出口方式上存在显著差异，有些企业选择直接出口，而另一些则依赖中介进行出口，这种异质性在国际贸易中具有重要意义。其次，理解企业的制造能力和商业能力如何影响其出口决策，有助于揭示企业在全球市场中的竞争策略和资源配置。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人...">How firms export: direct and indirect exporting, intermediaries, and hybrid firms</span></td>
+        <td class="author-cell">Raúl Mínguez</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.18684" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.18684" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本论文的动机在于探讨不同类型企业在出口市场中的表现及其背后的原因。首先，企业在出口方式上存在显著差异，有些企业选择直接出口，而另一些则依赖中介进行出口，这种异质性在国际贸易中具有重要意义。其次，理解企业的制造能力和商业能力如何影响其出口决策，有助于揭示企业在全球市场中的竞争策略和资源配置。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究主要集中在不同类型企业的出口行为上，识别了直接出口商、间接出口商和中介等不同角色。然而，这些研究往往未能系统性地分析制造能力与商业能力的结合如何影响企业的出口模式。此外，现有文献对企业在出口过程中所面临的具体成本结构缺乏深入探讨，未能全面解释为何某些企业选择特定的出口方式。
+
+3. 【提出了什么创新的方法】  
+本论文提出了一种新的模型，通过将企业的制造能力和商业能力作为两个维度，系统性地解释了不同类型企业的出口行为。该模型不仅揭示了直接出口、间接出口和中介企业之间的关系，还预测了商业能力强的中介与制造能力强的生产者之间的匹配情况。此外，模型还考虑了出口中介的独占合同分配市场，进一步丰富了对出口行为的理解。
+
+4. 【文章缺点】  
+本论文的一个缺点是模型的简化假设可能限制了其在复杂市场环境中的适用性，例如未考虑市场竞争的动态变化。另一个缺点是，尽管提供了西班牙企业的实证数据支持，但样本的局限性可能影响模型结果的普遍性，未能涵盖其他国家或地区的企业行为。
+
+5. 【类似工作】  
+类似的工作包括Bernard et al. (2010)对出口商类型的分类研究，以及Crozet et al. (2013)对中介企业在国际贸易中的角色分析。这些研究为理解企业出口行为提供了基础，但未能结合制造和商业能力的视角进行综合分析。
+
+6. 【相关性评分】  
+分</small></details></td>
+    </tr>
+        </tbody></table>
+    </div>
+</div>
+<div class="date-section" id="date-20260617">
+    <div class="date-header">
+        <span>2026-06-17（11篇论文）</span>
+        <span class="arrow">▶</span>
+    </div>
+    <div class="date-content" style="display: none;">
         <table>
         <!-- 添加 colgroup 明确指定每列宽度 -->
         <colgroup>
@@ -1694,7 +1906,7 @@
             });
             
             // ========== 自动展开最新日期 ==========
-            const latestId = 'date-20260617';
+            const latestId = 'date-20260618';
             if (latestId) {
                 const latestSection = document.getElementById(latestId);
                 if (latestSection) {
