@@ -628,7 +628,7 @@
         <header>
             <h1>📈 arXiv 量化金融领域论文汇总</h1>
             <div class="intro">
-                <p>📊 共 <strong>43</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
+                <p>📊 共 <strong>55</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
                 <p>🔗 点击日期可展开/折叠｜📚 Zotero 按钮需安装 <a href="https://www.zotero.org/download/connectors" target="_blank">Connector 插件</a></p>
             </div>
         </header>
@@ -636,17 +636,317 @@
         <!-- 日期导航 -->
         <nav class="nav">
             <strong>📅 日期导航：</strong>
-            <a href="#date-20260624">2026-06-24（8篇）</a> | <a href="#date-20260623">2026-06-23（35篇）</a>
+            <a href="#date-20260625">2026-06-25（12篇）</a> | <a href="#date-20260624">2026-06-24（8篇）</a> | <a href="#date-20260623">2026-06-23（35篇）</a>
         </nav>
 
         <!-- 论文内容区块 -->
         <main>
-            <div class="date-section" id="date-20260624">
+            <div class="date-section" id="date-20260625">
     <div class="date-header">
-        <span>2026-06-24（8篇论文）</span>
+        <span>2026-06-25（12篇论文）</span>
         <span class="arrow">▼</span>
     </div>
     <div class="date-content" style="display: block;">
+        <table>
+        <!-- 添加 colgroup 明确指定每列宽度 -->
+        <colgroup>
+            <col style="width: 25%">  <!-- Title -->
+            <col style="width: 15%">   <!-- Authors -->
+            <col style="width: 10%">   <!-- Resources -->
+            <col style="width: 10%">   <!-- Relevance -->
+            <col style="width: 40%">  <!-- Summary -->
+        </colgroup>
+        <thead>
+            <tr>
+                <th>标题</th>
+                <th>作者</th>
+                <th>资源</th>
+                <th>相关性</th>
+                <th>总结</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      本文的动机在于利用层次图学习方法来挖掘商品期货市场中的统计套利机会，尤其是通过日历价差策略（CS策略）来实现更高的风险调整收益和更低的风险。其次，当前文献中缺乏基于学习的方法来处理商品期货市场的CS策略，尤其是未考虑到到期时间依赖的相互关系。  2. 【前人的工作如何解决该问题，存在哪些空白】      前人的研究主要集中在商品期货市场的单合约...">Hierarchical Graph Learning for Calendar Spread Strategies in Commodity Futures Markets</span></td>
+        <td class="author-cell">Yoonsik Hong</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.25811" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.25811" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：5/5">★★★★★</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+   本文的动机在于利用层次图学习方法来挖掘商品期货市场中的统计套利机会，尤其是通过日历价差策略（CS策略）来实现更高的风险调整收益和更低的风险。其次，当前文献中缺乏基于学习的方法来处理商品期货市场的CS策略，尤其是未考虑到到期时间依赖的相互关系。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+   前人的研究主要集中在商品期货市场的单合约方向性交易和顶级选择等策略，但这些方法往往面临着基础资产价格风险的暴露，导致风险调整表现不佳。此外，尽管有一些研究尝试使用图学习来建模商品期货之间的关系，但它们未能考虑到这些关系的到期时间依赖性，导致对市场动态的理解不够全面。
+
+3. 【提出了什么创新的方法】  
+   本文提出了一种层次图学习方法，该方法通过利用商品期货之间的到期时间依赖关系来预测期货价格变动，从而构建CS交易算法。此外，文章还引入了一种将基于学习的预测转化为CS头寸的方法，以提高交易策略的有效性。
+
+4. 【文章缺点】  
+   文章可能在数据集的选择上存在局限性，未能涵盖所有可能影响期货市场的外部因素。其次，尽管提出了创新的方法，但在实际应用中可能面临模型复杂性和计算成本高的问题。
+
+5. 【类似工作】  
+   一项相关工作是Hu等（2025）研究的图学习方法，该方法探讨了商品期货之间的关系，但未考虑到期时间的差异。另一项相关研究是Tan等（2024）关于期货市场的图学习应用，尽管提供了一些见解，但同样缺乏对到期时间依赖性的深入分析。
+
+6. 【相关性评分】  
+分数：5分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      该论文的动机在于揭示加密货币市场中资产之间的相互作用结构，特别是在高频价格数据的背景下，探索这些相互作用如何随时间演变。其次，研究者希望通过构建基于网络的方法，量化资产之间的影响流动，从而更深入地理解加密货币市场的动态特征和复杂行为。  2. 【前人的工作如何解决该问题，存在哪些空白】      前人的研究主要集中在加密货币的价格行为和市场动态...">Time-dependent weighted directed networks of cryptocurrency interaction from high-frequency returns</span></td>
+        <td class="author-cell">Shubhangam Shukla</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.25466" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.25466" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+   该论文的动机在于揭示加密货币市场中资产之间的相互作用结构，特别是在高频价格数据的背景下，探索这些相互作用如何随时间演变。其次，研究者希望通过构建基于网络的方法，量化资产之间的影响流动，从而更深入地理解加密货币市场的动态特征和复杂行为。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+   前人的研究主要集中在加密货币的价格行为和市场动态上，利用网络方法分析资产之间的相互关系。然而，现有研究往往忽视了时间依赖性和权重的影响，未能充分捕捉加密货币市场中动态变化的复杂性。此外，虽然有研究探讨了钱包级别的交易网络，但缺乏对价格波动及其因果关系的系统性分析。
+
+3. 【提出了什么创新的方法】  
+   本文提出了一种时间依赖的加权有向网络框架，通过高频价格数据构建加密货币之间的相互作用网络。该方法利用Granger因果关系分析来识别资产之间的统计显著关系，从而量化影响流动。此外，研究还揭示了加密货币的动态影响层级，特别是以太坊和比特币在市场中的相对重要性变化。
+
+4. 【文章缺点】  
+   文章可能存在对网络结构的简化假设，未能充分考虑外部市场因素对加密货币相互作用的影响。其次，尽管使用了高频数据，但样本时间范围有限，可能无法全面反映加密货币市场的长期趋势和变化。
+
+5. 【类似工作】  
+   类似的工作包括对传统金融市场中资产间相互作用的网络分析研究，以及基于交易数据构建的用户级别网络分析。这些研究为理解市场动态提供了有价值的视角，但在加密货币领域的应用仍然较为稀缺。
+
+6. 【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文的动机在于解决现代能源市场设计中的一个核心挑战，即如何建立一个既能确保经济效率又能维护电网稳定的策略无偏差的不平衡结算层。其次，作者通过公共数据揭示了日内市场在实际消费者需求下存在战略性偏差的问题，强调了积极的生产者（prosumers）在需求报告中的不诚实行为对市场效率的影响。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的研...">Restoring Incentive Compatibility in Two-Stage Energy Markets with Prosumers</span></td>
+        <td class="author-cell">Nikolas Koumpis</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.25910" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.25910" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+该论文的动机在于解决现代能源市场设计中的一个核心挑战，即如何建立一个既能确保经济效率又能维护电网稳定的策略无偏差的不平衡结算层。其次，作者通过公共数据揭示了日内市场在实际消费者需求下存在战略性偏差的问题，强调了积极的生产者（prosumers）在需求报告中的不诚实行为对市场效率的影响。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究主要集中在电力市场的需求预测和调度机制上，尝试通过不同的市场设计来提高效率。然而，现有研究往往忽视了积极生产者在需求报告中的激励机制，导致市场参与者可能会通过低报需求来获取更大利润，从而影响市场的整体稳定性。其次，现有文献缺乏对如何在信息约束下恢复激励相容性的具体方法探讨。
+
+3. 【提出了什么创新的方法】  
+论文提出了一种基于“留一法”的对比评分规则的惩罚机制，旨在激励积极生产者真实报告其需求。此外，作者通过数值模拟和实际市场数据评估了该机制的有效性，展示了其在保持低成本的同时，能够实现强烈的激励一致性。
+
+4. 【文章缺点】  
+首先，文章的模型假设可能过于简化，未能充分考虑市场参与者的多样性和复杂性。其次，尽管进行了数值模拟，但缺乏对不同市场环境下机制适用性的广泛验证，可能影响结果的普适性。
+
+5. 【类似工作】  
+类似的工作包括对电力市场中需求响应机制的研究，以及对市场参与者行为的博弈论分析。这些研究为理解市场动态和参与者激励提供了理论基础，但未能深入探讨积极生产者的具体行为及其对市场的影响。
+
+6. 【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于，现有的电动滑板车出行中心规划方法缺乏针对不同城市类型的因果证据，导致规划决策依赖于相关性模型而非因果关系。其次，城市类型的多样性使得需求结构存在显著差异，因此需要建立一个系统的因果模板库，以支持针对特定城市环境的有效规划。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的研究主要集中于识别电动滑板车出行与城市特征之间的...">From Causal Discovery to Implementation: An Agentic AI Framework for E-Scooter Mobility Hub Planning Across 29 German Cities</span></td>
+        <td class="author-cell">Meng Jin</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.25484" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.25484" target="_blank" rel="noopener">🧠 AlphaXiv</a><br><details class="resource-comment"><summary>📝 备注</summary><small>Submitted to Transportation Research Part D: Transport and Environment. Under review</small></details></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：3/5">★★★☆☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本论文的动机在于，现有的电动滑板车出行中心规划方法缺乏针对不同城市类型的因果证据，导致规划决策依赖于相关性模型而非因果关系。其次，城市类型的多样性使得需求结构存在显著差异，因此需要建立一个系统的因果模板库，以支持针对特定城市环境的有效规划。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究主要集中于识别电动滑板车出行与城市特征之间的相关性，如交通密度和土地使用混合等，但这些相关性不足以支撑资本投资决策。此外，现有的因果发现方法未能适应不同城市的异质数据条件，且缺乏针对城市类型特定的因果需求模板的系统性构建。
+
+3. 【提出了什么创新的方法】  
+本论文提出了一种三阶段的智能代理AI框架，利用公共的GBFS数据构建因果模板库，并通过大语言模型协调因果发现流程，以适应不同城市的数据条件。此外，该框架还开发了一种规划工具，能够根据因果证据评分候选地点，并为基础设施推荐提供本地化的建议。
+
+4. 【文章缺点】  
+首先，尽管提出了创新的方法，但在实际应用中，如何确保GBFS数据的质量和适用性仍然是一个挑战。其次，因果发现方法的自动化程度可能不足，仍需人工干预以适应不同城市的复杂性。
+
+5. 【类似工作】  
+类似的工作包括对电动滑板车需求与环境因素关系的研究，例如McKenzie等人的研究，以及对城市类型影响的比较分析，如Li等人的研究。这些研究为理解电动滑板车需求提供了基础，但仍未能系统性地建立因果关系。
+
+6. 【相关性评分】  
+分数：3分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于扩展回报风险度量（RRMs）的理论，以适应更广泛的有序向量空间，特别是AM-代数。这种扩展不仅有助于更好地理解风险的几何凸性，还能将其与传统的货币风险度量相联系。其次，论文希望通过引入新的系统性和向量值RRMs，填补现有文献中对多维风险度量的不足，推动风险管理领域的理论发展。  2. 【前人的工作如何解决该问题，存在哪些空白】   前...">Geometrically convex return risk measures on AM-algebras</span></td>
+        <td class="author-cell">Christian Laudagé</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.26031" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.26031" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本论文的动机在于扩展回报风险度量（RRMs）的理论，以适应更广泛的有序向量空间，特别是AM-代数。这种扩展不仅有助于更好地理解风险的几何凸性，还能将其与传统的货币风险度量相联系。其次，论文希望通过引入新的系统性和向量值RRMs，填补现有文献中对多维风险度量的不足，推动风险管理领域的理论发展。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究主要集中在货币风险度量和RRMs的基本理论上，例如Bellini等人（2018）首次引入了RRMs的公理框架。然而，现有的研究大多局限于L∞或(0,∞)空间，未能充分利用AM-代数的特性，从而限制了对多维风险度量的深入探讨。此外，虽然有研究关注GG-凸性，但缺乏对其与货币风险度量之间关系的系统性分析。
+
+3. 【提出了什么创新的方法】  
+本论文提出了一种新的方法，通过将RRMs扩展到AM-代数，建立了几何凸性与货币风险度量之间的联系。具体来说，论文引入了新的系统性和向量值RRMs，并在此基础上探讨了有限性、连续性和可分性等性质。此外，论文还提出了基于几何上升图的正齐次性定义，为RRMs的理论提供了新的视角。
+
+4. 【文章缺点】  
+首先，尽管论文在理论上做出了重要贡献，但缺乏对实际金融市场应用的深入探讨，可能限制了其实际应用价值。其次，论文对AM-代数的应用背景介绍较为简略，可能使得某些读者难以理解其在风险度量中的重要性。
+
+5. 【类似工作】  
+类似的工作包括Laeven等人（2025）对动态时间框架下RRMs的研究，以及Aygün等人（2023）对RRMs可引导性的讨论。这些研究虽然在某种程度上与本论文</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于：   - 传统的期权定价模型（如Black-Scholes模型）在处理负资产价格时存在局限性，而Bachelier模型则提供了一种更为灵活的选择。   - 在Bachelier模型下，寻找有效的期权价格和希腊值的近似解是一个重要的挑战，尤其是在随机波动性模型的背景下。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的工...">Matrix Approximation of Bachelier Option Prices and Greeks under Stochastic Volatility models</span></td>
+        <td class="author-cell">Elisa Alòs</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.26024" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.26024" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本论文的动机在于：  
+- 传统的期权定价模型（如Black-Scholes模型）在处理负资产价格时存在局限性，而Bachelier模型则提供了一种更为灵活的选择。  
+- 在Bachelier模型下，寻找有效的期权价格和希腊值的近似解是一个重要的挑战，尤其是在随机波动性模型的背景下。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作主要通过两种方法来解决期权定价问题：  
+- 一种方法是直接利用定价偏微分方程（PDE）进行扰动分析，另一种方法则是通过概率论的方式表达期权价格。然而，这些方法通常缺乏封闭的解析形式，限制了其在不同执行价格范围内的适用性。  
+- 尽管已有研究尝试在Bachelier框架下进行扩展，但现有的近似方法在处理不同波动性模型时仍显不足，特别是在缺乏马尔可夫性质的情况下。
+
+3. 【提出了什么创新的方法】  
+本论文提出了一种新的数值方法，通过以下方式进行创新：  
+- 利用基础线性代数，提出了一种两尺度的解析扩展方法，能够在随机波动性Bachelier模型下有效计算期权价格和希腊值。  
+- 该方法允许在有限的期望值计算下，获得无限多个执行价格的期权价格和希腊值，从而提高了计算的效率和准确性。
+
+4. 【文章缺点】  
+本论文的缺点包括：  
+- 尽管提出了新的方法，但其适用范围可能仍然受到限制，特别是在极端市场条件下的表现尚未得到充分验证。  
+- 文章中对数值示例的讨论较为简略，缺乏对不同市场环境下方法有效性的深入分析。
+
+5. 【类似工作】  
+与本论文相关的类似工作包括：  
+- Alòs和Burés（2026）在无相关情况下的扩展研究，为本论文提供了理论基础。  
+- Lewis和Pirjol（2022）关于期权定</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文的动机在于探讨碳抵消政策对经济的广泛影响，尤其是在碳抵消市场不断扩大的背景下，政策对其他市场、排放和整体经济的影响日益显著。其次，现有研究对碳抵消的普遍均衡效应关注不足，尤其是在评估碳抵消的（非）额外性问题时，真实的排放影响难以量化，因此需要更深入的分析。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的工作主要集中在碳抵消市场的...">General Equilibrium Effects of Carbon Offsets</span></td>
+        <td class="author-cell">Isla Globus-Harris</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.25909" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.25909" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+该论文的动机在于探讨碳抵消政策对经济的广泛影响，尤其是在碳抵消市场不断扩大的背景下，政策对其他市场、排放和整体经济的影响日益显著。其次，现有研究对碳抵消的普遍均衡效应关注不足，尤其是在评估碳抵消的（非）额外性问题时，真实的排放影响难以量化，因此需要更深入的分析。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作主要集中在碳抵消市场的（非）额外性问题上，探讨了碳抵消的真实排放影响及其测量困难。然而，这些研究往往未能充分考虑碳抵消政策的普遍均衡效应，导致对政策效果的评估不够全面。此外，虽然已有一些研究提出了碳会计指标，但缺乏对这些指标在福利变化中的充分性进行系统分析的工作。
+
+3. 【提出了什么创新的方法】  
+论文提出了一种可解析的普遍均衡模型，分析了碳抵消对经济的影响，并定义了四个新的边际，以描述抵消如何响应支付变化，其中一个边际在文献中尚未被识别。此外，论文通过两个碳会计指标评估模型结果，揭示了碳抵消政策的复杂性及其对福利的影响。
+
+4. 【文章缺点】  
+首先，模型的简化假设可能限制了其在现实世界中的应用，尤其是在考虑其他市场因素时。其次，尽管提出了新的边际，但模型中对不同类型抵消的响应机制可能未能充分捕捉复杂的市场动态。
+
+5. 【类似工作】  
+类似的工作包括对碳市场的经济影响进行建模的研究，如Bushnell（2010）和Zhang与Wang（2011）的研究，这些研究探讨了碳抵消的（非）额外性问题。此外，Calel等（2025）和Aspelund与Russo（2026）的研究也关注了碳抵消政策的经济效应，尽管未能深入分析普遍均衡</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文的动机在于理解地球静止轨道（GEO）中卫星部署的地理分布现象，尤其是为何某些轨道位置拥挤而其他位置空置。这一问题对于卫星位置分配、频谱协调和全球通信覆盖具有重要意义，同时也与空间可持续性相关，因为卫星的部署会导致碎片的积累。此外，研究卫星部署的地理分布可以帮助预测未来的轨道风险。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的研...">Competitive satellite placement and the geography of orbital risk: evidence from the geostationary arc</span></td>
+        <td class="author-cell">Akhil Rao</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.25283" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.25283" target="_blank" rel="noopener">🧠 AlphaXiv</a><br><details class="resource-comment"><summary>📝 备注</summary><small>Working paper</small></details></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+该论文的动机在于理解地球静止轨道（GEO）中卫星部署的地理分布现象，尤其是为何某些轨道位置拥挤而其他位置空置。这一问题对于卫星位置分配、频谱协调和全球通信覆盖具有重要意义，同时也与空间可持续性相关，因为卫星的部署会导致碎片的积累。此外，研究卫星部署的地理分布可以帮助预测未来的轨道风险。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究主要集中在卫星发射后的工程模型，如碰撞、操作、处置和生命周期行为等方面。这些模型虽然重要，但未能充分探讨卫星运营商在选择轨道位置时所做的决策如何影响未来的拥堵和碎片地理分布。因此，现有模型往往依赖历史数据进行未来环境的预测，而缺乏对竞争性位置选择的深入理解。
+
+3. 【提出了什么创新的方法】  
+论文提出了一种简单的竞争性进入模型，将地球静止轨道视为一个360个位置的环形轨道。该模型通过考虑人口分布和市场份额最大化的逻辑，预测了活跃卫星的分布，并能够解释非活跃载荷的地理分布。此外，模型还显示出在成熟轨道位置上，卫星的分布相对公平，受到人口而非收入的驱动。
+
+4. 【文章缺点】  
+首先，模型可能过于简化了复杂的市场动态，未能考虑其他可能影响卫星部署的因素，如技术进步和政策变化。其次，尽管模型在预测活跃卫星和非活跃载荷分布方面表现良好，但其适用性可能受到特定地理和经济条件的限制，可能无法广泛推广到其他轨道或地区。
+
+5. 【类似工作】  
+类似的工作包括Wilson等（2025）对历史发射流量的预测研究，以及Letizia等（2023）对轨道环境的建模。这些研究虽然关注轨道环境的未来发展，但大多基于历史数据而非竞争性位置选择模型。
+
+6. 【</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      该论文的动机在于探讨限价订单簿（LOB）预测中的推理-计算边界，尤其是在短期预测的准确性和速度之间的权衡。随着市场状态的变化，信号的价值迅速降低，因此需要高效的模型来进行准确的预测。      其次，论文旨在验证在限价订单簿预测中是否存在类似于其他领域的缩放法则所描述的推理-计算边界，以此为基础优化模型复杂性与预测能力之间的关系。  2. 【前...">The Inference-Compute Frontier and a Latency-Efficient Architecture for Limit Order Book Prediction</span></td>
+        <td class="author-cell">C. Evans Hedges</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.25986" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.25986" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+   该论文的动机在于探讨限价订单簿（LOB）预测中的推理-计算边界，尤其是在短期预测的准确性和速度之间的权衡。随着市场状态的变化，信号的价值迅速降低，因此需要高效的模型来进行准确的预测。  
+   其次，论文旨在验证在限价订单簿预测中是否存在类似于其他领域的缩放法则所描述的推理-计算边界，以此为基础优化模型复杂性与预测能力之间的关系。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+   前人的研究主要集中在其他领域的缩放法则，表明预测性能边界可以通过损失和计算或模型规模之间的简单关系来总结。然而，针对限价订单簿预测的研究相对较少，尤其是在考虑延迟和模型复杂性对预测能力影响的情况下。  
+   此外，现有文献中缺乏对不同模型架构在限价订单簿预测中的比较分析，尤其是如何在保持低延迟的同时提高预测准确性。
+
+3. 【提出了什么创新的方法】  
+   本文提出了一种新的架构，通过对不同模型（如决策树、CatBoost等）在限价订单簿预测中的表现进行比较，发现了一个基于功率法则的推理-计算边界。  
+   论文还通过排除特定架构（MLPLOB）进行的实验，验证了不同模型家族之间的边界规律性，提供了对模型复杂性与预测能力之间关系的新见解。
+
+4. 【文章缺点】  
+   文章未能深入探讨不同模型架构在实际交易中的应用效果，尤其是在高频交易环境下的表现。  
+   此外，虽然提出了推理-计算边界，但对如何在实际应用中有效利用这一边界的指导性建议较少，可能限制了其实际应用的广泛性。
+
+5. 【类似工作】  
+   类似的工作包括对其他金融市场中的机器学习模型进行性能评估的研究，例如在股票价格预测中的应用。  
+   另外，关于算法交易中模型复杂性与</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于在投资组合优化中考虑环境、社会和治理（ESG）因素，以响应日益增长的可持续投资需求。随着投资者对可持续性关注的增加，传统的投资组合优化方法显得不足以满足市场的变化和投资者的优先考虑。其次，现有的投资组合优化方法往往忽视了动态市场条件下的资产选择和配置策略，导致投资机会的捕捉不够灵活。  2. 【前人的工作如何解决该问题，存在哪些空白】...">A Two-Stage Decision Support System for Sustainability-Aware Long Short Portfolio Optimization</span></td>
+        <td class="author-cell">Giacomo di Tollo</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.25696" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.25696" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本论文的动机在于在投资组合优化中考虑环境、社会和治理（ESG）因素，以响应日益增长的可持续投资需求。随着投资者对可持续性关注的增加，传统的投资组合优化方法显得不足以满足市场的变化和投资者的优先考虑。其次，现有的投资组合优化方法往往忽视了动态市场条件下的资产选择和配置策略，导致投资机会的捕捉不够灵活。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究主要集中在基于均值-方差分析的投资组合优化，提出了多种风险度量和约束条件，以适应不同的投资策略。然而，这些研究大多未能将ESG因素有效整合进投资决策过程中，导致在可持续投资领域存在明显的研究空白。此外，虽然一些文献探讨了动态市场条件下的投资组合调整，但缺乏系统的决策支持系统来优化长短仓位的配置。
+
+3. 【提出了什么创新的方法】  
+本论文提出了一种两阶段决策支持系统，首先通过多标准程序评估资产，并利用MEREC方法确定标准权重，从而生成适应市场条件的长短仓位机会。其次，论文引入了一种自适应粒子群优化算法，结合多样化的重组操作和基于投影的约束管理机制，以解决非凸投资组合优化问题，最大化Omega比率。
+
+4. 【文章缺点】  
+尽管本论文提出了创新的方法，但仍存在一些不足之处。首先，所提出的模型在实际应用中可能面临计算复杂性的问题，尤其是在处理大规模资产时。其次，尽管考虑了ESG因素，但如何量化和整合这些因素的具体指标仍需进一步研究，以提高模型的实用性和准确性。
+
+5. 【类似工作】  
+类似的工作包括基于均值-方差框架的ESG投资组合优化研究，以及利用其他风险度量（如VaR和CVaR）进行投资组合优化的文献。这些研究为本论文提供了理论基础，但未能结合动态市场条件和ESG因素进行综合优化</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】    本文的动机在于研究具有异质性股东的公司在面临不同折现率时的最优分红策略。首先，现有研究通常假设折现率在时间和股东之间是恒定的，这与实际情况不符，股东的时间偏好存在显著差异。其次，考虑到股东的异质性和模糊性态度，本文旨在提出一种能够有效聚合不同折现率的分红控制方法，以解决时间不一致性问题。  2. 【前人的工作如何解决该问题，存在哪些空白】    前...">Equilibrium singular dividend control under ambiguity aggregation of heterogeneous discount rates</span></td>
+        <td class="author-cell">Yue Cao</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.25461" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.25461" target="_blank" rel="noopener">🧠 AlphaXiv</a><br><details class="resource-comment"><summary>📝 备注</summary><small>singular dividend control; time inconsistency; equilibrium dividend law; heterogeneous discount rates; ambiguity aggregation</small></details></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】
+   本文的动机在于研究具有异质性股东的公司在面临不同折现率时的最优分红策略。首先，现有研究通常假设折现率在时间和股东之间是恒定的，这与实际情况不符，股东的时间偏好存在显著差异。其次，考虑到股东的异质性和模糊性态度，本文旨在提出一种能够有效聚合不同折现率的分红控制方法，以解决时间不一致性问题。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】
+   前人工作主要集中在固定折现率下的分红策略优化，诸如De Finetti的经典模型和Ebert等人提出的加权折现函数。然而，这些研究未能充分考虑股东折现率的异质性对分红决策的影响，且缺乏对时间不一致性问题的深入探讨。因此，现有文献在处理异质性折现率和模糊性聚合方面存在明显的空白。
+
+3. 【提出了什么创新的方法】
+   本文提出了一种新的时间一致性均衡分红法则，通过将状态空间划分为等待区和分红支付区来描述分红策略。此外，本文还证明了验证定理，并推导了均衡法则的必要条件，分析了不同聚合函数下的障碍型均衡，展示了在某些情况下的存在性和唯一性。
+
+4. 【文章缺点】
+   首先，尽管本文提供了理论上的创新，但在实际应用中，如何准确估计股东的异质性折现率仍然是一个挑战。其次，本文对不同聚合函数的分析可能过于理想化，未能充分考虑市场中的复杂性和不确定性。
+
+5. 【类似工作】
+   类似的工作包括Ebert等人（2020）关于加权折现函数的研究，以及Deng等人（2025）对异质性折现率的进一步探讨。这些研究为理解折现率异质性提供了基础，但在分红策略的时间一致性方面仍需进一步研究。
+
+6. 【相关性评分】
+分数：</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于，金融欺诈检测在数字银行中面临着日益复杂的挑战，传统的基于规则的系统和简单的机器学习模型无法有效捕捉到多种异构事件流之间的复杂时序关系。其次，现代金融欺诈行为往往表现为在多个数据流中分布的微妙时序模式，这使得仅依赖于固定特征向量的聚合方法无法充分利用数据的时序信息。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的工作主...">Multi-Stream Temporal Fusion for Financial Fraud Detection</span></td>
+        <td class="author-cell">Mohammadamin Dashti Moghaddam</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2606.25007" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2606.25007" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本论文的动机在于，金融欺诈检测在数字银行中面临着日益复杂的挑战，传统的基于规则的系统和简单的机器学习模型无法有效捕捉到多种异构事件流之间的复杂时序关系。其次，现代金融欺诈行为往往表现为在多个数据流中分布的微妙时序模式，这使得仅依赖于固定特征向量的聚合方法无法充分利用数据的时序信息。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作主要集中在使用梯度提升树（如XGBoost）处理手工设计的聚合特征，这些模型在捕捉静态特征之间的非线性关系方面表现良好，但无法建模序列依赖性或跨流的时序相关性。尽管有一些研究应用了递归神经网络和变换器来处理交易序列，但这些方法通常独立处理流或简单拼接，而缺乏明确的跨流推理。
+
+3. 【提出了什么创新的方法】  
+本论文提出了多流欺诈变换器（MSFT），该模型通过独立的变换器编码器处理每个事件流，并通过可配置的机制融合它们的表示。具体创新包括：1）使用时间感知的位置编码来保留时序信息；2）通过双向注意力学习跨流相关性；3）通过门控融合机制结合流级和跨流信号。
+
+4. 【文章缺点】  
+本论文的一个缺点是，尽管在大规模数据集上取得了显著的性能提升，但在实际应用中可能面临计算资源的挑战，尤其是在处理更大规模的数据时。另一个缺点是，模型的复杂性可能导致难以解释的结果，尤其是在金融领域，透明性和可解释性是至关重要的。
+
+5. 【类似工作】  
+类似的工作包括使用递归神经网络进行欺诈检测的研究，这些研究尝试将欺诈检测视为序列分类问题。另一个相关的工作是多模态学习在视觉-语言模型中的应用，虽然这些方法在金融领域的应用尚处于</small></details></td>
+    </tr>
+        </tbody></table>
+    </div>
+</div>
+<div class="date-section" id="date-20260624">
+    <div class="date-header">
+        <span>2026-06-24（8篇论文）</span>
+        <span class="arrow">▶</span>
+    </div>
+    <div class="date-content" style="display: none;">
         <table>
         <!-- 添加 colgroup 明确指定每列宽度 -->
         <colgroup>
@@ -1739,7 +2039,7 @@
             });
             
             // ========== 自动展开最新日期 ==========
-            const latestId = 'date-20260624';
+            const latestId = 'date-20260625';
             if (latestId) {
                 const latestSection = document.getElementById(latestId);
                 if (latestSection) {
