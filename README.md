@@ -1,16 +1,87 @@
-# arXiv 量化金融领域论文汇总（共71篇）
+# arXiv 量化金融领域论文汇总（共73篇）
 
 > 说明：仅显示最近五天数据，当天论文默认展开，其他日期点击标题可展开/折叠
 > 相关性评分：基于LLM对量化金融领域的相关性评定（1-5分，★越多相关性越高）
 
 ## 日期导航
+- [2026-06-26（10篇论文）](#date-20260626)
 - [2026-06-25（12篇论文）](#date-20260625)
 - [2026-06-24（8篇论文）](#date-20260624)
 - [2026-06-23（35篇论文）](#date-20260623)
 - [2026-06-19（8篇论文）](#date-20260619)
-- [2026-06-18（8篇论文）](#date-20260618)
 
-## <a id='date-20260625'></a>2026-06-25（12篇论文）
+## <a id='date-20260626'></a>2026-06-26（10篇论文）
+
+<table>
+<thead>
+<tr><th>Title</th><th>Author</th><th>PDF</th><th>Code</th><th>Relevance</th></tr>
+</thead>
+<tbody>
+<tr><td>Data-Driven Duration Management -- Term Structure Forecasting Using Machine Learning</td><td>Tobias Lausser</td><td><a href="https://arxiv.org/pdf/2606.26815">PDF</a></td><td>-</td><td>★★★★★</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★★<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.26815">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于提高对美国和欧洲零息国债的期限结构预测能力，以便更好地支持固定收益投资组合的构建。随着全球债务水平的上升，准确预测利率变化对于机构投资者（如养老基金和保险公司）至关重要。其次，传统的经济计量模型在处理高维数据时存在局限性，因此需要探索机器学习方法来提升预测准确性。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在使用经典的经济计量模型（如动态Nelson-Siegel模型和主成分分析）来建模期限结构，但这些模型在应对高维数据时往往表现不佳。此外，尽管有研究将宏观经济变量纳入模型中，但仍缺乏对机器学习方法在期限结构预测中的系统性比较和应用。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了一种结合传统模型与现代机器学习技术的综合方法，特别是通过使用不同的神经网络架构来增强预测性能。此外，论文还引入了一种稳健的模型评估框架，结合了统计准确性指标和量化债券交易策略的经济相关性，以全面评估模型的有效性。<br><br>4. 【文章缺点】  <br>首先，尽管引入了机器学习方法，但数据的历史限制可能影响模型的训练效果，特别是在欧洲市场的零息国债数据较为稀缺的情况下。其次，虽然论文比较了多种模型，但未能深入探讨不同模型在特定市场环境下的适用性和局限性。<br><br>5. 【类似工作】  <br>类似的工作包括Ang和Piazzesi（2003）在无套利VAR框架中结合宏观经济变量与潜在因子的研究，以及Salachas等（2024）对COVID-19疫情期间零息曲线预测能力的研究。这些研究为本论文提供了理论基础，但未能充分利用机器学习技术。<br><br>6. 【相关性评分】  <br>分数：5分
+
+</details></td></tr>
+<tr><td>Robust Hedging Valuation Adjustment under Liquidity--Demand Stress</td><td>Takayuki Sakuma</td><td><a href="https://arxiv.org/pdf/2606.26731">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.26731">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于动态对冲过程中存在的流动性成本和交易摩擦，这些因素会导致标准衍生品对冲的成本增加。其次，现有的对冲估值调整（HVA）方法未能充分考虑流动性需求压力对对冲效果的影响，因此需要一种更为稳健的HVA度量方法来应对这些挑战。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在交易成本对衍生品组合价值的影响，如Burnett和Williams的工作扩展了HVA的概念，考虑了对冲资产和对手方信用的摩擦。然而，这些研究在流动性成本和需求压力的动态变化方面仍存在不足，未能提供有效的解决方案来应对不同市场条件下的对冲风险。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了一种基于相对熵的稳健对冲估值调整（HVA）度量方法，能够在流动性和需求压力下进行有效的风险测量。此外，论文还引入了不同的无交易带政策，比较了各政策下的HVA表现，强调了带宽对再平衡成本和对冲误差风险的影响。<br><br>4. 【文章缺点】  <br>首先，论文可能在实际应用中面临复杂性，特别是在不同市场条件下如何选择合适的无交易带政策。其次，尽管提出了稳健的HVA度量，但在极端市场情况下的表现和适用性仍需进一步验证。<br><br>5. 【类似工作】  <br>类似的工作包括Leland（1985）对交易成本下的修正波动率复制的研究，以及Kennedy等（2009）对跳跃扩散下动态对冲的研究，这些工作均涉及对冲过程中的交易摩擦和风险管理。<br><br>6. 【相关性评分】  <br>分数：4分
+
+</details></td></tr>
+<tr><td>Conditional Leibniz Derivative Estimation with an Application to American Call Min-Options</td><td>Xingyu Ren</td><td><a href="https://arxiv.org/pdf/2606.27046">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.27046">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   该论文的动机在于解决在随机系统中估计期望输出性能对参数的导数的问题，这对于敏感性分析和基于梯度的优化非常重要。其次，现有的有限差分方法存在偏差，并且需要在偏差和方差之间进行权衡，因此需要开发出更为有效的无偏估计方法。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的工作主要通过无穷小扰动分析（IPA）和似然比（LR）方法来解决导数估计问题，但IPA不适用于不连续的样本性能函数，而标准的LR方法仅适用于概率分布的参数。此外，虽然一些LR基础的技术被提出用于结构参数，但它们在处理参数依赖支持的随机输入时存在局限性。<br><br>3. 【提出了什么创新的方法】  <br>   本文提出了一种新的条件Leibniz导数估计方法，结合了Leibniz积分法则与递归条件化的方法。这种方法不仅允许参数依赖支持，还能够在许多情况下提供单次运行的估计，克服了以往LR基础方法的多次模拟需求。<br><br>4. 【文章缺点】  <br>   文章的缺点之一是LR基础的方法通常表现出比IPA及其变体更高的方差，尤其是在随机输入的维度增加时，方差可能线性增长。其次，尽管提出的新方法具有优势，但在实际应用中可能仍需进行复杂的实现和计算，增加了实施成本。<br><br>5. 【类似工作】  <br>   类似的工作包括Ren等（2025年）提出的Leibniz框架，该框架结合了LR与Leibniz积分法则，展示了更广泛的适用性；以及Wang等（2012年）提出的支持无关的统一LR-IPA方法，这些方法在处理不连续样本性能函数时具有一定的参考价值。<br><br>6. 【相关性评分】  <br>分数：4分
+
+</details></td></tr>
+<tr><td>The Growing Self-Reliance of Chinese Innovation</td><td>ZIyu Chen</td><td><a href="https://arxiv.org/pdf/2606.26470">PDF</a></td><td>-</td><td>★★☆☆☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★☆☆☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.26470">PDF</a><br><strong>代码</strong>：-<br><br>1.【论文的motivation是什么】  <br>（1）随着全球经济竞争的加剧，中国在科技创新方面的自给自足能力显得尤为重要。  <br>（2）提升自主创新能力有助于中国在国际市场中增强竞争力，减少对外部技术的依赖。<br><br>2.【前人的工作如何解决该问题，存在哪些空白】  <br>（1）前人的研究主要集中在中国科技政策的制定与实施上，强调了政策对创新的支持作用。  <br>（2）然而，现有文献对中国企业在自主创新过程中的具体实践和挑战缺乏深入分析，导致对实际情况的理解不够全面。<br><br>3.【提出了什么创新的方法】  <br>（1）本文可能提出了一种新的框架，用于评估中国企业在自主创新中的表现和策略。  <br>（2）可能引入了定量分析方法，以实证数据支持理论模型，从而增强研究的可信度。<br><br>4.【文章缺点】  <br>（1）由于缺乏摘要和引言，文章的整体结构和逻辑可能不够清晰，影响读者的理解。  <br>（2）如果没有充分的实证数据支持，可能会导致结论的普适性和可靠性受到质疑。<br><br>5.【类似工作】  <br>（1）关于中国科技创新的政策分析研究。  <br>（2）对中国企业自主创新能力的实证研究。<br><br>6.【相关性评分】分数：2分
+
+</details></td></tr>
+<tr><td>Endogenous Reinsurance Pricing in Large Competitive Insurance Markets: Finite-Player and Mean Field Analysis</td><td>Ruimeng Hu</td><td><a href="https://arxiv.org/pdf/2606.27150">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.27150">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于探讨在竞争性保险市场中，如何通过内生的再保险定价机制来优化保险公司的风险管理和投资决策。首先，当前的再保险模型大多将再保险费用视为外生变量，未能充分考虑再保险公司与保险公司之间的战略互动关系。其次，随着保险市场的竞争加剧，理解再保险定价对保险公司行为的影响变得尤为重要，这为优化保险公司在风险转移和投资配置方面提供了新的视角。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在单一保险公司与再保险公司之间的双边市场互动，采用了斯塔克尔博弈模型来分析再保险定价的外生性。然而，这些研究往往忽视了多个竞争保险公司之间的相互影响，未能全面反映大规模市场中的动态行为。此外，虽然有些研究探讨了相对绩效对保险公司行为的影响，但缺乏对再保险与投资决策的综合考虑，导致对市场均衡的理解仍然不够深入。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了一种新的模型，将再保险定价视为内生变量，并通过有限玩家斯塔克尔博弈和均场博弈框架来分析多个异质保险公司在竞争市场中的行为。具体而言，研究引入了再保险公司作为领导者的角色，探讨其如何通过选择共同的再保险费率和投资策略来影响保险公司的风险保留和投资决策。此外，论文还考虑了保险索赔和金融市场噪声对保险公司行为的反馈效应。<br><br>4. 【文章缺点】  <br>首先，尽管模型考虑了多个保险公司之间的互动，但在实际应用中可能面临复杂性和计算难度，限制了其可操作性。其次，模型的假设条件可能过于理想化，未能充分捕捉现实市场中的不确定性和动态变化，可能影响结果的普适性和可靠性。<br><br>5. 【类似工作】  <br>类似的研究包括[3]对竞争性保险公司在相对绩效下的分析，该
+
+</details></td></tr>
+<tr><td>Pretrained Time-Series Foundation Models for Financial Return Forecasting</td><td>Miquel Noguer I Alonso</td><td><a href="https://arxiv.org/pdf/2606.27100">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.27100">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   本文的动机在于，金融回报预测面临着低信噪比、结构性断裂、重尾分布和弱持久性等挑战，因此需要有效的时间序列基础模型来提高预测准确性。其次，现有的模型在处理不同资产的回报预测时，往往需要单独训练，这在实际应用中效率低下，因此探索预训练的时间序列基础模型（TSFMs）是否能提供更好的预测能力显得尤为重要。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的研究主要集中在将大型语言模型（LLMs）适应于时间序列数据，通过重编程或提示等方式来提升预测能力。然而，这些方法往往依赖于文本模型的迁移学习能力，而缺乏针对时间序列数据的专门设计。另一个研究方向是开发专门的时间序列基础模型（TSFMs），但目前的文献中对这些模型的系统性比较和实证验证仍然不足，尤其是在金融回报预测的具体应用场景中。<br><br>3. 【提出了什么创新的方法】  <br>   本文提出了一种系统性的方法，通过对多种预训练的时间序列基础模型进行基准测试，比较它们在金融回报预测中的表现。具体而言，本文评估了TimeGPT、TimesFM-2.5、Moirai-2.0等模型，并与多个从头训练的神经网络基线进行对比，提供了理论框架来解释预训练模型的有效性。<br><br>4. 【文章缺点】  <br>   首先，尽管预训练模型在多个任务中表现优异，但相对于随机游走基准的收益提升仍然较小且稀疏，说明其在实际应用中的经济意义有限。其次，文章的实验设置虽然严谨，但可能缺乏对不同市场环境和资产类别的广泛适用性，限制了结果的普遍性。<br><br>5. 【类似工作】  <br>   类似的工作包括Time-LLM（Jin et al., 2024）和LLM4TS（Chang et al., 2024），这些研究尝试将大型语言模型应用
+
+</details></td></tr>
+<tr><td>Economic complexity at subnational level: A consistency analysis</td><td>Wenli Du</td><td><a href="https://arxiv.org/pdf/2606.26966">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.26966">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本研究的动机在于揭示经济复杂性度量在亚国家层面应用时所面临的一致性问题。首先，现有的经济复杂性指标在不同的地理尺度和方法论下可能导致相同产品的复杂性评估结果不一致，这影响了对经济发展的准确理解。其次，随着经济复杂性研究的深入，如何在亚国家层面有效应用这些指标以反映真实的经济能力和发展潜力，成为亟待解决的关键问题。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在国家层面的经济复杂性度量，提供了关于经济发展和竞争力的有价值见解。然而，这些研究在亚国家层面的应用往往缺乏系统性比较，导致了方法论上的不一致性和结果的矛盾。其次，尽管已有研究尝试在不同国家和地区应用经济复杂性框架，但对不同地理尺度和产品分类的影响尚未得到充分探讨，存在明显的研究空白。<br><br>3. 【提出了什么创新的方法】  <br>本文提出了一种基于外生和广泛计算的区域经济复杂性度量方法，旨在提高复杂性评估的一致性。通过构建区域-产品矩阵，研究者能够在不同的地理尺度和产品细分层次上进行比较分析，从而识别出复杂性度量中的差异来源。此外，该方法的计算结果与传统经济指标（如人均GDP和就业率）具有更强的相关性，增强了其实用性。<br><br>4. 【文章缺点】  <br>首先，尽管提出了新的度量方法，但其在不同国家和地区的适用性和普遍性仍需进一步验证。其次，文章可能未充分考虑其他潜在的影响因素，如政策环境和市场结构等，这可能对经济复杂性的评估结果产生重要影响。<br><br>5. 【类似工作】  <br>类似的研究包括“Economic Complexity and Development: A Comparative Analysis of Countries”以及“Subnational Economic Complexity: A Review of Methodologies and Applications”，这两项工作都探讨了经济复杂性在不同层面的应用，但未能深入解决一致性问题。<br><br>6. 【相关性
+
+</details></td></tr>
+<tr><td>The Shift to Agentic AI: Evidence from Codex</td><td>Drew Johnston</td><td><a href="https://arxiv.org/pdf/2606.26959">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.26959">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   本文的动机在于探讨代理AI技术（agentic AI）如何改变人们的工作方式，尤其是通过OpenAI的Codex工具的使用数据来分析其影响。首先，随着代理AI的快速增长，了解其对用户工作流程的影响变得愈发重要。其次，研究不同用户群体（个人用户、组织用户和OpenAI内部员工）在使用Codex时的行为差异，有助于揭示代理AI在不同上下文中的应用潜力和局限性。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的研究主要集中在传统聊天机器人和生成AI系统的对话能力上，探讨了它们如何与用户互动。然而，这些研究往往忽略了代理AI的多步骤任务委派能力及其对工作流程的深远影响。此外，现有文献对代理AI在非软件开发领域的应用缺乏系统性分析，未能充分揭示其在知识工作中的潜在价值和使用模式。<br><br>3. 【提出了什么创新的方法】  <br>   本文通过分析Codex的使用数据，采用自动化的隐私保护管道，系统性地对比了三类用户的使用情况。这种方法不仅提供了大规模的使用证据，还能够深入挖掘用户在工作流程中的变化和复杂性。此外，研究还引入了对请求复杂度的量化分析，揭示了用户在任务执行中的深度和广度。<br><br>4. 【文章缺点】  <br>   首先，尽管文章提供了大量的数据分析，但对用户体验和主观感受的定性研究较为缺乏，可能无法全面反映代理AI对用户工作的影响。其次，研究主要集中在Codex的使用情况，未能考虑其他代理AI工具的比较，限制了对整个代理AI领域的全面理解。<br><br>5. 【类似工作】  <br>   一项相关工作是对传统聊天机器人的研究，探讨了其在客户服务和信息检索中的应用。另一项相关工作则关注生成AI在内容创作和数据分析中的使用，分析了其对工作效率的影响。这些研究为理解代理AI的应用提供了背景，但未能深入
+
+</details></td></tr>
+<tr><td>A sharp order-three obstruction to the aggregation of conditional price-of-risk attribution</td><td>Alejandro Rodriguez Dominguez</td><td><a href="https://arxiv.org/pdf/2606.26835">PDF</a></td><td><a href="https://github.com/AlejandroRodriguezDominguez/order-three-attribution">code1</a> | <a href="https://doi.org/10.5281/zenodo.20843643">code2</a></td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.26835">PDF</a><br><strong>代码</strong>：<a href="https://github.com/AlejandroRodriguezDominguez/order-three-attribution">code1</a> | <a href="https://doi.org/10.5281/zenodo.20843643">code2</a><br><strong>备注</strong>：All experiments are synthetic and use no proprietary data. The code reproducing every figure is openly available atthis https URL(archived) andthis https URL(development); each script is seeded, so every figure is exactly reproducible<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于深入研究投资组合的条件风险溢价，特别是其平方形式的归因分析。作者希望通过对条件平方夏普比率的分解，揭示其因果驱动因素，从而为投资组合选择提供更精确的理论基础。其次，论文还关注在多投资组合情况下，如何处理因果驱动因素的聚合问题，以提高风险管理的有效性。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在条件信息对投资组合选择的影响，例如Hansen和Richard对动态策略的均值-方差前沿的描述，以及Ferson和Siegel对最优权重的推导。然而，现有文献对条件平方夏普比率的因果成分的分解及其聚合问题缺乏深入探讨，尤其是在多驱动因素的情况下，未能识别出潜在的三阶障碍。<br><br>3. 【提出了什么创新的方法】  <br>论文提出了一种新的分解方法，将条件平方夏普比率分解为干预稳定的溢价、带符号的因果扭曲（混淆楔）和非负的信息损失。作者还识别出一种三阶障碍，这种障碍在一对一和成对的可接受性筛选中是不可见的，揭示了组合聚合中的潜在问题。此外，作者通过实验验证了该分解及其因果修正的可估计性。<br><br>4. 【文章缺点】  <br>首先，论文的理论模型在实际应用中可能面临复杂性，尤其是在多驱动因素的情况下，可能导致计算和实现的困难。其次，尽管提出了新的分解方法，但在实际数据中的应用效果和稳健性尚未充分验证，可能影响其广泛应用的可行性。<br><br>5. 【类似工作】  <br>类似的工作包括Hansen和Richard对动态策略均值-方差前沿的研究，以及Ferson和Siegel对最优权重的闭式解推导。这些研究为理解条件信息在投资组合选择中的作用提供了基础，但未能深入探讨条件平方夏普比率的因果
+
+</details></td></tr>
+<tr><td>Portfolio Optimization for Commodity ETFs under Heavy-Tailed Returns</td><td>Nicholas Appiah</td><td><a href="https://arxiv.org/pdf/2606.26625">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.26625">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】<br>   本文的动机在于探讨在重尾收益行为下，商品交易所交易基金（ETFs）的投资组合优化问题。首先，商品ETFs作为获取真实资产敞口的流动且可接触的方式，能够帮助投资者在不直接交易期货合约或持有实物商品的情况下参与商品市场。其次，商品价格与通货膨胀动态、供应冲击、地缘政治风险等因素密切相关，因此优化商品ETFs的投资组合有助于改善相对于仅投资于股票和固定收益证券的投资组合的多样化。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】<br>   前人的研究表明，商品期货可以提供多样化的好处，因为它们与股票和债券的相关性较低。然而，这些研究往往未能充分考虑商品ETFs的复杂性，包括期货合约的回报特性和市场冲击对收益的影响。此外，虽然已有文献探讨了传统的均值-方差优化方法，但在重尾风险和下行风险的情况下，现有的方法在实际应用中可能存在局限性。<br><br>3. 【提出了什么创新的方法】<br>   本文提出了一种基于条件价值-at-risk（CVaR）和动态优化的新方法，结合了ARMA-GARCH边际模型和Student-t copula依赖结构，以提高商品ETFs投资组合的风险调整后表现。此外，研究还探讨了低周转率动态CVaR切线投资组合的实用性，显示出在控制交易成本方面的优势。<br><br>4. 【文章缺点】<br>   首先，尽管本文提出的动态优化方法在理论上具有优势，但在实际应用中可能面临模型参数估计不准确的问题，影响投资组合的表现。其次，虽然研究考虑了交易成本的稳健性检查，但在不同市场环境下的适用性和稳定性仍需进一步验证。<br><br>5. 【类似工作】<br>   一项相关工作是对商品期货与股票和债券的相关性进行的实证研究，探讨了商品在投资组合中的多样化作用。另一项工作则集中在基于均值-方差框架的投资组合
+
+</details></td></tr>
+</tbody>
+</table>
+
+<details>
+<summary><a id='date-20260625'></a>2026-06-25（12篇论文）</summary>
 
 <table>
 <thead>
@@ -91,6 +162,8 @@
 </details></td></tr>
 </tbody>
 </table>
+
+</details>
 
 <details>
 <summary><a id='date-20260624'></a>2026-06-24（8篇论文）</summary>
@@ -430,67 +503,6 @@
 <tr><td colspan="5"><details><summary><strong>总结</strong></summary>
 
 <strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.19501">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   该论文的动机在于，去中心化金融（DeFi）环境中，快速变化的网络信用风险使得监管者面临巨大挑战。传统的监管方法往往无法及时识别和应对这些风险，因此需要一种新的决策支持系统来预测潜在的风险并提供监管建议。  <br>   其次，现有的通用大型语言模型（LLM）在处理高风险监督时存在不足，容易基于不完整或弱证据做出高风险的干预建议，这可能导致不必要的干预和错误的决策。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的工作主要集中在通过评估协议的暴露变化来识别系统性风险，但这些方法往往过于强调小型协议，未能有效反映监管者关注的损失优先级。  <br>   此外，现有的评估方法缺乏与监管者对接的标准，无法直接衡量错误干预的发生率和监管相关性，这使得监管者在面对复杂的DeFi环境时缺乏有效的工具。<br><br>3. 【提出了什么创新的方法】  <br>   本文提出了DeXposure-Claw，一个基于预测的代理监督系统，通过结构化的预测证据来引导LLM的决策。  <br>   该系统使用图时间序列基础模型来预测未来的暴露网络，并通过确定性监控和压力场景将这些预测转化为警报和情境证据。  <br>   另外，DeXposure-Bench评估工具的开发，使得可以在多个维度上对系统的决策进行评估，确保其与监管者的需求相一致。<br><br>4. 【文章缺点】  <br>   尽管DeXposure-Claw在提高决策质量方面表现出色，但其仍然依赖于预测模型的准确性，若模型预测不准确，可能导致错误的监管建议。  <br>   此外，系统的复杂性可能使得实施和维护变得困难，尤其是在快速变化的DeFi环境中，可能需要频繁更新和调整。<br><br>5. 【类似工作】  <br>   一项类似的工作是Bertomeu等人（2024
-
-</details></td></tr>
-</tbody>
-</table>
-
-</details>
-
-<details>
-<summary><a id='date-20260618'></a>2026-06-18（8篇论文）</summary>
-
-<table>
-<thead>
-<tr><th>Title</th><th>Author</th><th>PDF</th><th>Code</th><th>Relevance</th></tr>
-</thead>
-<tbody>
-<tr><td>Fitting Accumulated Stock Returns with Tempered Skew t-Distribution</td><td>Siqi Shao</td><td><a href="https://arxiv.org/pdf/2606.19318">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.19318">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   该论文的动机在于解释历史S&P500多日收益分布中观察到的现象，即随着累积天数的增加，收益分布的幂律尾部逐渐趋向于一个有限值。其次，论文旨在揭示在实际数据中，收益的对称性被打破，表现为正均值和负偏度的现象。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的工作主要通过引入学生t分布来分析股市收益，认为其在理论上能够描述收益的对称性。然而，实际数据却显示出收益的偏度和尾部特征与理论模型存在显著差异，尤其是负偏度和损失尾部更重的问题。此外，现有模型未能有效解释从纯幂律依赖到尾部温和化的过渡现象。<br><br>3. 【提出了什么创新的方法】  <br>   本文提出了一种新的随机波动性模型，生成“上限逆伽马”作为其平稳分布，进而推导出“温和学生t分布”。此外，论文引入了Jones-Faddy-like对称性破坏机制，形成“温和偏斜t分布”，以更好地拟合累积多日收益的分布特征。<br><br>4. 【文章缺点】  <br>   文章中可能存在的缺点包括：首先，模型的复杂性可能导致在实际应用中的可解释性不足，限制了其推广性。其次，尽管模型在拟合历史数据上表现良好，但对未来市场行为的预测能力尚未得到充分验证。<br><br>5. 【类似工作】  <br>   类似的工作包括：一项研究探讨了基于随机波动性的学生t分布在金融市场中的应用，另一项工作则提出了改进的偏斜t分布模型，以更好地捕捉市场收益的非对称特征。<br><br>6. 【相关性评分】  <br>   分数：4分
-
-</details></td></tr>
-<tr><td>An extendable, integrated, and dynamic approach to forecasting and stress-testing credit risk</td><td>Marcel Muller</td><td><a href="https://arxiv.org/pdf/2606.19052">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.19052">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于提升银行在信用风险管理中的压力测试能力，尤其是在贷款组合的预测和压力测试方面。首先，现有的压力测试方法往往缺乏对贷款生产过程的整合，导致无法全面评估贷款组合的风险。其次，传统方法未能有效嵌入风险指标之间的相关性结构，从而限制了对复杂市场条件下信用风险的动态评估能力。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要集中在建立多阶段框架和风险参数的敏感性分析上，例如通过系统性情景来影响借款人的还款行为。然而，这些方法往往未能考虑贷款生产与信用风险之间的互动关系，导致对实际情况的适应性不足。此外，现有研究通常缺乏对动态建模的深入探讨，无法灵活应对输入变量的变化。<br><br>3. 【提出了什么创新的方法】  <br>本文提出了一种集成的、可扩展的动态方法来进行贷款组合的压力测试，主要创新包括：首先，通过模拟真实的贷款参数和分布假设，生成不确定的现金流历史；其次，采用多状态概率框架来评估不同压力情景下的信用风险指标；最后，允许贷款参数根据输入变量动态建模，从而提高预测的灵活性和准确性。<br><br>4. 【文章缺点】  <br>尽管该方法具有创新性，但仍存在一些缺点。首先，模拟方法的复杂性可能导致计算成本较高，尤其是在处理大规模贷款组合时。其次，尽管模型可以适应真实数据，但缺乏对模型假设的充分验证，可能影响结果的可靠性。<br><br>5. 【类似工作】  <br>类似的工作包括：1) 一种基于转移的收据生成方法，即EIDFAST方法，该方法关注于收据生成的效率和准确性；2) 其他研究在压力测试中采用的多阶段框架，虽然未能完全整合贷款生产过程，但为信用风险评估提供了基础。<br><br>6. 【相关性评分】  <br>分数：4分
-
-</details></td></tr>
-<tr><td>Analysing drivers and interdependencies in European electricity markets using XAI</td><td>Antoine Pesenti</td><td><a href="https://arxiv.org/pdf/2606.19118">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.19118">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于揭示欧洲电力市场中价格形成的复杂性，尤其是在强非线性和高维交互的背景下，传统的线性模型无法有效捕捉这些特征。其次，尽管深度神经网络在电力价格预测中表现出色，但其黑箱特性限制了对价格动态背后驱动因素的理解，这对于市场参与者和监管机构来说至关重要。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在使用深度学习技术进行电力价格预测，取得了一定的成功。然而，这些研究往往忽视了解释性，导致无法深入理解价格形成的机制。另一个空白是，尽管有些研究尝试结合可解释人工智能（XAI）方法，但尚未充分利用SHAP等解释性工具来分析复杂的电力市场动态。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了一种结合深度神经网络与SHAP基础的可解释性方法，旨在揭示电力价格动态的关键驱动因素。此外，研究构建了一个合成的欧盟范围电力市场作为反事实场景，以探讨在完全整合的系统中价格的行为。这种方法为理解市场之间的相互依赖性提供了新的视角。<br><br>4. 【文章缺点】  <br>首先，尽管采用了可解释性方法，但深度学习模型的复杂性仍可能导致解释结果的模糊性，影响实际应用。其次，构建的合成市场模型可能无法完全反映现实市场的复杂性和动态变化，限制了研究结论的普适性。<br><br>5. 【类似工作】  <br>类似的工作包括使用机器学习技术分析电力市场的研究，如基于随机森林的价格预测模型，以及结合可解释性AI的其他领域的研究，这些研究同样面临解释性不足的问题。<br><br>6. 【相关性评分】  <br>分数：4分
-
-</details></td></tr>
-<tr><td>Testing Centralized and Polycentric Computational Planning</td><td>Ricardo Alonzo Fernández Salguero</td><td><a href="https://arxiv.org/pdf/2606.19214">PDF</a></td><td>-</td><td>★★★☆☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★☆☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.19214">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于探讨在现代经济中，如何有效地协调资源配置，尤其是在集中式和去中心化的计算规划之间进行比较。首先，现代经济的复杂性要求对资源配置的协调方式进行深入分析，而不仅仅是简单的集中与分散的对比。其次，论文旨在通过建立一个可重复的合成基准，来评估不同资源分配机制的有效性，以便在相同的经济环境下进行公平的比较。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要集中在集中计划与市场机制的理论比较上，例如米塞斯和朗格的经典辩论。然而，这些研究往往忽视了现代经济中多层次机构的复杂性，未能充分考虑信息的分散性和动态变化对资源配置的影响。此外，现有的比较往往基于理想化的理论模型，而缺乏实证基础和可操作的测试框架。<br><br>3. 【提出了什么创新的方法】  <br>论文提出了一种新的合成经济基准，结合了稀疏的Leontief输入输出网络、噪声需求观察、异质性企业和内生价格调整等多种因素，创建了一个复杂的模拟经济环境。此外，论文还设计了一个多组件的福利评估系统，通过对比集中规划与去中心化市场的表现，提供了新的实证数据和分析框架。<br><br>4. 【文章缺点】  <br>首先，尽管论文提供了一个新的基准，但其模拟环境的复杂性可能导致结果的可解释性降低，难以直接应用于现实经济中。其次，论文的实验设计可能未能充分考虑外部经济冲击对资源配置的影响，限制了其结果的普适性。<br><br>5. 【类似工作】  <br>类似的工作包括Hayek对市场过程的算法化理解，强调信息的分散性和机构的重要性；以及Bowles等人对经济计算和制度比较的研究，探讨了去中心化调整的优势与局限性。<br><br>6. 【相关性评分】  <br>分数：3分
-
-</details></td></tr>
-<tr><td>Emotional driving: Reference-dependent emotions and risky driving behavior after sporting events</td><td>Travis Richardson</td><td><a href="https://arxiv.org/pdf/2606.18805">PDF</a></td><td>-</td><td>★★★☆☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★☆☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.18805">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本研究的动机在于探讨体育赛事结果对驾驶行为的影响，尤其是在情绪驱动下的风险驾驶行为。首先，体育赛事常常伴随强烈的情感反应，尤其是在比赛结果与预期相悖时，这种情绪可能会影响观众的后续行为。其次，了解这种情绪溢出效应对于公共安全具有重要意义，因为情绪驱动的驾驶行为可能会导致交通事故的增加。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究已经探讨了情绪如何影响多种行为，如股市回报、投票率和消费支出等，但在体育赛事后的驾驶行为方面仍然缺乏系统的实证研究。其次，虽然已有研究表明情绪可以影响决策，但具体到驾驶行为的情绪溢出效应尚未得到充分验证，尤其是在高压和高期待的体育赛事之后。<br><br>3. 【提出了什么创新的方法】  <br>本研究采用了细粒度的时空数据分析方法，通过分析2015至2019年间佛罗里达州五个体育场馆周围的平均车辆速度，揭示了不同类型比赛结果对驾驶行为的影响。研究特别关注了NFL比赛中因主队失利而引发的情绪反应，并量化了这种情绪对驾驶速度的具体影响。<br><br>4. 【文章缺点】  <br>首先，研究仅限于佛罗里达州的NFL和NBA比赛，可能无法代表其他地区或其他体育赛事的情况，因此结果的普遍性受到限制。其次，尽管研究揭示了情绪对驾驶行为的影响，但未能深入探讨其他潜在的影响因素，如天气、交通状况等，这可能会对结果产生干扰。<br><br>5. 【类似工作】  <br>类似的研究包括Edmans等（2007）关于股市回报的情绪影响研究，以及Cai和Li（2026）对消费者支出的情绪溢出效应的探讨。这些研究虽然关注的领域不同，但均涉及情绪如何影响经济行为的主题。<br><br>6. 【相关性评分】  <br>分数：3分
-
-</details></td></tr>
-<tr><td>Reassessing the role of intermediaries in exports</td><td>Aitor Garmendia-Lazcano</td><td><a href="https://arxiv.org/pdf/2606.18719">PDF</a></td><td>-</td><td>★★★☆☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★☆☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.18719">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本研究的动机在于重新评估中介在出口中的角色，特别是揭示许多被归类为中介的公司实际上是生产商拥有的出口部门或垂直整合的公司。通过分析西班牙的公司层面数据，研究旨在挑战现有文献中对中介在出口中占比的高估，提供更准确的出口中介定义和分类。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在中介在出口中的重要性，认为中介占据了大量的出口份额。然而，这些研究往往没有深入探讨中介的性质及其与生产商的关系，导致对中介角色的理解存在偏差。现有文献对中介的定义较为宽泛，未能有效区分真正的中介与生产商的出口部门或垂直整合公司。<br><br>3. 【提出了什么创新的方法】  <br>本研究通过使用西班牙的微观数据，采用了更精细的公司层面分析方法，能够准确识别和分类出口中介。研究还提出了对中介的重新定义，强调了生产商拥有的出口部门和垂直整合公司的重要性，从而揭示了中介在出口中的实际占比大幅下降。<br><br>4. 【文章缺点】  <br>首先，研究主要基于西班牙的数据，可能存在地域性限制，结果不一定适用于其他国家或地区。其次，尽管研究提供了对中介角色的重新评估，但对中介在国际贸易中的具体功能和影响仍缺乏深入的实证分析。<br><br>5. 【类似工作】  <br>类似的研究包括Bernard et al. (2010)对出口中介的定义和分类的探讨，以及Crozet et al. (2013)对不同类型出口商的分析。这些研究为理解中介在国际贸易中的作用提供了基础，但未能深入探讨中介的多样性和复杂性。<br><br>6. 【相关性评分】  <br>分数：3分
-
-</details></td></tr>
-<tr><td>Digital Speech Acts Retain Control of Copyright with People, Not Platforms</td><td>James Golike</td><td><a href="https://arxiv.org/pdf/2606.19263">PDF</a></td><td>-</td><td>★★☆☆☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★☆☆☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.19263">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于揭示数字平台如何通过版权和合同的双重法律工具，控制用户生成内容的权利，导致用户在参与数字生活时不得不放弃有效的版权控制。其次，论文旨在探讨这种不对称的法律框架是如何在历史和技术条件下形成的，并提出可能的改进方案，以保护用户的版权权益。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在版权法如何保护软件开发者的利益，以及数字平台如何利用这些法律工具来构建自己的治理机制。然而，现有研究往往忽视了用户在这一过程中所面临的权利剥夺问题，未能深入探讨如何在保护平台利益的同时，保障用户的版权权益。<br><br>3. 【提出了什么创新的方法】  <br>论文提出了一种新的视角，强调数字言语行为的概念，主张应当将版权控制的权利保留在用户手中，而不是平台。此外，作者建议通过重新审视和修订现有的法律框架，以实现更公平的版权分配，保护用户的创作权益。<br><br>4. 【文章缺点】  <br>首先，论文可能缺乏对不同国家和地区法律差异的深入讨论，导致其建议在全球范围内的适用性受到限制。其次，虽然提出了新的理论框架，但缺乏实证研究来验证这些理论在实际应用中的有效性。<br><br>5. 【类似工作】  <br>一项相关工作是关于数字平台如何利用用户数据进行盈利的研究，探讨了用户隐私与平台利益之间的冲突。另一项工作则关注于用户生成内容的法律保护，分析了不同国家在版权法方面的差异及其对用户权益的影响。<br><br>6. 【相关性评分】  <br>分数：2分
-
-</details></td></tr>
-<tr><td>How firms export: direct and indirect exporting, intermediaries, and hybrid firms</td><td>Raúl Mínguez</td><td><a href="https://arxiv.org/pdf/2606.18684">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.18684">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于探讨不同类型企业在出口市场中的表现及其背后的原因。首先，企业在出口方式上存在显著差异，有些企业选择直接出口，而另一些则依赖中介进行出口，这种异质性在国际贸易中具有重要意义。其次，理解企业的制造能力和商业能力如何影响其出口决策，有助于揭示企业在全球市场中的竞争策略和资源配置。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在不同类型企业的出口行为上，识别了直接出口商、间接出口商和中介等不同角色。然而，这些研究往往未能系统性地分析制造能力与商业能力的结合如何影响企业的出口模式。此外，现有文献对企业在出口过程中所面临的具体成本结构缺乏深入探讨，未能全面解释为何某些企业选择特定的出口方式。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了一种新的模型，通过将企业的制造能力和商业能力作为两个维度，系统性地解释了不同类型企业的出口行为。该模型不仅揭示了直接出口、间接出口和中介企业之间的关系，还预测了商业能力强的中介与制造能力强的生产者之间的匹配情况。此外，模型还考虑了出口中介的独占合同分配市场，进一步丰富了对出口行为的理解。<br><br>4. 【文章缺点】  <br>本论文的一个缺点是模型的简化假设可能限制了其在复杂市场环境中的适用性，例如未考虑市场竞争的动态变化。另一个缺点是，尽管提供了西班牙企业的实证数据支持，但样本的局限性可能影响模型结果的普遍性，未能涵盖其他国家或地区的企业行为。<br><br>5. 【类似工作】  <br>类似的工作包括Bernard et al. (2010)对出口商类型的分类研究，以及Crozet et al. (2013)对中介企业在国际贸易中的角色分析。这些研究为理解企业出口行为提供了基础，但未能结合制造和商业能力的视角进行综合分析。<br><br>6. 【相关性评分】  <br>分
 
 </details></td></tr>
 </tbody>
