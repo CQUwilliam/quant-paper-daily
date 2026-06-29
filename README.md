@@ -1,15 +1,69 @@
-# arXiv 量化金融领域论文汇总（共65篇）
+# arXiv 量化金融领域论文汇总（共72篇）
 
 > 说明：仅显示最近五天数据，当天论文默认展开，其他日期点击标题可展开/折叠
 > 相关性评分：基于LLM对量化金融领域的相关性评定（1-5分，★越多相关性越高）
 
 ## 日期导航
+- [2026-06-29（7篇论文）](#date-20260629)
 - [2026-06-26（10篇论文）](#date-20260626)
 - [2026-06-25（12篇论文）](#date-20260625)
 - [2026-06-24（8篇论文）](#date-20260624)
 - [2026-06-23（35篇论文）](#date-20260623)
 
-## <a id='date-20260626'></a>2026-06-26（10篇论文）
+## <a id='date-20260629'></a>2026-06-29（7篇论文）
+
+<table>
+<thead>
+<tr><th>Title</th><th>Author</th><th>PDF</th><th>Code</th><th>Relevance</th></tr>
+</thead>
+<tbody>
+<tr><td>CryptoGAT: Are Time Series Models Effective for Cryptocurrency Forecasting?</td><td>Yu Peng</td><td><a href="https://arxiv.org/pdf/2606.27670">PDF</a></td><td>-</td><td>★★★★★</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★★<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.27670">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：Under review<br><br>1. 【论文的motivation是什么】  <br>   该论文的动机主要有两个方面：首先，尽管时间序列模型在股票市场的预测中取得了显著进展，但在高度波动的加密货币市场中，其有效性受到质疑。其次，当前的研究主要集中在传统股票市场，导致加密货币的纯价格预测领域尚未得到充分探索。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的工作主要通过传统机器学习和深度学习方法来捕捉股票市场的可预测性，采用了技术指标、时间相关性和资产相关性等多维度分析。然而，这些研究大多集中在股票市场，缺乏针对加密货币市场的深入分析，特别是在纯价格预测方面的研究相对匮乏。<br><br>3. 【提出了什么创新的方法】  <br>   本文提出了CryptoGAT，一种轻量级的图注意力网络，将加密货币的纯价格预测重新构建为跨资产图问题，而非传统的时间建模任务。此外，论文通过实证研究探讨了时间序列模型在股票和加密货币预测中的基本差异，为未来的研究方向提供了新的思路。<br><br>4. 【文章缺点】  <br>   文章的缺点包括：首先，尽管提出了新的模型，但对比实验的范围可能有限，未能涵盖所有可能的预测方法。其次，CryptoGAT的实际应用场景和可扩展性尚未充分验证，可能在特定条件下表现不佳。<br><br>5. 【类似工作】  <br>   类似的工作包括使用图神经网络进行金融预测的研究，以及基于深度学习的加密货币价格预测模型。这些研究虽然提供了不同的视角，但仍未充分解决加密货币市场的独特挑战。<br><br>6. 【相关性评分】  <br>   分数：5分
+
+</details></td></tr>
+<tr><td>How to deal with machine learning bias in economic history</td><td>Torben S. D. Johansen</td><td><a href="https://arxiv.org/pdf/2606.28063">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.28063">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于，尽管机器学习（ML）工具在经济历史研究中带来了显著的便利，如数据数字化和信息提取的成本降低，但这些工具也引入了新的偏差问题，尤其是在处理历史数据时，模型的预测准确性往往较低。其次，传统的验证方法无法有效识别和纠正这些偏差，导致研究结果的可靠性受到影响。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究虽然已经认识到机器学习模型在经济历史中的应用潜力，但大多数工作未能充分解决模型预测与实际观测数据之间的偏差问题，尤其是在历史数据的上下文中。其次，现有文献对偏差的识别和纠正方法的探讨相对较少，缺乏系统性的分类和应用指导，导致研究者在实际应用中面临困惑。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了一种新的去偏差方法，利用专家编码的随机样本数据构建“黄金标准”参考，以估计和修正机器学习预测中的偏差。其次，论文对机器学习任务进行了分类，系统性地梳理了相关文献，并指出去偏差方法的适用范围。最后，提供了关于数字化、模型选择和可重复性的最佳实践指导。<br><br>4. 【文章缺点】  <br>本论文的一个缺点是，尽管提出了去偏差的方法，但在实际应用中，如何选择合适的专家样本和确保其代表性仍然是一个挑战。其次，论文可能对去偏差方法的适用性过于乐观，未充分考虑不同历史数据特征对模型性能的影响。<br><br>5. 【类似工作】  <br>类似的工作包括Angelopoulos等（2023）关于去偏差框架的研究，以及Egami等（2023, 2024）对机器学习在经济历史中的应用和偏差问题的探讨。这些研究为本论文提供了理论基础，但在具体应用和方法论上仍存在差异。<br><br>6. 【相关性评分】  <br>分数：4分
+
+</details></td></tr>
+<tr><td>Measuring Racial Disparities in Rent Growth Under Algorithmic Landlord Concentration in U.S. Metros</td><td>Advay Ranade</td><td><a href="https://arxiv.org/pdf/2606.27525">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.27525">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本研究的动机在于揭示算法化房租定价对美国住房不平等的影响，尤其是在种族群体之间的差异。首先，随着企业房东越来越多地采用算法化定价软件，住房市场的租金增长可能会加剧种族间的经济不平等。其次，研究旨在填补现有文献中的空白，即探讨企业房东集中度与租金增长之间的关系，以及这种关系在多数少数族裔社区中的表现。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在算法化定价对整体租金水平的影响，已证明算法化定价会导致租金高于竞争市场的水平。然而，现有研究未能探讨算法化租金定价对不同种族群体的影响，尤其是在社区层面上。因此，缺乏对企业房东集中度与种族差异化租金增长之间关系的深入分析，这是本研究所要解决的空白。<br><br>3. 【提出了什么创新的方法】  <br>本研究提出了一种新的方法，通过构建企业房东集中度（CLC）指标，利用SEC EDGAR 10-K财务文件中的数据，首次在文献中实现了按普查区划分的企业房东集中度测量。此外，研究引入了算法住房负担指数（AHBI），作为控制变量，来评估算法化房东集中度对租金增长的影响。<br><br>4. 【文章缺点】  <br>首先，研究的样本仅限于十个美国大都市的665个普查区，可能无法代表全国范围内的情况。其次，尽管使用了XGBoost模型进行预测，但模型的复杂性可能导致结果的可解释性不足，限制了政策建议的有效性。<br><br>5. 【类似工作】  <br>类似的研究包括Calder-Wang和Kim（2024）的工作，他们通过差异中的差异设计分析了算法化定价对市场租金的影响；另一个相关研究是白宫经济顾问委员会（2024）对算法化定价对租户经济负担的评估。<br><br>6. 【相关性评分】  <br>分数：4分
+
+</details></td></tr>
+<tr><td>Optimal Deployment of Electric Aircraft for Canadian Domestic Flights</td><td>Elham Soufiani</td><td><a href="https://arxiv.org/pdf/2606.28312">PDF</a></td><td>-</td><td>★★★☆☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★☆☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.28312">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：images, Presented at the IEEE ITEC EATS 2026 (Transportation Electrification Conference and Expo or Electric Aircraft Technologies Symposium) took place from June 10-12, 2026, at the VIBE Credit Union Showplace in Novi, Michigan<br><br>1. 【论文的motivation是什么】  <br>该论文的动机主要是解决航空业对环境的影响，尤其是温室气体排放问题。随着航空交通的增长，传统航空业的碳排放量将持续增加，因此需要寻找可持续的解决方案。其次，论文旨在推动电动飞机在区域航空中的应用，以实现加拿大政府设定的2050年净零排放目标。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在电动航空的某些子问题上，例如充电基础设施的设计和短期调度模型。然而，这些研究通常将机队组成、基础设施可用性和服务分配视为固定输入，而非联合决策变量。因此，缺乏对电动航空转型的整体规划和协调，尤其是在机队规模、调度和航线优先级方面的综合考虑。<br><br>3. 【提出了什么创新的方法】  <br>本文提出了一种多周期混合整数线性规划（MILP）框架，能够同时优化机队采购、基础设施部署和服务分配。该模型考虑了政策约束，如减排目标和预算限制，提供了一个全面的解决方案。此外，论文通过基于Helijet短途网络的实际案例研究，验证了模型的适用性和有效性。<br><br>4. 【文章缺点】  <br>首先，模型可能在实际应用中面临数据获取和参数设定的挑战，尤其是在充电基础设施和电动飞机性能方面。其次，尽管模型考虑了多种约束条件，但在应对突发事件或市场变化时的灵活性可能不足。<br><br>5. 【类似工作】  <br>类似的工作包括对电动航空充电基础设施的网络优化研究，以及针对电动飞机的短期调度模型。这些研究虽然在各自领域内有所贡献，但未能整合成一个全面的规划框架。<br><br>6. 【相关性评分】  <br>分数：3分
+
+</details></td></tr>
+<tr><td>(In)Efficient Market States and Rough Volatility Detected via Grunwald-Letnikov Fractional Derivative</td><td>Daniele Angelini</td><td><a href="https://arxiv.org/pdf/2606.27932">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.27932">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：images, 8 tables<br><br>1. 【论文的motivation是什么】  <br>该论文的动机主要在于解决在长程依赖情况下，通过单一观测轨迹测试分数过程的自相似性所面临的挑战。具体来说，传统的Kolmogorov-Smirnov（KS）统计量在Hurst参数H大于1/2时会经历相变，导致经典极限崩溃为非功能性的绝对高斯法则，进而影响有限样本的收敛性。此外，金融市场中的波动性和价格行为常常表现出复杂的自相似性和长程依赖特征，因此需要一种有效的方法来准确识别和验证Hurst参数。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在利用传统的矩或二阶缩放关系来估计Hurst指数和长程依赖性，例如方差图、重标范围方法和绝对矩缩放等。然而，这些方法在有限样本情况下的表现往往受到短期记录、趋势变化和均值偏移等因素的严重影响，尤其是在金融序列中，结构性断裂和重尾波动普遍存在。此外，尽管最近的研究引入了非参数的分布基础方法来评估自相似性，但在实际应用中，这些方法在时间序列数据的处理上仍面临显著的理论障碍。<br><br>3. 【提出了什么创新的方法】  <br>本文提出了一种基于离散Grünwald-Letnikov（GL）分数导数的自适应KS/GL-KS框架。该框架通过GL滤波器去除低频长记忆奇异性，同时保留分布识别所需的有限维Hurst自相似性。此外，论文还推导了经过滤的经验过程极限，证明了所提出的Hurst估计量的一致性和局部渐近行为，并通过Monte Carlo模拟验证了该方法的有效性。<br><br>4. 【文章缺点】  <br>首先，尽管提出的方法在理论上具有创新性，但其在实际金融数据中的应用效果可能受到数据特征的限制，尤其是在极端市场条件下。其次，文章中对Monte Carlo模拟的验证虽然展示了方法
+
+</details></td></tr>
+<tr><td>Heterogeneous Diffusion of Electric Vehicles in China: Demand, Learning, Product Entry, and the Incidence of Industrial Policy</td><td>Yu (Jasmine)Hao</td><td><a href="https://arxiv.org/pdf/2606.27924">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.27924">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：appendix included<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于分析中国电动车（EV）市场的快速发展，特别是从2015年到2024年间EV市场份额的显著增长。首先，研究旨在揭示技术转型背后的各种市场力量及政策支持对EV普及的影响，以便更好地理解技术进步如何在不同市场条件下促进产品的接受和推广。其次，论文还关注政策变化对消费者福利和市场重分配的影响，探讨在补贴政策撤回后，消费者和企业将面临怎样的经济后果。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在电动车市场的需求分析和政策影响评估上，探讨了补贴政策、市场准入和技术进步对EV普及的作用。然而，这些研究往往未能充分考虑市场内不同产品之间的相互作用及其对消费者选择的影响，导致对市场动态的理解不够全面。此外，现有文献在分析政策撤回后的福利影响时，缺乏系统的结构性模型来量化不同因素的贡献。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了一种均衡差异化产品模型，结合微观层面的产品和市场数据，分析了2015-2024年间中国电动车市场的转型。通过Shapley分解法，论文将影响EV市场份额的因素分为六个渠道：质量、品种、电池、补贴、残余和市场，系统地量化了每个因素的贡献。这种方法能够更准确地揭示各个因素之间的相互作用及其对市场的综合影响。<br><br>4. 【文章缺点】  <br>首先，论文在数据收集上可能存在一定的局限性，尤其是在城市级别的拍卖数据缺乏的情况下，可能影响对隐性补贴的全面评估。其次，模型的复杂性可能导致在实际应用中难以解释某些经济现象，尤其是在面对快速变化的市场环境时，模型的适用性和预测能力需要进一步验证。<br><br>5. 【类似工作】  <br>类似的研究包括对美国电动车市场的分析，探讨了政策
+
+</details></td></tr>
+<tr><td>The Decision Geometry of Covariance Estimation for the Global Minimum-Variance Portfolio under Heavy Tails</td><td>Xavier Fonseca</td><td><a href="https://arxiv.org/pdf/2606.27462">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.27462">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>在全局最小方差投资组合（GMVP）中，估计的协方差矩阵对于投资决策至关重要。本文动机在于理解协方差估计误差如何映射到GMVP的非最优性，尤其是传统的矩阵范数损失与投资决策所形成的后果之间的脱节。通过厘清协方差估计质量与投资组合质量之间的关系，本文为实际投资提供了更切合的理论基础。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>尽管已有研究通过矩阵范数损失评估协方差估计器，并建立了相关的极小风险理论，但这些方法忽略了投资者所经历的“遗憾”概念。现有的决策聚焦学习（DFL）方法虽然着眼于优化决策质量，但并没有提供明确的协方差估计一致性理论和速度理论，造成了系统性的理论缺失。<br><br>3. 【提出了什么创新的方法】  <br>本文提出了一种确切的决策几何框架，明确了投资决策如何受到协方差估计误差的影响。作者引入了精确的遗憾方程，以及非渐近界限，显示决策遗憾仅通过其对投资组合权重的影响与协方差的条件性相关。此外，研究还针对重尾分布的资产回报，讨论了回报的收敛率和决策优势。<br><br>4. 【文章缺点】  <br>首先，尽管本文提供了新的理论框架，但对于实际应用的可操作性缺乏大量实证支持。其次，文章聚焦于特定的重尾情形，可能无法广泛适用于所有市场环境，限制了其普遍性。<br><br>5. 【类似工作】  <br>类似的研究包括Bongiorno和Challet提出的针对投资组合方差优化的非线性收缩方法，以及Ledoit和Wolf提供的协方差估计的收缩算法。前者探讨了如何在特定场景实现更优的投资组合方差，而后者则致力于优化协方差估计的稳定性。<br><br>6. 【相关
+
+</details></td></tr>
+</tbody>
+</table>
+
+<details>
+<summary><a id='date-20260626'></a>2026-06-26（10篇论文）</summary>
 
 <table>
 <thead>
@@ -78,6 +132,8 @@
 </details></td></tr>
 </tbody>
 </table>
+
+</details>
 
 <details>
 <summary><a id='date-20260625'></a>2026-06-25（12篇论文）</summary>
