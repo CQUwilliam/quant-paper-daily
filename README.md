@@ -1,16 +1,87 @@
-# arXiv 量化金融领域论文汇总（共61篇）
+# arXiv 量化金融领域论文汇总（共63篇）
 
 > 说明：仅显示最近五天数据，当天论文默认展开，其他日期点击标题可展开/折叠
 > 相关性评分：基于LLM对量化金融领域的相关性评定（1-5分，★越多相关性越高）
 
 ## 日期导航
+- [2026-07-01（10篇论文）](#date-20260701)
 - [2026-06-30（24篇论文）](#date-20260630)
 - [2026-06-29（7篇论文）](#date-20260629)
 - [2026-06-26（10篇论文）](#date-20260626)
 - [2026-06-25（12篇论文）](#date-20260625)
-- [2026-06-24（8篇论文）](#date-20260624)
 
-## <a id='date-20260630'></a>2026-06-30（24篇论文）
+## <a id='date-20260701'></a>2026-07-01（10篇论文）
+
+<table>
+<thead>
+<tr><th>Title</th><th>Author</th><th>PDF</th><th>Code</th><th>Relevance</th></tr>
+</thead>
+<tbody>
+<tr><td>Real-time identification of the onset of financial rogue waves</td><td>Rosie Hayward</td><td><a href="https://arxiv.org/pdf/2606.31475">PDF</a></td><td>-</td><td>★★★★★</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★★<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.31475">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于，金融系统中的极端事件，如波动率，往往难以在其即将发生时进行准确识别。大量的研究表明，及时了解这些极端事件的发生能够为投资者和金融机构提供重要的风险管理和决策依据。此外，探讨金融波动性与其他复杂自然系统中极端事件的相似性，可以为金融领域的风险识别提供新的视角和方法。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究在分析金融市场波动性和极端事件方面取得了一定进展，但主要集中在静态分析和历史数据回溯，并未能实现实时监测和预测。此外，尽管将与自然现象的统计特性进行关联的研究已有所涉及，但鲜有探讨将光学和流体力学中的"流氓波"概念有效转化至金融波动性分析中的工作，这为本研究提供了切入的机会。<br><br>3. 【提出了什么创新的方法】  <br>本研究提出了一种基于薛定谔方程的创新方法，通过将非线性Kerr势的形状应用于金融波动性指数的动态分析，实现对"流氓波"峰值的识别。此外，该方法的实时数据到达模拟和多样本检验的应用，使得对波动率的极端事件识别更加可靠。<br><br>4. 【文章缺点】  <br>首先，尽管本研究在多个指数上验证了所提出方法的有效性，但样本数量仍显不足，可能影响结果的普适性。其次，动态窗口的选择对结果敏感，必须进行更多参数优化以提高模型的稳定性和准确性。<br><br>5. 【类似工作】  <br>类似工作包括基于统计物理模型与金融市场波动性分析结合的研究，以及其他使用机器学习技术进行市场极端事件检测的研究。这些工作也尝试通过不同的方法识别金融市场的风险，但与本研究在理论框架和技术实现上有所不同。<br><br>6. 【相关性评分】  <br>分数：5分
+
+</details></td></tr>
+<tr><td>Settlement Manipulation in Prediction Markets</td><td>David Dai</td><td><a href="https://arxiv.org/pdf/2606.31675">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.31675">PDF</a><br><strong>代码</strong>：-<br><br>1.【论文的motivation是什么】  <br>该论文的动机在于探讨预测市场中资产价格合约的功能及其对市场信息传递的影响。第一，随着预测市场的迅速发展，尤其是在资产价格合约方面，其对金融市场的潜在影响值得深入研究。第二，尽管预测市场被宣传为能够提高价格发现的有效性，但作者旨在揭示这些市场在实际操作中如何可能削弱价格发现，导致普通交易者处于不利地位。<br><br>2.【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在预测市场的有效性及其在政治选举和其他事件中的应用，提供了对预测市场的积极评价，而未深入探讨其对资产价格的影响，尤其是这些合约的潜在操控风险。因此，缺乏关于资产价格合约回归其基础市场信息角色的实证分析。其次，已有研究存在对操控行为的轻视，认为其只在短期内产生影响，未考虑到长期累积效应对市场的影响。<br><br>3.【提出了什么创新的方法】  <br>本文提出了一种系统性分析框架，以评估资产价格合约对价格发现及交易者财富转移的影响。首先，作者通过实证数据展示了合约的结算机制如何导致信息的扭曲。其次，研究引入了一个结构性模型，分析市场参与者在面对操控风险时的行为与反应，进而揭示出价格发现功能下降的原因。<br><br>4.【文章缺点】  <br>一方面，论文的理论模型可能在实际应用中未能充分考虑市场动态变化和参与者行为的复杂性，可能导致结果的局限性。另一方面，因缺乏具体的案例分析，可能不足以全面验证论文提出观点的普遍适用性。<br><br>5.【类似工作】  <br>类似的研究包括“Prediction Markets: Theory and Applications”，该工作探讨了预测市场在不同领域的应用及其理论基础；另一项研究“Market Manipulation in Financial Markets”则关注金融市场中操控行为的影响，虽不专注于预测市场，但提供了类似的操控机制视角。<br><br>6.【相关性评分】  <br>分数：4分
+
+</details></td></tr>
+<tr><td>Signature-Based Optimal Execution for Statistical Arbitrage with Path-Dependent Trading Signals</td><td>Gianmarco Morbelli</td><td><a href="https://arxiv.org/pdf/2606.31387">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.31387">PDF</a><br><strong>代码</strong>：-<br><br>1. 该论文的动机主要有两个方面：一是统计套利策略的表现不仅依赖于预测信号的质量，还与执行这些信号的方式密切相关；二是考虑市场的流动性和交易成本等因素，创建一种能够更好应对市场动态的交易策略，以提高预期收益。<br><br>2. 在前人的研究中，经典的阈值策略如z-score入场和退出规则通常将信号生成与执行过程分开，这导致在处理临时影响、库存惩罚和终期清算等问题时存在不足。此外，经典的最优执行和算法交易模型一般关注于线性、二次或凸目标下的临时、永久和瞬态影响，往往依赖于时间、当前库存或低维马尔可夫状态，而缺乏对统计套利信号路径的具体化处理。<br><br>3. 本文提出了一种基于署名的最优执行框架，该框架将预测信号生成与执行过程统一在一个截断署名基础上。通过引入路径署名的概念，作者建立了一个有限维的凹二次规划问题，能够有效处理路径依赖的执行问题。<br><br>4. 本文的缺点在于：首先，尽管提出的模型在某些情况下表现优越，但针对更复杂市场条件的适用性尚需进一步验证；其次，对于模型的计算复杂度和实际应用的可行性，可能需要更多的实证分析来支持其有效性。<br><br>5. 相关的类似工作包括：一方面是对路径依赖信号的现有最优执行模型的研究，另一方面是将署名方法应用于金融决策的其他领域，如投资组合优化和算法交易模型。<br><br>6. 分数：4分
+
+</details></td></tr>
+<tr><td>Generating Plausible Stress Scenarios via Large Deviations</td><td>Anand Deo</td><td><a href="https://arxiv.org/pdf/2606.31122">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.31122">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】<br>   本文的动机主要有两点：第一，现有的金融压力测试往往依赖于手动选择的情景，这可能忽视真正危险的配置，导致风险管理误导；第二，历史数据中的应激状态样本稀缺性，限制了对系统性风险的准确评估，因此迫切需要一种能够生成合理应激情景的系统方法。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】<br>   先前的工作通常使用基于模型的方式进行压力测试，通过指定风险因素的冲击并进行传播，但存在局限性：一种是限于单一风险因素的冲击场景，无法捕捉多因素联动导致的系统性风险；另一种是缺乏系统性理论来识别导致大损失的稀有联合配置，未能完全满足压力测试的实际需求。<br><br>3. 【提出了什么创新的方法】<br>   本文提出了一种基于大偏差原理的系统生成应激情景的方法，强调条件在大损失下，风险因素集中在最可能的应激配置。此外，通过这种方法，可以定义代表性的压力分布，并在缺乏应激数据的情况下，依旧生成相对可信的应激情景。<br><br>4. 【文章缺点】<br>   首先，虽然本方法系统性强，但在实际应用中，数据的质量和数量可能会直接影响生成情景的有效性；其次，模型的复杂性可能导致计算成本高，限制了在大型金融系统中的实时应用。<br><br>5. 【类似工作】<br>   类似的工作包括"Stress Testing Financial Systems: An Overview"一文，该文总结了金融系统压力测试的各种方法；另一个相关的研究是"Extreme Value Theory in Risk Management"探讨了极值理论在风险管理中的应用。<br><br>6. 【相关性评分】<br>   分数：4分
+
+</details></td></tr>
+<tr><td>Pareto Efficient Insurance with Multiple Policyholders, Multiple Insurers, and Multiple Indemnity Environments</td><td>Zijun Meng</td><td><a href="https://arxiv.org/pdf/2606.30779">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.30779">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机是探讨如何在多个投保人、多个保险公司和多个赔偿环境下实现帕累托高效的保险合同，解决传统保险模型中存在的局限性。与此同时，它旨在展示在复杂环境下如何协调不同参与方的利益，以及在多重环境和多重投保人下，如何有效分配风险和资源。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在单维度问题上，例如，Asimit-Boonen的工作只考虑了多个保险公司而忽略了投保人的多样性；而其他研究如Asimit-Boonen-Chi-Chong则关注于多重外部环境，不同的文献往往只有一个维度是多样化的。显然，这些研究没有全面考虑多种因素共同影响的情景，存在整合多维度因素的空白。<br><br>3. 【提出了什么创新的方法】  <br>论文提出了一种将多重保险公司、多重投保人和多重赔偿环境相结合的新方法，展现了如何在聚合水平上进行保险合同的特征化，而非为每对投保人与保险公司规定收益功能。该方法强调了各方所需支付或获得的金额及其承担的风险，更加通用，并且提供了支持聚合水平安排的必要和充分条件。<br><br>4. 【文章缺点】  <br>该论文可能对理论的数学复杂性未做充分解释，导致一些读者难以理解具体的实用性。此外，文章在实际应用中的可行性和适应性分析不足，未能提供足够的案例研究来验证所提方法的有效性。<br><br>5. 【类似工作】  <br>Boonen-Chong-Ghossoub的研究主要探讨了多个投保人和集中保险公司的情境，虽然考虑了多个因素，但未达到本文的综合水平；而Asimit-Boonen-Chi-Chong的研究则集中在多重外部环境下的保险合同，考虑了外部因素的影响。<br><br>6. 【相关性评分】  <br>分数：4分
+
+</details></td></tr>
+<tr><td>Translation Readiness Index: Measuring Patent-Paper Proximity from Scientific Publication Text</td><td>Paul X. McCarthy</td><td><a href="https://arxiv.org/pdf/2606.31102">PDF</a></td><td>-</td><td>★★★☆☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★☆☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.31102">PDF</a><br><strong>代码</strong>：-<br><br>1.【论文的motivation是什么】  <br>本论文的动机在于：  <br>- 开发一种新的方法来量化专利与科学论文之间的相关性，以帮助理解科技创新和知识转移的过程。  <br>- 由于现有的量化方法往往未能充分捕捉到专利与科学文献之间的复杂关系，因此有必要提出更为精确的指标。<br><br>2.【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要集中在如何通过专利和学术论文的引用关系来分析技术转移的路径，但仍存在以下空白：  <br>- 许多研究忽视了文献文本中潜在的语义信息，只依赖简单的引用计数或文献量统计。  <br>- 当前方法的测量标准不够全面，无法深入挖掘具体技术领域内专利与论文的实际联系。<br><br>3.【提出了什么创新的方法】  <br>本研究提出的创新方法包括：  <br>- 引入全新的“翻译准备指数”（Translation Readiness Index），综合考虑文本相似性和技术领域的关联度来衡量专利与论文的紧密程度。  <br>- 采用机器学习技术加强对文本的解析与理解，提高指标的准确性和实用性。<br><br>4.【文章缺点】  <br>文章可能存在的缺点有：  <br>- 在数据集的选择和规模上，可能局限于某些特定领域，从而影响模型的普适性。  <br>- 机器学习模型训练需要大量高质量标注数据，难度较大，且结果的可解释性可能不足。<br><br>5.【类似工作】  <br>类似工作的两项包括：  <br>- “Citation Analysis in Patents and Papers: A Comprehensive Review”对专利与论文之间的引用模式进行分析。  <br>- “Measuring Technological Proximity Between Patents and Research Papers”试图构建相关性指标来量化技术邻近性。<br><br>6.【相关性评分】  <br>分数：3分
+
+</details></td></tr>
+<tr><td>Same Firms, Different Verdicts: ESG Rating Choice and the Measurement of Greenwashing</td><td>Praveen Kumar Ashok Kumar</td><td><a href="https://arxiv.org/pdf/2606.31469">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.31469">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>首先，本文旨在探讨企业在环境、社会和治理（ESG）评分中的差异现象，特别是在《企业可持续发展报告指令》实施之前，揭示企业自愿环境披露与实际排放绩效之间的差距。其次，研究旨在通过量化企业的“说”（披露）与“行”（实际表现）之间的差距，补充当前关于绿色洗刷（greenwashing）现象的理论和实证研究，为政策制定和投资决策提供数据支持。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在ESG评分的一般性评价及其对投资决策的影响，但往往忽视了层级别的分析，缺乏对单个企业内在表现与披露之间差距的具体量化研究。这些研究未能充分揭示企业在ESG实践中可能存在的虚假披露（绿色洗刷）行为，导致在判断企业实际环保绩效时还存在信息不对称的问题。<br><br>3. 【提出了什么创新的方法】  <br>本文采用了系统化的六阶段模型选择过程，以全面评估企业的环境披露与实际排放绩效之间的差距。通过筛选421个候选规格，最终选用经过稳健标准误修正的普通最小二乘法进行模型估计，力求提高研究的准确性和可靠性。此外，研究还探讨了特定指标（如旗舰指数成员资格和气候相关财务披露工作组的支持）对环境披露质量的影响。<br><br>4. 【文章缺点】  <br>首先，研究样本仅限于200家大型欧洲企业，可能会影响研究结果的普适性及对其他地区的适用性。其次，模型选择过程虽具有系统性，但依赖于一系列的统计假设和原始数据的质量，可能导致在真实世界应用中的一定偏差。<br><br>5. 【类似工作】  <br>类似的研究包括Berg, Kölbel, and Rigobon (2022)提出的Aggregate Confusion假说，探讨了ESG评分的混淆性与企业绩效间的关系。此外，还有关于企业环境披露与市场
+
+</details></td></tr>
+<tr><td>Cascading Impacts of the USA--China Trade War on Global Oilseed Supply Chain</td><td>Diksha Gupta</td><td><a href="https://arxiv.org/pdf/2606.30685">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.30685">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】<br>   - 本文的动机在于探讨在高度互联的全球供应链中，贸易政策冲击如何引发连锁反应，造成供应链的中断，以及这些中断对全球食品市场（尤其是大豆市场）的广泛影响。<br>   - 通过研究贸易中断的传播机制及其对资源配置的影响，本文旨在为政策制定者提供更有效的干预措施，以缓解贸易冲击带来的负面影响。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】<br>   - 前人的研究主要集中在利用可计算一般均衡模型分析贸易中断对价格和数量均衡的影响，这些模型能够捕捉宏观经济层面的互动，但难以精确代表物理瓶颈和能力限制等因素。<br>   - 另外，已有研究虽然关注了局部平衡模型与投入产出分析的结合，但是缺乏对跨行业生产依赖关系和冲击传播的全面性考虑，特别是在实际案例中的应用相对较少。<br><br>3. 【提出了什么创新的方法】<br>   - 本文提出了一个线性规划的投入产出系统的模型，使得能够在一个统一框架内分析供应链中断传播与缓解机制的联动效应。<br>   - 通过引入贸易重新配置和生产扩张的机制，增强了模型对贸易冲击后果的表现力，能够更好地捕捉实际经济中复杂的互动关系。<br><br>4. 【文章缺点】<br>   - 本文的模型可能在处理非线性和复杂动力学方面存在一定局限性，这可能影响到对极端情况下市场行为的准确预测。<br>   - 由于模型简化了实际情况，可能未能充分考虑区域性和时间性因素对供应链中断传播的影响。<br><br>5. 【类似工作】<br>   - Elobeid等人的研究通过部分均衡模型和投入产出分析探讨了中国报复性关税的影响，为了解相关市场的反应提供了参考。<br>   - 其他文献使用计算般均衡模型分析贸易中断的影响，这些研究强调了经济互动的重要性，但缺乏强有力的实证支持。<br><br>6. 【相关性评分】
+
+</details></td></tr>
+<tr><td>Measuring Judgment Quality in Natural-Language Explanations: Evidence from Forecasting Tournaments</td><td>Christopher W. Karvetski</td><td><a href="https://arxiv.org/pdf/2606.30987">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.30987">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>- 该论文旨在解决专家判断和其伴随自然语言解释的质量难以系统性测量的问题，尤其是在大规模数据的背景下。决策者需要依赖这些解释来评估判断的可信度和可行性，因此量化解释的质量变得至关重要。  <br>- 通过对预测比赛的研究，作者希望探索解释质量与判断准确性之间的关系，从而填补对解释质量影响决策的理解空白。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>- 前人的研究主要关注于识别高质量概率推理的特征，例如考虑基础概率和开放性证据，但缺乏一种可扩展和系统的方法来进行解释质量的量化分析。  <br>- 以往的测量方法往往需要耗时的专家编码或是粗略的自动化代理，未能系统地考量自然语言解释，特别是在文本分析方面的研究显得相对不足。<br><br>3. 【提出了什么创新的方法】  <br>- 本文提出了解释质量标记（EQMs），这是通过大规模语言模型（LLMs）评分的六十种理论指导的推理模式，可用于量化文本解释的质量。  <br>- EQMs相较于传统的预测技巧指标在预测水平上表现更佳，并在预测者层面上也具有竞争力，提供了一种可扩展且可解释的方法来提取与判断相关的信息。<br><br>4. 【文章缺点】  <br>- 尽管EQMs在预测准确性上表现良好，但其在识别最佳预测者方面的能力不如识别低表现者，这或许限制了其在某些高度竞争环境中的应用。  <br>- 文章中提到的人工评分与准确性的相关性不够一致，且往往过度依赖于解释的长度，这可能导致评价的偏差。<br><br>5. 【类似工作】  <br>- 相关文献包括Kahneman和Tversky的早期研究，虽然未直接解决解释质量的测量，但对认知偏差和评估决策有深入探讨。  <br>- 另外，Tetlock等的ACE预测比赛调查也为理解预测准确性和解释质量的关系提供了基础，但
+
+</details></td></tr>
+<tr><td>The Organizational Behavior of Agentic AI: Collective Intelligence in Human-Agent Workflows</td><td>Canhui Liu</td><td><a href="https://arxiv.org/pdf/2606.30986">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.30986">PDF</a><br><strong>代码</strong>：-<br><br>1.【论文的motivation是什么】  <br>首先，随着代理人工智能（agentic AI）的兴起，研究其是否展现出类似人类的组织行为变得愈发重要，因为这些系统正逐渐进入工作流程，体现出分工、协调和集体成果的特征。其次，代理人工智能的出现挑战了传统人类组织的划分，对理解组织行为的方式提出了新的视角，迫切需要分析人机协作中的组织动态及其影响。<br><br>2.【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究强调了技术与组织之间的关系，阐明了技术在工作场所中不仅仅是工具，还可以引发新的社会秩序。然而，这些研究对代理人工智能在组织中的具体行为及其与人类组织行为的异同关注不足，未能系统性地探讨代理 AI 如何通过上下文架构实现工作动态。此外，虽然有研究探讨了组织随着技术的引入如何变化，但未专注于代理 AI 这类非人类代理的具体影响及其在组织行为中的角色。<br><br>3.【提出了什么创新的方法】  <br>文章提出了“上下文交易成本”作为关联代理 AI 和人类组织行为相似性与差异性的中心机制，强调了在工作中如何通过上下文架构维持代理 AI 的功能和效率。此外，通过计算理论、合成任务模拟及实际 LLM（大规模语言模型）代理跟踪等方法，深入分析了人类仿生模型的表现以及共享状态、适应性形式在任务执行中的优势，推动了对代理 AI 在组织行为中的理解。<br><br>4.【文章缺点】  <br>首先，文章在具体的案例分析中可能不足，使得理论与实际应用之间的联系不够紧密，难以提供足够的实践指引。其次，尽管文章提出了多个有趣的理论框架，但对代理 AI 系统在真实组织环境中的复杂性及潜在挑战考虑不足，可能导致理论应用的局限性。<br><br>5.【类似工作】  <br>类似的工作包括Barley (1986)对技术与组织行为的关系研究，探讨了技术如何引发新的社会秩序，以及Orlikowski (2000)的研究，重新构建了技术
+
+</details></td></tr>
+</tbody>
+</table>
+
+<details>
+<summary><a id='date-20260630'></a>2026-06-30（24篇论文）</summary>
 
 <table>
 <thead>
@@ -163,6 +234,8 @@
 </details></td></tr>
 </tbody>
 </table>
+
+</details>
 
 <details>
 <summary><a id='date-20260629'></a>2026-06-29（7篇论文）</summary>
@@ -370,67 +443,6 @@
 <tr><td colspan="5"><details><summary><strong>总结</strong></summary>
 
 <strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.25007">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于，金融欺诈检测在数字银行中面临着日益复杂的挑战，传统的基于规则的系统和简单的机器学习模型无法有效捕捉到多种异构事件流之间的复杂时序关系。其次，现代金融欺诈行为往往表现为在多个数据流中分布的微妙时序模式，这使得仅依赖于固定特征向量的聚合方法无法充分利用数据的时序信息。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要集中在使用梯度提升树（如XGBoost）处理手工设计的聚合特征，这些模型在捕捉静态特征之间的非线性关系方面表现良好，但无法建模序列依赖性或跨流的时序相关性。尽管有一些研究应用了递归神经网络和变换器来处理交易序列，但这些方法通常独立处理流或简单拼接，而缺乏明确的跨流推理。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了多流欺诈变换器（MSFT），该模型通过独立的变换器编码器处理每个事件流，并通过可配置的机制融合它们的表示。具体创新包括：1）使用时间感知的位置编码来保留时序信息；2）通过双向注意力学习跨流相关性；3）通过门控融合机制结合流级和跨流信号。<br><br>4. 【文章缺点】  <br>本论文的一个缺点是，尽管在大规模数据集上取得了显著的性能提升，但在实际应用中可能面临计算资源的挑战，尤其是在处理更大规模的数据时。另一个缺点是，模型的复杂性可能导致难以解释的结果，尤其是在金融领域，透明性和可解释性是至关重要的。<br><br>5. 【类似工作】  <br>类似的工作包括使用递归神经网络进行欺诈检测的研究，这些研究尝试将欺诈检测视为序列分类问题。另一个相关的工作是多模态学习在视觉-语言模型中的应用，虽然这些方法在金融领域的应用尚处于
-
-</details></td></tr>
-</tbody>
-</table>
-
-</details>
-
-<details>
-<summary><a id='date-20260624'></a>2026-06-24（8篇论文）</summary>
-
-<table>
-<thead>
-<tr><th>Title</th><th>Author</th><th>PDF</th><th>Code</th><th>Relevance</th></tr>
-</thead>
-<tbody>
-<tr><td>Randomized Neural Networks for estimation of exposure profiles and Credit Valuation Adjustment (CVA) for American Equity Options</td><td>Isidro Moroso Varona</td><td><a href="https://arxiv.org/pdf/2606.24309">PDF</a></td><td>-</td><td>★★★★★</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★★<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.24309">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】<br>   该论文的动机主要体现在两个方面：首先，随着2008年全球金融危机后对对手方信用风险建模的快速发展，未来暴露估计成为衍生品估值中的一个重要问题。其次，考虑到美式期权的早期行使特性，传统的估值方法在计算期权的未来暴露和最优停止规则时面临着高昂的计算成本，因此需要寻找更高效的估计方法。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】<br>   前人的研究主要通过传统的蒙特卡洛方法和回归基础的动态规划方法来解决美式期权的估值问题，尤其是Longstaff和Schwartz提出的最小二乘蒙特卡洛方法（LSM）已成为行业标准。然而，这些方法大多集中于定价而非暴露估计，且在应对复杂的早期行使特性时效率较低，缺乏针对未来暴露估计的有效解决方案。<br><br>3. 【提出了什么创新的方法】<br>   本文提出了一种随机神经网络的方法来估计美式期权的暴露轮廓和信用估值调整（CVA），通过结合深度学习技术与传统的蒙特卡洛方法，旨在提高估计的效率和准确性。此外，该方法能够处理早期行使特性带来的复杂性，提供更为灵活的风险管理工具。<br><br>4. 【文章缺点】<br>   文章的一个缺点是，尽管引入了随机神经网络，但其模型的复杂性可能导致训练和优化过程中的计算成本较高。另一个缺点是，模型的泛化能力可能受到训练数据的限制，尤其是在市场条件变化较大的情况下，可能影响其在实际应用中的有效性。<br><br>5. 【类似工作】<br>   类似的工作包括使用深度学习方法进行金融时间序列预测的研究，以及基于蒙特卡洛方法的衍生品定价模型。这些研究为本文的方法提供了理论基础和实践参考。<br><br>6. 【相关性评分】<br>   分数：5分
-
-</details></td></tr>
-<tr><td>Regenerative Bonds: Formal Debt, Mutual-Aid, and Local Settlement Capacity</td><td>William O. Ruddick</td><td><a href="https://arxiv.org/pdf/2606.23922">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.23922">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：total: main text and supplementary material; 6 figures; includes privacy-safe aggregate reproducibility materials<br><br>1. 【论文的motivation是什么】<br>   本文的动机在于探索如何通过正式的债务工具（再生债券）来增强地方治理的结算能力，以支持生产、生态、关怀、互助和修复等承诺的履行。其次，论文关注如何在不将这些承诺转化为投资者担保的情况下，确保债务发行人对债务服务的责任。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】<br>   前人的研究主要集中在传统债券结构对资本流动的影响，但对融资后活动的循环机制探讨较少，尤其是在地方治理和互助机制中的应用。此外，现有文献对如何在不牺牲地方承诺的情况下，设计有效的债务工具仍存在明显的空白。<br><br>3. 【提出了什么创新的方法】<br>   本文提出了再生债券的概念，作为一种正式的债务工具，旨在通过披露资金用途和治理规则来分配收益。其次，使用承诺池协议（CPP）作为操作框架，促进承诺的策划、评估和交换。最后，结合蒙特卡洛压力测试评估可偿还流动性对地方治理能力的支持。<br><br>4. 【文章缺点】<br>   本文在实证和模拟部分主要集中于结算能力条件，而未充分探讨投资可行性。此外，论文对因果福利、文化连续性和生态主张的讨论较为有限，可能影响其全面性。<br><br>5. 【类似工作】<br>   1) “Bond Finance and the Settlement-Architecture Gap”探讨了债券融资与结算架构之间的差距。<br>   2) 其他研究关注绿色债券和社会债券在地方治理中的应用，但缺乏对再生债券的深入分析。<br><br>6. 【相关性评分】<br>   分数：4分
-
-</details></td></tr>
-<tr><td>Monotonicity of Normalized Implied-Volatility Coordinates under No-Arbitrage</td><td>Jian Sun</td><td><a href="https://arxiv.org/pdf/2606.23883">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.23883">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于探讨固定到期日的期权微笑在无套利条件下的单调性和凸性限制，这些限制对期权定价、套利检测和无模型提取方差等方面具有重要意义。其次，作者希望通过简单的有限行使价格比较，揭示出无套利条件下归一化隐含波动率坐标的单调性，从而为实际市场中期权定价提供理论支持。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要集中在Fukasawa提出的非线性变换上，展示了在无套利条件下隐含波动率微笑的强单调性特征，并利用这些变换得到了无模型的偏斜界限和期权定价公式。然而，这些研究通常假设了连续的行使价格框架，而在实际市场中，期权报价往往是离散的，这就导致了对离散市场报价的适用性不足。<br><br>3. 【提出了什么创新的方法】  <br>论文提出了一种基于有限行使价格比较的简单无套利证明方法，避免了对连续报价和隐含波动率可微性的假设。此外，作者还证明了在Bachelier隐含波动率坐标下的无模型正态方差恒等式，为波动率衍生品文献中的相关理论提供了新的视角。<br><br>4. 【文章缺点】  <br>首先，论文的结果依赖于有限行使价格的比较，可能在某些情况下无法全面反映市场的复杂性。其次，尽管提出了新的模型无关的恒等式，但其在实际应用中的有效性和适用范围仍需进一步验证。<br><br>5. 【类似工作】  <br>类似的工作包括Fukasawa的研究，该研究探讨了隐含波动率微笑的非线性变换及其在无套利条件下的性质；另一个相关工作是Carr和Lee的文献综述，涉及波动率衍生品中的方差互换恒等式。<br><br>6. 【相关性评分】  <br>分数：4分
-
-</details></td></tr>
-<tr><td>AI Tokenomics: The Economics of Tokens, Computation, and Pricing in Foundation Models</td><td>Quanyan Zhu</td><td><a href="https://arxiv.org/pdf/2606.24616">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.24616">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于，随着基础模型的商业化，代币成为了人工智能服务中重要的经济单位，连接了信息处理、计算、内存使用、能源消耗、定价和经济价值。其次，传统的成本管理框架无法有效应对代币消费的复杂性和非线性变化，因此需要建立一个新的框架来理解和优化代币的生成、消费、定价和分配。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要集中在代币作为计算和经济单位的技术分析上，探讨了大语言模型如何通过代币进行信息处理。然而，现有研究往往忽视了代币消费与经济价值之间的关系，以及如何在实际业务流程中优化代币的使用效率。<br><br>3. 【提出了什么创新的方法】  <br>该论文提出了一个AI代币经济学框架，连接了代币级别的技术成本与工作流级别的生产函数和资源分配。此外，论文还探讨了代币支出与经济价值的区别，强调了边际生产力、工作流位置和风险等因素对代币价值的影响。<br><br>4. 【文章缺点】  <br>首先，论文可能缺乏对代币市场动态的深入实证分析，导致理论框架的应用性受到限制。其次，尽管提出了多个研究方向，但对如何具体实施这些研究方向的指导性建议较少，可能使得后续研究面临挑战。<br><br>5. 【类似工作】  <br>类似的工作包括“Tokenomics: The Economics of Cryptocurrencies”研究了加密货币的经济学，以及“Understanding the Cost Structure of AI Services”探讨了AI服务的成本结构。这些研究为代币经济学提供了重要的背景和参考。<br><br>6. 【相关性评分】  <br>分数：4分
-
-</details></td></tr>
-<tr><td>Energy Poverty as a Structural Trap: The Role of Housing Efficiency and Non-Convex Technology</td><td>Nazaria Solferino</td><td><a href="https://arxiv.org/pdf/2606.24399">PDF</a></td><td>-</td><td>★★★☆☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★☆☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.24399">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于揭示能源贫困的深层机制，特别是在非收入贫困家庭中仍然存在能源贫困现象，表明仅靠预算约束的解释是不够的。其次，论文探讨了住房效率与非凸技术之间的关系，指出在某一效率阈值以下，最低的室内舒适水平是无法实现的，这一发现为政策制定提供了新的视角。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要集中在定义和测量能源贫困的不同指标上，如燃料贫困和低收入-高成本指标等，这些研究为理解能源贫困提供了基础。然而，大多数现有模型将能源视为普通消费品，假设只要收入足够高，就可以购买任何水平的能源服务，这忽视了住房效率对能源贫困的影响。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了一种新的模型，强调室内热舒适的生产是通过非凸技术与住房效率相结合来实现的。模型中引入了一个关键的效率阈值，低于该阈值的家庭将面临结构性能源贫困。此外，论文还提出了三项政策预测，强调效率投资在减少能源贫困方面的优越性。<br><br>4. 【文章缺点】  <br>论文可能过于依赖理论模型，缺乏实证数据的支持来验证模型的实际适用性。其次，虽然提出了政策建议，但具体实施方案的可行性和成本效益分析可能不足。<br><br>5. 【类似工作】  <br>类似的工作包括[11]关于能源转型的社会公正讨论，以及[13]对建筑翻新潜力的量化研究，这些研究同样关注能源贫困与环境影响之间的关系。<br><br>6. 【相关性评分】  <br>分数：3分
-
-</details></td></tr>
-<tr><td>Spatial accessibility to food banks hinders food parcel uptake in England and Wales, particularly in rural areas</td><td>Laura Sheppard</td><td><a href="https://arxiv.org/pdf/2606.24319">PDF</a></td><td>-</td><td>★★★☆☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★☆☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.24319">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   该论文的动机在于揭示食物银行的空间可达性如何影响食物包的获取，尤其是在英格兰和威尔士的农村地区。首先，随着食物不安全问题的加剧，越来越多的人依赖食物银行来满足基本的生活需求，因此研究其可达性显得尤为重要。其次，了解不同地区（尤其是农村地区）食物银行的可达性差异，有助于制定更有效的政策，以改善食物不安全现象并提高食物包的利用率。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的研究主要集中在食物银行使用的社会经济因素及其对社区的影响，但对空间可达性对食物包获取的具体影响研究较少。其次，虽然已有研究探讨了城市与农村地区的食物银行使用情况，但缺乏针对不同地理区域（如低超输出区）的深入分析，导致对农村地区的特殊需求和挑战认识不足。<br><br>3. 【提出了什么创新的方法】  <br>   本文通过使用低超输出区（LSOA）作为分析单位，结合食物包分发数据和地理信息，系统评估了不同地区的食物银行可达性。其次，研究采用了功能城市区域的分类方法，将地区划分为城市和农村，从而更精确地分析空间因素对食物包获取的影响。<br><br>4. 【文章缺点】  <br>   文章可能存在的数据局限性，主要依赖于Trussell网络的数据，可能无法全面反映所有食物银行的情况。其次，研究未能深入探讨影响食物银行可达性的其他潜在因素，如交通基础设施和社会支持网络的影响。<br><br>5. 【类似工作】  <br>   一项相关研究探讨了食物银行使用的社会经济驱动因素，分析了不同人群的需求差异。另一项研究则关注了城市与农村地区食物银行可达性的比较，提供了对政策制定的建议。<br><br>6. 【相关性评分】  <br>分数：3分
-
-</details></td></tr>
-<tr><td>Path Space Robust Bayesian Portfolio Selection</td><td>Andy Au</td><td><a href="https://arxiv.org/pdf/2606.24212">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.24212">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   该论文的动机在于解决投资者在资产组合优化中面临的模型不确定性问题。首先，传统的均值-方差优化方法依赖于对资产漂移的准确估计，而漂移的估计在现实中往往是不可靠的。其次，论文旨在通过引入对观察模型可能错误的认识，来提高投资策略的鲁棒性，以应对模型不确定性带来的风险。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的工作如De Franco等人的研究通过Kalman-Bucy滤波器实现了对未知资产漂移的学习，并将均值-方差优化问题转化为信念空间中的动态规划。然而，这种方法并未消除脆弱性，而是将其转移到观察模型的可靠性上。尽管已有研究探讨了鲁棒投资策略，但大多数方法未能充分考虑到观察模型可能的失真及其对投资者学习和财富的双重影响。<br><br>3. 【提出了什么创新的方法】  <br>   本文提出了一种新的鲁棒投资策略，通过引入Hansen-Sargent乘数形式，允许自然界对观察路径进行扭曲，并通过相对熵来惩罚这种扭曲。该策略不仅优化了投资者的决策，还考虑了模型失真的影响，形成了一个双通道结构。此外，论文还通过将鲁棒性惩罚吸收到终端条件中，提出了一种新的优化框架。<br><br>4. 【文章缺点】  <br>   文章的一个缺点是，尽管提出了新的鲁棒策略，但在优化过程中未能保持De Franco模型的闭合形式，这可能导致计算复杂性增加。另一个缺点是，理论模型的实际应用可能受到市场条件和数据可得性的限制，实际操作中可能难以实现。<br><br>5. 【类似工作】  <br>   类似的工作包括De Franco等人的研究，该研究通过Kalman-Bucy滤波器处理资产漂移的学习问题；另一个相关工作是Hansen和Sargent的鲁棒控制理论，探讨了在不确定环境下的决策优化。<br><br>6. 【相关性评分】  <br>分数：
-
-</details></td></tr>
-<tr><td>Relaxation Times for Nonextensive Systems Using Gradient Flow for the Maximization of Tsallis Entropy: An Application to Financial Market Dynamics</td><td>Sandhya Devi</td><td><a href="https://arxiv.org/pdf/2606.23873">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.23873">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：16pages, 8 figures<br><br>1. 【论文的motivation是什么】<br>   本文的动机在于探讨金融市场动态中的放松时间（即达到平衡所需的时间），并通过最大化Tsallis熵的方法来估计这一时间。首先，传统的有效市场假说（EMH）假设市场能够迅速达到平衡，但实际金融市场的复杂性和非线性行为使得这一假设受到质疑。其次，利用Tsallis熵的统计方法能够更好地描述金融市场的非高斯特性，如尖峰和厚尾现象，从而为市场行为的预测提供新的视角。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】<br>   前人的研究主要集中在利用Shannon熵来分析市场行为，然而，这种方法在处理非高斯分布和复杂市场动态时存在局限性。虽然有研究表明Tsallis熵可以更好地适应非广延系统，但对放松时间的具体估计及其在金融市场中的应用仍然不足，尤其是在如何保持分布为qq-Gaussian的条件下进行动态分析方面。<br><br>3. 【提出了什么创新的方法】<br>   本文提出了一种基于欧几里得梯度流（EGF）框架的方法，通过最大化Tsallis熵来估计非广延系统的放松时间。具体而言，论文引入了qq-Gaussian参数的时间变化，探讨了在保持分布为qq-Gaussian的约束下，放松时间的变化。这种方法不仅能够揭示放松时间与市场动态之间的关系，还能为长期预测提供理论支持。<br><br>4. 【文章缺点】<br>   首先，本文的方法依赖于对qq-Gaussian分布的假设，可能在某些市场情况下不够准确，限制了其普适性。其次，尽管提出了新的方法，但在实际数据应用中的验证和效果评估仍显不足，缺乏对比分析与实证研究的支持。<br><br>5. 【类似工作】<br>   一项相关工作是基于Tsallis熵的金融市场模型研究，探讨了其在描述市场极端事件中的有效性。另一项工作则是利用非线性时间序列分析方法来研究金融市场的动态
 
 </details></td></tr>
 </tbody>
