@@ -628,7 +628,7 @@
         <header>
             <h1>📈 arXiv 量化金融领域论文汇总</h1>
             <div class="intro">
-                <p>📊 共 <strong>54</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
+                <p>📊 共 <strong>63</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
                 <p>🔗 点击日期可展开/折叠｜📚 Zotero 按钮需安装 <a href="https://www.zotero.org/download/connectors" target="_blank">Connector 插件</a></p>
             </div>
         </header>
@@ -636,17 +636,240 @@
         <!-- 日期导航 -->
         <nav class="nav">
             <strong>📅 日期导航：</strong>
-            <a href="#date-20260709">2026-07-09（9篇）</a> | <a href="#date-20260708">2026-07-08（12篇）</a> | <a href="#date-20260707">2026-07-07（33篇）</a>
+            <a href="#date-20260710">2026-07-10（9篇）</a> | <a href="#date-20260709">2026-07-09（9篇）</a> | <a href="#date-20260708">2026-07-08（12篇）</a> | <a href="#date-20260707">2026-07-07（33篇）</a>
         </nav>
 
         <!-- 论文内容区块 -->
         <main>
-            <div class="date-section" id="date-20260709">
+            <div class="date-section" id="date-20260710">
     <div class="date-header">
-        <span>2026-07-09（9篇论文）</span>
+        <span>2026-07-10（9篇论文）</span>
         <span class="arrow">▼</span>
     </div>
     <div class="date-content" style="display: block;">
+        <table>
+        <!-- 添加 colgroup 明确指定每列宽度 -->
+        <colgroup>
+            <col style="width: 25%">  <!-- Title -->
+            <col style="width: 15%">   <!-- Authors -->
+            <col style="width: 10%">   <!-- Resources -->
+            <col style="width: 10%">   <!-- Relevance -->
+            <col style="width: 40%">  <!-- Summary -->
+        </colgroup>
+        <thead>
+            <tr>
+                <th>标题</th>
+                <th>作者</th>
+                <th>资源</th>
+                <th>相关性</th>
+                <th>总结</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于通过采用基于时间可变波动率的随机贴现因子（SDF）来改进对市场参与者未来预期的捕捉，以此解决SDF估计困难的问题。其次，利用仅基于S&amp;P 500期权的市场数据，可以减小观测噪声，提高SDF的稳定性。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的工作主要通过依赖市场历史价格或风险中性分布来估计SDF，并采用几种不同的参...">Estimating the Stochastic Discount Factor from Option Prices and Predicting the Equity Premium</span></td>
+        <td class="author-cell">Kenichiro Shiraya</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2607.08500" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2607.08500" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：5/5">★★★★★</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本论文的动机在于通过采用基于时间可变波动率的随机贴现因子（SDF）来改进对市场参与者未来预期的捕捉，以此解决SDF估计困难的问题。其次，利用仅基于S&amp;P 500期权的市场数据，可以减小观测噪声，提高SDF的稳定性。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作主要通过依赖市场历史价格或风险中性分布来估计SDF，并采用几种不同的参数设定来链接市场价值和收益。然而，这些方法通常局限于历史数据，缺乏前瞻性应用。此外，现有的研究大多数未考虑波动率随时间变化的影响，这可能导致SDF的估计失真。
+
+3. 【提出了什么创新的方法】  
+本研究提出了一种基于时间可变波动率的SDF估计方法，通过S&amp;P 500期权的价格来估算SDF，揭示出不同到期时间下的SDF结构特征。此外，文章还展示了SDF的“中间驼峰”以及在较长期到期下更清晰的W形状，识别出到期时间作为影响SDF强度的关键因素。
+
+4. 【文章缺点】  
+论文没有提供相应的实证测试数据来验证所提出模型的适用性，可能影响结果的普适性。同时，对市场价格风险常数假设的依赖可能限制了模型在更为复杂市场条件下的有效性。
+
+5. 【类似工作】  
+类似的研究有Bakshi et al. (2010) 的模仿组合法，该方法直接从市场数据中估计SDF，并且Christoffersen et al. (2013)考察了波动率对SDF的影响，这些研究为本论文提供了理论基础。
+
+6. 【相关性评分】  
+分数：5分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】 该论文的动机在于，预测市场中价格作为概率的表现方式与传统金融市场中资产回报的预测方式不同，这要求我们发展一个能够处理这些独特特征（如价格是有界概率、支付为二元）的新模型。此外，随着预测市场的快速发展，市场参与者（如交易员和风险管理者）需要更好的方法来预测未来概率变化和评估市场报价的稳定性。  2. 【前人的工作如何解决该问题，存在哪些空白】 前人的工作大...">Volatility in Prediction Markets: A Structural Approach</span></td>
+        <td class="author-cell">Weiye Xi</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2607.08199" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2607.08199" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：5/5">★★★★★</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】
+该论文的动机在于，预测市场中价格作为概率的表现方式与传统金融市场中资产回报的预测方式不同，这要求我们发展一个能够处理这些独特特征（如价格是有界概率、支付为二元）的新模型。此外，随着预测市场的快速发展，市场参与者（如交易员和风险管理者）需要更好的方法来预测未来概率变化和评估市场报价的稳定性。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】
+前人的工作大多集中在ARCH和GARCH模型的应用上，这些模型在传统金融市场中已得到了广泛使用，能够有效地进行波动性预测。然而，既有模型缺乏对预测市场特有结构的适应性，无法有效捕捉价格变化的条件波动性。另外，现有的研究更多地关注确定性结果，而对于如何在特定信息时刻做出预测却缺乏足够的探讨。
+
+3. 【提出了什么创新的方法】
+本论文提出了一个针对预测市场的结构性波动率模型，此模型考虑了订单簿变量（如买卖差价与交易量），并通过实证数据构建了基于Kalshi二元合约的小时面板。此外，模型通过建立适应期限的吸收边界条件，增强了对信息时刻处理的能力，确保价格动态可以准确反映未来概率的变化。
+
+4. 【文章缺点】
+该论文可能在模型的复杂性上存在一定的缺点，导致在实际应用中难以操作。此外，数据样本仅覆盖到2026年，可能限制了模型对长期趋势预测的有效性。
+
+5. 【类似工作】
+类似的工作包括Wright-Fisher模型在预测市场中关于信念的研究，以及Archak和Ipeirotis（2010）和Restocchi等（2018）对预测市场价格的建模。这些研究虽然为波动性建模提供了基础，但未能完全涵盖本文提出的结构性波动率模型的特点。
+
+6. 【相关性评分】
+分数：5分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】 该研究的主要动机在于探讨生成性人工智能（AI）在医疗领域的应用如何影响患者与专家之间的决策关系。首先，传统上，医疗决策主要依赖于医生的专业判断，而AI的引入可能改变这一动态。其次，AI提供的方向性建议可能包含设计者的优先考虑，从而影响患者对医生建议的依赖程度及其遵从性。  2. 【前人的工作如何解决该问题，存在哪些空白】 前人已经研究了生成性AI在医疗信...">Directional AI Advice: Experimental Evidence from Healthcare</span></td>
+        <td class="author-cell">Yuyu Chen</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2607.08706" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2607.08706" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】
+该研究的主要动机在于探讨生成性人工智能（AI）在医疗领域的应用如何影响患者与专家之间的决策关系。首先，传统上，医疗决策主要依赖于医生的专业判断，而AI的引入可能改变这一动态。其次，AI提供的方向性建议可能包含设计者的优先考虑，从而影响患者对医生建议的依赖程度及其遵从性。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】
+前人已经研究了生成性AI在医疗信息获取中的作用，并在一定程度上揭示了其对医疗决策的潜在影响。然而，现有研究仍未充分探讨AI如何具体影响患者与医生之间的互动及其遵从性。其次，大多数文献集中于AI的潜在益处，缺乏对其可能的负面影响（如患者满意度下降）的实证研究。
+
+3. 【提出了什么创新的方法】
+本文通过在中国的一家大型公立医院进行为期一个月的随机对照实验，提供了首个关于患者接入生成性AI如何重塑临床决策和患者-医生关系的随机证据。此外，研究采用了对话日志分析，系统地评估了AI给出的建议在实际医疗实践中的传播和影响。
+
+4. 【文章缺点】
+该研究的一个缺点是样本主要集中在中国特定的医疗环境中，可能限制了结果的普适性，无法推广到其他国家或文化背景下的医疗系统。其次，虽然研究涵盖了患者的行为变化，但对医生反应和适应AI建议的深入分析相对较少，可能导致结论的片面性。
+
+5. 【类似工作】
+有研究探讨了AI在健康信息访问中的作用，例如《Generative AI在医疗领域的采用与监管框架》。另有文献研究了AI对患者满意度和信任度的影响，尤其是在医患互动中的动态变化。
+
+6. 【相关性评分】
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】    - 本论文的动机在于探讨在全面自动化时代，自动驾驶车辆（AVs）如何在共享经济中实现资源优化，尤其是在交通运输服务领域的应用。    - 通过研究私有AV在城市移动服务中的利用情况，论文旨在揭示自动驾驶车辆如何提升交通效率、降低运营成本，以及改善服务质量，从而推动共享经济的发展。  2. 【前人的工作如何解决该问题，存在哪些空白】    - 以往的...">Sharing economy in the era of full automation: Evidence from autonomous vehicle on-demand mobility services</span></td>
+        <td class="author-cell">Xiaoyan Wang</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2607.08610" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2607.08610" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】
+   - 本论文的动机在于探讨在全面自动化时代，自动驾驶车辆（AVs）如何在共享经济中实现资源优化，尤其是在交通运输服务领域的应用。
+   - 通过研究私有AV在城市移动服务中的利用情况，论文旨在揭示自动驾驶车辆如何提升交通效率、降低运营成本，以及改善服务质量，从而推动共享经济的发展。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】
+   - 以往的研究主要关注于共享经济和出行服务的不同方面，如传统的打车服务和共享车辆使用模式，但对于自动驾驶车辆在共享平台中的应用及其影响尚未进行系统性分析。
+   - 尽管已有一些研究讨论了自动驾驶技术的潜力，现有文献对如何协调私人AV的使用和乘客需求之间的关系仍缺乏深入探讨，尤其是在满足多变的市场条件下。
+
+3. 【提出了什么创新的方法】
+   - 本文提出了一种时间扩展网络流模型，该模型能够捕捉AV使用中时间和空间的异质性，同时保持分析的可操作性。
+   - 论文分析了影响AV众包服务效果的关键因素，包括乘客与车主的出行模式互补性、车主保留的闲置时间、以及车辆重新定位的距离等。
+
+4. 【文章缺点】
+   - 由于研究主要集中在特定城市（如芝加哥），其结论的普适性可能受到限制，适用于其他地区的情况尚需进一步验证。
+   - 论文未充分讨论外部因素（如政策法规及市场接受度）对AV众包服务实施的影响，可能导致分析结果的局限性。
+
+5. 【类似工作】
+   - 相关研究包括对传统共享出行服务的经济性分析，如Uber和Lyft的运营模式。
+   - 还有研究关注智能交通系统的优化，例如通过算法提升交通流量和效率的探讨。
+
+6. 【相关性评分】最后只写“分数：X分”，X为1到5整数。
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文的动机在于探讨加密资产在国家经济中如何与传统金融系统交织，尤其是在金融压力下的表现，这对金融稳定和公共数字货币的设计具有重要影响。其次，现有研究在数据获取上存在限制，无法直接识别市场参与者的地理位置和交易活动，因此需要一种新的方法来更准确地测量加密资产的市场行为。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的研究主要依赖间接代...">Stablecoins under Stress in a National Economy: Transaction-Level Evidence from Austrian Crypto-Asset Service Providers</span></td>
+        <td class="author-cell">Pietro Saggese</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2607.08524" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2607.08524" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+该论文的动机在于探讨加密资产在国家经济中如何与传统金融系统交织，尤其是在金融压力下的表现，这对金融稳定和公共数字货币的设计具有重要影响。其次，现有研究在数据获取上存在限制，无法直接识别市场参与者的地理位置和交易活动，因此需要一种新的方法来更准确地测量加密资产的市场行为。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究主要依赖间接代理（如网络流量、IP地理定位和离线交易数据）来推测加密资产的市场活动，但这些方法往往存在噪音和不完整性，难以进行细致的行为分析。尽管已有研究尝试分析加密资产的市场影响，但关于加密活动在经济中的规模、个体在压力下如何重新配置资产以及稳定币是否能作为安全避风港等基本问题仍未得到清晰的实证答案。
+
+3. 【提出了什么创新的方法】  
+该论文提出了一种基于监管注册的交易级别测量方法，直接识别奥地利注册的所有加密资产服务提供商（CASPs）的链上地址，从而重建其交易活动。这种方法允许研究者观察到更可靠的流动性数据，能够区分零售和机构中介的交易行为，进而分析其在金融压力下的反应机制。
+
+4. 【文章缺点】  
+首先，研究的范围仅限于奥地利的CASPs，可能无法全面反映全球加密市场的动态。其次，尽管使用了直接的链上数据，但仍可能受到数据完整性和准确性的影响，特别是在快速变化的市场环境中。
+
+5. 【类似工作】  
+类似的工作包括Auer等（2025）对加密资产市场的宏观金融冲击的研究，以及Makridis（2025）对加密资产服务提供商的市场影响分析。这些研究虽然提供了有价值的见解，但大多依赖间接数据，缺乏直接的链上交易分析。
+
+6. 【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      本文的动机在于，现有的SEC 8-K文件中的项目代码过于粗糙，无法有效区分经济上不同的重要事件，导致信息传递不准确。其次，许多重要的市场信息被归入“其他事件”这一模糊类别，缺乏明确的标签，影响了投资者和研究者对市场动态的理解和反应。  2. 【前人的工作如何解决该问题，存在哪些空白】      前人的研究主要集中在使用现有的项目代码来分析市场反...">Grounded Event Extraction from SEC 8-K Filings with a Fine-Grained Taxonomy</span></td>
+        <td class="author-cell">Rian Dolphin</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2607.08346" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2607.08346" target="_blank" rel="noopener">🧠 AlphaXiv</a><br><a class="resource-tag code" href="https://massive.com/docs/rest/stocks/filings/8-k-disclosures?utm_source=research&amp;utm_campaign=8k_tags" target="_blank" rel="noopener">🔗 Code1</a><br><details class="resource-comment"><summary>📝 备注</summary><small>. Full dataset and taxonomy available atthis https URL</small></details></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+   本文的动机在于，现有的SEC 8-K文件中的项目代码过于粗糙，无法有效区分经济上不同的重要事件，导致信息传递不准确。其次，许多重要的市场信息被归入“其他事件”这一模糊类别，缺乏明确的标签，影响了投资者和研究者对市场动态的理解和反应。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+   前人的研究主要集中在使用现有的项目代码来分析市场反应和波动性，但这些代码的局限性使得分析结果不够精确，特别是在处理经济意义不同的事件时。此外，虽然有一些研究尝试利用语言模型进行文本分析，但缺乏将标签与源文本可靠性相结合的系统性方法，未能有效解决标签的可追溯性和审计性问题。
+
+3. 【提出了什么创新的方法】  
+   本文提出了一种两阶段的事件提取系统，该系统基于119种事件类型的三层分类法进行标签化。第一阶段通过模糊n-gram验证确保每个标签都能追溯到文件中的原文，第二阶段则为每个标签分配质量评分，以提高标签的可靠性和准确性。
+
+4. 【文章缺点】  
+   文章的一个缺点是，尽管提出了质量评分机制，但如何进一步提高评分的准确性和一致性仍需探讨。另一个缺点是，系统的复杂性可能导致在实际应用中需要较高的计算资源和时间，限制了其推广的可行性。
+
+5. 【类似工作】  
+   类似的工作包括利用语言模型进行金融文本分析的研究，如Zhou等人（2021）对新闻文本中的企业事件检测的研究，以及Wu等人（2023）对金融领域的生成模型的应用。这些工作为本文的方法提供了理论基础，但在标签的可靠性和可追溯性方面仍有待改进。
+
+6. 【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span>Measuring Consumption with Credit Card Data: Benchmarking and Beyond</span></td>
+        <td class="author-cell">Aditya Aladangady</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2607.08759" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2607.08759" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>大模型总结失败<br><small style="color:#dc3545">⚠️ The read operation timed out</small></small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      该论文的动机在于揭示通货膨胀的复杂性，强调其并非仅由少数宏观经济力量（如货币政策或总需求）直接决定，而是源于微观层面的价格设定和信贷融资生产的互动。其次，作者希望通过代理基础模型展示在复杂网络系统中，微观决策如何通过反馈和外部性影响宏观经济结果，从而更好地理解通货膨胀的动态特征。  2. 【前人的工作如何解决该问题，存在哪些空白】      前...">Inflation as an emergent phenomenon</span></td>
+        <td class="author-cell">Alessio Emanuele Biondo</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2607.07864" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2607.07864" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+   该论文的动机在于揭示通货膨胀的复杂性，强调其并非仅由少数宏观经济力量（如货币政策或总需求）直接决定，而是源于微观层面的价格设定和信贷融资生产的互动。其次，作者希望通过代理基础模型展示在复杂网络系统中，微观决策如何通过反馈和外部性影响宏观经济结果，从而更好地理解通货膨胀的动态特征。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+   前人的研究主要集中在通货膨胀与微观价格调整摩擦之间的关系，探讨了不同价格设定方式（如时间依赖和状态依赖）对通货膨胀持久性的影响。然而，这些研究往往忽视了价格设定的异质性和网络效应在通货膨胀传播过程中的作用，导致对通货膨胀动态的理解不够全面。
+
+3. 【提出了什么创新的方法】  
+   本文提出了一种基于代理的模型，强调了在内生货币经济中，去中心化的价格设定和信贷融资生产如何共同作用于通货膨胀的形成。通过考虑异质性学习、成本加成定价规则和信贷条件的演变，模型展示了价格级联和反馈循环如何导致不同的通货膨胀模式。
+
+4. 【文章缺点】  
+   文章可能在模型的复杂性上存在不足，导致其可操作性和实证验证的难度增加。其次，尽管模型考虑了多种因素，但可能仍未能充分捕捉到所有影响通货膨胀的外部变量，限制了其普适性。
+
+5. 【类似工作】  
+   类似的工作包括基于代理模型的经济学研究，如“Agent-Based Computational Economics” (ACE) 和“Complex Adaptive Systems” (CAS) 的研究，这些研究同样关注微观行为如何影响宏观经济现象。另一个相关的工作是“New Keynesian Models”中对价格粘性的研究，这些模型探讨了价格调整的</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文的动机在于解决美国黑人母亲与白人母亲之间在低出生体重（LBW）方面的显著差距，尤其是在医疗保健资源不足的情况下。通过评估医疗补助（Medicaid）对助产士服务的覆盖，研究旨在改善婴儿健康并缩小种族间的出生结果差异。   此外，论文关注如何通过政策干预来提高低收入和高风险群体的健康结果，特别是针对那些可能最需要助产士支持的黑人母亲。  2. 【...">Helping Hands, Healthier Infants: The Effect of Medicaid Doula Coverage Mandates on Birth Outcomes</span></td>
+        <td class="author-cell">Farhad V. Farahani</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2607.07770" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2607.07770" target="_blank" rel="noopener">🧠 AlphaXiv</a><br><details class="resource-comment"><summary>📝 备注</summary><small>. JEL codes: I18, I14, I13, J13, J15, C21</small></details></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+该论文的动机在于解决美国黑人母亲与白人母亲之间在低出生体重（LBW）方面的显著差距，尤其是在医疗保健资源不足的情况下。通过评估医疗补助（Medicaid）对助产士服务的覆盖，研究旨在改善婴儿健康并缩小种族间的出生结果差异。  
+此外，论文关注如何通过政策干预来提高低收入和高风险群体的健康结果，特别是针对那些可能最需要助产士支持的黑人母亲。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作主要通过观察性研究比较使用助产士的母亲与未使用者之间的差异，揭示了助产士对改善出生结果的潜在影响。然而，这种方法存在选择偏差的问题，可能无法准确反映助产士服务的因果效应。  
+此外，现有文献中缺乏对政策干预效果的系统评估，尤其是在不同州实施助产士服务覆盖的情况下，尚未充分利用政策变化带来的自然实验机会。
+
+3. 【提出了什么创新的方法】  
+论文采用了差异中的差异（DiD）设计，通过利用各州助产士服务覆盖政策的分阶段实施时间，来识别政策的因果效应。  
+研究结合了来自CDC WONDER的广泛出生数据和国家提供者注册中心的助产士工作力量数据，提供了更为准确的政策评估框架。  
+此外，论文通过两阶段最小二乘法分析，探讨了助产士覆盖与黑人低出生体重之间的关系，揭示了助产士供给增加对出生结果的潜在影响。
+
+4. 【文章缺点】  
+论文的一个缺点是大多数助产士覆盖政策在2024-2025年才生效，导致数据分析的统计功效受到限制，可能影响结果的可靠性。  
+另一个缺点是尽管研究提供了初步证据，但由于样本量和时间跨度的限制，无法得出关于政策长期效果的明确结论。
+
+5. 【类似工作】  
+相关的研究包括Kozhimannil等（</small></details></td>
+    </tr>
+        </tbody></table>
+    </div>
+</div>
+<div class="date-section" id="date-20260709">
+    <div class="date-header">
+        <span>2026-07-09（9篇论文）</span>
+        <span class="arrow">▶</span>
+    </div>
+    <div class="date-content" style="display: none;">
         <table>
         <!-- 添加 colgroup 明确指定每列宽度 -->
         <colgroup>
@@ -1997,7 +2220,7 @@
             });
             
             // ========== 自动展开最新日期 ==========
-            const latestId = 'date-20260709';
+            const latestId = 'date-20260710';
             if (latestId) {
                 const latestSection = document.getElementById(latestId);
                 if (latestSection) {

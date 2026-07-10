@@ -1,16 +1,81 @@
-# arXiv 量化金融领域论文汇总（共67篇）
+# arXiv 量化金融领域论文汇总（共68篇）
 
 > 说明：仅显示最近五天数据，当天论文默认展开，其他日期点击标题可展开/折叠
 > 相关性评分：基于LLM对量化金融领域的相关性评定（1-5分，★越多相关性越高）
 
 ## 日期导航
+- [2026-07-10（9篇论文）](#date-20260710)
 - [2026-07-09（9篇论文）](#date-20260709)
 - [2026-07-08（12篇论文）](#date-20260708)
 - [2026-07-07（33篇论文）](#date-20260707)
 - [2026-07-03（5篇论文）](#date-20260703)
-- [2026-07-02（8篇论文）](#date-20260702)
 
-## <a id='date-20260709'></a>2026-07-09（9篇论文）
+## <a id='date-20260710'></a>2026-07-10（9篇论文）
+
+<table>
+<thead>
+<tr><th>Title</th><th>Author</th><th>PDF</th><th>Code</th><th>Relevance</th></tr>
+</thead>
+<tbody>
+<tr><td>Estimating the Stochastic Discount Factor from Option Prices and Predicting the Equity Premium</td><td>Kenichiro Shiraya</td><td><a href="https://arxiv.org/pdf/2607.08500">PDF</a></td><td>-</td><td>★★★★★</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★★<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.08500">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于通过采用基于时间可变波动率的随机贴现因子（SDF）来改进对市场参与者未来预期的捕捉，以此解决SDF估计困难的问题。其次，利用仅基于S&P 500期权的市场数据，可以减小观测噪声，提高SDF的稳定性。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要通过依赖市场历史价格或风险中性分布来估计SDF，并采用几种不同的参数设定来链接市场价值和收益。然而，这些方法通常局限于历史数据，缺乏前瞻性应用。此外，现有的研究大多数未考虑波动率随时间变化的影响，这可能导致SDF的估计失真。<br><br>3. 【提出了什么创新的方法】  <br>本研究提出了一种基于时间可变波动率的SDF估计方法，通过S&P 500期权的价格来估算SDF，揭示出不同到期时间下的SDF结构特征。此外，文章还展示了SDF的“中间驼峰”以及在较长期到期下更清晰的W形状，识别出到期时间作为影响SDF强度的关键因素。<br><br>4. 【文章缺点】  <br>论文没有提供相应的实证测试数据来验证所提出模型的适用性，可能影响结果的普适性。同时，对市场价格风险常数假设的依赖可能限制了模型在更为复杂市场条件下的有效性。<br><br>5. 【类似工作】  <br>类似的研究有Bakshi et al. (2010) 的模仿组合法，该方法直接从市场数据中估计SDF，并且Christoffersen et al. (2013)考察了波动率对SDF的影响，这些研究为本论文提供了理论基础。<br><br>6. 【相关性评分】  <br>分数：5分
+
+</details></td></tr>
+<tr><td>Volatility in Prediction Markets: A Structural Approach</td><td>Weiye Xi</td><td><a href="https://arxiv.org/pdf/2607.08199">PDF</a></td><td>-</td><td>★★★★★</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★★<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.08199">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】<br>该论文的动机在于，预测市场中价格作为概率的表现方式与传统金融市场中资产回报的预测方式不同，这要求我们发展一个能够处理这些独特特征（如价格是有界概率、支付为二元）的新模型。此外，随着预测市场的快速发展，市场参与者（如交易员和风险管理者）需要更好的方法来预测未来概率变化和评估市场报价的稳定性。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】<br>前人的工作大多集中在ARCH和GARCH模型的应用上，这些模型在传统金融市场中已得到了广泛使用，能够有效地进行波动性预测。然而，既有模型缺乏对预测市场特有结构的适应性，无法有效捕捉价格变化的条件波动性。另外，现有的研究更多地关注确定性结果，而对于如何在特定信息时刻做出预测却缺乏足够的探讨。<br><br>3. 【提出了什么创新的方法】<br>本论文提出了一个针对预测市场的结构性波动率模型，此模型考虑了订单簿变量（如买卖差价与交易量），并通过实证数据构建了基于Kalshi二元合约的小时面板。此外，模型通过建立适应期限的吸收边界条件，增强了对信息时刻处理的能力，确保价格动态可以准确反映未来概率的变化。<br><br>4. 【文章缺点】<br>该论文可能在模型的复杂性上存在一定的缺点，导致在实际应用中难以操作。此外，数据样本仅覆盖到2026年，可能限制了模型对长期趋势预测的有效性。<br><br>5. 【类似工作】<br>类似的工作包括Wright-Fisher模型在预测市场中关于信念的研究，以及Archak和Ipeirotis（2010）和Restocchi等（2018）对预测市场价格的建模。这些研究虽然为波动性建模提供了基础，但未能完全涵盖本文提出的结构性波动率模型的特点。<br><br>6. 【相关性评分】<br>分数：5分
+
+</details></td></tr>
+<tr><td>Directional AI Advice: Experimental Evidence from Healthcare</td><td>Yuyu Chen</td><td><a href="https://arxiv.org/pdf/2607.08706">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.08706">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】<br>该研究的主要动机在于探讨生成性人工智能（AI）在医疗领域的应用如何影响患者与专家之间的决策关系。首先，传统上，医疗决策主要依赖于医生的专业判断，而AI的引入可能改变这一动态。其次，AI提供的方向性建议可能包含设计者的优先考虑，从而影响患者对医生建议的依赖程度及其遵从性。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】<br>前人已经研究了生成性AI在医疗信息获取中的作用，并在一定程度上揭示了其对医疗决策的潜在影响。然而，现有研究仍未充分探讨AI如何具体影响患者与医生之间的互动及其遵从性。其次，大多数文献集中于AI的潜在益处，缺乏对其可能的负面影响（如患者满意度下降）的实证研究。<br><br>3. 【提出了什么创新的方法】<br>本文通过在中国的一家大型公立医院进行为期一个月的随机对照实验，提供了首个关于患者接入生成性AI如何重塑临床决策和患者-医生关系的随机证据。此外，研究采用了对话日志分析，系统地评估了AI给出的建议在实际医疗实践中的传播和影响。<br><br>4. 【文章缺点】<br>该研究的一个缺点是样本主要集中在中国特定的医疗环境中，可能限制了结果的普适性，无法推广到其他国家或文化背景下的医疗系统。其次，虽然研究涵盖了患者的行为变化，但对医生反应和适应AI建议的深入分析相对较少，可能导致结论的片面性。<br><br>5. 【类似工作】<br>有研究探讨了AI在健康信息访问中的作用，例如《Generative AI在医疗领域的采用与监管框架》。另有文献研究了AI对患者满意度和信任度的影响，尤其是在医患互动中的动态变化。<br><br>6. 【相关性评分】<br>分数：4分
+
+</details></td></tr>
+<tr><td>Sharing economy in the era of full automation: Evidence from autonomous vehicle on-demand mobility services</td><td>Xiaoyan Wang</td><td><a href="https://arxiv.org/pdf/2607.08610">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.08610">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】<br>   - 本论文的动机在于探讨在全面自动化时代，自动驾驶车辆（AVs）如何在共享经济中实现资源优化，尤其是在交通运输服务领域的应用。<br>   - 通过研究私有AV在城市移动服务中的利用情况，论文旨在揭示自动驾驶车辆如何提升交通效率、降低运营成本，以及改善服务质量，从而推动共享经济的发展。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】<br>   - 以往的研究主要关注于共享经济和出行服务的不同方面，如传统的打车服务和共享车辆使用模式，但对于自动驾驶车辆在共享平台中的应用及其影响尚未进行系统性分析。<br>   - 尽管已有一些研究讨论了自动驾驶技术的潜力，现有文献对如何协调私人AV的使用和乘客需求之间的关系仍缺乏深入探讨，尤其是在满足多变的市场条件下。<br><br>3. 【提出了什么创新的方法】<br>   - 本文提出了一种时间扩展网络流模型，该模型能够捕捉AV使用中时间和空间的异质性，同时保持分析的可操作性。<br>   - 论文分析了影响AV众包服务效果的关键因素，包括乘客与车主的出行模式互补性、车主保留的闲置时间、以及车辆重新定位的距离等。<br><br>4. 【文章缺点】<br>   - 由于研究主要集中在特定城市（如芝加哥），其结论的普适性可能受到限制，适用于其他地区的情况尚需进一步验证。<br>   - 论文未充分讨论外部因素（如政策法规及市场接受度）对AV众包服务实施的影响，可能导致分析结果的局限性。<br><br>5. 【类似工作】<br>   - 相关研究包括对传统共享出行服务的经济性分析，如Uber和Lyft的运营模式。<br>   - 还有研究关注智能交通系统的优化，例如通过算法提升交通流量和效率的探讨。<br><br>6. 【相关性评分】最后只写“分数：X分”，X为1到5整数。<br>分数：4分
+
+</details></td></tr>
+<tr><td>Stablecoins under Stress in a National Economy: Transaction-Level Evidence from Austrian Crypto-Asset Service Providers</td><td>Pietro Saggese</td><td><a href="https://arxiv.org/pdf/2607.08524">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.08524">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于探讨加密资产在国家经济中如何与传统金融系统交织，尤其是在金融压力下的表现，这对金融稳定和公共数字货币的设计具有重要影响。其次，现有研究在数据获取上存在限制，无法直接识别市场参与者的地理位置和交易活动，因此需要一种新的方法来更准确地测量加密资产的市场行为。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要依赖间接代理（如网络流量、IP地理定位和离线交易数据）来推测加密资产的市场活动，但这些方法往往存在噪音和不完整性，难以进行细致的行为分析。尽管已有研究尝试分析加密资产的市场影响，但关于加密活动在经济中的规模、个体在压力下如何重新配置资产以及稳定币是否能作为安全避风港等基本问题仍未得到清晰的实证答案。<br><br>3. 【提出了什么创新的方法】  <br>该论文提出了一种基于监管注册的交易级别测量方法，直接识别奥地利注册的所有加密资产服务提供商（CASPs）的链上地址，从而重建其交易活动。这种方法允许研究者观察到更可靠的流动性数据，能够区分零售和机构中介的交易行为，进而分析其在金融压力下的反应机制。<br><br>4. 【文章缺点】  <br>首先，研究的范围仅限于奥地利的CASPs，可能无法全面反映全球加密市场的动态。其次，尽管使用了直接的链上数据，但仍可能受到数据完整性和准确性的影响，特别是在快速变化的市场环境中。<br><br>5. 【类似工作】  <br>类似的工作包括Auer等（2025）对加密资产市场的宏观金融冲击的研究，以及Makridis（2025）对加密资产服务提供商的市场影响分析。这些研究虽然提供了有价值的见解，但大多依赖间接数据，缺乏直接的链上交易分析。<br><br>6. 【相关性评分】  <br>分数：4分
+
+</details></td></tr>
+<tr><td>Grounded Event Extraction from SEC 8-K Filings with a Fine-Grained Taxonomy</td><td>Rian Dolphin</td><td><a href="https://arxiv.org/pdf/2607.08346">PDF</a></td><td><a href="https://massive.com/docs/rest/stocks/filings/8-k-disclosures?utm_source=research&amp;utm_campaign=8k_tags">code1</a></td><td>★★★★☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.08346">PDF</a><br><strong>代码</strong>：<a href="https://massive.com/docs/rest/stocks/filings/8-k-disclosures?utm_source=research&amp;utm_campaign=8k_tags">code1</a><br><strong>备注</strong>：. Full dataset and taxonomy available atthis https URL<br><br>1. 【论文的motivation是什么】  <br>   本文的动机在于，现有的SEC 8-K文件中的项目代码过于粗糙，无法有效区分经济上不同的重要事件，导致信息传递不准确。其次，许多重要的市场信息被归入“其他事件”这一模糊类别，缺乏明确的标签，影响了投资者和研究者对市场动态的理解和反应。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的研究主要集中在使用现有的项目代码来分析市场反应和波动性，但这些代码的局限性使得分析结果不够精确，特别是在处理经济意义不同的事件时。此外，虽然有一些研究尝试利用语言模型进行文本分析，但缺乏将标签与源文本可靠性相结合的系统性方法，未能有效解决标签的可追溯性和审计性问题。<br><br>3. 【提出了什么创新的方法】  <br>   本文提出了一种两阶段的事件提取系统，该系统基于119种事件类型的三层分类法进行标签化。第一阶段通过模糊n-gram验证确保每个标签都能追溯到文件中的原文，第二阶段则为每个标签分配质量评分，以提高标签的可靠性和准确性。<br><br>4. 【文章缺点】  <br>   文章的一个缺点是，尽管提出了质量评分机制，但如何进一步提高评分的准确性和一致性仍需探讨。另一个缺点是，系统的复杂性可能导致在实际应用中需要较高的计算资源和时间，限制了其推广的可行性。<br><br>5. 【类似工作】  <br>   类似的工作包括利用语言模型进行金融文本分析的研究，如Zhou等人（2021）对新闻文本中的企业事件检测的研究，以及Wu等人（2023）对金融领域的生成模型的应用。这些工作为本文的方法提供了理论基础，但在标签的可靠性和可追溯性方面仍有待改进。<br><br>6. 【相关性评分】  <br>分数：4分
+
+</details></td></tr>
+<tr><td>Measuring Consumption with Credit Card Data: Benchmarking and Beyond</td><td>Aditya Aladangady</td><td><a href="https://arxiv.org/pdf/2607.08759">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.08759">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：The read operation timed out<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Inflation as an emergent phenomenon</td><td>Alessio Emanuele Biondo</td><td><a href="https://arxiv.org/pdf/2607.07864">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.07864">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   该论文的动机在于揭示通货膨胀的复杂性，强调其并非仅由少数宏观经济力量（如货币政策或总需求）直接决定，而是源于微观层面的价格设定和信贷融资生产的互动。其次，作者希望通过代理基础模型展示在复杂网络系统中，微观决策如何通过反馈和外部性影响宏观经济结果，从而更好地理解通货膨胀的动态特征。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的研究主要集中在通货膨胀与微观价格调整摩擦之间的关系，探讨了不同价格设定方式（如时间依赖和状态依赖）对通货膨胀持久性的影响。然而，这些研究往往忽视了价格设定的异质性和网络效应在通货膨胀传播过程中的作用，导致对通货膨胀动态的理解不够全面。<br><br>3. 【提出了什么创新的方法】  <br>   本文提出了一种基于代理的模型，强调了在内生货币经济中，去中心化的价格设定和信贷融资生产如何共同作用于通货膨胀的形成。通过考虑异质性学习、成本加成定价规则和信贷条件的演变，模型展示了价格级联和反馈循环如何导致不同的通货膨胀模式。<br><br>4. 【文章缺点】  <br>   文章可能在模型的复杂性上存在不足，导致其可操作性和实证验证的难度增加。其次，尽管模型考虑了多种因素，但可能仍未能充分捕捉到所有影响通货膨胀的外部变量，限制了其普适性。<br><br>5. 【类似工作】  <br>   类似的工作包括基于代理模型的经济学研究，如“Agent-Based Computational Economics” (ACE) 和“Complex Adaptive Systems” (CAS) 的研究，这些研究同样关注微观行为如何影响宏观经济现象。另一个相关的工作是“New Keynesian Models”中对价格粘性的研究，这些模型探讨了价格调整的
+
+</details></td></tr>
+<tr><td>Helping Hands, Healthier Infants: The Effect of Medicaid Doula Coverage Mandates on Birth Outcomes</td><td>Farhad V. Farahani</td><td><a href="https://arxiv.org/pdf/2607.07770">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.07770">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：. JEL codes: I18, I14, I13, J13, J15, C21<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于解决美国黑人母亲与白人母亲之间在低出生体重（LBW）方面的显著差距，尤其是在医疗保健资源不足的情况下。通过评估医疗补助（Medicaid）对助产士服务的覆盖，研究旨在改善婴儿健康并缩小种族间的出生结果差异。  <br>此外，论文关注如何通过政策干预来提高低收入和高风险群体的健康结果，特别是针对那些可能最需要助产士支持的黑人母亲。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要通过观察性研究比较使用助产士的母亲与未使用者之间的差异，揭示了助产士对改善出生结果的潜在影响。然而，这种方法存在选择偏差的问题，可能无法准确反映助产士服务的因果效应。  <br>此外，现有文献中缺乏对政策干预效果的系统评估，尤其是在不同州实施助产士服务覆盖的情况下，尚未充分利用政策变化带来的自然实验机会。<br><br>3. 【提出了什么创新的方法】  <br>论文采用了差异中的差异（DiD）设计，通过利用各州助产士服务覆盖政策的分阶段实施时间，来识别政策的因果效应。  <br>研究结合了来自CDC WONDER的广泛出生数据和国家提供者注册中心的助产士工作力量数据，提供了更为准确的政策评估框架。  <br>此外，论文通过两阶段最小二乘法分析，探讨了助产士覆盖与黑人低出生体重之间的关系，揭示了助产士供给增加对出生结果的潜在影响。<br><br>4. 【文章缺点】  <br>论文的一个缺点是大多数助产士覆盖政策在2024-2025年才生效，导致数据分析的统计功效受到限制，可能影响结果的可靠性。  <br>另一个缺点是尽管研究提供了初步证据，但由于样本量和时间跨度的限制，无法得出关于政策长期效果的明确结论。<br><br>5. 【类似工作】  <br>相关的研究包括Kozhimannil等（
+
+</details></td></tr>
+</tbody>
+</table>
+
+<details>
+<summary><a id='date-20260709'></a>2026-07-09（9篇论文）</summary>
 
 <table>
 <thead>
@@ -73,6 +138,8 @@
 </details></td></tr>
 </tbody>
 </table>
+
+</details>
 
 <details>
 <summary><a id='date-20260708'></a>2026-07-08（12篇论文）</summary>
@@ -406,67 +473,6 @@
 <tr><td colspan="5"><details><summary><strong>总结</strong></summary>
 
 <strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.01254">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于揭示AI能力测量中的基准问题，特别是基准的有效性与人类判断质量之间的关系。首先，随着基础模型在现有评估套件中接近性能上限，评估信号的集中性导致了对高难度基准项目的依赖，这些项目需要高水平的专家判断来设计。其次，当前的基准构建和评估过程缺乏足够的关注，导致对AI进展的理解和政策响应存在偏差。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要集中在基准的构建和评估方法上，尝试通过定量模型来分析基准信号的衰减及其对AI能力的影响。然而，这些研究往往忽视了人类判断在基准设计中的重要性及其稀缺性。其次，现有文献对基准的有效性和项目级别的区分能力缺乏深入探讨，未能充分揭示基准在AI能力评估中的动态变化。<br><br>3. 【提出了什么创新的方法】  <br>该论文提出了一种新的视角，强调基准的有效性不仅取决于其设计，还与人类判断的质量密切相关。具体来说，作者引入了“基准上限问题”的概念，指出随着模型在简单项目上的饱和，真正的评估信号集中在难度较高的项目上，这些项目需要精英专家的判断。此外，论文还探讨了基准有效性随时间变化的动态特性。<br><br>4. 【文章缺点】  <br>首先，论文可能过于强调人类判断的稀缺性，而未充分考虑其他因素对基准有效性的影响，如技术进步和数据质量。其次，虽然提出了基准上限问题，但缺乏实证数据支持这一理论框架的普遍适用性，可能导致结论的局限性。<br><br>5. 【类似工作】  <br>类似的工作包括“基准信号衰减的正式模型”，该模型探讨了基准分数与潜在质量之间的关系；另一个相关研究是“基准有效性与
-
-</details></td></tr>
-</tbody>
-</table>
-
-</details>
-
-<details>
-<summary><a id='date-20260702'></a>2026-07-02（8篇论文）</summary>
-
-<table>
-<thead>
-<tr><th>Title</th><th>Author</th><th>PDF</th><th>Code</th><th>Relevance</th></tr>
-</thead>
-<tbody>
-<tr><td>Shapley in Context: Explaining Financial Language with Domain Expertise</td><td>Dangxing Chen</td><td><a href="https://arxiv.org/pdf/2607.00856">PDF</a></td><td>-</td><td>★★★★★</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★★<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.00856">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：European Journal of Finance<br><br>1. 【论文的motivation是什么】<br>   该论文的动机主要体现在两个方面：首先，随着大型语言模型在金融领域的广泛应用，如何确保这些模型的可解释性变得尤为重要，尤其是在高风险和严格监管的金融环境中；其次，现有的可解释性方法大多是为通用任务设计的，缺乏针对金融领域的专业知识，因此需要探索如何将领域知识融入到模型的解释中。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】<br>   前人的工作主要集中在开发通用的可解释性方法，如Lundberg和Lee（2017）等，但这些方法往往未能考虑到金融领域的特定需求。此外，尽管已有研究探讨了模型的可解释性，但缺乏对如何将Shapley值与金融领域知识相结合的深入分析，这为本研究提供了切入点。<br><br>3. 【提出了什么创新的方法】<br>   本文提出了一种基于Shapley值的可解释性方法，旨在通过将Shapley值与金融领域的知识相结合，提供更具针对性的解释。此外，研究还通过理论分析和实证评估，验证了Shapley值的归因是否与既有的金融推理一致，从而为金融文本数据的解释提供了新的视角。<br><br>4. 【文章缺点】<br>   文章的一个缺点是，尽管提出了基于Shapley值的解释方法，但对其他可能的可解释性方法的比较分析较为有限，可能影响结果的全面性。另一个缺点是，实证评估的范围可能受限于特定的金融文本数据，未能涵盖更广泛的应用场景。<br><br>5. 【类似工作】<br>   类似的工作包括Huang等（2023）对FinBERT的研究，该研究展示了金融领域特定的LLM在信息处理中的优势；另一个相关工作是Wu等（2023）提出的BloombergGPT，该模型通过专门的训练数据在金融任务上超越了通用模型。<br><br>6. 【相关性评分】<br>分数：5分
-
-</details></td></tr>
-<tr><td>Agent-to-Agent Finance: Blockchain Payments and Trust Infrastructure for Autonomous AI Agents</td><td>Hui Gong</td><td><a href="https://arxiv.org/pdf/2607.00245">PDF</a></td><td>-</td><td>★★★★★</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★★<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.00245">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于，随着自主AI代理在金融市场中的崛起，市场参与者需要一个基础设施来支持身份验证、授权、支付、验证、声誉和问责等功能，以应对这些代理的经济行为。其次，传统金融市场依赖于可执行的行动，而自主AI代理的出现使得市场需要重新审视如何在保持透明度和责任的前提下，允许这些代理进行交易。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要集中在算法交易、智能合约和去中心化金融（DeFi）等领域，这些技术在一定程度上实现了金融活动的自动化。然而，现有研究未能充分探讨自主AI代理在金融市场中的具体角色及其带来的信任和问责问题。此外，虽然有关于区块链技术的应用研究，但缺乏针对自主代理如何在此基础上进行有效互动的系统性框架。<br><br>3. 【提出了什么创新的方法】  <br>本文提出了“代理对代理金融”的概念，作为自主代理之间的金融互动层，强调了可编程结算、智能钱包、去中心化注册和可验证计算在解决自主代理带来的协调摩擦中的应用。此外，文章还探讨了“有界自主性”的设计问题，提出如何在不增加市场不透明性和脆弱性的情况下，允许代理进行交易。<br><br>4. 【文章缺点】  <br>文章可能过于理想化地看待区块链和智能合约在金融市场中的应用，未能充分考虑技术实施中的现实挑战和潜在风险。其次，尽管提出了创新的理论框架，但缺乏实证研究来验证这些理论在实际金融环境中的有效性和可行性。<br><br>5. 【类似工作】  <br>类似的工作包括“智能合约在金融服务中的应用研究”，该研究探讨了智能合约如何自动化金融交易过程；另一个相关工作是“去中心化金融（DeFi）中的自动化交易系统”，该研究分析了DeFi环境中算法交易的效率和风险。<br><br>6. 【相关性评分】  <br>分数：5分
-
-</details></td></tr>
-<tr><td>How optimistic inflow forecasts distort dispatch, prices, and contracts in hydro-dominated power systems: evidence from Brazil</td><td>Arthur Brigatto</td><td><a href="https://arxiv.org/pdf/2607.00504">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.00504">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于探讨乐观的水流预测偏差如何影响巴西水电主导的电力系统的调度、价格和合同。首先，乐观的预测偏差可能导致水资源管理效率低下，从而影响电力市场的稳定性和可靠性。其次，研究表明，这种偏差不仅是统计预测的问题，还可能引发运营效率低下和市场激励扭曲，影响水电生产者的合同意愿。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在水流预测的偏差及其对成本-收益函数的影响，但对乐观偏差在实际运营中的具体影响缺乏深入分析。其次，虽然已有研究识别了巴西官方水流预测的乐观偏差，但尚未系统地探讨这种偏差如何通过水电系统的调度和市场结果进行传播。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了一种控制的随机双动态规划（SDDP）实验方法，比较在偏差和修正偏差的水流预测下训练的政策效果。通过实证数据，分析了乐观偏差如何导致水库水平降低、干季热电调度延迟、价格峰值加剧等现象，从而揭示了偏差对运营和市场结果的深远影响。<br><br>4. 【文章缺点】  <br>本论文的一个缺点是其分析主要集中在巴西的特定案例，可能缺乏普遍适用性，限制了其对其他国家或地区的启示。另一个缺点是，尽管提供了实证证据，但对模型假设和参数选择的敏感性分析不足，可能影响结果的稳健性。<br><br>5. 【类似工作】  <br>类似的工作包括对其他国家水电系统中预测偏差影响的研究，如美国和加拿大的水电市场分析，以及对水资源管理中预测偏差的理论探讨。这些研究为理解水电系统中的预测偏差提供了重要背景，但未能深入探讨其在市场调度中的具体机制。<br><br>6. 【相关性评分】  <br>分数：4分
-
-</details></td></tr>
-<tr><td>Talking Politics with Artificial Intelligence</td><td>Ziwen Zu</td><td><a href="https://arxiv.org/pdf/2607.00551">PDF</a></td><td>-</td><td>★★☆☆☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★☆☆☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.00551">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：includes appendices<br><br>1. 【论文的motivation是什么】  <br>   该论文的动机在于探讨大型语言模型（LLMs）在政治交流中的作用，尤其是它们是否能作为新的政治表达平台。其次，研究旨在分析人们在与AI进行对话时的政治内容表现，以了解AI对政治讨论的影响。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的研究主要集中在AI与人类的对话能力以及其在特定领域（如客户服务或教育）中的应用，但对AI在政治交流中的具体作用缺乏深入分析。此外，现有文献对AI如何影响政治表达的动态变化关注较少，尤其是在重大政治事件发生时的表现。<br><br>3. 【提出了什么创新的方法】  <br>   本文通过分析430万条人类与AI的对话数据，运用两种验证过的分类器来识别政治内容、使用场景和表达的意识形态。其次，采用回归不连续性设计，研究了2024年美国总统选举结果对用户表达的影响。<br><br>4. 【文章缺点】  <br>   文章可能忽视了不同文化背景下AI对政治交流的影响，导致结论的普遍性受到限制。其次，数据分析主要集中在美国用户，缺乏对其他国家或地区用户的比较研究。<br><br>5. 【类似工作】  <br>   1) 研究AI在社交媒体上的应用，分析其对用户政治观点的影响。  <br>   2) 探讨AI在公共政策讨论中的角色，评估其对民主参与的促进或抑制作用。<br><br>6. 【相关性评分】  <br>分数：2分
-
-</details></td></tr>
-<tr><td>Competitive effects of transmission constraints in the German electricity market</td><td>Alice Lixuan Xu</td><td><a href="https://arxiv.org/pdf/2607.00977">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.00977">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机主要是为了探讨德国电力市场中跨境传输限制对市场权力滥用的影响。首先，电力市场由于电网约束和短期需求缺乏弹性，使得发电商在竞争受限的情况下可能滥用市场权力。其次，跨境贸易能力的增加被认为可以通过引入外部竞争来减轻市场权力滥用的风险，因此研究传输约束对市场行为的影响具有重要的现实意义。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要通过模拟研究探讨了传输能力增加对市场权力的缓解作用以及传输拥堵对市场权力滥用的加剧影响。然而，尽管已有理论支持，但缺乏实证证据来验证这些假设。此外，现有文献中对德国电力市场的具体案例研究较少，尤其是在使用公开数据进行的实证分析方面存在空白。<br><br>3. 【提出了什么创新的方法】  <br>该论文采用了二阶段最小二乘法（2SRI）工具变量方法，利用2022-2024年德国电力市场的单位级数据进行实证分析。通过测量区域净位置的最大和最小界限来量化跨境传输约束，并将市场权力滥用的迹象定义为观察到的调度与模型竞争基准之间的偏差。这种方法为理解传输约束对市场行为的影响提供了新的实证支持。<br><br>4. 【文章缺点】  <br>首先，研究的时间范围仅限于2022-2024年，可能无法反映长期趋势或其他外部因素的影响。其次，尽管使用了先进的计量经济学方法，但数据的可得性和质量可能影响结果的可靠性和普适性。<br><br>5. 【类似工作】  <br>类似的工作包括Borenstein等（1999）关于跨境贸易能力对市场权力影响的研究，以及Nappu等（2013）对传输拥堵加剧市场权力滥用的模拟研究。这些研究为本论文提供了理论基础和背景，但缺乏实证数据的支持
-
-</details></td></tr>
-<tr><td>Tail Risk Management with Puts and Trend Following: A CVaR Framework for Crashes and Drawdowns</td><td>Miquel Noguer I Alonso</td><td><a href="https://arxiv.org/pdf/2607.00883">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.00883">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于，传统的投资组合管理方法在面对大幅下跌时表现不佳，尤其是在处理突发性市场崩盘、波动性重估和持续性回撤等不同损失机制时。其次，作者认为尾部风险管理不仅仅是工具选择问题，更是一个在不同损失机制之间进行资产配置的问题，因此需要一个更为系统的框架来应对这些挑战。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在单一的对冲工具上，例如使用长期的虚值看跌期权来应对市场崩盘，或通过动态趋势跟随策略来管理持续的回撤。然而，这些方法往往忽视了不同风险机制的相互作用和综合效应，导致在实际应用中存在局限性。此外，现有文献对尾部风险的管理缺乏一个统一的框架，未能有效整合不同对冲策略的优缺点。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了一种连续时间的条件价值-at-risk（CVaR）框架，将长期虚值看跌期权和系统性趋势跟随策略整合在一个统一的尾部风险管理方案中。该框架通过引入标记市场交易资产的选项套件，考虑了期权的溢价拖累、扩散风险和跳跃重估等因素。此外，论文还推导了与该框架相关的Hamilton-Jacobi-Bellman方程，为尾部风险管理提供了新的理论基础。<br><br>4. 【文章缺点】  <br>首先，尽管提出的框架在理论上具有创新性，但在实际应用中的可操作性和参数校准的复杂性可能会限制其普遍适用性。其次，论文中的蒙特卡洛实验虽然展示了框架的有效性，但缺乏对不同市场环境下的稳健性分析，可能导致结果的外推性不足。<br><br>5. 【类似工作】  <br>类似的工作包括使用动态对冲策略来管理尾部风险的研究，例如在市场崩盘时采用的看跌期权策略，以及基于趋势跟随的风险管理模型。这些研究虽然在
-
-</details></td></tr>
-<tr><td>End-to-End Parametric Portfolio Policies for Cross-Asset Futures Timing: When Do AI Models Beat Simple Rules?</td><td>Austin Pollok</td><td><a href="https://arxiv.org/pdf/2607.00475">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.00475">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于探讨跨资产期货投资中，基于AI的投资组合政策是否能够在复杂性上超越简单的规则策略。首先，资产类别的时机选择对投资组合的风险和收益有显著影响，而传统的预测-优化方法存在噪声和不稳定性的问题。其次，研究者希望通过直接将市场状态映射到投资组合权重的方式，简化投资决策过程，并评估其在实际应用中的有效性。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在改进传统的预测-优化框架，例如通过更好的协方差估计和丰富的信号来提升预测能力。然而，这些方法仍然依赖于对未来收益的预测，且可能导致小的预测误差累积成不稳定的权重。其次，尽管已有文献探讨了基于神经网络的投资组合优化，但仍缺乏对比简单规则策略的系统性评估，尤其是在跨资产投资的背景下。<br><br>3. 【提出了什么创新的方法】  <br>本研究提出了一种端到端的AI投资组合政策，通过神经网络直接将市场状态映射到投资组合权重，消除了传统方法中的预测和优化步骤。具体而言，采用了可微分的夏普比率损失函数进行训练，使得模型能够针对下游目标进行优化。此外，研究比较了基于LSTM和变换器架构的策略，发现变换器在交易成本方面表现更优。<br><br>4. 【文章缺点】  <br>本论文的一个缺点是虽然提出了创新的方法，但在不同资产类别的表现并不均匀，可能限制了其广泛适用性。另一个缺点是对交易成本的考虑虽然有所涉及，但在实际应用中，市场的流动性和交易摩擦可能会对策略的有效性产生更大的影响。<br><br>5. 【类似工作】  <br>类似的工作包括“Deep Momentum Networks”，该研究探讨了深度学习在动量策略中的应用；以及“深度强化学习在期货交易中的应用”，该研究关注于如何利用强化学习优化交易决策。<br><br>6. 【相关性评分】
-
-</details></td></tr>
-<tr><td>Night and Day: Diurnal Warming and Structural Transformation in India</td><td>Vedarshi Shastry</td><td><a href="https://arxiv.org/pdf/2607.00279">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.00279">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：online appendix included as an ancillary file<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于探讨昼夜温度变化对印度农业劳动力份额的影响，尤其是高夜间和白天温度对农业生产的不同作用。通过分析1981年至2011年间的印度人口普查数据，研究旨在揭示气候变化如何影响农业劳动力的分配和生产效率。其次，论文希望填补现有文献中关于气温变化对农业经济影响的空白，特别是在不同时间段内的温度变化对农业产出和劳动力市场的影响。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在气候变化对农业生产的整体影响，探讨了温度、降水等气候因素如何影响作物产量和农业经济。然而，这些研究往往忽视了昼夜温度变化的细微差别及其对农业劳动力分配的具体影响。此外，虽然已有文献探讨了气候变化对劳动力市场的影响，但缺乏对夜间和白天温度变化对农业劳动力份额的具体分析，导致对农业生产的理解仍然不够全面。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了一种新的分析框架，通过将夜间和白天温度变化的影响分开，深入探讨这两种温度变化对农业劳动力和生产效率的不同作用。具体而言，论文构建了一个全局均衡模型，明确区分了夜间温度对土地生产力的影响与白天温度对劳动生产力的影响。此外，研究还利用了多种数据集的结合，提供了更为细致的实证分析。<br><br>4. 【文章缺点】  <br>首先，尽管论文提供了丰富的数据分析，但可能在模型假设上存在一定的局限性，例如未充分考虑其他可能影响农业生产的因素，如政策变化或市场波动。其次，研究的地理范围主要集中在印度，可能导致其结论的普适性受到限制，难以直接推广到其他国家或地区的农业经济研究中。<br><br>5. 【类似工作】  <br>类似的研究包括Liu, Shamdasani, and Taraz (2023)
 
 </details></td></tr>
 </tbody>
