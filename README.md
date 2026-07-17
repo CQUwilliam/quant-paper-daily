@@ -1,16 +1,87 @@
-# arXiv 量化金融领域论文汇总（共51篇）
+# arXiv 量化金融领域论文汇总（共60篇）
 
 > 说明：仅显示最近五天数据，当天论文默认展开，其他日期点击标题可展开/折叠
 > 相关性评分：基于LLM对量化金融领域的相关性评定（1-5分，★越多相关性越高）
 
 ## 日期导航
+- [2026-07-17（10篇论文）](#date-20260717)
 - [2026-07-16（8篇论文）](#date-20260716)
 - [2026-07-15（7篇论文）](#date-20260715)
 - [2026-07-14（20篇论文）](#date-20260714)
 - [2026-07-13（15篇论文）](#date-20260713)
-- [2026-07-11（1篇论文）](#date-20260711)
 
-## <a id='date-20260716'></a>2026-07-16（8篇论文）
+## <a id='date-20260717'></a>2026-07-17（10篇论文）
+
+<table>
+<thead>
+<tr><th>Title</th><th>Author</th><th>PDF</th><th>Code</th><th>Relevance</th></tr>
+</thead>
+<tbody>
+<tr><td>Adaptive Ad Load Design for Sponsored Search Markets: Evidence, Theory, and Deployment</td><td>Mohammad Rashid</td><td><a href="https://arxiv.org/pdf/2607.14418">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.14418">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于探索广告加载设计在赞助搜索市场中的重要性。首先，随着数字经济中搜索广告收入的快速增长，平台面临着如何平衡广告收入与用户体验之间的矛盾。其次，现有的广告加载设计缺乏系统的理论框架和实证支持，导致平台在设置广告位时缺乏有效的决策依据。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在广告投放的效果评估和用户行为分析上，提供了一些关于广告加载对收入影响的初步见解。然而，现有文献往往忽视了广告加载设计的动态性和异质性，未能充分考虑不同查询类型对广告效果的影响。此外，缺乏针对广告加载设计的自适应算法研究，使得平台在实际应用中面临决策困境。<br><br>3. 【提出了什么创新的方法】  <br>论文提出了一种新颖的自适应算法——探索增强的局部自适应广告加载（e-LAAL）。该算法结合了无模型的查询级决策规则和静态探索臂，能够根据最近的结果动态更新广告加载建议。此外，e-LAAL提供了有限时间动态后悔保证，确保在实际部署中能够有效提升收入与转化之间的权衡。<br><br>4. 【文章缺点】  <br>首先，尽管e-LAAL在实证测试中表现良好，但其算法的复杂性可能导致在实际应用中的实施难度。其次，论文主要基于特定的应用商店环境进行研究，可能限制了其结论的普适性，需在其他类型的搜索平台上进行验证。<br><br>5. 【类似工作】  <br>类似的工作包括对广告效果的评估研究，如“广告投放对用户行为的影响”以及“基于机器学习的广告优化算法”。这些研究为理解广告加载设计提供了基础，但在动态自适应算法方面的探讨仍然较少。<br><br>6. 【相关性评分】  <br>分数：4分
+
+</details></td></tr>
+<tr><td>How Much of a 10-K Matters? Aggregation-Dependent Value of Full-Text versus Risk-Factor Sentiment</td><td>Sanggyu Sean Choi</td><td><a href="https://arxiv.org/pdf/2607.14174">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.14174">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   本文的动机在于探讨10-K文件中情感提取的重要性，尤其是在风险披露方面。首先，10-K文件包含了公司对未来不确定性的详细描述，这使其成为提取与未来收益和波动性相关的情感信号的理想候选者。其次，现有的情感提取方法主要集中在新闻文本上，忽视了10-K文件的潜在价值，尤其是在波动性预测方面。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的工作主要集中在使用新闻文本进行情感分析，并且通常仅对收益标签进行监督提取，未能充分利用10-K文件的风险披露部分。其次，尽管已有研究探讨了情感与市场结果的关系，但缺乏对波动性作为监督目标的应用，这在一定程度上限制了对风险信息的全面理解。<br><br>3. 【提出了什么创新的方法】  <br>   本文提出了一种监督情感生成的方法，扩展了现有的词典学习框架，应用于10-K文件及其风险因素部分。具体来说，本文比较了完整文件与Item 1A部分生成的情感，并在收益和波动性标签上进行监督。此外，本文还在三个聚合层次（行业、投资组合和个别公司）上评估情感指标的表现。<br><br>4. 【文章缺点】  <br>   本文的一个缺点是仅限于纳斯达克100指数的技术公司，可能影响结果的普遍性。另一个缺点是虽然对情感指标进行了多维度评估，但缺乏对其他可能影响市场结果的外部因素的考虑。<br><br>5. 【类似工作】  <br>   类似的工作包括Ke et al. (2020)的研究，该研究将情感提取应用于新闻文本以预测收益。另一个相关的研究是Loughran和McDonald (2011)的工作，探讨了情感词典在金融文本分析中的应用。<br><br>6. 【相关性评分】  <br>分数：4分
+
+</details></td></tr>
+<tr><td>Does Multi-Agent Debate Improve AI Feedback on Research Papers?</td><td>Tomas Havranek</td><td><a href="https://arxiv.org/pdf/2607.14713">PDF</a></td><td><a href="https://meta-analysis.cz/debate">code1</a></td><td>★★☆☆☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★☆☆☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.14713">PDF</a><br><strong>代码</strong>：<a href="https://meta-analysis.cz/debate">code1</a><br><strong>备注</strong>：. Pre-registered on OSF; data, code, judge prompts, and blinded reports in the replication package on Zenodo. Project page:this https URL<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于探索多智能体辩论是否能够改善人工智能对研究论文的反馈，尤其是在经济学的元分析中。作者希望通过比较不同的AI报告，评估哪种反馈方式对作者的论文改进更有帮助，从而为研究者提供更有效的工具来提升其学术作品的质量。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在AI模型的单一反馈与多智能体辩论的效果比较上，部分研究表明多智能体辩论可能会识别出单一模型遗漏的批评。然而，现有文献尚未将不同AI报告放在同一论文前进行比较，以评估哪种反馈对作者最有用，这一空白为本研究提供了切入点。<br><br>3. 【提出了什么创新的方法】  <br>本研究通过设计一个预注册的、身份隐藏的实验，将44篇元分析的作者与三种AI报告进行比较，评估其对论文改进的实际帮助。通过统一报告的长度和格式，确保了比较的公平性。此外，研究还探讨了AI评审与作者之间的互动，强调了作者在判断反馈有用性方面的重要性。<br><br>4. 【文章缺点】  <br>首先，研究的样本量相对较小，仅包含44篇元分析，可能影响结果的普适性。其次，尽管采用了身份隐藏的方式，但作者的主观偏见仍可能影响他们对AI报告的评价，从而影响研究结果的客观性。<br><br>5. 【类似工作】  <br>类似的研究包括Du et al. (2024)和Khan et al. (2024)的工作，这些研究探讨了多智能体辩论在识别批评方面的有效性。此外，Liang et al. (2024)的研究也关注了语言模型在生成有用论文反馈或评论方面的能力。<br><br>6. 【相关性评分】  <br>分数：2分
+
+</details></td></tr>
+<tr><td>Governing Artificial Intelligence: Public Preferences and Regulatory Options</td><td>Magnus Lundgren</td><td><a href="https://arxiv.org/pdf/2607.14585">PDF</a></td><td>-</td><td>★★☆☆☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★☆☆☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.14585">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：Main paper ; supplementary materials<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于探讨公众对人工智能（AI）监管的偏好，旨在理解在技术创新与公众安全之间的权衡如何影响治理结构的设计。其次，研究希望揭示不同国家在AI监管方面的分歧，反映出各国在治理模式和层级选择上的不同立场。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在AI技术的潜在风险和治理框架的理论构建上，但往往缺乏对公众偏好的实证调查。其次，虽然已有研究探讨了不同国家在AI监管方面的政策差异，但对公众的具体态度和偏好尚未得到充分的实证支持。<br><br>3. 【提出了什么创新的方法】  <br>该研究通过设计问卷调查，系统地收集公众对AI监管的偏好，涵盖了监管目标、模式和层级三个维度。研究还采用了随机化实验的方法，以确保样本的代表性和数据的可靠性。<br><br>4. 【文章缺点】  <br>该研究可能受到样本选择偏差的影响，尤其是在低教育水平人群的代表性不足。其次，尽管研究提供了丰富的数据分析，但对不同文化背景下公众偏好的深层次原因探讨仍显不足。<br><br>5. 【类似工作】  <br>类似的研究包括对技术治理的公众态度调查，尤其是关于数据隐私和网络安全的研究。此外，还有一些研究关注不同国家在科技监管方面的政策比较，探讨各国在面对技术挑战时的治理选择。<br><br>6. 【相关性评分】  <br>分数：2分
+
+</details></td></tr>
+<tr><td>Thermodynamic theory of voting and EU elections</td><td>Klaus M. Frahm</td><td><a href="https://arxiv.org/pdf/2607.15119">PDF</a></td><td><a href="https://arxiv.org/abs/2506.17720">code1</a> | <a href="https://arxiv.org/abs/2606.17965">code2</a> | <a href="https://arxiv.org/abs/2512.06420">code3</a> | <a href="https://arxiv.org/abs/2607.07315">code4</a></td><td>★★☆☆☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★☆☆☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.15119">PDF</a><br><strong>代码</strong>：<a href="https://arxiv.org/abs/2506.17720">code1</a> | <a href="https://arxiv.org/abs/2606.17965">code2</a> | <a href="https://arxiv.org/abs/2512.06420">code3</a> | <a href="https://arxiv.org/abs/2607.07315">code4</a><br><strong>备注</strong>：+ SupMat with 12 figures, may include certain unpublished parts ofarXiv:2512.06420, arXiv:2506.17720, arXiv:2606.17965, arXiv:2607.07315<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于通过热力学理论为投票行为提供新的解释，尤其是在欧盟选举中，揭示政党投票分布的统计特征。其次，研究者希望通过热力学的视角来理解社会财富不平等现象，探讨其与投票行为之间的关系。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在投票行为和财富不平等的统计特征上，但缺乏将热力学理论应用于这些现象的系统性研究。此外，尽管已有研究探讨了Lorenz曲线和Pareto曲线的构建，但尚未有工作将这些曲线与热力学理论相结合，形成统一的解释框架。<br><br>3. 【提出了什么创新的方法】  <br>论文提出了一种基于Rayleigh-Jeans热化理论的投票模型，通过类比非线性耦合振荡器的系统能量来描述政党投票分布。该模型不仅能够解释欧盟选举的投票结果，还能恢复法国总统选举第一轮候选人之间的投票分散情况。<br><br>4. 【文章缺点】  <br>首先，论文可能过于依赖热力学理论，缺乏对其他社会、政治因素的考虑。其次，模型的适用性可能受到限制，尤其是在不同国家或不同选举制度下，可能无法完全反映投票行为的复杂性。<br><br>5. 【类似工作】  <br>类似的工作包括对财富不平等的热力学解释研究，以及在其他领域应用热力学模型来理解复杂系统行为的研究，如交通拥堵和颗粒介质的合并现象。<br><br>6. 【相关性评分】  <br>分数：2分
+
+</details></td></tr>
+<tr><td>Existence and convergence of discrete-time Kyle models with multiple insiders</td><td>Jin Choi</td><td><a href="https://arxiv.org/pdf/2607.15057">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.15057">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于填补现有文献中关于Foster和Viswanathan（1996）模型的存在性证明的空白，特别是在多位知情交易者的情况下。此外，论文还旨在探讨离散时间均衡模型在交易次数趋于无穷大时如何收敛到连续时间均衡，这对于理解市场微观结构中的动态行为至关重要。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作，如Kyle（1985）和Holden与Subrahmanyam（1992），成功证明了其模型下纳什均衡的存在性。然而，Foster和Viswanathan（1996）的模型虽然扩展了前者，但并未提供相应的均衡存在性证明，这使得该模型的理论基础相对薄弱。此外，尽管已有研究探讨了信息不对称的情况，但对称假设的限制使得相关分析未能涵盖更复杂的信息结构。<br><br>3. 【提出了什么创新的方法】  <br>论文提出了两个主要的数学贡献：首先，提供了Foster和Viswanathan（1996）离散时间均衡模型的存在性证明；其次，证明了当交易次数趋于无穷大时，离散时间均衡收敛于Back、Cao和Willard（2000）所证明的连续时间均衡。这种收敛性分析为理解不同时间框架下的市场行为提供了新的视角。<br><br>4. 【文章缺点】  <br>首先，论文的分析主要集中在对称信息结构下的模型，未能考虑信息不对称的情况，这可能限制了其应用范围。其次，尽管提供了存在性和收敛性的证明，但对模型的复杂性和实际应用的可操作性讨论较少，可能影响其在实际金融市场中的适用性。<br><br>5. 【类似工作】  <br>类似的工作包括Holden和Subrahmanyam（1992）对多位知情交易者的模型扩展，以及Caldentey和Stacchetti（2010）对离散时间随机地平线模型的研究，这些研究都涉及市场微观结构和均衡的存在性问题。<br><br>6
+
+</details></td></tr>
+<tr><td>Platform Choice, Trust, and Privacy in the Consumer AI Assistant Market</td><td>Jennifer Zou</td><td><a href="https://arxiv.org/pdf/2607.15134">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.15134">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于探讨消费者在选择AI助手平台时的行为模式，尤其是如何分配任务、评估平台的可信度以及对数据隐私的重视。随着AI助手在日常生活中的普及，了解用户的选择和偏好对市场发展具有重要意义。其次，现有市场数据的缺乏使得对消费者行为的深入分析变得尤为必要，尤其是在涉及敏感信息的情况下，平台选择的后果可能对用户和市场都产生深远影响。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在AI助手的功能和技术性能上，较少关注消费者在选择平台时的心理和行为因素。这导致了对市场结构和用户偏好的理解不足，尤其是在任务分配和信任评估方面。此外，现有研究往往依赖于平台提供的专有数据，缺乏对跨平台行为和隐私态度的全面考察，未能揭示用户在选择平台时的真实动机和行为模式。<br><br>3. 【提出了什么创新的方法】  <br>本研究通过对1999名美国成年AI助手用户进行调查和选择实验，提供了对市场结构的实证分析，包含对用户任务分配和信任评估的细致测量。首先，研究通过任务级别而非用户级别的选择分析，揭示了平台的“任务特征”，即每个平台在特定任务上的使用情况。其次，研究采用了对比分析法，评估用户和非用户对不同平台的信任感，提供了更全面的信任度测量。<br><br>4. 【文章缺点】  <br>该研究的一个缺点是样本仅限于美国成年用户，可能无法代表全球范围内的AI助手用户行为。另一个缺点是尽管研究提供了丰富的数据分析，但对数据隐私特征的经济价值评估可能受到用户自我报告偏差的影响，导致结果的准确性受到质疑。<br><br>5. 【类似工作】  <br>类似的工作包括对社交媒体平台用户行为的研究，探讨用户在不同平台间的迁移及其对隐私的关注；另一个相关研究则分析
+
+</details></td></tr>
+<tr><td>Structure-Aware Variational State Preparation for Quantum Basket Option Pricing</td><td>Dongwoo Kim</td><td><a href="https://arxiv.org/pdf/2607.14518">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.14518">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于：  <br>- 量子幅度估计（QAE）在定价多维金融衍生品时能够提供相较于经典蒙特卡洛方法的二次加速，但在实际应用中，状态准备电路的深度限制了其效益。  <br>- 在多资产设置中，资产之间的相关性使得状态准备电路的复杂度显著增加，因此高效的状态准备方法对于实现量子蒙特卡洛方法在衍生品定价和风险评估中的实际应用至关重要。  <br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要通过以下方式解决了相关问题：  <br>- 他们提出了多种量子状态准备方法，以降低输入准备的复杂度，并提高量子算法在金融定价中的应用效率。  <br>- 然而，现有的方法往往未能充分利用金融产品的结构信息，导致在处理相关资产的情况下，状态准备电路仍然过于复杂，未能实现所需的低深度电路。  <br><br>3. 【提出了什么创新的方法】  <br>本论文提出了以下创新方法：  <br>- 引入了一种结构感知的量子状态准备框架，利用张量列（TT）秩信息设计浅层变分状态准备电路，从而有效降低电路深度。  <br>- 在相关资产的情况下，通过局部准备资产边际分布并训练紧凑的潜在块，以匹配篮子累积分布函数，从而直接对接与篮子相关的支付。  <br><br>4. 【文章缺点】  <br>本论文的缺点包括：  <br>- 尽管提出的框架在理论上具有优势，但在实际应用中可能仍面临量子硬件的噪声和误差问题，影响定价的准确性。  <br>- 论文中对不同市场条件下的适应性和鲁棒性缺乏深入的实证分析，可能限制了其广泛应用的可行性。  <br><br>5. 【类似工作】  <br>与本论文相关的类似工作包括：  <br>- 量子金融领域中的其他量子幅度估计算法，这些算法同样致力于
+
+</details></td></tr>
+<tr><td>A Noise-Robust Elicit-to-Optimize Framework for Distortion Riskmetrics via Inverse Reinforcement Learning</td><td>Yang Liu</td><td><a href="https://arxiv.org/pdf/2607.14373">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.14373">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   该论文的动机在于解决风险敏感决策中的风险目标识别问题，尤其是在个性化应用（如机器人顾问和自动驾驶）中，代理可能表现出异质和复杂的风险偏好。其次，现有研究通常集中于均值-方差目标或一致风险度量，这只覆盖了实践中观察到的部分风险偏好，而现实中的风险偏好可能涉及分位数、偏差目标、不对称尾部关注或离散控制等，这些往往超出了凸或一致类的范畴。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的工作如Wang等（2020）提出的扭曲风险度量为金融风险提供了一个统一框架，涵盖了多种风险度量和偏差度量。尽管扭曲风险度量具有理论上的广泛性和统一性，但在实际应用中，识别适当的风险目标仍然具有挑战性，因为代理往往无法精确指定自己的风险偏好。此外，现有的逆强化学习方法假设代理的选择始终与其风险偏好一致，但这一假设在实践中可能并不成立。<br><br>3. 【提出了什么创新的方法】  <br>   本文提出了一种噪声鲁棒的“引导-优化”框架，利用逆强化学习来识别和优化扭曲风险度量下的风险目标。该方法旨在克服现有框架中对代理选择一致性的假设，提供更为灵活和适应性的风险目标识别和优化策略。<br><br>4. 【文章缺点】  <br>   文章的一个缺点是，尽管提出了新的框架，但在实际应用中可能面临数据噪声和不确定性对结果的影响。另一个缺点是，框架的复杂性可能导致计算上的挑战，尤其是在大规模金融数据集上进行应用时。<br><br>5. 【类似工作】  <br>   1) Wang等（2020）提出的扭曲风险度量为金融风险提供了统一的理论基础。  <br>   2) Arora和Doshi（2021）在逆强化学习中估计代理目标的方法，虽然
+
+</details></td></tr>
+<tr><td>NeuralChaos: Optimal Adapted Approximation of Square Integrable Predictable Processes</td><td>Anastasis Kratsios</td><td><a href="https://arxiv.org/pdf/2607.14361">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.14361">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   该论文的动机在于解决在连续时间随机控制、强化学习和数学金融中，如何有效表示和计算可预测的平方可积过程的问题。具体来说，这些过程在动态对冲、投资组合选择和波动率校准等金融应用中至关重要。  <br>   另外，传统的计算方法受到大规模混沌字典和高阶迭代积分的限制，因此需要一种新的方法来克服这些障碍，以实现更高效的随机分析和数学金融建模。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的工作主要集中在使用Wiener混沌展开等理论工具来处理可预测过程的近似和优化问题。然而，这些方法往往依赖于特定的模型结构，如马尔可夫或仿射模型，导致其在实际应用中的灵活性不足。  <br>   此外，尽管深度学习方法在处理更一般的假设条件下取得了一定进展，但在ℋT2(ℝd)空间内的深度学习模型仍然相对缺乏，未能有效填补理论与实践之间的空白。<br><br>3. 【提出了什么创新的方法】  <br>   本文提出了一种名为NeuralChaos的神经算子架构，该架构能够通过有限次的布朗运动评估来生成ℋT2(ℝd)中的元素，同时保持可预测性和平方可积性。  <br>   该方法证明了在ℋT2(ℝd)中是稠密的，并且在可压缩和Malliavin-Sobolev正则过程的最佳神经网络混沌近似率方面表现出色。<br><br>4. 【文章缺点】  <br>   文章可能在处理极端情况下的稳定性和鲁棒性方面存在不足，尤其是在高维空间中。  <br>   此外，尽管提出的方法在理论上具有优势，但在实际应用中的计算复杂性和效率仍需进一步验证和优化。<br><br>5. 【类似工作】  <br>   1) 近年来在深度学习领域的研究，如使用深度神经网络进行随机控制和金融建模的工作。  <br>   2
+
+</details></td></tr>
+</tbody>
+</table>
+
+<details>
+<summary><a id='date-20260716'></a>2026-07-16（8篇论文）</summary>
 
 <table>
 <thead>
@@ -67,6 +138,8 @@
 </details></td></tr>
 </tbody>
 </table>
+
+</details>
 
 <details>
 <summary><a id='date-20260715'></a>2026-07-15（7篇论文）</summary>
@@ -352,25 +425,6 @@
 <tr><td colspan="5"><details><summary><strong>总结</strong></summary>
 
 <strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.08681">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   该论文的动机在于，随着自主智能体在网络物理环境中的应用日益增加，如何评估这些智能体的任务表现和可信度成为一个重要挑战。尤其是在去中心化能源市场中，自主智能体不仅可能提高市场效用，还可能利用无效的物理数据，导致市场不稳定和治理决策不当。  <br>   另外，传统的评估方法无法全面反映智能体在真实世界条件下的表现，因此需要一个物理约束的基准来确保智能体的决策既符合经济效益，又考虑到物理安全性和市场公平性。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的工作主要集中在利用强化学习（RL）管理去中心化能源市场的流动性、代币发行和激励分配等方面，提供了一定的理论基础和实践经验。然而，这些研究往往忽视了能源市场中的物理约束，导致智能体可能会利用市场机制的弱点。  <br>   此外，现有文献通常将宏观经济控制抽象为连续治理杠杆，缺乏对智能体决策过程的全面审计和解释，未能有效评估智能体在复杂市场环境中的表现。<br><br>3. 【提出了什么创新的方法】  <br>   本文提出了SolarChain-Eval，一个物理约束的基准，用于评估去中心化能源市场中的可信经济智能体。该基准将市场治理形式化为兼容Gymnasium的马尔可夫决策过程，使得智能体能够进行小时级别的决策。  <br>   另外，SolarChain-Eval引入了一个基于大型语言模型（LLM）的规划/审计层，在训练过程中不参与决策，但在评估阶段对高风险行为进行审查和修正，从而提高智能体的可治理性和可解释性。<br><br>4. 【文章缺点】  <br>   该研究可能在实际应用中面临数据获取的挑战，尤其是在真实的去中心化能源市场中，物理数据的准确性和可用性可能会影响评估结果。  <br>   此外，SolarChain-Eval的复杂性可能导致实施成本
-
-</details></td></tr>
-</tbody>
-</table>
-
-</details>
-
-<details>
-<summary><a id='date-20260711'></a>2026-07-11（1篇论文）</summary>
-
-<table>
-<thead>
-<tr><th>Title</th><th>Author</th><th>PDF</th><th>Code</th><th>Relevance</th></tr>
-</thead>
-<tbody>
-<tr><td>Measuring Consumption with Credit Card Data: Benchmarking and Beyond</td><td>Aditya Aladangady</td><td><a href="https://arxiv.org/pdf/2607.08759">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.08759">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于，传统的消费测量方法存在延迟和地理细节不足的问题，限制了研究人员和政策制定者对快速变化的经济冲击及其对不同地区和家庭群体的异质反应的评估能力。其次，随着信用卡的广泛使用，产生了大量家庭支出数据，这些数据如果经过合理组织和基准化，可以转化为补充官方统计的经济统计数据，从而提供更及时、更高频率和更具地理细节的经济活动测量。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要集中在利用信用卡数据构建经济统计数据，以补充官方消费统计，展示了信用卡数据在高频和地理细节方面的潜力。然而，现有研究往往缺乏对信用卡消费数据与传统消费测量的系统性基准比较，未能充分揭示其作为消费代理的可靠性和局限性。此外，关于如何有效利用这些数据进行异质性分析的指导也相对不足。<br><br>3. 【提出了什么创新的方法】  <br>该论文提出了一种新的县级月度消费数据集，利用联邦储备银行的Y-14M信用卡报告构建，能够更细致地捕捉消费变化。论文还通过实证分析展示了不同收入水平县对货币政策冲击的异质消费反应，填补了传统消费数据无法进行此类分析的空白。此外，作者提供了使用信用卡数据测量消费的实用指导，讨论了消费类别覆盖、样本代表性等关键问题。<br><br>4. 【文章缺点】  <br>首先，尽管论文提供了新的消费数据集，但其局限性在于数据的代表性可能受到信用卡使用者群体的限制，可能无法全面反映所有家庭的消费行为。其次，论文在探讨异质性反应时，可能未能充分考虑其他影响因素，如地区经济环境和社会结构的差异，这可能影响消费反应的解释。<br><br>5. 【类似工作】  <br>类似的工作包括Vavra (2021)对信用卡数据的使用进行的研究，展示了其在经济统计中的应用
 
 </details></td></tr>
 </tbody>
