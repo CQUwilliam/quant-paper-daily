@@ -628,7 +628,7 @@
         <header>
             <h1>📈 arXiv 量化金融领域论文汇总</h1>
             <div class="intro">
-                <p>📊 共 <strong>25</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
+                <p>📊 共 <strong>26</strong> 篇｜仅显示最近 5 天数据｜⭐ 相关性评分 1-5 分</p>
                 <p>🔗 点击日期可展开/折叠｜📚 Zotero 按钮需安装 <a href="https://www.zotero.org/download/connectors" target="_blank">Connector 插件</a></p>
             </div>
         </header>
@@ -636,17 +636,226 @@
         <!-- 日期导航 -->
         <nav class="nav">
             <strong>📅 日期导航：</strong>
-            <a href="#date-20260717">2026-07-17（10篇）</a> | <a href="#date-20260716">2026-07-16（8篇）</a> | <a href="#date-20260715">2026-07-15（7篇）</a>
+            <a href="#date-20260720">2026-07-20（8篇）</a> | <a href="#date-20260717">2026-07-17（10篇）</a> | <a href="#date-20260716">2026-07-16（8篇）</a>
         </nav>
 
         <!-- 论文内容区块 -->
         <main>
-            <div class="date-section" id="date-20260717">
+            <div class="date-section" id="date-20260720">
     <div class="date-header">
-        <span>2026-07-17（10篇论文）</span>
+        <span>2026-07-20（8篇论文）</span>
         <span class="arrow">▼</span>
     </div>
     <div class="date-content" style="display: block;">
+        <table>
+        <!-- 添加 colgroup 明确指定每列宽度 -->
+        <colgroup>
+            <col style="width: 25%">  <!-- Title -->
+            <col style="width: 15%">   <!-- Authors -->
+            <col style="width: 10%">   <!-- Resources -->
+            <col style="width: 10%">   <!-- Relevance -->
+            <col style="width: 40%">  <!-- Summary -->
+        </colgroup>
+        <thead>
+            <tr>
+                <th>标题</th>
+                <th>作者</th>
+                <th>资源</th>
+                <th>相关性</th>
+                <th>总结</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文的动机在于提供一种一致的定价框架，以解决双变量利率衍生品定价中的复杂性，特别是在CMS利差期权及其相关市场之间保持一致性。其次，论文旨在通过计算无套利界限，帮助市场参与者在观察到的市场价格基础上更准确地评估复杂的利率衍生品，从而提高市场效率。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的工作主要通过指定copula模型来匹配C...">Consistent pricing of bivariate interest rate exotics via constrained Schrödinger optimal transport</span></td>
+        <td class="author-cell">Patrick Roome</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2607.15952" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2607.15952" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：5/5">★★★★★</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+该论文的动机在于提供一种一致的定价框架，以解决双变量利率衍生品定价中的复杂性，特别是在CMS利差期权及其相关市场之间保持一致性。其次，论文旨在通过计算无套利界限，帮助市场参与者在观察到的市场价格基础上更准确地评估复杂的利率衍生品，从而提高市场效率。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作主要通过指定copula模型来匹配CMS边际分布和利差分布，但在准确复制利差期权市场方面仍然存在挑战。此外，尽管Piterbarg提供了必要和充分条件来构建一致的联合分布，并通过线性规划推导无套利界限，但其计算成本在大规模问题中显得过于昂贵，限制了实际应用。
+
+3. 【提出了什么创新的方法】  
+该论文提出了一种基于约束的Schrödinger桥问题的双重拉格朗日方法，以构建一致的联合分布，并计算无套利界限。该方法不仅提高了计算效率，还提供了金融直观的先验分布，使得结果更具可解释性。
+
+4. 【文章缺点】  
+尽管提出的方法在计算效率上有所改善，但仍可能在某些情况下无法保证联合分布的存在。此外，使用高斯copula作为先验分布可能限制了模型的灵活性，无法适应所有市场条件。
+
+5. 【类似工作】  
+类似的工作包括Austing在FX期权市场中提出的联合分布方法，以及Piterbarg的线性规划方法，这些方法都试图解决多市场一致性的问题，但各自存在不同的局限性。
+
+6. 【相关性评分】  
+分数：5分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文的动机在于探讨算法和人工智能驱动的基金管理如何影响美国货币政策在新兴市场的国际传导。首先，随着非银行金融中介的快速增长，理解算法交易在资本流动中的作用变得尤为重要。其次，研究表明，当多个基金使用相似的算法模型时，可能会导致市场的脆弱性加剧，从而影响金融稳定性。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的研究主要集中在算法交易...">Algorithmic Intermediation and the International Transmission of U.S. Monetary Policy</span></td>
+        <td class="author-cell">Fernando Toledo</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2607.15385" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2607.15385" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：5/5">★★★★★</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+该论文的动机在于探讨算法和人工智能驱动的基金管理如何影响美国货币政策在新兴市场的国际传导。首先，随着非银行金融中介的快速增长，理解算法交易在资本流动中的作用变得尤为重要。其次，研究表明，当多个基金使用相似的算法模型时，可能会导致市场的脆弱性加剧，从而影响金融稳定性。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究主要集中在算法交易对市场波动和流动性的影响，指出相似模型可能导致系统性风险。然而，现有文献对算法模型的多样性及其对资本流动的影响缺乏深入探讨，尤其是在不同市场环境下的表现。此外，关于算法交易在高波动性时期的具体作用机制仍然存在空白。
+
+3. 【提出了什么创新的方法】  
+论文提出了一种新的宏观金融框架，分析算法模型的同质性如何影响资本流动的反应。具体而言，研究通过实证数据验证了在高波动性环境下，算法交易的集聚效应如何加剧资本外流。此外，论文强调了模型多样性的重要性，建议政策制定者关注保持模型多样性而非限制非银行中介的规模。
+
+4. 【文章缺点】  
+首先，论文的实证分析主要基于2000年至2024年的数据，可能无法全面反映更长时间范围内的市场动态。其次，研究对2008-09年金融危机的排除可能导致结果的偏差，限制了对算法交易在极端市场条件下表现的全面理解。
+
+5. 【类似工作】  
+类似的研究包括对算法交易对市场流动性影响的分析，以及对非银行金融中介在金融危机期间角色的探讨。这些研究为理解算法交易的潜在风险和收益提供了基础，但未能深入探讨模型同质性对市场稳定性的具体影响。
+
+6. 【相关性评分】  
+分数：5分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文的动机在于探讨多层次再保险链中的战略互动，尤其是在竞争激烈的保险市场中，如何通过博弈论框架来理解保险公司和再保险公司之间的决策过程。其次，随着经济全球化带来的跨境风险日益增加，传统的再保险框架已无法有效捕捉现代风险共享安排的复杂性，因此需要新的模型来应对这种多层次和相互依赖的关系。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的...">Equilibrium analysis in a multi-agent reinsurance chain</span></td>
+        <td class="author-cell">Kaizheng Wang</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2607.15962" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2607.15962" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+该论文的动机在于探讨多层次再保险链中的战略互动，尤其是在竞争激烈的保险市场中，如何通过博弈论框架来理解保险公司和再保险公司之间的决策过程。其次，随着经济全球化带来的跨境风险日益增加，传统的再保险框架已无法有效捕捉现代风险共享安排的复杂性，因此需要新的模型来应对这种多层次和相互依赖的关系。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究主要集中在单一保险公司的最优再保险策略上，采用零和博弈模型来分析保险市场中的竞争行为，但大多数研究忽略了再保险公司在合同设计中的战略角色。尽管有研究尝试应用非零和博弈模型来捕捉保险公司之间的互动，但对多层次再保险链的研究仍然较为稀缺，未能充分反映现代再保险市场的复杂性。
+
+3. 【提出了什么创新的方法】  
+本研究提出了一种基于斯塔克尔伯格博弈的多层次再保险链分析框架，将再保险公司视为决策的领导者，保险公司为跟随者，从而揭示了两者之间的战略互动。此外，结合动态规划和博弈论，论文导出了在均值-方差标准下的投资和再保险的闭式均衡策略，为理解再保险市场提供了新的视角。
+
+4. 【文章缺点】  
+该研究可能在模型假设上过于简化，未能考虑所有可能的市场动态和外部冲击对再保险链的影响。此外，数值分析部分可能缺乏对现实市场数据的充分验证，导致结果的普适性受到限制。
+
+5. 【类似工作】  
+类似的研究包括[chen2018new]对再保险投资问题应用斯塔克尔伯格博弈的研究，以及[lin2015reinsurance]对再保险网络影响的分析，这些研究为理解再保险市场的战略互动提供了基础。
+
+6. 【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文的动机在于探讨人工智能（AI）变得更便宜后，对发展中国家的劳动市场产生的影响，尤其是它是否会创造正式工作或将工人推向非正式部门。其次，研究表明，AI与正式劳动之间的替代弹性是决定劳动市场结果的关键因素，这对不平等、生产力和社会稳定具有重要意义。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的研究主要集中在发达经济体的统一劳动市场...">Cheaper AI, More Informality? A Dual Labor Market Model for Developing Economies</span></td>
+        <td class="author-cell">Gabriel Montes-Rojas</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2607.15381" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2607.15381" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+该论文的动机在于探讨人工智能（AI）变得更便宜后，对发展中国家的劳动市场产生的影响，尤其是它是否会创造正式工作或将工人推向非正式部门。其次，研究表明，AI与正式劳动之间的替代弹性是决定劳动市场结果的关键因素，这对不平等、生产力和社会稳定具有重要意义。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究主要集中在发达经济体的统一劳动市场，未能充分考虑发展中国家普遍存在的双重劳动市场结构。此外，现有的动态随机一般均衡（DSGE）模型通常假设固定的要素份额，未能捕捉AI与人类劳动之间的替代或互补关系，从而导致对政策响应的误判。
+
+3. 【提出了什么创新的方法】  
+本文提出了一种小型开放经济DSGE模型，结合了双重劳动市场、仅在正式部门使用的进口AI资本以及与外债相关的国家风险溢价等三大特征。该模型通过校准拉丁美洲的数据，强调了替代弹性在AI价格冲击下劳动市场传导中的关键作用。
+
+4. 【文章缺点】  
+首先，模型的复杂性可能导致实际应用中的困难，尤其是在数据收集和参数估计方面。其次，尽管模型考虑了双重劳动市场，但对非正式部门的动态变化和政策干预的响应可能仍然不足。
+
+5. 【类似工作】  
+类似的工作包括Acemoglu和Restrepo（2018）关于AI与劳动市场关系的研究，以及针对拉丁美洲劳动市场的其他经济模型研究，这些研究为理解AI对劳动市场的影响提供了基础。
+
+6. 【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      该论文的动机在于应对老龄化社会中长期投资组合选择的挑战，尤其是在投资者的相对风险厌恶具有负下限的情况下，如何有效地比较和排名投资前景。其次，现有的渐近随机优势规则在实际应用中存在过于严格的分布条件限制，亟需提出更具灵活性和适用性的规则。  2. 【前人的工作如何解决该问题，存在哪些空白】      前人的研究如Levy (2016)提出的渐近一...">Asymptotic fractional-order stochastic dominance with bounded relative risk aversion</span></td>
+        <td class="author-cell">Jiehua Xie</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2607.15317" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2607.15317" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+   该论文的动机在于应对老龄化社会中长期投资组合选择的挑战，尤其是在投资者的相对风险厌恶具有负下限的情况下，如何有效地比较和排名投资前景。其次，现有的渐近随机优势规则在实际应用中存在过于严格的分布条件限制，亟需提出更具灵活性和适用性的规则。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+   前人的研究如Levy (2016)提出的渐近一阶随机优势（AFSD）为长期投资决策提供了基础，但其分布条件在实际应用中往往过于苛刻，限制了其有效性。Huang等（2020b）进一步扩展到渐近二阶随机优势（ASSD），但仍未能有效解决相对风险厌恶的限制问题，缺乏对具有负下限的风险厌恶的考虑。
+
+3. 【提出了什么创新的方法】  
+   本文提出了一种新颖的渐近分数阶随机优势规则，允许在不强加对对数收益均值非负约束的情况下进行投资前景的比较。此外，提出了一种具有界限的相对风险厌恶的渐近分数阶随机优势变体，增强了其可操作性，并推导出相应的分布特征。
+
+4. 【文章缺点】  
+   文章的一个缺点是尽管提出了新的规则，但在实际应用中可能仍需更多的实证验证，以确保其在不同市场环境下的有效性。另一个缺点是对模型假设的依赖性较强，可能限制了其广泛适用性。
+
+5. 【类似工作】  
+   类似的工作包括Levy (2016)的渐近一阶随机优势研究，以及Huang等（2020b）对渐近二阶随机优势的扩展，这些研究为理解长期投资决策提供了重要的理论基础。
+
+6. 【相关性评分】  
+   分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文的动机在于解决在马尔可夫最优传输中如何构造具有给定初始和终端边际的马尔可夫过程的问题，同时使得其转移核尽可能接近于给定的参考测度。其次，论文旨在证明在初始边际支持于有限多个原子的情况下，$q$-Bass马尔可夫过程的存在性，并建立与之相关的Bass测度的唯一性。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的工作通过引入拉伸布朗...">Existence of $q$-Bass martingales in the semidiscrete setting</span></td>
+        <td class="author-cell">Beatrice Acciaio</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2607.15872" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2607.15872" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+该论文的动机在于解决在马尔可夫最优传输中如何构造具有给定初始和终端边际的马尔可夫过程的问题，同时使得其转移核尽可能接近于给定的参考测度。其次，论文旨在证明在初始边际支持于有限多个原子的情况下，$q$-Bass马尔可夫过程的存在性，并建立与之相关的Bass测度的唯一性。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的工作通过引入拉伸布朗运动和马尔可夫最优传输的概念，提供了一种构造满足边际约束的马尔可夫过程的方法。然而，现有文献在处理初始边际为有限原子的情况时，缺乏对$q$-Bass马尔可夫过程存在性的系统性证明。此外，虽然有研究探讨了相关的计算方法，但对Bass测度的唯一性及其性质的深入分析仍然不足。
+
+3. 【提出了什么创新的方法】  
+本文提出了一种几何方法，通过分析适当的凸多边形链的参数化，证明了$q$-Bass马尔可夫过程的存在性。此外，论文还建立了与Bass测度相关的唯一性结果，这为后续研究提供了理论基础。
+
+4. 【文章缺点】  
+首先，尽管论文在理论上提供了重要的结果，但缺乏对实际应用的深入探讨，特别是在金融领域的具体应用。其次，文章的数学推导较为复杂，可能对非专业读者造成理解上的困难，限制了其广泛的接受度。
+
+5. 【类似工作】  
+类似的工作包括Conze和Henry-Labordère提出的固定点迭代方法，该方法在金融应用中取得了成功，并导致了Bass局部波动率模型的形成。另一个相关的工作是最近的马尔可夫Sinkhorn算法，该算法扩展了固定点迭代方法，并在多维设置中证明了其收敛性。
+
+6. 【相关性评分】  
+分数：4分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      本文的动机在于探讨人工智能（AI）快速发展对职业选择的影响，尤其是在工作性质发生重大变化的背景下。首先，随着AI技术的普及，许多传统职业面临被自动化取代的风险，这使得人们在选择职业时需要重新考虑自己的技能和适应能力。其次，本文旨在通过对不同职业的AI暴露程度进行实证分析，帮助人们在职业选择中做出更明智的决策，从而在快速变化的就业市场中保持竞争力...">Helping People Choose Careers in the Age of AI</span></td>
+        <td class="author-cell">Jennifer L. Steele</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2607.15506" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2607.15506" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：3/5">★★★☆☆</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+   本文的动机在于探讨人工智能（AI）快速发展对职业选择的影响，尤其是在工作性质发生重大变化的背景下。首先，随着AI技术的普及，许多传统职业面临被自动化取代的风险，这使得人们在选择职业时需要重新考虑自己的技能和适应能力。其次，本文旨在通过对不同职业的AI暴露程度进行实证分析，帮助人们在职业选择中做出更明智的决策，从而在快速变化的就业市场中保持竞争力。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+   前人的研究主要集中在职业自动化的预测模型上，比较了不同模型对职业暴露于AI的评估。然而，这些研究往往存在假设不一致和结果不确定的问题，导致对职业选择的指导性建议缺乏可靠性。此外，现有文献较少关注不同职业之间的薪资与AI暴露之间的权衡关系，未能全面反映出不同职业在AI影响下的复杂性。
+
+3. 【提出了什么创新的方法】  
+   本文提出了一种新的实证模型，通过分析2025年的查询数据，评估职业对AI的暴露程度。该模型整合了五个不同的预测模型的结果，以减少由于假设差异带来的不确定性。此外，本文还探讨了不同职业类别、O*NET工作区和行业领域之间的薪资与AI暴露的权衡关系，提供了更为细致的职业选择建议。
+
+4. 【文章缺点】  
+   首先，尽管本文提出了新的模型，但仍然依赖于现有数据的准确性和代表性，可能会受到数据偏差的影响。其次，模型的预测结果可能无法完全适应快速变化的技术环境，导致其长期有效性受到质疑。
+
+5. 【类似工作】  
+   相关的研究包括对AI对就业市场影响的宏观分析，以及对特定行业中AI应用的案例研究。这些研究为理解AI如何改变职业选择提供了背景，但通常缺乏对个体职业的细致分析。
+
+6. 【相关性评分】  
+分数：3分</small></details></td>
+    </tr>
+<tr>
+        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于探讨家庭在收入变化时的消费反应，尤其是那些流动资产不足的家庭。首先，理解流动资产不足家庭的消费行为对于制定有效的经济政策至关重要，因为这些家庭在经济波动中更易受到影响。其次，研究不同类型的手到口（HtM）家庭的消费反应，可以揭示财富分布对消费决策的影响，从而为改善家庭财务状况提供理论依据。  2. 【前人的工作如何解决该问题，存在哪些...">Households with insufficient liquid assets: Consumption responses to income changes</span></td>
+        <td class="author-cell">Ignacio Belloc</td>
+        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2607.15363" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2607.15363" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
+        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
+        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
+本论文的动机在于探讨家庭在收入变化时的消费反应，尤其是那些流动资产不足的家庭。首先，理解流动资产不足家庭的消费行为对于制定有效的经济政策至关重要，因为这些家庭在经济波动中更易受到影响。其次，研究不同类型的手到口（HtM）家庭的消费反应，可以揭示财富分布对消费决策的影响，从而为改善家庭财务状况提供理论依据。
+
+2. 【前人的工作如何解决该问题，存在哪些空白】  
+前人的研究主要集中在家庭财富对消费行为的影响，尤其是流动性约束如何导致消费的过度敏感性。然而，大多数研究未能充分考虑家庭特征的异质性，尤其是流动资产的差异如何影响消费反应。此外，现有文献在实证测量家庭流动性约束方面存在不足，缺乏对不同家庭类型（如贫困和富裕HtM家庭）消费反应的深入分析。
+
+3. 【提出了什么创新的方法】  
+本研究通过使用来自23个欧洲国家的家庭财务和消费调查（HFCS）数据，分析了不同类型HtM家庭的边际消费倾向（MPC）。具体而言，论文创新性地将HtM家庭分为非HtM、贫困HtM和富裕HtM三类，并比较了它们对收入变化的消费反应。此外，研究还控制了未观察到的偏好异质性，以更准确地评估流动性约束对消费行为的影响。
+
+4. 【文章缺点】  
+首先，尽管研究使用了大规模的HFCS数据，但仍可能存在样本选择偏差，尤其是在不同国家之间的比较时。其次，论文未能深入探讨其他可能影响消费反应的因素，如家庭的心理因素或社会经济背景，这可能导致对消费行为的理解不够全面。
+
+5. 【类似工作】  
+类似的工作包括Kaplan et al. (2014)的研究，他们探讨了流动性约束对消费的影响，并提出了相关的实证模型。另一个相关研究是Blundell et al. (2008)的工作，分析了</small></details></td>
+    </tr>
+        </tbody></table>
+    </div>
+</div>
+<div class="date-section" id="date-20260717">
+    <div class="date-header">
+        <span>2026-07-17（10篇论文）</span>
+        <span class="arrow">▶</span>
+    </div>
+    <div class="date-content" style="display: none;">
         <table>
         <!-- 添加 colgroup 明确指定每列宽度 -->
         <colgroup>
@@ -1103,200 +1312,6 @@
         </tbody></table>
     </div>
 </div>
-<div class="date-section" id="date-20260715">
-    <div class="date-header">
-        <span>2026-07-15（7篇论文）</span>
-        <span class="arrow">▶</span>
-    </div>
-    <div class="date-content" style="display: none;">
-        <table>
-        <!-- 添加 colgroup 明确指定每列宽度 -->
-        <colgroup>
-            <col style="width: 25%">  <!-- Title -->
-            <col style="width: 15%">   <!-- Authors -->
-            <col style="width: 10%">   <!-- Resources -->
-            <col style="width: 10%">   <!-- Relevance -->
-            <col style="width: 40%">  <!-- Summary -->
-        </colgroup>
-        <thead>
-            <tr>
-                <th>标题</th>
-                <th>作者</th>
-                <th>资源</th>
-                <th>相关性</th>
-                <th>总结</th>
-            </tr>
-        </thead>
-        <tbody>
-        <tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      本文的动机在于，随着金融数据的波动性增加，模型监控中的分布变化检测变得尤为重要，因此需要有效的工具来识别这些变化。其次，现有的分歧度量方法在实际应用中存在不足，尤其是在Kullback-Leibler Divergence（KLD）和Jensen-Shannon Divergence（JSD）的分布推导和基准值方面缺乏深入研究。  2. 【前人...">Statistical Properties and Power Analysis of Divergence Measures for Credit Risk Model Monitoring</span></td>
-        <td class="author-cell">Abdullah Karasan</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2607.12407" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2607.12407" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：5/5">★★★★★</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
-   本文的动机在于，随着金融数据的波动性增加，模型监控中的分布变化检测变得尤为重要，因此需要有效的工具来识别这些变化。其次，现有的分歧度量方法在实际应用中存在不足，尤其是在Kullback-Leibler Divergence（KLD）和Jensen-Shannon Divergence（JSD）的分布推导和基准值方面缺乏深入研究。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】  
-   前人的研究主要集中在Population Stability Index（PSI）的应用上，虽然它在模型监控中被广泛使用，但对KLD和JSD的统计特性及其基准值的研究相对较少，导致在实际应用中缺乏明确的指导。此外，现有文献对这些分歧度量在金融领域的适用性和有效性缺乏系统性分析，尤其是在信用风险模型中的应用。
-
-3. 【提出了什么创新的方法】  
-   本文提出了一种新的方法，通过获得JSD和KLD的统计特性，并证明这些度量遵循χ²分布，进而确定其基准值，以评估统计显著性水平。此外，本文还通过统计功效分析比较和评估了这些分歧度量的一致性，增强了信用风险模型的验证和监控能力。
-
-4. 【文章缺点】  
-   首先，尽管本文提供了JSD和KLD的统计性质，但在实际应用中可能仍需更多的实证验证，以确保其在不同金融环境下的有效性。其次，文章中所使用的信用风险模型相对有限，可能无法全面反映所有类型的金融数据分布变化。
-
-5. 【类似工作】  
-   类似的工作包括对Population Stability Index在信用风险模型中的应用研究，以及对Kullback-Leibler Divergence在金融时间序列分析中的应用探讨。这些研究为理解分歧度量在金融领域的作用提供了基础，但仍需进一步探索其在动态市场环境中的表现。
-
-6. 【相关性评分】  
-分数：5分</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于探讨微观经济异质性是否能够在非平稳环境中帮助预测总体通货膨胀。随着高维微观数据集的可用性增加，利用微观层面的信息来改善宏观变量的预测成为可能。研究者希望通过这一方法回答一个基本的宏观经济学问题：微观经济异质性在总体动态中是否重要，以及在何种情况下重要。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的研究主要依赖宏观经济...">Forecasting Inflation with Microdata: An Adaptive Machine Learning Approach</span></td>
-        <td class="author-cell">Catherine Chen</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2607.12345" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2607.12345" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：5/5">★★★★★</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
-本论文的动机在于探讨微观经济异质性是否能够在非平稳环境中帮助预测总体通货膨胀。随着高维微观数据集的可用性增加，利用微观层面的信息来改善宏观变量的预测成为可能。研究者希望通过这一方法回答一个基本的宏观经济学问题：微观经济异质性在总体动态中是否重要，以及在何种情况下重要。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】  
-前人的研究主要依赖宏观经济数据进行通货膨胀预测，然而这些模型在面对复杂的非平稳性时常常表现不佳，尤其是在简单的单变量基准模型面前。此外，现有的宏观经济模型通常未能充分利用微观数据，尤其是在大规模冲击发生时，微观信息的预测能力未被完全挖掘。
-
-3. 【提出了什么创新的方法】  
-本研究提出了一种自适应机器学习管道，结合了高维微观数据和梯度提升树算法，旨在利用微观预测的偶尔表现。研究者还开发了一种扫描测试，用于检测微观预测是否在某些时段内优于基准预测，从而在合适的时机将微观预测纳入综合预测中。
-
-4. 【文章缺点】  
-首先，尽管提出的模型在2020年后表现出色，但在更早的时间段内的预测能力仍需进一步验证。其次，模型的复杂性可能导致在实际应用中的可解释性不足，限制了其在政策制定中的直接应用。
-
-5. 【类似工作】  
-类似的工作包括Auclert等（2024）对微观数据在小规模冲击下的预测能力的研究，以及Blanco等（2024）对微观信息在大规模冲击下对总体通货膨胀预测的影响的探讨。
-
-6. 【相关性评分】  
-分数：5分</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   本论文的动机在于探讨共享算法在电力市场中对竞争者行为的影响，尤其是如何导致竞争者内部化彼此的利润。其次，随着企业越来越依赖第三方算法进行定价和竞标决策，理解这一现象对市场竞争和消费者福利的潜在影响变得尤为重要。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人研究主要集中在算法可能导致的反竞争策略上，探讨了算法学习和实施反竞争行为的可能性...">Shared Bidding Algorithms and Competition: Evidence from Electricity Markets</span></td>
-        <td class="author-cell">Nicolas Eschenbaum</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2607.13002" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2607.13002" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
-本论文的动机在于探讨共享算法在电力市场中对竞争者行为的影响，尤其是如何导致竞争者内部化彼此的利润。其次，随着企业越来越依赖第三方算法进行定价和竞标决策，理解这一现象对市场竞争和消费者福利的潜在影响变得尤为重要。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】  
-前人研究主要集中在算法可能导致的反竞争策略上，探讨了算法学习和实施反竞争行为的可能性。然而，现有文献对共享算法如何具体影响市场行为的实证证据仍然不足，特别是在电力市场这一特定领域。此外，虽然有研究关注算法提供者的集中度，但对其对市场行为的具体影响缺乏深入分析。
-
-3. 【提出了什么创新的方法】  
-本研究通过手动收集数据，构建了澳大利亚国家电力市场中自动竞标提供者与公用事业规模电池之间的映射关系，进而分析共享算法对市场行为的影响。研究还通过反事实竞标重清算市场，进行行为测试，以区分因共享信息导致的共同运动与联合利润最大化之间的关系。
-
-4. 【文章缺点】  
-首先，研究主要集中在澳大利亚国家电力市场，可能限制了其结论的普适性，其他市场的情况可能有所不同。其次，尽管研究提供了实证证据，但在算法提供者的具体行为和市场动态之间的因果关系上，仍需进一步的探讨和验证。
-
-5. 【类似工作】  
-一项相关工作是Calvano等（2020）对算法反竞争行为的研究，探讨了算法如何学习并实施反竞争策略。另一项相关研究是Aggarwal等（2024）对在线广告拍卖中算法竞标行为的分析，提供了算法在不同市场中的应用视角。
-
-6. 【相关性评分】  
-分数：4分</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】   该论文的动机在于，计算能力作为AI经济的核心资源，其资本支出和服务流已经超过美国GDP的1%，并且正在快速增长，因此需要对计算能力的价格进行深入研究。其次，计算期货的推出将不确定性转化为可交易的风险，这促使研究者探讨这一新资产类别的定价机制。  2. 【前人的工作如何解决该问题，存在哪些空白】   前人的工作主要集中在计算市场的基础设施和租赁市场的定...">(Early) AI Compute Asset Pricing</span></td>
-        <td class="author-cell">Federico M. Bandi</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2607.12156" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2607.12156" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：4/5">★★★★☆</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
-该论文的动机在于，计算能力作为AI经济的核心资源，其资本支出和服务流已经超过美国GDP的1%，并且正在快速增长，因此需要对计算能力的价格进行深入研究。其次，计算期货的推出将不确定性转化为可交易的风险，这促使研究者探讨这一新资产类别的定价机制。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】  
-前人的工作主要集中在计算市场的基础设施和租赁市场的定价机制上，但对计算能力作为新兴资产类别的定价框架尚未形成系统性的研究。其次，现有文献对计算能力的非可储存特性及其对期货定价的影响探讨不足，导致在计算期货市场正式推出之前，缺乏有效的定价模型。
-
-3. 【提出了什么创新的方法】  
-论文提出了一种早期的计算资产定价框架，探讨了计算租赁市场及其指数化，并提出了计算期货价格与现货价格之间的直接无套利联系失效的原因。此外，作者利用现有的租赁合同构建了合成期货价格，并提出了计算期货的风险溢价概念，以帮助理解投资者对未来现货价格的预期。
-
-4. 【文章缺点】  
-文章的一个缺点是，所使用的数据样本较为有限，可能无法全面反映计算市场的复杂性和动态变化。另一个缺点是，尽管提出了新的定价框架，但缺乏实证验证，可能影响理论的适用性和可靠性。
-
-5. 【类似工作】  
-类似的工作包括对电力市场的期货定价研究，以及对其他服务性商品（如运输和存储）的金融化研究。这些研究为理解计算能力作为新资产类别的定价提供了参考，但仍需进一步探索其独特性。
-
-6. 【相关性评分】  
-分数：4分</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      该论文的动机在于探讨在从化石燃料依赖向可再生能源系统转型的过程中，系统内部变量之间的相互依赖结构如何重组。具体而言，研究旨在揭示哪些变量相互强化、哪些配置能够自我维持，以及系统如何应对外部扰动。      此外，论文还关注如何在不同的结构均衡之间进行有效的转变，以及在这一过程中系统各组成部分的调整动态。  2. 【前人的工作如何解决该问题，存在...">Beyond Consistent Scenarios: Deriving Indirect Influence, Transition Resistance, and Adjustment Dynamics</span></td>
-        <td class="author-cell">Andrew G. Ross</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2607.12414" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2607.12414" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars" title="相关性评分：3/5">★★★☆☆</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
-   该论文的动机在于探讨在从化石燃料依赖向可再生能源系统转型的过程中，系统内部变量之间的相互依赖结构如何重组。具体而言，研究旨在揭示哪些变量相互强化、哪些配置能够自我维持，以及系统如何应对外部扰动。  
-   此外，论文还关注如何在不同的结构均衡之间进行有效的转变，以及在这一过程中系统各组成部分的调整动态。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】  
-   前人的研究主要通过输入输出模型、可计算一般均衡模型和综合评估模型等方法，探讨了生产和需求之间的相互依赖关系及其对扰动的响应。然而，这些方法往往依赖外部情景输入，而未能验证其一致性。  
-   此外，尽管已有的因果映射方法和网络理论方法能够识别结构杠杆点和系统可控性，但没有单一的方法能够全面解答论文提出的五个结构性问题。
-
-3. 【提出了什么创新的方法】  
-   本文提出了一种新的CIB交互影响结构方法，该方法基于描述符状态之间的成对影响评分，能够更好地捕捉系统内部的相互影响关系。  
-   通过引入稳定性条件的漂移矩阵，论文还对现有的CIB框架进行了改进，以增强其在不同情景下的适用性和可靠性。
-
-4. 【文章缺点】  
-   论文未能提供足够的实证数据来验证所提出方法的有效性，可能导致理论与实际应用之间的脱节。  
-   此外，文中对复杂系统的动态调整过程的描述可能过于简化，未能充分考虑多种外部因素的影响。
-
-5. 【类似工作】  
-   1) 输入输出模型（IO模型）在经济学中广泛应用，用于分析产业之间的相互依赖关系。  
-   2) 综合评估模型（IAM）结合了能源、气候和经济模块，以预测定量转型路径。
-
-6. 【相关性评分】  
-分数：3分</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】    - 本文旨在通过推导条件前向方程和关联的Dupire随机偏微分方程（PDE），为局部随机波动模型（LSV）提供新的理论框架。这一研究有助于更好地理解和建模金融市场中的波动性。    - 通过引入密度加权的Rao-Blackwell估计器，本文希望为LSV模型中的杠杆函数提供更加精确的估计，从而提升金融衍生品定价的准确性。  2. 【前人的工作如何解...">Ito-Wentzell Formula and Dupire Stochastic PDE</span></td>
-        <td class="author-cell">Vladimir Lucic</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2607.12479" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2607.12479" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】
-   - 本文旨在通过推导条件前向方程和关联的Dupire随机偏微分方程（PDE），为局部随机波动模型（LSV）提供新的理论框架。这一研究有助于更好地理解和建模金融市场中的波动性。
-   - 通过引入密度加权的Rao-Blackwell估计器，本文希望为LSV模型中的杠杆函数提供更加精确的估计，从而提升金融衍生品定价的准确性。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】
-   - 前人的研究主要集中在经典的Dupire方程和波动率模型的构建上，提供了理论基础和一些应用实例，但在如何有效地结合条件前向方程与LSV模型方面仍显不足。
-   - 现有文献对杠杆函数的估计方法较为单一，缺乏对其在LSV模型中应用的深入探讨，尤其是在动态市场条件下的表现。
-
-3. 【提出了什么创新的方法】
-   - 本文提出了一种新的条件前向方程，结合Dupire PDE，为局部随机波动模型提供了新的数学工具。
-   - 通过引入密度加权的Rao-Blackwell估计器，本文为杠杆函数的估计提供了一种新的视角，增强了模型的实用性。
-   - 还推导出了一种针对滚动到期的普通期权的随机偏微分方程，扩展了Musiela参数化在利率建模中的应用。
-
-4. 【文章缺点】
-   - 本文的理论推导较为复杂，可能对非专业读者理解造成一定困难，限制了其应用范围。
-   - 在实际应用中，模型参数的选择和估计可能面临挑战，尤其是在数据稀缺或市场波动剧烈的情况下。
-
-5. 【类似工作】
-   - Dupire (1994) 的随机偏微分方程研究为金融衍生品定价提供了基础，尤其是在波动率建模方面。
-   - Musiela (2002) 的利率建模方法为金融市场中的动态建模</small></details></td>
-    </tr>
-<tr>
-        <td class="title-cell"><span class="title-with-tooltip" title="1. 【论文的motivation是什么】      本文的动机在于揭示在金融市场中，尤其是股票预测中，原始的方向准确率可能会误导研究者对模型预测能力的评估。具体来说，作者指出在牛市环境下，简单的“总是上涨”策略也能获得高准确率，这使得模型的真实预测能力难以评估。其次，研究者希望通过建立一个基于真实基准的评估框架，来区分模型的真实预测能力与市场的基准效应，从而推动金融时间序列模型的更合理应用。  ...">When Directional Accuracy Lies: A Base-Rate-Honest Benchmark for LoRA-Adapted TimesFM on Equity Forecasting</span></td>
-        <td class="author-cell">Taizhen Cheung</td>
-        <td class="resource-cell"><a class="resource-tag pdf" href="https://arxiv.org/pdf/2607.12248" target="_blank" rel="noopener">📄 PDF</a><br><a class="resource-tag alphaxiv" href="https://www.alphaxiv.org/zh/overview/2607.12248" target="_blank" rel="noopener">🧠 AlphaXiv</a></td>
-        <td class="score-cell" style="text-align:center"><span class="stars">-</span></td>
-        <td class="summary-cell"><details class="summary-details" title="点击查看详情"><summary>📋</summary><small>1. 【论文的motivation是什么】  
-   本文的动机在于揭示在金融市场中，尤其是股票预测中，原始的方向准确率可能会误导研究者对模型预测能力的评估。具体来说，作者指出在牛市环境下，简单的“总是上涨”策略也能获得高准确率，这使得模型的真实预测能力难以评估。其次，研究者希望通过建立一个基于真实基准的评估框架，来区分模型的真实预测能力与市场的基准效应，从而推动金融时间序列模型的更合理应用。
-
-2. 【前人的工作如何解决该问题，存在哪些空白】  
-   前人的研究通常关注模型的方向准确率，但往往忽视了市场基准效应的影响，导致对模型性能的评估不够全面。许多研究在牛市条件下报告了高准确率，却未能提供有效的基准进行比较，从而造成了对模型能力的误解。存在的空白在于缺乏一个系统的、可重复的基准评估框架，来验证模型在不同市场条件下的真实表现。
-
-3. 【提出了什么创新的方法】  
-   本文提出了一种新的基准评估方法，包括建立一个可重复的、冻结的数据集，采用扩展的步进训练/验证/测试协议，并使用分层持出股票的方式来增强模型的泛化能力。此外，作者引入了“超额准确率”这一指标，明确模型准确率与“总是上涨”基准的差异，从而提供了更为严谨的模型评估方式。
-
-4. 【文章缺点】  
-   本文的一个缺点是虽然提出了新的评估框架，但在不同市场条件下的适用性仍需进一步验证，尤其是在极端市场情况下的表现。另一个缺点是，尽管模型在点预测误差上有所改善，但整体方向预测能力未能显著提升，可能限制了其在实际应用中的价值。
-
-5. 【类似工作】  
-   类似的工作包括使用基准测试评估金融模型性能的研究，如对比传统的时间序列预测模型与深度学习模型的表现。另一个相关研究是探讨市场</small></details></td>
-    </tr>
-        </tbody></table>
-    </div>
-</div>
         </main>
 
         <footer>
@@ -1367,7 +1382,7 @@
             });
             
             // ========== 自动展开最新日期 ==========
-            const latestId = 'date-20260717';
+            const latestId = 'date-20260720';
             if (latestId) {
                 const latestSection = document.getElementById(latestId);
                 if (latestSection) {
