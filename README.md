@@ -4,13 +4,84 @@
 > 相关性评分：基于LLM对量化金融领域的相关性评定（1-5分，★越多相关性越高）
 
 ## 日期导航
+- [2026-07-24（10篇论文）](#date-20260724)
 - [2026-07-23（7篇论文）](#date-20260723)
 - [2026-07-22（8篇论文）](#date-20260722)
 - [2026-07-21（15篇论文）](#date-20260721)
 - [2026-07-20（8篇论文）](#date-20260720)
-- [2026-07-17（10篇论文）](#date-20260717)
 
-## <a id='date-20260723'></a>2026-07-23（7篇论文）
+## <a id='date-20260724'></a>2026-07-24（10篇论文）
+
+<table>
+<thead>
+<tr><th>Title</th><th>Author</th><th>PDF</th><th>Code</th><th>Relevance</th></tr>
+</thead>
+<tbody>
+<tr><td>Group boarding for airplanes: benchmarking static policies and optimizing dynamic assignment with deep reinforcement learning</td><td>Minyu Shen</td><td><a href="https://arxiv.org/pdf/2607.21512">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.21512">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于提升飞机的周转效率，特别是通过优化乘客登机过程来减少周转时间。研究表明，减少登机时间不仅能提高飞机的利用率，还能改善乘客的登机体验。其次，现有的登机政策往往只关注总登机时间，而忽视了个体乘客的登机时间，这可能导致乘客体验的下降。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在静态的登机政策上，例如基于行数或列数的登机顺序，这些方法在一定程度上提高了登机效率。然而，这些方法往往无法适应乘客的动态变化，例如乘客的到达顺序和同行者的需求。此外，现有的研究大多未能综合考虑总登机时间和个体乘客体验之间的权衡。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了一种基于深度强化学习的动态分配方法，能够实时优化乘客的登机分组。该方法考虑了乘客的座位选择、随身行李和同行者信息，从而在登机过程中减少干扰。此外，论文还提出了一种新的评估标准，综合考虑总登机时间和个体乘客体验。<br><br>4. 【文章缺点】  <br>首先，深度强化学习模型的训练过程可能需要大量的模拟数据，这在实际应用中可能面临数据获取的挑战。其次，虽然提出了动态分配方法，但在实际航空公司运营中，如何将其有效实施仍然是一个待解决的问题。<br><br>5. 【类似工作】  <br>类似的工作包括基于行数的登机政策研究，如后到前登机策略，以及基于乘客座位分配的优化模型。这些研究为理解登机效率提供了基础，但未能充分利用动态优化的潜力。<br><br>6. 【相关性评分】  <br>分数：4分
+
+</details></td></tr>
+<tr><td>Portfolio Optimization under Dynamic Rebalancing via Topological Data Analysis and News Sentiments</td><td>Divyanee Garg</td><td><a href="https://arxiv.org/pdf/2607.21170">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.21170">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于：首先，资产管理中的投资组合优化涉及资产选择、权重分配和动态再平衡等关键过程，而当前文献多集中于资产权重分配，忽视了资产选择的重要性。其次，随着市场环境的快速变化，传统的技术指标无法充分捕捉到市场情绪的动态变化，因此需要一种新的方法来提高资产选择的有效性和投资组合的表现。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在资产权重的优化和技术指标的应用上，例如使用RSI、MACD等指标来评估资产表现。然而，这些方法往往忽略了资产选择过程中的情绪因素和市场动态，导致无法全面反映投资者的决策过程。此外，现有文献对资产选择的研究较少，缺乏将情绪分析与资产选择相结合的系统性框架。<br><br>3. 【提出了什么创新的方法】  <br>本研究提出了一种创新的投资组合框架，结合了拓扑数据分析（TDA）和基于新闻情绪的资产选择方法。具体而言，采用TDA中的距离度量来选择拓扑上不相似的资产，并将金融新闻情绪得分与技术指标相结合，以增强资产选择的有效性。这种方法能够捕捉复杂的非线性依赖关系，超越传统的相关性和欧几里得距离。<br><br>4. 【文章缺点】  <br>尽管本研究提出了新的框架，但仍存在一些缺点：首先，TDA方法的计算复杂性可能导致在大规模数据集上的应用受到限制。其次，情绪分析依赖于高质量的新闻数据，若数据质量不足，可能影响模型的准确性和可靠性。<br><br>5. 【类似工作】  <br>类似的工作包括：一方面，基于情绪分析的资产定价研究，例如利用情绪指标预测股票价格波动；另一方面，采用机器学习和深度学习方法进行资产选择和组合优化的研究，这些方法也试图结合多种数据源来提高投资决策的有效性。<br><br>6. 【相关性评分】  <br>分数：4分
+
+</details></td></tr>
+<tr><td>Accelerating fossil gas independence in Europe</td><td>Lukas Franken</td><td><a href="https://arxiv.org/pdf/2607.21048">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.21048">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   该论文的动机在于应对欧洲对化石天然气进口的依赖，尤其是在近期价格冲击的背景下，探索降低这种依赖的经济可行性。其次，论文旨在评估在降低进口依赖的同时，如何保护消费者免受全球天然气价格波动的影响。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的研究主要集中在评估化石燃料的环境影响和替代能源的可行性，但往往缺乏对经济成本和消费者保护的全面分析。另一个空白是，现有研究未能充分考虑在不同政策情境下，天然气在电力定价中的主导地位及其对消费者的影响。<br><br>3. 【提出了什么创新的方法】  <br>   论文提出了一种高时空分辨率的欧洲能源系统模型，通过对化石气体供应施加约束，进行全面的减排优化。该模型能够同时考虑电力生成和工业、建筑低温热的需求，提供了一个更全面的经济分析框架。<br><br>4. 【文章缺点】  <br>   文章可能未能充分考虑不同政策措施对消费者保护的具体影响，尤其是在天然气价格波动较大的情况下。其次，模型的复杂性可能导致在实际应用中难以实施，限制了其政策建议的可操作性。<br><br>5. 【类似工作】  <br>   一项类似的工作是对欧洲能源转型的经济影响进行评估的研究，另一项是分析可再生能源在减少化石燃料依赖中的作用的研究。<br><br>6. 【相关性评分】  <br>分数：4分
+
+</details></td></tr>
+<tr><td>pAI-Econ-claude: A Gated Human-in-the-Loop Multi-Agent Architecture for AI-Assisted Economic Theory Development</td><td>Chen Zhu</td><td><a href="https://arxiv.org/pdf/2607.21268">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.21268">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于解决社会科学研究中，尤其是经济学领域，LLM（大型语言模型）生成的输出缺乏可验证的正确性信号的问题。这种缺乏导致多代理系统在生成、批评、协调和人类判断方面面临独特的可靠性挑战。其次，经济理论的发展需要在没有明确正确性保证的情况下，确保生成的理论模型在实证上相关且形式上一致。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究通过将科学工作分解为专业角色和持续的中间输出，展示了多代理系统的价值。然而，现有的代理研究系统在处理理论机制、因果解释和福利主张等方面仍存在不足，无法共同认证模型的适用性、假设的有效性和均衡选择。此外，现有的系统往往缺乏对生成过程中的失败模式的系统性识别和应对策略。<br><br>3. 【提出了什么创新的方法】  <br>论文提出了一种名为pAI-Econ-claude的多代理架构，该架构通过共享的可检查中间记录和专门的门控机制来组织生成、批评和人类判断。此外，设计中引入了三条原则：在相关选择仍可见时拦截失败、没有神谕的检查者只能诊断而不能认证、以及人类注意力应集中在不可逆转的决策点上。<br><br>4. 【文章缺点】  <br>首先，尽管提出了门控机制，但在某些情况下，架构可能会过于压缩经济学中重要机制的复杂性，导致潜在的错误被忽视。其次，评估结果虽然显示出改进，但仍需进一步验证在更广泛的经济理论任务中的有效性和适用性。<br><br>5. 【类似工作】  <br>类似的工作包括自动化科学和机器学习研究中的多代理系统，这些系统协调代理进行构思、实验、编码、审查和写作。此外，生物医学研究中的多代理管道也展示了在过程质量控制方面的相似性。<br><br>6. 【相关性评分】  <br>分数：4分
+
+</details></td></tr>
+<tr><td>The Evolution of Digital Search: From Blue Links to Delegated Decision-Making</td><td>David M. Rothschild</td><td><a href="https://arxiv.org/pdf/2607.21459">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.21459">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于探讨数字搜索的根本转变，从传统的人类驱动发现过程转向由代理中介的决策系统。随着人工智能的进步，用户的搜索方式和决策过程正在发生变化，这引发了对信息质量、透明度和市场结构等重要问题的关注。  <br>此外，随着代理系统的兴起，如何设计一个开放、透明且具有竞争力的决策系统，成为了未来数字搜索发展的关键，这一转变不仅影响用户体验，也对市场的效率和消费者福利产生深远影响。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要集中在优化传统的关键词搜索和排名算法上，试图提高用户在搜索结果中的决策效率。然而，这些研究往往忽视了代理系统在决策过程中的作用及其对市场结构的影响。  <br>此外，虽然有一些研究探讨了信息透明度和竞争性的问题，但缺乏对代理中介系统设计的系统性分析，特别是在如何平衡利益相关者之间的激励方面。<br><br>3. 【提出了什么创新的方法】  <br>论文提出了一种新的视角，强调在设计代理中介系统时需要关注开放性、透明性和竞争性。  <br>此外，作者还指出，在设计过程中应考虑信息的获取方式、选项的呈现方式以及行动的执行方式，这些设计选择对市场效率和消费者福利有重要影响。  <br>最后，论文强调了AI、经济学和系统设计交叉领域的重大挑战，呼吁更多的研究关注这一新兴领域。<br><br>4. 【文章缺点】  <br>文章缺乏对实际案例的深入分析，可能导致理论与实践之间的脱节。  <br>此外，虽然提出了一些设计原则，但缺乏具体的实施框架和评估指标，使得这些原则在实际应用中可能难以落地。<br><br>5. 【类似工作】  <br>类似的工作包括对传统搜索引擎优化的研究，特别是关于如何利用机器学习提高搜索结果相关性的研究。  <br>另一个相关的研究方向是关于智能代理在电子商务中的应用，探讨如何通过代理系统提升消费者的决策效率。<br><br>6. 【相关性评分】  <br>分
+
+</details></td></tr>
+<tr><td>Electricity demand has not become more price-responsive despite ninety years of technological change</td><td>Peter Kudela</td><td><a href="https://arxiv.org/pdf/2607.21285">PDF</a></td><td><a href="https://meta-analysis.cz/electricity">code1</a></td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.21285">PDF</a><br><strong>代码</strong>：<a href="https://meta-analysis.cz/electricity">code1</a><br><strong>备注</strong>：. Data and code in the replication package, and project page, atthis https URL<br><br>1. 【论文的motivation是什么】  <br>   该论文的动机在于检验电力需求对价格的响应性是否随着技术的进步而增强。尽管过去九十年中，智能计量、自动化和储能技术得到了广泛应用，能源规划者仍然假设电力需求会变得更加价格敏感，这一假设在去碳化计划中占据重要地位。通过对大量实证数据的分析，作者希望揭示这一假设的真实性。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的研究主要集中在电力需求的价格弹性上，许多研究表明，电力需求对价格的响应性可能会随着时间和技术的发展而增加。然而，现有文献中缺乏对电力需求价格响应性的系统性检验，尤其是没有对过去几十年数据进行全面的汇总分析。尽管有一些研究探讨了时间变化对电力需求的影响，但并未直接检验电力需求的价格响应性是否真正提高。<br><br>3. 【提出了什么创新的方法】  <br>   本文提出了一种创新的方法，通过汇总462项研究的4720个价格弹性估计，构建了一个涵盖1934年至2024年的大型数据集。这一数据集使得研究者能够明确区分电力需求的响应性是否发生变化，并控制了潜在的混淆因素。此外，作者采用了单一的识别质量标准来评估不同研究的弹性估计，从而提高了结果的可靠性。<br><br>4. 【文章缺点】  <br>   文章的一个缺点是，尽管数据集庞大，但可能存在样本选择偏差，某些地区或时间段的数据可能未被充分代表。另一个缺点是，研究主要集中在价格响应性上，未能深入探讨其他可能影响电力需求的因素，如政策变化、经济环境等。<br><br>5. 【类似工作】  <br>   类似的工作包括Kahn-Lang等（2025）对基于时间的电价的综合研究，探讨其在促进需求侧灵活性方面的潜力；另一个相关研究是Faruqui和Sergici（2010）对
+
+</details></td></tr>
+<tr><td>Execution and Evaluation: A New Occupational Measure and Long-Run Employment Gradients</td><td>Li Gan</td><td><a href="https://arxiv.org/pdf/2607.20807">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.20807">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于探讨人工智能（AI）在劳动经济学中的影响，尤其是如何通过执行和评估任务的区分来理解AI对就业的影响。首先，随着AI技术的发展，了解哪些工作任务可以被AI替代、补充或重组变得尤为重要。其次，现有的研究主要集中在技术能力的评估上，而缺乏对人类在执行和评估任务中所扮演角色的深入分析，这使得对就业变化的理解存在局限性。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作通过构建技术能力的暴露度指标，帮助识别哪些职业受到AI影响。例如，Massenkoff和McCrory（2026）结合了理论能力和观察使用情况，形成了“观察暴露”指数。然而，这些研究往往忽视了人类在执行和评估任务中的重要性，未能充分解释为何某些工作受到AI影响而另一些工作则未受到影响。此外，现有研究对年轻工人在高度暴露职业中的就业下降现象的解释也存在争议，缺乏系统的理论框架。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了一种新的职业测量方法，通过对O*NET任务声明进行评分，构建了职业层面的执行和AI能力份额。这种方法不仅能够区分执行任务和评估任务，还能在不同的模型编码者和O*NET版本中保持可重复性。此外，论文还引入了一个基于模型的测量标准，提供了对职业间就业增长趋势的深入分析。<br><br>4. 【文章缺点】  <br>首先，尽管论文提供了新的测量方法，但其模型仍然依赖于假设，可能无法完全捕捉到人类在评估任务中的复杂角色。其次，文章的结果虽然揭示了执行密集型职业的就业增长较低，但未能明确因果关系，可能导致对AI影响的误解。<br><br>5. 【类似工作】  <br>类似的工作包括Brynjolfsson等（2025）关于AI对年轻工人就业影响的研究，以及Iscenko和Curto Millet（2026
+
+</details></td></tr>
+<tr><td>Quantifying Sub-Optimality in Routing for Automated Market Makers</td><td>Weiye Xi</td><td><a href="https://arxiv.org/pdf/2607.20762">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.20762">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：. Accepted at the 5th Workshop on Decentralized Finance (DeFi 2026), held in association with Financial Cryptography and Data Security 2026<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于评估当前去中心化交易所（DEX）路由决策的最优性，尤其是在快速变化的市场环境中，如何通过优化路由策略来减少交易损失。通过对298万笔WETH-USDC交易的实证审计，揭示了现有路由策略在执行过程中所造成的潜在价值损失，平均每笔交易损失2.02个基点，累计损失达到2400万美元，这表明当前的路由决策存在显著的改进空间。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要集中在设计智能路由器和优化算法方面，但缺乏对实际路由决策效果的系统性评估。虽然已有研究探讨了流动性池的选择和交易执行的效率，但尚未进行大规模的实证分析来量化路由决策的最优性及其经济影响。因此，现有文献在实证验证和具体损失量化方面存在明显的空白。<br><br>3. 【提出了什么创新的方法】  <br>本研究提出了三种可重复的最优基准来评估路由的潜在表现，包括支持约束最优（SCO）、全场地最优（FVO）和考虑燃气成本的全场地最优（G-FVO）。此外，研究还开发了一种基于二分法的算法，用于在多个流动性池中进行最优路由计算，从而有效地评估和改进信息及时性和燃气成本意识的路由策略。<br><br>4. 【文章缺点】  <br>首先，尽管研究提供了丰富的实证数据，但对不同交易规模的影响分析可能不足，特别是对极端交易的处理可能需要更深入的探讨。其次，文章主要集中在以太坊网络上的数据，可能限制了其结论在其他区块链平台上的普适性。<br><br>5. 【类似工作】  <br>类似的工作包括对去中心化交易所流动性池的优化研究，特别是针对流动性提供者的激励机制分析，以及对算法交易策略的研究，这些工作探讨了如何通过技术手段提升交易效率
+
+</details></td></tr>
+<tr><td>Good Guys With Guns? The Relationship Between Legal Firearm Ownership and Firearm Deaths and Crime in Canada</td><td>Derek Mikola</td><td><a href="https://arxiv.org/pdf/2607.20667">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.20667">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于探讨加拿大法律枪支拥有与枪支相关死亡和犯罪之间的关系。首先，加拿大的枪支拥有情况与美国截然不同，尽管拥有严格的法律法规，但仍存在广泛的合法枪支拥有，这为研究提供了独特的背景。其次，随着手枪拥有量和限制性许可证数量的显著增加，研究这些变化对社会安全的影响显得尤为重要，尤其是在新立法提出手枪冻结和步枪回购的背景下。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在美国的枪支拥有与犯罪之间的关系，提供了大量的实证数据和理论模型。然而，这些研究往往缺乏对加拿大特定背景的考量，导致对枪支拥有与犯罪之间关系的理解不够全面。此外，现有研究中对枪支拥有的实证数据相对匮乏，尤其是在加拿大这样的严格管控环境下，缺乏对枪支拥有对犯罪率影响的系统性分析。<br><br>3. 【提出了什么创新的方法】  <br>论文通过使用2013-2019年的新行政数据，系统分析了加拿大枪支拥有与凶杀、自杀及枪支相关犯罪之间的关联。这种基于最新数据的实证研究方法为理解枪支拥有与社会安全之间的关系提供了新的视角。此外，论文评估了新立法措施的潜在影响，探讨现有法律是否已达到平衡，这在相关文献中尚属首次。<br><br>4. 【文章缺点】  <br>首先，尽管使用了新的行政数据，但研究可能仍存在数据的局限性，特别是在某些地区或特定类型犯罪的样本量不足。其次，论文的结论可能受到时间范围的限制，未能考虑更长期的趋势和变化，可能影响对政策效果的全面评估。<br><br>5. 【类似工作】  <br>类似的研究包括对美国枪支拥有与犯罪率关系的分析，如“The Impact of Gun Ownership on Violent Crime Rates in the United States”以及对其他国家枪支管控政策的比较研究，如“Gun Control and Crime: A Comparative Analysis of Canada and Australia”。<br><br>6.
+
+</details></td></tr>
+<tr><td>Generative AI Availability, Grades, and Student Satisfaction at a Large University</td><td>James M. Zumel Dumlao</td><td><a href="https://arxiv.org/pdf/2607.21534">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.21534">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   该论文的动机在于探讨生成性人工智能（GenAI）在高等教育中的普及是否导致学生将认知努力转移给AI，从而在没有真正学习的情况下获得高分。特别是，研究者关注GenAI对学生成绩和满意度的影响，尤其是在那些依赖家庭作业和论文等评估方式的课程中。  <br>   其次，论文旨在验证“GenAI替代假设”，即如果该假设成立，GenAI的使用可能会削弱评估的信号价值，并影响学生对学科的兴趣和理解。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的研究主要集中在GenAI对学生学习和表现的潜在影响上，提出了GenAI替代假设，认为学生可能依赖GenAI来提高评估成绩，而不是通过自身努力学习。然而，现有文献对GenAI对学生满意度的影响缺乏系统性研究，尤其是在大规模大学环境中的实证数据支持。  <br>   此外，尽管有研究探讨了评估结构与学生学习之间的关系，但对GenAI在不同类型课程中的具体影响仍未得到充分验证，特别是在疫情背景下的变化。<br><br>3. 【提出了什么创新的方法】  <br>   本文采用了一种创新的方法，通过分析来自一所大型美国大学的课程大纲和行政数据，使用人类验证的LLM管道提取课程评估类型，以衡量课程的GenAI易感性。  <br>   研究还使用了差异中的差异设计，比较ChatGPT发布前后不同课程的结果，并考虑了COVID-19疫情的影响。这种方法为理解GenAI在高等教育中的作用提供了新的实证依据。<br><br>4. 【文章缺点】  <br>   文章的一个缺点是，尽管使用了大规模的数据集，但可能无法完全捕捉到所有潜在的变量和影响因素，特别是在评估结构和学生学习动机方面的复杂性。  <br>   另一个缺点是，研究结果显示GenAI对成绩和满意度的影响不显著，可能会引发对研究设计和数据分析方法的质疑，尤其是在
+
+</details></td></tr>
+</tbody>
+</table>
+
+<details>
+<summary><a id='date-20260723'></a>2026-07-23（7篇论文）</summary>
 
 <table>
 <thead>
@@ -61,6 +132,8 @@
 </details></td></tr>
 </tbody>
 </table>
+
+</details>
 
 <details>
 <summary><a id='date-20260722'></a>2026-07-22（8篇论文）</summary>
@@ -280,79 +353,6 @@
 <tr><td colspan="5"><details><summary><strong>总结</strong></summary>
 
 <strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.15363">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于探讨家庭在收入变化时的消费反应，尤其是那些流动资产不足的家庭。首先，理解流动资产不足家庭的消费行为对于制定有效的经济政策至关重要，因为这些家庭在经济波动中更易受到影响。其次，研究不同类型的手到口（HtM）家庭的消费反应，可以揭示财富分布对消费决策的影响，从而为改善家庭财务状况提供理论依据。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在家庭财富对消费行为的影响，尤其是流动性约束如何导致消费的过度敏感性。然而，大多数研究未能充分考虑家庭特征的异质性，尤其是流动资产的差异如何影响消费反应。此外，现有文献在实证测量家庭流动性约束方面存在不足，缺乏对不同家庭类型（如贫困和富裕HtM家庭）消费反应的深入分析。<br><br>3. 【提出了什么创新的方法】  <br>本研究通过使用来自23个欧洲国家的家庭财务和消费调查（HFCS）数据，分析了不同类型HtM家庭的边际消费倾向（MPC）。具体而言，论文创新性地将HtM家庭分为非HtM、贫困HtM和富裕HtM三类，并比较了它们对收入变化的消费反应。此外，研究还控制了未观察到的偏好异质性，以更准确地评估流动性约束对消费行为的影响。<br><br>4. 【文章缺点】  <br>首先，尽管研究使用了大规模的HFCS数据，但仍可能存在样本选择偏差，尤其是在不同国家之间的比较时。其次，论文未能深入探讨其他可能影响消费反应的因素，如家庭的心理因素或社会经济背景，这可能导致对消费行为的理解不够全面。<br><br>5. 【类似工作】  <br>类似的工作包括Kaplan et al. (2014)的研究，他们探讨了流动性约束对消费的影响，并提出了相关的实证模型。另一个相关研究是Blundell et al. (2008)的工作，分析了
-
-</details></td></tr>
-</tbody>
-</table>
-
-</details>
-
-<details>
-<summary><a id='date-20260717'></a>2026-07-17（10篇论文）</summary>
-
-<table>
-<thead>
-<tr><th>Title</th><th>Author</th><th>PDF</th><th>Code</th><th>Relevance</th></tr>
-</thead>
-<tbody>
-<tr><td>Adaptive Ad Load Design for Sponsored Search Markets: Evidence, Theory, and Deployment</td><td>Mohammad Rashid</td><td><a href="https://arxiv.org/pdf/2607.14418">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.14418">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于探索广告加载设计在赞助搜索市场中的重要性。首先，随着数字经济中搜索广告收入的快速增长，平台面临着如何平衡广告收入与用户体验之间的矛盾。其次，现有的广告加载设计缺乏系统的理论框架和实证支持，导致平台在设置广告位时缺乏有效的决策依据。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在广告投放的效果评估和用户行为分析上，提供了一些关于广告加载对收入影响的初步见解。然而，现有文献往往忽视了广告加载设计的动态性和异质性，未能充分考虑不同查询类型对广告效果的影响。此外，缺乏针对广告加载设计的自适应算法研究，使得平台在实际应用中面临决策困境。<br><br>3. 【提出了什么创新的方法】  <br>论文提出了一种新颖的自适应算法——探索增强的局部自适应广告加载（e-LAAL）。该算法结合了无模型的查询级决策规则和静态探索臂，能够根据最近的结果动态更新广告加载建议。此外，e-LAAL提供了有限时间动态后悔保证，确保在实际部署中能够有效提升收入与转化之间的权衡。<br><br>4. 【文章缺点】  <br>首先，尽管e-LAAL在实证测试中表现良好，但其算法的复杂性可能导致在实际应用中的实施难度。其次，论文主要基于特定的应用商店环境进行研究，可能限制了其结论的普适性，需在其他类型的搜索平台上进行验证。<br><br>5. 【类似工作】  <br>类似的工作包括对广告效果的评估研究，如“广告投放对用户行为的影响”以及“基于机器学习的广告优化算法”。这些研究为理解广告加载设计提供了基础，但在动态自适应算法方面的探讨仍然较少。<br><br>6. 【相关性评分】  <br>分数：4分
-
-</details></td></tr>
-<tr><td>How Much of a 10-K Matters? Aggregation-Dependent Value of Full-Text versus Risk-Factor Sentiment</td><td>Sanggyu Sean Choi</td><td><a href="https://arxiv.org/pdf/2607.14174">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.14174">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   本文的动机在于探讨10-K文件中情感提取的重要性，尤其是在风险披露方面。首先，10-K文件包含了公司对未来不确定性的详细描述，这使其成为提取与未来收益和波动性相关的情感信号的理想候选者。其次，现有的情感提取方法主要集中在新闻文本上，忽视了10-K文件的潜在价值，尤其是在波动性预测方面。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的工作主要集中在使用新闻文本进行情感分析，并且通常仅对收益标签进行监督提取，未能充分利用10-K文件的风险披露部分。其次，尽管已有研究探讨了情感与市场结果的关系，但缺乏对波动性作为监督目标的应用，这在一定程度上限制了对风险信息的全面理解。<br><br>3. 【提出了什么创新的方法】  <br>   本文提出了一种监督情感生成的方法，扩展了现有的词典学习框架，应用于10-K文件及其风险因素部分。具体来说，本文比较了完整文件与Item 1A部分生成的情感，并在收益和波动性标签上进行监督。此外，本文还在三个聚合层次（行业、投资组合和个别公司）上评估情感指标的表现。<br><br>4. 【文章缺点】  <br>   本文的一个缺点是仅限于纳斯达克100指数的技术公司，可能影响结果的普遍性。另一个缺点是虽然对情感指标进行了多维度评估，但缺乏对其他可能影响市场结果的外部因素的考虑。<br><br>5. 【类似工作】  <br>   类似的工作包括Ke et al. (2020)的研究，该研究将情感提取应用于新闻文本以预测收益。另一个相关的研究是Loughran和McDonald (2011)的工作，探讨了情感词典在金融文本分析中的应用。<br><br>6. 【相关性评分】  <br>分数：4分
-
-</details></td></tr>
-<tr><td>Does Multi-Agent Debate Improve AI Feedback on Research Papers?</td><td>Tomas Havranek</td><td><a href="https://arxiv.org/pdf/2607.14713">PDF</a></td><td><a href="https://meta-analysis.cz/debate">code1</a></td><td>★★☆☆☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★☆☆☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.14713">PDF</a><br><strong>代码</strong>：<a href="https://meta-analysis.cz/debate">code1</a><br><strong>备注</strong>：. Pre-registered on OSF; data, code, judge prompts, and blinded reports in the replication package on Zenodo. Project page:this https URL<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于探索多智能体辩论是否能够改善人工智能对研究论文的反馈，尤其是在经济学的元分析中。作者希望通过比较不同的AI报告，评估哪种反馈方式对作者的论文改进更有帮助，从而为研究者提供更有效的工具来提升其学术作品的质量。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在AI模型的单一反馈与多智能体辩论的效果比较上，部分研究表明多智能体辩论可能会识别出单一模型遗漏的批评。然而，现有文献尚未将不同AI报告放在同一论文前进行比较，以评估哪种反馈对作者最有用，这一空白为本研究提供了切入点。<br><br>3. 【提出了什么创新的方法】  <br>本研究通过设计一个预注册的、身份隐藏的实验，将44篇元分析的作者与三种AI报告进行比较，评估其对论文改进的实际帮助。通过统一报告的长度和格式，确保了比较的公平性。此外，研究还探讨了AI评审与作者之间的互动，强调了作者在判断反馈有用性方面的重要性。<br><br>4. 【文章缺点】  <br>首先，研究的样本量相对较小，仅包含44篇元分析，可能影响结果的普适性。其次，尽管采用了身份隐藏的方式，但作者的主观偏见仍可能影响他们对AI报告的评价，从而影响研究结果的客观性。<br><br>5. 【类似工作】  <br>类似的研究包括Du et al. (2024)和Khan et al. (2024)的工作，这些研究探讨了多智能体辩论在识别批评方面的有效性。此外，Liang et al. (2024)的研究也关注了语言模型在生成有用论文反馈或评论方面的能力。<br><br>6. 【相关性评分】  <br>分数：2分
-
-</details></td></tr>
-<tr><td>Governing Artificial Intelligence: Public Preferences and Regulatory Options</td><td>Magnus Lundgren</td><td><a href="https://arxiv.org/pdf/2607.14585">PDF</a></td><td>-</td><td>★★☆☆☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★☆☆☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.14585">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：Main paper ; supplementary materials<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于探讨公众对人工智能（AI）监管的偏好，旨在理解在技术创新与公众安全之间的权衡如何影响治理结构的设计。其次，研究希望揭示不同国家在AI监管方面的分歧，反映出各国在治理模式和层级选择上的不同立场。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在AI技术的潜在风险和治理框架的理论构建上，但往往缺乏对公众偏好的实证调查。其次，虽然已有研究探讨了不同国家在AI监管方面的政策差异，但对公众的具体态度和偏好尚未得到充分的实证支持。<br><br>3. 【提出了什么创新的方法】  <br>该研究通过设计问卷调查，系统地收集公众对AI监管的偏好，涵盖了监管目标、模式和层级三个维度。研究还采用了随机化实验的方法，以确保样本的代表性和数据的可靠性。<br><br>4. 【文章缺点】  <br>该研究可能受到样本选择偏差的影响，尤其是在低教育水平人群的代表性不足。其次，尽管研究提供了丰富的数据分析，但对不同文化背景下公众偏好的深层次原因探讨仍显不足。<br><br>5. 【类似工作】  <br>类似的研究包括对技术治理的公众态度调查，尤其是关于数据隐私和网络安全的研究。此外，还有一些研究关注不同国家在科技监管方面的政策比较，探讨各国在面对技术挑战时的治理选择。<br><br>6. 【相关性评分】  <br>分数：2分
-
-</details></td></tr>
-<tr><td>Thermodynamic theory of voting and EU elections</td><td>Klaus M. Frahm</td><td><a href="https://arxiv.org/pdf/2607.15119">PDF</a></td><td><a href="https://arxiv.org/abs/2506.17720">code1</a> | <a href="https://arxiv.org/abs/2606.17965">code2</a> | <a href="https://arxiv.org/abs/2512.06420">code3</a> | <a href="https://arxiv.org/abs/2607.07315">code4</a></td><td>★★☆☆☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★☆☆☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.15119">PDF</a><br><strong>代码</strong>：<a href="https://arxiv.org/abs/2506.17720">code1</a> | <a href="https://arxiv.org/abs/2606.17965">code2</a> | <a href="https://arxiv.org/abs/2512.06420">code3</a> | <a href="https://arxiv.org/abs/2607.07315">code4</a><br><strong>备注</strong>：+ SupMat with 12 figures, may include certain unpublished parts ofarXiv:2512.06420, arXiv:2506.17720, arXiv:2606.17965, arXiv:2607.07315<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于通过热力学理论为投票行为提供新的解释，尤其是在欧盟选举中，揭示政党投票分布的统计特征。其次，研究者希望通过热力学的视角来理解社会财富不平等现象，探讨其与投票行为之间的关系。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在投票行为和财富不平等的统计特征上，但缺乏将热力学理论应用于这些现象的系统性研究。此外，尽管已有研究探讨了Lorenz曲线和Pareto曲线的构建，但尚未有工作将这些曲线与热力学理论相结合，形成统一的解释框架。<br><br>3. 【提出了什么创新的方法】  <br>论文提出了一种基于Rayleigh-Jeans热化理论的投票模型，通过类比非线性耦合振荡器的系统能量来描述政党投票分布。该模型不仅能够解释欧盟选举的投票结果，还能恢复法国总统选举第一轮候选人之间的投票分散情况。<br><br>4. 【文章缺点】  <br>首先，论文可能过于依赖热力学理论，缺乏对其他社会、政治因素的考虑。其次，模型的适用性可能受到限制，尤其是在不同国家或不同选举制度下，可能无法完全反映投票行为的复杂性。<br><br>5. 【类似工作】  <br>类似的工作包括对财富不平等的热力学解释研究，以及在其他领域应用热力学模型来理解复杂系统行为的研究，如交通拥堵和颗粒介质的合并现象。<br><br>6. 【相关性评分】  <br>分数：2分
-
-</details></td></tr>
-<tr><td>Existence and convergence of discrete-time Kyle models with multiple insiders</td><td>Jin Choi</td><td><a href="https://arxiv.org/pdf/2607.15057">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.15057">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于填补现有文献中关于Foster和Viswanathan（1996）模型的存在性证明的空白，特别是在多位知情交易者的情况下。此外，论文还旨在探讨离散时间均衡模型在交易次数趋于无穷大时如何收敛到连续时间均衡，这对于理解市场微观结构中的动态行为至关重要。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作，如Kyle（1985）和Holden与Subrahmanyam（1992），成功证明了其模型下纳什均衡的存在性。然而，Foster和Viswanathan（1996）的模型虽然扩展了前者，但并未提供相应的均衡存在性证明，这使得该模型的理论基础相对薄弱。此外，尽管已有研究探讨了信息不对称的情况，但对称假设的限制使得相关分析未能涵盖更复杂的信息结构。<br><br>3. 【提出了什么创新的方法】  <br>论文提出了两个主要的数学贡献：首先，提供了Foster和Viswanathan（1996）离散时间均衡模型的存在性证明；其次，证明了当交易次数趋于无穷大时，离散时间均衡收敛于Back、Cao和Willard（2000）所证明的连续时间均衡。这种收敛性分析为理解不同时间框架下的市场行为提供了新的视角。<br><br>4. 【文章缺点】  <br>首先，论文的分析主要集中在对称信息结构下的模型，未能考虑信息不对称的情况，这可能限制了其应用范围。其次，尽管提供了存在性和收敛性的证明，但对模型的复杂性和实际应用的可操作性讨论较少，可能影响其在实际金融市场中的适用性。<br><br>5. 【类似工作】  <br>类似的工作包括Holden和Subrahmanyam（1992）对多位知情交易者的模型扩展，以及Caldentey和Stacchetti（2010）对离散时间随机地平线模型的研究，这些研究都涉及市场微观结构和均衡的存在性问题。<br><br>6
-
-</details></td></tr>
-<tr><td>Platform Choice, Trust, and Privacy in the Consumer AI Assistant Market</td><td>Jennifer Zou</td><td><a href="https://arxiv.org/pdf/2607.15134">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.15134">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于探讨消费者在选择AI助手平台时的行为模式，尤其是如何分配任务、评估平台的可信度以及对数据隐私的重视。随着AI助手在日常生活中的普及，了解用户的选择和偏好对市场发展具有重要意义。其次，现有市场数据的缺乏使得对消费者行为的深入分析变得尤为必要，尤其是在涉及敏感信息的情况下，平台选择的后果可能对用户和市场都产生深远影响。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在AI助手的功能和技术性能上，较少关注消费者在选择平台时的心理和行为因素。这导致了对市场结构和用户偏好的理解不足，尤其是在任务分配和信任评估方面。此外，现有研究往往依赖于平台提供的专有数据，缺乏对跨平台行为和隐私态度的全面考察，未能揭示用户在选择平台时的真实动机和行为模式。<br><br>3. 【提出了什么创新的方法】  <br>本研究通过对1999名美国成年AI助手用户进行调查和选择实验，提供了对市场结构的实证分析，包含对用户任务分配和信任评估的细致测量。首先，研究通过任务级别而非用户级别的选择分析，揭示了平台的“任务特征”，即每个平台在特定任务上的使用情况。其次，研究采用了对比分析法，评估用户和非用户对不同平台的信任感，提供了更全面的信任度测量。<br><br>4. 【文章缺点】  <br>该研究的一个缺点是样本仅限于美国成年用户，可能无法代表全球范围内的AI助手用户行为。另一个缺点是尽管研究提供了丰富的数据分析，但对数据隐私特征的经济价值评估可能受到用户自我报告偏差的影响，导致结果的准确性受到质疑。<br><br>5. 【类似工作】  <br>类似的工作包括对社交媒体平台用户行为的研究，探讨用户在不同平台间的迁移及其对隐私的关注；另一个相关研究则分析
-
-</details></td></tr>
-<tr><td>Structure-Aware Variational State Preparation for Quantum Basket Option Pricing</td><td>Dongwoo Kim</td><td><a href="https://arxiv.org/pdf/2607.14518">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.14518">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于：  <br>- 量子幅度估计（QAE）在定价多维金融衍生品时能够提供相较于经典蒙特卡洛方法的二次加速，但在实际应用中，状态准备电路的深度限制了其效益。  <br>- 在多资产设置中，资产之间的相关性使得状态准备电路的复杂度显著增加，因此高效的状态准备方法对于实现量子蒙特卡洛方法在衍生品定价和风险评估中的实际应用至关重要。  <br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要通过以下方式解决了相关问题：  <br>- 他们提出了多种量子状态准备方法，以降低输入准备的复杂度，并提高量子算法在金融定价中的应用效率。  <br>- 然而，现有的方法往往未能充分利用金融产品的结构信息，导致在处理相关资产的情况下，状态准备电路仍然过于复杂，未能实现所需的低深度电路。  <br><br>3. 【提出了什么创新的方法】  <br>本论文提出了以下创新方法：  <br>- 引入了一种结构感知的量子状态准备框架，利用张量列（TT）秩信息设计浅层变分状态准备电路，从而有效降低电路深度。  <br>- 在相关资产的情况下，通过局部准备资产边际分布并训练紧凑的潜在块，以匹配篮子累积分布函数，从而直接对接与篮子相关的支付。  <br><br>4. 【文章缺点】  <br>本论文的缺点包括：  <br>- 尽管提出的框架在理论上具有优势，但在实际应用中可能仍面临量子硬件的噪声和误差问题，影响定价的准确性。  <br>- 论文中对不同市场条件下的适应性和鲁棒性缺乏深入的实证分析，可能限制了其广泛应用的可行性。  <br><br>5. 【类似工作】  <br>与本论文相关的类似工作包括：  <br>- 量子金融领域中的其他量子幅度估计算法，这些算法同样致力于
-
-</details></td></tr>
-<tr><td>A Noise-Robust Elicit-to-Optimize Framework for Distortion Riskmetrics via Inverse Reinforcement Learning</td><td>Yang Liu</td><td><a href="https://arxiv.org/pdf/2607.14373">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.14373">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   该论文的动机在于解决风险敏感决策中的风险目标识别问题，尤其是在个性化应用（如机器人顾问和自动驾驶）中，代理可能表现出异质和复杂的风险偏好。其次，现有研究通常集中于均值-方差目标或一致风险度量，这只覆盖了实践中观察到的部分风险偏好，而现实中的风险偏好可能涉及分位数、偏差目标、不对称尾部关注或离散控制等，这些往往超出了凸或一致类的范畴。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的工作如Wang等（2020）提出的扭曲风险度量为金融风险提供了一个统一框架，涵盖了多种风险度量和偏差度量。尽管扭曲风险度量具有理论上的广泛性和统一性，但在实际应用中，识别适当的风险目标仍然具有挑战性，因为代理往往无法精确指定自己的风险偏好。此外，现有的逆强化学习方法假设代理的选择始终与其风险偏好一致，但这一假设在实践中可能并不成立。<br><br>3. 【提出了什么创新的方法】  <br>   本文提出了一种噪声鲁棒的“引导-优化”框架，利用逆强化学习来识别和优化扭曲风险度量下的风险目标。该方法旨在克服现有框架中对代理选择一致性的假设，提供更为灵活和适应性的风险目标识别和优化策略。<br><br>4. 【文章缺点】  <br>   文章的一个缺点是，尽管提出了新的框架，但在实际应用中可能面临数据噪声和不确定性对结果的影响。另一个缺点是，框架的复杂性可能导致计算上的挑战，尤其是在大规模金融数据集上进行应用时。<br><br>5. 【类似工作】  <br>   1) Wang等（2020）提出的扭曲风险度量为金融风险提供了统一的理论基础。  <br>   2) Arora和Doshi（2021）在逆强化学习中估计代理目标的方法，虽然
-
-</details></td></tr>
-<tr><td>NeuralChaos: Optimal Adapted Approximation of Square Integrable Predictable Processes</td><td>Anastasis Kratsios</td><td><a href="https://arxiv.org/pdf/2607.14361">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.14361">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   该论文的动机在于解决在连续时间随机控制、强化学习和数学金融中，如何有效表示和计算可预测的平方可积过程的问题。具体来说，这些过程在动态对冲、投资组合选择和波动率校准等金融应用中至关重要。  <br>   另外，传统的计算方法受到大规模混沌字典和高阶迭代积分的限制，因此需要一种新的方法来克服这些障碍，以实现更高效的随机分析和数学金融建模。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的工作主要集中在使用Wiener混沌展开等理论工具来处理可预测过程的近似和优化问题。然而，这些方法往往依赖于特定的模型结构，如马尔可夫或仿射模型，导致其在实际应用中的灵活性不足。  <br>   此外，尽管深度学习方法在处理更一般的假设条件下取得了一定进展，但在ℋT2(ℝd)空间内的深度学习模型仍然相对缺乏，未能有效填补理论与实践之间的空白。<br><br>3. 【提出了什么创新的方法】  <br>   本文提出了一种名为NeuralChaos的神经算子架构，该架构能够通过有限次的布朗运动评估来生成ℋT2(ℝd)中的元素，同时保持可预测性和平方可积性。  <br>   该方法证明了在ℋT2(ℝd)中是稠密的，并且在可压缩和Malliavin-Sobolev正则过程的最佳神经网络混沌近似率方面表现出色。<br><br>4. 【文章缺点】  <br>   文章可能在处理极端情况下的稳定性和鲁棒性方面存在不足，尤其是在高维空间中。  <br>   此外，尽管提出的方法在理论上具有优势，但在实际应用中的计算复杂性和效率仍需进一步验证和优化。<br><br>5. 【类似工作】  <br>   1) 近年来在深度学习领域的研究，如使用深度神经网络进行随机控制和金融建模的工作。  <br>   2
 
 </details></td></tr>
 </tbody>
