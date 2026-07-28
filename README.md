@@ -1,16 +1,111 @@
-# arXiv 量化金融领域论文汇总（共46篇）
+# arXiv 量化金融领域论文汇总（共45篇）
 
 > 说明：仅显示最近五天数据，当天论文默认展开，其他日期点击标题可展开/折叠
 > 相关性评分：基于LLM对量化金融领域的相关性评定（1-5分，★越多相关性越高）
 
 ## 日期导航
+- [2026-07-28（14篇论文）](#date-20260728)
 - [2026-07-27（6篇论文）](#date-20260727)
 - [2026-07-24（10篇论文）](#date-20260724)
 - [2026-07-23（7篇论文）](#date-20260723)
 - [2026-07-22（8篇论文）](#date-20260722)
-- [2026-07-21（15篇论文）](#date-20260721)
 
-## <a id='date-20260727'></a>2026-07-27（6篇论文）
+## <a id='date-20260728'></a>2026-07-28（14篇论文）
+
+<table>
+<thead>
+<tr><th>Title</th><th>Author</th><th>PDF</th><th>Code</th><th>Relevance</th></tr>
+</thead>
+<tbody>
+<tr><td>One Other Option Pricing Scheme</td><td>Jimin Lin</td><td><a href="https://arxiv.org/pdf/2607.24680">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.24680">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：831773096】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>The Fundamental Structure of Risk: From Characteristics to Covariance</td><td>Alexandre Alouadi</td><td><a href="https://arxiv.org/pdf/2607.24410">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.24410">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：831773096】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>How to Disrupt a Market</td><td>Edoardo Gallo</td><td><a href="https://arxiv.org/pdf/2607.24389">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.24389">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：831773096】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Randomness in large language models: What researchers need to know (and report)</td><td>Guillaume Coqueret</td><td><a href="https://arxiv.org/pdf/2607.24372">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.24372">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：831773096】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>A World of Ginis</td><td>Lidia Ceriani</td><td><a href="https://arxiv.org/pdf/2607.24175">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.24175">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：Online Appendix<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：831773096】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Approximation of stochastic insurer balance-sheet results using signatures of economic scenarios</td><td>Hervé Andrès</td><td><a href="https://arxiv.org/pdf/2607.24150">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.24150">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：831773096】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Do Carbon Price Forecasts Improve Compliance Procurement? Evidence from European Union Allowances</td><td>Muzi Chen</td><td><a href="https://arxiv.org/pdf/2607.23426">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.23426">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：831773096】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Wrong and More Confident: A Field Experiment on Language Models Taking a Graduate Economics Exam</td><td>Piyush Akimitsu</td><td><a href="https://arxiv.org/pdf/2607.23424">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.23424">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：831773096】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Happy Birthday? Age Labels, Search Criteria, and Matching from Dating to Marriage</td><td>Suguru Otani</td><td><a href="https://arxiv.org/pdf/2607.23325">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.23325">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：page appendix<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：831773096】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Risk Aversion in the Small and in the Large: Beyond Arrow-Pratt A Wiener Chaos Hierarchy of Dynamic Risk Premia</td><td>Christian Oliver Ewald</td><td><a href="https://arxiv.org/pdf/2607.23161">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.23161">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：831773096】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Neural Network-Driven Volatility Drag Mitigation under Aggressive Leverage</td><td>Christian Bongiorno</td><td><a href="https://arxiv.org/pdf/2607.23068">PDF</a></td><td><a href="https://github.com/bongiornoc/RIEnet">code1</a></td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.23068">PDF</a><br><strong>代码</strong>：<a href="https://github.com/bongiornoc/RIEnet">code1</a><br><strong>备注</strong>：. Published in ICAIF &#39;25. Code:this https URL<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：831773096】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Variational Quantum Conditional Boltzmann Machines for Time-Series Forecasting: Architectures, Symmetric Hyperparameter Evaluation, and a Nonlinear Benchmark</td><td>Gerhard Hellstern</td><td><a href="https://arxiv.org/pdf/2607.24065">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.24065">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：831773096】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>AI Strategy: How to Choose What AI Product to Implement</td><td>Foster Provost</td><td><a href="https://arxiv.org/pdf/2607.23733">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.23733">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：. Submitted to Big Data (SAGE)<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：831773096】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Insurance risk models in a heterogeneous time-dependent population: scaling limits and ruin probabilities</td><td>Hélène Guérin</td><td><a href="https://arxiv.org/pdf/2606.28031">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2606.28031">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：831773096】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+</tbody>
+</table>
+
+<details>
+<summary><a id='date-20260727'></a>2026-07-27（6篇论文）</summary>
 
 <table>
 <thead>
@@ -55,6 +150,8 @@
 </details></td></tr>
 </tbody>
 </table>
+
+</details>
 
 <details>
 <summary><a id='date-20260724'></a>2026-07-24（10篇论文）</summary>
@@ -238,109 +335,6 @@
 <tr><td colspan="5"><details><summary><strong>总结</strong></summary>
 
 <strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.19279">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   该论文的动机在于利用Gaussian Boson Sampling（GBS）技术来改善统计套利组合中的资产聚类效率。首先，传统的聚类算法在处理大规模资产数据时可能面临计算复杂性和效率问题，而GBS提供了一种量子计算的解决方案，能够在高波动市场环境中生成更优的投资组合。其次，随着量子计算技术的进步，探索其在金融领域的应用，尤其是在资产定价和组合优化方面，具有重要的理论和实践意义。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的工作主要集中在使用经典算法进行资产聚类，例如谱聚类和SPONGE等，这些方法在识别共动资产方面建立了稳健的基准。然而，这些经典方法在处理复杂的市场动态时可能无法捕捉到潜在的市场结构特征，因此存在一定的局限性。此外，尽管已有研究探讨了量子计算在金融中的应用，但针对GBS在资产聚类中的具体应用仍然较少，未能充分挖掘其潜在优势。<br><br>3. 【提出了什么创新的方法】  <br>   本文提出了两种创新的量子聚类算法：GBS Boost和GBS Roots，旨在通过GBS技术实现更高效的资产聚类。这些方法通过将S&P 500的残差相关数据映射为GBS兼容的邻接矩阵，利用量子计算的优势来生成动态的市场中性投资组合。此外，研究还展示了GBS在高波动市场环境下的优越性，能够有效隔离市场的结构性特征。<br><br>4. 【文章缺点】  <br>   文章的一个缺点是，尽管GBS在理论上具有优势，但在实际应用中可能面临量子设备的可用性和稳定性问题，这可能限制其广泛应用。另一个缺点是，文章主要集中在S&P 500的数据集上，缺乏对其他市场或资产类别的验证，可能影响结果的普适性。<br><br>5. 【类似工作】  <br>   类似的工作包括Stamatopoulos等人（2020）对量子计算
-
-</details></td></tr>
-</tbody>
-</table>
-
-</details>
-
-<details>
-<summary><a id='date-20260721'></a>2026-07-21（15篇论文）</summary>
-
-<table>
-<thead>
-<tr><th>Title</th><th>Author</th><th>PDF</th><th>Code</th><th>Relevance</th></tr>
-</thead>
-<tbody>
-<tr><td>Optimal Market Making in Prediction Markets</td><td>Dominik Feil</td><td><a href="https://arxiv.org/pdf/2607.17991">PDF</a></td><td>-</td><td>★★★★★</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★★<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.17991">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   该论文的动机在于，随着预测市场交易量的增加，其在价格发现中的重要性也日益凸显，因此需要有效的流动性提供机制。其次，预测市场的二元结算结构使得市场做市的优化问题与传统市场存在根本差异，亟需建立相应的理论框架来解决这一问题。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的研究主要集中在传统市场做市模型上，提出了多种优化策略来提高流动性和价格发现效率。然而，这些模型未能充分考虑预测市场的特殊性，如二元结算和市场信念的动态变化，导致在实际应用中存在局限性。<br><br>3. 【提出了什么创新的方法】  <br>   本文提出了一种基于随机控制的框架，专门针对预测市场的特征进行建模，利用潜在信念扩散的转化来描述市场价格。此外，作者推导了Hamilton-Jacobi-Bellman方程，确定了唯一的最优报价策略，并通过数值分析展示了流动性提供的最优策略如何依赖于库存、市场信念、决策时间和风险厌恶程度。<br><br>4. 【文章缺点】  <br>   文章的一个缺点是，尽管提供了理论框架和数值分析，但对实际市场数据的验证和实证分析相对不足，可能影响模型的实际应用性。另一个缺点是，模型假设较为理想化，未考虑市场参与者的异质性和信息不对称等现实因素。<br><br>5. 【类似工作】  <br>   类似的工作包括Berg等（2008）关于预测市场在选举投票预测中的应用研究，以及Ng等（2026）对2024年美国总统选举的预测市场回报与民调数据的关系分析。这些研究为理解预测市场的有效性提供了实证支持。<br><br>6. 【相关性评分】  <br>   分数：5分
-
-</details></td></tr>
-<tr><td>Mean-field equilibrium price formation under single-default risk</td><td>Masashi Sekine</td><td><a href="https://arxiv.org/pdf/2607.17502">PDF</a></td><td>-</td><td>★★★★★</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★★<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.17502">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于研究在不完全金融市场中，如何在存在单一违约风险的情况下形成均衡价格。具体来说，作者希望探讨不同风险厌恶程度和终端负债的代理人如何影响资产价格的形成以及均衡风险溢价的特征。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要集中在均衡资产定价和多代理人博弈的框架下，利用均值场博弈理论来简化复杂的多代理人问题。然而，现有研究往往未能充分考虑单一违约事件对市场的影响，且对代理人异质性在风险溢价中的作用探讨不足。<br><br>3. 【提出了什么创新的方法】  <br>本研究提出了一种基于二次增长的向后随机微分方程（BSDE）来描述代理人的最优策略，并通过市场清算条件推导出均衡风险溢价的均值场BSDE。这种方法量化了违约强度、跳跃幅度和代理人异质性如何共同影响均衡证券风险溢价。<br><br>4. 【文章缺点】  <br>首先，尽管提出了新的理论框架，但在实际应用中可能面临计算复杂性的问题，尤其是在大规模代理人的情况下。其次，论文对市场动态的假设较为理想化，可能无法完全反映真实市场中的复杂性和不确定性。<br><br>5. 【类似工作】  <br>类似的工作包括Fujii和Takahashi的研究，他们将代理人的决策视为最优库存管理问题，并利用McKean-Vlasov FBSDE来表征市场清算均衡价格。此外，Gomes等人的研究也探讨了均值场模型在电力价格形成中的应用。<br><br>6. 【相关性评分】  <br>分数：5分
-
-</details></td></tr>
-<tr><td>A General Model for Continuous Time Principal-Agent Problem Under Hidden Action</td><td>Jaeyoung Sung</td><td><a href="https://arxiv.org/pdf/2607.17212">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.17212">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】<br>   本文的动机在于研究连续时间的委托-代理问题，特别是在隐性行动的背景下，探讨代理人在合同约束下如何进行努力和消费决策。其次，本文关注如何通过控制扩散过程来提高支付方案的有效性，从而更好地反映绩效敏感性（PPS），以应对实际应用中的需求。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】<br>   前人的研究主要集中在离散时间和一次性支付的委托-代理模型上，虽然一些学者已经开始探讨连续支付模型，但大多数工作仍未充分考虑支付过程的随机性和扩散特性。此外，现有模型在求解代理人问题时通常需要额外的验证步骤，而本文提出的新条件能够直接得出解决方案，填补了这一空白。<br><br>3. 【提出了什么创新的方法】<br>   本文提出了一种新的充分条件，可以直接解决代理人的问题，而无需额外的验证步骤。其次，本文允许支付过程为受控扩散，这在现有文献中尚未得到充分探讨。最后，文章通过一个明确的例子展示了所提方法的可行性和有效性。<br><br>4. 【文章缺点】<br>   本文的一个缺点是，尽管提出了新的模型和条件，但在实际应用中的复杂性可能导致模型的实施面临挑战。其次，文章在处理多种支付方案的灵活性方面可能仍显不足，限制了其适用范围。<br><br>5. 【类似工作】<br>   类似的工作包括Sannikov（2015）关于连续支付模型的研究，该模型考虑了代理人的效用函数与支付和消费之间的可加分离性；以及Williams（2016）提出的另一种连续支付模型，成功找到闭式解的研究。<br><br>6. 【相关性评分】<br>分数：4分
-
-</details></td></tr>
-<tr><td>Faithful Decoding</td><td>Nisha Peng</td><td><a href="https://arxiv.org/pdf/2607.17073">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.17073">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于解决高维均衡系统的计算复杂性问题，尤其是在经济建模中，随着模型复杂性的增加，研究者面临着处理高维均衡对象的挑战。其次，现有的降维方法往往会导致信息损失，而本研究旨在提出一种无损的降维变换方法，以提高计算效率并保持解的精确性。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在通过离散化、状态聚合等方法来简化高维均衡模型，这些方法虽然在一定程度上减轻了计算负担，但都存在信息损失的问题。此外，现有的降维技术通常需要在准确性和计算性能之间进行权衡，缺乏一种既能降低维度又能保持信息完整性的有效方法。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了一种新的变换方法，包括编码器和解码器，能够在优化和均衡问题中实现无损的降维。编码器生成一个低维系统，确保计算的高效性和准确性，而解码器则将低维系统的解转化为高维系统的精确解。此外，论文还提供了编码器和解码器的收敛条件，确保低维系统的近似解能够收敛到高维系统的解。<br><br>4. 【文章缺点】  <br>首先，尽管提出的无损变换方法在理论上具有优势，但在实际应用中可能面临实现复杂性的问题。其次，论文中对变换方法的适用范围没有进行充分的讨论，可能限制了其在不同经济模型中的广泛应用。<br><br>5. 【类似工作】  <br>类似的工作包括Krusell和Smith（1998）提出的离散化方法，以及Farmer和Toda（2017）研究的状态聚合技术，这些方法虽然有效，但都存在信息损失的问题。<br><br>6. 【相关性评分】  <br>分数：4分
-
-</details></td></tr>
-<tr><td>Risk Measures on Lipschitz Spaces</td><td>Henrik Karlholm</td><td><a href="https://arxiv.org/pdf/2607.17020">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.17020">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：. Submitted for publication<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于发展一种新的货币风险度量理论，特别是在度量状态空间中引入Lipschitz函数作为金融头寸的自然领域。其次，论文希望通过引入Lipschitz自由空间，建立与基准状态相关的风险度量与质量再分配之间的联系，以更好地处理金融不确定性和风险管理问题。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要集中在固定概率空间内发展风险度量理论，使用经典的Lebesgue空间作为主要领域。然而，这种方法在处理非标准金融头寸时存在局限性，因为它未能考虑到度量空间的几何特性。尽管一些研究已扩展到Orlicz心和随机过程空间，但仍缺乏对Lipschitz空间的深入探讨，特别是在风险度量的双重表示方面。<br><br>3. 【提出了什么创新的方法】  <br>论文提出了一种新的框架，利用基准偏差工具沿着基准进行加法性，从而推导出凸和一致风险度量的双重表示。此外，论文引入了Lipschitz函数作为金融头寸的自然领域，提供了一种新的视角来理解风险度量的几何特性。<br><br>4. 【文章缺点】  <br>首先，论文可能在实际应用中面临挑战，因为Lipschitz空间的复杂性可能使得风险度量的计算变得困难。其次，尽管引入了新的理论框架，但缺乏足够的实证验证，可能影响其在实际金融市场中的适用性。<br><br>5. 【类似工作】  <br>类似的工作包括Cheridito和Li（2009）在Orlicz心上发展风险度量的研究，以及Righi等（2025）引入的集合风险度量，这些工作都试图扩展风险度量理论以适应更复杂的金融环境。<br><br>6. 【相关性评分】  <br>分数：4分
-
-</details></td></tr>
-<tr><td>A Gate-and-Menu Theory of Collective Tourism Brand Value</td><td>Johan Fourie</td><td><a href="https://arxiv.org/pdf/2607.17827">PDF</a></td><td>-</td><td>★★★☆☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★☆☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.17827">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于探讨集体旅游品牌的价值构成，特别是在不同管理者共同管理的资产中，如何决定哪些资产需要集体保护。其次，论文旨在解决现有研究中缺乏对目的地品牌如何保护其成员的综合性正式解释的问题。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要集中在集体品牌对成员回报的影响，尤其是在成员相对同质时的积极效果，以及在成员异质时信号稀释的消极效果。然而，现有研究未能提供一个系统的理论框架来解释目的地品牌何时能够保护其成员，以及个别吸引力在品牌内的价值。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了一种新的模型，将目的地视为“门与菜单”的组合，强调了稀缺性和不可再生资产在品牌价值中的重要性。此外，使用Aumann–Shapley会计方法来分配共同产生的品牌价值，提供了一种量化不同资产价值的新视角。<br><br>4. 【文章缺点】  <br>首先，模型可能过于简化了目的地品牌的复杂性，未能充分考虑不同资产之间的动态互动。其次，虽然使用了语言模型进行数据测量，但可能存在数据来源的局限性，影响结果的普适性。<br><br>5. 【类似工作】  <br>类似的工作包括Schatt和Weisskopf（2025）关于集体品牌的研究，以及Winfree和McCluskey（2005）对旅游品牌异质性影响的分析。这些研究为本论文提供了理论基础，但未能深入探讨资产管理的具体策略。<br><br>6. 【相关性评分】  <br>分数：3分
-
-</details></td></tr>
-<tr><td>Uniform-Loss Automated Market Making for Prediction Markets</td><td>Ciamac C. Moallemi</td><td><a href="https://arxiv.org/pdf/2607.17428">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.17428">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】<br>   该论文的动机在于解决现有预测市场自动化市场制造商（AMMs）在补贴者损失分配方面的不足。首先，尽管已有研究关注于补贴者的总最坏情况损失，但并未深入探讨损失在价格状态和时间上的分布情况。其次，随着预测市场的复杂性增加，如何有效管理流动性并控制补贴成本成为了设计高效市场机制的关键问题。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】<br>   前人的工作主要集中在界定补贴者的最大损失，例如通过对数市场评分规则（LMSR）等方法提供了损失的上限。然而，这些研究通常将补贴视为一个单一的总量，未能分析损失在不同价格区间和时间段的具体分布。此外，虽然有研究引入了损失与再平衡（LVR）的框架，但在动态流动性管理方面的应用仍然不足，缺乏对如何在不同时间调整流动性的深入探讨。<br><br>3. 【提出了什么创新的方法】<br>   本文提出了一种统一损失的自动化市场制造商（uniform AMMs），其特点是瞬时的损失与再平衡（LVR）与池的价值成正比，并且与当前的代币价格无关。此外，文章扩展了这一理论框架到动态流动性管理，展示了如何根据预定的预期累积损失计划调整流动性水平，从而在价格和时间上更好地控制补贴成本。<br><br>4. 【文章缺点】<br>   首先，尽管提出了统一损失的概念，但在实际应用中如何实现这一理论仍然缺乏具体的操作指导。其次，文章主要集中于理论推导，缺乏对实际市场数据的实证分析，可能限制了其结果的广泛适用性。<br><br>5. 【类似工作】<br>   一项相关工作是Milionis等人（2022）提出的损失与再平衡（LVR）框架，专注于分析AMM位置的瞬时不利选择成本。另一项相关研究是Frongillo等人（202
-
-</details></td></tr>
-<tr><td>Determining Insolvency Regions in Banks: A Stochastic Dynamic Approach Integrating Liquidity and Credit Risk</td><td>Nader Karimi</td><td><a href="https://arxiv.org/pdf/2607.17381">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.17381">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：Keywords: Bank insolvency, Liquidity risk, Credit risk, Stochastic optimal control, HJB equation, Basel III, Early warning systems.<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于揭示银行破产区域的动态特征，特别是在流动性风险与信用风险的非线性互动下，如何导致银行的内生性破产。通过研究伊朗银行业在2022至2023年间的非执行贷款危机，作者指出现有的监管措施（如巴塞尔III流动性缓冲）在动态环境中可能会加剧银行脆弱性，进而引发危机。  <br>此外，论文强调了传统静态风险评估方法的不足，指出需要一种动态的、技术驱动的视角来捕捉系统性风险，以更好地理解和管理银行的破产风险。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要集中在流动性风险和信用风险的独立分析上，通常采用简化形式的模型来描述这些风险，但未能有效捕捉两者之间的复杂互动。例如，Merton类型的结构性违约模型往往将流动性视为外生变量，忽视了资金市场的操作约束。  <br>此外，现有的流动性危机模型虽然关注存款人协调和资产抛售，但通常忽略了触发这些危机的信用组合质量恶化的问题。这些研究的空白导致了对银行破产风险的动态特征理解不足，亟需一种综合的方法来解决这一问题。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了一种连续时间结构动态模型，结合流动性和信用风险的非线性互动，明确界定了银行的破产边界。该模型通过引入巴塞尔III的监管要求，采用随机最优控制框架，利用Hamilton-Jacobi-Bellman方程求解破产边界。  <br>此外，作者还开发了一种替代的解析近似函数，使得监管者能够实时监测银行的风险状况，从而为压力测试和预警系统提供了一种计算效率高的工具。<br><br>4. 【文章缺点】  <br>尽管本研究提出了创新的方法，但仍存在一些缺点。首先，模型的复杂性可能使得实际应用中难以实现，尤其是在数据获取
-
-</details></td></tr>
-<tr><td>Herding and Liquidity in Order-Book Markets. II. Fundamental Anchoring and the Resilience of Liquidity</td><td>Jan Novotny</td><td><a href="https://arxiv.org/pdf/2607.16970">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.16970">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于探讨在订单簿市场中，流动性如何受到基本价值的锚定影响，以及在市场受到冲击时，流动性恢复的机制。首先，研究市场在遭遇冲击后，价格如何向基本价值回归，揭示了流动性提供的内在稳定性。其次，论文还关注市场之间流动性压力的传递机制，旨在理解当一个市场出现流动性危机时，是否会影响到相邻市场的稳定性。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在市场之间流动性压力的传递机制上，探讨了共享套利者、共同流动性提供者和强制卖出者等如何导致市场间的相关性和 contagion 现象。然而，这些研究往往忽视了市场内在稳定性的作用，未能明确基本价值锚定对流动性恢复的影响。此外，现有文献对市场之间流动性传递的实证研究较少，缺乏对不同传递渠道的系统性分析。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了一种新的微观结构模型，通过引入基本价值锚定机制，分析了流动性恢复的内在稳定性。同时，论文通过实验设计，系统性地考察了市场之间流动性压力的传递，识别了六种不同强度的传递渠道，为理解市场间的相互影响提供了新的视角。<br><br>4. 【文章缺点】  <br>首先，尽管论文在理论上提供了新的见解，但缺乏实证数据支持其模型的有效性，可能影响结论的普适性。其次，模型的复杂性可能导致实际应用中的困难，特别是在不同市场环境下的适用性和可操作性尚需进一步验证。<br><br>5. 【类似工作】  <br>类似的工作包括Kyle和Xiong（2001）关于市场间财富冲击传播的研究，以及Brunnermeier和Pedersen（2009）探讨的共同流动性提供者的资金约束问题。这些研究为理解市场间的流动性传递提供了基础，但未能深入
-
-</details></td></tr>
-<tr><td>Proof-of-Stake Dynamics: The Elusive Price Anchor and Endogenous Volatility Harvesting</td><td>Mikhail Perepelitsa</td><td><a href="https://arxiv.org/pdf/2607.16622">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.16622">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   本文的动机在于探讨Proof-of-Stake（PoS）网络中的代币价格动态及其与投机资本的系统性影响。首先，随着以太坊（ETH）金融化的加速，投资者越来越将其视为一种被动收益资产，而非仅仅是交易工具，这种结构性转变引发了对代币价格均衡的关注。其次，本文旨在揭示投机资本如何影响网络的经济功能、代币分配和共识安全性，从而为理解PoS网络的内在经济驱动因素提供理论支持。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的研究主要集中在PoS网络的动态模型上，例如“双消费模型”，为理解网络的基本经济机制提供了框架。然而，这些研究往往未能充分考虑投机资本对网络经济的影响，导致对代币价格均衡的理解存在不足。其次，现有文献在分析网络的长期稳定性和宏观经济惯性方面也存在空白，缺乏对代币价格长期锚定机制的深入探讨。<br><br>3. 【提出了什么创新的方法】  <br>   本文提出了一种开放经济宏观经济模型，通过剥离投机层来分析PoS网络的内在经济驱动因素。具体而言，模型首先考虑仅由消费者构成的市场，分析其稳态均衡的存在性和稳定性。随后，模型扩展至包含金融代理人，量化投机资本对网络的冲击及其影响，从而为理解代币价格动态提供了新的视角。<br><br>4. 【文章缺点】  <br>   本文的一个缺点是所提出的模型在参数校准上依赖于当前以太坊网络的特定参数，这可能限制了模型的普适性和适用性。另一个缺点是，尽管模型揭示了宏观经济惯性，但对短期内经济冲击的响应机制分析仍显不足，可能导致对实际市场动态的理解不够全面。<br><br>5. 【类似工作】  <br>   类似的工作包括对以太坊网络经济模型的研究，如“以太坊的双消费模型”，以及对其他
-
-</details></td></tr>
-<tr><td>The conditional higher moment risk measure: second-order asymptotics with FGM contagion</td><td>Haifan Hu</td><td><a href="https://arxiv.org/pdf/2607.16601">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.16601">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于提升风险度量的准确性，尤其是在极端风险情境下，传统的风险度量方法（如VaR和ES）存在明显的局限性，无法充分捕捉尾部风险的特性。其次，考虑到现实世界中风险因素之间的依赖性，论文旨在通过引入条件高阶矩风险度量（CoHM）来更好地反映风险之间的相互影响，特别是在存在弱传染性的情况下。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在高阶矩风险度量（HM）的理论构建和应用上，Krokhmal等人提出的HM风险度量为风险评估提供了更大的灵活性。然而，这些研究往往忽略了风险之间的依赖性，导致在极端情况下的风险评估不够准确。尽管Liu和Yi提出了条件HM风险度量（CoHM），但对其在FGM依赖结构下的二阶渐近展开的研究仍然不足。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了一种新的方法，通过极值理论和二阶正则变换理论系统性地推导条件高阶矩风险度量的二阶渐近展开。这种方法能够更准确地捕捉尾部行为和依赖效应，尤其是在极端置信水平下，显著减少了近似误差。此外，论文通过数值模拟和实际保险索赔数据的应用，验证了二阶方法的实用性和优越性。<br><br>4. 【文章缺点】  <br>首先，论文的理论推导可能在某些特定的依赖结构下存在局限性，未能涵盖所有可能的风险依赖情境。其次，尽管提供了数值模拟和实证应用，但缺乏对不同市场环境和风险类型的广泛测试，可能影响结果的普适性。<br><br>5. 【类似工作】  <br>类似的工作包括Krokhmal等人（2007）对高阶矩风险度量的研究，以及Liu和Yi（2025）对条件高阶矩风险度量的提出。这些研究为本论文
-
-</details></td></tr>
-<tr><td>Portfolio Optimization under Heavy Tails and Asymmetric Volatility: Evidence from Taiwan-Exposed ETFs</td><td>Ting-Jung Lee</td><td><a href="https://arxiv.org/pdf/2607.16450">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.16450">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：. Submitted to Journal of Risk and Financial Management (JRFM)<br><br>1. 【论文的motivation是什么】<br>   - 本文的动机在于探讨台湾相关的交易所交易基金（ETFs）在全球半导体制造业中的重要性，尤其是在技术集中、地缘政治不确定性和供应链中断等因素影响下，如何导致其回报分布呈现重尾特征和波动性聚集现象。<br>   - 传统的投资组合框架主要依赖方差作为风险度量，无法充分捕捉在半导体集中投资环境中，回报的非对称动态和极端下行风险，因此需要引入更为敏感的尾部风险度量和极值方法论。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】<br>   - 前人的研究主要集中在均值-方差框架下的投资组合优化，虽然提供了一定的理论基础，但未能有效应对在重尾和波动性聚集情况下的极端风险。<br>   - 此外，尽管已有研究探讨了VaR和CVaR等风险度量，但在特定于台湾相关ETFs的市场环境中，缺乏对其回报特征的深入分析和实证验证，尤其是在技术驱动的市场变化背景下。<br><br>3. 【提出了什么创新的方法】<br>   - 本文采用了尾部风险诊断和非对称波动建模的方法，结合均值-方差和条件风险价值（CVaR）标准进行投资组合优化，以更全面地评估极端下行风险。<br>   - 通过GJR-GARCH模型分析，揭示了持久的非对称波动性，并指出平方收益的长记忆现象主要源于条件异方差性，而非真正的分数整合。<br>   - 研究结果表明，CVaR优化能够产生比均值-方差优化更为集中化的投资组合配置，尤其在后COVID-19的AI驱动扩张期间，表现出对特定ETF的高权重配置。<br><br>4. 【文章缺点】<br>   - 文章可能未能充分考虑不同市场环境对投资组合表现的影响，尤其是在极端市场波动情况下的应对策略。<br>   - 研究样本仅限于美国上市的
-
-</details></td></tr>
-<tr><td>Abliteration Is Not a Scalpel: Off-Target Effects of Refusal Removal on Decision Disposition Across Model Families</td><td>Aleksander Fafuła</td><td><a href="https://arxiv.org/pdf/2607.17427">PDF</a></td><td><a href="https://github.com/oleczek/paper-abliteration-not-a-scalpel">code1</a> | <a href="https://doi.org/10.5281/zenodo.21314839">code2</a></td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.17427">PDF</a><br><strong>代码</strong>：<a href="https://github.com/oleczek/paper-abliteration-not-a-scalpel">code1</a> | <a href="https://doi.org/10.5281/zenodo.21314839">code2</a><br><strong>备注</strong>：. Preregistered. Data and code:this https URL; dataset DOI<br><br>1. 【论文的motivation是什么】  <br>   该论文的动机在于揭示传统的“消除拒绝”方法在模型决策中的潜在副作用。研究者希望通过实证分析，评估在删除模型拒绝方向后，模型在决策表现上的变化，尤其是在不确定性决策任务中的表现。  <br>   另外，论文旨在挑战当前对“消除拒绝”技术的普遍看法，指出这种方法并非如其所声称的那样“外科手术式”的精确，实际上可能会导致模型决策信心和表现的显著变化。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的研究通常集中在模型的优化和性能提升上，尤其是在处理拒绝行为时，采用“消除拒绝”方法以期提高模型的决策能力。  <br>   然而，现有文献对“消除拒绝”后模型表现的副作用缺乏深入探讨，尤其是在不同模型家族之间的比较和影响机制方面，存在明显的研究空白。<br><br>3. 【提出了什么创新的方法】  <br>   论文通过使用21,600个不确定性决策的实证数据，系统地比较了基础模型和经过“消除拒绝”处理后的模型在决策表现上的差异。  <br>   研究还采用了多代理管道的方式，确保在对比中只有决策层模型作为变量，从而提高了实验的控制性和可靠性。  <br>   此外，论文通过能力协变量分析排除了指令遵循退化作为影响因素，进一步验证了研究结果的有效性。<br><br>4. 【文章缺点】  <br>   论文的一个缺点是缺乏对引言和相关工作的详细讨论，可能影响读者对研究背景和现有文献的理解。  <br>   另一个缺点是实验设计虽然控制了多个变量，但仍可能存在未被识别的外部影响因素，影响结果的普适性和解释性。<br><br>5. 【类似工作】  <br>   类似的工作包括对模型优化技术的研究，如“模型剪枝”技术在决策模型中的应用，以及对模型不确定性评估的研究。
-
-</details></td></tr>
-<tr><td>Robust Control for Marked Point Processes under Transition-Rate Uncertainty</td><td>Sascha Desmettre</td><td><a href="https://arxiv.org/pdf/2607.16935">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.16935">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】<br>   - 本文的动机在于解决在生物风险下的多状态模型中，如何在过渡率不确定性的情况下进行有效的效用最大化。这种不确定性在实际应用中普遍存在，尤其是在生命和健康保险合同的估值中。<br>   - 另一个动机是，传统的马尔可夫模型在处理健康相关风险时往往过于严格，因此需要更灵活的模型来捕捉生物风险的复杂性。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】<br>   - 前人的研究主要集中在使用马尔可夫链进行生命和健康保险合同的估值，但这些模型无法有效处理路径依赖的过渡率，这限制了它们的适用性。<br>   - 尽管有一些研究开始探索半马尔可夫和非马尔可夫模型，但在应对模型不确定性方面的研究仍然不足，缺乏对不确定性进行稳健控制的方法。<br><br>3. 【提出了什么创新的方法】<br>   - 本文提出了一种新颖的稳健效用最大化问题，考虑了在有限状态空间内的路径依赖的累积过渡率的不确定性。<br>   - 证明了马尔可夫最优性原理，并为非标准的最坏情况向后随机微分方程提供了存在性和唯一性结果。<br>   - 通过显式解法，解决了一个新的稳健消费-保险问题，使用了幂效用偏好。<br><br>4. 【文章缺点】<br>   - 文章可能在实际应用中面临复杂性的问题，尤其是在模型参数的估计和计算上。<br>   - 对于路径依赖的累积过渡率的假设可能在某些情况下过于理想化，未必能完全反映真实世界的动态。<br><br>5. 【类似工作】<br>   - Christiansen和Djehiche (2020) 研究了非马尔可夫模型在生物风险下的应用。<br>   - Putter和Spitoni (2018) 探讨了多状态模型中的统计方法，这些方法与本文的稳健控制方法有一定的相关性。<br><br>6. 【相关性评分】<br>分数：4
-
-</details></td></tr>
-<tr><td>FinBench: Time-Gated Calibration and Uncertainty Benchmarking for Agentic Financial Forecasting</td><td>Rishab Ghosh</td><td><a href="https://arxiv.org/pdf/2607.16229">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.16229">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于解决金融领域中大语言模型（LLMs）在决策过程中可能出现的“信心-能力差距”问题。具体来说，尽管模型的准确性可能仅略高于随机水平，但如果其信心过高，可能会导致在风险分配时的错误决策，从而造成资本损失。其次，现有的基准测试主要关注语义理解或点准确性，而未能直接测试在真实市场中时间限制和非平稳性下的概率校准，这使得金融决策的质量受到影响。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要集中在评估模型的语义理解和点预测准确性，但未能有效解决模型在动态市场环境中的概率校准问题。此外，现有的基准测试缺乏对时间限制的考虑，未能反映金融市场中的非平稳性和信息泄露等问题。这些空白导致了在实际应用中，模型的输出可能并不能真实反映其不确定性，从而影响决策的有效性。<br><br>3. 【提出了什么创新的方法】  <br>论文提出了FinBench作为一个校准和不确定性基准，专门针对金融领域的代理系统。FinBench引入了严格的时间门控协议，确保在生成预测时，模型无法访问未来的数据。此外，FinBench采用了严格的评分规则（如Brier评分和Winkler评分），以确保真实的不确定性报告是最佳策略，从而提高模型的可靠性。<br><br>4. 【文章缺点】  <br>首先，FinBench的设计可能在实际应用中面临计算复杂性的问题，尤其是在处理大量数据时。其次，尽管论文强调了时间门控的重要性，但在实际金融市场中，数据的实时性和动态性可能会导致模型在快速变化的环境中表现不佳。<br><br>5. 【类似工作】  <br>类似的工作包括“Probabilistic Forecasting in Finance: A Review”一文，该文探讨了金融预测中的概率模型及其评估方法。另一个相关工作是“Deep Learning for Time Series Forecasting: A Review”，该文综述了深度学习在时间序列预测中的应用，涉及
 
 </details></td></tr>
 </tbody>
