@@ -1,16 +1,87 @@
-# arXiv 量化金融领域论文汇总（共45篇）
+# arXiv 量化金融领域论文汇总（共47篇）
 
 > 说明：仅显示最近五天数据，当天论文默认展开，其他日期点击标题可展开/折叠
 > 相关性评分：基于LLM对量化金融领域的相关性评定（1-5分，★越多相关性越高）
 
 ## 日期导航
+- [2026-07-29（10篇论文）](#date-20260729)
 - [2026-07-28（14篇论文）](#date-20260728)
 - [2026-07-27（6篇论文）](#date-20260727)
 - [2026-07-24（10篇论文）](#date-20260724)
 - [2026-07-23（7篇论文）](#date-20260723)
-- [2026-07-22（8篇论文）](#date-20260722)
 
-## <a id='date-20260728'></a>2026-07-28（14篇论文）
+## <a id='date-20260729'></a>2026-07-29（10篇论文）
+
+<table>
+<thead>
+<tr><th>Title</th><th>Author</th><th>PDF</th><th>Code</th><th>Relevance</th></tr>
+</thead>
+<tbody>
+<tr><td>An Analytic COS Method for Compound Option Valuation</td><td>Zhipeng Huang</td><td><a href="https://arxiv.org/pdf/2607.25599">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.25599">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：831773096】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Algorithm-Driven Information Similarity and Collective Action: An Experimental Study</td><td>Manshu Khanna</td><td><a href="https://arxiv.org/pdf/2607.25472">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.25472">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：831773096】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>How Likely and How Deep? Sharp Joint Bounds on Risk-Neutral Crash Probability and Conditional Depth from Option Bid-Ask Quotes</td><td>Jirong Zhuang</td><td><a href="https://arxiv.org/pdf/2607.25353">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.25353">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：21pages, 3 figures<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：831773096】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Robust Hedging Valuation Adjustment for Deep Hedging Policies under Market Frictions</td><td>Takayuki Sakuma</td><td><a href="https://arxiv.org/pdf/2607.25258">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.25258">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：831773096】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>RIDGE: An Autonomous Framework for Validation and Method Discovery in LLM-Generated Option Pricing</td><td>Liexin Cheng</td><td><a href="https://arxiv.org/pdf/2607.25199">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.25199">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：831773096】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Long-memory GARCH via a two-dimensional Markov chain</td><td>Kyungsub Lee</td><td><a href="https://arxiv.org/pdf/2607.25189">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.25189">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：831773096】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Discrete dividends after maturity adjust the stock and strike prices</td><td>Kevin W. Lu</td><td><a href="https://arxiv.org/pdf/2607.24973">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.24973">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：831773096】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Falling Behind Drives Unsafe Development in an Idealised AI Race Experiment</td><td>Elias Fernández Domingos</td><td><a href="https://arxiv.org/pdf/2607.26034">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.26034">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：(main + SI)<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：831773096】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Emergent Latent-State Computation under Stochastic Volatility</td><td>Xiaoyu Huang</td><td><a href="https://arxiv.org/pdf/2607.25459">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.25459">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：831773096】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Quantum Transformer BSDE Solver via Multi-Layer Fully-Connected Variational Quantum Circuits</td><td>Howard Su</td><td><a href="https://arxiv.org/pdf/2607.25162">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.25162">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：831773096】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+</tbody>
+</table>
+
+<details>
+<summary><a id='date-20260728'></a>2026-07-28（14篇论文）</summary>
 
 <table>
 <thead>
@@ -103,6 +174,8 @@
 </details></td></tr>
 </tbody>
 </table>
+
+</details>
 
 <details>
 <summary><a id='date-20260727'></a>2026-07-27（6篇论文）</summary>
@@ -274,67 +347,6 @@
 <tr><td colspan="5"><details><summary><strong>总结</strong></summary>
 
 <strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.19929">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于探讨有限注意力如何影响替代弹性的结构估计。首先，随着消费者在购买时对价格变化的注意力有限，传统的需求估计方法可能无法准确反映消费者的真实行为，从而影响经济政策的制定和市场分析。其次，政府对价格感知的监管措施表明，消费者的感知价格与实际价格之间的差异可能导致需求估计的偏差，因此需要重新审视现有的经济模型。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在基于完全理性的消费者行为模型，例如常数弹性替代（CES）模型，来估计需求参数。然而，这些模型假设消费者对所有价格都给予充分注意，未考虑有限注意力的影响。其次，虽然一些研究尝试引入注意力因素，但仍缺乏对有限注意力如何具体影响弹性估计的深入分析，导致在实际应用中存在识别失败的问题。<br><br>3. 【提出了什么创新的方法】  <br>论文提出了一种新的稀疏最大化模型，将CES需求嵌入其中，以反映消费者在有限注意力下的行为。通过引入注意力权重，论文展示了在这种框架下，市场的均衡价格和支出份额与理性市场的表现是观察上等价的。此外，论文还利用最新的协方差限制估计方法，探讨了在有限注意力条件下如何从市场数据中恢复结构信息。<br><br>4. 【文章缺点】  <br>首先，论文的模型假设可能过于简化，未能充分考虑其他可能影响消费者行为的因素，如心理偏差或社会影响。其次，虽然提出了新的估计方法，但在实际应用中如何处理数据的稀疏性和噪声仍然是一个挑战，可能影响结果的稳健性。<br><br>5. 【类似工作】  <br>类似的工作包括Gabaix（2014）关于有限注意力的研究，该研究探讨了消费者如何在有限注意力下做出决策。此外，Soderbery（2015）对Feenstra（1994）协方差限制估计方法的改进也为本研究提供了
-
-</details></td></tr>
-</tbody>
-</table>
-
-</details>
-
-<details>
-<summary><a id='date-20260722'></a>2026-07-22（8篇论文）</summary>
-
-<table>
-<thead>
-<tr><th>Title</th><th>Author</th><th>PDF</th><th>Code</th><th>Relevance</th></tr>
-</thead>
-<tbody>
-<tr><td>Observable Matrix Dynamics of Stocks</td><td>Igor Halperin</td><td><a href="https://arxiv.org/pdf/2607.19005">PDF</a></td><td>-</td><td>★★★★★</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★★<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.19005">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于通过Observable Matrix Dynamics (OMD)方法监测复杂非线性系统的时间发展，尤其是在金融市场的危机时刻。第一，OMD方法能够揭示市场在危机期间的相关性结构变化，帮助理解市场动态。第二，研究者希望通过分析S&P 500在不同危机时期的表现，识别出驱动市场波动的关键因素和股票，从而为投资决策提供更好的依据。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在随机矩阵理论在金融相关性矩阵中的应用，尤其是通过特征值谱分析市场结构。然而，这些研究通常只针对单一的相关性矩阵或缓慢变化的矩阵，未能充分考虑市场在动态变化中的复杂性。此外，现有的研究缺乏对市场在不同危机时期的动态演变进行系统的分析，未能揭示出市场在危机前后的不同表现。<br><br>3. 【提出了什么创新的方法】  <br>论文提出了OMD方法，通过固定大小的距离矩阵来表示市场的动态演变。第一，OMD方法能够将复杂的高维系统动态映射到一个固定大小的对象上，从而简化分析过程。第二，论文引入了基于距离矩阵的谱分析方法，能够识别出潜在的低维子流形，并跟踪其随时间的变化。这种方法不仅适用于金融市场，也具有广泛的应用潜力。<br><br>4. 【文章缺点】  <br>首先，OMD方法的复杂性可能导致在实际应用中难以实现，尤其是在数据处理和模型构建方面。其次，尽管论文对危机时期的市场动态进行了分析，但对非危机时期的市场行为缺乏深入探讨，可能影响结果的普适性。<br><br>5. 【类似工作】  <br>类似的工作包括Potters和Bouchaud对随机矩阵理论在金融中的应用研究，以及对金融市场相关性矩阵的动态分析。这些研究为理解市场结构提供了基础，但未能结合OMD方法的动态视角。<br><br>6. 【相关性评分】  <br>分数：5分
-
-</details></td></tr>
-<tr><td>Denoising Subordinated Probabilistic Models: Diffusion with a Tempered-Stable Volatility Clock, and What the Noise Mechanism Actually Controls</td><td>Junchi Shen</td><td><a href="https://arxiv.org/pdf/2607.19218">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.19218">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：working draft, code available from the author<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于解决金融时间序列数据中存在的噪声问题，尤其是传统的高斯噪声模型无法有效捕捉金融数据的特征，如波动聚集现象。其次，作者希望通过引入重尾扩展的去噪扩散模型，来更好地表示金融数据的动态特性，从而提高模型的准确性和实用性。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要集中在用重尾噪声替代高斯噪声，以更好地捕捉金融数据的特征，但大多数模型（如DLPM和Student-tt EDM）要么缺乏动态性，要么无法有效表示波动聚集现象。此外，虽然已有研究探讨了混合变量的影响，但缺乏对经济时间流动的持久性建模，未能充分利用金融经济学的理论成果。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了去噪从属概率模型（DSPM），其混合向量是由温度稳定的AR(1)链驱动的，能够有效捕捉金融数据的波动特性。此外，论文还证明了链参数与超峰度和平方噪声自相关之间的闭式关系，从而实现了精确的标定和可验证的可行性界限。<br><br>4. 【文章缺点】  <br>首先，尽管提出了新的模型，但在实际应用中可能面临计算复杂性的问题，尤其是在大规模数据集上。其次，模型的验证主要依赖于控制实验，缺乏对不同市场条件下模型表现的广泛实证分析。<br><br>5. 【类似工作】  <br>类似的工作包括Shariatian等人的去噪Lévy概率模型（DLPM），以及Pandey等人的多元Student-tt噪声模型（Student-tt EDM），这两者都试图通过不同的噪声机制来改进金融数据建模。<br><br>6. 【相关性评分】  <br>分数：4分
-
-</details></td></tr>
-<tr><td>Cloud failure and cyber insurance: calibration of stress scenarios and diversification</td><td>Olivier Lopez(CREST)</td><td><a href="https://arxiv.org/pdf/2607.18815">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.18815">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于，随着网络保险市场的扩展，面临着可能同时影响大量投保人的积累事件的威胁，尤其是云服务中断的风险。其次，尽管迄今为止此类灾难事件较少，但网络风险的特性使得其发生的可能性不容忽视，因此需要有效的压力测试工具来评估保险投资组合在危机中的承受能力。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在云服务中断的根本原因和影响上，例如，Li等（2013）对公共云服务中断进行了早期调查，揭示了云中断对用户的重大关注。然而，现有文献对如何系统性地评估和建模云中断对网络保险投资组合的影响缺乏深入探讨，尤其是在应对大规模云中断的情境下。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了一种新的框架，用于建模和校准云中断场景，并测量网络保险投资组合的多样化程度。此外，论文展示了这种多样化如何有效保护投资组合免受积累风险，并提供了降低投资组合对云中断场景脆弱性的承保指南。<br><br>4. 【文章缺点】  <br>首先，论文可能在数据的实证验证方面存在不足，缺乏对实际案例的深入分析。其次，提出的方法在复杂性和实施难度上可能对保险公司造成挑战，尤其是在资源有限的情况下。<br><br>5. 【类似工作】  <br>类似的工作包括Wang等（2021）对现代云平台服务依赖关系的研究，以及EIOPA对网络保险压力测试框架的指导。这些研究为理解云中断的风险提供了基础，但未能系统性地结合保险投资组合的多样化策略。<br><br>6. 【相关性评分】  <br>分数：4分
-
-</details></td></tr>
-<tr><td>Pathwise Portfolio Theory and Market Viability</td><td>Ioannis Karatzas</td><td><a href="https://arxiv.org/pdf/2607.18705">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.18705">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于探讨在没有概率考虑的情况下，如何在路径导向的框架内发展投资组合理论，特别是关于市场可行性和增长最优性的概念。其次，作者希望识别经典投资组合理论中哪些部分是路径导向的，哪些部分则依赖于半鞅的假设，从而为投资组合理论提供新的视角。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的工作主要集中在半鞅框架内，通过引入局部鞅和超鞅的概念来探讨市场可行性和增长最优性。然而，这些研究通常依赖于概率测度和条件期望，限制了其适用范围。现有文献在没有概率的情况下，缺乏对路径导向投资组合理论的深入探讨。<br><br>3. 【提出了什么创新的方法】  <br>论文提出了一种新的路径导向方法，通过适当的趋势提取器和相关的残差路径来替代传统的半鞅分解。此外，作者应用了Föllmer的路径导向积分和微积分，从而在没有概率测度的情况下，建立了增长-货币和可行性-有界性之间的等价关系。<br><br>4. 【文章缺点】  <br>首先，论文的理论框架可能在实际应用中面临挑战，因为缺乏概率的考虑可能限制了其在复杂市场环境中的适用性。其次，路径导向的方法可能对初学者来说较为抽象，理解和应用这些新概念需要较高的数学基础。<br><br>5. 【类似工作】  <br>类似的工作包括Schied等人（2018）和Karatzas与Kim（2020）对路径导向投资组合生成的研究，以及Allan等人（2023）对粗路径扩展的探讨，这些研究都在一定程度上推动了路径导向理论的发展。<br><br>6. 【相关性评分】  <br>分数：4分
-
-</details></td></tr>
-<tr><td>Dead Reckoning: Counting Your Customers Who Never Say Goodbye</td><td>Karl T. Ulrich</td><td><a href="https://arxiv.org/pdf/2607.18623">PDF</a></td><td>-</td><td>★★★☆☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★☆☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.18623">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   1) 随着竞争加剧，企业需要更好地理解客户流失的原因，以制定有效的留存策略。  <br>   2) 传统的客户流失预测模型往往忽视了客户的潜在价值和行为模式，导致预测结果不够准确。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   1) 前人的研究主要集中在使用统计模型和机器学习方法来预测客户流失，但往往未能考虑到客户的长期价值和多样化行为。  <br>   2) 现有文献缺乏对客户流失后果的全面分析，尤其是在不同市场环境下的适用性和有效性。<br><br>3. 【提出了什么创新的方法】  <br>   1) 本文提出了一种新的客户流失预测模型，结合了客户行为数据和生命周期价值分析。  <br>   2) 通过引入动态权重机制，模型能够更好地适应不同客户群体的特征和需求。<br><br>4. 【文章缺点】  <br>   1) 由于缺乏实证数据支持，模型的实际应用效果尚未得到充分验证。  <br>   2) 文章未能深入探讨模型在不同市场条件下的适应性，可能限制了其普遍适用性。<br><br>5. 【类似工作】  <br>   1) Smith et al. (2020) 提出了基于机器学习的客户流失预测模型，侧重于客户行为分析。  <br>   2) Johnson & Lee (2021) 研究了客户生命周期价值对流失预测的影响，提出了相应的改进策略。<br><br>6. 【相关性评分】  <br>分数：3分
-
-</details></td></tr>
-<tr><td>Pricing options on illiquid assets using liquid market benchmarks: an application to energy markets</td><td>Federico Aluigi</td><td><a href="https://arxiv.org/pdf/2607.19030">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.19030">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   该论文的动机在于解决在流动性不足的市场中，如何有效构建期权的隐含波动率曲面，尤其是在能源市场中，Gasoil期权市场流动性较差，直接从其期权报价中提取隐含波动率面临困难。其次，论文旨在利用与Gasoil市场紧密相关的流动性较高的Brent期权市场的信息，来改善Gasoil期权定价的准确性和稳定性。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的研究主要集中在流动性较好的市场中，通过期权报价直接推导隐含波动率曲面，采用插值、平滑和无套利约束等方法。然而，在流动性不足的市场中，期权报价稀疏且不规则，导致直接校准不稳定，模型不确定性显著增加，现有文献对如何有效利用流动性较好的市场信息来改善流动性不足市场的定价问题关注不足。<br><br>3. 【提出了什么创新的方法】  <br>   本文提出了一种联合建模Brent和Gasoil期货价格的相关Bachelier局部波动率模型，通过数据驱动的方法估计Gasoil-Brent现货波动率差，并计算隐含波动率修正，将Brent隐含波动率映射到Gasoil隐含波动率。此外，论文通过蒙特卡洛模拟验证了所提出方法的有效性，显示其隐含波动率与观察到的Gasoil隐含波动率高度吻合。<br><br>4. 【文章缺点】  <br>   文章的一个缺点是模型的复杂性可能导致在实际应用中计算成本较高，尤其是在需要处理大量历史数据时。另一个缺点是，尽管提出的方法在理论上有效，但在不同市场条件下的适应性和鲁棒性仍需进一步验证。<br><br>5. 【类似工作】  <br>   类似的工作包括对能源衍生品的联合建模研究，特别是针对原油和精炼产品价格联动的研究。此外，还有关于使用流动性市场信息来定价非
-
-</details></td></tr>
-<tr><td>Mixing-Law Uncertainty in Multivariate Normal Mean-Variance Mixtures: Semi-parametric Estimation and Robust Cumulative-Prospect Decisions</td><td>Nuerxiati Abudurexiti</td><td><a href="https://arxiv.org/pdf/2607.18813">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.18813">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   该论文的动机在于探讨多元正态均值-方差混合模型中混合变量的分布特性，尤其是在面对模型不确定性时如何进行有效的决策。首先，传统的参数模型在处理混合变量时可能无法充分捕捉到数据的复杂性，因此需要一种更灵活的估计方法。其次，考虑到投资组合决策中的非线性偏好，理解和量化这种不确定性对于优化投资组合的表现至关重要。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的研究主要集中在使用参数化模型来估计混合变量的分布，并通过EM算法等方法进行参数估计。然而，这些方法往往假设混合分布是已知的，未能充分考虑模型选择的不确定性。其次，尽管已有研究探讨了基于最大似然估计的模型比较，但在面对多个相似模型时，如何有效地识别和利用这些模型仍然存在空白。<br><br>3. 【提出了什么创新的方法】  <br>   本文提出了一种新的半参数估计方法，通过比较六种不同的参数混合法与网格非参数最大似然估计器，来识别和量化模型的不确定性。此外，论文引入了基于累积前景理论的决策框架，利用NMVM投影来最大化对应的前景价值函数的下包络，从而实现对投资组合的稳健优化。<br><br>4. 【文章缺点】  <br>   文章的一个缺点是，尽管提出了多种混合模型，但在实际应用中仍然可能面临模型选择的复杂性，尤其是在数据量较小的情况下。另一个缺点是，虽然使用了区间分支界限程序来获得全局最优解，但该方法的计算复杂度可能在高维情况下显著增加，从而影响其实际应用的可行性。<br><br>5. 【类似工作】  <br>   类似的工作包括基于混合模型的风险管理研究，如使用广义超几何模型进行投资组合优化的研究，以及在金融时间序列分析中应用的非参数估计方法。这些研究都
-
-</details></td></tr>
-<tr><td>Gaussian Boson Sampling for Asset Clustering in Statistical Arbitrage Portfolios</td><td>Dayne Marcus Lopena</td><td><a href="https://arxiv.org/pdf/2607.19279">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.19279">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   该论文的动机在于利用Gaussian Boson Sampling（GBS）技术来改善统计套利组合中的资产聚类效率。首先，传统的聚类算法在处理大规模资产数据时可能面临计算复杂性和效率问题，而GBS提供了一种量子计算的解决方案，能够在高波动市场环境中生成更优的投资组合。其次，随着量子计算技术的进步，探索其在金融领域的应用，尤其是在资产定价和组合优化方面，具有重要的理论和实践意义。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的工作主要集中在使用经典算法进行资产聚类，例如谱聚类和SPONGE等，这些方法在识别共动资产方面建立了稳健的基准。然而，这些经典方法在处理复杂的市场动态时可能无法捕捉到潜在的市场结构特征，因此存在一定的局限性。此外，尽管已有研究探讨了量子计算在金融中的应用，但针对GBS在资产聚类中的具体应用仍然较少，未能充分挖掘其潜在优势。<br><br>3. 【提出了什么创新的方法】  <br>   本文提出了两种创新的量子聚类算法：GBS Boost和GBS Roots，旨在通过GBS技术实现更高效的资产聚类。这些方法通过将S&P 500的残差相关数据映射为GBS兼容的邻接矩阵，利用量子计算的优势来生成动态的市场中性投资组合。此外，研究还展示了GBS在高波动市场环境下的优越性，能够有效隔离市场的结构性特征。<br><br>4. 【文章缺点】  <br>   文章的一个缺点是，尽管GBS在理论上具有优势，但在实际应用中可能面临量子设备的可用性和稳定性问题，这可能限制其广泛应用。另一个缺点是，文章主要集中在S&P 500的数据集上，缺乏对其他市场或资产类别的验证，可能影响结果的普适性。<br><br>5. 【类似工作】  <br>   类似的工作包括Stamatopoulos等人（2020）对量子计算
 
 </details></td></tr>
 </tbody>
