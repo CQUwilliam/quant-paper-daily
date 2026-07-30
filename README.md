@@ -1,16 +1,105 @@
-# arXiv 量化金融领域论文汇总（共47篇）
+# arXiv 量化金融领域论文汇总（共53篇）
 
 > 说明：仅显示最近五天数据，当天论文默认展开，其他日期点击标题可展开/折叠
 > 相关性评分：基于LLM对量化金融领域的相关性评定（1-5分，★越多相关性越高）
 
 ## 日期导航
+- [2026-07-30（13篇论文）](#date-20260730)
 - [2026-07-29（10篇论文）](#date-20260729)
 - [2026-07-28（14篇论文）](#date-20260728)
 - [2026-07-27（6篇论文）](#date-20260727)
 - [2026-07-24（10篇论文）](#date-20260724)
-- [2026-07-23（7篇论文）](#date-20260723)
 
-## <a id='date-20260729'></a>2026-07-29（10篇论文）
+## <a id='date-20260730'></a>2026-07-30（13篇论文）
+
+<table>
+<thead>
+<tr><th>Title</th><th>Author</th><th>PDF</th><th>Code</th><th>Relevance</th></tr>
+</thead>
+<tbody>
+<tr><td>How Divorce Reforms Induced Married Couples to Supply More Labor</td><td>Yedilkhan Baigabulov</td><td><a href="https://arxiv.org/pdf/2607.27142">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.27142">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：. JEL codes: J12, J22, D14, K36, D15<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：868139438】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Where does the criticality live? Early-warning signals are event-heterogeneous across seven crypto-perpetual liquidation cascades</td><td>Ramon Marc Garcia Seuma</td><td><a href="https://arxiv.org/pdf/2607.27070">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.27070">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：868139438】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Herding, Momentum, and Reversal in China&#39;s A-Share Market: An Agent-Based Network Model with Information Diffusion</td><td>Jiahao Weng</td><td><a href="https://arxiv.org/pdf/2607.27063">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.27063">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：868139438】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Multi-Asset Liquidation in Dark Pools with Adverse Selection</td><td>Guanxing Fu</td><td><a href="https://arxiv.org/pdf/2607.27019">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.27019">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：868139438】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>No Data Is Not No Risk: Visibility Aware Graph-Based Inference of Business Conduct Risk</td><td>Tsuyoshi Iwata</td><td><a href="https://arxiv.org/pdf/2607.26859">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.26859">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：868139438】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Multi-Currency AMMs for Decentralized FOREX Markets: Feasibility &amp; Optimal Design</td><td>Reina Ke Xin Li</td><td><a href="https://arxiv.org/pdf/2607.26405">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.26405">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：868139438】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>OpenMarket: A Synchronized Polymarket-Binance Dataset for High-Frequency Prediction-Market Research</td><td>Gregory Young</td><td><a href="https://arxiv.org/pdf/2607.26245">PDF</a></td><td><a href="https://huggingface.co/datasets/gregyoung14/openmarket-btc-polymarket">code1</a> | <a href="https://github.com/gregyoung14/openmarket">code2</a></td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.26245">PDF</a><br><strong>代码</strong>：<a href="https://huggingface.co/datasets/gregyoung14/openmarket-btc-polymarket">code1</a> | <a href="https://github.com/gregyoung14/openmarket">code2</a><br><strong>备注</strong>：. Dataset:this https URL. Code:this https URL(tag v0.5.2)<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：868139438】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Bitcoin Runs on a Clock: Why Every Price Indicator Dies and the Halving Clock Doesn&#39;t</td><td>Josh Molnar</td><td><a href="https://arxiv.org/pdf/2607.26188">PDF</a></td><td><a href="https://github.com/BitcoinDaily/bitcoin-runs-on-a-clock">code1</a></td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.26188">PDF</a><br><strong>代码</strong>：<a href="https://github.com/BitcoinDaily/bitcoin-runs-on-a-clock">code1</a><br><strong>备注</strong>：. Code and data:this https URL<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：868139438】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>The Human Utility Factor: A Computable Welfare Metric That Reframes AI Governance as a Constrained Optimisation Problem</td><td>Sivasathivel Kandasamy</td><td><a href="https://arxiv.org/pdf/2607.26068">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.26068">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：868139438】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Inverse Learning of Latent Risk-Neutral Densities from Irregular Option Quotes</td><td>Lennon J. Shikhman</td><td><a href="https://arxiv.org/pdf/2607.27188">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.27188">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：. Submitted to the 7th ACM International Conference on AI in Finance (ICAIF 2026)<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：868139438】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Rainfall is rough</td><td>Thomas Deschatre</td><td><a href="https://arxiv.org/pdf/2607.27099">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.27099">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：868139438】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Forcing and duality-corrected contracts for volatility control</td><td>Alessandro Chiusolo</td><td><a href="https://arxiv.org/pdf/2607.27039">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.27039">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：868139438】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Crossing-Free Probabilistic K-Line Forecasts Without Retraining</td><td>Runyao Yu</td><td><a href="https://arxiv.org/pdf/2607.26792">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.26792">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效，新版本免费 ApiKey 每日限额内无输入 token 限制！请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-KaQ****hsdA)【如果您遇到问题，欢迎加入QQ群咨询：868139438】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+</tbody>
+</table>
+
+<details>
+<summary><a id='date-20260729'></a>2026-07-29（10篇论文）</summary>
 
 <table>
 <thead>
@@ -79,6 +168,8 @@
 </details></td></tr>
 </tbody>
 </table>
+
+</details>
 
 <details>
 <summary><a id='date-20260728'></a>2026-07-28（14篇论文）</summary>
@@ -292,61 +383,6 @@
 <tr><td colspan="5"><details><summary><strong>总结</strong></summary>
 
 <strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.21534">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   该论文的动机在于探讨生成性人工智能（GenAI）在高等教育中的普及是否导致学生将认知努力转移给AI，从而在没有真正学习的情况下获得高分。特别是，研究者关注GenAI对学生成绩和满意度的影响，尤其是在那些依赖家庭作业和论文等评估方式的课程中。  <br>   其次，论文旨在验证“GenAI替代假设”，即如果该假设成立，GenAI的使用可能会削弱评估的信号价值，并影响学生对学科的兴趣和理解。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的研究主要集中在GenAI对学生学习和表现的潜在影响上，提出了GenAI替代假设，认为学生可能依赖GenAI来提高评估成绩，而不是通过自身努力学习。然而，现有文献对GenAI对学生满意度的影响缺乏系统性研究，尤其是在大规模大学环境中的实证数据支持。  <br>   此外，尽管有研究探讨了评估结构与学生学习之间的关系，但对GenAI在不同类型课程中的具体影响仍未得到充分验证，特别是在疫情背景下的变化。<br><br>3. 【提出了什么创新的方法】  <br>   本文采用了一种创新的方法，通过分析来自一所大型美国大学的课程大纲和行政数据，使用人类验证的LLM管道提取课程评估类型，以衡量课程的GenAI易感性。  <br>   研究还使用了差异中的差异设计，比较ChatGPT发布前后不同课程的结果，并考虑了COVID-19疫情的影响。这种方法为理解GenAI在高等教育中的作用提供了新的实证依据。<br><br>4. 【文章缺点】  <br>   文章的一个缺点是，尽管使用了大规模的数据集，但可能无法完全捕捉到所有潜在的变量和影响因素，特别是在评估结构和学生学习动机方面的复杂性。  <br>   另一个缺点是，研究结果显示GenAI对成绩和满意度的影响不显著，可能会引发对研究设计和数据分析方法的质疑，尤其是在
-
-</details></td></tr>
-</tbody>
-</table>
-
-</details>
-
-<details>
-<summary><a id='date-20260723'></a>2026-07-23（7篇论文）</summary>
-
-<table>
-<thead>
-<tr><th>Title</th><th>Author</th><th>PDF</th><th>Code</th><th>Relevance</th></tr>
-</thead>
-<tbody>
-<tr><td>The Science and Practice of Trend-Following Systems</td><td>Artur Sepp</td><td><a href="https://arxiv.org/pdf/2607.19497">PDF</a></td><td>-</td><td>★★★★★</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★★<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.19497">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>   本文的动机在于提供一个统一的趋势跟随（TF）系统设计方法，并对其进行分类，以便更好地理解和应用这些系统。其次，随着量化投资策略的普及，研究TF系统的盈利能力及其在不同市场条件下的表现变得尤为重要，以帮助投资者优化其投资组合并提高风险调整后的收益。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>   前人的研究主要集中在趋势跟随系统的盈利能力和风险管理上，例如Lintner（1983）和Hurst等（2013）的研究提供了TF系统的有效性证据。然而，现有文献对TF系统在不同市场状态下的表现和收益来源的深入分析仍然不足，尤其是在考虑长短期自相关和波动率的情况下。<br><br>3. 【提出了什么创新的方法】  <br>   本文提出了一种新的分析框架，结合了自相关、漂移和收益的波动率归一化，推导出TF系统的闭式夏普比率。此外，文章还通过蒙特卡罗实验验证了理论结果，并展示了TF收益的正偏态特征在不同模型假设下的结构性。<br><br>4. 【文章缺点】  <br>   本文的一个缺点是对某些假设条件的依赖可能限制了结果的普适性，尤其是在市场极端波动的情况下。另一个缺点是尽管进行了理论推导，但缺乏对实际交易成本和市场冲击的全面考虑，这可能影响TF系统的实际表现。<br><br>5. 【类似工作】  <br>   类似的工作包括Hurst等（2013）对TF系统的实证分析，以及Dao等（2017）对量化投资策略的研究，这些研究均探讨了TF系统的盈利能力和市场适应性。<br><br>6. 【相关性评分】  <br>   分数：5分
-
-</details></td></tr>
-<tr><td>Model Risk via Signature-Induced Optimal Transport</td><td>Tomoyuki Ichiba</td><td><a href="https://arxiv.org/pdf/2607.20343">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.20343">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于解决金融领域中路径依赖函数的模型风险问题，尤其是在评估期望或尾部概率时，模型的不确定性可能导致显著的估值差异。其次，传统方法在处理路径法则的歧义时往往不足以捕捉复杂的路径特征，因此需要一个更为精确的框架来量化和管理这种风险。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在通过设定基线模型和模糊集来评估模型风险，然而，这些方法往往未能充分考虑路径法则之间的微妙差异，导致在某些情况下的风险评估不准确。其次，现有的模型在处理复杂的路径依赖性时，缺乏有效的工具来量化路径法则的差异，尤其是在金融和保险领域的应用中。<br><br>3. 【提出了什么创新的方法】  <br>本文提出了一种基于签名的最优传输框架，通过在共同耦合下对路径法则的模糊性进行因子分解，从而更精确地量化路径空间模型风险。此外，论文还引入了预算感知的稀疏签名替代方法，以应对更一般的路径函数，提供了一种新的思路来处理模型不确定性。<br><br>4. 【文章缺点】  <br>首先，尽管提出的框架在理论上具有创新性，但其在实际应用中的复杂性可能限制了其广泛采用。其次，论文中对某些假设条件的依赖可能会影响结果的普适性，尤其是在不同市场环境下的适用性尚需进一步验证。<br><br>5. 【类似工作】  <br>类似的工作包括Chevyrev和Kormilitzin（2026）对路径签名的研究，以及Bayer等（2026）在路径法则建模中的应用。这些研究为理解路径依赖性提供了基础，但在模型风险的量化方面仍存在不足。<br><br>6. 【相关性评分】  <br>分数：4分
-
-</details></td></tr>
-<tr><td>Quantum Kernels and the Cross-Section of Stock Returns: Anatomy of a Vanishing Advantage</td><td>Junchi Shen</td><td><a href="https://arxiv.org/pdf/2607.20168">PDF</a></td><td>-</td><td>★★★★☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.20168">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：. Code and data pipeline available on request<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于探讨量子核是否能够改善股票收益的横截面预测，特别是在中国A股市场的应用。作者希望通过对比量子核与经典RBF核的表现，揭示量子计算在金融预测中的潜在优势。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究在量子核的金融预测任务上取得了一些积极结果，但大多数研究存在短样本评估、回顾性组建样本和与基准模型（通常是小型神经网络）的比较等问题，这使得结果的可靠性受到质疑。此外，缺乏能够抵御自身破坏的金融研究，未能提供足够的统计能力来解决效果大小的问题。<br><br>3. 【提出了什么创新的方法】  <br>本文提出了一种新的评估框架，通过控制实验设计（如核交换控制、预算均等比较和点时间宇宙）来评估量子核的实际效果。此外，作者使用了量子核岭回归（QKRR）来预测股票收益，并引入了一个旋转的特征子集，增强了模型的灵活性。<br><br>4. 【文章缺点】  <br>首先，尽管提出了创新的方法，但研究的结果显示量子核并未显著优于经典模型，可能限制了其实际应用的潜力。其次，文章的评估主要集中在特定的市场（中国A股），可能缺乏对其他市场的普适性验证。<br><br>5. 【类似工作】  <br>类似的工作包括Gu等（2020）和Leippold等（2022）关于灵活函数逼近在资产定价中的应用，以及Havlíček等（2019）对量子核在金融预测中的初步探索。<br><br>6. 【相关性评分】  <br>分数：4分
-
-</details></td></tr>
-<tr><td>Predictive Extrema, Unprofitable Policies: An AI-Assisted Audit of Candle-Based Binance Spot Timing Models</td><td>Ayoub Jadouli</td><td><a href="https://arxiv.org/pdf/2607.19453">PDF</a></td><td><a href="https://github.com/AyoubJadouli/Quantbot-Research-Framework">code1</a></td><td>★★★★☆</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：★★★★☆<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.19453">PDF</a><br><strong>代码</strong>：<a href="https://github.com/AyoubJadouli/Quantbot-Research-Framework">code1</a><br><strong>备注</strong>：. Simulation-only negative empirical study and human-supervised AI-assisted evidence audit. No live trading or investment advice. Code and available artifacts:this https URL<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于审计基于蜡烛图的机器学习模型是否能够将对加密货币极值或短期结果的预测转化为正向的交易策略，尤其是在考虑到交易成本的情况下。其次，研究旨在揭示在高波动性市场中，预测与实际交易决策之间的差异，强调了在加密资产交易中，预测的经济价值如何受到多种因素的影响。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究在不同的市场条件下报告了加密货币的预测或交易收益，提出了多种机器学习方法来提高预测准确性。然而，这些研究往往未能考虑交易成本对策略有效性的影响，导致结果可能过于乐观。其次，尽管有一些研究探讨了预测与决策之间的关系，但缺乏对具体策略在实际应用中表现的深入审计和验证。<br><br>3. 【提出了什么创新的方法】  <br>本研究提出了一种基于蜡烛图的审计方法，系统性地比较了预测与交易策略的有效性，强调了在审计过程中考虑交易成本的重要性。此外，研究还引入了人工智能代理来支持文献检索和结果验证，提升了研究的严谨性。<br><br>4. 【文章缺点】  <br>该研究的一个缺点是其结果主要基于特定的市场条件和假设，可能无法推广到其他市场环境中。另一个缺点是，尽管进行了详细的审计，但仍然缺乏对其他潜在模型或策略的比较，限制了结论的广泛适用性。<br><br>5. 【类似工作】  <br>类似的工作包括一项使用XGBoost和LSTM等方法评估BTC-USDT的研究，该研究探讨了交易成本对策略收益的影响。另一个相关研究则关注于加密货币的深度强化学习，分析了回测盈利能力与选择风险之间的关系。<br><br>6. 【相关性评分】  <br>分数：4分
-
-</details></td></tr>
-<tr><td>Licensing and Innovation Regimes in Pharmaceutical R&amp;D</td><td>Michele Liberatore</td><td><a href="https://arxiv.org/pdf/2607.20365">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.20365">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于探讨许可协议如何影响制药研发中的创新分配，特别是在不同类型的创新（增量创新与新颖创新）之间的动态平衡。首先，制药行业的技术市场日益依赖许可协议，理解其对创新效率的影响至关重要。其次，尽管已有研究表明许可可能提高成功率，但在新颖创新中却存在信息不对称和市场失灵的现象，这促使我们深入分析这些现象的内在机制。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在技术市场的效率及其信息摩擦问题上，指出了不良选择可能导致低质量技术的过度市场化。然而，现有文献对增量创新和新颖创新之间的动态差异缺乏深入探讨，尤其是在如何影响市场表现方面。此外，虽然一些实证研究显示了许可项目的高成功率，但对新颖项目的市场表现及其潜在的市场失灵仍缺乏系统的解释。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了一种新模型，区分增量创新和新颖创新，分析其在技术市场中的不同动态。通过使用产品级数据和双重机器学习方法，论文验证了许可对成功概率和收益均等化的影响。此外，论文通过外生管道冲击对许可进行工具变量化，确认了增量和新颖项目在竞争风险-收益权衡中的不同表现。<br><br>4. 【文章缺点】  <br>首先，模型的复杂性可能限制了其在其他行业或不同市场条件下的适用性，需谨慎推广。其次，尽管使用了双重机器学习方法，但数据的选择和模型假设仍可能影响结果的稳健性，特别是在新颖创新的市场表现分析中。<br><br>5. 【类似工作】  <br>类似的工作包括Arora等（2004）对技术市场的研究，探讨了许可协议对创新效率的影响，以及Pisano（1997）对工业组织中技术市场选择失真问题的分析。这些研究为本论文提供了理论基础，但未能深入探讨增量与新颖创新之间的差异
-
-</details></td></tr>
-<tr><td>Retail Trader&#39;s Ruin: An Anatomy of Popular Signal Failure</td><td>Adam Darmanin</td><td><a href="https://arxiv.org/pdf/2607.20093">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.20093">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：Initial draft. . Working paper; not externally peer reviewed<br><br>1. 【论文的motivation是什么】  <br>本论文的动机在于揭示零售交易者常用的技术信号家族（如趋势、振荡器、蜡烛图、成交量和日历规则）是否能够提供可持续的经济优势。研究者希望通过系统的实证分析，评估这些信号在实际交易中的有效性和生存能力。其次，论文旨在填补现有文献中对统计边际、经济可实施性和有限资金生存能力三者结合的研究空白，以提供更全面的理解。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究表明，许多技术信号在未进行多重检验修正时确实存在统计信号，但一旦控制数据挖掘，这种信号往往会消失。此外，现实交易成本会侵蚀存活的优势。然而，现有文献未能将统计边际、经济可行性和资金生存能力这三者整合到同一测试中，导致对零售交易信号的有效性缺乏全面的评估。<br><br>3. 【提出了什么创新的方法】  <br>本论文提出了三项创新的方法：(i) 结合统计边际、经济可实施性和资金生存能力的联合门槛测试，系统评估信号家族的有效性；(ii) 采用单侧排除框架来区分经济可行性，避免将非显著估计视为无效证据；(iii) 引入动量校准基准，通过与测试信号家族相同的流程进行比较，以增强研究的严谨性。<br><br>4. 【文章缺点】  <br>文章的一个缺点是样本规模可能不足，导致某些信号的置信区间过宽，从而无法得出明确的结论。另一个缺点是对不同市场环境下的信号有效性缺乏深入探讨，可能限制了研究结果的普适性。<br><br>5. 【类似工作】  <br>类似的工作包括Brock等人（1992）关于技术信号的早期研究，探讨了多种信号的统计有效性；以及Thurner等人（2012）对�
-
-</details></td></tr>
-<tr><td>Bounded Attention and Attenuated Elasticities</td><td>Tingmingke Lu</td><td><a href="https://arxiv.org/pdf/2607.19929">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2607.19929">PDF</a><br><strong>代码</strong>：-<br><br>1. 【论文的motivation是什么】  <br>该论文的动机在于探讨有限注意力如何影响替代弹性的结构估计。首先，随着消费者在购买时对价格变化的注意力有限，传统的需求估计方法可能无法准确反映消费者的真实行为，从而影响经济政策的制定和市场分析。其次，政府对价格感知的监管措施表明，消费者的感知价格与实际价格之间的差异可能导致需求估计的偏差，因此需要重新审视现有的经济模型。<br><br>2. 【前人的工作如何解决该问题，存在哪些空白】  <br>前人的研究主要集中在基于完全理性的消费者行为模型，例如常数弹性替代（CES）模型，来估计需求参数。然而，这些模型假设消费者对所有价格都给予充分注意，未考虑有限注意力的影响。其次，虽然一些研究尝试引入注意力因素，但仍缺乏对有限注意力如何具体影响弹性估计的深入分析，导致在实际应用中存在识别失败的问题。<br><br>3. 【提出了什么创新的方法】  <br>论文提出了一种新的稀疏最大化模型，将CES需求嵌入其中，以反映消费者在有限注意力下的行为。通过引入注意力权重，论文展示了在这种框架下，市场的均衡价格和支出份额与理性市场的表现是观察上等价的。此外，论文还利用最新的协方差限制估计方法，探讨了在有限注意力条件下如何从市场数据中恢复结构信息。<br><br>4. 【文章缺点】  <br>首先，论文的模型假设可能过于简化，未能充分考虑其他可能影响消费者行为的因素，如心理偏差或社会影响。其次，虽然提出了新的估计方法，但在实际应用中如何处理数据的稀疏性和噪声仍然是一个挑战，可能影响结果的稳健性。<br><br>5. 【类似工作】  <br>类似的工作包括Gabaix（2014）关于有限注意力的研究，该研究探讨了消费者如何在有限注意力下做出决策。此外，Soderbery（2015）对Feenstra（1994）协方差限制估计方法的改进也为本研究提供了
 
 </details></td></tr>
 </tbody>
