@@ -1,3 +1,5 @@
+
+
 # quant-paper-daily
 
 这个项目仿照 `robot-paper-daily` 制作，用于抓取 arXiv `q-fin` 分类下的近期论文，调用 LLM 生成中文总结和相关性评分，并输出：
@@ -79,7 +81,7 @@ python -m http.server 8000
 ### Secrets
 
 - `LLM_API_KEY`
-- `GIT_TOKEN`
+- `GITHUB_TOKEN`
 
 ### Variables
 
