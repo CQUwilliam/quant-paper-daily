@@ -1,16 +1,93 @@
-# arXiv 量化金融领域论文汇总（共64篇）
+# arXiv 量化金融领域论文汇总（共66篇）
 
 > 说明：仅显示最近五天数据，当天论文默认展开，其他日期点击标题可展开/折叠
 > 相关性评分：基于LLM对量化金融领域的相关性评定（1-5分，★越多相关性越高）
 
 ## 日期导航
+- [2026-10-26（11篇论文）](#date-20261026)
 - [2026-10-25（15篇论文）](#date-20261025)
 - [2026-10-24（15篇论文）](#date-20261024)
 - [2026-10-23（15篇论文）](#date-20261023)
 - [2026-10-22（10篇论文）](#date-20261022)
-- [2026-10-21（9篇论文）](#date-20261021)
 
-## <a id='date-20261025'></a>2026-10-25（15篇论文）
+## <a id='date-20261026'></a>2026-10-26（11篇论文）
+
+<table>
+<thead>
+<tr><th>Title</th><th>Author</th><th>PDF</th><th>Code</th><th>Relevance</th></tr>
+</thead>
+<tbody>
+<tr><td>On the continuity of conditional distributions and stratification for derivative pricing</td><td>Aleksandar Arandjelovic</td><td><a href="https://arxiv.org/pdf/2610.32970">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2610.32970">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效。请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-Ka****sdA)【如果您遇到问题，欢迎加入QQ群咨询：1003520025】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Optimal collective investment under regulatory uncertainty</td><td>An Chen</td><td><a href="https://arxiv.org/pdf/2610.32959">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2610.32959">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效。请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-Ka****sdA)【如果您遇到问题，欢迎加入QQ群咨询：1003520025】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Risk Adequacy and Anti-Discrimination in Insurance Pricing: Classification, Aggregation, and Transfers</td><td>Wiebke Hansen</td><td><a href="https://arxiv.org/pdf/2610.32614">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2610.32614">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效。请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-Ka****sdA)【如果您遇到问题，欢迎加入QQ群咨询：1003520025】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Delayed Retirement, Intergenerational Transfers, and Fertility</td><td>Yi Fan</td><td><a href="https://arxiv.org/pdf/2610.32455">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2610.32455">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效。请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-Ka****sdA)【如果您遇到问题，欢迎加入QQ群咨询：1003520025】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>AI-Augmented Research: Free to Write, Costly to Read</td><td>Wolfgang Kuhle</td><td><a href="https://arxiv.org/pdf/2610.32355">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2610.32355">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效。请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-Ka****sdA)【如果您遇到问题，欢迎加入QQ群咨询：1003520025】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Duality of Shortfall Aversion</td><td>Jaehyun Kim</td><td><a href="https://arxiv.org/pdf/2610.32350">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2610.32350">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效。请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-Ka****sdA)【如果您遇到问题，欢迎加入QQ群咨询：1003520025】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Jawboning the Fed: Do Markets Listen When Administrations Talk?</td><td>Michela Baretti</td><td><a href="https://arxiv.org/pdf/2610.32300">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2610.32300">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效。请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-Ka****sdA)【如果您遇到问题，欢迎加入QQ群咨询：1003520025】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Optimal Size in Market Making under State-Dependent Hawkes Process</td><td>Jonathan Chávez Casillas</td><td><a href="https://arxiv.org/pdf/2610.31903">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2610.31903">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效。请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-Ka****sdA)【如果您遇到问题，欢迎加入QQ群咨询：1003520025】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Mimicking Volatilities under Marginal Constraints via $q_x$-Bass Martingales: A Parallel Computing Approach</td><td>Antonio Marini</td><td><a href="https://arxiv.org/pdf/2610.31825">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2610.31825">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效。请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-Ka****sdA)【如果您遇到问题，欢迎加入QQ群咨询：1003520025】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>When AI Gets Cheaper, Do Prices Follow? Information Delays and Algorithmic Pricing</td><td>Krish Tadigotla</td><td><a href="https://arxiv.org/pdf/2610.31693">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2610.31693">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效。请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-Ka****sdA)【如果您遇到问题，欢迎加入QQ群咨询：1003520025】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+<tr><td>Financial Context-Rich Strategy for Actor-Critic based Agents: A Deep Reinforcement Learning Approach for Stock Trading</td><td>Hrishikesh Singh</td><td><a href="https://arxiv.org/pdf/2610.32237">PDF</a></td><td>-</td><td>-</td></tr>
+<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
+
+<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2610.32237">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效。请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-Ka****sdA)【如果您遇到问题，欢迎加入QQ群咨询：1003520025】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
+
+</details></td></tr>
+</tbody>
+</table>
+
+<details>
+<summary><a id='date-20261025'></a>2026-10-25（15篇论文）</summary>
 
 <table>
 <thead>
@@ -109,6 +186,8 @@
 </details></td></tr>
 </tbody>
 </table>
+
+</details>
 
 <details>
 <summary><a id='date-20261024'></a>2026-10-24（15篇论文）</summary>
@@ -382,73 +461,6 @@
 <tr><td colspan="5"><details><summary><strong>总结</strong></summary>
 
 <strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2610.28639">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效。请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-Ka****sdA)【如果您遇到问题，欢迎加入QQ群咨询：1003520025】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
-
-</details></td></tr>
-</tbody>
-</table>
-
-</details>
-
-<details>
-<summary><a id='date-20261021'></a>2026-10-21（9篇论文）</summary>
-
-<table>
-<thead>
-<tr><th>Title</th><th>Author</th><th>PDF</th><th>Code</th><th>Relevance</th></tr>
-</thead>
-<tbody>
-<tr><td>Arithmetic Models for Commodity Futures, Vanilla, and Calendar Spread Options</td><td>Malthe Rauh Johansen</td><td><a href="https://arxiv.org/pdf/2610.28071">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2610.28071">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效。请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-Ka****sdA)【如果您遇到问题，欢迎加入QQ群咨询：1003520025】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
-
-</details></td></tr>
-<tr><td>Market Regime-Based Multi-Asset Portfolio Optimization Using Nested Clustered Optimization for Tactical Asset Allocation</td><td>Supriadi</td><td><a href="https://arxiv.org/pdf/2610.27751">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2610.27751">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效。请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-Ka****sdA)【如果您遇到问题，欢迎加入QQ群咨询：1003520025】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
-
-</details></td></tr>
-<tr><td>Who Gains When the Umpire Is a Machine? Evidence from the Automated Ball-Strike System (ABS)</td><td>Seung Jin Cho</td><td><a href="https://arxiv.org/pdf/2610.27576">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2610.27576">PDF</a><br><strong>代码</strong>：-<br><strong>备注</strong>：44pages<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效。请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-Ka****sdA)【如果您遇到问题，欢迎加入QQ群咨询：1003520025】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
-
-</details></td></tr>
-<tr><td>LOB-Impact Benchmark: Emergent Market Impact in Generative Limit Order Book Models</td><td>George Nigmatulin</td><td><a href="https://arxiv.org/pdf/2610.27100">PDF</a></td><td><a href="https://github.com/george-nigmatulin/lob-impact">code1</a></td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2610.27100">PDF</a><br><strong>代码</strong>：<a href="https://github.com/george-nigmatulin/lob-impact">code1</a><br><strong>备注</strong>：. Accepted at ICAIF &#39;26 (7th ACM International Conference on AI in Finance), Milan, Italy. Code:this https URL<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效。请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-Ka****sdA)【如果您遇到问题，欢迎加入QQ群咨询：1003520025】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
-
-</details></td></tr>
-<tr><td>Dynamic portfolio selection under range value-at-risk with logarithmic returns</td><td>Hui Mi</td><td><a href="https://arxiv.org/pdf/2610.26919">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2610.26919">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效。请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-Ka****sdA)【如果您遇到问题，欢迎加入QQ群咨询：1003520025】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
-
-</details></td></tr>
-<tr><td>Speculative Imbalance Positions by Non-Physical Traders: Impacts on Electricity System Balancing in Great Britain</td><td>Joseph Cary</td><td><a href="https://arxiv.org/pdf/2610.28075">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2610.28075">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效。请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-Ka****sdA)【如果您遇到问题，欢迎加入QQ群咨询：1003520025】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
-
-</details></td></tr>
-<tr><td>Choose your own adventure: How data source selection shapes urban accessibility analyses</td><td>Geoff Boeing</td><td><a href="https://arxiv.org/pdf/2610.27390">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2610.27390">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效。请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-Ka****sdA)【如果您遇到问题，欢迎加入QQ群咨询：1003520025】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
-
-</details></td></tr>
-<tr><td>Stronger artificial intelligence breakthroughs hasten their own exhaustion</td><td>Beichen Lu</td><td><a href="https://arxiv.org/pdf/2610.27296">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2610.27296">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效。请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-Ka****sdA)【如果您遇到问题，欢迎加入QQ群咨询：1003520025】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
-
-</details></td></tr>
-<tr><td>Deep catastrophic-risk-aware reinforcement learning</td><td>Carlos Pérez Octavio Mendoza</td><td><a href="https://arxiv.org/pdf/2610.27214">PDF</a></td><td>-</td><td>-</td></tr>
-<tr><td colspan="5"><details><summary><strong>总结</strong></summary>
-
-<strong>相关性</strong>：-<br><strong>PDF</strong>：<a href="https://arxiv.org/pdf/2610.27214">PDF</a><br><strong>代码</strong>：-<br><strong>错误</strong>：API 状态码异常：403，响应：{&quot;error&quot;:{&quot;message&quot;:&quot;新版本免费ApiKey已上线，老版本免费 ApiKey 已失效。请前往 https://chatanywhere.tech/ 注册或登录 ChatAnywhere 账号并绑定 GitHub 获取新的免费 ApiKey 配额。(当前请求使用的ApiKey: sk-Ka****sdA)【如果您遇到问题，欢迎加入QQ群咨询：1003520025】&quot;,&quot;type&quot;:&quot;chatanywhere_error&quot;,&quot;param&quot;:null,&quot;code&quot;:&quot;403 FORBIDDEN&quot;}}<br><br>大模型总结失败
 
 </details></td></tr>
 </tbody>
